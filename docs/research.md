@@ -127,3 +127,37 @@ complex and maintenance-intensive infrastructure is needed in theory.
 Therefore, the next step is to compare multiple SSGs. A nice entry point for
 this was [StaticGen](https://www.staticgen.com/), a website collecting and
 ranking SSG frameworks.
+
+## Comparison of Static Site Generators
+
+As of April 2020, [StaticGen](https://www.staticgen.com/) lists around 280 SSGs.
+That's of course too many, so I reduced the number of candidates down to four:
+
+* **Hugo**, because it's written in Go and promises extremely speedy builds.
+* **Gatsby**, because it claims to be able to access multiple data sources
+  (which would ease integration of third-party services) and has a lot of
+  plugins.
+* **Next.js**, because it has the most GitHub stars and, judging by a first
+  glance, a great documentation.
+* **Eleventy**, because it can handle an extraordinary amount of different
+  template languages and came up in
+  [several](https://t3n.de/news/krisenmodus-sollten-websites-1266878/)
+  ["Get Static"](https://meyerweb.com/eric/thoughts/2020/03/22/get-static/)
+  [articles](https://github.com/maxboeck/emergency-site)
+  during the outbreak of Sars-Cov-2. (Some relevant websites went down because
+  their servers crashed.)
+
+A brief overview:
+
+|            | Hugo         | Gatsby     | Next.js    |Eleventy       |
+|------------|--------------|------------|------------|---------------|
+| License    | Apache-2.0   | MIT        | MIT        | MIT           |
+| Repository | [GitHub](https://github.com/gohugoio/hugo) | [GitHub](https://github.com/gatsbyjs/gatsby) | [GitHub](https://github.com/zeit/next.js) | [GitHub](https://github.com/11ty/eleventy) |
+| Stars*     | 42557        | 43034      | 46181      | 4742          |
+| Language   | Go           | Javascript | JavaScript | JavaScript    |
+| Templating | Go, Markdown | React      | React      | a. o. Liquid, JavaScript, HTML, Markdown |
+| Packacking | go Ecosystem | npm        | npm        | npm           |
+
+*GitHub stars as of 25.03.2020
+
+Now the goal is to further evaluate the candidates by actually trying them out.
