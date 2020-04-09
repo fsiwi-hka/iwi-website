@@ -71,7 +71,7 @@ come with beginner-friendly, non-technical UI.
 * regular updating necessary to avoid security issues
 * large overhead for simple sites
 
-## API-based
+### API-based
 
 You'd use an API-based system if you want to bring your content to a variety of
 end devices and formats. Most API-based CMS are hosted. If not, the same as for
@@ -87,7 +87,7 @@ full-stack applies.
 * usually hosted (expenses, loss of data sovereignty)
 * unnecessary effort on client-side needed (for simple sites)
 
-## static-site
+### static-site
 
 The end result of Static Site Generators (SSG) is very low-level: Pure HTML, CSS
 and JavaScript. Development usually follows a git workflow, as content is
