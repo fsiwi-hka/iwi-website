@@ -160,4 +160,5 @@ A brief overview:
 
 *GitHub stars as of 25.03.2020
 
-Now the goal is to further evaluate the candidates by actually trying them out.
+Now the goal is to further evaluate the candidates by actually
+[trying them out](./evaluation.md).
