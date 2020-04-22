@@ -35,7 +35,44 @@ framework is suited best for being the backbone of the new website.
 
 ## Comparison
 
+To be bale to compare the results easily, we will use a scale from one to four,
+where:
+
+* **1** means that the criterion was met poorly or not at all.
+* **2** means that the criterion was met somewhat, but could still be vastly improved.
+* **3** means that the criterion was met well.
+* **4** means that the criterion was met exceptionally well.
+
+The base for all criteria regarding installation as well as setup and build
+speed was an Ubuntu 18.04.4 LTS OS with i7-8550U CPU @ 1.8 GHz and 24GB RAM.
+
 ### Hugo
+
+* **Quality of Documentation**: The [Hugo documentation](https://gohugo.io/documentation/)
+  has a lot of information to offer, most common and even some edge cases are
+  available. There are code examples for almost every concept. However, the
+  hierarchy could be easier and the section overview pages can be confusing at
+  times. Result: **3**
+* **Initial Setup Speed**: With `snap`, Hugo can be installed with one command.
+  For every other major OS type, there are alternatives that should be similarly
+  easy. Result: **4**
+* **Possibilities/Complexity of the Template Engine**: Hugo uses Go templating,
+  which is integrated directly into the HTML source code. This makes reading and
+  writing the templates easy. The Go templating language however only supports
+  basic functionality while still being easy to read. Complex iterations over
+  ranges can look cumbersome. Result: **3**
+* **Build Speed**: Hugo is written in Go, which is quite low-level compared to
+  the other tools using JavaScript. This results in very fast build speeds.
+  Result: **4**
+* **Integration of Third-Party Contents**: Hugo does not offer a plugin system
+  and offers only comment integration somewhat out of the box. Everything else
+  is up to the developer, using the concept of partial templates. Result: **2**
+* **Homepage feature**: Hugo has a homepage feature, however it covers a lot of
+  functionality and is not as straightforward to use as it could be. Result:
+  **3**
+* **Blog Awareness/Possibilities**: Hugo supports taxonomy, categories, sorting
+  blog posts by various different fields and even allows the creation of custom
+  content types. Result: **4**
 
 ### Gatsby
 
