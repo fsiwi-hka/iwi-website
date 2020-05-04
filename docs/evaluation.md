@@ -133,13 +133,39 @@ This command counts all files excluding hidden ones (like the files in the
 
 ### Next.js
 
-* **Quality of Documentation**: Result: **?**
-* **Initial Setup Speed**: Result: **?**
-* **Possibilities/Complexity of the Template Engine**: Result: **?**
-* **Build Speed**: Result: **?**
-* **Integration of Third-Party Contents**: Result: **?**
-* **Homepage feature**: Result: **?**
-* **Blog Awareness/Possibilities**: Result: **?**
+* **Quality of Documentation**: The [Next.js documentation](https://nextjs.org/docs)
+  is very concise and clean. The website itself also provides a
+  beginner-friendly ["Learn" section](https://nextjs.org/learn) for users to get
+  started with the framework interactively. Result: **4**
+* **Initial Setup Speed**: Like Gatsby, Next.js uses either yarn or npm as a
+  package manager. This results in a slower setup speed than Hugo can provide.
+  Also, for common use cases like dealing with Markdown files, additional
+  packages need to be installed. Result: **2**
+* **Possibilities/Complexity of the Template Engine**: We already know React
+  from Gatsby, and how JSX is used to template the website. Next.js uses the
+  same technology, but convinces with a small number of powerful template
+  classes it provides out of the box. Modular CSS can be used, which is a plus
+  as well. Result: **3**
+* **Build Speed**: The build speed ranges in the area of hundreds of
+  milliseconds, including Hot Reload during development. The developer
+  experience is satisfactory. Result: **3**
+* **Integration of Third-Party Contents**: Next.js has a very similar approach
+  to third-party content integration like Gatsby. However, it provides a clean
+  distinction between data fetched at *static build* time and *dynamic build*
+  time. The former results in a static page that is the same every time it is
+  served. The latter needs a Node.js server to provide server-side rendering.
+  This is a future that' wouldn't be compatible with our requirements, as we
+  want to host the website statically. Next.js has a built-in way to do this,
+  but you loose some features. Result: **3**
+* **Homepage feature**: Next.js allows for the creation of arbitrarily many
+  types of pages, think of blog posts, user pages, landing pages - all built
+  using JSX components and some sort of data, may it be Markdown files or an
+  API. A homepage is also possible with this approach, of course. Result: **4**
+* **Blog Awareness/Possibilities**: The same logic applies to the blog awareness
+  aspect. Dynamic routing is supported and any frontmatter can be dealt with.
+  However, this usually needs to be implemented by the developer and doesn't
+  come with Next.js out of the box. (Unless you use a pre-made template.)
+  Result: **3**
 
 ### Eleventy
 
@@ -157,13 +183,13 @@ The overview of results now looks like this:
 
 | Criteria             | Hugo   | Gatsby | Next.js | Eleventy |
 |----------------------|:------:|:------:|:-------:|:--------:|
-| Documentation        |    3   |   4    |         |          |
-| Initial Setup Speed  |    4   |   2    |         |          |
-| Template Engine      |    3   |   2    |         |          |
-| Build Speed          |    4   |   2    |         |          |
-| Third-Party Contents |    2   |   4    |         |          |
-| Homepage feature     |    3   |   3    |         |          |
-| Blog Awareness       |    4   |   2    |         |          |
-| **Total**            | **23** | **19** |         |          |
+| Documentation        |    3   |   4    |    4    |          |
+| Initial Setup Speed  |    4   |   2    |    2    |          |
+| Template Engine      |    3   |   2    |    3    |          |
+| Build Speed          |    4   |   2    |    3    |          |
+| Third-Party Contents |    2   |   4    |    3    |          |
+| Homepage feature     |    3   |   3    |    4    |          |
+| Blog Awareness       |    4   |   2    |    3    |          |
+| **Total**            | **23** | **19** | **22**  |          |
 
 ## Conclusion
