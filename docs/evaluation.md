@@ -169,9 +169,25 @@ This command counts all files excluding hidden ones (like the files in the
 
 ### Eleventy
 
-* **Quality of Documentation**: Result: **?**
-* **Initial Setup Speed**: Result: **?**
-* **Possibilities/Complexity of the Template Engine**: Result: **?**
+* **Quality of Documentation**: Unlike e. g. Next.js, Eleventy is not backed by
+  a profit-oriented company which provides additional services to the
+  open-source project. This becomes apparent in the documentation, too: It is
+  complete and extensive, but lacks clear guidance, and the jump from beginner
+  tutorial to the actual documentation of key concepts is a big one. Result:
+  **2**
+* **Initial Setup Speed**: As a `npm` based project, Eleventy has a similiar
+  install process like Next.js and Gatsby. However, as Eleventy is a
+  significantly smaller project, the struggle with auditing and upkeep is
+  noticeable. Unlike the others, Eleventy has minor security warnings in the
+  packages it references. This is not as bad, the end result is a static site
+  after all. However, this weighs in when it comes to the criterion of easy
+  maintenance and long-lasting updates. Result: **1**
+* **Possibilities/Complexity of the Template Engine**: Eleventy stands out in
+  this list as it doesn't restrict developers to a specific template language.
+  Currently, Eleventy supports ten different ones. This includes basics like
+  HTML and Markdown, but also more commonly known template languages like
+  Nunjucks, Liquid, Mustache or Handlebars. So it's entirely up to the
+  developer. Result: **4**
 * **Build Speed**: Result: **?**
 * **Integration of Third-Party Contents**: Result: **?**
 * **Homepage feature**: Result: **?**
