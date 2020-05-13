@@ -188,10 +188,23 @@ This command counts all files excluding hidden ones (like the files in the
   HTML and Markdown, but also more commonly known template languages like
   Nunjucks, Liquid, Mustache or Handlebars. So it's entirely up to the
   developer. Result: **4**
-* **Build Speed**: Result: **?**
-* **Integration of Third-Party Contents**: Result: **?**
-* **Homepage feature**: Result: **?**
-* **Blog Awareness/Possibilities**: Result: **?**
+* **Build Speed**: Just like with Next.js: The build speed ranges in the area of
+  hundreds of milliseconds, including Hot Reload during development. The
+  developer experience is satisfactory. Result: **3**
+* **Integration of Third-Party Contents**: Eleventy developers value simplicity,
+  according to their website. They provide basic functionality for creating web
+  pages by using some template and some data. Everything else is up to the user.
+  So, in the documentation there is no specific guideline or tutorial on how to
+  integrate third-party content. It seems out of scope for Eleventy itself.
+  Nonetheless, you can still build your own integrations with JavaScript and
+  have those be rendered into your site. Result: **2**
+* **Homepage feature**: The freedom of choice when it comes to templates also
+  extends to the homepage. You can just use a certain template. Eleventy also
+  supports pagination and sorting by date. Result: **4**
+* **Blog Awareness/Possibilities**: As the FrontMatter contained in the Markdown
+  data files can be anything the developers needs it to be, you can build
+  complex structures and hierarchies. That includes blog functionality as well.
+  Result: **3**
 
 ### Summary
 
@@ -199,13 +212,13 @@ The overview of results now looks like this:
 
 | Criteria             | Hugo   | Gatsby | Next.js | Eleventy |
 |----------------------|:------:|:------:|:-------:|:--------:|
-| Documentation        |    3   |   4    |    4    |          |
-| Initial Setup Speed  |    4   |   2    |    2    |          |
-| Template Engine      |    3   |   2    |    3    |          |
-| Build Speed          |    4   |   2    |    3    |          |
-| Third-Party Contents |    2   |   4    |    3    |          |
-| Homepage feature     |    3   |   3    |    4    |          |
-| Blog Awareness       |    4   |   2    |    3    |          |
-| **Total**            | **23** | **19** | **22**  |          |
+| Documentation        |    3   |   4    |    4    |     2    |
+| Initial Setup Speed  |    4   |   2    |    2    |     1    |
+| Template Engine      |    3   |   2    |    3    |     4    |
+| Build Speed          |    4   |   2    |    3    |     3    |
+| Third-Party Contents |    2   |   4    |    3    |     2    |
+| Homepage feature     |    3   |   3    |    4    |     4    |
+| Blog Awareness       |    4   |   2    |    3    |     3    |
+| **Total**            | **23** | **19** | **22**  |  **19**  |
 
 ## Conclusion
