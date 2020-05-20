@@ -221,4 +221,47 @@ The overview of results now looks like this:
 | Blog Awareness       |    4   |   2    |    3    |     3    |
 | **Total**            | **23** | **19** | **22**  |  **19**  |
 
+As the tools are very close together, with only Hugo and Next.js having some
+slight advantages, I wanted to make things clearer by conducting an expert
+interview.
+
+## Expert Interview
+
+The expert for the comparison of Hugo and Next.js in particular was
+[Sven Lindauer](https://www.inovex.de/blog/author/slindauer/), who is a Frontend
+Engineer at inovex GmbH. He had the following insights:
+
+* For React components (JSX), we can expect a flat learning curve for people who
+  are new. You can start with basic components that look almost like regular
+  HTML. No need to start with advanced stuff right away! Also, as templates are
+  generated mostly during this project, small changes can be easily added
+  later.
+* However, we observe that frontend technology is innovating very quickly.
+  E. g. TypeScript was very new still in 2015. So for a project that has to be
+  stable for a long time (five years or more), you can expect technology that is
+  "hot" today will still be around. Nonetheless, there will be a lot of new stuff
+  in a couple of years that everyone is doing. With the SSG approach however,
+  you are somewhat freed of these fast iterations as the end result (a
+  HTML/CSS/JS page) will hardly change for years the come.
+* With server-side languages like Go, we observe slower life cycle spans. This
+  weighs in the favour of Hugo.
+* It is also really important to make the team happy. You can spend a lot of
+  time evaluating different tools, but if the team doesn't like the one you
+  chose eventually, adaption will be slow and hard. So for this project, I
+  recommend simply asking around what people would want to work with.
+* Also, it might be interesting to do some research on what "big players"
+  decided on. Smashing Magazine for example went with Hugo for their huge news
+  website.
+* Finally, to address the big picture, you could think of using a headless CMS
+  in combination with a SSG to allow working on the page with a WYSIWYG editor
+  like with Wordpress. This can also be achieved by using something like Netlify
+  CMS.
+
+These comments and remarks were very insightful and I thank Sven for his time.
+The biggest takeaway for me: It's really important what the people think that
+will actually work with the tools later on. That's why I wanted to gather some
+opinions from the student council itself.
+
+## Opinions of the Student Council
+
 ## Conclusion
