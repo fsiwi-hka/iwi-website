@@ -264,4 +264,18 @@ opinions from the student council itself.
 
 ## Opinions of the Student Council
 
+The feedback of the students from the council was collected in the 20.05.2020
+meeting. After being explained the two tools in question, the reaction was
+unanimous: The students favour Next.js / React-based development. Five students
+expressed their interest in Next.js, none for Hugo.
+
 ## Conclusion
+
+With this great turnout, I can combine my scientific research (consisting of the
+evaluation and the expert interview) with the opinion that matters most: The
+opinion of the students that will use the software later.
+
+The software to be used in this project will be **Next.js**.
+
+The following step is to set up the basic page and component structure, which
+will happen in this very Git repository.
