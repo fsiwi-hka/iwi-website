@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+
+.container {
+    @apply w-full max-w-screen-xl mx-auto;
+}
+
+.title {
+    @apply text-5xl text-center text-gray-700 py-8;
+    line-height: 1.15;
+}
+
+.subtitle {
+    @apply text-center text-gray-500;
+}
+
+@tailwind utilities;
