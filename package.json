@@ -1,0 +1,28 @@
+{
+    "name": "iwi-website",
+    "version": "0.0.1",
+    "description": "The statically generated website of the IWI student council, powered by Next.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "next",
+        "build": "next build && next export",
+        "start": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/SimonKie/iwi-website.git"
+    },
+    "author": "Simon Kienzler",
+    "bugs": {
+        "url": "https://gitlab.com/SimonKie/iwi-website/issues"
+    },
+    "homepage": "https://gitlab.com/SimonKie/iwi-website#readme",
+    "dependencies": {
+        "next": "^9.4.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}
