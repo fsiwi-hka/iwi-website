@@ -1,8 +1,45 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+h1 {
+    @apply text-4xl leading-10 mt-8 mb-4;
+}
+
+h2 {
+    @apply text-3xl leading-10 mt-6 mb-3 text-gray-700
+}
+
+h3 {
+    @apply text-2xl leading-9 mt-4 mb-2 text-gray-700;
+}
+
+h4 {
+    @apply text-lg leading-8 mt-2 mb-1 text-gray-500;
+}
+
+a {
+    @apply text-blue-600 underline;
+}
+
+ul {
+    @apply list-disc list-inside my-8;
+}
+
+ol {
+    @apply list-decimal list-inside my-8;
+}
+
+table {
+    @apply table-auto my-4;
+    width: 100%; 
+}
+
+th,td {
+    @apply border border-gray-500;
+}
 
 .container {
-    @apply w-full max-w-screen-xl mx-auto;
+    @apply w-full max-w-screen-lg mx-auto;
 }
 
 .title {
@@ -14,4 +51,21 @@
     @apply text-center text-gray-500;
 }
 
-@tailwind utilities;
+footer {
+    @apply text-center text-gray-500 py-12;
+}
+
+article p,
+article li {
+    @apply leading-8;
+}
+
+.meta {
+    @apply mb-4;
+}
+
+.meta span {
+    @apply mr-4 text-gray-700;
+}
+
+@import "tailwindcss/utilities";
