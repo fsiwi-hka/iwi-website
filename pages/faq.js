@@ -1,18 +1,15 @@
 import matter from 'gray-matter'
-import NewsExcerpt from '../components/news/excerpt'
+import FaqTile from '../components/faq/tile'
 
-function Index({ news }) {
+function Faq({ faq }) {
     return (
         <>
             {
-                news.map((post) => ( 
-                    <NewsExcerpt 
+                faq.map((post) => ( 
+                    <FaqTile 
                         key={ post.slug }
                         slug={ post.slug }
                         title={ post.data.title }
-                        date={ post.data.date }
-                        author={ post.data.author }
-                        excerpt={ post.data.excerpt }
                     />
                 ))
             }
@@ -20,8 +17,8 @@ function Index({ news }) {
     )
 }
 
-Index.getInitialProps = async(context) => {
-    const news = (context => {
+Faq.getInitialProps = async(context) => {
+    const faq = (context => {
         const keys = context.keys()
         const values = keys.map(context)
         const data = keys.map((key, index) => {
@@ -35,13 +32,13 @@ Index.getInitialProps = async(context) => {
             return { ...document, slug: slug }
         })
 
-        return data.slice().sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
-    })(require.context('../content/news', true, /\.md$/))
+        return data
+    })(require.context('../content/faq', true, /\.md$/))
 
     return {
-        news,
-        data: { title: 'Startseite' }
+        faq,
+        data: { title: "FAQ" }
     }
 }
 
-export default Index
+export default Faq

@@ -1,6 +1,5 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-
 h1 {
     @apply text-4xl leading-10 mt-8 mb-4;
 }
@@ -31,11 +30,16 @@ ol {
 
 table {
     @apply table-auto my-4;
-    width: 100%; 
+    width: 100%;
 }
 
-th,td {
+th,
+td {
     @apply border border-gray-500;
+}
+
+button {
+    @apply bg-blue-500 px-8 py-4 my-8 text-white;
 }
 
 .container {
