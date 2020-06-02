@@ -25,7 +25,7 @@ MarkdownLoader.multiple = (context, options) => {
     })
 
     if(options.sortBy == 'date') {
-        return data.slice().sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+        return data.slice().sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
     } else {
         return data
     }
