@@ -1,5 +1,6 @@
 import matter from 'gray-matter'
 import NewsExcerpt from '../components/news/excerpt'
+import MarkdownLoader from '../components/util/markdown-loader'
 
 function Index({ news }) {
     return (
@@ -20,22 +21,10 @@ function Index({ news }) {
     )
 }
 
-Index.getInitialProps = async(context) => {
+Index.getInitialProps = async() => {
     const news = (context => {
-        const keys = context.keys()
-        const values = keys.map(context)
-        const data = keys.map((key, index) => {
-            const slug = key
-                .replace(/^.*[\\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.')
-            const value = values[index]
-            const document = matter(value.default)
-            return { ...document, slug: slug }
-        })
-
-        return data.slice().sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+        const data = MarkdownLoader.multiple(context, {sortBy: 'date'})
+        return data
     })(require.context('../content/news', true, /\.md$/))
 
     return {

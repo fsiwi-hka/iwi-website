@@ -1,5 +1,6 @@
 import matter from 'gray-matter'
 import FaqTile from '../components/faq/tile'
+import MarkdownLoader from '../components/util/markdown-loader'
 
 function Faq({ faq }) {
     return (
@@ -19,19 +20,7 @@ function Faq({ faq }) {
 
 Faq.getInitialProps = async(context) => {
     const faq = (context => {
-        const keys = context.keys()
-        const values = keys.map(context)
-        const data = keys.map((key, index) => {
-            const slug = key
-                .replace(/^.*[\\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.')
-            const value = values[index]
-            const document = matter(value.default)
-            return { ...document, slug: slug }
-        })
-
+        const data = MarkdownLoader.multiple(context, {sortBy: undefined})
         return data
     })(require.context('../content/faq', true, /\.md$/))
 

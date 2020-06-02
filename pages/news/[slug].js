@@ -1,4 +1,4 @@
-import matter from 'gray-matter'
+import MarkdownLoader from '../../components/util/markdown-loader'
 import NewsPost from '../../components/news/post'
 
 function News({content, data}) {
@@ -14,9 +14,7 @@ function News({content, data}) {
 
 News.getInitialProps = async (context) => {
     const { slug } = context.query
-    const content = await import(`../../content/news/${slug}.md`)
-    const data = matter(content.default)
-    return { ...data }
+    return MarkdownLoader.single('news', slug)
 }
 
 export default News

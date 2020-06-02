@@ -1,4 +1,4 @@
-import matter from 'gray-matter'
+import MarkdownLoader from '../../components/util/markdown-loader'
 import FaqPost from '../../components/faq/post'
 
 function Faq({content, data}) {
@@ -12,9 +12,7 @@ function Faq({content, data}) {
 
 Faq.getInitialProps = async (context) => {
     const { slug } = context.query
-    const content = await import(`../../content/faq/${slug}.md`)
-    const data = matter(content.default)
-    return { ...data }
+    return MarkdownLoader.single('faq', slug)
 }
 
 export default Faq
