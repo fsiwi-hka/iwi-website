@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './../components/common/header'
 import Footer from './../components/common/footer'
+import Menu from './../components/common/menu'
 import '../styles/index.css'
 
 function IWIWebsite({ Component, pageProps }) {
@@ -20,6 +21,8 @@ function IWIWebsite({ Component, pageProps }) {
           </Head>
 
           <Header />
+
+          <Menu />
           
           <section className="main container">
             <Component {...pageProps} />

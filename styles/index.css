@@ -72,4 +72,16 @@ article li {
     @apply mr-4 text-gray-700;
 }
 
+nav ul {
+    @apply flex list-none;
+}
+
+nav li {
+    @apply mr-6;
+}
+
+nav a {
+    @apply text-blue-500;
+}
+
 @import "tailwindcss/utilities";
