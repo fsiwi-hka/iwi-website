@@ -1,5 +1,18 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+* {
+    @apply font-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-heading font-bold;
+}
+
 h1 {
     @apply text-4xl leading-10 mt-8 mb-4;
 }
@@ -47,16 +60,20 @@ button {
 }
 
 .title {
-    @apply text-5xl text-center text-gray-700 py-8;
+    @apply text-6xl text-center text-white py-8 font-heading font-bold;
     line-height: 1.15;
 }
 
 .subtitle {
-    @apply text-center text-gray-500;
+    @apply text-xl text-center text-white;
 }
 
 footer {
     @apply text-center text-gray-500 py-12;
+}
+
+footer ul {
+    @apply list-none font-heading;
 }
 
 article p,
@@ -77,11 +94,22 @@ nav ul {
 }
 
 nav li {
-    @apply mr-6;
+    @apply mr-6 font-heading font-medium;
 }
 
-nav a {
-    @apply text-blue-500;
+nav a,
+footer ul a,
+.copyright a {
+    @apply text-gray-500 no-underline;
+}
+
+.fa {
+    @apply p-4 mx-2 bg-gray-500 text-white rounded-full text-center no-underline;
+    width: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
 }
 
 @import "tailwindcss/utilities";
