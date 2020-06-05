@@ -1,0 +1,115 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+* {
+    @apply font-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-heading font-bold;
+}
+
+h1 {
+    @apply text-4xl leading-10 mt-8 mb-4;
+}
+
+h2 {
+    @apply text-3xl leading-10 mt-6 mb-3 text-gray-700
+}
+
+h3 {
+    @apply text-2xl leading-9 mt-4 mb-2 text-gray-700;
+}
+
+h4 {
+    @apply text-lg leading-8 mt-2 mb-1 text-gray-500;
+}
+
+a {
+    @apply text-blue-600 underline;
+}
+
+ul {
+    @apply list-disc list-inside my-8;
+}
+
+ol {
+    @apply list-decimal list-inside my-8;
+}
+
+table {
+    @apply table-auto my-4;
+    width: 100%;
+}
+
+th,
+td {
+    @apply border border-gray-500;
+}
+
+button {
+    @apply bg-blue-500 px-8 py-4 my-8 text-white;
+}
+
+.container {
+    @apply w-full max-w-screen-lg mx-auto;
+}
+
+.title {
+    @apply text-6xl text-center text-white py-8 font-heading font-bold;
+    line-height: 1.15;
+}
+
+.subtitle {
+    @apply text-xl text-center text-white;
+}
+
+footer {
+    @apply text-center text-gray-500 py-12;
+}
+
+footer ul {
+    @apply list-none font-heading;
+}
+
+article p,
+article li {
+    @apply leading-8;
+}
+
+.meta {
+    @apply mb-4;
+}
+
+.meta span {
+    @apply mr-4 text-gray-700;
+}
+
+nav ul {
+    @apply flex list-none;
+}
+
+nav li {
+    @apply mr-6 font-heading font-medium;
+}
+
+nav a,
+footer ul a,
+.copyright a {
+    @apply text-gray-500 no-underline;
+}
+
+.fa {
+    @apply p-4 mx-2 bg-gray-500 text-white rounded-full text-center no-underline;
+    width: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+@import "tailwindcss/utilities";
