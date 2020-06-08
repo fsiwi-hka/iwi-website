@@ -1,4 +1,4 @@
-import matter from 'gray-matter'
+import { GetStaticProps } from 'next'
 import NewsExcerpt from '../components/news/excerpt'
 import MarkdownLoader from '../components/util/markdown-loader'
 
@@ -21,16 +21,18 @@ function Index({ news }) {
     )
 }
 
-Index.getInitialProps = async() => {
+export default Index
+
+export const getStaticProps: GetStaticProps = async (context) => {
     const news = (context => {
         const data = MarkdownLoader.multiple(context, {sortBy: 'date'})
         return data
     })(require.context('../content/news', true, /\.md$/))
 
     return {
-        news,
-        data: { title: 'Startseite' }
+        props: {
+            news,
+            data: { title: "Startseite" }
+        }
     }
 }
-
-export default Index

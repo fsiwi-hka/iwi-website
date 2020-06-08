@@ -1,4 +1,4 @@
-import matter from 'gray-matter'
+import { GetStaticProps } from 'next'
 import FaqTile from '../components/faq/tile'
 import MarkdownLoader from '../components/util/markdown-loader'
 
@@ -18,16 +18,18 @@ function Faq({ faq }) {
     )
 }
 
-Faq.getInitialProps = async(context) => {
+export default Faq
+
+export const getStaticProps: GetStaticProps = async (context) => {
     const faq = (context => {
         const data = MarkdownLoader.multiple(context, {sortBy: undefined})
         return data
     })(require.context('../content/faq', true, /\.md$/))
 
     return {
-        faq,
-        data: { title: "FAQ" }
+        props: {
+            faq,
+            data: { title: "FAQ" }
+        }
     }
 }
-
-export default Faq
