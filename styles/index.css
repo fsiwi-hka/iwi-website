@@ -65,7 +65,11 @@ button {
 }
 
 .subtitle {
-    @apply text-xl text-center text-white;
+    @apply text-xl text-center text-white max-w-2xl;
+}
+
+.faqtile a {
+    @apply text-white no-underline font-heading font-medium text-2xl;
 }
 
 footer {

@@ -1,5 +1,9 @@
 ---
 title: 'Prüfungen'
+header:
+  title: 'Prüfungen'
+  subtitle: 'Fragen und Antworten zum Thema'
+  image: '/assets/backgrounds/faq.jpg'
 ---
 ## Wo kann ich mich zu den Prüfungen anmelden?
 

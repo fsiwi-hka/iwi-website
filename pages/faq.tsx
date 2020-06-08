@@ -5,15 +5,18 @@ import MarkdownLoader from '../components/util/markdown-loader'
 function Faq({ faq }) {
     return (
         <>
-            {
-                faq.map((post) => ( 
-                    <FaqTile 
-                        key={ post.slug }
-                        slug={ post.slug }
-                        title={ post.data.title }
-                    />
-                ))
-            }
+            <h1>Was du wissen solltest</h1>
+            <div className="grid grid-cols-3 gap-8">
+                {
+                    faq.map((post) => ( 
+                        <FaqTile 
+                            key={ post.slug }
+                            slug={ post.slug }
+                            title={ post.data.title }
+                        />
+                    ))
+                }
+            </div>
         </>
     )
 }
@@ -29,7 +32,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return {
         props: {
             faq,
-            data: { title: "FAQ" }
+            data: { 
+                title: 'FAQ',
+                header: {
+                    title: 'Was du wissen solltest',
+                    subtitle: 'Häufig gestellte Fragen, beantwortet von deiner Fachschaft',
+                    image: '/assets/backgrounds/faq.jpg'
+                } 
+            }
         }
     }
 }

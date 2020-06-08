@@ -32,7 +32,16 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return {
         props: {
             news,
-            data: { title: "Startseite" }
+            data: { 
+                title: 'Homepage',
+                header: {
+                    title: 'Was gibt\'s Neues?',
+                    subtitle: `Auf dieser Seite findest du Ankündigungen, die
+                    aktuellsten News und Veranstaltungen der Fachschaft
+                    Informatik & Wirtschaftsinformatik`,
+                    image: '/assets/backgrounds/homepage.jpg'
+                } 
+            }
         }
     }
 }

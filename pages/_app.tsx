@@ -25,7 +25,7 @@ function IWIWebsite({ Component, pageProps }) {
 
           <Menu />
 
-          <Header />
+          <Header {...pageProps.data.header} />
           
           <section className="main container">
             <Component {...pageProps} />

@@ -3,6 +3,10 @@ title: 'Template für einen News-Beitrag'
 excerpt: 'Eine kurze Zusammenfassung des Texts.'
 author: 'IWI-Fachschaft'
 date: '2020-05-24'
+header:
+  title: 'Dies steht oben im Header'
+  subtitle: 'Eine kurze, aber anders lautende Zusammenfassung des Texts'
+  image: '/assets/backgrounds/homepage.jpg'
 ---
 
 Benutze wie gewohnt **Markdown-Syntax** zum Formatieren von Text. Es ist
