@@ -15,9 +15,9 @@ function Header({image, title, subtitle}) {
                     50%`,
                 backgroundSize: "cover"
             }}>
-            <Link href="/">
-                <p className="title">{ title }</p>
-            </Link>
+            <p className="title">
+                { title }
+            </p>
             <p className="subtitle">
                 { subtitle }
             </p>
