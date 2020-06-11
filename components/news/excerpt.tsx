@@ -12,14 +12,18 @@ function NewsExcerpt({
         <div>
             <h3>
                 <Link as={`/news/${ slug }`} href="/news/[slug]">
-                    <a>{ title }</a> 
+                    <a className="text-gray-500 no-underline">{ title }</a> 
                 </Link> 
             </h3>
-            <p className="meta">
-                <span className="date">⏲ {formatDate(date)}</span>
-                <span className="author">🖊 { author }</span>
+            <p className="meta text-gray-500 text-sm">
+                Am {formatDate(date)} veröffentlicht von { author }
             </p>
-            <p> { excerpt } </p> 
+            <p> 
+                { excerpt }&nbsp;
+                <Link as={`/news/${ slug }`} href="/news/[slug]">
+                    <a>Weiterlesen</a> 
+                </Link>
+            </p> 
         </div>
     )
 }

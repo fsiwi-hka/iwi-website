@@ -43,7 +43,7 @@ MarkdownLoader.single = async (dir, slug) => {
 MarkdownLoader.multiple = (context, options) => {
     const keys = context.keys()
     const values = keys.map(context)
-    const data = keys.map((key, index) => {
+    var data = keys.map((key, index) => {
         const slug = key
             .replace(/^.*[\\\/]/, '')
             .split('.')
@@ -65,12 +65,16 @@ MarkdownLoader.multiple = (context, options) => {
     })
 
     if(options.sortBy == 'date') {
-        return data.slice().sort(
+        data = data.slice().sort(
             (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
         )
-    } else {
-        return data
     }
+
+    if(options.max != undefined) {
+        data = data.slice(0, options.max)
+    }
+
+    return data
 } 
 
 export default MarkdownLoader
