@@ -13,6 +13,7 @@ function Faq({ faq }) {
                             key={ post.slug }
                             slug={ post.slug }
                             title={ post.data.title }
+                            image={ post.data.header.image }
                         />
                     ))
                 }

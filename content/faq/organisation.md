@@ -3,7 +3,7 @@ title: 'Orga rund ums Studium'
 header:
   title: 'Studienorganisation'
   subtitle: 'Fragen und Antworten zum Thema'
-  image: '/assets/backgrounds/faq.jpg'
+  image: '/assets/backgrounds/unternehmen.jpg'
 ---
 ## Wie lerne ich am besten?
 

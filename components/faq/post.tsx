@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown'
-import Link from 'next/link';
+import Link from 'next/link'
 
 function FaqPost({
     title,

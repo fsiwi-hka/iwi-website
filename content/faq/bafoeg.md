@@ -3,7 +3,7 @@ title: 'Bafög'
 header:
   title: 'Bafög'
   subtitle: 'Fragen und Antworten zum Thema'
-  image: '/assets/backgrounds/faq.jpg'
+  image: '/assets/backgrounds/bafoeg.jpg'
 ---
 ## Habe ich Anspruch auf Bafög?
 

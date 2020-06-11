@@ -3,7 +3,7 @@ title: 'Hochschule & Fakultät'
 header:
   title: 'Hochschule & Fakultät'
   subtitle: 'Fragen und Antworten zum Thema'
-  image: '/assets/backgrounds/faq.jpg'
+  image: '/assets/backgrounds/hoersaal.jpg'
 ---
 ## Wo finde ich das Gebäudemanagement
 
