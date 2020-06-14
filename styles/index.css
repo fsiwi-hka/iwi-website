@@ -107,12 +107,12 @@ footer ul a,
     @apply text-gray-500 no-underline;
 }
 
-.fa {
+footer .fa {
     @apply p-4 mx-2 bg-gray-500 text-white rounded-full text-center no-underline;
     width: 50px;
 }
 
-.fa:hover {
+footer .fa:hover {
     opacity: 0.7;
 }
 

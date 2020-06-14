@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown'
-import formatDate from "./../util/date-format"
+import DateFormatter from './../util/date-formatter'
 
 function NewsPost({
     title,
@@ -11,7 +11,7 @@ function NewsPost({
         <article>
             <h1>{ title }</h1>
             <p className="meta">
-                <span className="date">⏲ {formatDate(date)}</span>
+                <span className="date">⏲ {DateFormatter.formatDate(date)}</span>
                 <span className="author">🖊 { author }</span>
             </p>
             <ReactMarkdown

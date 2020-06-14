@@ -1,8 +1,10 @@
 import { GetStaticProps } from 'next'
 import NewsExcerpt from '../components/news/excerpt'
+import EventDisplay from '../components/common/event-display'
 import MarkdownLoader from '../components/util/markdown-loader'
+import getCalendarEvents from '../components/util/google-calendar'
 
-function Index({ news }) {
+function Index({ news, events }) {
     return (
         <>
             <h2>Ankündigungen und News</h2>
@@ -20,6 +22,10 @@ function Index({ news }) {
                     ))
                 }
             </div>
+            <h2>Veranstaltungen</h2>
+            <EventDisplay 
+                events={ events }
+            />
         </>
     )
 }
@@ -32,9 +38,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
         return data
     })(require.context('../content/news', true, /\.md$/))
 
+    const events = await getCalendarEvents()
+
     return {
         props: {
             news,
+            events,
             data: { 
                 title: 'Homepage',
                 header: {

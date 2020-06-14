@@ -1,4 +1,4 @@
-import formatDate from './../util/date-format'
+import DateFormatter from './../util/date-formatter'
 import Link from 'next/link'
 
 function NewsExcerpt({
@@ -16,7 +16,7 @@ function NewsExcerpt({
                 </Link> 
             </h3>
             <p className="meta text-gray-500 text-sm">
-                Am {formatDate(date)} veröffentlicht von { author }
+                Am {DateFormatter.formatDate(date)} veröffentlicht von { author }
             </p>
             <p> 
                 { excerpt }&nbsp;

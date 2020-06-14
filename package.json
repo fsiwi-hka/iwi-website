@@ -21,6 +21,7 @@
     },
     "homepage": "https://gitlab.com/SimonKie/iwi-website#readme",
     "dependencies": {
+        "googleapis": "^52.1.0",
         "gray-matter": "^4.0.2",
         "next": "^9.4.2",
         "raw-loader": "^4.0.1",
