@@ -12,7 +12,7 @@ import fs from 'fs';
  */
 async function getCalendarEvents() {
     // if the credentials file doesn't exist, we can't get events
-    if(!credentailsFileExists()) return null
+    if(!credentialsFileExists()) return null
 
     const auth = new google.auth.GoogleAuth({
         keyFile: join(process.cwd(),'credentials.json'),
@@ -35,7 +35,7 @@ async function getCalendarEvents() {
     return response.data.items
 }
 
-function credentailsFileExists() {
+function credentialsFileExists() {
     const filePath = join(process.cwd(),'credentials.json')
     const fileExists = fs.existsSync(filePath)
     
