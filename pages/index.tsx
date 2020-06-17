@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next'
 import NewsExcerpt from '../components/news/excerpt'
-import EventDisplay from '../components/common/event-display'
+import EventArea from '../components/common/event-area'
 import MarkdownLoader from '../components/util/markdown-loader'
 import getCalendarEvents from '../components/util/google-calendar'
 
@@ -22,8 +22,7 @@ function Index({ news, events }) {
                     ))
                 }
             </div>
-            <h2>Veranstaltungen</h2>
-            <EventDisplay 
+            <EventArea 
                 events={ events }
             />
         </>

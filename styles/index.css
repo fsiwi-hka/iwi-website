@@ -51,10 +51,6 @@ td {
     @apply border border-gray-500;
 }
 
-button {
-    @apply bg-blue-500 px-8 py-4 my-8 text-white;
-}
-
 .container {
     @apply w-full max-w-screen-lg mx-auto;
 }

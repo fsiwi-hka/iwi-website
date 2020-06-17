@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from './../components/common/header'
 import Footer from './../components/common/footer'
 import Menu from './../components/common/menu'
+import 'react-calendar/dist/Calendar.css'
 import '../styles/index.css'
 
 function IWIWebsite({ Component, pageProps }) {
