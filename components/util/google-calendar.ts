@@ -32,7 +32,7 @@ async function getCalendarEvents() {
         orderBy: 'startTime',
       });
 
-    return response.data.items
+    return filterFields(response.data.items)
 }
 
 function credentialsFileExists() {
@@ -49,6 +49,44 @@ function credentialsFileExists() {
         "service account is present at this location."
     )
     return false
+}
+
+/* We get a bunch of information from the Google Calendar
+ * API. Everything we return from this component will end
+ * up in the source code of the website, so we don't want
+ * to pass along everything blindly. We "whitelist" all
+ * information we know we need.
+ * 
+ * In case you want to pass an additional field, see the
+ * list of all possible fields here: 
+ * https://developers.google.com/calendar/v3/reference/events
+ * 
+ * In case you're not familiar with the functional notation
+ * we use here, see this blog post:
+ * https://medium.com/@captaindaylight/get-a-subset-of-an-object-9896148b9c72
+ */
+function filterFields(events) {
+    return events.map(event => {
+        return (
+            ({
+                id,
+                htmlLink,
+                summary,
+                description,
+                start,
+                end
+            }) => ({
+                id,
+                htmlLink,
+                summary,
+                // description is optional and must 
+                // be set to null if it's undefined
+                "description": description || null,
+                start,
+                end
+            })
+        )(event)
+    })
 }
 
 export default getCalendarEvents
