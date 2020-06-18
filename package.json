@@ -21,6 +21,11 @@
     },
     "homepage": "https://gitlab.com/SimonKie/iwi-website#readme",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.28",
+        "@fortawesome/free-brands-svg-icons": "^5.13.0",
+        "@fortawesome/free-regular-svg-icons": "^5.13.0",
+        "@fortawesome/free-solid-svg-icons": "^5.13.0",
+        "@fortawesome/react-fontawesome": "^0.1.11",
         "googleapis": "^52.1.0",
         "gray-matter": "^4.0.2",
         "next": "^9.4.2",

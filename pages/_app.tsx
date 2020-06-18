@@ -5,6 +5,10 @@ import Menu from './../components/common/menu'
 import 'react-calendar/dist/Calendar.css'
 import '../styles/index.css'
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false 
+
 function IWIWebsite({ Component, pageProps }) {
     const og = pageProps.data?.og
     const title = pageProps.data?.title
