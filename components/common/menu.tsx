@@ -13,7 +13,7 @@ function Menu() {
                 <li><Link href="/unternehmen"><a>Kooperation &amp; Sponsoring</a></Link></li>
             </ul>
             <Link href="/"><a>
-                <img src="/assets/user.png" alt="IWI-Logo" className="h-8"/>
+                <img src="/assets/user.png" alt="Zugang zum internen Bereich" className="h-8"/>
             </a></Link>
         </nav>
     )
