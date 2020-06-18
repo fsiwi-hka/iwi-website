@@ -5,12 +5,17 @@ function StaticPage({
     content
 }) {
     return ( 
-        <article>
+        <>
             <ReactMarkdown
               source={content}
               escapeHtml={false}
+              renderers={{
+                link: props => {
+                  return <a href={props.href} className="text-blue-600 underline">{props.children}</a>;
+                }
+              }}
             />
-        </article>
+        </>
     )
 }
 

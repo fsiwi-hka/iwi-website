@@ -15,10 +15,10 @@ function Header({image, title, subtitle}) {
                     50%`,
                 backgroundSize: "cover"
             }}>
-            <h1 className="title">
+            <h1 className="text-6xl text-center text-white py-8 font-heading font-bold">
                 { title }
             </h1>
-            <p className="subtitle">
+            <p className="text-xl text-center text-white max-w-2xl">
                 { subtitle }
             </p>
         </header>

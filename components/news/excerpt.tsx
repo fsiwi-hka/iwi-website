@@ -15,13 +15,13 @@ function NewsExcerpt({
                     <a className="text-gray-500 no-underline">{ title }</a> 
                 </Link> 
             </h3>
-            <p className="meta text-gray-500 text-sm">
+            <p className="mb-4 text-gray-500 text-sm">
                 Am {DateFormatter.formatDate(date)} veröffentlicht von { author }
             </p>
             <p> 
                 { excerpt }&nbsp;
                 <Link as={`/news/${ slug }`} href="/news/[slug]">
-                    <a>Weiterlesen</a> 
+                    <a className="text-blue-600 underline">Weiterlesen</a> 
                 </Link>
             </p> 
         </div>

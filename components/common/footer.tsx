@@ -7,23 +7,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Footer() {
     return (
-        <footer className="container">
+        <footer className="w-full max-w-screen-lg mx-auto text-center text-gray-500 py-12">
             <div className="flex items-center justify-center">
-                <ul className="flex items-center justify-end">
+                <ul className="flex items-center justify-end list-none font-heading">
                     { socialIcon(faFacebook, '') }
                     { socialIcon(faTwitter, '') }
                 </ul>
                 <Link href="/"><a className="flex items-center justify-evenly mx-8" >
                     <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-32"/>
                 </a></Link>
-                <ul  className="flex items-center justify-start">
+                <ul  className="flex items-center justify-start list-none font-heading">
                     { socialIcon(faInstagram, '') }
                     { socialIcon(faDiscord, '') }
                 </ul>
             </div>
             <p className="copyright my-4">
                 &copy; { new Date().getFullYear() } Fachschaft IWI<br /> 
-                <Link href="/impressum"><a>Impressum</a></Link>
+                <Link href="/impressum"><a className="text-gray-500 no-underline">Impressum</a></Link>
             </p>
         </footer>
     )

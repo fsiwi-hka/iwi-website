@@ -5,7 +5,7 @@ import MarkdownLoader from '../components/util/markdown-loader'
 function Faq({ faq }) {
     return (
         <>
-            <h1>Was du wissen solltest</h1>
+            <h2>Was du wissen solltest</h2>
             <div className="grid grid-cols-3 gap-8">
                 {
                     faq.map((post) => ( 

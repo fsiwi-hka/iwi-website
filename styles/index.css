@@ -1,115 +1,64 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+
+/* We use Tailwind CSS in this project: https://tailwindcss.com/
+ * 
+ * Tailwind CSS strips all default design away from HTML elements
+ * and you have full control over their appearance by adding
+ * classes. See the Tailwind docs for a list of all the classes
+ * available.
+ *
+ *      You should avoid writing custom CSS rules here!
+ *
+ * The rules in this file are only for content coming out of
+ * Markdown files with no possibility to add classes intelligently.
+ */
+
 * {
     @apply font-light;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @apply font-heading font-bold;
+.main h2,
+.main h3,
+.main h4,
+.main h5,
+.main h6 {
+    @apply font-heading;
 }
 
-h1 {
-    @apply text-4xl leading-10 mt-8 mb-4;
+.main h2 {
+    @apply text-3xl leading-10 mt-6 mb-3 text-gray-700 font-bold;
 }
 
-h2 {
-    @apply text-3xl leading-10 mt-6 mb-3 text-gray-700
-}
-
-h3 {
+.main h3 {
     @apply text-2xl leading-9 mt-4 mb-2 text-gray-700;
 }
 
-h4 {
+.main h4 {
     @apply text-lg leading-8 mt-2 mb-1 text-gray-500;
 }
 
-a {
-    @apply text-blue-600 underline;
-}
-
-ul {
+.main ul {
     @apply list-disc list-inside my-8;
 }
 
-ol {
+.main ol {
     @apply list-decimal list-inside my-8;
 }
 
-table {
+.main table {
     @apply table-auto my-4;
     width: 100%;
 }
 
-th,
-td {
+.main th,
+.main td {
     @apply border border-gray-500;
 }
 
-.container {
-    @apply w-full max-w-screen-lg mx-auto;
-}
-
-.title {
-    @apply text-6xl text-center text-white py-8 font-heading font-bold;
-    line-height: 1.15;
-}
-
-.subtitle {
-    @apply text-xl text-center text-white max-w-2xl;
-}
-
-.faqtile a {
-    @apply text-white no-underline font-heading font-medium text-2xl;
-}
-
-footer {
-    @apply text-center text-gray-500 py-12;
-}
-
-footer ul {
-    @apply list-none font-heading;
-}
-
-article p,
-article li {
+.main p,
+.main li {
     @apply leading-8;
-}
-
-.meta {
-    @apply mb-4;
-}
-
-.meta span {
-    @apply mr-4 text-gray-700;
-}
-
-nav ul {
-    @apply flex list-none;
-}
-
-nav li {
-    @apply mr-6 font-heading font-medium;
-}
-
-nav a,
-footer ul a,
-.copyright a {
-    @apply text-gray-500 no-underline;
-}
-
-footer .fa {
-    @apply p-4 mx-2 bg-gray-500 text-white rounded-full text-center no-underline;
-    width: 50px;
-}
-
-footer .fa:hover {
-    opacity: 0.7;
 }
 
 @import "tailwindcss/utilities";

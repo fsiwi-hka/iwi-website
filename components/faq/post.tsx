@@ -6,18 +6,14 @@ function FaqPost({
     content
 }) {
     return ( 
-        <article>
-            <h1>{ title }</h1>
+        <>
+            <h2>{ title }</h2>
             <ReactMarkdown
               source={content}
               escapeHtml={false}
               renderers={{
                 link: props => {
-                  if (!props.href.startsWith('http')) {
-                     return props.href;
-                  }
-
-                  return <a href={props.href} rel="nofollow noreferrer noopener" target="_blank">{props.children}</a>;
+                  return <a href={props.href} className="text-blue-600 underline">{props.children}</a>;
                 }
               }}
             />
@@ -26,7 +22,7 @@ function FaqPost({
                 Zurück zur FAQ-Übersicht
               </button>
             </Link>
-        </article>
+        </>
     )
 }
 

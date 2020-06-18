@@ -8,26 +8,21 @@ function NewsPost({
     content
 }) {
     return ( 
-        <article>
-            <h1>{ title }</h1>
-            <p className="meta">
-                <span className="date">⏲ {DateFormatter.formatDate(date)}</span>
-                <span className="author">🖊 { author }</span>
+        <>
+            <h2>{ title }</h2>
+            <p className="mb-4 text-gray-500 text-sm">
+                Am {DateFormatter.formatDate(date)} veröffentlicht von { author }
             </p>
             <ReactMarkdown
               source={content}
               escapeHtml={false}
               renderers={{
                 link: props => {
-                  if (!props.href.startsWith('http')) {
-                     return props.href;
-                  }
-
-                  return <a href={props.href} rel="nofollow noreferrer noopener" target="_blank">{props.children}</a>;
+                  return <a href={props.href} className="text-blue-600 underline">{props.children}</a>;
                 }
               }}
             />
-        </article>
+        </>
     )
 }
 

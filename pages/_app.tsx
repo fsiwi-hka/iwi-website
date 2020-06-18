@@ -32,7 +32,7 @@ function IWIWebsite({ Component, pageProps }) {
 
           <Header {...pageProps.data.header} />
           
-          <section className="main container">
+          <section className="main w-full max-w-screen-lg mx-auto">
             <Component {...pageProps} />
           </section>
           

@@ -8,7 +8,7 @@ function FaqTile({
     return ( 
         <Link as={`/faq/${ slug }`} href="/faq/[slug]">
             <div
-                className="faqtile flex items-center flex-col justify-center cursor-pointer"
+                className="flex items-center flex-col justify-center cursor-pointer"
                 style={{
                     height: "300px",
                     background: `
@@ -19,7 +19,7 @@ function FaqTile({
                         no-repeat 50%`,
                     backgroundSize: "cover"
             }}>
-                <a className="text-center">{ title }</a> 
+                <a className="text-white no-underline font-heading font-medium text-2xl text-center">{ title }</a> 
             </div>
         </Link> 
     )
