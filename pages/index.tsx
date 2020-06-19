@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
         return data
     })(require.context('../content/news', true, /\.md$/))
 
-    const events = await getCalendarEvents()
+    const events = await getCalendarEvents('f229fvilfl8peun924t109pouo@group.calendar.google.com')
 
     return {
         props: {

@@ -10,7 +10,7 @@ import fs from 'fs';
  * with access to the Google Account of the "Fachschaft".
  * Anyone else will not be able to display events locally.
  */
-async function getCalendarEvents() {
+async function getCalendarEvents(calenderId) {
     // if the credentials file doesn't exist, we can't get events
     if(!credentialsFileExists()) return null
 
@@ -22,10 +22,7 @@ async function getCalendarEvents() {
     const calendar = google.calendar({version: 'v3', auth});
 
     const response = await calendar.events.list({
-        // This calendar id is public, so it's not as bad to have it
-        // in the source code. It can still be managed as an env var
-        // later, that would probably feel more correct.
-        calendarId: 'f229fvilfl8peun924t109pouo@group.calendar.google.com',
+        calendarId: calenderId,
         timeMin: (new Date()).toISOString(),
         maxResults: 9,
         singleEvents: true,

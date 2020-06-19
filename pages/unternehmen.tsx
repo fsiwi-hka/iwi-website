@@ -22,7 +22,9 @@ export default Page
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const markdown = await MarkdownLoader.single('pages', 'unternehmen')
-    const events = await getCalendarEvents()
+    // TODO this is currently the same calendar as on the homepage
+    // replace when a company calendar was created
+    const events = await getCalendarEvents('f229fvilfl8peun924t109pouo@group.calendar.google.com')
     return { 
         props: {
             content: markdown.content,
