@@ -29,7 +29,7 @@ MarkdownLoader.single = async (dir, slug) => {
      */
     delete data.orig
     
-    return { props: { ...data } }
+    return { ...data }
 }
 
 /* Returns an array of content elements from one

@@ -66,5 +66,11 @@ function renderContact(contact) {
 export default Page
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    return MarkdownLoader.single('pages', 'werwirsind')
+    const markdown = await MarkdownLoader.single('pages', 'werwirsind')
+    return { 
+        props: {
+            content: markdown.content,
+            data: markdown.data
+        }
+    }
 }

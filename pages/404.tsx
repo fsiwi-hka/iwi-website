@@ -14,5 +14,11 @@ function Page({content, data}) {
 export default Page
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    return MarkdownLoader.single('pages', '404')
+    const markdown = await MarkdownLoader.single('pages', '404')
+    return { 
+        props: {
+            content: markdown.content,
+            data: markdown.data
+        }
+    }
 }

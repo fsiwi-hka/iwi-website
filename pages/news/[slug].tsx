@@ -25,5 +25,11 @@ export async function getStaticPaths() {
   }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    return MarkdownLoader.single(contentDirectory, context.params.slug)
+    const markdown = await MarkdownLoader.single(contentDirectory, context.params.slug)
+    return { 
+        props: {
+            content: markdown.content,
+            data: markdown.data
+        }
+    }
 }
