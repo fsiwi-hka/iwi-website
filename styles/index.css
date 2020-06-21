@@ -61,4 +61,10 @@ li {
     @apply leading-6 mb-4;
 }
 
+h2:after {
+    content: "";
+    width: 10%;
+    @apply border-red-600 border-b-4 -ml-3 block;
+}
+
 @import "tailwindcss/utilities";
