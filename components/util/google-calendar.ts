@@ -61,9 +61,14 @@ function credentialsFileExists() {
  * In case you're not familiar with the functional notation
  * we use here, see this blog post:
  * https://medium.com/@captaindaylight/get-a-subset-of-an-object-9896148b9c72
+ * 
+ * Also, we check for an image that corresponds with the
+ * event ID. If it exists (either JPG or PNG), we append
+ * the image path.
  */
 function filterFields(events) {
     return events.map(event => {
+        var imagePath = imageForEventExists(event.id)
         return (
             ({
                 id,
@@ -71,19 +76,37 @@ function filterFields(events) {
                 summary,
                 description,
                 start,
-                end
+                end,
+                location
             }) => ({
                 id,
                 htmlLink,
                 summary,
                 // description is optional and must 
                 // be set to null if it's undefined
-                "description": description || null,
+                description: description || null,
                 start,
-                end
+                end,
+                // description is optional and must 
+                // be set to null if it's undefined
+                location: location  || null,
+                image: imagePath || null
             })
         )(event)
     })
+}
+
+function imageForEventExists(eventId) {
+    const pngPath = join(process.cwd(),'public/images/events/' + eventId + '.png')
+    const pngExists = fs.existsSync(pngPath)
+    
+    const jpgPath = join(process.cwd(),'public/images/events/' + eventId + '.jpg')
+    const jpgExists = fs.existsSync(jpgPath)
+    
+    if(pngExists) return '/images/events/' + eventId + '.png'
+    if(jpgExists) return '/images/events/' + eventId + '.jpg'
+
+    return undefined
 }
 
 export default getCalendarEvents

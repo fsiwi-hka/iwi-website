@@ -37,6 +37,7 @@ function displayEvents(events) {
                 <div className="w-1/3 px-4">
                     <Calendar
                         onChange={onDateChange}
+                        className="shadow-md"
                         value={selectedDate}
                         locale="de-DE"
                         minDetail="month"
