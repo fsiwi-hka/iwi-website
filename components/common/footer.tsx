@@ -32,7 +32,7 @@ function Footer() {
 
 function socialIcon(icon, href) {
     return (
-        <li className="text-4xl mx-4 text-red-600 cursor-pointer">
+        <li className="text-4xl mx-4 mb-0 text-red-600 cursor-pointer">
             <Link href={ href }>
                 <FontAwesomeIcon icon={ icon } />
             </Link>
