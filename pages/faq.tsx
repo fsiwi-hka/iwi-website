@@ -5,7 +5,8 @@ import MarkdownLoader from '../components/util/markdown-loader'
 function Faq({ faq }) {
     return (
         <>
-            <h2>Was du wissen solltest</h2>
+            <h2>Häufig gestellte Fragen &ndash; Beantwortet!</h2>
+            <p className="mb-8">Wähle einen für dich interessanten Themenbereich:</p>
             <div className="grid grid-cols-3 gap-8">
                 {
                     faq.map((post) => ( 
@@ -36,7 +37,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
             data: { 
                 title: 'FAQ',
                 header: {
-                    title: 'Was du wissen solltest',
+                    title: 'Wissenswertes',
                     subtitle: 'Häufig gestellte Fragen, beantwortet von deiner Fachschaft',
                     image: '/assets/backgrounds/faq.jpg'
                 } 

@@ -2,12 +2,10 @@ import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 
 function FaqPost({
-    title,
     content
 }) {
     return ( 
         <>
-            <h2>{ title }</h2>
             <ReactMarkdown
               source={content}
               escapeHtml={false}
