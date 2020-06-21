@@ -3,7 +3,7 @@ import Link from 'next/link'
 function Header({image, title, subtitle}) {
     return (
         <header
-            className="flex items-center flex-col justify-center mb-16"
+            className="flex items-center flex-col justify-center mb-16 bg-cover"
             style={{
                 height: "550px",
                 background: `linear-gradient(
@@ -12,8 +12,7 @@ function Header({image, title, subtitle}) {
                     ), 
                     url('${ image }') 
                     no-repeat
-                    50%`,
-                backgroundSize: "cover"
+                    50% / cover`
             }}>
             <h1 className="text-6xl text-center text-white py-8 font-heading font-bold max-w-4xl">
                 { title }
