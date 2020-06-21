@@ -1,4 +1,3 @@
-import DateFormatter from './../util/date-formatter'
 import Link from 'next/link'
 
 function NewsExcerpt({
@@ -15,9 +14,6 @@ function NewsExcerpt({
                     <a className="text-gray-600 no-underline">{ title }</a> 
                 </Link> 
             </h3>
-            <p className="text-gray-600 text-sm">
-                Am {DateFormatter.formatDate(date)} veröffentlicht von { author }
-            </p>
             <p className="mb-8"> 
                 { excerpt }&nbsp;
                 <Link as={`/news/${ slug }`} href="/news/[slug]">
