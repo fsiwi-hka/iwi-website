@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown'
-import Link from 'next/link'
+import BackButton from '../common/back-button'
 
 function FaqPost({
     content
@@ -15,11 +15,7 @@ function FaqPost({
                 }
               }}
             />
-            <Link href="/faq">
-              <button className="bg-blue-500 px-8 py-4 my-8 text-white">
-                Zurück zur FAQ-Übersicht
-              </button>
-            </Link>
+            <BackButton href='/faq' />
         </>
     )
 }
