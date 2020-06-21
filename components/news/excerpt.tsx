@@ -9,16 +9,16 @@ function NewsExcerpt({
     slug,
 }) {
     return ( 
-        <div>
+        <div className="w-10/12">
             <h3>
                 <Link as={`/news/${ slug }`} href="/news/[slug]">
-                    <a className="text-gray-500 no-underline">{ title }</a> 
+                    <a className="text-gray-600 no-underline">{ title }</a> 
                 </Link> 
             </h3>
-            <p className="mb-4 text-gray-500 text-sm">
+            <p className="text-gray-600 text-sm">
                 Am {DateFormatter.formatDate(date)} veröffentlicht von { author }
             </p>
-            <p> 
+            <p className="mb-8"> 
                 { excerpt }&nbsp;
                 <Link as={`/news/${ slug }`} href="/news/[slug]">
                     <a className="text-blue-600 underline">Weiterlesen</a> 

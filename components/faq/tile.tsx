@@ -19,7 +19,7 @@ function FaqTile({
                         no-repeat 50%`,
                     backgroundSize: "cover"
             }}>
-                <a className="text-white no-underline font-heading font-medium text-2xl text-center">{ title }</a> 
+                <a className="text-white no-underline font-heading font-medium text-3xl text-center px-2">{ title }</a> 
             </div>
         </Link> 
     )

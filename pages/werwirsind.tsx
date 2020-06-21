@@ -27,10 +27,10 @@ function renderGroups(groups) {
             <div>
                 { groupImage }
                 <h4>{ group.title }</h4>
-                <ul className="my-1">
+                <ul className="my-1 list-none">
                     {
                         group.people.map((person) => {
-                        return <li>{ person }</li>
+                        return <li className="leading-4">{ person }</li>
                         })
                     }
                 </ul>

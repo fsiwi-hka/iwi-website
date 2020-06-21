@@ -7,8 +7,8 @@ import getCalendarEvents from '../components/util/google-calendar'
 function Index({ news, events }) {
     return (
         <>
-            <h2>Ankündigungen und News</h2>
-            <div className="grid grid-cols-2 gap-8">
+            <h2>Ankündigungen</h2>
+            <div className="flex flex-col items-center">
                 {
                     news.map((post) => ( 
                         <NewsExcerpt 

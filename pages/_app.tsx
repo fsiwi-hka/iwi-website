@@ -22,7 +22,7 @@ function IWIWebsite({ Component, pageProps }) {
             <meta property="og:description" content={og ? og.description : `Die Website der Fachschaft IWI, Hochschule Karlsruhe (HKA)`} />
             <meta name="twitter:site" content="@fsi_hska" />
 
-            <link href="https://fonts.googleapis.com/css2?family=Muli:wght@700&family=Roboto:wght@300;500&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet"></link>
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" ></link>
 
             <title>{ title } | Fachschaft IWI</title>

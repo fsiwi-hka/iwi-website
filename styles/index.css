@@ -18,47 +18,47 @@
     @apply font-light;
 }
 
-.main h2,
-.main h3,
-.main h4,
-.main h5,
-.main h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     @apply font-heading;
 }
 
-.main h2 {
-    @apply text-3xl leading-10 mt-6 mb-3 text-gray-700 font-bold;
+h2 {
+    @apply text-3xl leading-10 mt-8 mb-4 text-gray-600 font-bold;
 }
 
-.main h3 {
-    @apply text-2xl leading-9 mt-4 mb-2 text-gray-700;
+h3 {
+    @apply text-2xl leading-9 mt-4 mb-2 text-gray-600 font-normal;
 }
 
-.main h4 {
-    @apply text-lg leading-8 mt-2 mb-1 text-gray-500;
+h4 {
+    @apply text-lg leading-8 mt-2 mb-1 text-gray-600;
 }
 
-.main ul {
+ul {
     @apply list-disc list-inside my-8;
 }
 
-.main ol {
+ol {
     @apply list-decimal list-inside my-8;
 }
 
-.main table {
+table {
     @apply table-auto my-4;
     width: 100%;
 }
 
-.main th,
-.main td {
+th,
+td {
     @apply border border-gray-500;
 }
 
-.main p,
-.main li {
-    @apply leading-8;
+p,
+li {
+    @apply leading-6 mb-4;
 }
 
 @import "tailwindcss/utilities";

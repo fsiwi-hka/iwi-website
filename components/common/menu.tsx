@@ -22,9 +22,9 @@ function Menu() {
 
 function menuItem(title, href) {
     return (
-        <li className="mr-6 font-heading font-medium">
+        <li className="mr-6">
             <Link href={ href }>
-                <a className="text-gray-500 no-underline">
+                <a className="text-gray-500 no-underline font-heading font-bold">
                     { title }
                 </a>
             </Link>
