@@ -5,11 +5,8 @@ header:
   subtitle: 'Euer direkter Draht zur Fachschaft, egal ob ihr Student/Studentin
 seid oder ein Unternehmen vertretet: Hier findet ihr die richtigen Ansprechpersonen.'
   image: '/assets/backgrounds/unternehmen.jpg'
-contact:
-  email: 'kontakt@hska.info'
-  phone: '+49 721 925-1449'
 ---
-## Anschrift
+## Kontakt und Anschrift
 
 ### Fachschaft IWI
 
@@ -17,11 +14,16 @@ Moltkestraße 30<br />
 76133 Karlsruhe<br />
 Raum E 012
 
+[icon:at|kontakt@hska.info](mailto:kontakt@hska.info)
+
+[icon:at|mail@wi-fachschaft.de](mailto:mail@wi-fachschaft.de)
+
+[icon:phone|+49 721 925-1449](tel:+497219251449)
+
 ## Sponsoring & Kooperation
 
 ### Fachschaft IWI
 
 Für Sponsoring und Kooperationsanfragen:
-[sponsoring@hska.info](mailto:sponsoring@hska.info)
 
-## Kontakt
+[icon:at|sponsoring@hska.info](mailto:sponsoring@hska.info)

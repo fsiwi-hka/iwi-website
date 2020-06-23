@@ -15,8 +15,9 @@ Vertreten durch: Simon Kienzler, Anja Buchmaier
 
 ### Kontakt
 
-Telefon: +49 721 925-1449<br />
-E-Mail: kontakt@hska.info
+[icon:at|kontakt@hska.info](mailto:kontakt@hska.info)
+
+[icon:phone|+49 721 925-1449](tel:+497219251449)
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
@@ -68,4 +69,4 @@ Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden
 Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte
 umgehend entfernen.
 
-**Quelle:** [e-recht24 Impressum-Generator](https://www.e-recht24.de/impressum-generator.html)
+[icon:link|Quelle: e-recht24 Impressum-Generator](https://www.e-recht24.de/impressum-generator.html)

@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Page({content, data}) {
     const groups = renderGroups(data.groups)
-    const contact = renderContact(data.contact)
     return (
         <>
             <h2>Wer sind wir?</h2>
@@ -14,10 +13,10 @@ function Page({content, data}) {
                 { groups }
             </div>
             <StaticPage
+                className=""
                 title={data.title}
                 content={content}
             />
-            { contact }
         </>
     )
 }
@@ -39,34 +38,6 @@ function renderGroups(groups) {
             </div>
         )
     })
-}
-
-function renderContact(contact) {
-    return (
-        <div className="mb-8">
-            <h3>{ contact.title }</h3>
-            <p className="text-2xl my-4">
-                <span className="font-light mx-4 text-red-600">
-                    <FontAwesomeIcon icon={ faAt } />
-                </span>
-                <a 
-                    className="text-gray-600 no-underline"
-                    href={"mailto:" + contact.email }>
-                        { contact.email }
-                </a>
-            </p>
-            <p className="text-2xl my-4">
-            <span className="mx-4 text-red-600">
-                    <FontAwesomeIcon icon={ faPhone } />
-                </span>
-                <a 
-                    className="text-gray-600 no-underline"
-                    href={"tel:" + contact.phone }>
-                        { contact.phone }
-                </a>
-            </p>
-        </div>
-    )
 }
 
 export default Page

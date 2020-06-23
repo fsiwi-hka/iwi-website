@@ -7,10 +7,6 @@ stellen uns auf dieser Seite mal vor. Hier findest du also Informationen zu uns
 und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und
 Anregungen? Für wir freuen uns auf deine Nachricht.'
   image: '/assets/backgrounds/fachschaft.jpg'
-contact:
-  title: 'Schreibt uns oder klingelt durch unter:'
-  email: 'kontakt@hska.info'
-  phone: '+49 721 925-1449'
 groups:
   - title: 'Vorstand'
     image: '/images/fachschaft/placeholder.png'
@@ -78,3 +74,9 @@ nur gerne an den Sitzungen teilnehmt oder euch aktiv um einen Aufgabenbereich
 kümmern wollt, ihr seid bei uns immer herzlich willkommen. Ein guter Anfang ist
 auf jeden Fall mittwochs im dritten Block (ab 11:30 Uhr) in den Sitzungen vorbei
 zu schauen.
+
+### Schreibt uns oder klingelt durch unter:
+
+[icon:at|kontakt@hska.info](mailto:kontakt@hska.info)
+
+[icon:phone|+49 721 925-1449](tel:+497219251449)

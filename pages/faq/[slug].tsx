@@ -10,6 +10,7 @@ const contentDirectory = 'faq'
 function Faq({content, data}) {
     return (
         <FaqPost
+            title={ data.title }
             content={content}
         />
     )

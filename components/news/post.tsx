@@ -1,5 +1,5 @@
-import ReactMarkdown from 'react-markdown'
 import DateFormatter from './../util/date-formatter'
+import StaticPage from '../static-page'
 
 function NewsPost({
     title,
@@ -13,15 +13,13 @@ function NewsPost({
             <p className="mb-4 text-gray-500 text-sm">
                 Am {DateFormatter.formatDate(date)} veröffentlicht von { author }
             </p>
-            <ReactMarkdown
-              source={content}
-              escapeHtml={false}
-              renderers={{
-                link: props => {
-                  return <a href={props.href} className="text-blue-600 underline">{props.children}</a>;
-                }
-              }}
-            />
+            <div className="flex flex-col items-center">
+                <StaticPage
+                    className="w-10/12"
+                    title={ title }
+                    content={content}
+                />
+            </div>
         </>
     )
 }
