@@ -39,26 +39,59 @@ h4 {
 }
 
 ul {
-    @apply list-disc list-inside my-8;
+    @apply list-disc list-inside my-4;
 }
 
 ol {
-    @apply list-decimal list-inside my-8;
+    @apply list-decimal list-inside my-4;
 }
 
 table {
-    @apply table-auto my-4;
+    @apply table-auto my-4 border-collapse;
     width: 100%;
+}
+
+th {
+    @apply font-heading text-blue-500 text-lg;
 }
 
 th,
 td {
-    @apply border border-gray-500;
+    @apply border border-gray-500 p-4;
 }
 
-p,
-li {
+table tr:first-child th {
+    @apply border-t-0;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+    @apply border-l-0;
+}
+
+table tr:last-child td {
+    @apply border-b-0;
+}
+
+table tr td:last-child,
+table tr th:last-child {
+    @apply border-r-0;
+}
+
+p {
     @apply leading-6 mb-4;
+}
+
+li {
+    @apply leading-6;
+}
+
+code {
+    @apply bg-blue-100 text-blue-500 p-1 text-sm;
+}
+
+pre {
+    @apply w-full bg-blue-100 p-2 my-4;
 }
 
 h2:after {
