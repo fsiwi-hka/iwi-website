@@ -1,6 +1,8 @@
 import EventContainer from './event-container'
 import Calendar from 'react-calendar'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
 /* The EventArea displays a Calendar on the left and,
  * depending on the selected date, single events on
@@ -99,7 +101,7 @@ function displayError() {
     return (
         <div className="bg-red-200 py-2">
             <p className="text-center my-4 text-red-700">
-                <span className="fa fa-exclamation-triangle"> </span><br />
+                <FontAwesomeIcon icon={ faExclamationTriangle } /><br />
                 Veranstaltungen konnten nicht geladen werden.
             </p>
             <p className="text-center my-4 text-gray-700 text-sm">

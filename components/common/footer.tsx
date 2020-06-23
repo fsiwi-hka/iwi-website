@@ -1,8 +1,5 @@
 import Link from 'next/link'
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { faDiscord } from "@fortawesome/free-brands-svg-icons"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faTwitter, faDiscord, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Footer() {
