@@ -13,14 +13,14 @@ import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
  * As we deal with React state here, this module has
  * a little more code compared to the others.
  */
-function EventArea({ events }) {
+function EventArea({ title, events }) {
     if (!events) {
         return displayError()
     }
-    return displayEvents(events)
+    return displayEvents(title, events)
 }
 
-function displayEvents(events) {
+function displayEvents(title, events) {
     // we're using React state to change displayed
     // events and the selected date dynamically
     const [eventsOnDate, setEvents] = useState([noEventsNotice()])
@@ -34,7 +34,7 @@ function displayEvents(events) {
 
     return (
         <>
-            <h2>Veranstaltungen</h2>
+            <h2>{ title }</h2>
             <div className="flex -mx-2 my-8">
                 <div className="w-1/3 px-4">
                     <Calendar
