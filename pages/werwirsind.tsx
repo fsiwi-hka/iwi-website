@@ -26,13 +26,13 @@ function renderGroups(groups) {
     return groups.map((group) => {
         const groupImage = group.image ? <img src={ group.image } alt={group.title} /> : null
         return (
-            <div>
+            <div key={group.title}>
                 { groupImage }
                 <h4>{ group.title }</h4>
                 <ul className="my-1 list-none">
                     {
                         group.people.map((person) => {
-                        return <li className="leading-4">{ person }</li>
+                        return <li className="leading-4" key={person}>{ person }</li>
                         })
                     }
                 </ul>
