@@ -5,6 +5,7 @@ import StaticPage from '../components/static-page'
 function Page({content, data}) {
     return (
         <StaticPage
+            className=""
             title={data.title}
             content={content}
         />
