@@ -4,9 +4,6 @@ header:
   title: 'Sponsoring & Kooperation'
   subtitle: 'Wir stehen im engen Kontakt zu Unternehmen in der Region.'
   image: '/assets/backgrounds/unternehmen.jpg'
-contact:
-  email: 'sponsoring@hska.info'
-  phone: '+49 721 925-1449'
 ---
 ## Sponsoring
 
@@ -47,5 +44,8 @@ Ländern und hat über 450 Millionen registrierte Spieler.
 Sie möchten mit uns in Kontakt treten, weil Sie auch einen Vortrag bei uns
 halten oder uns bei der nächsten Erstitasche sponsern möchten? Oder haben SIe
 Interesse an einer längeren Kooperation mit unserer Fachschaft Informatik &
-Wirtschaftsinformatik? Dann können SIe uns gerne über Mail oder Telefon
+Wirtschaftsinformatik? Dann können Sie uns gerne über Mail oder Telefon
 kontaktieren.
+
+[icon:at|sponsoring@hska.info](mailto:sponsoring@hska.info)
+[icon:phone|+49 721 925-1449](tel:+497219251449)
