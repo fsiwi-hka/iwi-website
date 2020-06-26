@@ -97,7 +97,7 @@ pre {
 h2:after {
     content: "";
     width: 10%;
-    @apply border-red-400 border-b-4 -ml-3 block;
+    @apply border-red-700 border-b-4 -ml-3 block;
 }
 
 @import "tailwindcss/utilities";

@@ -61,7 +61,7 @@ function intelligentLink(props) {
   return (
     <a 
       href={props.href}
-      className="flex text-red-400 text-2xl items-center cursor-pointer my-6"
+      className="flex text-red-700 text-2xl items-center cursor-pointer my-6"
     >
       <FontAwesomeIcon icon={ icon } />
       <span className="text-gray-700 text-xl ml-4">
