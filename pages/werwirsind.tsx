@@ -23,7 +23,12 @@ function Page({content, data}) {
 
 function renderGroups(groups) {
     return groups.map((group) => {
-        const groupImage = group.image ? <img src={ group.image } alt={group.title} /> : null
+        const groupImage = group.image
+            ? <img src={ group.image }
+                   alt={group.title}
+                   className="object-cover"
+                   style={{ width: '320px', height: '320px' }} />
+            : null
         return (
             <div key={group.title}>
                 { groupImage }
