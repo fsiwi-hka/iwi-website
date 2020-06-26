@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Link from "next/link"
+import { useRouter } from 'next/router'
 
 function Menu() {
     return (
@@ -21,8 +22,9 @@ function Menu() {
 }
 
 function menuItem(title, href) {
+    const classes = determineClasses(title, href)
     return (
-        <li className="mr-6 my-0">
+        <li className={classes}>
             <Link href={ href }>
                 <a className="text-gray-700 no-underline font-heading font-bold">
                     { title }
@@ -30,6 +32,21 @@ function menuItem(title, href) {
             </Link>
         </li>
     )
+}
+
+function determineClasses(title, href) {
+    // Using the router allows us to check which page
+    // we're on, so we can style the active link
+    const router = useRouter()
+    if(
+        router.pathname === href ||
+        router.pathname.startsWith(href) && href != "/" ||
+        router.pathname.startsWith("/news") && href === "/"
+    ) {
+        return "mr-6 my-0 active"
+    }
+    
+    return "mr-6 my-0"
 }
 
 export default Menu

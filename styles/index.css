@@ -104,4 +104,11 @@ h2:after {
     @apply border-red-700 border-b-4 -ml-3 block;
 }
 
+nav .active a:after {
+    content: "";
+    width: 30%;
+    min-width: 50px;
+    @apply border-red-700 border-b-4 block;
+}
+
 @import "tailwindcss/utilities";
