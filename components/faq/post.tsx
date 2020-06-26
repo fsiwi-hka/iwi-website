@@ -9,7 +9,7 @@ function FaqPost({
     return ( 
         <>
             <h2>{ title }</h2>
-            <div className="flex flex-col items-center">
+            <div className="faq-post flex flex-col items-center">
                 <StaticPage
                     className="w-10/12"
                     data={ title }

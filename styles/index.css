@@ -34,6 +34,10 @@ h3 {
     @apply text-2xl leading-9 mt-4 mb-2 text-gray-700 font-normal;
 }
 
+.faq-post h3 {
+    @apply mt-8;
+}
+
 h4 {
     @apply text-lg leading-8 mt-2 mb-1 text-gray-700;
 }
