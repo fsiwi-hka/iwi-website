@@ -37,6 +37,10 @@ Ländern und hat über 450 Millionen registrierte Spieler.
 
 </div>
 
+## Veranstaltungen von und mit Unternehmen
+
+{{EventArea}}
+
 ## Interesse an einer Kooperation / Sponsoring?
 
 ### Wir freuen uns auf Ihre Anfrage.

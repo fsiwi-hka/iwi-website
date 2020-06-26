@@ -22,8 +22,8 @@ function Index({ news, events }) {
                     ))
                 }
             </div>
+            <h2>Veranstaltungen</h2>
             <EventArea
-                title="Veranstaltungen"
                 events={ events }
             />
         </>

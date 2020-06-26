@@ -6,17 +6,13 @@ import getCalendarEvents from '../components/util/google-calendar'
 import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function Page({content, data, events}) {
+function Page({content, data}) {
     return (
         <>
             <StaticPage
                 className=""
-                title={data.title}
+                data={data}
                 content={content}
-            />
-            <EventArea
-                title="Veranstaltungen von &amp; mit Unternehmen" 
-                events={ events }
             />
         </>
     )
@@ -32,8 +28,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return { 
         props: {
             content: markdown.content,
-            data: markdown.data,
-            events
+            data: {
+                ...markdown.data,
+                events
+            }
         }
     }
 }

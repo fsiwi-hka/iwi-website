@@ -61,6 +61,10 @@ zwischen Studierenden und ProfessorInnen und vieles mehr.
 Sieben Studierende der Fachschaft IWI vertreten die Studierendeninteressen im
 Fakultätsrat.
 
+## Wer sind wir?
+
+{{Groups}}
+
 ## Hast du Fragen? Willst du Mitmachen?
 
 Habt ihr noch Fragen oder Anregungen? Dann schreibt uns doch an unsere Mail,

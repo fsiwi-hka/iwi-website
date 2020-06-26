@@ -8,7 +8,7 @@ function Page({content, data}) {
     return (
         <StaticPage
             className=""
-            title={data.title}
+            data={data}
             content={content}
         />
     )
