@@ -10,7 +10,7 @@ function NewsPost({
     return ( 
         <>
             <h2>{ title }</h2>
-            <p className="mb-4 text-gray-500 text-sm">
+            <p className="mb-4 text-gray-700 text-sm">
                 Am {DateFormatter.formatDate(date)} veröffentlicht von { author }
             </p>
             <div className="flex flex-col items-center">

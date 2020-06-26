@@ -27,15 +27,15 @@ h6 {
 }
 
 h2 {
-    @apply text-3xl leading-10 mt-8 mb-4 text-gray-600 font-bold;
+    @apply text-3xl leading-10 mt-8 mb-4 text-gray-700 font-bold;
 }
 
 h3 {
-    @apply text-2xl leading-9 mt-4 mb-2 text-gray-600 font-normal;
+    @apply text-2xl leading-9 mt-4 mb-2 text-gray-700 font-normal;
 }
 
 h4 {
-    @apply text-lg leading-8 mt-2 mb-1 text-gray-600;
+    @apply text-lg leading-8 mt-2 mb-1 text-gray-700;
 }
 
 ul {
@@ -52,12 +52,12 @@ table {
 }
 
 th {
-    @apply font-heading text-blue-500 text-lg;
+    @apply font-heading text-blue-700 text-lg;
 }
 
 th,
 td {
-    @apply border border-gray-500 p-4;
+    @apply border border-gray-700 p-4;
 }
 
 table tr:first-child th {
@@ -87,17 +87,17 @@ li {
 }
 
 code {
-    @apply bg-blue-100 text-blue-500 p-1 text-sm;
+    @apply bg-gray-700 text-gray-700 p-1 text-sm;
 }
 
 pre {
-    @apply w-full bg-blue-100 p-2 my-4;
+    @apply w-full bg-gray-700 p-2 my-4;
 }
 
 h2:after {
     content: "";
     width: 10%;
-    @apply border-red-600 border-b-4 -ml-3 block;
+    @apply border-red-400 border-b-4 -ml-3 block;
 }
 
 @import "tailwindcss/utilities";

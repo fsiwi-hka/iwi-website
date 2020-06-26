@@ -24,7 +24,7 @@ function menuItem(title, href) {
     return (
         <li className="mr-6 my-0">
             <Link href={ href }>
-                <a className="text-gray-500 no-underline font-heading font-bold">
+                <a className="text-gray-700 no-underline font-heading font-bold">
                     { title }
                 </a>
             </Link>

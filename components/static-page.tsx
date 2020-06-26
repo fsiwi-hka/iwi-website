@@ -34,7 +34,7 @@ function StaticPage({
  */
 function intelligentLink(props) {
   if(!props.children[0].props.value.includes('|')) {
-    return <a href={props.href} className="text-blue-600 underline">{props.children}</a>
+    return <a href={props.href} className="text-blue-700 underline">{props.children}</a>
   }
 
   const iconLink = props.children[0].props.value.split('|')
@@ -61,10 +61,10 @@ function intelligentLink(props) {
   return (
     <a 
       href={props.href}
-      className="flex text-red-600 text-2xl items-center cursor-pointer my-6"
+      className="flex text-red-400 text-2xl items-center cursor-pointer my-6"
     >
       <FontAwesomeIcon icon={ icon } />
-      <span className="text-gray-500 text-xl ml-4">
+      <span className="text-gray-700 text-xl ml-4">
         { iconLink[1] }
       </span>
     </a>

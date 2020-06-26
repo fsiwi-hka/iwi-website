@@ -99,8 +99,8 @@ function noEventsNotice() {
  */
 function displayError() {
     return (
-        <div className="bg-red-200 py-2">
-            <p className="text-center my-4 text-red-700">
+        <div className="bg-gray-700 py-2">
+            <p className="text-center my-4 text-red-400">
                 <FontAwesomeIcon icon={ faExclamationTriangle } /><br />
                 Veranstaltungen konnten nicht geladen werden.
             </p>

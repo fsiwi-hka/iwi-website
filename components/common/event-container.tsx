@@ -11,20 +11,20 @@ function EventContainer({event}) {
 
 function eventWithoutImage(event) {
     return (
-        <div key={event.id} className="mx-4 border-2 border-blue-600 text-center shadow-md" style={{ height: 'fit-content' }}> 
-            <p className="font-heading text-lg text-blue-600  my-2">
+        <div key={event.id} className="mx-4 border-2 border-blue-700 text-center shadow-md" style={{ height: 'fit-content' }}> 
+            <p className="font-heading text-lg text-blue-700  my-2">
                 { event.summary }
             </p>
             <p>{ event.description }</p>
-            <p><span className="font-heading text-blue-600">Wann:</span><br />
+            <p><span className="font-heading text-blue-700">Wann:</span><br />
                 { DateFormatter.formatDateTime(event.start.dateTime) } Uhr - <br />
                 { DateFormatter.formatDateTime(event.end.dateTime) } Uhr
             </p>
-            <p><span className="font-heading text-blue-600">Wo:</span><br />
+            <p><span className="font-heading text-blue-700">Wo:</span><br />
                 { event.location || "Keine Location angegeben" }
             </p>
             <p>
-                <a className="text-blue-600" href={ event.htmlLink }>Im Kalender öffnen</a>
+                <a className="text-blue-700" href={ event.htmlLink }>Im Kalender öffnen</a>
             </p>
         </div>
     )
@@ -43,7 +43,7 @@ function eventWithImage(event) {
                 { DateFormatter.formatDateTime(event.end.dateTime) } Uhr
             </p>
             <p>
-                <a className="text-blue-600" href={ event.htmlLink }>Im Kalender öffnen</a>
+                <a className="text-blue-700" href={ event.htmlLink }>Im Kalender öffnen</a>
             </p>
         </div>
     )
