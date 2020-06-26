@@ -8,10 +8,10 @@ function Menu() {
                 <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-24"/>
             </a></Link>
             <ul className="flex list-none">
-                { menuItem("Aktuell/Startseite","/") }
+                { menuItem("Aktuelles","/") }
                 { menuItem("Wer sind wir?","/werwirsind") }
                 { menuItem("Wissenswertes","/faq",) }
-                { menuItem("Kooperation & Sponsoring","/unternehmen",) }
+                { menuItem("Sponsoring & Kooperation","/unternehmen",) }
                 { menuItem("Kontakt","/kontakt",) }
             </ul>
             <Link href="/"><a>
