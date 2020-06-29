@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next'
 import MarkdownLoader from '../components/util/markdown-loader'
-import StaticPage from '../components/static-page'
+import StaticPage from '../components/common/static-page'
 
 function Page({content, data}) {
     return (

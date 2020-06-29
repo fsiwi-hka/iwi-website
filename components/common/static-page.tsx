@@ -1,8 +1,8 @@
 import ReactMarkdown from 'react-markdown/with-html'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faPhone, faAt, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import Groups from './common/groups'
-import EventArea from './common/event-area'
+import Groups from './groups'
+import EventArea from './event-area'
 
 /* The static page module became bigger as expected.
  * First, it was just a Wrapper for creating a Markdown

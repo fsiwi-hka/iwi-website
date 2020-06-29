@@ -1,5 +1,5 @@
-import DateFormatter from './../util/date-formatter'
-import StaticPage from '../static-page'
+import DateFormatter from '../util/date-formatter'
+import StaticPage from '../common/static-page'
 
 function NewsPost({
     title,

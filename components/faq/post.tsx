@@ -1,6 +1,5 @@
-import ReactMarkdown from 'react-markdown'
 import BackButton from '../common/back-button'
-import StaticPage from '../static-page'
+import StaticPage from '../common/static-page'
 
 function FaqPost({
     title,
