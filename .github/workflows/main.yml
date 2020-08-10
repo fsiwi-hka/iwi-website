@@ -14,16 +14,6 @@ jobs:
         node-version: '10.15.3'
     - run: npm install
     - run: npm run build
-      env:
-        gc_type: ${{ secrets.gc_type }}
-        gc_project_id: ${{ secrets.gc_project_id }}
-        gc_private_key_id: ${{ secrets.gc_private_key_id }}
-        gc_private_key: ${{ secrets.gc_private_key }}
-        gc_client_email: ${{ secrets.gc_client_email }}
-        gc_client_id: ${{ secrets.gc_client_id }}
-        gc_auth_uri: ${{ secrets.gc_auth_uri }}
-        gc_auth_provider_x509_cert_url: ${{ secrets.gc_auth_provider_x509_cert_url }}
-        gc_client_x509_cert_url: ${{ secrets.gc_client_x509_cert_url }}
     - name: Publish artifacts from out directory
       uses: actions/upload-artifact@v2
       with:

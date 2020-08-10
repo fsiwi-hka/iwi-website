@@ -9,7 +9,7 @@
         "init": "node scripts/init.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "next",
-        "build": "node scripts/init.js && next build && next export",
+        "build": "next build && next export",
         "start": "next start"
     },
     "repository": {
