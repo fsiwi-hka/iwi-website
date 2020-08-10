@@ -6,7 +6,6 @@
         "doc": "docs"
     },
     "scripts": {
-        "init": "node scripts/init.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "next",
         "build": "next build && next export",
