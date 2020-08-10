@@ -1,0 +1,51 @@
+name: Deploy Site to Server
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 4 * * *'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.15.3'
+    - run: ./scripts/decrypt_credentials.sh
+      env:
+        CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
+    - run: npm install
+    - run: npm run build
+    - name: Publish artifacts from out directory
+      uses: actions/upload-artifact@v2
+      with:
+        name: out
+        path: out
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-18.04
+    needs: [build]
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@master
+        with:
+          name: out
+          path: out
+      - name: Debug Files
+        run: ls
+      - name: Upload to FTP
+        uses: isthatcentered/dist-to-ftp@master
+        with:
+          user: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          host: ${{ secrets.ftp_host }}
+          port: ${{ secrets.ftp_port }} # optional, defaults to 21
+          path: out # Folder to deploy
+          into: . # Where to place the files in your ftp
+          cleanupExisting: true # (Optional), Remove already existing files inside destination folder
