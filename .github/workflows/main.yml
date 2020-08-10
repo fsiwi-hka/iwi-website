@@ -12,7 +12,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.15.3'
-    - run: ./.github/scripts/decrypt_secret.sh
+    - run: ./scripts/decrypt_secret.sh
       env:
         CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
     - run: npm install
