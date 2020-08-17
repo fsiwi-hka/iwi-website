@@ -47,5 +47,5 @@ jobs:
           host: ${{ secrets.ftp_host }}
           port: ${{ secrets.ftp_port }} # optional, defaults to 21
           path: out # Folder to deploy
-          into: . # Where to place the files in your ftp
+          into: . # Where to place the files in your ftp, "." means the root directory of the FTP user
           cleanupExisting: true # (Optional), Remove already existing files inside destination folder

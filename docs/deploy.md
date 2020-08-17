@@ -1,14 +1,50 @@
 # Deployment
 
-The deployment of the website to production is not yet final. Possible options
-include:
+The deployment of the website to production is done via FTP using
+**GitHub Actions**. (You can find the workflow file at
+[.github/workflows/main.yml](./../.github/workflows/main.yml)).
 
-* Building a container (e. g. based on NGINX) and serving it on a hoster that
-  supports container deployment
-* Building the website in CI and transferring the results to a webhoster via
-  FTP. (Updating needs to be addressed: The Next.js files will always have
-  different IDs, therefore will not be overwritten and clutter up the server.)
-* Serving the page as a GitHub or GitLab page if possible, with a custom domain
-  on top.
+## Triggers
 
-All these options need to be evaluated. IF you want to give it a try, go for it!
+The deployment is triggered every time a push to master occurs. This is usually
+done with a Merge Request. Also, we have a timer trigger to build the site every
+day at 4:00 am. This keeps our calendar events up-to-date.
+
+## Build Step
+
+### Preparations Concerning Sensitive Data
+
+For our [calender events](./calendar-events.md), we use a service account. The
+credentials of this service account have to remain secret, but are needed during
+build time. To solve this problem, we use an approach proposed by GitHub itself:
+[GPG encrypton of sensitive files](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#limits-for-secrets).
+The file containing the credentials is encrypted and placed in the repository
+root (see [credentials.json.gpg](./../credentials.json.gpg)). During a build,
+the [decrypt_credentials.sh](./../scripts/decrypt_credentials.sh) script is run.
+It uses a passphrase (injected as a environment variable) to decrypt the file.
+It is then available for the Next.JS build.
+
+### Building and Exporting the Website
+
+The site is built using the following command:
+
+```bash
+npm build
+```
+
+This in turn runs two Next.JS commands:
+
+```bash
+next build
+next export
+```
+
+After these build steps, the page is present in the `out` directory.
+
+### Deploy Step
+
+The second step imports the artifact produced by the build step and deploys the
+entire folder via FTP. Existing files are overwritten.
+
+The necessary credentials for the deployment are injected as environment
+variables.
