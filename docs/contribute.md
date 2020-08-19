@@ -7,13 +7,13 @@ technical details (see below).
 ## Be nice!
 
 We're students here, and some of us are beginners. Being nice and answering
-questions is an easy way to make everyone feel welcome and thus increasing the
+questions are an easy way to make everyone feel welcome and thus increasing the
 chances of motivated contributions to our website.
 
 ## Why English?
 
 We know, we're mostly non-native English speakers. Nonetheless, it's a public
-code repository and we want to include everyone. We feel like English ist the
+code repository and we want to include everyone. We feel like English is the
 best language to achieve this. You might want to consider it practice for
 yourself. Also: English is only mandatory in code, comments and docs. If you're
 working on content, this rule obviously doesn't apply. (However English versions
@@ -23,7 +23,7 @@ of e. g. news posts are of course highly appreciated!)
 
 ### For the First Time
 
-If you're a first time contributor, it's easiest to fork the repository, create
+If you're a first-time contributor, it's easiest to fork the repository, create
 a branch and then open a pull request in our main repository. if you don't know
 how this works, check out the following resources:
 
