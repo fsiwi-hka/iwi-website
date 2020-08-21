@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faPhone, faAt, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import Groups from './groups'
 import EventArea from './event-area'
+import {faDiscord} from "@fortawesome/free-brands-svg-icons";
 
 /* The static page module became bigger as expected.
  * First, it was just a Wrapper for creating a Markdown
@@ -152,6 +153,9 @@ function intelligentLink(props) {
       break
     case "icon:at":
       icon = faAt
+      break
+    case "icon:discord":
+      icon = faDiscord
       break
     default:
       icon = faLink

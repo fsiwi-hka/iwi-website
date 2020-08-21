@@ -23,7 +23,7 @@ Die Präsentation zum PO-Briefing findest du hier: [PO-Briefing-Folien]()
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere [FAQ-Seite](faq).
 
 Ansonsten erreichst du uns hier:
-[icon:dc|Discord-Server](https://discord.gg/Ud5KQnz)
+[icon:discord|Discord-Server](https://discord.gg/Ud5KQnz)
 [icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
 
 ## O-Phase
