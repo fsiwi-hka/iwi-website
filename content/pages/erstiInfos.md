@@ -5,7 +5,7 @@ header:
   subtitle: 'Du bist neue(r) Student(in), also Ersti, der Fakultät IWI?
   Dann bist du hier gold richtig.
   Hier findest du alle wichtigen Infos zu deinen ersten Tagen an der Hochschule.'
-  image: '/assets/backgrounds/kontakt.jpg'
+  image: '/assets/backgrounds/erstiInfos.jpg'
 ---
 Achtung:<br />
 Aufgrund des Corona Virus ist die O-Phase erst einmal verschoben.
