@@ -4,13 +4,11 @@ import StaticPage from '../components/common/static-page'
 
 function Page({content, data}) {
     return (
-        <>
             <StaticPage
                 className=""
                 content={content}
                 data={data}
             />
-        </>
     )
 }
 
