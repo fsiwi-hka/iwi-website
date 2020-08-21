@@ -13,12 +13,10 @@ Aufgrund des Corona Virus ist die O-Phase erst einmal verschoben. Ihr erhaltet v
 Hier geht's zu deinem [Programmiervorkurs](/).<br />
 Der findet immer in den 2 Wochen vor Vorlesungsbeginn statt. Genaueres findest du auf der Webseite dazu.
 
-Hier hast du gleich mal ein Sammlung der wichtigsten Infos für dein Studium:<br />
-<br /><span style="color:red">**TODO:** Ersti-Heft verlinken</span><br />
+Hier hast du gleich mal ein Sammlung der wichtigsten Infos für dein Studium: [Ersti-Heft]()
 Das Ersti-Heft bekommst du auch nochmal in ausgedruckter Form am Anfang deines Studiums. 
 
-Die Präsentation zum PO-Briefing findet ihr hier:<br />
-<br /><span style="color:red">**TODO:** PO-Briefingfolien verlinken</span><br />
+Die Präsentation zum PO-Briefing findet ihr hier: [PO-Briefing-Folien]()
 
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere [FAQ-Seite](faq).
 
@@ -37,13 +35,9 @@ Hinweis:<br />
 Hier seht ihr unseren vorläufigen Terminplan.<br />
 Beachtet bitte, dass sich die genaueren Planungen bis Anfang März hinziehen - es lohnt sich also, regelmäßig vorbeizuschauen.<br />
 Änderungen nach dem XX.XX.2020 sind fett hervorgehoben.
-<br /><span style="color:red">**TODO:** Datum setzen</span>
-
 
 Hinweis:<br />
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findet ihr unter [Immatrikulationsinfos](https://www.hs-karlsruhe.de/immatrikulationsinfos.html).
-
-<br /><span style="color:red">**TODO:** Tabelle aktualisieren</span><br />
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
