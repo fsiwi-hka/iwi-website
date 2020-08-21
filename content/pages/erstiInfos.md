@@ -15,7 +15,7 @@ Mehr Infos auf der Startseite.
 Hier geht's zu deinem [Programmiervorkurs](vorkurs).<br />
 Der findet immer in den 2 Wochen vor Vorlesungsbeginn statt. Genaueres findest du auf der Webseite dazu.
 
-Hier findest du ein Sammlung der wichtigsten Infos für dein Studium: [Ersti-Heft]()
+Hier findest du ein Sammlung der wichtigsten Infos für dein Studium: [Ersti-Heft]()<br />
 Das Ersti-Heft bekommst du auch nochmal in ausgedruckter Form am Anfang deines Studiums. 
 
 Die Präsentation zum PO-Briefing findest du hier: [PO-Briefing-Folien]()
@@ -27,7 +27,7 @@ Ansonsten erreichst du uns hier:
 [icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
 
 ## O-Phase
-Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg ins Studentenleben erleichtern sollen.
+Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg ins Studentenleben erleichtern sollen.<br />
 Organisiert werden sie von der Hochschule und von der Fachschaft Informatik.
 
 ### Terminplan
