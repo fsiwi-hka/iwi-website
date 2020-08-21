@@ -24,7 +24,7 @@ Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere [FAQ-Seite
 
 Ansonsten erreicht ihr uns hier:
 [icon:dc|Discord-Server](https://discord.gg/Ud5KQnz)
-[icon:at|kontakt@hska.info](kontakt@hska.info)
+[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
 
 
 ## O-Phase
