@@ -12,7 +12,7 @@ Aufgrund des Corona Virus ist die O-Phase erst einmal verschoben.
 Mehr Infos auf der Startseite.
 
 ## Allgemeines
-Hier geht's zu deinem [Programmiervorkurs]().<br />
+Hier geht's zu deinem [Programmiervorkurs](vorkurs).<br />
 Der findet immer in den 2 Wochen vor Vorlesungsbeginn statt. Genaueres findest du auf der Webseite dazu.
 
 Hier findest du ein Sammlung der wichtigsten Infos für dein Studium: [Ersti-Heft]()
