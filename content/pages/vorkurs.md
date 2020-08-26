@@ -67,14 +67,21 @@ Natürlich sind auch alle anderen (Medien-)Info-Erstis eingeladen, die ihre Kenn
 3. Nachmittags bekommst du Übungsaufgaben und wir unterstützen dich bei der Bearbeitung.
 
 ## Benötigte Software
-
+Informationen folgen
 
 ## Unterlagen
 ### Tag 1
+Informationen folgen
+
 ### Tag 2
+Informationen folgen
+
 ### Tag 3
+Informationen folgen
+
 ### Tag 4
+Informationen folgen
 
-
+## Mehr
 Weitere Übungsaufgaben, zusätzlich zum Programmiervorkurs, findest du auf der [Webseite der Freitagsrunde](https://wiki.freitagsrunde.org/Javakurs/%C3%9Cbungsaufgaben).
 
