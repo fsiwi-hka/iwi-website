@@ -48,7 +48,7 @@ Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du un
 ### Schlafplatz
 Falls du für die O-Phase einen Schlafplatz in Karlsruhe brauchst, melde dich einfach bei uns unter der folgenden Mail.<br />
 Sag uns, wer du bist und für wann du einen Schlafplatz benötigst.
-[icon:at|schnarch@hska.info](schnarch@hska.info)
+[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
 
 ## Mehr für Dich
 Es gibt einen Teil der Webseite die nur uns Studenten zugänglich ist.<br />
