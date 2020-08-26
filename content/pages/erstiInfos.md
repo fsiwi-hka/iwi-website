@@ -34,7 +34,6 @@ Organisiert werden sie von der Hochschule und von der Fachschaft Informatik.
 Hinweis:<br />
 Hier siehst du unseren vorläufigen Terminplan.<br />
 Beachte bitte, dass sich die genaueren Planungen noch hinziehen - es lohnt sich also, regelmäßig vorbeizuschauen.<br />
-Änderungen nach dem XX.XX.2020 sind fett hervorgehoben.
 
 Hinweis:<br />
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du unter [Immatrikulationsinfos](https://www.hs-karlsruhe.de/immatrikulationsinfos.html).
