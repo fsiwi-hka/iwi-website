@@ -18,7 +18,7 @@ So lässt sich das Gehörte leichter einordnen und behalten.
 Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge.<br />
 Natürlich sind auch alle anderen (Medien-)Info-Erstis eingeladen, die ihre Kenntnisse auffrischen wollen.
 
-<table>
+<table class="table-vertical">
     <tr>
         <td><b>Datum:</b></td>
         <td>21.09 - 25.09.2020</td>
