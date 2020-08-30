@@ -15,10 +15,12 @@ Mehr Infos auf der Startseite.
 Hier geht's zu deinem [Programmiervorkurs](vorkurs).<br />
 Der findet immer in den 2 Wochen vor Vorlesungsbeginn statt. Genaueres findest du auf der Webseite dazu.
 
-Hier findest du ein Sammlung der wichtigsten Infos für dein Studium: [Ersti-Heft]()<br />
+Hier findest du ein Sammlung der wichtigsten Infos für dein Studium: [Ersti-Heft](/assets/downloads/erstiheft_ss_2020.pdf)<br />
 Das Ersti-Heft bekommst du auch nochmal in ausgedruckter Form am Anfang deines Studiums. 
 
-Die Präsentation zum PO-Briefing findest du hier: [PO-Briefing-Folien]()
+Die Präsentation zum PO-Briefing findest du hier:
+- [PO-Briefing-Folien - Bachelor](/assets/downloads/po_briefing_bachelor_ss_2019.pdf)
+- [PO-Briefing-Folien - Master](/assets/downloads/po_briefing_master_ws_2019.pdf)
 
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere [FAQ-Seite](faq).
 
