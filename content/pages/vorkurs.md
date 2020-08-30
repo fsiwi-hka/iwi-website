@@ -20,23 +20,23 @@ Natürlich sind auch alle anderen (Medien-)Info-Erstis eingeladen, die ihre Kenn
 
 <table class="table-vertical">
     <tr>
-        <td><b>Datum:</b></td>
+        <th><b>Datum:</b></th>
         <td>21.09 - 25.09.2020</td>
     </tr>
     <tr>
-        <td><b>Ort:</b></td>
+        <th>Ort:</th>
         <td>online</td>
     </tr>
     <tr>
-        <td><b>Zugelassene Studiengänge:</b></td>
+        <th>Zugelassene Studiengänge:</th>
         <td>Informatik, Medieninformatik</td>
     </tr>
     <tr>
-        <td><b>Programmiersprache:</b></td>
+        <th>Programmiersprache:</th>
         <td>Java</td>
     </tr>
     <tr>
-        <td><b>Themen:</b></td>
+        <th>Themen:</th>
         <td>
             <ul>
                 <li>Variablen</li>
@@ -48,11 +48,11 @@ Natürlich sind auch alle anderen (Medien-)Info-Erstis eingeladen, die ihre Kenn
         </td>
     </tr>
     <tr>
-        <td><b>Benötigte Vorkenntnisse:</b></td>
+        <th>Benötigte Vorkenntnisse:</th>
         <td>keine</td>
     </tr>
     <tr>
-        <td><b>Kosten:</b></td>
+        <th>Kosten:</th>
         <td>kostenlos</td>
     </tr>
 </table>
