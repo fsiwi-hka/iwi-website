@@ -55,12 +55,11 @@ Natürlich sind auch alle anderen (Medien-)Info-Erstis eingeladen, die ihre Kenn
         <td><b>Kosten:</b></td>
         <td>kostenlos</td>
     </tr>
-    <tr>
-        <td><b>Anmeldung:</b></td>
-        <td>Sende eine E-Mail mit einer kurzen Nachricht und deinem Studiengang an <a href = "mailto: vorkurs@iwi-hka.de">vorkurs@iwi-hka.de</a>.</td>
-    </tr>
 </table>
 
+## Anmeldung
+Sende eine E-Mail mit einer kurzen Nachricht und deinem Studiengang an folgende E-Mail:
+[icon:at|vorkurs@iwi-hka.de](vorkurs@iwi-hka.de)
 ## Ablauf
 1. Morgens behandeln wir gemeinsam ein Thema.
 2. Mittagspause.
