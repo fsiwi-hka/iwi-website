@@ -59,6 +59,24 @@ th {
     @apply font-heading text-blue-700 text-lg;
 }
 
+.table-vertical td:first-child {
+    @apply font-heading text-blue-700 text-lg;
+}
+
+.table-vertical th {
+    text-align: left;
+}
+
+.table-vertical tr:first-child th,
+.table-vertical tr:first-child td {
+    @apply border-t-0;
+}
+
+.table-vertical tr:last-child th,
+.table-vertical tr:last-child td {
+    @apply border-b-0;
+}
+
 th,
 td {
     @apply border border-gray-700 p-4;

@@ -9,6 +9,7 @@ function Menu() {
             </a></Link>
             <ul className="flex list-none">
                 { menuItem("Aktuelles","/") }
+                { menuItem("Erstsemester","/erstiinfos") }
                 { menuItem("Wer sind wir?","/werwirsind") }
                 { menuItem("Wissenswertes","/faq",) }
                 { menuItem("Sponsoring & Kooperation","/unternehmen",) }
