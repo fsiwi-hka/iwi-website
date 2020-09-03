@@ -10,8 +10,8 @@ Hochschule zusammengestellt.'
 ### Achtung
 
 **Aufgrund der Auswirkungen des Corona-Virus' findet die O-Phase dieses Semester
-anders statt als in den bisherigen Semestern. Schaut regelmäßig auf dieser Seite
-vorbei, um kein Updates zu verpassen.**
+anders statt als in den bisherigen Semestern. Schau am Besten regelmäßig auf dieser Seite
+vorbei, um kein Update zu verpassen.**
 
 ## Allgemeines
 
@@ -47,7 +47,7 @@ Ansonsten erreichst du uns hier:
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule
-und von der Fachschaft Informatik.
+und von der Fachschaft Informatik und Wirtschaftinformatik.
 
 ### Terminplan
 
@@ -78,6 +78,6 @@ einen Schlafplatz benötigst.
 Es gibt einen Teil der Webseite die nur uns Studenten zugänglich ist. Da findest
 du weitere interessante Infos z.B. zum Bachelor, Master und Altklausuren.
 
-1. Wenn du deine Zugangsdaten von der Hochschule erhalten hast Registrierst du dich mit deiner Hochschul-E-Mail-Adresse auf der Webseite.
-2. Wir aus der Fachschaft überprüfen ob deine Hochschul-E-Mail-Adresse gültig ist und geben dir dann Zugriff.
+1. Wenn du deine Zugangsdaten von der Hochschule erhalten hast, registrierst du dich mit deiner Hochschul-E-Mail-Adresse auf der Webseite.
+2. Wir aus der Fachschaft überprüfen dann, ob deine Hochschul-E-Mail-Adresse gültig ist und geben dir Zugriff.
 3. Jetzt kannst du alle interessanten Infos auf der Webseite einsehen.
