@@ -9,7 +9,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-      // we set the lang attribute here for acessability
+      // we set the lang attribute here for acessibility
       <Html lang="de">
         <Head />
         <body>
