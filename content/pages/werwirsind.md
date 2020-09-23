@@ -68,7 +68,7 @@ Fakultätsrat.
 ## Hast du Fragen? Willst du Mitmachen?
 
 Habt ihr noch Fragen oder Anregungen? Dann schreibt uns doch an unsere Mail,
-klingelt bei uns durch oder kommt einfach in Raum E012 vorbei.
+klingelt bei uns durch oder kommt einfach in Raum E013 vorbei.
 
 Willst du bei uns mitmachen? Wir sind immer froh über engagierte Helferinnen und
 Helfer, die sich gerne für die Studierenden des Fachbereichs einsetzen wollen.

@@ -12,7 +12,7 @@ seid oder ein Unternehmen vertretet: Hier findet ihr die richtigen Ansprechperso
 
 Moltkestraße 30<br />
 76133 Karlsruhe<br />
-Raum E 012
+Raum E013
 
 [icon:at|kontakt@hska.info](mailto:kontakt@hska.info)
 
