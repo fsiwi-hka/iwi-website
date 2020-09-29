@@ -23,11 +23,11 @@ Seite.
 
 ### Ersti-Heft
 
-Hier findest du ein Sammlung der wichtigsten Infos für dein Studium:
+Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
 
 [icon:download|Download Ersti-Heft (PDF)](/assets/downloads/erstiheft_ss_2020.pdf)
 
-Das Ersti-Heft bekommst du auch nochmal in ausgedruckter Form am Anfang deines
+Das Ersti-Heft bekommst du auch nochmal auf deine Hochschulemail am Anfang deines
 Studiums.
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
@@ -51,19 +51,68 @@ und von der Fachschaft Informatik und Wirtschaftinformatik.
 
 ### Terminplan
 
-**Hinweis:** Hier siehst du unseren vorläufigen Terminplan. Beachte bitte, dass
+**Hinweis:** Hier siehst du unseren vorläufigen Terminplan. Da die Fakultäten Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase anbieten, sind hier zwei Terminpläne zu sehen. Beachte bitte, dass
 sich die genaueren Planungen noch hinziehen - es lohnt sich also, regelmäßig
 vorbeizuschauen.
+__Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 
-Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du
-unter [Immatrikulationsinfos](https://www.hs-karlsruhe.de/immatrikulationsinfos.html).
+
+**Informatik**
+
+>Die Raumaufteilungen hängen im Foyer aus.
+>
+>Die Links um Remote daran teilzunehmen, werden noch in der Tabelle hinzugefügt 
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Montag, 12.10.2020 | to be defined | to be defined | to be defined | to be defined | to be defined |
-| Dienstag, 13.10.2020 | to be defined | to be defined | to be defined | to be defined | to be defined |
-| Mittwoch, 14.10.2020 | to be defined | to be defined | to be defined | to be defined | to be defined |
+| Montag, 12.10.2020 | 08:30 - 10:00 | Hd | Begrüßung durch den stellvertretenden Dekan der Fakultät Informatik und Wirtschaftsinformatik.| Diese wird in drei Gruppen aufgeteilt und jeweils eine halbe Stunde gehen. | alle |
+|| 10:00 - 12:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | alle |
+|| 12:00 - 14:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Vorstellung der Fachschaft | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms.  | alle |
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
+| | 15:00 - 21:30 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Erstiabend | der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden a. 20 Personen stattfinden. Für Getränke und Spiele wird gesorgt :) Remotler können auch teilweise daran Teilnehmen, weitere Informationen dazu folgen noch. | alle |
+| Dienstag, 13.10.2020 | 09:00 - 11:30 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | ihr werdet hier in den Gruppen vom Vortag über den Campus laufen | Bachelor + hochschulfremde Master |
+| | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Begrüßung des Rektorats | | alle |
+| Mittwoch, 14.10.2020 | 09:00 - 15:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
+| Donnerstag, 15.10.2020 | 09:00 - 12:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Ersti-Frühstück | Leckerer Frühstücksmorgen mit den Professoren - mit einer abgepackten Brezel. Bringt bitte eure Getränke selbst mit. | alle |
+| | 12:00 - 14:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Organisation + Fragerunde | Hier könnt ihr nochmal Fragen stellen und es werden alle Organisatorischen Dinge für eure erste Vorlesungswoche erklärt | alle |
+| Freitag, 16.10.2020 | to be defined | to be defined | to be defined | to be defined | to be defined |
 | Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
+
+**Wirtschaftsinformatik**
+
+> Die Raumaufteilungen hängen im Foyer aus.</p>
+> 
+>Die Links um Remote daran teilzunehmen, werden noch in der Tabelle hinzugefügt
+
+| Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| Montag, 12.10.2020 | 08:30 - 10:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E | Begrüßung durch den stellvertretenden Dekan der Fakultät Informatik und Wirtschaftsinformatik.|  | alle |
+| | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | alle |
+| | 13:00 - 14:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung der Fachschaft | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms.  | alle |
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
+| | 15:00 - 21:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Erstiabend | der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden a. 20 Personen stattfinden. Für Getränke und Spiele wird gesorgt :) Remotler können auch teilweise daran Teilnehmen, weitere Informationen dazu folgen noch. | alle |
+| Dienstag, 13.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E | Vorkenntnistest  | to be defined | alle |
+| | 10:30 - 11:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Logik-/Knobelaufgaben | to be defined | alle |
+| | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Begrüßung des Rektorats | | alle |
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
+| | 15:00 - 18:00 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | ihr werdet hier in den Gruppen vom Vortag über den Campus laufen | Bachelor + hochschulfremde Master |
+| Mittwoch, 14.10.2020 | 09:00 - 14:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung PPS Lerntechniken + Ausland/ Fremdsprachen |  | alle|
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
+| | 15:00 - 18:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
+| Donnerstag, 15.10.2020 | 09:00 - 09:15 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | AA danach Ersti-Frühstück |  | alle|
+| | 09:15 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Ersti-Frühstück | Leckerer Frühstücksmorgen mit den Professoren - mit einer abgepackten Brezel. Bringt bitte eure Getränke selbst mit. | alle |
+| | 11:00 - 14:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Programmier-Workshop | | alle |
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
+| | 15:00 - 17:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Online Sprechstunde +  Aufgaben | | alle |
+| Freitag, 16.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Quizfragen zur Orga + Stundenplan |  | alle|
+| | 10:30 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung "Erfolgreich Starten" |  | alle|
+| | 11:00 - 12:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Weitere Organisation |  | alle|
+| | 13:00 - 16:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
+| Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
+
+
+Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du
+unter [Immatrikulationsinfos](https://www.hs-karlsruhe.de/immatrikulationsinfos.html).
 
 ### Schlafplatz
 
