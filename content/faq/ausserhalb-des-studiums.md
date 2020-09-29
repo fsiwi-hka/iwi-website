@@ -6,7 +6,7 @@ header:
   image: '/assets/backgrounds/freizeit.jpg'
 ---
 Ihr seid zum Studieren nach Karlsruhe gezogen und wollt wissen, welche Freizeitaktivitäten hier möglich sind? 
-Am Anfang des Sommersemesters könnt ihr euch für 8€ das Studierenden-Quartett in der hochschuleigenen Cafeteria im A-Gebäude holen. Kostenloser Kaffee, reduzierte (nicht)-alkoholische Getränke und vergünstigte Freizeitaktivitäten warten auf euch! Das Quartett ist für ein Jahr gültig. 
+Am Anfang des Sommersemesters könnt ihr euch für 8€ das Kneipen-Quartett in der hochschuleigenen Cafeteria im A-Gebäude holen. Kostenloser Kaffee, reduzierte (nicht)-alkoholische Getränke und vergünstigte Freizeitaktivitäten warten auf euch! Das Quartett ist für ein Jahr gültig. 
 Zudem gibt es hier weitere Anregungen. Nach Vorlage eures gültigen Studierendenausweises gibt es dabei oft Vergünstigungen für Studierende. 
 ### Schloss/Schlossgarten:
 Im Schloss ist das „Badische Landesmuseum“. Der dahinterliegende Schlossgarten ist ein beliebter Freizeit- und Erholungsort. 
