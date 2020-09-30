@@ -9,17 +9,14 @@ Anregungen? Für wir freuen uns auf deine Nachricht.'
   image: '/assets/backgrounds/fachschaft.jpg'
 groups:
   - title: 'Vorstand'
-    image: '/images/fachschaft/placeholder.png'
     people:
       - 'Zoe Kammerdiener (IITB)'
       - 'Daniel Baumgärtner (INFB)'
   - title: 'Senat'
-    image: '/images/fachschaft/placeholder.png'
     people:
       - 'Carolin Schild (INFB)'
       - 'Lukas Rilling (WIB)'
   - title: 'Fakultätsrat'
-    image: '/images/fachschaft/placeholder.png'
     people:
       - 'Zoe Kammerdiener (IITB)'
       - 'Daniel Baumgärtner (INFB)'
