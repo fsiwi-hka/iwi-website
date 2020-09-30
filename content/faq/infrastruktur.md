@@ -5,16 +5,15 @@ header:
   subtitle: 'Fragen und Antworten zum Thema'
   image: '/assets/backgrounds/infra.jpg'
 ---
-### Frage 1
+### Wie komme ich von der Hochschule aus ins Internet?
 
-Can't you just take a picture from the internet? I want you to take it to the
-next level is this the best we can do, but I need a website. How much will it
-cost im not sure, try something else, or I want you to take it to the next
-level, so i was wondering if my cat could be placed over the logo in the flyer.
+Im WLAN HsKA-8021x meldet ihr euch mit eurem IZ-Account an und müsst dann für Verbindungen ins Internet den Proxy oder den Socks-Proxy verwenden. Im WLAN HsKA-VPN ist statt der Anmeldung am WLAN eine VPN-Verbindung notwendig. 
+Außerdem gibt es KA-WLAN, aus diesem Netz hat du allerdings keinen Zugriff auf Dienste die nur innerhalb des HS-Netzes erreichbar sind. 
 
-### Frage 2
+### Wie ist die Adresse des Proxys?
+Für HTTP, HTTPS und FTP ist der Proxy: proxy.hs-karlsruhe.de Port 8888
+Der Socks Proxy ist: socks.hs-karlsruhe.de Port 1080 (eine Liste der zugelassenen Dienste findet sich im Flyer „IT-Dienste für Expertinnen und Experten“)
 
-Can't you just take a picture from the internet? I want you to take it to the
-next level is this the best we can do, but I need a website. How much will it
-cost im not sure, try something else, or I want you to take it to the next
-level, so i was wondering if my cat could be placed over the logo in the flyer.
+### Wie verhindere ich, dass Mails an die HS-Adresse verloren gehen?
+Das Greylisting des IZ wurde abgeschalten, somit sollten auch eMails von externen Adressen jetzt einfach weitergeleitet werden.
+
