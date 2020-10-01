@@ -1,33 +1,51 @@
-# This is a basic workflow to help you get started with Actions
+name: Deploy Site to Server
 
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - master
+  schedule:
+    - cron: '0 4 * * *'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    name: Build
+    runs-on: ubuntu-18.04
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.15.3'
+    - run: ./scripts/decrypt_credentials.sh
+      env:
+        CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
+    - run: npm install
+    - run: npm run build
+    - name: Publish artifacts from out directory
+      uses: actions/upload-artifact@v2
+      with:
+        name: out
+        path: out
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-18.04
+    needs: [build]
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@master
+        with:
+          name: out
+          path: out
+      - name: Debug Files
+        run: ls
+      - name: Upload to FTP
+        uses: isthatcentered/dist-to-ftp@master
+        with:
+          user: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          host: ${{ secrets.ftp_host }}
+          port: ${{ secrets.ftp_port }} # optional, defaults to 21
+          path: out # Folder to deploy
+          into: . # Where to place the files in your ftp, "." means the root directory of the FTP user
+          cleanupExisting: true # (Optional), Remove already existing files inside destination folder
