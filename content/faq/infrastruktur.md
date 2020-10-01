@@ -17,3 +17,7 @@ Der Socks Proxy ist: socks.hs-karlsruhe.de Port 1080 (eine Liste der zugelassene
 ### Wie verhindere ich, dass Mails an die HS-Adresse verloren gehen?
 Das Greylisting des IZ wurde abgeschalten, somit sollten auch eMails von externen Adressen jetzt einfach weitergeleitet werden.
 
+### Dienste der Hochschule
+Die Hochschule selbst bietet uns Studierenden verschiedene Dienste wie z.B. Poolräume und verschiedenste Software an. Verantwortlich dafür ist das Informationszentrum (IZ), auf dessen Website sich verschiedene Übersichten dieser Dienste befinden:
+ - [Dienste speziell für Studierende](https://www.hs-karlsruhe.de/iz/stud)
+ - [Übersicht über das gesamte Portfolio](https://www.hs-karlsruhe.de/servicekatalog)
