@@ -25,8 +25,8 @@ jobs:
     - name: Publish artifacts from out directory
       uses: actions/upload-artifact@v2
       with:
-        name: out
-        path: out
+        name: iwi-hka.de
+        path: iwi-hka.de
   deploy:
     name: Deploy
     runs-on: ubuntu-18.04
