@@ -40,12 +40,11 @@ jobs:
       - name: Debug Files
         run: ls
       - name: Upload to FTP
-        uses: isthatcentered/dist-to-ftp@master
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
-          user: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
-          host: ${{ secrets.ftp_host }}
-          port: ${{ secrets.ftp_port }} # optional, defaults to 21
-          path: out # Folder to deploy
-          into: . # Where to place the files in your ftp, "." means the root directory of the FTP user
-          cleanupExisting: true # (Optional), Remove already existing files inside destination folder
+          username: ${{ secrets.sftp_user }}
+          server: ${{ secrets.sftp_server}}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: out # Folder to deploy
+          remote_path: ${{ secrets.sftp_remote_path }}
+          args: '-o ConnectTimeout=5'
