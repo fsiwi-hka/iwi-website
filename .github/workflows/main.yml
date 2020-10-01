@@ -45,6 +45,6 @@ jobs:
           username: ${{ secrets.sftp_user }}
           server: ${{ secrets.sftp_server}}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: iwi-hka.de # Folder to deploy
+          local_path: out # Folder to deploy
           remote_path: ${{ secrets.sftp_remote_path }}
           args: '-o ConnectTimeout=5'
