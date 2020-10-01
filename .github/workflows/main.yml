@@ -35,8 +35,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@master
         with:
-          name: out
-          path: out
+          name: iwi-hka.de
+          path: iwi-hka.de
       - name: Debug Files
         run: ls
       - name: Upload to FTP
@@ -45,6 +45,6 @@ jobs:
           username: ${{ secrets.sftp_user }}
           server: ${{ secrets.sftp_server}}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: out # Folder to deploy
+          local_path: iwi-hka.de # Folder to deploy
           remote_path: ${{ secrets.sftp_remote_path }}
           args: '-o ConnectTimeout=5'
