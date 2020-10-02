@@ -3,9 +3,9 @@ title: 'Die Fachschaft IWI'
 header:
   title: 'Wir sind die Fachschaft IWI'
   subtitle: 'Hallo! Wir, die Fachschaft IWI (Informatik und Wirtschaftsinformatik),
-stellen uns auf dieser Seite mal vor. Hier findest du also Informationen zu uns
+stellen uns auf dieser Seite vor. Hier findest du also Informationen zu uns
 und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und
-Anregungen? Für wir freuen uns auf deine Nachricht.'
+Anregungen? Wir freuen uns auf deine Nachricht.'
   image: '/assets/backgrounds/fachschaft.jpg'
 groups:
   - title: 'Vorstand'
@@ -14,7 +14,7 @@ groups:
       - 'Daniel Baumgärtner (INFB)'
   - title: 'Senat'
     people:
-      - 'Carolin Schild (INFB)'
+      - 'Daniel Baumgärtner (INFB)'
       - 'Lukas Rilling (WIB)'
   - title: 'Fakultätsrat'
     people:
