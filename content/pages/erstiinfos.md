@@ -60,6 +60,7 @@ __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 
 
 **Informatik**
+__Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninformatik__
 
 >Die Raumaufteilungen hängen im Foyer aus.
 >
@@ -81,6 +82,7 @@ __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 | Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
 
 **Wirtschaftsinformatik**
+__Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business & Data Science__
 
 > Die Raumaufteilungen hängen im Foyer aus.</p>
 > 
