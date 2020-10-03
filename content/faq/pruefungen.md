@@ -5,39 +5,158 @@ header:
   subtitle: 'Fragen und Antworten zum Thema'
   image: '/assets/backgrounds/pruefungen.jpg'
 ---
-### Wo kann ich mich zu den Prüfungen anmelden?
+## Vorbereitung
+### Wo kann ich die aktuellen Prüfungsordnungen herunterladen?
 
-Can't you just take a picture from the internet? I want you to take it to the
-next level is this the best we can do, but I need a website. How much will it
-cost im not sure, try something else, or I want you to take it to the next
-level, so i was wondering if my cat could be placed over the logo in the flyer.
-Mmm, exactly like that, but different. Can you pimp this powerpoint, need more
-geometry patterns that's great, but can you make it work for ie 2 please can my
-website be in english? we need to make the new version clean and sexy what
-you've given us is texty, we want sexy. We try your eye, but can you change
-everything?. We are a startup. Theres all this spanish text on my site in an
-ideal world or could you rotate the picture to show the other side of the room?
-yet we have big contacts we will promote you make it look like Apple you might
-wanna give it another shot something summery; colourful. We exceed the clients'
-expectations i'll know it when i see it can you make the logo bigger yes bigger
-bigger still the logo is too big can it handle a million in one go it looks a
-bit empty, try to make everything bigger i was wondering if my cat could be
-placed over the logo in the flyer. Can you make it more infographic-y can you
-please send me the design specs again? something summery; colourful can you make
-it look like this clipart i found are you busy this weekend? I have a new
-project with a tight deadline. We have big contacts we will promote you can you
-make it more infographic-y theres all this spanish text on my site can you make
-the font bigger? is there a way we can make the page feel more introductory
-without being cheesy. Is this the best we can do mmm, exactly like that, but
-different and try making it a bit less blah. Submit your meaningless business
-jargon to be used on the site! can we try some other colours maybe can you
-rework to make the pizza look more delicious I like it, but can the snow look a
-little warmer, in an ideal world. Can we barter services?. Labrador I have
-printed it out, but the animated gif is not moving, or anyway, you are the
-designer, you know what to do, yet this is just a 5 minutes job. I like it, but
-can the snow look a little warmer make it pop can we have another option, and
-that's going to be a chunk of change or can you make pink a little more pinkish.
+Auf den Vorlesungsseiten der einzelnen Prüfungsordnungen (Bachelor PO4, Master PO4, Bachelor PO3) findest du die Prüfungsordnung jeweils oben zum Download. 
 
-### Wie melde ich mich für eine Wiederholugsprüfung an?
+### Welchen Taschenrechner darf ich verwenden?
 
-We need to make the new version clean and sexy. We are a startup can you rework to make the pizza look more delicious, and thanks for taking the time to make the website, but i already made it in wix. Can you make the font bigger? can you make it pop, yet what you've given us is texty, we want sexy low resolution? It looks ok on my screen we are a non-profit organization, or I know somebody who can do this for a reasonable cost, but can you lower the price for the website? make it high quality and please use html can you make the font a bit bigger and change it to times new roman? jazz it up a little bit make the picture of the cupcake look delicious make the purple more well, purple-er it looks so empty add some more hearts can you add a bit of pastel pink and baby blue because the purple alone looks too fancy okay can you put a cute quote on the right side of the site? oh no it looks messed up! i think we need to start from scratch. Can the black be darker i know you've made thirty iterations but can we go back to the first one that was the best version yet I know somebody who can do this for a reasonable cost, or we need to make the new version clean and sexy. Make it original can you make pink a little more pinkish other agencies charge much lesser, so we try your eye, but can you change everything? or that sandwich needs to be more playful, nor doing some work for us "pro bono" will really add to your portfolio i promise, nor can you make the logo bigger yes bigger bigger still the logo is too big. Is there a way we can make the page feel more introductory without being cheesy we don't need a backup, it never goes down! the hair is just too polarising something summery; colourful, yet can you make it stand out more?. I have an awesome idea for a startup, i need you to build it for me. Can you make the blue bluer? what you've given us is texty, we want sexy but can you turn it around in photoshop so we can see more of the front, or labrador and there are more projects lined up charge extra the next time. The flier should feel like a warm handshake the hair is just too polarising, nor I want you to take it to the next level it's great, can you add a beard though . Just do what you think. I trust you make it pop nor can you punch up the fun level on these icons. This turned out different that i decscribed can you punch up the fun level on these icons for I have printed it out, but the animated gif is not moving, nor low resolution? It looks ok on my screen. Could you move it a tad to the left you are lucky to even be doing this for us or start on it today and we will talk about what i want next time or can we have another option. Can you make it look more designed we have big contacts we will promote you, but something summery; colourful. Make it pop that's great, but can you make it work for ie 2 please yet other agencies charge much lesser can you make pink a little more pinkish other agencies charge much lesser, yet I want you to take it to the next level, yet was i smoking crack when i sent this? hahaha!. Try a more powerful colour. Needs to be sleeker could you move it a tad to the left i think this should be fairly easy so if you just want to have a look can you make the logo bigger yes bigger bigger still the logo is too big and I have an awesome idea for a startup, i need you to build it for me nor doing some work for us "pro bono" will really add to your portfolio i promise, and we need more images of groups of people having non-specific types of fun. Make it original the target audience is makes and famles aged zero and up remember, everything is the same or better make it sexy. The flier should feel like a warm handshake. Theres all this spanish text on my site. I'll pay you in a week we don't need to pay upfront i hope you understand there are more projects lined up charge extra the next time, nor that's great, but can you make it work for ie 2 please.
+In den meisten Klausuren dürft ihr keinen Taschenrechner verwenden.
+Für Mathe 2 gibt es im Ilias eine Liste der erlaubten Modelle.
+Für Technische Informatik ist einer der HEX rechnen kann sinnvoll.
+Das bisher von der Fachschaft empfohlene Modell (bis WS2015) wird leider nicht mehr produziert.
+
+
+## Noten
+### Zählen die Noten aus dem Grundstudium ins Bachelorzeugnis?
+
+Nein, die Noten des Grundstudiums zählen nicht fürs Bachelorzeugnis. Ihr bekommt nach Abschluss des Grundstudiums ein Bachelorvorzeugnis. In diesem sind die Noten des Grundstudiums aufgeführt und ihr Schnitt. Im Bachelorzeugnis taucht davon nichts mehr auf. 
+
+### Wie wird die Abschlussnote berechnet?
+
+Die Details zur Berechnung der Abschlussnote finden sich in der Studien- und Prüfungsordnung. Dort gibt es jeweils eine dem Hauptstudium zugeordnete Tabelle, in der die Gewichtung der einzelnen Module stehen. Außerdem haben wir hier Notenberechnungstools1):
+•	Notenberechnung Bachelor PO5/PO2
+•	Notenberechnung Master PO5
+Für alte Versionen der Prüfungsordnung: 
+•	Notenberechnung Bachelor PO4
+•	Notenberechnung Bachelor PO3
+•	Notenberechnung Master PO4
+
+### Wofür benötigt man das Bachelorvorzeugnis?
+
+Das Bachelorvorzeugnis ist kein akademischer Abschluss. Es wird oft verwendet, um sich zum Praxissemester zu bewerben. Es wird später nicht mehr benötigt. 
+
+
+## Studienablauf
+
+### Wie lange dauert das Grundstudium?
+
+Laut Prüfungsordnung umfasst das Grundstudium die ersten beiden Semester. Wenn du alle Prüfungen aus diesen Semestern bestanden hast, ist das Grundstudium abgeschlossen und du bekommt das Bachelorvorzeugnis. 
+
+### Wann darf ich welche Vorlesungen besuchen?
+
+Solange du noch mehr als 12 ECTS-Punkte aus dem Grundstudium offen hast, darfst du nur Vorlesungen aus dem Grundstudium sowie Labore aus dem dritten Semester besuchen. Fehlen dir weniger als 12 ECTS-Punkte aus dem Grundstudium, dann darfst du vor Abschluss des Praxissemesters alle Vorlesungen aus den Semestern drei und fünf sowie Wahlpflichtfächer besuchen. Nach dem Praxissemester gibt es keine Beschränkungen mehr, was den Besuch von Vorlesungen angeht. 
+
+### Muss ich einen Englischkurs besuchen?
+
+Ja, die Prüfungsordnung sieht im ersten Semester einen Englischkurs für Bachelorstudenten vor. Welchen Kurs du besuchst, hängt vom Ergebnis des verpflichtenden Einstufungstests ab. Auf freiwilliger Basis dürfen in den folgenden Semestern weitere Kurse besucht werden. Die Englischkurse werden in den Niveaustufen English for Careers in Technology 1, English for Careers in Technology 2 und Business bzw. (nach eigener Wahl) Technical English angeboten. 
+
+### Was passiert, wenn ich eine Klausur nicht bestanden habe?
+
+Kurze Antwort: Nichts. - Du musst im nächsten Semester nachschreiben.
+Lange Antwort: 
+
+1. Hat man eine Klausur zum 1. mal nicht bestanden, wird man gezwungen sie im nächsten Semester nochmal zu schreiben. (Es gibt keine separaten Nachschreibeklausuren.)
+
+2. Hat man eine Klausur zum 2. mal nicht bestanden, wird man formal exmatrikuliert und muss man einen Härtefallantrag stellen. Kein Problem, der Erste geht meistens durch. (siehe unten)
+
+3. Hat man die Klausur vorher schon nicht bestanden oder geschoben bekommt man eventuell Probleme mit Zeitüberschreitungen:
+•	Prüfungen aus dem Grundstudium wurden nicht rechtzeitig abgelegt: Für alle Prüfungen aus dem Grundstudium gilt, dass sie spätestens 2 Semester nach der in der PO vorgesehenen Zeit abgeschlossen sein müssen, d. h. dass die Prüfungen aus dem 1. Semester spätestens nach dem 3. Semester bestanden sein müssen, die aus dem 2. Semester spätestens nach dem 4. Semester
+•	Die Regelstudienzeit wurde überschritten: Das Hauptstudium muss spätestens 3 Semester nach der in der PO vorgesehenen Zeit abgeschlossen sein. Für den Bachelor bedeutet das, dass das Studium nach maximal 10 Semestern abgeschlossen sein muss.
+
+Auch in diesen Fällen wird ein Härtefallantrag fällig. 
+In all diesen Fällen gilt: Don't panic! Erst wenn eine Prüfungsleistung zum dritten Mal nicht bestanden wurde, kann das Studium nicht fortgesetzt werden. In jedem anderen Fall hat man die Möglichkeit, einen Härteantrag zu stellen. Zusammen mit der Exmatrikulation erhältst du ein Antragsformular und wirst außerdem aufgefordert, eine Begründung abzugeben, warum du den Prüfungsanspruch verloren hast. Diese Begründung sollte kurz und schlüssig sein und in einem formal korrekten Schreiben erläutert werden. Hast du Belege für die besonderen Umstände, die sich negativ auf deinen Studienverlauf ausgewirkt haben, dann biete an, diese bei Bedarf nachzureichen. Da es wichtig ist, eine gute Begründung abzugeben, solltest du dich in jedem Fall vorher mit dem AStA in Verbindung setzen. Dort wirst du beraten und bekommst Hilfe beim Verfassen eines solchen Begründungsschreibens. Außerdem kannst du dich natürlich gerne an die Fachschaft wenden. 
+
+### Was hat es mit "Härteanträgen" auf sich?
+
+Einen Härteantrag muss stellen, wer zwangsweise exmatrikuliert wurde. Für die Exmatrikulation kann es unterschiedliche Gründe geben: 
+
+1. Eine Prüfung wurde zum zweiten Mal nicht bestanden 
+2. Prüfungen aus dem Grundstudium wurden nicht rechtzeitig abgelegt: Für alle Prüfungen aus dem Grundstudium gilt nach PO 4, dass sie spätestens 2 Semester nach der in der PO vorgesehenen Zeit abgeschlossen sein müssen, d. h. dass die Prüfungen aus dem 1. Semester spätestens nach dem 3. Semester bestanden sein müssen, die aus dem 2. Semester spätestens nach dem 4. Semester 
+3. Die Regelstudienzeit wurde überschritten: Das Hauptstudium muss spätestens 3 Semester nach der in der PO vorgesehenen Zeit abgeschlossen sein. Für PO 4 Bachelor bedeutet das, dass das Studium nach maximal 10 Semestern abgeschlossen sein muss. 
+
+In all diesen Fällen gilt: Don't panic! Erst wenn eine Prüfungsleistung zum dritten Mal nicht bestanden wurde, kann das Studium nicht fortgesetzt werden. In jedem anderen Fall hat man die Möglichkeit, einen Härteantrag zu stellen. Zusammen mit der Exmatrikulation erhältst du ein Antragsformular und wirst außerdem aufgefordert, eine Begründung abzugeben, warum du den Prüfungsanspruch verloren hast. Diese Begründung sollte kurz und schlüssig sein und in einem formal korrekten Schreiben erläutert werden. Hast du Belege für die besonderen Umstände, die sich negativ auf deinen Studienverlauf ausgewirkt haben, dann biete an, diese bei Bedarf nachzureichen. Da es wichtig ist, eine gute Begründung abzugeben, solltest du dich in jedem Fall vorher mit dem AStA in Verbindung setzen. Dort wirst du beraten und bekommst Hilfe beim Verfassen eines solchen Begründungsschreibens. Außerdem kannst du dich natürlich gerne an die Fachschaft wenden. 
+
+### Wird die Projektarbeit benotet?
+
+Ja. Sowohl die Ausarbeitung als auch das Kolloquium am Ende werden benotet. Das Kolloquium ist eine mündliche Besprechung/Rechtfertigung/Verteidigung deiner Arbeit. 
+
+### Kann ich im Bachelor schon Vorlesungen aus dem Master machen?
+
+Ja. Details siehst du hier 
+
+
+## Praxissemester
+
+### Darf ich während des Praxissemesters Prüfungen schreiben?
+
+Man darf während des Praxissemesters bis zu zwei Prüfungen schreiben. Labore zählen in diesem Fall auch als eine Prüfung. 
+
+### Ich bin im Semester vor dem Praxissemester durch eine Klausur gefallen. Wenn ich mich entscheide, während des Praxissemesters eine Prüfung zu schreiben, muss das dann die sein, die ich nicht bestanden habe?
+
+Nein, Wiederholungsprüfungen müssen im Praxissemester nicht geschrieben werden. Da man die zugehörige Vorlesung nicht besuchen kann, wird sogar davon abgeraten. Man darf zwei beliebige Prüfungen während des Praxissemesters schreiben. Abzulegende Wiederholungsprüfungen werden erst im auf das Praxissemester folgenden Semester „fällig“. 
+
+### Wie und wann melde ich mich zum Praxissemester an?
+
+Der Zulassungsantrag zum Praxissemester erfolgt bis zum 15. Juli (WS) bzw. 10. Februar (SS) über das Intranet (nur aus dem Hochschulnetz/VPN erreichbar), zusammen mit den Ausbildungsbestimmungen, dem Ausbildungsvertrag und dem Ausbildungsplan. Den Antrag auf Zulassung sowie die anderen genannten Formulare findet man in der Praxisbörse. Dort sollte man rechtzeitig und regelmäßig vorbeischauen, um sich über mögliche Friständerungen und Ähnliches zu informieren. 
+
+### Wo finde ich Stellenangebote für das Praxissemester?
+
+In der Praxisbörse der Fakultät IWI sind entsprechende Angebote zu finden. Des weiteren kann man über die Stellenbörse der Hochschule Angebote für eine Praxissemesterstelle finden. Bei Fragen über ein Praxissemester im Ausland ist die Koordinierungsstelle für die Praktischen Studiensemester ein hilfreicher Ansprechpartner. Außerdem findet pro Semester mindestens eine Firmenkontaktmesse an der Hochschule statt, dies ist auch immer eine gute Möglichkeit nach einer Praxisstelle Ausschau zu halten. 
+
+### Wo finde ich Informationen zum Praxissemester, den Ausbildungsbestimmungen, Terminen und Fristen?
+
+Alle Informationen rund ums Praxissemester findet man in der Praxisbörse. Neben Stellenangeboten von Firmen gibt es dort auch alle Formulare, die man für die Anmeldung zum Praxissemester und die Anerkennung desselben benötigt. Überdies findet man Musterberichte, an denen man sich beim Schreiben des eigenen Praxissemesterberichts orientieren kann, und FAQs. 
+
+### Wie lange dauert das Praxissemesters?
+
+In der Regel dauert das Praxissemester sechs Monate. Offiziell vorgeschrieben sind 95 Präsenztage im Betrieb (Krankheits- und Urlaubstage nicht mitgezählt), andernfalls wird das Praxissemester nicht anerkannt. 
+
+### Was muss ich bei der Bewerbung beachten?
+
+Nicht vergessen, den Leiter des Praktikantenamts, Prof. Gremminger, über abgeschickte Bewerbungen zu informieren! 
+
+### Ich muss im dritten Semester noch Prüfungen aus dem Grundstudium schreiben. Kann ich mich trotzdem schon zum Praxissemester anmelden?
+
+Das Praxissemester kann erst angetreten werden, wenn das Grundstudium vollständig abgeschlossen ist. Einen Antrag auf Zulassung kann man aber auch dann stellen, wenn man in der Prüfungsphase vor Beginn des Praxissemesters noch Grundstudiumsklausuren schreibt. Besteht man diese, dann wird die Zulassung erteilt. Das Zwischenprüfungszeugnis kann in so einem Fall nachgereicht werden. 
+
+### Was für Löhne sind üblich?
+
+Schau auf unsere Wiki-Seite: https://www.hska.info/vorlesungen/unterlagen/praxistaetigkeit oder auch im Forum 
+
+
+## Prüfungsan- und -abmeldung
+
+### Wann und wie kann ich mich für Prüfungen anmelden?
+
+Die Prüfungsanmeldung erfolgt ausschließlich online. Vor dem Anmeldezeitraum bekommt ihr eine Erinnerungsmail und könnt euch dann während des angegebenen Zeitraums im Online-Service für Studierende für die Prüfungen anmelden. Für Pflichtprüfungen, das heißt für alle im jeweiligen Semester vorgesehenen Prüfungen in Pflichtfächern und für noch nicht abgelegte bzw. nicht bestandene Prüfungen aus vorherigen Semestern, seid ihr in der Regel automatisch angemeldet, es empfiehlt sich aber trotzdem, das noch einmal zu überprüfen. Für Sprachkursprüfungen und Wahlpflichtfächer müsst ihr euch in jedem Fall separat anmelden. 
+Zu beachten ist auch, dass ihr im Praxissemester nicht automatisch für Wiederholungsprüfungen angemeldet seid. Wollt ihr während dieses Semesters also Prüfungen schreiben, müsst ihr euch selbst anmelden. 
+
+### Wie kann ich mich für Labore anmelden?
+
+Die Anmeldung ist von Labor zu Labor unterschiedlich. Für die meisten Labore liegen Anmeldungslisten vor dem Sekretariat aus (manchmal bereits vor Vorlesungsbeginn), in einigen Fällen erfolgt die Anmeldung jedoch im Internet oder im Rahmen einer Informationsveranstaltung zum Labor. Einzelheiten erfahrt ihr in den entsprechenden Vorlesungen, manchmal hilft auch ein Blick aufs Schwarze Brett. 
+
+### Wie kann ich eine Prüfung schieben?
+
+Wenn es sich bei einer Prüfung nicht um eine Wiederholungsprüfung handelt, kann diese geschoben werden. Dabei ist allerdings darauf zu achten, dass Prüfungen aus dem Grundstudium jeweils spätestens zwei Semester nach dem laut der PO vorgesehenen Zeitraum bestanden sein müssen und dass die maximale Gesamtstudiendauer von 10 Semestern nicht überschritten werden darf. Wenn man sich während des Anmeldezeitraums dazu entschließt, eine Prüfung zu schieben, entfernt man einfach im Online-Service die entsprechende Prüfung aus der Anmeldeliste. Ist der Anmeldezeitraum bereits abgelaufen, muss man sich von der Prüfung abmelden. Dies ist bis zu einem ganzen Tag vor dem Prüfungstermin möglich. 
+
+### Wie kann ich mich von einer Prüfung abmelden?
+
+Auch das Abmelden von Prüfungen ist ausschließlich online möglich und zwar bis zu einem vollen Tag vor der Prüfung. (Auszug aus der PO: Die Abmeldung von Prüfungen muss so erfolgen, dass zwischen dem Tag der Abmeldung und dem Tag der Prüfung ein Kalendertag liegt.) Dies gilt nicht für Prüfungen, die im aktuellen Semester geschrieben werden müssen (Wiederholungsprüfungen, Prüfungen aus dem Grundstudium, die bereits zweimal geschoben wurden). 
+Vorsicht: Wenn jemand eine Prüfung, für die er angemeldet ist, ohne triftigen Grund versäumt, wird diese Prüfung mit „nicht ausreichend“ (5,0) bewertet. Stau, Straßenbahnausfälle oder Ähnliches sind KEINE triftigen Gründe! 
+
+### Was tun, wenn ich am Tag der Prüfung krank bin?
+
+Wenn ihr eine Prüfung wegen Krankheit nicht mitschreiben könnt, müsst ihr dies unverzüglich im Sekretariat mitteilen und sobald wie möglich ein ärztliches Attest vorlegen. 
+
+
+## Wahlpflichtfächer
+
+### Ab wann darf ich Wahlpflichtfächer besuchen?
+
+Wahlpflichtfächer dürfen nach Abschluss des Grundstudiums besucht werden. Eine Ausnahme bildet das Wahlpflichtfach „Teamteaching“, das schon ab dem zweiten Semester durch Tutortätigkeiten o.Ä. abgelegt werden kann. 
+
+### Was muss ich tun, damit die Fachprüfungen für die Wahlpflichtfächer ins Notenblatt eingetragen werden?
+
+Der Antrag auf Anerkennung von Wahlpflichfächern kann hier heruntergeladen werden werden. 
