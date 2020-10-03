@@ -8,15 +8,15 @@ function Footer() {
             <hr className="border-t-2 border-gray-400 my-3 w-1/2 m-auto" />
             <div className="flex items-center justify-center">
                 <ul className="flex items-center justify-end list-none font-heading">
-                    { socialIcon(faFacebook, '') }
-                    { socialIcon(faTwitter, '') }
+                    { socialIcon(faFacebook, 'https://de-de.facebook.com/HsKA.IWI') }
+                    { socialIcon(faTwitter, 'https://twitter.com/fsi_hska') }
                 </ul>
                 <Link href="/"><a className="flex items-center justify-evenly mx-8" >
                     <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-32"/>
                 </a></Link>
                 <ul  className="flex items-center justify-start list-none font-heading">
-                    { socialIcon(faInstagram, '') }
-                    { socialIcon(faDiscord, '') }
+                    { socialIcon(faInstagram, 'https://www.instagram.com/iwi_fachschaft/') }
+                    { socialIcon(faDiscord, 'https://discord.com/invite/Ud5KQnz') }
                 </ul>
             </div>
             <p className="copyright my-4">
@@ -30,9 +30,9 @@ function Footer() {
 function socialIcon(icon, href) {
     return (
         <li className="text-4xl mx-4 mb-0 text-red-700 cursor-pointer">
-            <Link href={ href }>
+            <a href={ href }>
                 <FontAwesomeIcon icon={ icon } />
-            </Link>
+            </a>
         </li>
     )
 }
