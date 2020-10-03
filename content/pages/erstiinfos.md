@@ -57,7 +57,7 @@ vorbeizuschauen.
 __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 
 
-**Informatik**
+**Informatik und Medieninformatik**
 
 >Die Raumaufteilungen hängen im Foyer aus.
 >
@@ -78,7 +78,7 @@ __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 | Freitag, 16.10.2020 | to be defined | to be defined | to be defined | to be defined | to be defined |
 | Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
 
-**Wirtschaftsinformatik**
+**Wirtschaftsinformatik, International IT Business und Data Science**
 
 > Die Raumaufteilungen hängen im Foyer aus.</p>
 > 
