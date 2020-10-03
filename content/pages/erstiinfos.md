@@ -112,7 +112,7 @@ __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 
 
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du
-unter [Immatrikulationsinfos](https://www.hs-karlsruhe.de/immatrikulationsinfos.html).
+unter [Immatrikulationsinfos](https://www.hs-karlsruhe.de/immatrikulationsinfos).
 
 ### Schlafplatz
 
