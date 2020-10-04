@@ -59,7 +59,7 @@ vorbeizuschauen.
 __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 
 
-**Informatik und Medieninformatik**
+#### Informatik und Medieninformatik
 
 __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninformatik__
 
@@ -82,7 +82,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 | Freitag, 16.10.2020 | to be defined | to be defined | to be defined | to be defined | to be defined |
 | Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
 
-**Wirtschaftsinformatik, International IT Business und Data Science**
+#### Wirtschaftsinformatik, International IT Business und Data Science 
 
 __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business & Data Science__
 
