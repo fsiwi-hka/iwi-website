@@ -48,6 +48,8 @@ Ansonsten erreichst du uns hier:
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule
 und von der Fachschaft Informatik und Wirtschaftinformatik.
+__Diese Pläne richten sich an alle Studenten der Bachelor Studiengänge Informatik, Medieninformatik, Wirtschaftsinformatik, Internationales IT Business und Data Science.
+Sowie für die Masterstudiengänge Wirtschaftsinformatik und Informatik.__
 
 ### Terminplan
 
@@ -59,13 +61,15 @@ __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 
 **Informatik**
 
+__Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninformatik__
+
 >Die Raumaufteilungen hängen im Foyer aus.
 >
 >Die Links um Remote daran teilzunehmen, werden noch in der Tabelle hinzugefügt 
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Montag, 12.10.2020 | 08:30 - 10:00 | Hd | Begrüßung durch den stellvertretenden Dekan der Fakultät Informatik und Wirtschaftsinformatik.| Diese wird in drei Gruppen aufgeteilt und jeweils eine halbe Stunde gehen. | alle |
+| Montag, 12.10.2020 | 08:30 - 10:00 | __Hb__ | Begrüßung durch den stellvertretenden Dekan der Fakultät Informatik und Wirtschaftsinformatik.| Diese wird in drei Gruppen aufgeteilt und jeweils eine halbe Stunde gehen. | alle |
 || 10:00 - 12:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | alle |
 || 12:00 - 14:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Vorstellung der Fachschaft | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms.  | alle |
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
@@ -79,6 +83,8 @@ __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 | Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
 
 **Wirtschaftsinformatik**
+
+__Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business & Data Science__
 
 > Die Raumaufteilungen hängen im Foyer aus.</p>
 > 
