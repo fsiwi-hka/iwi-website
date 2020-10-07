@@ -25,7 +25,7 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
 
-[icon:download|Download Ersti-Heft (PDF)](/public/assets/downloads/Erstiheft_IWI_WS20_21.pdf)
+[icon:download|Download Ersti-Heft (PDF)](/assets/downloads/Erstiheft_IWI_WS20_21.pdf)
 
 Das Ersti-Heft bekommst du auch nochmal auf deine Hochschulemail am Anfang deines
 Studiums.
@@ -71,7 +71,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Montag, 12.10.2020 | 08:30 - 10:00 | __Hörsaal Hb__ [icon:download|Hier ist der Lageplan!](https://www.hs-karlsruhe.de/fileadmin/media/maps/Gebaeudeplan_HsKA_A4-RGB.pdf)| Begrüßung Studiengangsleiter der Fakultät Informatik und Wirtschaftsinformatik der Fakultät Informatik und Wirtschaftsinformatik.| Diese wird in drei Gruppen aufgeteilt und jeweils eine halbe Stunde gehen. | alle |
+| Montag, 12.10.2020 | 08:30 - 10:00 | __Hörsaal Hb__ [Hier ist der Lageplan!](https://www.hs-karlsruhe.de/fileadmin/media/maps/Gebaeudeplan_HsKA_A4-RGB.pdf)| Begrüßung Studiengangsleiter der Fakultät Informatik und Wirtschaftsinformatik der Fakultät Informatik und Wirtschaftsinformatik.| Diese wird in drei Gruppen aufgeteilt und jeweils eine halbe Stunde gehen. | alle |
 || 10:00 - 13:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | alle |
 || 13:00 - 14:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Vorstellung der Fachschaft | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms.  | alle |
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
