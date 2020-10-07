@@ -25,7 +25,7 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
 
-[icon:download|Download Ersti-Heft (PDF)](/assets/downloads/Erstiheft_IWI_WS20_21.pdf)
+[icon:download|Download Ersti-Heft (PDF)](/assets/downloads/Erstiheft_IWI_WS_20_21.pdf)
 
 Das Ersti-Heft bekommst du auch nochmal auf deine Hochschulemail am Anfang deines
 Studiums.
