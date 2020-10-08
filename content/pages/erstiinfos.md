@@ -95,7 +95,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Inte
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Montag, 12.10.2020 | 08:30 - 10:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E | Begrüßung Studiengangsleiter der Fakultät Informatik und Wirtschaftsinformatik.|  | alle |
+| Montag, 12.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E__ | __Begrüßung Studiengangsleiter der Fakultät Informatik und Wirtschaftsinformatik__|  | __alle__ |
 | | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | alle |
 | | 13:00 - 14:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung der Fachschaft | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms.  | alle |
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
@@ -106,17 +106,17 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Inte
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
 | | 15:00 - 18:00 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | ihr werdet hier in den Gruppen vom Vortag über den Campus laufen | Bachelor + hochschulfremde Master |
 | Mittwoch, 14.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Einführungsveranstaltung WI__|  | alle|
-| | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung PBS Lerntechniken + Ausland/ Fremdsprachen |  | alle|
+| | __10:00 - 11:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Mruzeg-Vering__ |  | __Data Science__ |
+| | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __Vorstellung Nachhaltiges Lernen und Zeitmanagement / Lerntechniken__ |  | alle|
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
 | | 15:00 - 18:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
-| Donnerstag, 15.10.2020 | 09:00 - 09:15 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __AA (Auslandsamt)__ |  | alle|
-| | 09:15 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Ersti-Frühstück | Leckerer Frühstücksmorgen mit den Professoren - mit einer abgepackten Brezel. Bringt bitte eure Getränke selbst mit. | alle |
-| | 11:00 - 14:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Programmier-Workshop | | alle |
+| Donnerstag, 15.10.2020 | 09:00 - 09:15 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __Vorstellung Akademisches Auslandsamt__ |  | alle|
+| | 09:15 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Programmier-Workshop | | alle |
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
 | | 15:00 - 17:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Online Sprechstunde +  Aufgaben | | alle |
 | Freitag, 16.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Quizfragen zur Orga + Stundenplan |  | alle|
 | | 10:30 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung "Erfolgreich Starten" |  | alle|
-| | 11:00 - 12:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Weitere Organisation |  | alle|
+| | __11:00 - 13:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Wirth__ |  | __Data Science__ |
 | | 13:00 - 16:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
 | Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
 
