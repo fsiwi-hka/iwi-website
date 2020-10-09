@@ -81,7 +81,6 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 | Mittwoch, 14.10.2020 | 09:00 - 15:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
 | Donnerstag, 15.10.2020 | 09:00 - 12:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Ersti-Frühstück | Leckerer Frühstücksmorgen mit den Professoren - mit einer abgepackten Brezel. Bringt bitte eure Getränke selbst mit. | alle |
 | | 12:00 - 14:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Organisation + Fragerunde | Hier könnt ihr nochmal Fragen stellen und es werden alle Organisatorischen Dinge für eure erste Vorlesungswoche erklärt | alle |
-| Freitag, 16.10.2020 | to be defined | to be defined | to be defined | to be defined | to be defined |
 | Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
 
 <br></br>
@@ -95,30 +94,29 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Inte
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Montag, 12.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E__ | __Begrüßung Studiengangsleiter der Fakultät Informatik und Wirtschaftsinformatik__|  | __alle__ |
-| | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | alle |
-| | 13:00 - 14:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung der Fachschaft | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms.  | alle |
-| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
-| | 15:00 - 21:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Erstiabend | der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden a. 20 Personen stattfinden. Für Getränke und Spiele wird gesorgt :) Remotler können auch teilweise daran Teilnehmen, weitere Informationen dazu folgen noch. | alle |
-| Dienstag, 13.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E | Vorkenntnistest  | to be defined | alle |
-| | 10:30 - 11:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Logik-/Knobelaufgaben | to be defined | alle |
+| Montag, 12.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E__ | __Begrüßung Studiengangsleiter der Fakultät Informatik und Wirtschaftsinformatik__|  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 13:00 - 14:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung der Fachschaft | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms.  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 15:00 - 21:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Erstiabend | der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden a. 20 Personen stattfinden. Für Getränke und Spiele wird gesorgt :) Remotler können auch teilweise daran Teilnehmen, weitere Informationen dazu folgen noch. | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| Dienstag, 13.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E | Vorkenntnistest  | | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 10:30 - 11:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Logik-/Knobelaufgaben | | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
 | | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Begrüßung des Rektorats | | alle |
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
-| | 15:00 - 18:00 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | ihr werdet hier in den Gruppen vom Vortag über den Campus laufen | Bachelor + hochschulfremde Master |
-| Mittwoch, 14.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Einführungsveranstaltung WI__|  | alle|
+| | 15:00 - 18:00 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | ihr werdet hier in den Gruppen vom Vortag über den Campus laufen | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| Mittwoch, 14.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Einführungsveranstaltung WI__|  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
 | | __10:00 - 11:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Mruzeg-Vering__ |  | __Data Science__ |
-| | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __Vorstellung Nachhaltiges Lernen und Zeitmanagement / Lerntechniken__ |  | alle|
-| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
-| | 15:00 - 18:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
-| Donnerstag, 15.10.2020 | 09:00 - 09:15 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __Vorstellung Akademisches Auslandsamt__ |  | alle|
-| | 09:15 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Programmier-Workshop | | alle |
-| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
-| | 15:00 - 17:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Online Sprechstunde +  Aufgaben | | alle |
-| Freitag, 16.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Quizfragen zur Orga + Stundenplan |  | alle|
-| | 10:30 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung "Erfolgreich Starten" |  | alle|
+| | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __Vorstellung Nachhaltiges Lernen und Zeitmanagement / Lerntechniken__ |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 15:00 - 18:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | __alle auch MASTER WIRTSCHAFTSINFORMATIK__ |
+| Donnerstag, 15.10.2020 | 09:00 - 09:15 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __Vorstellung Akademisches Auslandsamt__ |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
+| | 09:15 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Programmier-Workshop | | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| | 15:00 - 17:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Online Sprechstunde +  Aufgaben | | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
+| Freitag, 16.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Quizfragen zur Orga + Stundenplan |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
+| | 10:30 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung "Erfolgreich Starten" |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
 | | __11:00 - 13:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Wirth__ |  | __Data Science__ |
-| | 13:00 - 16:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
-| Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
+| | 13:00 - 16:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | __alle auch MASTER WIRTSCHAFTSINFORMATIK__ |
 
 
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du
