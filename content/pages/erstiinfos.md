@@ -61,6 +61,7 @@ __Remote beduetet, dass ihr euch online einwählen könnt, wenn ihr nicht präse
 __Änderungen nach dem 30.09.20 sind fett hervorgehoben.__
 
 <br></br>
+
 #### Informatik und Medieninformatik
 
 __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninformatik__
@@ -85,6 +86,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 
 
 <br></br>
+
 #### Wirtschaftsinformatik, International IT Business und Data Science 
 
 __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business & Data Science__
@@ -133,7 +135,9 @@ einen Schlafplatz benötigst.
 [icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
 
 <br></br>
-###Englischkurs Anmeldung & Englischeinstufungstest
+
+### Englischkurs-Anmeldung & Englisch-Einstufungstest
+
 __WICHTIG!!__<br />
 __Diese Informationen betreffen nur den Studiengang Medieninformatik und Informatik Bachelor__<br />
 __Für die Studiengänge Wirtschaftsinformatik, Internationales IT Business und Data Science sind diese Informationen irrelevant__<br />
@@ -141,21 +145,31 @@ __Für die Studiengänge Wirtschaftsinformatik, Internationales IT Business und 
 #### Erklärvideo
 
 Hier findet ihr ihr den __Link zum Erklärvideo:__
-__https://drive.google.com/file/d/1ltFqP36muElBo3VZTe8R1olYkuXfijZE/view?usp=sharing__
+
+[icon:link|Erklärvideo zum Einstufungstest](https://drive.google.com/file/d/1ltFqP36muElBo3VZTe8R1olYkuXfijZE/view?usp=sharing)
 
 #### Link zum Einstufungstest
-Für den __Einstufungstest__ müsst ihr auf diese Website gehen:<br />
-__https://www.efset.org/de/__<br />
--> hier macht ihr bitte den 15 Minütigen Test. __GANZ WICHTIG! macht von eurem Testergebnis einen Screenshot!!__
+
+Für den __Einstufungstest__ müsst ihr auf diese Website gehen:
+
+[icon:link|Einstufungstest-Website](https://www.efset.org/de/)
+
+Hier macht ihr bitte den 15 Minütigen Test.
+
+__GANZ WICHTIG! macht von eurem Testergebnis einen Screenshot!!__
 
 #### Link zur Kursanmeldung
-Um euch für den Kurs anzumelden müsst ihr euch zunächst in eurem LSF anmelden:<br />
-__https://lsf.hs-karlsruhe.de/qisserver/rds?state=user&type=0__<br />
+
+Um euch für den Kurs anzumelden müsst ihr euch zunächst in eurem LSF anmelden:
+
+[icon:link|Kursanmeldung im LSF](https://lsf.hs-karlsruhe.de/qisserver/rds?state=user&type=0)
 
 Wo ihr euch dann für die __Kurse anmeldet,__ seht ihr in dem __Video__.
 
 #### Englisch anrechnen lassen ODER Probleme mit IZ Kennung
+
 __Wenn ihr ein Zertifikat habt mit einer Note für B2 oder C1 dann könnt ihr mit diesem Zertifikat bei uns ins Sekretariat:__<br />
+
 E Gebäude, Raum 208<br />
 Öffnungszeiten: Mo - Fr 09:00 - 13:00 Uhr<br />
 [icon:at|sekretariat.i.iwi@hs-karlsruhe.de](sekretariat.i.iwi@hs-karlsruhe.de)
