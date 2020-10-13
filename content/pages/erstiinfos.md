@@ -79,7 +79,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 | Dienstag, 13.10.2020 | 09:00 - 11:30 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | __Die Einführungsveranstaltung könnt ihr unter https://global.gotomeeting.com/join/847826061 verfolgen__ | Bachelor + hochschulfremde Master |
 | | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| __Begrüßung des Rektorats // Hier findet ihr den Link: https://www.youtube.com/watch?v=NNOX4IMOd2Q__ | | alle |
 | __12:00 - 12:30__ | __Einführung Englischeinstufungstest + Anmeldung__ | __Ihr bekommt über ein Meeting eine Anleitung wie ihr euch anmelden müsst und wie das mit dem Einstufungstest funktioniert__ | __Hier könnt ihr daran teilnehmen: https://www.gotomeet.me/ZoeKammerdiener__ | __Das Meeting wird aufgenommen und im anschluss hier auf der Seite hochgeladen__ | __Medieninformatik & Informatik Bachelor__ |
-| Mittwoch, 14.10.2020 | 09:00 - 15:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
+| Mittwoch, 14.10.2020 | __10:00 - 15:00__ | __Treffpunkt vor der Fachschaft  (E 013)__ | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
 | Donnerstag, 15.10.2020 | 09:00 - 12:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Ersti-Frühstück | Leckerer Frühstücksmorgen mit den Professoren - mit einer abgepackten Brezel. Bringt bitte eure Getränke selbst mit. | alle |
 | | 12:00 - 14:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Organisation + Fragerunde | Hier könnt ihr nochmal Fragen stellen und es werden alle Organisatorischen Dinge für eure erste Vorlesungswoche erklärt | alle |
 
@@ -106,7 +106,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Inte
 | | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| __Begrüßung des Rektorats // Hier findet ihr den Link: https://www.youtube.com/watch?v=NNOX4IMOd2Q__ | | alle |
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
 | | 15:00 - 18:00 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | ihr werdet hier in den Gruppen vom Vortag über den Campus laufen | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
-| Mittwoch, 14.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Einführungsveranstaltung WI__|  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
+| Mittwoch, 14.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Einführungsveranstaltung WI__| __Die Einführungsveranstaltung könnt ihr unter https://global.gotomeeting.com/join/847826061 verfolgen__ | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
 | | __10:00 - 11:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Mruzeg-Vering__ |  | __Data Science__ |
 | | 10:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | __Vorstellung Nachhaltiges Lernen und Zeitmanagement / Lerntechniken__ |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
@@ -134,9 +134,9 @@ einen Schlafplatz benötigst.
 
 <br></br>
 ###Englischkurs Anmeldung & Englischeinstufungstest
-__WICHTIG!!__
-__Diese Informationen betreffen nur den Studiengang Medieninformatik und Informatik Bachelor__
-__Für die Studiengänge Wirtschaftsinformatik, Internationales IT Business und Data Science sind diese Informationen irrelevant__
+__WICHTIG!!__<br />
+__Diese Informationen betreffen nur den Studiengang Medieninformatik und Informatik Bachelor__<br />
+__Für die Studiengänge Wirtschaftsinformatik, Internationales IT Business und Data Science sind diese Informationen irrelevant__<br />
 
 #### Erklärvideo
 
@@ -144,29 +144,29 @@ Hier findet ihr ihr den __Link zum Erklärvideo:__
 __https://drive.google.com/file/d/1ltFqP36muElBo3VZTe8R1olYkuXfijZE/view?usp=sharing__
 
 #### Link zum Einstufungstest
-Für den __Einstufungstest__ müsst ihr auf diese Website gehen:
-__https://www.efset.org/de/__
+Für den __Einstufungstest__ müsst ihr auf diese Website gehen:<br />
+__https://www.efset.org/de/__<br />
 -> hier macht ihr bitte den 15 Minütigen Test. __GANZ WICHTIG! macht von eurem Testergebnis einen Screenshot!!__
 
 #### Link zur Kursanmeldung
-Um euch für den Kurs anzumelden müsst ihr euch zunächst in eurem LSF anmelden:
-__https://lsf.hs-karlsruhe.de/qisserver/rds?state=user&type=0__
+Um euch für den Kurs anzumelden müsst ihr euch zunächst in eurem LSF anmelden:<br />
+__https://lsf.hs-karlsruhe.de/qisserver/rds?state=user&type=0__<br />
 
 Wo ihr euch dann für die __Kurse anmeldet,__ seht ihr in dem __Video__.
 
 #### Englisch anrechnen lassen ODER Probleme mit IZ Kennung
-__Wenn ihr ein Zertifikat habt mit einer Note für B2 oder C1 dann könnt ihr mit diesem Zertifikat bei uns ins Sekretariat:__
-E Gebäude, Raum 208
-Öffnungszeiten: Mo - Fr 09:00 - 13:00 Uhr
+__Wenn ihr ein Zertifikat habt mit einer Note für B2 oder C1 dann könnt ihr mit diesem Zertifikat bei uns ins Sekretariat:__<br />
+E Gebäude, Raum 208<br />
+Öffnungszeiten: Mo - Fr 09:00 - 13:00 Uhr<br />
 [icon:at|sekretariat.i.iwi@hs-karlsruhe.de](sekretariat.i.iwi@hs-karlsruhe.de)
-[icon:phone|+49(0)721 925-1508](+49(0)721 925-1508)
+[icon:phone|+49 721 925-1508](+49(0)721 925-1508)
 
-__Habt ihr Probleme mit eurer IZ Kennung und könnt euch nicht anmelden? Dann meldet euch beim IZ:__
-Montag - Freitag:
-08h -14h
-Gebäude LI Raum 133
-Moltkestr. 30, 76133 Karlsruhe
-[icon:phone|+49(0)721 925-2305](+49(0)721 925-2305)
+__Habt ihr Probleme mit eurer IZ Kennung und könnt euch nicht anmelden? Dann meldet euch beim IZ:__<br />
+Montag - Freitag:<br />
+08h -14h<br />
+Gebäude LI Raum 133<br />
+Moltkestr. 30, 76133 Karlsruhe<br />
+[icon:phone|+49 721 925-2305](+49(0)721 925-2305)
 [icon:at|iz-benutzerberatung@hs-karlsruhe.de](iz-benutzerberatung@hs-karlsruhe.de)
 
 #### Fragen?
