@@ -159,14 +159,14 @@ __Wenn ihr ein Zertifikat habt mit einer Note für B2 oder C1 dann könnt ihr mi
 E Gebäude, Raum 208<br />
 Öffnungszeiten: Mo - Fr 09:00 - 13:00 Uhr<br />
 [icon:at|sekretariat.i.iwi@hs-karlsruhe.de](sekretariat.i.iwi@hs-karlsruhe.de)
-[icon:phone|+49 721 925-1508](+49(0)721 925-1508)
+[icon:phone|+49 721 925-1508](tel:+497219251508)
 
 __Habt ihr Probleme mit eurer IZ Kennung und könnt euch nicht anmelden? Dann meldet euch beim IZ:__<br />
 Montag - Freitag:<br />
 08h -14h<br />
 Gebäude LI Raum 133<br />
 Moltkestr. 30, 76133 Karlsruhe<br />
-[icon:phone|+49 721 925-2305](+49(0)721 925-2305)
+[icon:phone|+49 721 925-2305](tel:+497219252305)
 [icon:at|iz-benutzerberatung@hs-karlsruhe.de](iz-benutzerberatung@hs-karlsruhe.de)
 
 #### Fragen?
