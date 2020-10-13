@@ -132,6 +132,47 @@ einen Schlafplatz benötigst.
 
 [icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
 
+<br></br>
+###Englischkurs Anmeldung & Englischeinstufungstest
+__WICHTIG!!__
+__Diese Informationen betreffen nur den Studiengang Medieninformatik und Informatik Bachelor__
+__Für die Studiengänge Wirtschaftsinformatik, Internationales IT Business und Data Science sind diese Informationen irrelevant__
+
+#### Erklärvideo
+
+Hier findet ihr ihr den __Link zum Erklärvideo:__
+__https://drive.google.com/file/d/1ltFqP36muElBo3VZTe8R1olYkuXfijZE/view?usp=sharing__
+
+#### Link zum Einstufungstest
+Für den __Einstufungstest__ müsst ihr auf diese Website gehen:
+__https://www.efset.org/de/__
+-> hier macht ihr bitte den 15 Minütigen Test. __GANZ WICHTIG! macht von eurem Testergebnis einen Screenshot!!__
+
+#### Link zur Kursanmeldung
+Um euch für den Kurs anzumelden müsst ihr euch zunächst in eurem LSF anmelden:
+__https://lsf.hs-karlsruhe.de/qisserver/rds?state=user&type=0__
+
+Wo ihr euch dann für die __Kurse anmeldet,__ seht ihr in dem __Video__.
+
+#### Englisch anrechnen lassen ODER Probleme mit IZ Kennung
+__Wenn ihr ein Zertifikat habt mit einer Note für B2 oder C1 dann könnt ihr mit diesem Zertifikat bei uns ins Sekretariat:__
+E Gebäude, Raum 208
+Öffnungszeiten: Mo - Fr 09:00 - 13:00 Uhr
+[icon:at|sekretariat.i.iwi@hs-karlsruhe.de](sekretariat.i.iwi@hs-karlsruhe.de)
+[icon:phone|+49(0)721 925-1508](+49(0)721 925-1508)
+
+__Habt ihr Probleme mit eurer IZ Kennung und könnt euch nicht anmelden? Dann meldet euch beim IZ:__
+Montag - Freitag:
+08h -14h
+Gebäude LI Raum 133
+Moltkestr. 30, 76133 Karlsruhe
+[icon:phone|+49(0)721 925-2305](+49(0)721 925-2305)
+[icon:at|iz-benutzerberatung@hs-karlsruhe.de](iz-benutzerberatung@hs-karlsruhe.de)
+
+#### Fragen?
+Habt ihr noch Fragen oder Probleme? Dann meldet euch in der What's App Gruppe oder schreibt eine Mail an 
+[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
+
 <!--## Mehr für Dich -->
 
 <!--Es gibt einen Teil der Webseite die nur uns Studenten zugänglich ist. Da findest
