@@ -77,11 +77,12 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 || __15:00 - 16:00__ | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. __Ihr könnt euch über GoToMeeting dazu einwählen: https://global.gotomeeting.com/join/607058301 // Oder per Telefon Deutschland: +49 891 2140 2090__ | alle |
 | | __16:00 - 21:30__ | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Erstiabend | __der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden a. 20 Personen stattfinden. Für Getränke und Spiele wird gesorgt :) Remotler können auch teilweise daran Teilnehmen, hier über Discord könnt ihr euch einwählen: https://discord.gg/mkDpZPQ__ | alle |
 | Dienstag, 13.10.2020 | 09:00 - 11:30 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | __Die Einführungsveranstaltung könnt ihr unter https://global.gotomeeting.com/join/847826061 verfolgen__ | Bachelor + hochschulfremde Master |
-| | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Begrüßung des Rektorats | | alle |
+| | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| __Begrüßung des Rektorats // Hier findet ihr den Link: https://www.youtube.com/watch?v=NNOX4IMOd2Q__ | | alle |
+| __13:00 - 13:30__ | __Einführung Englischeinstufungstest + Anmeldung__ | __Ihr bekommt über ein Meeting eine Anleitung wie ihr euch anmelden müsst und wie das mit dem Einstufungstest funktioniert__ | __Hier könnt ihr daran teilnehmen: https://www.gotomeet.me/ZoeKammerdiener__ | __Das Meeting wird aufgenommen und im anschluss hier auf der Seite hochgeladen__ | __Medieninformatik & Informatik Bachelor__ |
 | Mittwoch, 14.10.2020 | 09:00 - 15:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | alle |
 | Donnerstag, 15.10.2020 | 09:00 - 12:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Ersti-Frühstück | Leckerer Frühstücksmorgen mit den Professoren - mit einer abgepackten Brezel. Bringt bitte eure Getränke selbst mit. | alle |
 | | 12:00 - 14:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote | Organisation + Fragerunde | Hier könnt ihr nochmal Fragen stellen und es werden alle Organisatorischen Dinge für eure erste Vorlesungswoche erklärt | alle |
-| Englisch-Einstufungs-Tests | to be defined | to be defined | to be defined | to be defined | to be defined |
+
 
 <br></br>
 #### Wirtschaftsinformatik, International IT Business und Data Science 
@@ -102,7 +103,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Inte
 | | __16:00 - 21:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Erstiabend | __der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden a. 20 Personen stattfinden. Für Getränke und Spiele wird gesorgt :) Remotler können auch teilweise daran Teilnehmen, hier über Discord könnt ihr euch einwählen: https://discord.gg/mkDpZPQ__ | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
 | Dienstag, 13.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E | Vorkenntnistest  | | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
 | | 10:30 - 11:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Logik-/Knobelaufgaben | | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
-| | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Begrüßung des Rektorats | | alle |
+| | 11:30 - 12:00 | Aula im Gebäude A + In den Räumen im 2. und 3. Stock im Gebäude E + Remote| __Begrüßung des Rektorats // Hier findet ihr den Link: https://www.youtube.com/watch?v=NNOX4IMOd2Q__ | | alle |
 | | 14:00 - 15:00 |  | Mittagspause | Ihr könnt in die Stadt oder Cafeteria gehen und dort etwas essen gehen. | alle |
 | | 15:00 - 18:00 | Fachschaft  (E 013) + Remote | Campusrundgang in kleinen Gruppen | ihr werdet hier in den Gruppen vom Vortag über den Campus laufen | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
 | Mittwoch, 14.10.2020 | __09:00 - 10:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Einführungsveranstaltung WI__|  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
