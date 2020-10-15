@@ -119,8 +119,8 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Inte
 | | 15:00 - 17:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Online Sprechstunde +  Aufgaben | | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__ |
 | Freitag, 16.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Quizfragen zur Orga + Stundenplan |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
 | | 10:30 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung "Erfolgreich Starten" |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
-| | __11:00 - 13:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Wirth__ |  | __Data Science__ |
-| | 13:00 - 16:00 | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen | __alle auch MASTER WIRTSCHAFTSINFORMATIK__ |
+| | __11:00 - 11:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Wirth__ |  | __Data Science__ |
+| | __11:30 - 17:00__ | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen __dies gilt für die Räume 003, 004, 103, 104 und die Master Studenten__ | __Räume 003, 004, 103, 104 auch MASTER WIRTSCHAFTSINFORMATIK__ |
 
 
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du
