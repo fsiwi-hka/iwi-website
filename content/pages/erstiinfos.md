@@ -7,6 +7,9 @@ du hier goldrichtig. Wir haben dir alle wichtigen Infos zu deinen ersten Tagen a
 Hochschule zusammengestellt.'
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
+
+### WIR WÜNSCHEN EUCH ALLEN EINEN SCHÖNEN START INS SEMESTER UND HOFFEN EUCH HAT DIE O-PHASE GEFALLEN!!!
+
 ### Achtung
 
 **Aufgrund der Auswirkungen des Corona-Virus' findet die O-Phase dieses Semester
@@ -120,7 +123,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Inte
 | Freitag, 16.10.2020 | 09:00 - 10:30 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Quizfragen zur Orga + Stundenplan |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
 | | 10:30 - 11:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Vorstellung "Erfolgreich Starten" |  | __Bachelor Wirtschaftsinformatik, Internationales IT Business & Data Science__|
 | | __11:00 - 11:00__ | __In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote__ | __Data Science: Vorstellung Wirth__ |  | __Data Science__ |
-| | __11:30 - 17:00__ | Fachschaft  (E 013) | Ralley | hier werdet Ihr in den Gruppen gemeinsam durch die Stadt und den Schlossgarten von Karlsruhe laufen __dies gilt für die Räume 003, 004, 103, 104 und die Master Studenten__ | __Räume 003, 004, 103, 104 auch MASTER WIRTSCHAFTSINFORMATIK__ |
+| | __11:30 - 17:00__ | __ABGESAGT__ | Ralley | __ES TUT UNS LEID, WIR MÜSSEN DIE RALLYE AUFGRUND DER AKTUELLEN CORONA-ZAHLEN LEIDER ABSAGEN!! WIR WÜNSCHEN EUCH ALLEN TROTZDEM EINEN SCHÖNEN START INS SEMESTER UND HOFFEN EUCH HAT DIE O-PHASE GEFALLEN // dies gilt für die Räume 003, 004, 103, 104 und die Master Studenten__ | __Räume 003, 004, 103, 104 auch MASTER WIRTSCHAFTSINFORMATIK__ |
 
 
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du
