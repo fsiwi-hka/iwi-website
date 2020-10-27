@@ -11,11 +11,15 @@ groups:
   - title: 'Vorstand'
     people:
       - 'Zoe Kammerdiener (IITB)'
-      - 'Daniel Baumgärtner (INFB)'
+      - 'Anja Buchmaier (INFB)'
+  - title: 'Finanzer'
+    people:
+      - 'Marcel Rettig (INFB)'
+      - 'Tobias Hnyk (WIB)'
   - title: 'Senat'
     people:
       - 'Daniel Baumgärtner (INFB)'
-      - 'Lukas Rilling (WIB)'
+      - 'Carolin Schild (INFB)'
   - title: 'Fakultätsrat'
     people:
       - 'Zoe Kammerdiener (IITB)'
@@ -25,7 +29,7 @@ groups:
   - title: 'Arbeitskreis Social Media'
     people:
       - 'Anja Buchmaier'
-      - 'Marcel Rettig'
+      - 'Zoe Kammerdiener'
   - title: 'Arbeitskreis Events'
     people:
       - 'Anja Buchmaier'
@@ -74,10 +78,11 @@ ihr investieren wollt, könnt ihr natürlich selbst entscheiden. Ob ihr einfach
 nur gerne an den Sitzungen teilnehmt oder euch aktiv um einen Aufgabenbereich
 kümmern wollt, ihr seid bei uns immer herzlich willkommen. Ein guter Anfang ist
 auf jeden Fall mittwochs im dritten Block (ab 11:30 Uhr) in den Sitzungen vorbei
-zu schauen.
+zu schauen. __Aktuell finden die Sitzungen online statt. 
+Wenn ihr Interesse habt könnt ihr euch unter GoToMeeting (Link folgt) ab 17:30 Uhr einwählen.__
 
 ### Schreibt uns oder klingelt durch unter:
 
-[icon:at|kontakt@hska.info](mailto:kontakt@hska.info)
+[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
 
 [icon:phone|+49 721 925-1449](tel:+497219251449)
