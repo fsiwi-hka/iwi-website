@@ -79,7 +79,7 @@ nur gerne an den Sitzungen teilnehmt oder euch aktiv um einen Aufgabenbereich
 kümmern wollt, ihr seid bei uns immer herzlich willkommen. Ein guter Anfang ist
 auf jeden Fall mittwochs im dritten Block (ab 11:30 Uhr) in den Sitzungen vorbei
 zu schauen. __Aktuell finden die Sitzungen online statt. 
-Wenn ihr Interesse habt könnt ihr euch unter GoToMeeting (https://www.gotomeet.me/ZoeKammerdiener) ab 17:30 Uhr einwählen.__
+Wenn ihr Interesse habt Teil der Fachschaft zu werden könnt ihr euch jeden Mittwoch ab 17:30 Uhr unter GoToMeeting (https://www.gotomeet.me/ZoeKammerdiener) einwählen.__
 
 ### Schreibt uns oder klingelt durch unter:
 
