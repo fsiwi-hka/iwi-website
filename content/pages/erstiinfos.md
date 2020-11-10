@@ -44,7 +44,7 @@ Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
 Ansonsten erreichst du uns hier:
 
 [icon:discord|Discord-Server](https://discord.gg/Ud5KQnz)
-[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
+[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 ## O-Phase
 
@@ -135,7 +135,7 @@ Falls du für die O-Phase einen Schlafplatz in Karlsruhe brauchst, melde dich
 einfach bei uns unter der folgenden Mail. Sag uns, wer du bist und für wann du
 einen Schlafplatz benötigst.
 
-[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
+[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 <br></br>
 
@@ -187,8 +187,8 @@ Moltkestr. 30, 76133 Karlsruhe<br />
 [icon:at|iz-benutzerberatung@hs-karlsruhe.de](iz-benutzerberatung@hs-karlsruhe.de)
 
 #### Fragen?
-Habt ihr noch Fragen oder Probleme? Dann meldet euch in der What's App Gruppe oder schreibt eine Mail an 
-[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
+Habt ihr noch Fragen oder Probleme? Dann meldet euch in der What's App Gruppe oder schreibt eine Mail!
+[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 <!--## Mehr für Dich -->
 

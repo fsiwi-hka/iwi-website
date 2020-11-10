@@ -84,9 +84,9 @@ Kenntnisse auffrischen wollen.
 ## Anmeldung
 
 Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht und
-deinem Studiengang an folgende E-Mail-Adresse:
+deinem Studiengang:
 
-[icon:at|vorkurs@iwi-hka.de](mailto:vorkurs@iwi-hka.de)
+[icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
 ## Benötigte Software
 
