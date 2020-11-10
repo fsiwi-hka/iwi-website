@@ -21,7 +21,7 @@ function Footer() {
             </div>
             <p className="copyright my-4">
                 &copy; { new Date().getFullYear() } Fachschaft IWI<br /> 
-                <Link href="/impressum"><a className="text-gray-700 no-underline">Impressum</a></Link>
+                <Link href="/impressum/"><a className="text-gray-700 no-underline">Impressum</a></Link>
             </p>
         </footer>
     )

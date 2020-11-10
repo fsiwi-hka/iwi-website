@@ -30,17 +30,17 @@ eigentlichen Inhalte.
 
 Der Arbeitskreis Website der Fachschaft IWI machte sich in den Semesterferien
 daran, die Seite mit Inhalten und damit auch mit Leben zu füllen. Die
-[wichtigen Infos rund um's Studium](/faq) wurden ebenso eingepflegt wie die
-[Info-Seite zur Fachschaft selbst](/werwirsind) und natürlich die essentiellen
-[Infos für Studienanfänger:innen](/erstiinfos). Auch Unternehmen können sich auf
-der neu erstellten [Kooperations- und Sponsoring-Seite](/unternehmen)
+[wichtigen Infos rund um's Studium](/faq/) wurden ebenso eingepflegt wie die
+[Info-Seite zur Fachschaft selbst](/werwirsind/) und natürlich die essentiellen
+[Infos für Studienanfänger:innen](/erstiinfos/). Auch Unternehmen können sich auf
+der neu erstellten [Kooperations- und Sponsoring-Seite](/unternehmen/)
 informieren und mit uns in Kontakt treten.
 
 ### Verbesserungsvorschläge? Feedback? Mitmachen?
 
 Als Fachschaftlerinnen und Fachschaftler sind wir ehrenamtlich unterwegs und
 freuen uns immer über neue Gesichter und motivierte Studierende. Tretet gerne
-mit uns in [Kontakt](/kontakt), wenn Ihr mitmachen möchtet.
+mit uns in [Kontakt](/kontakt/), wenn Ihr mitmachen möchtet.
 
 Sollte Euch auf dieser (zugebenenermaßen noch nicht komplett fertigen) Website
 etwas auffallen, das vermutlich nicht so sein sollte, freuen wir uns ebenfalls
