@@ -51,5 +51,5 @@ Interesse an einer längeren Kooperation mit unserer Fachschaft Informatik &
 Wirtschaftsinformatik? Dann können Sie uns gerne über Mail oder Telefon
 kontaktieren.
 
-[icon:at|sponsoring@hska.info](mailto:sponsoring@hska.info)
+[icon:at|Mail an das Sponsoring-Team](/scripts/email.php?address=sponsoring)
 [icon:phone|+49 721 925-1449](tel:+497219251449)

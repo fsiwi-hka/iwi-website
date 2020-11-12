@@ -15,7 +15,7 @@ Vertreten durch: Simon Kienzler, Anja Buchmaier
 
 ### Kontakt
 
-[icon:at|kontakt@hska.info](mailto:kontakt@hska.info)
+[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 [icon:phone|+49 721 925-1449](tel:+497219251449)
 

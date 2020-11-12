@@ -14,9 +14,7 @@ Moltkestraße 30<br />
 76133 Karlsruhe<br />
 Raum E013
 
-[icon:at|kontakt@hska.info](mailto:kontakt@hska.info)
-
-[icon:at|mail@wi-fachschaft.de](mailto:mail@wi-fachschaft.de)
+[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 [icon:phone|+49 721 925-1449](tel:+497219251449)
 
@@ -26,4 +24,4 @@ Raum E013
 
 Für Sponsoring und Kooperationsanfragen:
 
-[icon:at|sponsoring@hska.info](mailto:sponsoring@hska.info)
+[icon:at|E-Mail an das Sponsoring-Team schreiben](/scripts/email.php?address=sponsoring)

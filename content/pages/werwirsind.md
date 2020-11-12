@@ -83,6 +83,6 @@ Wenn ihr Interesse habt Teil der Fachschaft zu werden könnt ihr euch jeden Mitt
 
 ### Schreibt uns oder klingelt durch unter:
 
-[icon:at|kontakt@iwi-hka.de](kontakt@iwi-hka.de)
+[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 [icon:phone|+49 721 925-1449](tel:+497219251449)

@@ -62,6 +62,23 @@ Next.js, will only render something if it's present in the pages directory.
 
 Open the file, change what you want to change.
 
+## Linking to an E-Mail Address
+
+`mailto:` links are handy, but they attract spam bots that crawl websites for
+e-mail addresses. Therefore, we do not want to use e-mail addresses in our
+Markdown files. Instead, we have a script that you can link to. It will redirect
+to the users e-mail client, just like a regular `mailto:` link would. Copy and
+paste the snippet you need:
+
+```markdown
+[E-Mail schreiben](/scripts/email.php?address=kontakt)
+[E-Mail an das Sponsoring-Team](/scripts/email.php?address=sponsoring)
+[Für den Vorkurs anmelden](/scripts/email.php?address=vorkurs)
+```
+
+Everything else is handled for you. This also works with IconLinks (see below)!
+Don't worry if this doesn't work with `npm run dev` locally, PHP is needed.
+
 ## Add Images
 
 You can add images in Markdown, like this:
