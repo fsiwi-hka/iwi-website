@@ -15,7 +15,7 @@ function FaqPost({
                     content={content}
                 />
             </div>
-            <BackButton href='/faq' />
+            <BackButton href='/faq/' />
         </>
     )
 }

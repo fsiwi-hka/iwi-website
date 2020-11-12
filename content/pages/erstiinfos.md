@@ -20,7 +20,7 @@ vorbei, um kein Update zu verpassen.**
 
 ### Programmiervorkurs
 
-Hier geht's zu deinem [Programmiervorkurs](/vorkurs). Der findet immer in den 2
+Hier geht's zu deinem [Programmiervorkurs](/vorkurs/). Der findet immer in den 2
 Wochen vor Vorlesungsbeginn statt. Genaueres dazu findest du auf der verlinkten
 Seite.
 

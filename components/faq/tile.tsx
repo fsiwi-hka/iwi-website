@@ -6,7 +6,7 @@ function FaqTile({
     image,
 }) {
     return ( 
-        <Link as={`/faq/${ slug }`} href="/faq/[slug]">
+        <Link as={`/faq/${ slug }/`} href="/faq/[slug]/">
             <div
                 className="flex items-center flex-col justify-center cursor-pointer"
                 style={{

@@ -10,14 +10,14 @@ header:
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
 
-**Auf der [Ersti-Info-Seite](/erstiinfos) findet ihr ab sofort alle wichtigen
+**Auf der [Ersti-Info-Seite](/erstiinfos/) findet ihr ab sofort alle wichtigen
 Infos und Updates zur O-Phase, die am 12.10.2020 startet.**
 
 ### Updates auch kurzfristig möglich
 
 Bitte beachtet, dass durch die erschwerten Bedingungen in diesem Semester
 kurzfristige Änderungen am Plan möglich sind. Diese werden zentral auf der
-[Erstsemester-Seite](/erstiinfos) bekannt gegeben und gesondert hervorgehoben.
+[Erstsemester-Seite](/erstiinfos/) bekannt gegeben und gesondert hervorgehoben.
 Schaut dort regelmäßig vorbei. Für aktuelle Infos schaut auch auf unseren
 [Instagram-Account](https://www.instagram.com/iwi_fachschaft/).
 
@@ -25,6 +25,6 @@ Schaut dort regelmäßig vorbei. Für aktuelle Infos schaut auch auf unseren
 
 Wir freuen uns, euch als Fachschaft IWI an der Hochschule Karlsruhe begrüßen zu
 dürfen. Wenn Ihr noch nicht wisst, was die Fachschaft ist und tut,
-[informiert Euch gerne](/werwirsind). Vermutlich werden wir uns in Zukunft öfter
+[informiert Euch gerne](/werwirsind/). Vermutlich werden wir uns in Zukunft öfter
 sehen. Wir wünschen dir einen erfolgreichen Start ins Studium und sind
-[gerne für dich da](/kontakt)!
+[gerne für dich da](/kontakt/)!
