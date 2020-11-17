@@ -11,7 +11,7 @@ Fachschaft Informatik und Wirtschaftsinformatik<br />
 Moltkestraße 30<br />
 76133 Karlsruhe
 
-Vertreten durch: Simon Kienzler, Anja Buchmaier
+Vertreten durch: Zoe Kammerdiener, Anja Buchmaier
 
 ### Kontakt
 
@@ -21,7 +21,7 @@ Vertreten durch: Simon Kienzler, Anja Buchmaier
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-Simon Kienzler<br />
+Zoe Kammerdiener<br />
 Anja Buchmaier
 
 ## Verbraucherstreitbeilegung/Universalschlichtungsstelle
