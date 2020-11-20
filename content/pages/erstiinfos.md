@@ -8,7 +8,7 @@ Hochschule zusammengestellt.'
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
 
-### WIR WÜNSCHEN EUCH ALLEN EINEN SCHÖNEN START INS SEMESTER UND HOFFEN EUCH HAT DIE O-PHASE GEFALLEN!!!
+### WIR WÜNSCHEN EUCH ALLEN EINEN SCHÖNEN START INS SEMESTER UND HOFFEN EUCH HAT DIE O-PHASE GEFALLEN!!
 
 ### Achtung
 
