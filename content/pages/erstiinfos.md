@@ -28,15 +28,15 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
 
-[icon:download|Download Ersti-Heft (PDF)](/public/assets/downloads/Erstiheft_IWI_WS_20_21.pdf)
+[icon:download|Download Ersti-Heft (PDF)](/assets/downloads/Erstiheft_IWI_WS_20_21.pdf)
 
 Das Ersti-Heft bekommst du auch nochmal auf deine Hochschulemail am Anfang deines
 Studiums.
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 
-- [PO-Briefing-Folien - Bachelor](/public/assets/downloads/po_briefing_bachelor_ss_2019.pdf)
-- [PO-Briefing-Folien - Master](/public/assets/downloads/po_briefing_master_ws_2019.pdf)
+- [PO-Briefing-Folien - Bachelor](/assets/downloads/po_briefing_bachelor_ss_2019.pdf)
+- [PO-Briefing-Folien - Master](/assets/downloads/po_briefing_master_ws_2019.pdf)
 
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
 [FAQ-Seite](/faq).
