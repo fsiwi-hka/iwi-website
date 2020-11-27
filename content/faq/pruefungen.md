@@ -19,30 +19,30 @@ Folgende Taschenrechner können (ohne Gewähr) i. d. R. verwendet werden:
 
 #### Texas Instruments
 
-* [TI-30 eco RS](https://www.amazon.de/gp/product/B000089DLC/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B000089DLC&linkCode=as2&tag=fachschaftiwi-21&linkId=11be7e83015ed29afe1625d5caea9ff8)
-* [TI-30X IIS](https://www.amazon.de/gp/product/B0006I0ADS/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0006I0ADS&linkId=61f58cdb91128f84648e1db77d5c67c0)
-* [TI-30X IIB](https://www.amazon.de/gp/product/B0006UJKT6/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0006UJKT6&linkId=e76543187d03c84debcd6f701271c0c6)
+* [TI-30 eco RS](https://www.amazon.de/gp/product/B000089DLC/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B000089DLC&linkCode=as2&tag=fachschaftiwi-21&linkId=11be7e83015ed29afe1625d5caea9ff8)*
+* [TI-30X IIS](https://www.amazon.de/gp/product/B0006I0ADS/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0006I0ADS&linkId=61f58cdb91128f84648e1db77d5c67c0)*
+* [TI-30X IIB](https://www.amazon.de/gp/product/B0006UJKT6/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0006UJKT6&linkId=e76543187d03c84debcd6f701271c0c6)*
 
 #### CASIO
 
-* [fx – 82 Solar](https://www.amazon.de/gp/product/B06XY9JM5C/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B06XY9JM5C&linkId=a7ce17a077f3f9b8f401cb8ffe5bd08b)
+* [fx – 82 Solar](https://www.amazon.de/gp/product/B06XY9JM5C/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B06XY9JM5C&linkId=a7ce17a077f3f9b8f401cb8ffe5bd08b)*
 * fx – 115 WA
 * fx – 82 ES
 * fx – 85 ES
 * fx – 115 S
-* [fx – 82 SX](https://www.amazon.de/gp/product/B0050CJD2O/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0050CJD2O&linkId=adfd925cb74bb73dc1f17be8a0994b28)
+* [fx – 82 SX](https://www.amazon.de/gp/product/B0050CJD2O/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0050CJD2O&linkId=adfd925cb74bb73dc1f17be8a0994b28)*
 * fx – 85 WA
-* [fx – 82 SX Plus](https://www.amazon.de/gp/product/B0050CJD2O/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0050CJD2O&linkId=9d19b139f41f4fe43cba6aeea00d85e0)
-* [fx – 85 MS](https://www.amazon.de/gp/product/B000SHSTDA/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B000SHSTDA&linkId=d8659bffc17c66b9331f88f5d3d2d476)
+* [fx – 82 SX Plus](https://www.amazon.de/gp/product/B0050CJD2O/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0050CJD2O&linkId=9d19b139f41f4fe43cba6aeea00d85e0)*
+* [fx – 85 MS](https://www.amazon.de/gp/product/B000SHSTDA/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B000SHSTDA&linkId=d8659bffc17c66b9331f88f5d3d2d476)*
 * fx – 250 HC
 * fx – 82 W
-* [fx – 85 DE Plus](https://www.amazon.de/gp/product/B004V7BA84/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B004V7BA84&linkId=26b36dbc9ec463ad5769f6030665c26d)
+* [fx – 85 DE Plus](https://www.amazon.de/gp/product/B004V7BA84/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B004V7BA84&linkId=26b36dbc9ec463ad5769f6030665c26d)*
 * fx – 350 W
-* [fx – 82 MS](https://www.amazon.de/gp/product/B0000D88UR/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0000D88UR&linkId=e6f6aaf9813c52503a0df0e93d92b2c5)
-* [fx – 85 GT Plus](https://www.amazon.de/gp/product/B0050O43RC/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0050O43RC&linkId=aae38ec7ab6e7f191bca3fbbb35e0f2c)
+* [fx – 82 MS](https://www.amazon.de/gp/product/B0000D88UR/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0000D88UR&linkId=e6f6aaf9813c52503a0df0e93d92b2c5)*
+* [fx – 85 GT Plus](https://www.amazon.de/gp/product/B0050O43RC/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B0050O43RC&linkId=aae38ec7ab6e7f191bca3fbbb35e0f2c)*
 * fx – 350 TL
-* [fx – 82 DE Plus](https://www.amazon.de/gp/product/B08D98HX3L/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B08D98HX3L&linkId=2c36812b8bc8f9d7cc7c9ad07978a151)
-* [fx – 85 ES Plus](https://www.amazon.de/gp/product/B083YM4DLK/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B083YM4DLK&linkId=67938458a42393d93971624f666528c5)
+* [fx – 82 DE Plus](https://www.amazon.de/gp/product/B08D98HX3L/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B08D98HX3L&linkId=2c36812b8bc8f9d7cc7c9ad07978a151)*
+* [fx – 85 ES Plus](https://www.amazon.de/gp/product/B083YM4DLK/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B083YM4DLK&linkId=67938458a42393d93971624f666528c5)*
 * fx – 350 MS
 * fx – 86DE Plus
 * fx – 350 ES
@@ -55,9 +55,14 @@ Folgende Taschenrechner können (ohne Gewähr) i. d. R. verwendet werden:
 * EL – 531 WG
 * EL-W550XG
 * EL – 531 VH
-* [EL – (W) 531 XH](https://www.amazon.de/gp/product/B071SD9J48/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B071SD9J48&linkId=86a49b3b14ddbecc19259768af65018e)
-* [EL – 531 WH](https://www.amazon.de/gp/product/B000LP6GUW/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B000LP6GUW&linkId=2738a7eb2394698ece87fe30885d248e)
-* [EL – (W) 531 (X)G](https://www.amazon.de/gp/product/B00NFM42Y0/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B00NFM42Y0&linkId=5474477a65b3b4b3ed04808d7a47c93d)
+* [EL – (W) 531 XH](https://www.amazon.de/gp/product/B071SD9J48/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B071SD9J48&linkId=86a49b3b14ddbecc19259768af65018e)*
+* [EL – 531 WH](https://www.amazon.de/gp/product/B000LP6GUW/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B000LP6GUW&linkId=2738a7eb2394698ece87fe30885d248e)*
+* [EL – (W) 531 (X)G](https://www.amazon.de/gp/product/B00NFM42Y0/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B00NFM42Y0&linkId=5474477a65b3b4b3ed04808d7a47c93d)*
+
+_Die mit Sternchen (*) gekennzeichneten Links sind Werbe-Link (sogenannte Affiliate-Links).
+Wenn du auf so einen Affiliate-Link klickst und über diesen Link einkaufst,
+bekommen wir von dem betreffenden Anbieter eine Provision. Für dich verändert
+sich der Preis nicht._ 
 
 ## Noten
 ### Zählen die Noten aus dem Grundstudium ins Bachelorzeugnis?
