@@ -14,7 +14,11 @@ Auf den Vorlesungsseiten der einzelnen Prüfungsordnungen (Bachelor PO4, Master 
 
 In den meisten Klausuren dürft ihr keinen Taschenrechner verwenden.
 Für Mathe 2 gibt es im Ilias eine Liste der erlaubten Modelle.
-Für Technische Informatik ist einer der HEX rechnen kann sinnvoll.
+Für Technische Informatik ist einer der HEX rechnen kann sinnvoll, um zu üben. 
+In der technischen Informatik Klausur im 1. Semester ist jedoch kein Taschenrechner erlaubt.
+Im 2. Semester werden euch Taschenrechner gestellt, die kein HEX können bzw. ihr dürft nur welche verwenden, die kein HEX können. 
+Um auf der sicheren Seite zu sein, fragt am besten bei euren Dozenten nach. 
+(Stand:11/2020)
 Folgende Taschenrechner können (ohne Gewähr) i. d. R. verwendet werden:
 
 #### Texas Instruments
