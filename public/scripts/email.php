@@ -24,6 +24,21 @@ if(isset($_GET['address'])) {
         case 'vorkurs':
             $location = 'mailto:vorkurs@iwi-hka.de';
             break;
+        case 'vorstand':
+            $location = 'mailto:vorstand@iwi-hka.de';
+            break;
+        case 'finanzen':
+            $location = 'mailto:finanzen@iwi-hka.de';
+            break;
+        case 'admin':
+            $location = 'mailto:admin@iwi-hka.de';
+            break;
+        case 'socialmedia':
+            $location = 'mailto:socialmedia@iwi-hka.de';
+            break;
+        case 'labornacht':
+            $location = 'mailto:labornacht@iwi-hka.de';
+            break;
         default:
             $location = "https://iwi-hka.de";
             break;
