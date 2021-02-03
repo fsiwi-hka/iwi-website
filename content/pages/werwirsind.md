@@ -79,7 +79,8 @@ nur gerne an den Sitzungen teilnehmt oder euch aktiv um einen Aufgabenbereich
 kümmern wollt, ihr seid bei uns immer herzlich willkommen. Ein guter Anfang ist
 auf jeden Fall mittwochs im dritten Block (ab 11:30 Uhr) in den Sitzungen vorbei
 zu schauen. __Aktuell finden die Sitzungen online statt. 
-Wenn ihr Interesse habt, Teil der aktiven Fachschaft zu werden, könnt ihr euch jeden Mittwoch ab 17:30 Uhr auf unserem "Event"-Discord-Server im entsprechenden Sprachchannel "Fachschaftssitzung" einwählen.__
+Wenn du Interesse hast, Teil der aktiven Fachschaft zu werden, komm einfach zur Fachschaftssitzung.
+Immer Mittwochs ab 17:30 Uhr auf unserem "Event"-Discord-Server im Sprachchannel "Fachschaftssitzung".__
 
 ### Schreibt uns oder klingelt durch unter:
 
