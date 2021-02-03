@@ -40,7 +40,9 @@ function determineClasses(title, href) {
     // we're on, so we can style the active link
     const router = useRouter()
     if(
-        router.pathname === href ||
+        // we need to append the trailing slash because the router
+        // pathname doesn't contain it (it's added in the NextJS config)
+        router.pathname + '/' === href ||
         router.pathname.startsWith(href) && href != "/" ||
         router.pathname.startsWith("/news") && href === "/"
     ) {
