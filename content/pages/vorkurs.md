@@ -21,7 +21,7 @@ Trotzdem ist es hilfreich, wenn du schon ein wenig mit den Grundlagen vertraut
 bist. So lässt sich das Gehörte leichter einordnen und behalten.
 
 Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge.
-Natürlich sind auch alle anderen (Medien-)Info-Erstis eingeladen, die ihre
+Natürlich sind auch alle anderen Info-Erstis eingeladen, die ihre
 Kenntnisse auffrischen wollen.
 
 ## Ablauf
@@ -29,7 +29,7 @@ Kenntnisse auffrischen wollen.
 <table class="table-vertical">
     <tr>
         <th>Datum</th>
-        <td>21.09 - 24.09.2020<br />(Mo - Do)</td>
+        <td>01.03 - 04.03.2021<br />(Mo - Do)</td>
     </tr>
     <tr>
         <th>Ort</th>
@@ -37,11 +37,11 @@ Kenntnisse auffrischen wollen.
     </tr>
     <tr>
         <th>Zugelassene Studiengänge</th>
-        <td>Informatik, Medieninformatik</td>
+        <td>Informatik, Medieninformatik, Wirtschaftsinformatik, Internationales IT Business</td>
     </tr>
     <tr>
         <th>Programmiersprache</th>
-        <td>Java</td>
+        <td>Java, C#</td>
     </tr>
     <tr>
         <th>Themen</th>
