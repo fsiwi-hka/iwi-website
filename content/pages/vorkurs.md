@@ -21,7 +21,7 @@ Trotzdem ist es hilfreich, wenn du schon ein wenig mit den Grundlagen vertraut
 bist. So lässt sich das Gehörte leichter einordnen und behalten.
 
 Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge.
-Natürlich sind auch alle anderen Info-Erstis eingeladen, die ihre
+Natürlich sind auch alle anderen Erstis der Fakultät IWI eingeladen, die ihre
 Kenntnisse auffrischen wollen.
 
 ## Ablauf
