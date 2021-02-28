@@ -9,7 +9,7 @@ header:
 
 ### Hinweis
 
-**Der Vorkurs ist gerade noch in der Planung. Besuche diese Seite regelmäßig für
+**Die Inhalte der einzelnen Tage werden am Vortag auf dieser Seite hochgeladen. Besuche diese Seite regelmäßig für
 aktuelle Informationen.**
 
 ## Allgemein
@@ -67,6 +67,10 @@ Kenntnisse auffrischen wollen.
 
 ### Die Tage im Einzelnen
 
+* Von 9:30 bis 12:00 Uhr treffen wir uns im [BBB-Raum](
+        https://bbb.fachschaften.org/b/mel-jd5-mko-qkx).
+* Am Nachmittag treffen wir uns in [Discord](
+        https://discord.gg/z466VBD9).
 * Wir beginnen jeden Tag um 9:30 Uhr. An den Tagen 2 bis 4 werden in den ersten 30
   Minuten die Aufgaben des Vortages besprochen. Am ersten Tag erklären wir euch in
   dieser Zeit den Ablauf und das Vorgehen.
@@ -90,25 +94,30 @@ deinem Studiengang:
 
 ## Benötigte Software
 
-Informationen folgen
+* Für alle: Discord
+* Für C# : Notepad++ und Visual Studio Community Edition
+* Für Java : Eclipse für Java Developers und JDK 11 oder neuer
 
 ## Unterlagen
 
 ### Tag 1
 
-Informationen folgen
+* [Link zu den Folien von Java](https://drive.google.com/file/d/1kxhPal7CuQ0FYaKJyoUjBd0e9-ZtQpyz/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1v3GDqmn7AaUDhf4GBPMErxdBu10Afq8X/view?usp=sharing)
+* [Link zu der Aufgabe 1](https://drive.google.com/file/d/1MiuP0LTfX12YwBoe7M-7_541xzrldtnk/view?usp=sharing)
+
 
 ### Tag 2
 
-Informationen folgen
+Informationen folgen.
 
 ### Tag 3
 
-Informationen folgen
+Informationen folgen. 
 
 ### Tag 4
 
-Informationen folgen
+Informationen folgen. 
 
 ## Mehr
 
