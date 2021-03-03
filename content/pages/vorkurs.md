@@ -116,7 +116,9 @@ deinem Studiengang:
 
 ### Tag 3
 
-Informationen folgen. 
+* [Link zu den Folien von Java](https://drive.google.com/file/d/1g7aDr6dEL_iFDcS1i8ozKF490P_VV9u4/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1eKg0i5_SBlx-xfftD9JHBAM6ULo29ob3/view?usp=sharing)
+* [Link zu der Aufgabe 3](https://drive.google.com/file/d/1BdojwG9BeP3KxovjCOlHSFMGoi87a0r_/view?usp=sharing)
 
 ### Tag 4
 
