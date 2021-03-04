@@ -50,6 +50,9 @@ jedes Semesters durchgeführt wird. Dabei gibt es verschiedene Abstufungen:
 * **Paket XL**: Sie tragen Goodies bei und übernehmen einen Stand bei der
   Ersti-Ralley auf dem Campus (Kosten: 300,00€)
 
+Wenn Sie einen Social-Media-Account auf Instagram betreiben, besteht zusätzlich
+die Möglichkeit, dass wir Sie in einem zentralen Erstitüten-Post taggen.
+
 ## Kooperationen
 
 Sind Sie an einer einmaligen oder langfristigen Kooperation interessiert, sind

@@ -128,8 +128,8 @@ deinem Studiengang:
 ### Tag 4
 
 * [Link zu den Folien von Java](https://drive.google.com/file/d/1ebmXtQpB-WqbQJKr6IyjjtDoR_t4waS2/view?usp=sharing)
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1u_few1laluCb39uowvWouh62w7WjXuH_/view?usp=sharing)
-* [Link zum Bahnautomat von Java](https://drive.google.com/file/d/192AV7RWorgJrORoYYt9gVRb0rBeY8pRt/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1BP4xdf7OklWLEQ1tatjoZMJf0MQbMzF5/view?usp=sharing)
+* [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1D4uWgKE2vKr8qJ82XF2HzcjBRHx94fap/view?usp=sharing)
 * [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1bX9gkBuo3zv6aKQ1rOPsf24JXPibNvnD/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/192AV7RWorgJrORoYYt9gVRb0rBeY8pRt/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1vLg6mKeXIuUeJb6diSUl49tM_6D7R5gI/view?usp=sharing)
