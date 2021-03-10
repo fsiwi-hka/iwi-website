@@ -87,15 +87,15 @@ Wir werden die Begrüßung für alle, die nicht vor Ort sein können / wollen, s
 | | 14:00 - 21:30| Remote | Erstiabend | der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß | alle |
 | Mittwoch, 17.03.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | eure Erste Vorlesung findet hier statt: https://zoom.us/j/93119016682?pwd=VzlwQndtdjdXdEFzR0xqMEM1ejMydz09 | Bachelor |
 || 09:50 - 11:20 | Remote | Software-Architekturen | eure Erste Vorlesung findet hier statt: https://zoom.us/j/93052496269?pwd=V0xIMWJvTGoxUTEyNjFlV3RuazZMQT09 | Master |
-|| 11:30 - 12:30 | Remote | Begrüßung des Rektorats // Hier findet ihr den Link: https://youtu.be/8FpZGday5Ic | alle |
-|| 12:30 - 14:00 | Mittagspause | Lasst's euch schmecken :) | | | alle |
-|| 14:30 - 17:30 | Remote | Kennenlernspiele | Link folgt. | | alle |
-|| 17:30 - 18:30 | Remote | Fachschaftssitzung | Link folgt. | | alle |
+|| 11:30 - 12:30 | Remote | Begrüßung des Rektorats // Hier findet ihr den Link: https://youtu.be/8FpZGday5Ic | | alle |
+|| 12:30 - 14:00 | Mittagspause | Lasst's euch schmecken :) | | alle |
+|| 14:30 - 17:30 | Remote | Kennenlernspiele | Link folgt. | alle |
+|| 17:30 - 18:30 | Remote | Fachschaftssitzung | Link folgt. | alle |
 | Donnerstag, 18.03.2021 | 08:00 - 09:30 | Remote | Technische Informatik 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/92927063508?pwd=WFVvVzBIQURSclBRQVRlM1UvWWdLdz09 | Master |
 | | 08:00 - 09:30 | Remote | Graphenalgorithmen | Hier könnt ihr daran teilnehmen: https://zoom.us/j/7167609870?pwd=YzlmdncveEJYK2VSU2UxZEVkbEsrQT09 | Master |
 | | 09:50 - 11:20 | Remote | Programmieren 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/7225533381 | Bachelor |
 | | 11:30 - 13:00 | Remote | Programmierparadigmen | Hier könnt ihr daran teilnehmen: https://zoom.us/j/92454374780?pwd=Vi9saDh3L2xQMjNhcmtLZW5mUkllQT09 | Master |
-| | 12:30 - 14:00 | Mittagspause | Lasst's euch schmecken :) | | | alle |
+| | 12:30 - 14:00 | Mittagspause | Lasst's euch schmecken :) | | alle |
 | | 14:00 - 18:00 | Remote | Programm der Fachschaft | Hier könnt ihr nochmal Fragen stellen etc.  | alle |
 | Freitag, 19.03.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/93119016682?pwd=VzlwQndtdjdXdEFzR0xqMEM1ejMydz09 | Bachelor |
 | | 09:50 - 11:20 | Remote | Mathematik für Maschinelles Lernen | Hier könnt ihr daran teilnehmen: Link folgt. | Bachelor |
@@ -121,13 +121,13 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 | 12:30 - 14:00 | Mittagspause | Lasst's euch schmecken :) | | | alle|
 | | 14:00 - 21:30| Remote | Erstiabend | der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß | alle |
 | Mittwoch, 17.03.2021 | 10:00 - 11:30 | Remote | Vortsellung akademisches Auslandsamt / Nachhaltiges Lernen + Zeitmanagement Teil 1 | | Bachelor |
-|| 11:30 - 12:30 | Remote | Begrüßung des Rektorats // Hier findet ihr den Link: https://youtu.be/8FpZGday5Ic | alle |
+|| 11:30 - 12:30 | Remote | Begrüßung des Rektorats // Hier findet ihr den Link: https://youtu.be/8FpZGday5Ic | | alle |
 | | 12:30 - 13:30 | Remote | Nachhaltiges Lernen und Zeitmanagement / Lerntechniken  Teil 2 |  | Bachelor |
-| | 14:00 - 15:00 |  | Mittagspause | Lasst's euch schmecken :) | | | alle|
-|| 14:30 - 17:30 | Remote | Kennenlernspiele | Link folgt. | | alle |
-|| 17:30 - 18:30 | Remote | Fachschaftssitzung | Link folgt. | | alle |
+| | 14:00 - 15:00 |  | Mittagspause | Lasst's euch schmecken :) | alle|
+|| 14:30 - 17:30 | Remote | Kennenlernspiele | Link folgt. | alle |
+|| 17:30 - 18:30 | Remote | Fachschaftssitzung | Link folgt. | alle |
 | Donnerstag, 18.03.2021 | 09:00 - 13:00 | Remote | Programmier-Workshop  |  | Bachelor |
-| | 13:00 - 14:00 |  | Mittagspause | Lasst's euch schmecken :) | | | alle|
+| | 13:00 - 14:00 |  | Mittagspause | Lasst's euch schmecken :) | alle|
 | | 14:00 - 18:00 | Remote | Programm der Fachschaft | Hier könnt ihr nochmal Fragen stellen etc.  | alle |
 | Freitag, 19.03.2021 | 09:00 - 10:30 | Remote | Quizfragen zur Orga + Stundenplan |  | Bachelor |
 | | 10:30 - 11:00 | Remote | Vorstellung "Erfolgreich Starten" |  | Bachelor |
