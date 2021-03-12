@@ -55,7 +55,8 @@ Sowie für die Masterstudiengänge Wirtschaftsinformatik und Informatik.__
 ### Terminplan
 
 **Hinweis:** <!--Hier siehst du unseren vorläufigen Terminplan.--> Da die Fakultäten Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase anbieten, sind hier zwei Terminpläne zu sehen. Beachte bitte, dass sich die genaueren Planungen noch hinziehen - es lohnt sich also, regelmäßig vorbeizuschauen.
-__Remote bedeutet, dass ihr euch online einwählen könnt, wenn ihr nicht präsent an einer Veranstaltung teilnehmen könnt. <!--Die Links zu den Veranstaltungen werden 1-2 Tage vor Beginn in den Plan eingetragen.__-->
+__Remote bedeutet, dass ihr euch online einwählen könnt, wenn ihr nicht präsent an einer Veranstaltung teilnehmen könnt. 
+<!--Die Links zu den Veranstaltungen werden 1-2 Tage vor Beginn in den Plan eingetragen.__-->
 
 __Änderungen nach dem 12.03.21 sind fett hervorgehoben.__
 
@@ -70,7 +71,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Montag, 15.03.2021 | 08:15 - 10:00 | __Im Erdgeschoss des Gebäude B__ <br>[Hier ist der Lageplan!](https://www.hs-karlsruhe.de/fileadmin/media/maps/Gebaeudeplan_HsKA_A4-RGB.pdf)| Corona-Test mit anschließendem Campusrundgang| Kommt zum Anfang eures zugeteilten Zeitraums zum Testen, damit wir zügig mit dem Programm fortfahren können.<br>Medieninformatik: 8:15, Informatik 8:35, Informatik Master: 8:55 | alle |
+| Montag, 15.03.2021 | 08:15 - 10:00 | Im Erdgeschoss des Gebäude B <br>[Hier ist der Lageplan!](https://www.hs-karlsruhe.de/fileadmin/media/maps/Gebaeudeplan_HsKA_A4-RGB.pdf)| Corona-Test mit anschließendem Campusrundgang| Kommt zum Anfang eures zugeteilten Zeitraums zum Testen, damit wir zügig mit dem Programm fortfahren können.<br>Medieninformatik: 8:15, Informatik 8:35, Informatik Master: 8:55 | alle |
 || 10:00 - 12:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Begrüßung + Informationsveranstaltungen | Begrüßung der Erstsemester und Infos über die technische Umgebung der Hoschschule/Fakultät, Vorstellung der Professoren des ersten Semesters, etc. Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/97390561045?pwd=WXJFNXMzVzc4OGFzcVc4T0lMM1c4QT09 | alle |
 | | 12:00 - 14:00 | Karlsruhe oder Daheim | Mittagspause | Ihr könnt in die Stadt oder zur Cafeteria gehen und dort etwas essen gehen. Hier findet Ihr den Essensplan der Cafeteria: https://www.sw-ka.de/de/essen/?kw=11 | alle |
 || 14:00 - 16:00 | In den Räumen im 2. und 3. Stock im Gebäude E + Remote| Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/99018555264?pwd=Mzk5aU5xRHBCdjZTczM0Ry9zd2x4UT09 | alle |
@@ -105,7 +106,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 
 | Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Montag, 15.03.2021 | 09:30 - 11:00 | Vor dem Gebäude E <br>[Hier ist der Lageplan!](https://www.hs-karlsruhe.de/fileadmin/media/maps/Gebaeudeplan_HsKA_A4-RGB.pdf)| Corona Schnelltests + Begrüßung der Studiengangsleiter der Fakultät Wirtschaftsinformatik | Kommt zwischen 9:30 und 10:00 Uhr zum testen | Bachelor |
+| Montag, 15.03.2021 | 09:30 - 11:00 | Im Erdgeschoss des Gebäude B <br>[Hier ist der Lageplan!](https://www.hs-karlsruhe.de/fileadmin/media/maps/Gebaeudeplan_HsKA_A4-RGB.pdf)| Corona Schnelltests + Begrüßung der Studiengangsleiter der Fakultät Wirtschaftsinformatik | Kommt zwischen 9:30 und 10:00 Uhr zum testen | Bachelor |
 | | 11:00 - 13:00 | In den Räumen im Erdgeschoss und 1. Stock im Gebäude E + Remote | Technisches Setup | Infos über die technische Umgebung der Hoschschule/Fakultät | Bachelor |
 | | 13:00 - 14:00 | Karlsruhe oder Daheim | Mittagspause | Ihr könnt in die Stadt oder zur Cafeteria gehen und dort etwas essen gehen. Hier findet Ihr den Essensplan der Cafeteria: https://www.sw-ka.de/de/essen/?kw=11 | alle |
 || 14:00 - 16:00 | In den Räumen im Erdgeschoss im Gebäude E + Remote| Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/99018555264?pwd=Mzk5aU5xRHBCdjZTczM0Ry9zd2x4UT09 | alle |
