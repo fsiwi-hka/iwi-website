@@ -55,8 +55,8 @@ Sowie für die Masterstudiengänge Wirtschaftsinformatik und Informatik.__
 ### Terminplan
 
 **Hinweis:** <!--Hier siehst du unseren vorläufigen Terminplan.--> Da die Fakultäten Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase anbieten, sind hier zwei Terminpläne zu sehen. Beachte bitte, dass sich die genaueren Planungen noch hinziehen - es lohnt sich also, regelmäßig vorbeizuschauen.
-__Remote bedeutet, dass ihr euch online einwählen könnt, wenn ihr nicht präsent an einer Veranstaltung teilnehmen könnt. 
-<!--Die Links zu den Veranstaltungen werden 1-2 Tage vor Beginn in den Plan eingetragen.__-->
+Remote bedeutet, dass ihr euch online einwählen könnt, wenn ihr nicht präsent an einer Veranstaltung teilnehmen könnt. 
+<!--Die Links zu den Veranstaltungen werden 1-2 Tage vor Beginn in den Plan eingetragen.-->
 
 __Änderungen nach dem 12.03.21 sind fett hervorgehoben.__
 
@@ -78,19 +78,19 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 | Dienstag, 16.03.2021 | 10:15 - 11:00 | Remote | Optionale Unterstützung für generelle und technische Fragen beim Englisch Einstufungstest. | Link zum Einstufungstest:  https://ilias.hs-karlsruhe.de/goto.php?target=tst_531997 <br>Zoom-Meeting: https://zoom.us/j/94925716507?pwd=L0dJbWNqTnQzN2RNRzhJY1FDWnUwdz09 <br>infos zur Anmeldung nach dem Test: https://www.hs-karlsruhe.de/ifs/englisch/semesterkurse/| Bachelor |
 | | 11:00 - 13:00 |Remote| PO-Briefing, hier erfahrt ihr mehr über eure Prüfungsordnung. | Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/94925716507?pwd=L0dJbWNqTnQzN2RNRzhJY1FDWnUwdz09 | alle |
 | | 13:00 - 14:00 | Daheim | Mittagspause | Kocht euch was schönes :) | alle|
-| | 14:00 - 21:30 | Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Semester in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <br>Event-Discord: https://discord.gg/NBJyJnbS2U | alle |
+| | __18:00 - open end__ | Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Semester in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <!--<br>Event-Discord: https://discord.gg/NBJyJnbS2U -->| alle |
 | Mittwoch, 17.03.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | Eure Erste Vorlesung findet hier statt: https://zoom.us/j/93119016682?pwd=VzlwQndtdjdXdEFzR0xqMEM1ejMydz09 | Bachelor |
 || 09:50 - 11:20 | Remote | Software-Architekturen | Eure Erste Vorlesung findet hier statt: https://zoom.us/j/93052496269?pwd=V0xIMWJvTGoxUTEyNjFlV3RuazZMQT09 | Master |
 || 11:30 - 12:30 | Remote | Begrüßung des Rektorats | Hier geht's zum Stream: https://youtu.be/8FpZGday5Ic | alle |
-|| 12:30 - 14:30 | Daheim | Mittagspause | Lasst's euch schmecken :) | alle |
-|| 14:30 - 17:30 | Remote | Kennenlernspiele | https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
-|| 17:30 - 18:30 | Remote | Fachschaftssitzung | https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
+|| __12:30 - 15:00__ | Daheim | Mittagspause | Lasst's euch schmecken :) | alle |
+|| __15:00 - 17:30__ | Remote | __Erstiabend Part 2__ | Der Spaß geht weiter :) https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
+|| __17:30 - open end__ | Remote | __Fachschaftssitzung + gemütliches Zusammensitzen__ | __In der Fachschaftssitzung werden wichtige Dinge rund um unser Studium diskutiert. Jeder Studierende der Fakultät IWI ist teilnahme- und stimmberechtigt. Im Anschluss können wir uns bei einem gemütlichen Zusammensitzen weiter austauschen und auch gerne noch etwaige Fragen beantworten.__ <br>https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
 | Donnerstag, 18.03.2021 | 08:00 - 09:30 | Remote | Technische Informatik 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/92927063508?pwd=WFVvVzBIQURSclBRQVRlM1UvWWdLdz09 | Bachelor Informatik |
 | | 08:00 - 09:30 | Remote | Graphenalgorithmen | Hier könnt ihr daran teilnehmen: https://zoom.us/j/7167609870?pwd=YzlmdncveEJYK2VSU2UxZEVkbEsrQT09 | Master |
 | | 09:50 - 11:20 | Remote | Programmieren 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/7225533381 | Bachelor |
 | | 11:30 - 13:00 | Remote | Programmierparadigmen | Hier könnt ihr daran teilnehmen: https://zoom.us/j/92454374780?pwd=Vi9saDh3L2xQMjNhcmtLZW5mUkllQT09 | Master |
 | | 12:30 - 14:00 | Daheim| Mittagspause | Nicht schon wieder Dosenravioli! | alle |
-| | 14:00 - 18:00 | Remote | Programm der Fachschaft | Hier könnt ihr nochmal Fragen stellen etc. https://zoom.us/j/91213729015?pwd=RmJtd2lEMjUyb2ROb3krdXhKKzdxUT09 | alle |
+| | __18:00 - open end__| Remote | __Erstiabend Part 3__ | Noch einmal fleißig kennenlernen ^^ https://zoom.us/j/91213729015?pwd=RmJtd2lEMjUyb2ROb3krdXhKKzdxUT09 | alle |
 | Freitag, 19.03.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/93119016682?pwd=VzlwQndtdjdXdEFzR0xqMEM1ejMydz09 | Bachelor |
 | | 09:50 - 11:20 | Remote | Mathematik für Maschinelles Lernen | Freiwillig, aber empfohlen: Mehr Infos: https://ilias.hs-karlsruhe.de/goto.php?target=crs_360821&client_id=HSKA | Master |
 
@@ -113,16 +113,16 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 || 16:00 - 17:30 | In den Räumen im Erdgeschoss im Gebäude E | Campusrundgang | Wir holen euch in den Räumen ab und geben euch eine kleine Tour über den Campus. | Bachelor |
 | Dienstag, 16.03.2021 | 09:00 - 12:30 | Remote | Vorkenntnistest  | | Bachelor |
 | |12:30 - 14:00 | Daheim |Mittagspause | Kocht euch was schönes :) | alle|
-| | 14:00 - 21:30| Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <br>Event-Discord: https://discord.gg/NBJyJnbS2U | alle |
+| | __18:00 - open end__| Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <!--<br>Event-Discord: https://discord.gg/NBJyJnbS2U --> | alle |
 | Mittwoch, 17.03.2021 | 10:00 - 11:30 | Remote | Vorstellung akademisches Auslandsamt / Nachhaltiges Lernen + Zeitmanagement Teil 1 | | Bachelor |
 || 11:30 - 12:30 | Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/8FpZGday5Ic | alle |
 | | 12:30 - 13:30 | Remote | Nachhaltiges Lernen und Zeitmanagement / Lerntechniken  Teil 2 |  | Bachelor |
-| | 13:30 - 14:30 | Daheim | Mittagspause | Lasst's euch schmecken :) | alle|
-|| 14:30 - 17:30 | Remote | Kennenlernspiele | https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
-|| 17:30 - 18:30 | Remote | Fachschaftssitzung | https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
+| | __13:30 - 15:00__ | Daheim | Mittagspause | Lasst's euch schmecken :) | alle|
+|| __15:00 - 17:30__ | Remote | __Erstiabend Part 2__ | Der Spaß geht weiter :) https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
+|| __17:30 - open end__ | Remote | __Fachschaftssitzung + gemütliches Zusammensitzen__ |  __In der Fachschaftssitzung werden wichtige Dinge rund um unser Studium diskutiert. Jeder Studierende der Fakultät IWI ist teilnahme- und stimmberechtigt. Im Anschluss können wir uns bei einem gemütlichen Zusammensitzen weiter austauschen und auch gerne noch etwaige Fragen beantworten.__ <br>https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
 | Donnerstag, 18.03.2021 | 09:00 - 13:00 | Remote | Programmier-Workshop  |  | Bachelor |
 | | 13:00 - 14:00 | Daheim | Mittagspause | Nicht schon wieder Dosenravioli! | alle|
-| | 14:00 - 18:00 | Remote | Programm der Fachschaft | Hier könnt ihr nochmal Fragen stellen etc. https://zoom.us/j/91213729015?pwd=RmJtd2lEMjUyb2ROb3krdXhKKzdxUT09  | alle |
+| | __18:00 - open end__| Remote | __Erstiabend Part 3__ | Noch einmal fleißig kennenlernen ^^ https://zoom.us/j/91213729015?pwd=RmJtd2lEMjUyb2ROb3krdXhKKzdxUT09 | alle |
 | Freitag, 19.03.2021 | 09:00 - 10:30 | Remote | Quizfragen zur Orga + Stundenplan |  | Bachelor |
 | | 10:30 - 11:00 | Remote | Vorstellung "Erfolgreich Starten" |  | Bachelor |
 | Samstag, 20.03.2021 | 13:00 - 14:00 | Remote | Mathe-Vorkenntnistest |  | Bachelor |
