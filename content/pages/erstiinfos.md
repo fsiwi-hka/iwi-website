@@ -28,7 +28,7 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
 
-[icon:download|Download Ersti-Heft (PDF)](/assets/downloads/Erstiheft_IWI_WS_20_21.pdf)
+[icon:download|Download Ersti-Heft (PDF)](/assets/downloads/Erstiheft_SS2021.pdf)
 
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
