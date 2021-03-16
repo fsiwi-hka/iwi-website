@@ -78,6 +78,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 | Dienstag, 16.03.2021 | 10:15 - 11:00 | Remote | Optionale Unterstützung für generelle und technische Fragen beim Englisch Einstufungstest. | Link zum Einstufungstest:  https://ilias.hs-karlsruhe.de/goto.php?target=tst_531997 <br>Zoom-Meeting: https://zoom.us/j/94925716507?pwd=L0dJbWNqTnQzN2RNRzhJY1FDWnUwdz09 <br>infos zur Anmeldung nach dem Test: https://www.hs-karlsruhe.de/ifs/englisch/semesterkurse/| Bachelor |
 | | 11:00 - 13:00 |Remote| PO-Briefing, hier erfahrt ihr mehr über eure Prüfungsordnung. | Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/94925716507?pwd=L0dJbWNqTnQzN2RNRzhJY1FDWnUwdz09 | alle |
 | | 13:00 - 14:00 | Daheim | Mittagspause | Kocht euch was schönes :) | alle|
+| | __14:00 - 15:30__ | Remote | IZ-Einführungsveranstaltung | https://zoom.us/j/95892653188 | alle|
 | | __18:00 - open end__ | Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Semester in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <!--<br>Event-Discord: https://discord.gg/NBJyJnbS2U -->| alle |
 | Mittwoch, 17.03.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | Eure Erste Vorlesung findet hier statt: https://zoom.us/j/93119016682?pwd=VzlwQndtdjdXdEFzR0xqMEM1ejMydz09 | Bachelor |
 || 09:50 - 11:20 | Remote | Software-Architekturen | Eure Erste Vorlesung findet hier statt: https://zoom.us/j/93052496269?pwd=V0xIMWJvTGoxUTEyNjFlV3RuazZMQT09 | Master |
@@ -113,6 +114,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 || 16:00 - 17:30 | In den Räumen im Erdgeschoss im Gebäude E | Campusrundgang | Wir holen euch in den Räumen ab und geben euch eine kleine Tour über den Campus. | Bachelor |
 | Dienstag, 16.03.2021 | 09:00 - 12:30 | Remote | Vorkenntnistest  | | Bachelor |
 | |12:30 - 14:00 | Daheim |Mittagspause | Kocht euch was schönes :) | alle|
+| | __14:00 - 15:30__ | Remote | IZ-Einführungsveranstaltung | https://zoom.us/j/95892653188 | alle|
 | | __18:00 - open end__| Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <!--<br>Event-Discord: https://discord.gg/NBJyJnbS2U --> | alle |
 | Mittwoch, 17.03.2021 | 10:00 - 11:30 | Remote | Vorstellung akademisches Auslandsamt / Nachhaltiges Lernen + Zeitmanagement Teil 1 | | Bachelor |
 || 11:30 - 12:30 | Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/8FpZGday5Ic | alle |
