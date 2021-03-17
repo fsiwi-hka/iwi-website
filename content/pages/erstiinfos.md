@@ -84,7 +84,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 || 09:50 - 11:20 | Remote | Software-Architekturen | Eure Erste Vorlesung findet hier statt: https://zoom.us/j/93052496269?pwd=V0xIMWJvTGoxUTEyNjFlV3RuazZMQT09 | Master |
 || 11:30 - 12:30 | Remote | Begrüßung des Rektorats | Hier geht's zum Stream: https://youtu.be/8FpZGday5Ic | alle |
 || __12:30 - 15:00__ | Daheim | Mittagspause | Lasst's euch schmecken :) | alle |
-|| __15:00 - 17:30__ | Remote | __Erstiabend Part 2__ | Der Spaß geht weiter :) https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
+|| __15:30 - 17:30__ | Remote | __Erstiabend Part 2__ | Der Spaß geht weiter :) https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
 || __17:30 - open end__ | Remote | __Fachschaftssitzung + gemütliches Zusammensitzen__ | __In der Fachschaftssitzung werden wichtige Dinge rund um unser Studium diskutiert. Jeder Studierende der Fakultät IWI ist teilnahme- und stimmberechtigt. Im Anschluss können wir uns bei einem gemütlichen Zusammensitzen weiter austauschen und auch gerne noch etwaige Fragen beantworten.__ <br>https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
 | Donnerstag, 18.03.2021 | 08:00 - 09:30 | Remote | Technische Informatik 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/92927063508?pwd=WFVvVzBIQURSclBRQVRlM1UvWWdLdz09 | Bachelor Informatik |
 | | 08:00 - 09:30 | Remote | Graphenalgorithmen | Hier könnt ihr daran teilnehmen: https://zoom.us/j/7167609870?pwd=YzlmdncveEJYK2VSU2UxZEVkbEsrQT09 | Master |
@@ -120,7 +120,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 || 11:30 - 12:30 | Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/8FpZGday5Ic | alle |
 | | 12:30 - 13:30 | Remote | Nachhaltiges Lernen und Zeitmanagement / Lerntechniken  Teil 2 |  | Bachelor |
 | | __13:30 - 15:00__ | Daheim | Mittagspause | Lasst's euch schmecken :) | alle|
-|| __15:00 - 17:30__ | Remote | __Erstiabend Part 2__ | Der Spaß geht weiter :) https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
+|| __15:30 - 17:30__ | Remote | __Erstiabend Part 2__ | Der Spaß geht weiter :) https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
 || __17:30 - open end__ | Remote | __Fachschaftssitzung + gemütliches Zusammensitzen__ |  __In der Fachschaftssitzung werden wichtige Dinge rund um unser Studium diskutiert. Jeder Studierende der Fakultät IWI ist teilnahme- und stimmberechtigt. Im Anschluss können wir uns bei einem gemütlichen Zusammensitzen weiter austauschen und auch gerne noch etwaige Fragen beantworten.__ <br>https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09 | alle |
 | Donnerstag, 18.03.2021 | 09:00 - 13:00 | Remote | Programmier-Workshop  |  | Bachelor |
 | | 13:00 - 14:00 | Daheim | Mittagspause | Nicht schon wieder Dosenravioli! | alle|
