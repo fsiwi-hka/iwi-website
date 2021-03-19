@@ -10,7 +10,7 @@ Anregungen? Wir freuen uns auf deine Nachricht.'
 groups:
   - title: 'Vorstand'
     people:
-      - 'Zoe Kammerdiener (IITB)'
+      - 'Zoe Kammerdiener (IIBB)'
       - 'Anja Buchmaier (INFB)'
   - title: 'Finanzer'
     people:
@@ -22,23 +22,25 @@ groups:
       - 'Carolin Schild (INFB)'
   - title: 'Fakultätsrat'
     people:
-      - 'Zoe Kammerdiener (IITB)'
+      - 'Zoe Kammerdiener (IIBB)'
       - 'Daniel Baumgärtner (INFB)'
       - 'Carolin Schild (INFB)'
-      - 'Anja Buchmaier (MIKB)'
+      - 'Anja Buchmaier (MKIB)'
   - title: 'Arbeitskreis Social Media'
     people:
       - 'Anja Buchmaier'
       - 'Zoe Kammerdiener'
+      - 'Melina Wünsch'
   - title: 'Arbeitskreis Events'
     people:
       - 'Anja Buchmaier'
-      - 'Marcel Rettig'
+      - 'Jens Ettl'
   - title: 'Arbeitskreis Website'
     people:
       - 'Anja Buchmaier'
       - 'Marcel Rettig'
       - 'Simon Kienzler'
+      - 'Jonas Westenhoff'
 ---
 ## Was ist die Fachschaft?
 
@@ -80,7 +82,7 @@ kümmern wollt, ihr seid bei uns immer herzlich willkommen. Ein guter Anfang ist
 auf jeden Fall mittwochs im dritten Block (ab 11:30 Uhr) in den Sitzungen vorbei
 zu schauen. __Aktuell finden die Sitzungen online statt. 
 Wenn du Interesse hast, Teil der aktiven Fachschaft zu werden, komm einfach zur Fachschaftssitzung.
-Immer Mittwochs ab 17:30 Uhr auf unserem "Event"-Discord-Server im Sprachchannel "Fachschaftssitzung".__
+Immer Mittwochs ab 17:30 Uhr auf Zoom statt:__ https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09
 
 ### Schreibt uns oder klingelt durch unter:
 
