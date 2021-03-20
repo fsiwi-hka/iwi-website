@@ -8,15 +8,17 @@ header:
 ## Vorbereitung
 ### Wo kann ich die aktuellen Prüfungsordnungen herunterladen?
 
-Auf den Vorlesungsseiten der einzelnen Prüfungsordnungen (Bachelor PO4, Master PO4, Bachelor PO3) findest du die Prüfungsordnung jeweils oben zum Download. 
+Die aktuellsten Prüfungsordnungen findest du auf der [Download-Seite der Hochschule](https://www.hs-karlsruhe.de/downloads). Hier kannst du über die verfügbaren Filter nach der SPO (**S**tudien- und **P**rüfungs**O**rdnung) für Bachelor oder Master suchen und die Ergebnisse auf unsere Fakultät Informatik und Wirtschaftsinformatik eingrenzen.
 
 ### Welchen Taschenrechner darf ich verwenden?
 
 In den meisten Klausuren dürft ihr keinen Taschenrechner verwenden.
 Für Mathe 2 gibt es im Ilias eine Liste der erlaubten Modelle.
-Für Technische Informatik ist einer der HEX rechnen kann sinnvoll, um zu üben. 
-In der technischen Informatik Klausur im 1. Semester ist jedoch kein Taschenrechner erlaubt.
-Im 2. Semester werden euch Taschenrechner gestellt, die kein HEX können bzw. ihr dürft nur welche verwenden, die kein HEX können. 
+Für Technische Informatik ist ein Taschenrechner, der mit HEX-Zahlen rechnen kann, sinnvoll, um zu üben. 
+In der Klausur "Technische Informatik" im 1. Semester ist jedoch **kein** Taschenrechner erlaubt!
+
+Sollte es euch nicht möglich sein, bis zum zweiten Semester einen passenden Taschenrechner zu kaufen, hält das Sekretariat ein kleines Kontigent an Leihtaschenrechnern für die Klausuren bereit. Wir empfehlen euch jedoch, einen eigenen anzuschaffen - schon alleine, um mit ihm im Vorfeld schon auf die Klausuren zu üben. 
+
 Um auf der sicheren Seite zu sein, fragt am besten bei euren Dozenten nach. 
 (Stand:11/2020)
 Folgende Taschenrechner können (ohne Gewähr) i. d. R. verwendet werden:
