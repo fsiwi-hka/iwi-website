@@ -15,7 +15,7 @@ Die aktuellsten Prüfungsordnungen findest du auf der [Download-Seite der Hochsc
 In den meisten Klausuren dürft ihr keinen Taschenrechner verwenden.
 Für Mathe 2 gibt es im Ilias eine Liste der erlaubten Modelle.
 Für Technische Informatik ist ein Taschenrechner, der mit HEX-Zahlen rechnen kann, sinnvoll, um zu üben. 
-In der Klausur "Technische Informatik" im 1. Semester ist jedoch **kein** Taschenrechner erlaubt!
+In der Klausur "Technische Informatik 1" im 1. Semester ist jedoch **kein** Taschenrechner erlaubt!
 
 Sollte es euch nicht möglich sein, bis zum zweiten Semester einen passenden Taschenrechner zu kaufen, hält das Sekretariat ein kleines Kontigent an Leihtaschenrechnern für die Klausuren bereit. Wir empfehlen euch jedoch, einen eigenen anzuschaffen - schon alleine, um mit ihm im Vorfeld schon auf die Klausuren zu üben. 
 
