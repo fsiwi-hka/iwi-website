@@ -8,7 +8,7 @@ header:
 ## Vorbereitung
 ### Wo kann ich die aktuellen Prüfungsordnungen herunterladen?
 
-Die aktuellsten Prüfungsordnungen findest du auf der [Download-Seite der Hochschule](https://www.hs-karlsruhe.de/downloads). Hier kannst du über die verfügbaren Filter nach der SPO (**S**tudien- und **P**rüfungs**O**rdnung) für Bachelor oder Master suchen und die Ergebnisse auf unsere Fakultät Informatik und Wirtschaftsinformatik eingrenzen.
+Die aktuellsten Prüfungsordnungen findest du auf der [Download-Seite der Hochschule](https://www.hs-karlsruhe.de/downloads). Hier kannst du über die verfügbaren Filter nach deiner SPO (**S**tudien- und **P**rüfungs**O**rdnung) mit "SPO Bachelor" oder "SPO Master" (Dokumententypen) suchen und die Ergebnisse auf unsere "Fakultät Informatik und Wirtschaftsinformatik" (Organisation) eingrenzen.
 
 ### Welchen Taschenrechner darf ich verwenden?
 
