@@ -1,7 +1,7 @@
 function Groups({groups}) {
     const renderedGroups = renderGroups(groups)
     return (
-        <div className="groups grid grid-cols-3 gap-8 mt-8">
+        <div className="groups grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             { renderedGroups }
         </div>
     )

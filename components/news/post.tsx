@@ -15,7 +15,7 @@ function NewsPost({
             </p>
             <div className="flex flex-col items-center">
                 <StaticPage
-                    className="w-10/12"
+                    className="md:w-10/12"
                     data={ title }
                     content={content}
                 />

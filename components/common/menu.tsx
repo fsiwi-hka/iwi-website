@@ -1,11 +1,15 @@
 import Link from "next/link"
 import { useRouter } from 'next/router'
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+// TODO: https://www.tailwindtoolbox.com/components/fullscreen-modal
 
 function Menu() {
     return (
         <nav className="w-full max-w-screen-lg mx-auto flex items-center justify-between">
             <Link href="/"><a>
-                <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-24"/>
+                <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-16 md:h-24"/>
             </a></Link>
             <ul className="flex list-none">
                 { menuItem("Aktuelles","/") }
@@ -15,9 +19,12 @@ function Menu() {
                 { menuItem("Sponsoring & Kooperation","/unternehmen/",) }
                 { menuItem("Kontakt","/kontakt/",) }
             </ul>
-            <Link href="/"><a>
-                <img src="/assets/user.png" alt="Zugang zum internen Bereich" className="h-8"/>
+            <Link href="/"><a className="hidden md:block">
+                <img src="/assets/user.png" alt="Zugang zum internen Bereich" className="md:h-8"/>
             </a></Link>
+            <a className="text-2xl mx-2 block md:hidden text-red-700 cursor-pointer">
+              <FontAwesomeIcon icon={faBars} />
+            </a>
         </nav>
     )
 }
@@ -46,10 +53,10 @@ function determineClasses(title, href) {
         router.pathname.startsWith(href) && href != "/" ||
         router.pathname.startsWith("/news") && href === "/"
     ) {
-        return "mr-6 my-0 active"
+        return "md:mr-6 md:my-0 active"
     }
     
-    return "mr-6 my-0"
+    return "hidden md:block md:mr-6 md:my-0"
 }
 
 export default Menu

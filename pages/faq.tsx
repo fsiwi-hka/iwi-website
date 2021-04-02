@@ -7,7 +7,7 @@ function Faq({ faq }) {
         <>
             <h2>Häufig gestellte Fragen &ndash; Beantwortet!</h2>
             <p className="mb-8">Wähle einen für dich interessanten Themenbereich:</p>
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {
                     faq.map((post) => ( 
                         <FaqTile 

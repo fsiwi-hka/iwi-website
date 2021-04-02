@@ -34,8 +34,8 @@ function displayEvents(events) {
 
     return (
         <>
-            <div className="flex -mx-2 mt-8 mb-16">
-                <div className="w-1/3 px-4">
+            <div className="md:flex md:-mx-2 mt-8 mb-4 md:mb-16">
+                <div className="md:w-1/3 px-8">
                     <Calendar
                         onChange={onDateChange}
                         className="shadow-md"
@@ -48,7 +48,7 @@ function displayEvents(events) {
                         }
                     />
                 </div>
-                <div className="grid grid-cols-2 gap-8 w-2/3 px-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:w-2/3 pt-8 md:pt-0 px-4">
                     { eventsOnDate }
                 </div>
             </div>
