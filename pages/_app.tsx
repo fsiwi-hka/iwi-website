@@ -26,6 +26,8 @@ function IWIWebsite({ Component, pageProps }) {
           </section>
           
           <Footer />
+
+          <script src="/scripts/menu.js"></script>
         </>
     )
 }
