@@ -129,4 +129,17 @@ nav .active a:after {
     @apply border-red-700 border-b-4 block;
 }
 
+.modal {
+    transition: opacity 0.25s ease;
+}
+
+body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+}
+
+.opacity-95 {
+    opacity: .96;
+}
+
 @import "tailwindcss/utilities";

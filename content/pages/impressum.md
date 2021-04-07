@@ -24,7 +24,7 @@ Vertreten durch: Zoe Kammerdiener, Anja Buchmaier
 Zoe Kammerdiener<br />
 Anja Buchmaier
 
-## Verbraucherstreitbeilegung/Universalschlichtungsstelle
+## Verbraucherstreitbeilegung
 
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
 Verbraucherschlichtungsstelle teilzunehmen.
