@@ -4,6 +4,7 @@
 
 * [Contribution Guidelines](contribute.md)
 * [Create and update content](content.md)
+* [Add events to the calendar](calendar-events.md#adding-events)
 
 ## Develop and Deploy
 

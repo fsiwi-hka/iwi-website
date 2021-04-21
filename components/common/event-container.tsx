@@ -21,7 +21,7 @@ function eventWithoutImage(event) {
                 { DateFormatter.formatDateTime(event.end.dateTime) } Uhr
             </p>
             <p><span className="font-heading text-blue-700">Wo:</span><br />
-                { event.location || "Keine Location angegeben" }
+                { createLinkIfLocationStartsWithHttp(event.location) || "Keine Location angegeben" }
             </p>
             <p>
                 <a className="text-blue-700" href={ event.htmlLink }>Im Kalender öffnen</a>
@@ -49,6 +49,12 @@ function eventWithImage(event) {
     )
 }
 
+function createLinkIfLocationStartsWithHttp(location: string) {
+    if (location != null && location.startsWith('http')) {
+        return <a className="text-blue-700" href={location} target="_blank">Online</a>
+    }
+    return location
+}
 
 
 export default EventContainer

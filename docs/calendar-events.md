@@ -16,6 +16,14 @@ to be seen by anyone. This includes:
 * meetups
 * other public events organized by the university, AStA or us
 
+## Adding Events
+
+To add events to the Google calendar, you need access to it. Please ask the
+infrastructure team in Slack. When adding events that are held online, please
+add the Zoom, GotoMeeting, Teams or any other link as the "location". If a link
+is present in the location field, we display it as such. Links in the
+description are currently not clickable.
+
 ## Service Account and Calendar API
 
 The easiest workflow to read calendar events programmatically (without a
