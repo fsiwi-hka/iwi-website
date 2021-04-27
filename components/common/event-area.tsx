@@ -3,6 +3,7 @@ import Calendar from 'react-calendar'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+import DateFormatter from '../util/date-formatter'
 
 /* The EventArea displays a Calendar on the left and,
  * depending on the selected date, single events on
@@ -23,12 +24,13 @@ function EventArea({ events }) {
 function displayEvents(events) {
     // we're using React state to change displayed
     // events and the selected date dynamically
-    const [eventsOnDate, setEvents] = useState([noEventsNotice()])
-    const [selectedDate, setDate] = useState(new Date())
+    const today = new Date()
+    const [eventsOnDate, setEvents] = useState(renderEvents(filterEvents(events, today),events))
+    const [selectedDate, setDate] = useState(today)
 
     function onDateChange(selectedDate) {
         const filteredEvents = filterEvents(events, selectedDate)
-        setEvents(renderEvents(filteredEvents))
+        setEvents(renderEvents(filteredEvents, events))
         setDate(selectedDate)
     }
 
@@ -68,11 +70,11 @@ function filterEvents(events, selectedDate) {
     })
 }
 
-function renderEvents(events) {
-    if(events.length == 0) {
-        return [noEventsNotice()]
+function renderEvents(filteredEvents, allEvents) {
+    if(filteredEvents.length == 0) {
+        return [noEventsNotice(allEvents)]
     }
-    return events.map(event => {
+    return filteredEvents.map(event => {
         return (
             <EventContainer event={event} />
         )
@@ -83,12 +85,31 @@ function dayHasEvent(date, events) {
     return filterEvents(events, date).length != 0
 }
 
-function noEventsNotice() {
+function noEventsNotice(allEvents) {
     return (
         <div key="no-events-notice">
             <p>
                 Keine Veranstaltungen an diesem Tag.
             </p>
+            { displayUpcomingEvents(allEvents) }
+        </div>
+    )
+}
+
+function displayUpcomingEvents(events) {
+    return (
+        <div>
+            <p><strong>Die nächsten Events</strong></p>
+            <ul>
+                { events.slice(0,3).map(event => {
+                    return (
+                        <li> 
+                            { DateFormatter.formatDateTime(event.start.dateTime) } Uhr:
+                            &nbsp;{ event.summary }
+                        </li> 
+                    )
+                })}
+            </ul>
         </div>
     )
 }
