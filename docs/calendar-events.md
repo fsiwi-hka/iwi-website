@@ -68,3 +68,6 @@ you run `npm run dev`. Please ask one of the maintainers if you haven't got it
 yet and need to work on the events integration.
 
 **If you don't need to work on the calendar integration, just ignore the error.**
+
+
+If you want to replace the entire calendar, you need to adjust the calendar ID in [index.tsx](../pages/index.tsx). 
