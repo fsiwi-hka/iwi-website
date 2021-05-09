@@ -103,7 +103,7 @@ function displayUpcomingEvents(events) {
             <ul>
                 { events.slice(0,3).map(event => {
                     return (
-                        <li> 
+                        <li key={event.id}> 
                             { DateFormatter.formatDateTime(event.start.dateTime) } Uhr:
                             &nbsp;{ event.summary }
                         </li> 
