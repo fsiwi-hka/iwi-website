@@ -6,7 +6,7 @@ header:
 stellen uns auf dieser Seite vor. Hier findest du also Informationen zu uns
 und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und
 Anregungen? Wir freuen uns auf deine Nachricht.'
-  image: '/assets/backgrounds/fachschaft_iwi.jpg'
+  image: '/assets/backgrounds/fachschaft_iwi.png'
 groups:
   
   - title: 'Vorstand'
@@ -24,12 +24,16 @@ groups:
     people:
       - 'Zoe Kammerdiener (IIBB)'
       - 'Marcel Rettig (INFB)'
+  - title: 'StuPa'
+    image: '/images/fachschaft/stupa_iwi.png'
+    people:
+      - 'Zoe Kammerdiener (IIBB)'
   - title: 'Fakultätsrat'
     image: '/images/fachschaft/fakultätsrat_iwi.png'
     people:
       - 'Carolin Schild (INFB)'
   - title: 'Fachbereich Social Media'
-    image: '/images/fachschaft/socialMedia.png'
+    image: '/images/fachschaft/socialMedia_iwi.png'
     people:
       - 'Anja Buchmaier'
       - 'Sabine Kaiser'
@@ -39,7 +43,7 @@ groups:
     people:
       - 'Athanasia Skaroglu Chasioti'
       - 'Jens Ettl'
-  - title: 'Fachbereich Website'
+  - title: 'Fachbereich Infrastruktur'
     image: '/images/fachschaft/website_iwi.png'
     people:
       - 'Anja Buchmaier'
@@ -48,6 +52,10 @@ groups:
       - 'Jonas Westenhoff'
       - 'Erik Dyka'
       - 'Michael Fischer'
+  - title: 'Fachbereich Sponsoring'
+    image: '/images/fachschaft/sponsoring_iwi.png'
+    people:
+      - 'Anja Buchmaier'
 ---
 ## Was ist die Fachschaft?
 

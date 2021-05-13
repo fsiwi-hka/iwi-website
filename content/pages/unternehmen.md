@@ -44,11 +44,11 @@ jedes Semesters durchgeführt wird. Dabei gibt es verschiedene Abstufungen:
   Nutzen) zu unserer Ersti-Tasche bei. Zum Dank präsentieren wir Ihr Logo im
   Ersti-Heft und auf unserer Website.
 * **Paket M**: Sie tragen Goodies bei und platzieren eine halbseitige Anzeige im
-  Ersti-Heft (Kosten: 100,00€)
+  Ersti-Heft 
 * **Paket L**: Sie tragen Goodies bei und platzieren eine ganzseitige Anzeige im
-  Ersti-Heft (Kosten: 175,00€)
+  Ersti-Heft 
 * **Paket XL**: Sie tragen Goodies bei und übernehmen einen Stand bei der
-  Ersti-Ralley auf dem Campus (Kosten: 300,00€)
+  Ersti-Ralley auf dem Campus 
 
 Wenn Sie einen Social-Media-Account auf Instagram betreiben, besteht zusätzlich
 die Möglichkeit, dass wir Sie in einem zentralen Erstitüten-Post taggen.
@@ -81,6 +81,7 @@ Ländern und hat über 450 Millionen registrierte Spieler.
 </span>
 
 ![Kooperation mit Gameforge](/images/unternehmen/gameforge-logo.png)
+![Kooperation mit Gameforge](/images/unternehmen/exxeta-logo.png)
 
 </div>
 
