@@ -35,7 +35,7 @@ Forum unter Fachschaft für alle einsehbar sind.
 
 ### Wo finde ich einen Lageplan der Hochschule?
 
-[icon:download|Hier ist der Lageplan!](https://www.hs-karlsruhe.de/fileadmin/media/maps/Gebaeudeplan_HsKA_A4-RGB.pdf)
+[icon:download|Hier ist der Lageplan!](https://www.h-ka.de/standorte)
 
 ### Wann ist die Mensa/Cafeteria geöffnet und was gibt es zu essen?
 
