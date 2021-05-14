@@ -23,11 +23,11 @@ groups:
     image: '/images/fachschaft/senat_iwi.png'
     people:
       - 'Zoe Kammerdiener (IIBB)'
-      - 'Marcel Rettig (INFB)'
   - title: 'StuPa'
     image: '/images/fachschaft/stupa_iwi.png'
     people:
       - 'Zoe Kammerdiener (IIBB)'
+      - 'Marcel Rettig (INFB)'
   - title: 'Fakultätsrat'
     image: '/images/fachschaft/fakultätsrat_iwi.png'
     people:
