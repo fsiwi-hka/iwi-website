@@ -35,9 +35,9 @@ groups:
   - title: 'Fachbereich Social Media'
     image: '/images/fachschaft/socialMedia_iwi.png'
     people:
+      - 'Melina Wünsch'
       - 'Anja Buchmaier'
       - 'Sabine Kaiser'
-      - 'Melina Wünsch'
   - title: 'Fachbereich Events'
     image: '/images/fachschaft/events_iwi.png'
     people:
@@ -46,12 +46,12 @@ groups:
   - title: 'Fachbereich Infrastruktur'
     image: '/images/fachschaft/website_iwi.png'
     people:
-      - 'Anja Buchmaier'
-      - 'Marcel Rettig'
       - 'Simon Kienzler'
-      - 'Jonas Westenhoff'
+      - 'Anja Buchmaier'
       - 'Erik Dyka'
       - 'Michael Fischer'
+      - 'Marcel Rettig'
+      - 'Jonas Westenhoff'
   - title: 'Fachbereich Sponsoring'
     image: '/images/fachschaft/sponsoring_iwi.png'
     people:

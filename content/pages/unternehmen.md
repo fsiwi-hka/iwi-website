@@ -81,7 +81,7 @@ Ländern und hat über 450 Millionen registrierte Spieler.
 </span>
 
 ![Kooperation mit Gameforge](/images/unternehmen/gameforge-logo.png)
-![Kooperation mit Gameforge](/images/unternehmen/exxeta-logo.png)
+![Kooperation mit Exxeta](/images/unternehmen/exxeta-logo.png)
 
 </div>
 
