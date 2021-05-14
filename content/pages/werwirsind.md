@@ -6,46 +6,61 @@ header:
 stellen uns auf dieser Seite vor. Hier findest du also Informationen zu uns
 und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und
 Anregungen? Wir freuen uns auf deine Nachricht.'
-  image: '/assets/backgrounds/fachschaft_iwi.jpg'
+  image: '/assets/backgrounds/fachschaft_iwi.png'
 groups:
+  
   - title: 'Vorstand'
+    image: '/images/fachschaft/vorstand_iwi.png'
     people:
       - 'Zoe Kammerdiener (IIBB)'
-      - 'Anja Buchmaier (INFB)'
+      - 'Anja Buchmaier (MKIB)'
   - title: 'Finanzer'
+    image: '/images/fachschaft/finanzer_iwi.png'
     people:
       - 'Marcel Rettig (INFB)'
-      - 'Tobias Hnyk (WIB)'
+      - 'Michael Fischer (INFM)'
   - title: 'Senat'
-    people:
-      - 'Daniel Baumgärtner (INFB)'
-      - 'Carolin Schild (INFB)'
-  - title: 'Fakultätsrat'
+    image: '/images/fachschaft/senat_iwi.png'
     people:
       - 'Zoe Kammerdiener (IIBB)'
-      - 'Daniel Baumgärtner (INFB)'
+  - title: 'StuPa'
+    image: '/images/fachschaft/stupa_iwi.png'
+    people:
+      - 'Zoe Kammerdiener (IIBB)'
+      - 'Marcel Rettig (INFB)'
+  - title: 'Fakultätsrat'
+    image: '/images/fachschaft/fakultätsrat_iwi.png'
+    people:
       - 'Carolin Schild (INFB)'
-      - 'Anja Buchmaier (MKIB)'
-  - title: 'Arbeitskreis Social Media'
+  - title: 'Fachbereich Social Media'
+    image: '/images/fachschaft/socialMedia_iwi.png'
     people:
-      - 'Anja Buchmaier'
-      - 'Zoe Kammerdiener'
       - 'Melina Wünsch'
-  - title: 'Arbeitskreis Events'
-    people:
       - 'Anja Buchmaier'
+      - 'Sabine Kaiser'
+  - title: 'Fachbereich Events'
+    image: '/images/fachschaft/events_iwi.png'
+    people:
+      - 'Athanasia Skaroglu Chasioti'
       - 'Jens Ettl'
-  - title: 'Arbeitskreis Website'
+  - title: 'Fachbereich Infrastruktur'
+    image: '/images/fachschaft/website_iwi.png'
+    people:
+      - 'Simon Kienzler'
+      - 'Anja Buchmaier'
+      - 'Erik Dyka'
+      - 'Michael Fischer'
+      - 'Marcel Rettig'
+      - 'Jonas Westenhoff'
+  - title: 'Fachbereich Sponsoring'
+    image: '/images/fachschaft/sponsoring_iwi.png'
     people:
       - 'Anja Buchmaier'
-      - 'Marcel Rettig'
-      - 'Simon Kienzler'
-      - 'Jonas Westenhoff'
 ---
 ## Was ist die Fachschaft?
 
 Im weitesten Sinne gehören alle Studierenden der
-[Fakultät für Informatik und Wirtschaftsinformatik](https://www.hs-karlsruhe.de/fk-iwi/)
+[Fakultät für Informatik und Wirtschaftsinformatik](https://www.h-ka.de/die-hochschule-karlsruhe/fakultaeten/informatik-und-wirtschaftsinformatik/ueberblick)
 der **Fachschaft Informatik und Wirtschaftsinformatik**, kurz IWI, an. Die aktive
 Fachschaft setzt sich allerdings nur aus einem kleinen Kreis freiwilliger Helfer
 zusammen, die sich aktiv für die Interessen der Studierenden in ihrem

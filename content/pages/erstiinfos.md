@@ -54,11 +54,14 @@ Sowie für die Masterstudiengänge Wirtschaftsinformatik und Informatik.__
 
 ### Terminplan
 
-**Hinweis:** <!--Hier siehst du unseren vorläufigen Terminplan.--> Da die Fakultäten Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase anbieten, sind hier zwei Terminpläne zu sehen. Beachte bitte, dass sich die genaueren Planungen noch hinziehen - es lohnt sich also, regelmäßig vorbeizuschauen.
-Remote bedeutet, dass ihr euch online einwählen könnt, wenn ihr nicht präsent an einer Veranstaltung teilnehmen könnt. 
+**Hinweis:** 
+Hier wird demnächst euer O-Phasen Terminplan stehen. Wir sind gerade in der Planung euerer Events. Seid gespannt! ;) 
+<!--Hier siehst du unseren vorläufigen Terminplan.--> 
+<!-- Da die Fakultäten Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase anbieten, sind hier zwei Terminpläne zu sehen. Beachte bitte, dass sich die genaueren Planungen noch hinziehen - es lohnt sich also, regelmäßig vorbeizuschauen. -->
+<!-- Remote bedeutet, dass ihr euch online einwählen könnt, wenn ihr nicht präsent an einer Veranstaltung teilnehmen könnt. -->
 <!--Die Links zu den Veranstaltungen werden 1-2 Tage vor Beginn in den Plan eingetragen.-->
 
-__Änderungen nach dem 12.03.21 sind fett hervorgehoben.__
+<!-- __Änderungen nach dem 12.03.21 sind fett hervorgehoben.__ -->
 
 <br></br>
 
@@ -66,6 +69,7 @@ __Änderungen nach dem 12.03.21 sind fett hervorgehoben.__
 
 __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninformatik__
 
+<!-- ###
 >Die Raumaufteilungen für den Montag 15.03.2021 werden vor Ort an euch kommuniziert. 
 
 
@@ -79,7 +83,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 | | 11:00 - 13:00 |Remote| PO-Briefing, hier erfahrt ihr mehr über eure Prüfungsordnung. | Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/94925716507?pwd=L0dJbWNqTnQzN2RNRzhJY1FDWnUwdz09 | alle |
 | | 13:00 - 14:00 | Daheim | Mittagspause | Kocht euch was schönes :) | alle|
 | | __14:00 - 15:30__ | Remote | IZ-Einführungsveranstaltung | https://zoom.us/j/95892653188 | alle|
-| | __18:00 - open end__ | Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Semester in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <!--<br>Event-Discord: https://discord.gg/NBJyJnbS2U -->| alle |
+| | __18:00 - open end__ | Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Semester in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <br>Event-Discord: https://discord.gg/NBJyJnbS2U | alle |
 | Mittwoch, 17.03.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | Eure Erste Vorlesung findet hier statt: https://zoom.us/j/93119016682?pwd=VzlwQndtdjdXdEFzR0xqMEM1ejMydz09 | Bachelor |
 || 09:50 - 11:20 | Remote | Software-Architekturen | Eure Erste Vorlesung findet hier statt: https://zoom.us/j/93052496269?pwd=V0xIMWJvTGoxUTEyNjFlV3RuazZMQT09 | Master |
 || 11:30 - 12:30 | Remote | Begrüßung des Rektorats | Hier geht's zum Stream: https://youtu.be/8FpZGday5Ic | alle |
@@ -95,12 +99,14 @@ __Wichtig für die Studiengänge Informatik (Bachelor +  Master) & Medieninforma
 | Freitag, 19.03.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | Hier könnt ihr daran teilnehmen: https://zoom.us/j/93119016682?pwd=VzlwQndtdjdXdEFzR0xqMEM1ejMydz09 | Bachelor |
 | | 09:50 - 11:20 | Remote | Mathematik für Maschinelles Lernen | Freiwillig, aber empfohlen: Mehr Infos: https://ilias.hs-karlsruhe.de/goto.php?target=crs_360821&client_id=HSKA | Master |
 
+ -->
+
 <br></br>
 
 #### Wirtschaftsinformatik, International IT Business und Data Science 
 
 __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und Internationales IT Business__
-
+<!-- ### 
 > Die Raumaufteilungen hängen im Foyer aus.</p>
 > 
 >Die Links um Remote daran teilzunehmen, werden noch in der Tabelle hinzugefügt
@@ -115,7 +121,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 | Dienstag, 16.03.2021 | 09:00 - 12:30 | Remote | Vorkenntnistest  | | Bachelor |
 | |12:30 - 14:00 | Daheim |Mittagspause | Kocht euch was schönes :) | alle|
 | | __14:00 - 15:30__ | Remote | IZ-Einführungsveranstaltung | https://zoom.us/j/95892653188 | alle|
-| | __18:00 - open end__| Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <!--<br>Event-Discord: https://discord.gg/NBJyJnbS2U --> | alle |
+| | __18:00 - open end__| Remote | Erstiabend | Der Erstiabend der Ophase wird dieses Jahr in gemütlichen Runden online stattfinden. Für Spiele wird gesorgt :) Macht euch ein kühles Getränk auf und freut euch auf einen Abend voller Spaß: https://zoom.us/j/91672929087?pwd=S3UwanhZQWNoZHBWRW4yME1oaDVCQT09 <br>Event-Discord: https://discord.gg/NBJyJnbS2U | alle |
 | Mittwoch, 17.03.2021 | 10:00 - 11:30 | Remote | Vorstellung akademisches Auslandsamt / Nachhaltiges Lernen + Zeitmanagement Teil 1 | | Bachelor |
 || 11:30 - 12:30 | Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/8FpZGday5Ic | alle |
 | | 12:30 - 13:30 | Remote | Nachhaltiges Lernen und Zeitmanagement / Lerntechniken  Teil 2 |  | Bachelor |
@@ -129,9 +135,9 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 | | 10:30 - 11:00 | Remote | Vorstellung "Erfolgreich Starten" |  | Bachelor |
 | Samstag, 20.03.2021 | 13:00 - 14:00 | Remote | Mathe-Vorkenntnistest |  | Bachelor |
 
-
+-->
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du
-unter [Immatrikulationsinfos](https://www.hs-karlsruhe.de/immatrikulationsinfos).
+unter [Immatrikulationsinfos](https://www.h-ka.de/studieren/studium-organisieren/einstieg-ins-studium/immatrikulationsinfos-ansprechpartner).
 
 <!-- ### Schlafplatz-->
 
@@ -150,7 +156,7 @@ Montag - Freitag:<br />
 Gebäude LI Raum 133<br />
 Moltkestr. 30, 76133 Karlsruhe<br />
 [icon:phone|+49 721 925-2305](tel:+497219252305)
-[icon:at|iz-benutzerberatung@hs-karlsruhe.de](iz-benutzerberatung@hs-karlsruhe.de)
+[icon:at|iz-benutzerberatung@hs-karlsruhe.de](iz-benutzerberatung@h-ka.de)
 
 #### Fragen?
 Habt ihr noch Fragen oder Probleme? Dann meldet euch in der Signal Gruppe oder schreibt eine Mail!
