@@ -32,7 +32,7 @@ Kenntnisse auffrischen wollen.
     </tr>
     <tr>
         <th>Ort</th>
-        <td>Gebäude E, Raum folgt // online </td>
+        <td>Gebäude E, Raum folgt<br>UND online </td>
     </tr>
     <tr>
         <th>Zugelassene Studiengänge</th>
