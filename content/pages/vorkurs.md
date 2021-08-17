@@ -121,8 +121,6 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
 </table>
 
 
-
-
 ## Anmeldung
 
 Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht und
