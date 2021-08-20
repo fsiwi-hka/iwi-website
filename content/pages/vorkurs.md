@@ -2,14 +2,14 @@
 title: 'Programmiervorkurs'
 header:
   title: 'Programmiervorkurs'
-  subtitle: 'Hier findest du alle Infos zum Programmiervorkurs die du brauchst.
+  subtitle: 'Hier findest du alle Infos zum Programmiervorkurs, die du brauchst.
   Der Programmiervorkurs ist für die Erstis der Studiengänge Informatik und Medieninformatik gedacht.'
   image: '/assets/backgrounds/vorkurs.jpg'
 ---
 
 ### Hinweis
 
-**Die Inhalte der einzelnen Tage findest du auf dieser Seite.**
+**Die Unterlagen der einzelnen Tage findest du im Verlauf des Kurses auf dieser Seite.**
 
 ## Allgemein
 
@@ -23,7 +23,10 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge.
 Natürlich sind auch alle anderen Erstis der Fakultät IWI eingeladen, die ihre
 Kenntnisse auffrischen wollen.
 
-## Ablauf
+Dieses Semester wollen wir den Vorkurs sowohl in Präsenz, als auch Online anbieten.
+Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich sein.
+
+## Überblick
 
 <table class="table-vertical">
     <tr>
@@ -67,9 +70,13 @@ Kenntnisse auffrischen wollen.
 <a>*</a> 
 Da Data Science ein neuer Studiengang ist, haben wir hier noch keine dedizierten Unterlagen. 
 Bis zum Start des Vorkurses wird sich zeigen, ob wir etwas dazu auf die Beine gestellt bekommen.
-Ihr könnt dennoch unabhängig davon am Vorkurs teilnehmen, und euch gegenseitig beim Lernen unterstützen.
+Ihr könnt dennoch unabhängig davon am Vorkurs teilnehmen, und zusammen mit den anderen Data Science 
+Teilnehmern die Programmiersprache Python in den Übungen kennenlernen. Als Grundlage dienen dann entweder
+die allgemeinen Übungen, oder wir finden was anderes für euch.
 Auch wir stehen dabei für Fragen gerne zur Verfügung.
-<br> <br>
+<br>
+
+## Ablauf
 
 ### Die Tage im Einzelnen
 
@@ -78,12 +85,13 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
 * Am Nachmittag treffen wir uns in [Discord]()(Link folgt).
 -->
 * Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in
-  dieser Zeit den Ablauf und das Vorgehen. An den Tagen 2 bis 4 werden in den ersten 30
-  Minuten die Aufgaben des Vortages besprochen. 
+  dieser Zeit den Ablauf und das Vorgehen. An den Tagen 2 bis 4 werden in den 
+  ersten 30 Minuten die Aufgaben des Vortages besprochen. 
 * Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge! Wir
   machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
 * Dann ist erst mal Mittagspause. Alle die in Präsenz dabei sind, dürfen sich uns
-  gerne zum Essen in der Stadt anschließen. Wer will darf natürlich auch was anderes machen :).
+  gerne zum Essen in der Stadt anschließen. 
+  Wer will, darf natürlich auch was anderes machen :).
 * Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten
   zu bearbeiten. Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht
   weiterkommen solltet. Außerdem habt ihr während dieser Zeit die Möglichkeit,
@@ -91,6 +99,8 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
 * Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo
   also zwischen 15:00 und 17:00 Uhr. Die Tutoren bleiben natürlich bis zum
   Schluss :)
+* Bei Interesse können wir den Tag auch noch bei einem gemütlichen Bier
+  ausklingen lassen.
 
 ### Kurzübersicht
 
@@ -110,11 +120,11 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
     <th>12 - 13 Uhr</th>
     <td>Mittagspause</td>
     <td>Zusammen in die Stadt</td>
-    <td>Mama kocht bestimmt</td>
+    <td>Mama kocht hoffentlich :)</td>
   </tr>  
   <tr>
     <th>ab 13 Uhr</th>
-    <td>Übungen</td>
+    <td>Übungen, gemütliches Zusammensitzen</td>
     <td>Java: <br> C#:</td>
     <td><a href="https://www.example.com">Discord (Link folgt)</a></td>
   </tr>
@@ -124,7 +134,8 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
 ## Anmeldung
 
 Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht und
-deinem Studiengang:
+deinem Studiengang. Wenn du schon jetzt weißt, ob du in Präsenz oder Online teilnehmen
+wirst, lass uns das bitte auch gleich wissen.
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
