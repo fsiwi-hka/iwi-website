@@ -135,7 +135,7 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
 
 Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht und
 deinem Studiengang. Wenn du schon jetzt weißt, ob du in Präsenz oder Online teilnehmen
-wirst, lass uns das bitte auch gleich wissen.
+wirst, lass uns das bitte wissen.
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
