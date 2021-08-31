@@ -12,8 +12,8 @@ const mainMenuItems = [
 ]
 
 const userMenuItems = [
-    { title: 'Registrierung', link: 'https://registration.iwi-hka.de', icon: faUserPlus },
     { title: 'Nextcloud', link: 'https://cloud.iwi-hka.de', icon: faCloud },
+    { title: 'Registrierung', link: 'https://registration.iwi-hka.de', icon: faUserPlus },
 ]
 
 function Menu() {
@@ -28,7 +28,7 @@ function Menu() {
                 </ul>
                 <div className="dropdown hidden md:block relative">
                     <img src="/assets/user.png" alt="Zugang zum internen Bereich" className="md:h-8"/>
-                    <div className="dropdown-menu top-0 right-0 absolute h-auto flex pt-12 hidden w-[220px]">
+                    <div className="dropdown-menu top-0 right-0 absolute h-auto flex pt-4 mt-8 hidden w-[220px]">
                         <ul className="block w-full bg-white list-none border-t-4 border-red-700">
                             { userMenuItems.map(item => { return userMenuItem(item.title, item.link, item.icon)}) }
                         </ul>
