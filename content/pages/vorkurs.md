@@ -139,6 +139,8 @@ wirst, lass uns das bitte auch gleich wissen.
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
+PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
+
 ## Benötigte Software
 
 * Für alle: Discord
