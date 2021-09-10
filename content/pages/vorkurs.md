@@ -35,7 +35,7 @@ Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich se
     </tr>
     <tr>
         <th>Ort</th>
-        <td>Gebäude E, Raum folgt<br>UND online </td>
+        <td>Gebäude E<br>UND online </td>
     </tr>
     <tr>
         <th>Zugelassene Studiengänge</th>
@@ -113,8 +113,8 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
   </tr><tr>
     <th>9:30 - 12 Uhr</th>
     <td>Infos, Übungsbesprechung, Vorlesung</td>
-    <td>Java: <br> C#:</td>
-    <td><a href="https://www.example.com">Zoom (Link folgt)</a></td>
+    <td>Einteilung Montag morgen <br> Wird dann aktualisiert</td>
+    <td><a href="https://zoom.us/j/92996968975?pwd=Zi9KUE1meWlHWlZmV0tmOEIwOEhaZz09" style="color: blue">Zoom</a></td>
   </tr>
   <tr>
     <th>12 - 13 Uhr</th>
@@ -125,8 +125,8 @@ Auch wir stehen dabei für Fragen gerne zur Verfügung.
   <tr>
     <th>ab 13 Uhr</th>
     <td>Übungen, gemütliches Zusammensitzen</td>
-    <td>Java: <br> C#:</td>
-    <td><a href="https://www.example.com">Discord (Link folgt)</a></td>
+    <td>Wie Vormittags</td>
+    <td><a href="https://discord.gg/JGgrjTqkhc" style="color: blue">Discord</a></td>
   </tr>
 </table>
 
@@ -142,11 +142,11 @@ wirst, lass uns das bitte wissen.
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 
 ## Benötigte Software
-
-* Für alle: Discord
-* Für C# : Notepad++ und Visual Studio Community Edition
-* Für Java : Eclipse für Java Developers und JDK 11 oder neuer
-* Für Python: Pycharm Community und Python 3.x
+* Zoom [Vorlesung Vormittags](https://zoom.us/j/92996968975?pwd=Zi9KUE1meWlHWlZmV0tmOEIwOEhaZz09)
+* Discord [IWI-Events (Übungen)](https://discord.gg/JGgrjTqkhc)
+* Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
+* Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) und [.Net](https://dotnet.microsoft.com/download)
+* Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
 
 ## Unterlagen
 
