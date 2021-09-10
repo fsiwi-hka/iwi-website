@@ -39,11 +39,11 @@ Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich se
     </tr>
     <tr>
         <th>Zugelassene Studiengänge</th>
-        <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business, Data Science<sup>*</sup></td>
+        <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business, Data Science</td>
     </tr>
     <tr>
         <th>Programmiersprachen</th>
-        <td>Java, C#, Python<sup>*</sup></td>
+        <td>Java, C#, Python</td>
     </tr>
     <tr>
         <th>Themen</th>
@@ -66,15 +66,6 @@ Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich se
         <td>kostenlos</td>
     </tr>
 </table>
-
-<a>*</a> 
-Da Data Science ein neuer Studiengang ist, haben wir hier noch keine dedizierten Unterlagen. 
-Bis zum Start des Vorkurses wird sich zeigen, ob wir etwas dazu auf die Beine gestellt bekommen.
-Ihr könnt dennoch unabhängig davon am Vorkurs teilnehmen, und zusammen mit den anderen Data Science 
-Teilnehmern die Programmiersprache Python in den Übungen kennenlernen. Als Grundlage dienen dann entweder
-die allgemeinen Übungen, oder wir finden was anderes für euch.
-Auch wir stehen dabei für Fragen gerne zur Verfügung.
-<br>
 
 ## Ablauf
 
@@ -143,7 +134,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 
 ## Benötigte Software
 * Zoom [Vorlesung Vormittags](https://zoom.us/j/92996968975?pwd=Zi9KUE1meWlHWlZmV0tmOEIwOEhaZz09)
-* Discord [IWI-Events (Übungen)](https://discord.gg/JGgrjTqkhc)
+* Discord [IWI-Events](https://discord.gg/JGgrjTqkhc) (Übung)
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
 * Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) und [.Net](https://dotnet.microsoft.com/download)
 * Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
