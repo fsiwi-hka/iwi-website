@@ -96,11 +96,13 @@ function mobileMenuItem(title, href) {
 function userMenuItem(title, href, icon) {
     return (
         <li key={ href } className="px-8 py-4">
-            <Link href={ href }>
-                <span className="block cursor-pointer text-gray-700 no-underline font-heading font-bold">
-                    <FontAwesomeIcon icon={ icon } className="mr-4" fixedWidth />
-                    { title }
-                </span>
+            <Link href={ href } passHref>
+                <a title={title}>
+                    <span className="block cursor-pointer text-gray-700 no-underline font-heading font-bold">
+                        <FontAwesomeIcon icon={ icon } className="mr-4" fixedWidth />
+                        { title }
+                    </span>
+                </a>
             </Link>
         </li>
     )
