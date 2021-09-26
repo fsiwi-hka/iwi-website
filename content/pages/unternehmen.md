@@ -8,7 +8,7 @@ header:
 
 ## Unsere aktuellen Sponsoren
 
-![Sponsoren](/images/unternehmen/kooperationspartner.png)
+![Sponsoren](/images/unternehmen/Sponsoren_WS21.png)
 
 Wir pflegen viele Partnerschaften mit Unternehmen in der Region, nicht zuletzt
 durch Alumni, die der Fachschaft über das Studium hinaus treu bleiben. Auch Sie
