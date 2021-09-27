@@ -99,7 +99,7 @@ __Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformat
 | | 16:00 - 22:00 | In den Räumen im 2. und 3. Stock im Gebäude E | Erstiabend | Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt. | alle |
 |Dienstag, 28.09.2021 | 09:30 - 11:00 | E201, E311 |Zeitmanagement & Nachhaltiges Lernen | Diesen Kurs aus der WI-Projektwoche werden wir auch zu euch streamen :) #TODO | alle |
 | | 11:30 - 12:30 | E201, E311 + Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/NpOqUx2G3Go | alle |
-| | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren | alle | 
+| | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065 | alle | 
 | | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
 | | 14:00 - 15:30 | E201, E311 + Remote | IZ-Einführungsveranstaltung | https://h-ka-de.zoom.us/j/99707595406 | alle | 
 | | 15:30 - 17:30 | Treffpunkt vor Gebäude E | Campusrundgang | Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :) | alle |
@@ -139,7 +139,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 |Dienstag, 28.09.2021 | 09:00 - 09:30 | Gebäude E + Remote | Akademisches Auslandsamt  | | Bachelor |
 | | 09:30 - 11:00 | Gebäude E + Remote |Zeitmanagement & Nachhaltiges Lernen | | Bachelor |
 | | 11:30 - 12:30 | Gebäude E + Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/NpOqUx2G3Go | alle |
-| | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren | alle | 
+| | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065| alle | 
 | | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
 | | 14:00 - 15:30 | Gebäude E + Remote | IZ-Einführungsveranstaltung | https://h-ka-de.zoom.us/j/99707595406 | alle |
 | | **15:30 - 16:30** | Gebäude E | **Einstufungstest** | | alle | 
