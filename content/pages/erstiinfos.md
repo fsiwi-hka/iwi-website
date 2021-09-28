@@ -136,7 +136,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 | | 13:00 - 14:00 | Karlsruhe | Mittagspause | Ihr könnt in die Stadt oder zur Cafeteria (Gebäude A, unten) gehen und dort etwas essen gehen. Hier findet Ihr den [aktuellen Essenplan](https://www.sw-ka.de/de/essen/?kw=39) | alle |
 | | 14:00 - 16:00 | Gebäude E + Remote | Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/99018555264?pwd=Mzk5aU5xRHBCdjZTczM0Ry9zd2x4UT09 | alle |
 | | 16:00 - 22:00 | In den Räumen im 2. und 3. Stock im Gebäude E | Erstiabend | Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt. | alle |
-|Dienstag, 28.09.2021 | 09:00 - 09:30 | Gebäude E + Remote | Akademisches Auslandsamt  | | Bachelor |
+|Dienstag, 28.09.2021 | 09:00 - 09:30 | Gebäude E + Remote | Akademisches Auslandsamt  | https://h-ka-de.zoom.us/j/93705809404 | Bachelor |
 | | 09:30 - 11:00 | Gebäude E + Remote |Zeitmanagement & Nachhaltiges Lernen | https://h-ka-de.zoom.us/j/93705809404| Bachelor |
 | | 11:30 - 12:30 | Gebäude E + Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/NpOqUx2G3Go | alle |
 | | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065| alle | 
