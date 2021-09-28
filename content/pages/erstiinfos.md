@@ -97,14 +97,14 @@ __Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformat
 | | 13:00 - 14:00 | Karlsruhe | Mittagspause | Ihr könnt in die Stadt oder zur Cafeteria (Gebäude A, unten) gehen und dort etwas essen gehen. Hier findet ihr den [aktuellen Essenplan](https://www.sw-ka.de/de/essen/?kw=39) | alle |
 | | 14:00 - 16:00 | E201, E306 + Remote| Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: https://h-ka-de.zoom.us/j/94770538065 | alle |
 | | 16:00 - 22:00 | In den Räumen im 2. und 3. Stock im Gebäude E | Erstiabend | Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt. | alle |
-|Dienstag, 28.09.2021 | 09:30 - 11:00 | E201, E311 |Zeitmanagement & Nachhaltiges Lernen | Diesen Kurs aus der WI-Projektwoche werden wir auch zu euch streamen :) #TODO | alle |
+|Dienstag, 28.09.2021 | 09:30 - 11:00 | E201, E311 |Zeitmanagement & Nachhaltiges Lernen | Diesen Kurs aus der WI-Projektwoche werden wir auch zu euch streamen :) https://h-ka-de.zoom.us/j/93705809404 | alle |
 | | 11:30 - 12:30 | E201, E311 + Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/NpOqUx2G3Go | alle |
 | | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065 | alle | 
 | | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
 | | 14:00 - 15:30 | E201, E311 + Remote | IZ-Einführungsveranstaltung | https://h-ka-de.zoom.us/j/99707595406 | alle | 
 | | 15:30 - 17:30 | Treffpunkt vor Gebäude E | Campusrundgang | Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :) | alle |
 | | 17:30 | Vor Gebäude E | Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. | alle|
-| | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's #TODO | alle |
+| | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los. | alle |
 |Mittwoch, 29.09.2021 | 11:00 - 13:00 | E .... + Remote | PO-Briefing | Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/94925716507?pwd=L0dJbWNqTnQzN2RNRzhJY1FDWnUwdz09 | alle |
 | | 13:00 - 14:00 | Karlsruhe | Mittagspause | | alle |
 | | 14:00 - 18:00 | Treffpunkt vor Gebäude E | Rallye | In einer kleinen Rallye rund um Campus und Schlossgarten machen wir ein paar kleine Spielchen | alle |
@@ -136,8 +136,8 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 | | 13:00 - 14:00 | Karlsruhe | Mittagspause | Ihr könnt in die Stadt oder zur Cafeteria (Gebäude A, unten) gehen und dort etwas essen gehen. Hier findet Ihr den [aktuellen Essenplan](https://www.sw-ka.de/de/essen/?kw=39) | alle |
 | | 14:00 - 16:00 | Gebäude E + Remote | Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/99018555264?pwd=Mzk5aU5xRHBCdjZTczM0Ry9zd2x4UT09 | alle |
 | | 16:00 - 22:00 | In den Räumen im 2. und 3. Stock im Gebäude E | Erstiabend | Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt. | alle |
-|Dienstag, 28.09.2021 | 09:00 - 09:30 | Gebäude E + Remote | Akademisches Auslandsamt  | | Bachelor |
-| | 09:30 - 11:00 | Gebäude E + Remote |Zeitmanagement & Nachhaltiges Lernen | | Bachelor |
+|Dienstag, 28.09.2021 | 09:00 - 09:30 | Gebäude E + Remote | Akademisches Auslandsamt  | https://h-ka-de.zoom.us/j/93705809404 | Bachelor |
+| | 09:30 - 11:00 | Gebäude E + Remote |Zeitmanagement & Nachhaltiges Lernen | https://h-ka-de.zoom.us/j/93705809404| Bachelor |
 | | 11:30 - 12:30 | Gebäude E + Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/NpOqUx2G3Go | alle |
 | | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065| alle | 
 | | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
@@ -148,7 +148,7 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 | | danach | Karlsruhe | (Mittags)pause | | alle |
 | | 15:00 - 17:30 | Treffpunkt vor Gebäude E | Campusrundgang | Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :) | alle |
 | | 17:30 | Vor Gebäude E | Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. | alle|
-| | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's .... | alle |
+| | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.| alle |
 |Donnerstag, 30.09.2021 | 09:00 - 13:00 | Gebäude E + Remote| Programmier-Workshop  | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB |
 | | 09:00 - 12:00 | E001 + Remote | Organisation + Data Analytics | Nur für Data Science | Bachelor DS |
 | | 13:00 - 14:00 | Karlsruhe | Mittagspause | | alle|
