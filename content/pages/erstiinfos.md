@@ -103,9 +103,9 @@ __Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformat
 | | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
 | | 14:00 - 15:30 | E201, E311 + Remote | IZ-Einführungsveranstaltung | https://h-ka-de.zoom.us/j/99707595406 | alle | 
 | | 15:30 - 17:30 | Treffpunkt vor Gebäude E | Campusrundgang | Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :) | alle |
-| | 17:30 | Vor Gebäude E | Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. | alle|
+| | **17:00** | Vor Gebäude E | Treffen zur Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. Start ca. 17:15| alle|
 | | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los. | alle |
-|Mittwoch, 29.09.2021 | 11:00 - 13:00 | E .... + Remote | PO-Briefing | Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/94925716507?pwd=L0dJbWNqTnQzN2RNRzhJY1FDWnUwdz09 | alle |
+|Mittwoch, 29.09.2021 | **10:00 - 12:00** | **Remote** | PO-Briefing | Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Bachelor: https://h-ka-de.zoom.us/j/98282978855 <br>Master: https://h-ka-de.zoom.us/j/96621751755 | alle |
 | | 13:00 - 14:00 | Karlsruhe | Mittagspause | | alle |
 | | 14:00 - 18:00 | Treffpunkt vor Gebäude E | Rallye | In einer kleinen Rallye rund um Campus und Schlossgarten machen wir ein paar kleine Spielchen | alle |
 |Donnerstag, 30.09.2021 | 08:00 - 09:30 | E311 | Programmieren | Zug B1 | Bachelor |
@@ -142,18 +142,18 @@ __Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master) und I
 | | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065| alle | 
 | | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
 | | 14:00 - 15:30 | Gebäude E + Remote | IZ-Einführungsveranstaltung | https://h-ka-de.zoom.us/j/99707595406 | alle |
-| | **15:30 - 16:30** | Gebäude E | **Einstufungstest** | | alle | 
-|Mittwoch, 29.09.2021 | 09:00 - 13:00 | Gebäude E + Remote | Mathe Tag | Nur für Wirtschaftsinformatik und Internationales IT Business| Bachelor WI & IIB |
-| | 10:00 - 14:00 | E001 + Remote | Mathe Tag | Nur für Data Science | Bachelor DS |
+| | **15:30 - 16:30** | **E101-104 (+ Remote)** | **Einführungsveranstaltung von Dr. Fischer** | https://h-ka-de.zoom.us/j/93719590348 | alle | 
+|Mittwoch, 29.09.2021 | 09:00 - 13:00 | **E101-104** | Mathe Tag | Nur für Wirtschaftsinformatik und Internationales IT Business| Bachelor WI & IIB |
+| | 10:00 - 14:00 | **E101-104** | Mathe Tag | Nur für Data Science | Bachelor DS |
 | | danach | Karlsruhe | (Mittags)pause | | alle |
 | | 15:00 - 17:30 | Treffpunkt vor Gebäude E | Campusrundgang | Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :) | alle |
-| | 17:30 | Vor Gebäude E | Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. | alle|
+| | **17:00** | Vor Gebäude E | Treffen zur Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. Start ca. 17:15| alle|
 | | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.| alle |
-|Donnerstag, 30.09.2021 | 09:00 - 13:00 | Gebäude E + Remote| Programmier-Workshop  | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB |
-| | 09:00 - 12:00 | E001 + Remote | Organisation + Data Analytics | Nur für Data Science | Bachelor DS |
+|Donnerstag, 30.09.2021 | 09:00 - 13:00 | **E101-104**| Programmier-Workshop  | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB |
+| | 09:00 - 12:00 | **E101-104**| Organisation + Data Analytics | Nur für Data Science | Bachelor DS |
 | | 13:00 - 14:00 | Karlsruhe | Mittagspause | | alle|
 | | 14:00 - 18:00 | Treffpunkt vor Gebäude E | Rallye | In einer kleinen Rallye rund um Campus und Schlossgarten machen wir ein paar kleine Spielchen | alle |
-|Freitag, 01.10.2021 | 09:00 - 10:30 | Gebäude E + Remote | Quizfragen zur Orga + Stundenplan | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB|
+|Freitag, 01.10.2021 | 09:00 - 10:30 | **E101-104** | Quizfragen zur Orga + Stundenplan | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB|
 | | 11:00 - 11:30 | Gebäude E + Remote | Vorstellung "Erfolgreich Starten" | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB|
 | | 13:30 - 19:00 | Gebäude B, Foyers | Impfaktion der HKA | Verimpft werden BioNTech und AstraZeneca für Erst-, Zweit-, und bei Bedarf auch Drittimpfungen. Es kann jeder geimpft werden (nicht nur Hochschulangehörige) | alle |
 
