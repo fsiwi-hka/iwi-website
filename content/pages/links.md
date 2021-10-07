@@ -7,8 +7,19 @@ header:
 ---
 
 ### Aktuelle Links
-#### Karrieremesse REALITY 2021:
-[icon:link|Hier geht's zu der Karrieremesse REALITY 2021](https://www.reality-jobmesse.de/)
+### Kaminabend Delta:
+#### Wann?
+Montag 11. Oktober
+18 Uhr
 
-#### IWI Instagram:
+#### Wo? 
+Raum E 101
+
+#### Was? 
+[icon:link|Hier geht's zur Website von delta](delta-karlsruhe.de) 
+delta ist eine studentische Unternehmensberatung und möchte euch erzählen wie so ein IT-Consulting Projekt abläuft. 
+Ihr habt dort die Möglichkeit mehr über delta kennenzulernen, euch zu connecten. 
+Für Getränke und Unterhaltung ist gesorgt!
+
+### IWI Instagram:
 [icon:link|Hier geht's zu unserem Instagram-Account](https://www.instagram.com/iwi_fachschaft/)
