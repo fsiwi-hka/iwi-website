@@ -7,19 +7,19 @@ header:
 ---
 
 ### Aktuelle Links
-### Kaminabend Delta:
+### Career Contacts:
 #### Wann?
-Montag 11. Oktober
-18 Uhr
+Montag - Freitag 25.-29. Oktober 2021
+10:00 - 16:00 Uhr
 
 #### Wo? 
-Raum E 101
+virtuell & im Foyer des Gebäude B
 
 #### Was? 
-[icon:link|Hier geht's zur Website von delta](delta-karlsruhe.de) 
-delta ist eine studentische Unternehmensberatung und möchte euch erzählen wie so ein IT-Consulting Projekt abläuft. 
-Ihr habt dort die Möglichkeit mehr über delta kennenzulernen, euch zu connecten. 
-Für Getränke und Unterhaltung ist gesorgt!
+[icon:link|Hier geht's zur Website der Career Contacts](https://www.h-ka.de/careercontacts) 
+Mehr als nur eine Karriere-Messe!
+Die CareerContacts bietet Ihnen die Möglichkeit mit Unternehmen aus Karlsruhe und Umgebung in Kontakt zu treten. Der persönliche und direkte Kontakt zwischen Studierenden und Firmen steht im Vordergrund.
+Dieses Jahr wird die CareerContacts Week von einem spannenden Rahmenprogramm begleitet. In Live-Ständen, Vorträgen, Einzelinterviews und Workshops können sich HKA-Studierende ein vertieftes Bild über verschiedene Unternehmen machen.
 
 ### IWI Instagram:
 [icon:link|Hier geht's zu unserem Instagram-Account](https://www.instagram.com/iwi_fachschaft/)
