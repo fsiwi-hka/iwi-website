@@ -44,11 +44,11 @@ jedes Semesters durchgeführt wird. Dabei gibt es verschiedene Abstufungen:
   Nutzen) zu unserer Ersti-Tasche bei. Zum Dank präsentieren wir Ihr Logo im
   Ersti-Heft und auf unserer Website.
 * **Paket M**: Sie tragen Goodies bei und platzieren eine halbseitige Anzeige im
-  Ersti-Heft 
+  Ersti-Heft
 * **Paket L**: Sie tragen Goodies bei und platzieren eine ganzseitige Anzeige im
-  Ersti-Heft 
+  Ersti-Heft
 * **Paket XL**: Sie tragen Goodies bei und übernehmen einen Stand bei der
-  Ersti-Ralley auf dem Campus 
+  Ersti-Ralley auf dem Campus
 
 Wenn Sie einen Social-Media-Account auf Instagram betreiben, besteht zusätzlich
 die Möglichkeit, dass wir Sie in einem zentralen Erstitüten-Post taggen.
@@ -68,7 +68,7 @@ Sie sich präsentieren möchten. Denkbar sind beispielsweise:
 
 Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid md:flex grid-cols-2 gap-8">
 
 <span>
 
