@@ -39,6 +39,8 @@ if(isset($_GET['address'])) {
         case 'labornacht':
             $location = 'mailto:labornacht@iwi-hka.de';
             break;
+        case 'kaminabend':
+            $location = 'mailto:kaminabend@iwi-hka.de';
         default:
             $location = "https://iwi-hka.de";
             break;
