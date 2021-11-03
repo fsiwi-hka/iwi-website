@@ -68,7 +68,7 @@ Sie sich präsentieren möchten. Denkbar sind beispielsweise:
 
 Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!
 
-<div class="grid md:flex grid-cols-2 gap-8">
+<div class="flex md:flex-row flex-col">
 
 <span>
 
