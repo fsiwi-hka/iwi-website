@@ -142,4 +142,12 @@ body.modal-active {
     opacity: .96;
 }
 
+
+/*Dropdown User Menu */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    width: 220px;
+}
+
 @import "tailwindcss/utilities";

@@ -1,14 +1,19 @@
 import Link from "next/link"
 import { useRouter } from 'next/router'
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faCloud, faTimes, faUserPlus } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const items = [
+const mainMenuItems = [
     { title: "Erstsemester", slug: "/erstiinfos/" },
     { title: "Wer sind wir?", slug: "/werwirsind/" },
     { title: "Wissenswertes", slug: "/faq/" },
     { title: "Sponsoring & Kooperation", slug: "/unternehmen/" },
     { title: "Kontakt", slug: "/kontakt/" },
+]
+
+const userMenuItems = [
+    { title: 'Nextcloud', link: 'https://cloud.iwi-hka.de', icon: faCloud },
+    { title: 'Registrierung', link: 'https://registration.iwi-hka.de', icon: faUserPlus },
 ]
 
 function Menu() {
@@ -19,11 +24,16 @@ function Menu() {
                     <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-16 md:h-24"/>
                 </a></Link>
                 <ul className="flex list-none">
-                    { items.map(item => { return menuItem(item.title, item.slug)}) }
+                    { mainMenuItems.map(item => { return menuItem(item.title, item.slug)}) }
                 </ul>
-                <Link href="/"><a className="hidden md:block">
+                <div className="dropdown hidden md:block relative">
                     <img src="/assets/user.png" alt="Zugang zum internen Bereich" className="md:h-8"/>
-                </a></Link>
+                    <div className="dropdown-menu top-0 right-0 absolute h-auto flex pt-4 mt-8 hidden w-[220px]">
+                        <ul className="block w-full bg-white list-none border-t-4 border-red-700">
+                            { userMenuItems.map(item => { return userMenuItem(item.title, item.link, item.icon)}) }
+                        </ul>
+                    </div>
+                </div>
                 <a className="text-2xl mx-2 block md:hidden text-red-700 cursor-pointer modal-open">
                 <FontAwesomeIcon icon={faBars} />
                 </a>
@@ -59,14 +69,12 @@ function mobileMenu() {
                 </div>
                 <div className="modal-content container mx-auto h-auto text-center pt-8">
                     <ul className="list-none">
-                        { items.map(item => { return mobileMenuItem(item.title, item.slug)}) }
+                        { mainMenuItems.map(item => { return mobileMenuItem(item.title, item.slug)}) }
                     </ul>
                     <hr className="border-t-2 border-gray-400 mt-4 mb-8 w-3/4 m-auto" />
-                    <p className="w-1/2 m-auto py-2 pl-8" style={{ background: 'url("/assets/user.png") no-repeat left 50%' }}>
-                        <Link href="/"><a className="block text-xl text-gray-700 no-underline font-heading font-bold">
-                            Mein Account
-                        </a></Link>
-                    </p>
+                    <ul className="list-none">
+                        { userMenuItems.map(item => { return mobileMenuItem(item.title, item.link)}) }
+                    </ul>
                 </div>
             </div>
         </div>
@@ -79,6 +87,21 @@ function mobileMenuItem(title, href) {
             <Link href={ href }>
                 <a className="text-xl text-gray-700 no-underline font-heading font-bold">
                     { title }
+                </a>
+            </Link>
+        </li>
+    )
+}
+
+function userMenuItem(title, href, icon) {
+    return (
+        <li key={ href } className="px-8 py-4">
+            <Link href={ href } passHref>
+                <a title={title}>
+                    <span className="block cursor-pointer text-gray-700 no-underline font-heading font-bold">
+                        <FontAwesomeIcon icon={ icon } className="mr-4" fixedWidth />
+                        { title }
+                    </span>
                 </a>
             </Link>
         </li>
