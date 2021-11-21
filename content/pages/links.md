@@ -7,26 +7,35 @@ header:
 ---
 
 ### Aktuelle Links
-### IWI - Kicker Tunier:
+### League of Legends IWI-CUP:
 #### Wann?
-Donnerstag 18. November 2021
-17:30 Uhr (bitte 15 min vorher da sein)
+Samstag 11. Dezember 2021
+12:00 Uhr 
 
 #### Wo? 
-Raum E 004
+Online
+[icon:link|Twitch](https://www.twitch.tv/iwi_hska)
+[icon:link|Anmeldung](https://forms.gle/Ti5wvtAsVVS1Pzto8)
+[icon:link|HKA-Turnierserver](https://discord.gg/6UjFsXBXbs)
 
 #### Was? 
-Es ist wieder soweit nach drei Semestern Pause freuen wir uns wieder unser legendäres Kickerturnier stattfinden zu lassen. 
-Mitmachen dürfen alle Studierende, Lehrende und Mitarbeitende der Fakultät IWI. 
+Hallo werte Kommilitonen,
+endlich ist es soweit, das zweite League of Legends Turnier der Fachschaft IWI findet statt. Der HKA-IWI-Cup wird am 11.12.21 um 12 Uhr stattfinden und live auf [icon:link|Twitch](https://www.twitch.tv/iwi_hska) gestreamed und kommentiert. 
 
-Egal ob Anfänger oder Fortgeschrittene der Spaß steht an erster Stelle. 
-Um besser planen zu können, tragt euch bitte in die Anmeldeliste in der Fachschaft oder unter diesem Link an. 
-Anmeldeschluss ist Donnerstag, der 18.11.2021 um 14:00 Uhr
-[icon:link|Hier geht's zur Anmeldung](https://docs.google.com/document/d/1bkrOppqnUbWjw4WMCyAuABSDkRUVx7n6/edit?usp=sharing&ouid=114440147493982468019&rtpof=true&sd=true)
+Es wird eine klassische Gruppenphase gespielt, gefolgt von einer Knock-Out-Phase, wie auch bei den Worlds, wir spielen aber mit einem Losers Bracket. Wir rechnen damit, dass die Gruppenphase ca. 15:30 vorbei sein wird und das gesamte Turnier ca. bis 20 Uhr laufen wird. Die Gewinner erwarten spannende Preise.
+#### Anmeldung
+Anmelden kann man sich als Einzelperson, aber auch als Gruppe unter folgendem Link:
+[icon:link|Anmeldung](https://forms.gle/Ti5wvtAsVVS1Pzto8)
+Wenn ihr euch als Gruppe anmeldet, muss trotzdem jeder eine Anmeldung ausfüllen.
+Der Anmeldeschluss ist der 30.11. oder sobald alle Teams gebildet wurden. Dann erfahrt ihr auch mit wem ihr gematched wurdet und könnt bis zum Turnier trainieren.
+
+Das Turnier soll als Kennenlern Gelegenheit dienen für Erstis, aber auch für Studis des zweiten und dritten Semesters, die aufgrund der Corona-Pandemie vielleicht noch nicht den Kontakt zu vielen anderen Kommilitonen aufbauen konnten. Daher werden diese Semester bei der Teamfindung priorisiert. Selbstverständlich können sich auch Studenten aus allen anderen Semestern und Studiengängen anmelden und sogar hochschulfremde Personen können teilnehmen sofern sie sich mit einem Freund zusammen anmelden. 
+Ein Team muss jedoch aus mindestens drei Studenten der Hochschule bestehen und da das Turnier durch die Fachschaft IWI veranstaltet wird, werden deren Studenten priorisiert. Wir freuen uns trotzdem über jede Anmeldung und werden versuchen, dass möglichst viele Spieler teilnehmen können.
+
+Bei Fragen oder Anmerkungen wendet auch bitte an LuxLikeYouLose#2794 über Discord oder auf dem
+[icon:link|HKA-Turnierserver](https://discord.gg/6UjFsXBXbs)
 
 Wir freuen uns auf euch :) 
-Liebe Grüße,
-Eure Fachschaft
 
 
 ### IWI Instagram:
