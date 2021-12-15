@@ -46,11 +46,11 @@ groups:
   - title: 'Fachbereich Infrastruktur'
     image: '/images/fachschaft/website_iwi.png'
     people:
-      - 'Simon Kienzler'
-      - 'Anja Buchmaier'
+      - 'Dustin Sommerfeld'
       - 'Erik Dyka'
       - 'Michael Fischer'
       - 'Marcel Rettig'
+      - 'Matthias Handtmann'
       - 'Jonas Westenhoff'
   - title: 'Fachbereich Sponsoring'
     image: '/images/fachschaft/sponsoring_iwi.png'
