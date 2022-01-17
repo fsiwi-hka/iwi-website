@@ -175,7 +175,7 @@ Das Praxissemester kann erst angetreten werden, wenn das Grundstudium vollständ
 
 ### Was für Löhne sind üblich?
 
-Schau auf unsere Wiki-Seite: https://www.hska.info/vorlesungen/unterlagen/praxistaetigkeit oder auch im Forum 
+Schau auf unsere [Wiki-Seite](https://www.hska.info/vorlesungen/unterlagen/praxistaetigkeit) oder auch im Forum.
 
 
 ## Prüfungsan- und -abmeldung
