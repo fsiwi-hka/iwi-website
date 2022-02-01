@@ -23,9 +23,9 @@ function Index({ news, events }) {
                 }
             </div>
             <h2>Veranstaltungen</h2>
-            <EventArea
-                events={ events }
-            />
+
+            <p>Aktuell können wir leider keine Veranstaltungen auf der Website anzeigen.</p>
+            <p>Du kannst den <a className="text-blue-700 underline" href="https://calendar.google.com/calendar/u/0/embed?src=b85j5fp42daj0r7g6s0mjsjvu4@group.calendar.google.com&ctz=Europe/Berlin">Kalender</a> direkt aufrufen.</p>
         </>
     )
 }
@@ -38,7 +38,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
         return data
     })(require.context('../content/news', true, /\.md$/))
 
-    const events = await getCalendarEvents('b85j5fp42daj0r7g6s0mjsjvu4@group.calendar.google.com')
+
+    const events = {} //await getCalendarEvents('b85j5fp42daj0r7g6s0mjsjvu4@group.calendar.google.com')
 
     return {
         props: {

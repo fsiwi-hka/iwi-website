@@ -110,4 +110,6 @@ Spendenquittung ausstellen.
 
 ## Veranstaltungen von und mit Unternehmen
 
-{{EventArea}}
+Aktuell können wir leider keine Veranstaltungen auf der Website anzeigen.
+
+Du kannst den [Kalender](https://calendar.google.com/calendar/u/0/embed?src=b85j5fp42daj0r7g6s0mjsjvu4@group.calendar.google.com&ctz=Europe/Berlin) direkt aufrufen.
