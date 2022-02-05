@@ -1,5 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* We use Tailwind CSS in this project: https://tailwindcss.com/
  * 
@@ -150,4 +151,18 @@ body.modal-active {
     width: 220px;
 }
 
-@import "tailwindcss/utilities";
+.vorkurs_ws {
+    /*Comment in case of Wintersemester to show Data Science / Python text*/
+    display:none;
+}
+
+.vorkurs_praesenz {
+    /*Comment in case of Präsenz-Vorkurs to NOT remove Präsenz-text*/
+    display:none;
+}
+
+.vorkurs_online {
+    /*Comment in case of Online-Vorkurs to NOT remove Online-text */
+    //display:none;
+}
+
