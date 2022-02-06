@@ -3,7 +3,8 @@ title: 'Programmiervorkurs'
 header:
   title: 'Programmiervorkurs'
   subtitle: 'Hier findest du alle Infos zum Programmiervorkurs, die du brauchst.
-  Der Programmiervorkurs ist für die Erstis der Studiengänge Informatik und Medieninformatik gedacht.'
+  Der Programmiervorkurs ist für alle Erstis gedacht, die in einem Studiengang
+  der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind.'
   image: '/assets/backgrounds/vorkurs.jpg'
 ---
 
@@ -23,27 +24,31 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge.
 Natürlich sind auch alle anderen Erstis der Fakultät IWI eingeladen, die ihre
 Kenntnisse auffrischen wollen.
 
-Dieses Semester wollen wir den Vorkurs sowohl in Präsenz, als auch Online anbieten.
-Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich sein.
+Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_online">sowohl</span> 
+<span class="vorkurs_praesenz">in Präsenz</span><span class="vorkurs_praesenz vorkurs_online">, als auch </span>
+<span class="vorkurs_online">Online</span> anbieten. 
+<span class="vorkurs_praesenz vorkurs_online">Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich sein.</span>
 
 ## Überblick
 
 <table class="table-vertical">
     <tr>
         <th>Datum</th>
-        <td>13.09 - 16.09.2021<br />(Mo - Do)</td>
+        <td>28.02 -03.03.2022<br />(Mo - Do)</td>
     </tr>
     <tr>
         <th>Ort</th>
-        <td>Gebäude E<br>UND online </td>
+        <td><span class="vorkurs_praesenz">Präsenz</span><span class="vorkurs_praesenz vorkurs_online">, </span>
+          <span class="vorkurs_online">Online</span></td>
     </tr>
     <tr>
         <th>Zugelassene Studiengänge</th>
-        <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business, Data Science</td>
+        <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business
+          <span class="vorkurs_ws">, <br>Data Science</span></td>
     </tr>
     <tr>
         <th>Programmiersprachen</th>
-        <td>Java, C#, Python</td>
+        <td>Java, C#<span class="vorkurs_ws">, Python</span></td>
     </tr>
     <tr>
         <th>Themen</th>
@@ -75,23 +80,26 @@ Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich se
 * Von 9:30 bis 12:00 Uhr treffen wir uns im [BBB-Raum]()(Link folgt).
 * Am Nachmittag treffen wir uns in [Discord]()(Link folgt).
 -->
-* Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in
-  dieser Zeit den Ablauf und das Vorgehen. An den Tagen 2 bis 4 werden in den 
-  ersten 30 Minuten die Aufgaben des Vortages besprochen. 
-* Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge! Wir
-  machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
-* Dann ist erst mal Mittagspause. Alle die in Präsenz dabei sind, dürfen sich uns
-  gerne zum Essen in der Stadt anschließen. 
-  Wer will, darf natürlich auch was anderes machen :).
-* Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten
-  zu bearbeiten. Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht
-  weiterkommen solltet. Außerdem habt ihr während dieser Zeit die Möglichkeit,
-  eure zukünftigen Mitstudierenden kennenzulernen.
-* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo
-  also zwischen 15:00 und 17:00 Uhr. Die Tutoren bleiben natürlich bis zum
-  Schluss :)
-* Bei Interesse können wir den Tag auch noch bei einem gemütlichen Bier
-  ausklingen lassen.
+* Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen. 
+  An den Tagen 2 bis 4 werden in den ersten 30 Minuten die Aufgaben des Vortages besprochen.
+  <span class="vorkurs_praesenz">Vor Ort treffen wir uns dazu vor dem E-Gebäude bzw. vor der Fachschaft (E013). </span>
+  <span class="vorkurs_online">Online treffen wir uns in 
+  <a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09" 
+  style="color: #3999bf; text-decoration: underline;">Zoom  </a>.</span>
+* Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge! 
+  Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
+* Dann ist erst mal Mittagspause. <span class="vorkurs_praesenz">In Präsenz darf sich jeder der will, einem 
+  gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
+* Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten. 
+  Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet. 
+  Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
+  <span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags,
+  außer euch wurde etwas anderes gesagt.</span>
+  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
+  auf <a href="https://discord.gg/JGgrjTqkhc" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
+* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
+  Die Tutoren bleiben natürlich bis zum Schluss :)
+* Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
 
@@ -99,48 +107,54 @@ Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich se
   <tr>
     <th>Zeitraum</th>
     <th>Was?</th>
-    <th>Wo? Präsenz</th>
-    <th>Wo? Online</th>
+    <th class="vorkurs_praesenz">Wo? Präsenz</th>
+    <th class="vorkurs_online">Wo? Online</th>
   </tr><tr>
     <th>9:30 - 12 Uhr</th>
     <td>Infos, Übungsbesprechung, Vorlesung</td>
-    <td>Einteilung Montag morgen <br> Wird dann aktualisiert</td>
-    <td><a href="https://zoom.us/j/92996968975?pwd=Zi9KUE1meWlHWlZmV0tmOEIwOEhaZz09" style="color: blue">Zoom</a></td>
+    <td class="vorkurs_praesenz">Treffen vor dem Gebäude E bzw. vor der Fachschaft (E013) 
+      <br> Dort erfolgt die Einteilung für den ganzen Kurs</td>
+    <td class="vorkurs_online"><a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09" 
+      style="color: #3999bf; text-decoration: underline;">Zoom</a></td>
   </tr>
   <tr>
     <th>12 - 13 Uhr</th>
     <td>Mittagspause</td>
-    <td>Zusammen in die Stadt</td>
-    <td>Mama kocht hoffentlich :)</td>
+    <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
+    <td class="vorkurs_online">Mama kocht hoffentlich :)</td>
   </tr>  
   <tr>
     <th>ab 13 Uhr</th>
     <td>Übungen, gemütliches Zusammensitzen</td>
-    <td>Wie Vormittags</td>
-    <td><a href="https://discord.gg/JGgrjTqkhc" style="color: blue">Discord</a></td>
+    <td class="vorkurs_praesenz">Wie Vormittags</td>
+    <td class="vorkurs_online"><a href="https://discord.gg/JGgrjTqkhc" 
+      style="color: #3999bf; text-decoration: underline;">Discord</a></td>
   </tr>
 </table>
 
 
 ## Anmeldung
 
-Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht und
-deinem Studiengang. Wenn du schon jetzt weißt, ob du in Präsenz oder Online teilnehmen
-wirst, lass uns das bitte wissen.
+Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, deinem Namen und
+deinem Studiengang. <span class="vorkurs_praesenz vorkurs_online">Wenn du schon jetzt weißt, 
+ob du in Präsenz oder Online teilnehmen wirst, lass uns das bitte wissen.</span>
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 
 ## Benötigte Software
-* Zoom [Vorlesung Vormittags](https://zoom.us/j/92996968975?pwd=Zi9KUE1meWlHWlZmV0tmOEIwOEhaZz09)
-* Discord [IWI-Events](https://discord.gg/JGgrjTqkhc) (Übung)
+* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)
+* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/JGgrjTqkhc)
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
-* Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) und [.Net](https://dotnet.microsoft.com/download)
+* Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) 
+  und [.Net](https://dotnet.microsoft.com/download)
 * Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
 
 ## Unterlagen
+<!--
 [Link zu allen Unterlagen](https://drive.google.com/drive/folders/1jatXAqQvVnvqhHfg9rfg-anj4bcZ0oyj?usp=sharing)
+-->
 <!--
 ### Tag 1
 
