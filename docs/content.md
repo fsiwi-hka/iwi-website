@@ -160,3 +160,39 @@ link icon and also use
 
 If you should need other icons badly, it's possible to extend the function. See
 the [Static Page Component](./../components/static-page.tsx).
+
+## Create a table
+
+If you want to create a table in markdown files, you need to know that tables must be responsive for mobile users. You need some HTML5 knowledge or a guide to create a table:
+
+```html
+<div class="table-responsive">
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Plan</th>
+        </tr>
+        <tr>
+            <td>From 12:00 to 18:00</td>
+            <td>Going on campus with friends</td>
+        </tr>
+    </table>
+</div>
+```
+
+If you want to display a table vertically, you must specify the table tag with a `table-vertical`-class and don't forget to change `th`-tags to `td`-tags.
+
+```html
+<div class="table-responsive">
+    <table class="table-vertical">
+        <tr>
+            <td>Time</td>
+            <td>Plan</td>
+        </tr>
+        <tr>
+            <td>From 12:00 to 18:00</td>
+            <td>Going on campus with friends</td>
+        </tr>
+    </table>
+</div>
+```

@@ -9,7 +9,6 @@ header:
   subtitle: 'Behaltet immer die Erstsemester-Info-Seite im Blick, um nichts zu verpassen'
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
-
 **Auf der [Ersti-Info-Seite](/erstiinfos/) findet ihr ab sofort alle wichtigen
 Infos und Updates zur O-Phase, die am 12.10.2020 startet.**
 
