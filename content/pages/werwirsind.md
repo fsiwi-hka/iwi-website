@@ -2,10 +2,7 @@
 title: 'Die Fachschaft IWI'
 header:
   title: 'Wir sind die Fachschaft IWI'
-  subtitle: 'Hallo! Wir, die Fachschaft IWI (Informatik und Wirtschaftsinformatik),
-stellen uns auf dieser Seite vor. Hier findest du also Informationen zu uns
-und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und
-Anregungen? Wir freuen uns auf deine Nachricht.'
+  subtitle: 'Hallo! Wir, die Fachschaft IWI (Informatik und Wirtschaftsinformatik), stellen uns auf dieser Seite vor. Hier findest du also Informationen zu uns und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und Anregungen? Wir freuen uns auf deine Nachricht.'
   image: '/assets/backgrounds/fachschaft_iwi.png'
 groups:
 
