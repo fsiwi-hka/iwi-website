@@ -47,7 +47,7 @@ Forum unter Fachschaft für alle einsehbar sind.
         </tr>
         <tr>
             <td>Mo - Fr, 11:00 - 14:00 Uhr</td>
-            <td>Mo - Do, 7:30 - 16:00 Uhr<br />Fr, 7:30 - 14:00 Uhr</td>
+            <td>Mo - Fr, 9:00 - 14:00 Uhr</td>
         </tr>
     </table>
 </div>
