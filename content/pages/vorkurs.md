@@ -97,45 +97,42 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
   <span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags,
   außer euch wurde etwas anderes gesagt.</span>
-  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns
-  auf <a href="https://discord.gg/JGgrjTqkhc" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
-* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
+  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
+  auf <a href="https://discord.gg/NJKM4yFUmg" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
+* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
   Die Tutoren bleiben natürlich bis zum Schluss :)
 * Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
 
-<div class="table-responsive">
-    <table>
-        <tr>
-            <th>Zeitraum</th>
-            <th>Was?</th>
-            <th class="vorkurs_praesenz">Wo? Präsenz</th>
-            <th class="vorkurs_online">Wo? Online</th>
-        </tr>
-        <tr>
-            <td>9:30 - 12 Uhr</td>
-            <td>Infos, Übungsbesprechung, Vorlesung</td>
-            <td class="vorkurs_praesenz">Treffen vor dem Gebäude E bzw. vor der Fachschaft (E013)
-            <br> Dort erfolgt die Einteilung für den ganzen Kurs</td>
-            <td class="vorkurs_online"><a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09"
-            style="color: #3999bf; text-decoration: underline;">Zoom</a></td>
-        </tr>
-        <tr>
-            <td>12 - 13 Uhr</td>
-            <td>Mittagspause</td>
-            <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
-            <td class="vorkurs_online">Mama kocht hoffentlich :)</td>
-        </tr>  
-        <tr>
-            <td>ab 13 Uhr</td>
-            <td>Übungen, gemütliches Zusammensitzen</td>
-            <td class="vorkurs_praesenz">Wie Vormittags</td>
-            <td class="vorkurs_online"><a href="https://discord.gg/JGgrjTqkhc"
-            style="color: #3999bf; text-decoration: underline;">Discord</a></td>
-        </tr>
-    </table>
-</div>
+<table>
+  <tr>
+    <th>Zeitraum</th>
+    <th>Was?</th>
+    <th class="vorkurs_praesenz">Wo? Präsenz</th>
+    <th class="vorkurs_online">Wo? Online</th>
+  </tr><tr>
+    <th>9:30 - 12 Uhr</th>
+    <td>Infos, Übungsbesprechung, Vorlesung</td>
+    <td class="vorkurs_praesenz">Treffen vor dem Gebäude E bzw. vor der Fachschaft (E013) 
+      <br> Dort erfolgt die Einteilung für den ganzen Kurs</td>
+    <td class="vorkurs_online"><a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09" 
+      style="color: #3999bf; text-decoration: underline;">Zoom</a></td>
+  </tr>
+  <tr>
+    <th>12 - 13 Uhr</th>
+    <td>Mittagspause</td>
+    <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
+    <td class="vorkurs_online">Mama kocht hoffentlich :)</td>
+  </tr>  
+  <tr>
+    <th>ab 13 Uhr</th>
+    <td>Übungen, gemütliches Zusammensitzen</td>
+    <td class="vorkurs_praesenz">Wie Vormittags</td>
+    <td class="vorkurs_online"><a href="https://discord.gg/NJKM4yFUmg" 
+      style="color: #3999bf; text-decoration: underline;">Discord</a></td>
+  </tr>
+</table>
 
 
 ## Anmeldung
@@ -150,7 +147,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 
 ## Benötigte Software
 * Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)
-* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/JGgrjTqkhc)
+* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
 * Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
