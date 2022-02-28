@@ -21,8 +21,8 @@ Vertreten durch: Anja Buchmaier, Jens Ettl
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-Zoe Kammerdiener  
-Anja Buchmaier
+Anja Buchmaier  
+Jens Ettl
 
 ## Verbraucherstreitbeilegung
 
