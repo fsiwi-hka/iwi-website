@@ -23,6 +23,4 @@ Das Greylisting des RZ wurde abgeschalten, somit sollten auch Mails von externen
 
 ### Dienste der Hochschule
 
-Die Hochschule selbst bietet uns Studierenden verschiedene Dienste wie z.B. Poolräume und verschiedenste Software an. Verantwortlich dafür ist das Rechenzentrum (RZ), auf dessen Website sich verschiedene Übersichten dieser Dienste befinden:
- - [Dienste speziell für Studierende](https://www.h-ka.de/rz)
- - [Übersicht über das gesamte Portfolio](https://www.hs-karlsruhe.de/servicekatalog)
+Die Hochschule selbst bietet uns Studierenden verschiedene Dienste wie z.B. Poolräume und verschiedenste Software an. Verantwortlich dafür ist das Rechenzentrum (RZ), auf dessen Website sich verschiedene Übersichten dieser Dienste befinden: https://www.h-ka.de/rz
