@@ -100,7 +100,7 @@ Solange du noch mehr als 12 ECTS-Punkte aus dem Grundstudium offen hast, darfst 
 
 ### Muss ich einen Englischkurs besuchen?
 
-Ja, die Prüfungsordnung sieht im ersten Semester einen Englischkurs für Bachelorstudenten vor. Welchen Kurs du besuchst, hängt vom Ergebnis des verpflichtenden Einstufungstests ab. Auf freiwilliger Basis dürfen in den folgenden Semestern weitere Kurse besucht werden. Die Englischkurse werden in den Niveaustufen English for Careers in Technology 1, English for Careers in Technology 2 und Business bzw. (nach eigener Wahl) Technical English angeboten.
+Ja, die Prüfungsordnung sieht im ersten Semester einen Englischkurs für Bachelorstudenten vor. Welchen Kurs du besuchst, hängt vom Ergebnis des verpflichtenden Einstufungstests ab. Auf freiwilliger Basis dürfen in den folgenden Semestern weitere Kurse besucht werden. Die Englischkurse werden in den GERS-Niveaustufen B1, B2 und C1 angeboten. C1 in den Varianten Technical und Business English. Werden beide C1 Kurse erfolgreich abgeschlossen kann man das Fremdsprachenzertifikat English C1 erhalten.
 
 ### Was passiert, wenn ich eine Klausur nicht bestanden habe?
 
