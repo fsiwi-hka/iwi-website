@@ -97,9 +97,9 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
   <span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags,
   außer euch wurde etwas anderes gesagt.</span>
-  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns
-  auf <a href="https://discord.gg/JGgrjTqkhc" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
-* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
+  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
+  auf <a href="https://discord.gg/NJKM4yFUmg" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
+* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
   Die Tutoren bleiben natürlich bis zum Schluss :)
 * Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
@@ -131,7 +131,7 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
             <td>ab 13 Uhr</td>
             <td>Übungen, gemütliches Zusammensitzen</td>
             <td class="vorkurs_praesenz">Wie Vormittags</td>
-            <td class="vorkurs_online"><a href="https://discord.gg/JGgrjTqkhc"
+            <td class="vorkurs_online"><a href="https://discord.gg/NJKM4yFUmg"
             style="color: #3999bf; text-decoration: underline;">Discord</a></td>
         </tr>
     </table>
@@ -150,7 +150,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 
 ## Benötigte Software
 * Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)
-* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/JGgrjTqkhc)
+* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
 * Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
