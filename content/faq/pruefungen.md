@@ -66,7 +66,7 @@ Folgende Taschenrechner können (ohne Gewähr) i. d. R. verwendet werden:
 * [EL – 531 WH](https://www.amazon.de/gp/product/B000LP6GUW/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B000LP6GUW&linkId=2738a7eb2394698ece87fe30885d248e)*
 * [EL – (W) 531 (X)G](https://www.amazon.de/gp/product/B00NFM42Y0/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B00NFM42Y0&linkId=5474477a65b3b4b3ed04808d7a47c93d)*
 
-_Die mit Sternchen (*) gekennzeichneten Links sind Werbe-Link (sogenannte Affiliate-Links).
+Die mit Sternchen (*) gekennzeichneten Links sind Werbe-Link (sogenannte Affiliate-Links).
 Wenn du auf so einen Affiliate-Link klickst und über diesen Link einkaufst,
 bekommen wir von dem betreffenden Anbieter eine Provision. Für dich verändert
 sich der Preis nicht.
