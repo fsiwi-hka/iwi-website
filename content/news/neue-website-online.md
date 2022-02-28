@@ -10,7 +10,6 @@ header:
   subtitle: 'Gemeinsame Fachschaft, gemeinsame Website'
   image: '/assets/backgrounds/homepage.jpg'
 ---
-
 **Zukünftig agieren die Fachschaften der Studiengänge Informatik,
 Medieninformatik, Wirtschaftsinformatik und Data Science der Hochschule
 Karlsruhe gemeinsam: Als Fachschaft IWI. Im Zuge dieser organisatorischen

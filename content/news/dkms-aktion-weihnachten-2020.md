@@ -11,9 +11,9 @@ header:
 ---
 
 Die Fachschaft IMM organisiert zusammen mit anderen Fachschaften in ganz
-Karlsruhe und der DKMS eine Online-Registrierungsaktion zur Stammzellspende. Ab
-heute bis 24. Dezember kannst du dich bequem von der Couch aus auf der Aktionsseite
-registrieren und damit potenzieller Lebensretter werden:
+Karlsruhe und der DKMS eine Online-Registrierungsaktion zur Stammzellspende.
+
+Ab heute bis 24. Dezember kannst du dich bequem von der Couch aus auf der Aktionsseite registrieren und damit potenzieller Lebensretter werden:
 
 [icon:link|Jetzt Stammzellspender werden](https://www.dkms.de/studis-ka)
 

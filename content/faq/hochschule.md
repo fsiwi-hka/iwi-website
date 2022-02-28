@@ -37,11 +37,20 @@ Forum unter Fachschaft für alle einsehbar sind.
 
 [icon:download|Hier ist der Lageplan!](https://www.h-ka.de/standorte)
 
-### Wann ist die Mensa/Cafeteria geöffnet und was gibt es zu essen?
+### Wann ist die Mensa / Cafeteria geöffnet und was gibt es zu essen?
 
-|Mensa                      |Cafeteria                                          |
-|---------------------------|---------------------------------------------------|
-|Mo - Fr, 11:20 - 14:15 Uhr |Mo - Do, 7:30 - 16:00 Uhr<br />Fr, 7:30 - 14:00 Uhr|
+<div class="table-responsive">
+    <table>
+        <tr>
+            <th>Mensa</th>
+            <th>Cafeteria</th>
+        </tr>
+        <tr>
+            <td>Mo - Fr, 11:00 - 14:00 Uhr</td>
+            <td>Mo - Fr, 9:00 - 14:00 Uhr</td>
+        </tr>
+    </table>
+</div>
 
 [icon:link|Link zum aktuellen Speiseplan](https://www.sw-ka.de/de/essen/)
 
@@ -55,8 +64,8 @@ stehen. Ansonsten könnt ihr auch leerstehende Vorlesungsräume verwenden.
 Die Hochschulbibliothek ist eine Zweigstelle der Universitätsbibliothek
 Karlsruhe und befindet sich im A-Bau. Als Bibliotheksausweis dient der
 Studierendenausweis, der dazu einmalig freigeschaltet werden muss.
-Bückerkataloge und weitere Informationen findest du auf der Homepage der UBKA.
+Bücherkataloge und weitere Informationen findest du auf der Homepage der UBKA.
 Dort kannst du auch Bücher bestellen, die dann im A-Gebäude zur Abholung bereit
-gelegt werden. Einige Bücher können auch als E-Books heruntergeladeb werden.
+gelegt werden. Einige Bücher können auch als E-Books heruntergeladen werden.
 Andere Bücher wiederum sind im Präsenzbestand und dürfen nur direkt vor Ort
 verwendet werden. Über alle Einzelheiten informiert der Online-Katalog.
