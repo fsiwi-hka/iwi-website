@@ -87,12 +87,14 @@ Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
 * Dann ist erst mal Mittagspause. <span class="vorkurs_praesenz">In Präsenz darf sich jeder der will, einem
 gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
 * Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten.
-Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
-Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
-<span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags, außer euch wurde etwas anderes gesagt.</span>
-<span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns auf <a href="https://discord.gg/JGgrjTqkhc" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
-* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
-Die Tutoren bleiben natürlich bis zum Schluss :)
+  Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
+  Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
+  <span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags,
+  außer euch wurde etwas anderes gesagt.</span>
+  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
+  auf <a href="https://discord.gg/NJKM4yFUmg" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
+* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
+  Die Tutoren bleiben natürlich bis zum Schluss :)
 * Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
@@ -123,7 +125,7 @@ Die Tutoren bleiben natürlich bis zum Schluss :)
             <td>ab 13 Uhr</td>
             <td>Übungen, gemütliches Zusammensitzen</td>
             <td class="vorkurs_praesenz">Wie Vormittags</td>
-            <td class="vorkurs_online"><a href="https://discord.gg/JGgrjTqkhc"
+            <td class="vorkurs_online"><a href="https://discord.gg/NJKM4yFUmg"
             style="color: #3999bf; text-decoration: underline;">Discord</a></td>
         </tr>
     </table>
@@ -140,7 +142,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 
 ## Benötigte Software
 * Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)
-* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/JGgrjTqkhc)
+* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
 * Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
@@ -150,15 +152,16 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 <!--
 [Link zu allen Unterlagen](https://drive.google.com/drive/folders/1jatXAqQvVnvqhHfg9rfg-anj4bcZ0oyj?usp=sharing)
 -->
-<!--
+
 ### Tag 1
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1kxhPal7CuQ0FYaKJyoUjBd0e9-ZtQpyz/view?usp=sharing)
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1v3GDqmn7AaUDhf4GBPMErxdBu10Afq8X/view?usp=sharing)
-* [Link zu der Aufgabe 1](https://drive.google.com/file/d/1MiuP0LTfX12YwBoe7M-7_541xzrldtnk/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1An9uPjI3vGPdj1nAE3VeJ7Bipn2acBd7/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1XKEeUC8YogfjP19q2s0VFnaFmm3kTTZf/view?usp=sharing)
--->
+* [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
+* [Link zu der Aufgabe 1](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
+
+<!-- * [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1An9uPjI3vGPdj1nAE3VeJ7Bipn2acBd7/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1XKEeUC8YogfjP19q2s0VFnaFmm3kTTZf/view?usp=sharing) -->
+
 <!--
 ### Tag 2
 
