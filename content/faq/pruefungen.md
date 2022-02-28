@@ -66,7 +66,7 @@ Folgende Taschenrechner können (ohne Gewähr) i. d. R. verwendet werden:
 * [EL – 531 WH](https://www.amazon.de/gp/product/B000LP6GUW/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B000LP6GUW&linkId=2738a7eb2394698ece87fe30885d248e)*
 * [EL – (W) 531 (X)G](https://www.amazon.de/gp/product/B00NFM42Y0/ref=as_li_tl?ie=UTF8&tag=fachschaftiwi-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B00NFM42Y0&linkId=5474477a65b3b4b3ed04808d7a47c93d)*
 
-_Die mit Sternchen (*) gekennzeichneten Links sind Werbe-Link (sogenannte Affiliate-Links).
+Die mit Sternchen (*) gekennzeichneten Links sind Werbe-Link (sogenannte Affiliate-Links).
 Wenn du auf so einen Affiliate-Link klickst und über diesen Link einkaufst,
 bekommen wir von dem betreffenden Anbieter eine Provision. Für dich verändert
 sich der Preis nicht.
@@ -78,13 +78,7 @@ Nein, die Noten des Grundstudiums zählen nicht fürs Bachelorzeugnis. Ihr bekom
 
 ### Wie wird die Abschlussnote berechnet?
 
-Die Details zur Berechnung der Abschlussnote finden sich in der Studien- und Prüfungsordnung. Dort gibt es jeweils eine dem Hauptstudium zugeordnete Tabelle, in der die Gewichtung der einzelnen Module stehen. Außerdem haben wir hier Notenberechnungstools):
-•	Notenberechnung Bachelor PO5/PO2
-•	Notenberechnung Master PO5
-Für alte Versionen der Prüfungsordnung:
-•	Notenberechnung Bachelor PO4
-•	Notenberechnung Bachelor PO3
-•	Notenberechnung Master PO4
+Die Details zur Berechnung der Abschlussnote finden sich in der Studien- und Prüfungsordnung. Dort gibt es jeweils eine dem Hauptstudium zugeordnete Tabelle, in der die Gewichtung der einzelnen Module stehen. 
 
 ### Wofür benötigt man das Bachelorvorzeugnis?
 
@@ -98,11 +92,11 @@ Laut Prüfungsordnung umfasst das Grundstudium die ersten beiden Semester. Wenn 
 
 ### Wann darf ich welche Vorlesungen besuchen?
 
-Solange du noch mehr als 12 ECTS-Punkte aus dem Grundstudium offen hast, darfst du nur Vorlesungen aus dem Grundstudium sowie Labore aus dem dritten Semester besuchen. Fehlen dir weniger als 12 ECTS-Punkte aus dem Grundstudium, dann darfst du vor Abschluss des Praxissemesters alle Vorlesungen aus den Semestern drei und fünf sowie Wahlpflichtfächer besuchen. Nach dem Praxissemester gibt es keine Beschränkungen mehr, was den Besuch von Vorlesungen angeht.
+Solange du noch mehr als 12 ECTS-Punkte aus dem Grundstudium offen hast, darfst du nur Vorlesungen aus dem Grundstudium sowie Labore aus dem dritten Semester besuchen. Nach Absprache mit dem Prüfungsamt können auch einzelne weitere Prüfungen zugelassen werden. Fehlen dir weniger als 12 ECTS-Punkte aus dem Grundstudium, dann darfst du vor Abschluss des Praxissemesters alle Vorlesungen aus den Semestern drei und fünf sowie Wahlpflichtfächer besuchen. Nach dem Praxissemester gibt es keine Beschränkungen mehr, was den Besuch von Vorlesungen angeht.
 
 ### Muss ich einen Englischkurs besuchen?
 
-Ja, die Prüfungsordnung sieht im ersten Semester einen Englischkurs für Bachelorstudenten vor. Welchen Kurs du besuchst, hängt vom Ergebnis des verpflichtenden Einstufungstests ab. Auf freiwilliger Basis dürfen in den folgenden Semestern weitere Kurse besucht werden. Die Englischkurse werden in den Niveaustufen English for Careers in Technology 1, English for Careers in Technology 2 und Business bzw. (nach eigener Wahl) Technical English angeboten.
+Ja, die Prüfungsordnung sieht im ersten Semester einen Englischkurs für Bachelorstudenten vor. Welchen Kurs du besuchst, hängt vom Ergebnis des verpflichtenden Einstufungstests ab. Auf freiwilliger Basis dürfen in den folgenden Semestern weitere Kurse besucht werden. Die Englischkurse werden in den GERS-Niveaustufen B1, B2 und C1 angeboten. C1 in den Varianten Technical und Business English. Werden beide C1 Kurse erfolgreich abgeschlossen kann man das Fremdsprachenzertifikat English C1 erhalten.
 
 ### Was passiert, wenn ich eine Klausur nicht bestanden habe?
 
