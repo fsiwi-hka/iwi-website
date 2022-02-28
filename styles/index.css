@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 /* We use Tailwind CSS in this project: https://tailwindcss.com/
- * 
+ *
  * Tailwind CSS strips all default design away from HTML elements
  * and you have full control over their appearance by adding
  * classes. See the Tailwind docs for a list of all the classes
@@ -143,6 +143,11 @@ body.modal-active {
     opacity: .96;
 }
 
+/* table responsive */
+
+.table-responsive {
+    overflow-x: auto;
+}
 
 /*Dropdown User Menu */
 
@@ -165,4 +170,3 @@ body.modal-active {
     /*Comment in case of Online-Vorkurs to NOT remove Online-text */
     //display:none;
 }
-

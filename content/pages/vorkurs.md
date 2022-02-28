@@ -24,53 +24,55 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge.
 Natürlich sind auch alle anderen Erstis der Fakultät IWI eingeladen, die ihre
 Kenntnisse auffrischen wollen.
 
-Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_online">sowohl</span> 
+Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_online">sowohl</span>
 <span class="vorkurs_praesenz">in Präsenz</span><span class="vorkurs_praesenz vorkurs_online">, als auch </span>
-<span class="vorkurs_online">Online</span> anbieten. 
+<span class="vorkurs_online">Online</span> anbieten.
 <span class="vorkurs_praesenz vorkurs_online">Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich sein.</span>
 
 ## Überblick
 
-<table class="table-vertical">
-    <tr>
-        <th>Datum</th>
-        <td>28.02 -03.03.2022<br />(Mo - Do)</td>
-    </tr>
-    <tr>
-        <th>Ort</th>
-        <td><span class="vorkurs_praesenz">Präsenz</span><span class="vorkurs_praesenz vorkurs_online">, </span>
-          <span class="vorkurs_online">Online</span></td>
-    </tr>
-    <tr>
-        <th>Zugelassene Studiengänge</th>
-        <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business
-          <span class="vorkurs_ws">, <br>Data Science</span></td>
-    </tr>
-    <tr>
-        <th>Programmiersprachen</th>
-        <td>Java, C#<span class="vorkurs_ws">, Python</span></td>
-    </tr>
-    <tr>
-        <th>Themen</th>
-        <td>
-            <ul>
-                <li>Variablen</li>
-                <li>Kontrollstrukturen</li>
-                <li>Schleifen</li>
-                <li>Funktionen</li>
-                <li>Grundlagen der objektorientierten Programmierung</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <th>Benötigte Vorkenntnisse</th>
-        <td>keine</td>
-    </tr>
-    <tr>
-        <th>Kosten</th>
-        <td>kostenlos</td>
-    </tr>
-</table>
+<div class="table-responsive">
+    <table class="table-vertical">
+        <tr>
+            <td>Datum</td>
+            <td>28.02 -03.03.2022<br />(Mo - Do)</td>
+        </tr>
+        <tr>
+            <td>Ort</td>
+            <td><span class="vorkurs_praesenz">Präsenz</span><span class="vorkurs_praesenz vorkurs_online">, </span>
+              <span class="vorkurs_online">Online</span></td>
+        </tr>
+        <tr>
+            <td>Zugelassene Studiengänge</td>
+            <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business
+              <span class="vorkurs_ws">, <br>Data Science</span></td>
+        </tr>
+        <tr>
+            <td>Programmiersprachen</td>
+            <td>Java, C#<span class="vorkurs_ws">, Python</span></td>
+        </tr>
+        <tr>
+            <td>Themen</td>
+            <td>
+                <ul>
+                    <li>Variablen</li>
+                    <li>Kontrollstrukturen</li>
+                    <li>Schleifen</li>
+                    <li>Funktionen</li>
+                    <li>Grundlagen der objektorientierten Programmierung</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Benötigte Vorkenntnisse</td>
+            <td>keine</td>
+        </tr>
+        <tr>
+            <td>Kosten</td>
+            <td>kostenlos</td>
+        </tr>
+    </table>
+</div>
 
 ## Ablauf
 
@@ -80,63 +82,66 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
 * Von 9:30 bis 12:00 Uhr treffen wir uns im [BBB-Raum]()(Link folgt).
 * Am Nachmittag treffen wir uns in [Discord]()(Link folgt).
 -->
-* Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen. 
+* Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
   An den Tagen 2 bis 4 werden in den ersten 30 Minuten die Aufgaben des Vortages besprochen.
   <span class="vorkurs_praesenz">Vor Ort treffen wir uns dazu vor dem E-Gebäude bzw. vor der Fachschaft (E013). </span>
-  <span class="vorkurs_online">Online treffen wir uns in 
-  <a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09" 
+  <span class="vorkurs_online">Online treffen wir uns in
+  <a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09"
   style="color: #3999bf; text-decoration: underline;">Zoom  </a>.</span>
-* Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge! 
+* Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
   Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
-* Dann ist erst mal Mittagspause. <span class="vorkurs_praesenz">In Präsenz darf sich jeder der will, einem 
+* Dann ist erst mal Mittagspause. <span class="vorkurs_praesenz">In Präsenz darf sich jeder der will, einem
   gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
-* Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten. 
-  Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet. 
+* Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten.
+  Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
   <span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags,
   außer euch wurde etwas anderes gesagt.</span>
-  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
+  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns
   auf <a href="https://discord.gg/JGgrjTqkhc" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
-* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
+* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
   Die Tutoren bleiben natürlich bis zum Schluss :)
 * Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
 
-<table>
-  <tr>
-    <th>Zeitraum</th>
-    <th>Was?</th>
-    <th class="vorkurs_praesenz">Wo? Präsenz</th>
-    <th class="vorkurs_online">Wo? Online</th>
-  </tr><tr>
-    <th>9:30 - 12 Uhr</th>
-    <td>Infos, Übungsbesprechung, Vorlesung</td>
-    <td class="vorkurs_praesenz">Treffen vor dem Gebäude E bzw. vor der Fachschaft (E013) 
-      <br> Dort erfolgt die Einteilung für den ganzen Kurs</td>
-    <td class="vorkurs_online"><a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09" 
-      style="color: #3999bf; text-decoration: underline;">Zoom</a></td>
-  </tr>
-  <tr>
-    <th>12 - 13 Uhr</th>
-    <td>Mittagspause</td>
-    <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
-    <td class="vorkurs_online">Mama kocht hoffentlich :)</td>
-  </tr>  
-  <tr>
-    <th>ab 13 Uhr</th>
-    <td>Übungen, gemütliches Zusammensitzen</td>
-    <td class="vorkurs_praesenz">Wie Vormittags</td>
-    <td class="vorkurs_online"><a href="https://discord.gg/JGgrjTqkhc" 
-      style="color: #3999bf; text-decoration: underline;">Discord</a></td>
-  </tr>
-</table>
+<div class="table-responsive">
+    <table>
+        <tr>
+            <th>Zeitraum</th>
+            <th>Was?</th>
+            <th class="vorkurs_praesenz">Wo? Präsenz</th>
+            <th class="vorkurs_online">Wo? Online</th>
+        </tr>
+        <tr>
+            <td>9:30 - 12 Uhr</td>
+            <td>Infos, Übungsbesprechung, Vorlesung</td>
+            <td class="vorkurs_praesenz">Treffen vor dem Gebäude E bzw. vor der Fachschaft (E013)
+            <br> Dort erfolgt die Einteilung für den ganzen Kurs</td>
+            <td class="vorkurs_online"><a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09"
+            style="color: #3999bf; text-decoration: underline;">Zoom</a></td>
+        </tr>
+        <tr>
+            <td>12 - 13 Uhr</td>
+            <td>Mittagspause</td>
+            <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
+            <td class="vorkurs_online">Mama kocht hoffentlich :)</td>
+        </tr>  
+        <tr>
+            <td>ab 13 Uhr</td>
+            <td>Übungen, gemütliches Zusammensitzen</td>
+            <td class="vorkurs_praesenz">Wie Vormittags</td>
+            <td class="vorkurs_online"><a href="https://discord.gg/JGgrjTqkhc"
+            style="color: #3999bf; text-decoration: underline;">Discord</a></td>
+        </tr>
+    </table>
+</div>
 
 
 ## Anmeldung
 
 Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, deinem Namen und
-deinem Studiengang. <span class="vorkurs_praesenz vorkurs_online">Wenn du schon jetzt weißt, 
+deinem Studiengang. <span class="vorkurs_praesenz vorkurs_online">Wenn du schon jetzt weißt,
 ob du in Präsenz oder Online teilnehmen wirst, lass uns das bitte wissen.</span>
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
@@ -147,7 +152,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 * Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)
 * Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/JGgrjTqkhc)
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
-* Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) 
+* Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
 * Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
 
