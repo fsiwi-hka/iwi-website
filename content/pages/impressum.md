@@ -12,7 +12,7 @@ Fachschaft Informatik und Wirtschaftsinformatik
 Moltkestraße 30  
 76133 Karlsruhe
 
-Vertreten durch: Zoe Kammerdiener, Anja Buchmaier
+Vertreten durch: Anja Buchmaier, Jens Ettl
 
 ### Kontakt
 
