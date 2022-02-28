@@ -4,3 +4,4 @@ node_modules/
 out/
 credentials.json
 .env*
+.DS_Store
