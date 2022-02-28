@@ -96,7 +96,7 @@ Laut Prüfungsordnung umfasst das Grundstudium die ersten beiden Semester. Wenn 
 
 ### Wann darf ich welche Vorlesungen besuchen?
 
-Solange du noch mehr als 12 ECTS-Punkte aus dem Grundstudium offen hast, darfst du nur Vorlesungen aus dem Grundstudium sowie Labore aus dem dritten Semester besuchen. Fehlen dir weniger als 12 ECTS-Punkte aus dem Grundstudium, dann darfst du vor Abschluss des Praxissemesters alle Vorlesungen aus den Semestern drei und fünf sowie Wahlpflichtfächer besuchen. Nach dem Praxissemester gibt es keine Beschränkungen mehr, was den Besuch von Vorlesungen angeht.
+Solange du noch mehr als 12 ECTS-Punkte aus dem Grundstudium offen hast, darfst du nur Vorlesungen aus dem Grundstudium sowie Labore aus dem dritten Semester besuchen. Nach Absprache mit dem Prüfungsamt können auch einzelne weitere Prüfungen zugelassen werden. Fehlen dir weniger als 12 ECTS-Punkte aus dem Grundstudium, dann darfst du vor Abschluss des Praxissemesters alle Vorlesungen aus den Semestern drei und fünf sowie Wahlpflichtfächer besuchen. Nach dem Praxissemester gibt es keine Beschränkungen mehr, was den Besuch von Vorlesungen angeht.
 
 ### Muss ich einen Englischkurs besuchen?
 
