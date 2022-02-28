@@ -7,7 +7,9 @@ header:
 ---
 ### Wie komme ich von der Hochschule aus ins Internet?
 
-Im WLAN HsKA-8021x meldet ihr euch mit eurem RZ-Account an und müsst dann für Verbindungen ins Internet den Proxy oder den Socks-Proxy verwenden. Im WLAN HsKA-VPN ist statt der Anmeldung am WLAN eine VPN-Verbindung notwendig.
+Im WLAN HsKA-8021x meldet ihr euch mit eurem RZ-Account an und müsst dann für Verbindungen ins Internet den Proxy oder den Socks-Proxy verwenden.
+Alternativ schaltet ihr euch für das Proxy-freie HsKA Open frei. Dazu müssen im Mobiltelefonnummer-Feld des Webmails (Optionen -> Allgemein -> [Mein Konto](https://webmail.h-ka.de/owa/#path=/options/myaccount)) oder alternativ im [Intranet](https://www.iwi.hs-karlsruhe.de/iwii/faces/intranet/all/hkaopen.xhtml) die MAC-Adressen der freizugebenden Geräte eingetragen werden. Achtet dabei darauf, dass eure MAC-Adresse sich nicht verändert, das ist eine häufige Sicherheitseinstellung. Im WLAN HsKA-8021x müsst ihr euch dann mit <RZ-Kürzel>@<fakultät>-wlan.h-ka.de anmelden (fakultät = iwi). Mehr Infos gibt's im [RZ](https://www.h-ka.de/rz)-Flyer "Das Hochschulnetzwerk".
+Im WLAN HsKA-VPN ist statt der Anmeldung am WLAN eine VPN-Verbindung mit dem Cisco AnyConnect-Client notwendig. Diesen erhaltet ihr auf https://vpn.h-ka.de/.
 Außerdem gibt es KA-WLAN, aus diesem Netz hast du allerdings keinen Zugriff auf Dienste die nur innerhalb des HS-Netzes erreichbar sind.
 
 ### Wie ist die Adresse des Proxys?
