@@ -155,15 +155,16 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 <!--
 [Link zu allen Unterlagen](https://drive.google.com/drive/folders/1jatXAqQvVnvqhHfg9rfg-anj4bcZ0oyj?usp=sharing)
 -->
-<!--
+
 ### Tag 1
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1kxhPal7CuQ0FYaKJyoUjBd0e9-ZtQpyz/view?usp=sharing)
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1v3GDqmn7AaUDhf4GBPMErxdBu10Afq8X/view?usp=sharing)
-* [Link zu der Aufgabe 1](https://drive.google.com/file/d/1MiuP0LTfX12YwBoe7M-7_541xzrldtnk/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1An9uPjI3vGPdj1nAE3VeJ7Bipn2acBd7/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1XKEeUC8YogfjP19q2s0VFnaFmm3kTTZf/view?usp=sharing)
--->
+* [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
+* [Link zu der Aufgabe 1](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
+
+<!-- * [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1An9uPjI3vGPdj1nAE3VeJ7Bipn2acBd7/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1XKEeUC8YogfjP19q2s0VFnaFmm3kTTZf/view?usp=sharing) -->
+
 <!--
 ### Tag 2
 
