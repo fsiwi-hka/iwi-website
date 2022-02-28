@@ -79,10 +79,6 @@ Nein, die Noten des Grundstudiums zählen nicht fürs Bachelorzeugnis. Ihr bekom
 ### Wie wird die Abschlussnote berechnet?
 
 Die Details zur Berechnung der Abschlussnote finden sich in der Studien- und Prüfungsordnung. Dort gibt es jeweils eine dem Hauptstudium zugeordnete Tabelle, in der die Gewichtung der einzelnen Module stehen. 
-Für alte Versionen der Prüfungsordnung:
-•	Notenberechnung Bachelor PO4
-•	Notenberechnung Bachelor PO3
-•	Notenberechnung Master PO4
 
 ### Wofür benötigt man das Bachelorvorzeugnis?
 
