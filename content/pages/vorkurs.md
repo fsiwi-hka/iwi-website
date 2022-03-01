@@ -157,20 +157,23 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 
 * [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
-* [Link zu der Aufgabe 1](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
+* [Link zu der Aufgabe 1 Java](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
+* [Link zu der Aufgabe 1 C#](https://drive.google.com/file/d/1HD5nPuTecgXe2kPk6Q_paRPEdSmSxkOP/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1naN76Y3ZbohnVMc4h3MZDZJV-JoaG2ZL/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1080rIuD_Vv5Yg2x4NUh5qa2b0BHBem5-/view?usp=sharing)
 
-<!-- * [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1An9uPjI3vGPdj1nAE3VeJ7Bipn2acBd7/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1XKEeUC8YogfjP19q2s0VFnaFmm3kTTZf/view?usp=sharing) -->
-
-<!--
 ### Tag 2
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1POrQ2izPAIs1PrWlbg8Xvzh7MomiZ6ZL/view?usp=sharing)
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1TZX2UGi1mccVl-zdcDZv-NWK29-_rtdo/view?usp=sharing)
-* [Link zu der Aufgabe 2](https://drive.google.com/file/d/15voveQRMNZSstStZmWwgx4it23MBHS0k/view?usp=sharing)
+* [Link zu den Folien von Java](https://drive.google.com/file/d/1mN9SfudkwQzD2JqN2wOSIEKiEk_lX6by/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1648C5L5uV2cpGi9xaqp1tH6oUb1ycxj2/view?usp=sharing)
+* [Link zu der Aufgabe 2 Java](https://drive.google.com/file/d/1UJr-AS2uwa0CfPxUcDchNOKWAru2miJC/view?usp=sharing)
+* [Link zu der Aufgabe 2 C#](https://drive.google.com/file/d/1xabMZfimLFz0rNU17mS3DGhoILEGhJAM/view?usp=sharing)
+
+<!--
 * [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1WZKHC8ZPvnzBeqncGbOLLRqpMdFCZCpr/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 2 von C#](https://drive.google.com/file/d/1l1qLhLKflr3xLa1oGGyLdoquXanI-MTx/view?usp=sharing)
 -->
+
 <!--
 ### Tag 3
 
