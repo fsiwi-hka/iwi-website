@@ -168,21 +168,21 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1648C5L5uV2cpGi9xaqp1tH6oUb1ycxj2/view?usp=sharing)
 * [Link zu der Aufgabe 2 Java](https://drive.google.com/file/d/1UJr-AS2uwa0CfPxUcDchNOKWAru2miJC/view?usp=sharing)
 * [Link zu der Aufgabe 2 C#](https://drive.google.com/file/d/1xabMZfimLFz0rNU17mS3DGhoILEGhJAM/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1T-SdrAtI86oo-nWbVL59pPV1X-skfPtE/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 2 von C#](https://drive.google.com/file/d/1lOTrtZ_41NpRS-1iKsbyx9-fofxa8i-n/view?usp=sharing)
 
-<!--
-* [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1WZKHC8ZPvnzBeqncGbOLLRqpMdFCZCpr/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 2 von C#](https://drive.google.com/file/d/1l1qLhLKflr3xLa1oGGyLdoquXanI-MTx/view?usp=sharing)
--->
-
-<!--
 ### Tag 3
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1g7aDr6dEL_iFDcS1i8ozKF490P_VV9u4/view?usp=sharing)
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1eKg0i5_SBlx-xfftD9JHBAM6ULo29ob3/view?usp=sharing)
-* [Link zu der Aufgabe 3](https://drive.google.com/file/d/1BdojwG9BeP3KxovjCOlHSFMGoi87a0r_/view?usp=sharing)
+* [Link zu den Folien von Java]( https://drive.google.com/file/d/1xj6QXFubh1X5tHMf4eguMH72TgcAeSsS/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1awsQUXVOXdpSU6U8sDkOi5mcacBI9LIo/view?usp=sharing)
+* [Link zu der Aufgabe 3 Java](https://drive.google.com/file/d/1103EO6f624KY42J2lQHXjx3uCaYSNn1v/view?usp=sharing)
+* [Link zu der Aufgabe 3 C#](https://drive.google.com/file/d/1OP9_ZYxYcFXpRvnPOeZe7RNPWJ1wHwQP/view?usp=sharing)
+
+<!--
 * [Link zur Lösung der Aufgabe 3 von Java](https://drive.google.com/file/d/1mgfId5yEFI5y8Q99o52bZ2339Esqy05x/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 3 von C#](https://drive.google.com/file/d/1d-vJ2hOzrnDQaB5h6O5GAAs_opfY7D_I/view?usp=sharing)
 -->
+
 <!--
 ### Tag 4
 
