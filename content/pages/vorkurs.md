@@ -177,23 +177,18 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1awsQUXVOXdpSU6U8sDkOi5mcacBI9LIo/view?usp=sharing)
 * [Link zu der Aufgabe 3 Java](https://drive.google.com/file/d/1103EO6f624KY42J2lQHXjx3uCaYSNn1v/view?usp=sharing)
 * [Link zu der Aufgabe 3 C#](https://drive.google.com/file/d/1OP9_ZYxYcFXpRvnPOeZe7RNPWJ1wHwQP/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 3 von Java](https://drive.google.com/file/d/10yoJ4NSHiiTFZqdWqtJljlQrFnRgIVbB/view?usp=sharing)
+* [Link zur Lösung der Aufgabe 3 von C#](https://drive.google.com/file/d/1epXc4Gi0lOBshjZEmj5U3RDxMva8zn3M/view?usp=sharing)
 
-<!--
-* [Link zur Lösung der Aufgabe 3 von Java](https://drive.google.com/file/d/1mgfId5yEFI5y8Q99o52bZ2339Esqy05x/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 3 von C#](https://drive.google.com/file/d/1d-vJ2hOzrnDQaB5h6O5GAAs_opfY7D_I/view?usp=sharing)
--->
-
-<!--
 ### Tag 4
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1ebmXtQpB-WqbQJKr6IyjjtDoR_t4waS2/view?usp=sharing)
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1BP4xdf7OklWLEQ1tatjoZMJf0MQbMzF5/view?usp=sharing)
-* [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1D4uWgKE2vKr8qJ82XF2HzcjBRHx94fap/view?usp=sharing)
-* [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1bX9gkBuo3zv6aKQ1rOPsf24JXPibNvnD/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/192AV7RWorgJrORoYYt9gVRb0rBeY8pRt/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1vLg6mKeXIuUeJb6diSUl49tM_6D7R5gI/view?usp=sharing)
-* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8)
--->
+* [Link zu den Folien von Java](https://drive.google.com/file/d/1ZefYhLt2nwhQZepY4TIjnpMvs7ENSM9m/view?usp=sharing)
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1AcyLg_Natdy_QVASFjtAagCtf0wqJEG7/view?usp=sharing)
+* [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1kjTwkkv7NK3t7GXX2LRZL2BrCFcEz1H6/view?usp=sharing)
+* [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/12csnaVPx9-VFtFq3CxPHXXxQAjca5Uzc/view?usp=sharing)
+  <!-- * [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/192AV7RWorgJrORoYYt9gVRb0rBeY8pRt/view?usp=sharing) -->
+  <!-- * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1vLg6mKeXIuUeJb6diSUl49tM_6D7R5gI/view?usp=sharing) -->
+  <!-- * [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8) -->
 
 ## Mehr
 
