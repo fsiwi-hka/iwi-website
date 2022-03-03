@@ -188,7 +188,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 * [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1Sbhb5PDkjbuj-u7Kv7GXQM8lKsjeXdMk/view?usp=sharing)
   <!-- * [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/192AV7RWorgJrORoYYt9gVRb0rBeY8pRt/view?usp=sharing) -->
   <!-- * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1vLg6mKeXIuUeJb6diSUl49tM_6D7R5gI/view?usp=sharing) -->
-  <!-- * [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8) -->
+* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8)
 
 ## Mehr
 
