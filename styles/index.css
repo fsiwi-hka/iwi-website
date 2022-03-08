@@ -58,6 +58,11 @@ table {
     width: 100%;
 }
 
+table a {
+    text-decoration: underline;
+    @apply text-blue-700;
+}
+
 th {
     @apply font-heading text-blue-700 text-lg;
 }

@@ -75,36 +75,235 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
 
 **Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformatik**
 
-###
-| Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|Montag, 27.09.2021 | 09:00 - 09:45 | Vor dem Gebäude E <br>[Lageplan](https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Informationsmaterialien/HKA_Lageplan_A4.pdf)| 3G-Bändchen-Ausgabe | In diesem Zeitraum erhaltet ihr ein Bändchen, was euch zur Teilnahme an den Veranstaltungen der O-Phase befugt. Details siehe oben.| alle |
-| | 10:00 - 11:00 | Hörsaal Elektrotechnik (HE)| Begrüßung + Informationsveranstaltungen | Begrüßung der Erstsemester, Vorstellung der Professoren des ersten Semesters, etc. | alle |
-| | 11:00 - 13:00 | E201, EU02, E203| Englisch-Kurs Einstufung | Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der [Seite des IFS](https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung). In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zuhause :)| Bachelor |
-| | 13:00 - 14:00 | Karlsruhe | Mittagspause | Ihr könnt in die Stadt oder zur Cafeteria (Gebäude A, unten) gehen und dort etwas essen gehen. Hier findet ihr den [aktuellen Essenplan](https://www.sw-ka.de/de/essen/?kw=39) | alle |
-| | 14:00 - 16:00 | E201, E306 + Remote| Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: https://h-ka-de.zoom.us/j/94770538065 | alle |
-| | 16:00 - 22:00 | In den Räumen im 2. und 3. Stock im Gebäude E | Erstiabend | Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt. | alle |
-|Dienstag, 28.09.2021 | 09:30 - 11:00 | E201, E311 |Zeitmanagement & Nachhaltiges Lernen | Diesen Kurs aus der WI-Projektwoche werden wir auch zu euch streamen :) https://h-ka-de.zoom.us/j/93705809404 | alle |
-| | 11:30 - 12:30 | E201, E311 + Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/NpOqUx2G3Go | alle |
-| | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065 | alle |
-| | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
-| | 14:00 - 15:30 | E201, E311 + Remote | IZ-Einführungsveranstaltung | https://h-ka-de.zoom.us/j/99707595406 | alle |
-| | 15:30 - 17:30 | Treffpunkt vor Gebäude E | Campusrundgang | Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :) | alle |
-| | **17:00** | Vor Gebäude E | Treffen zur Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. Start ca. 17:15| alle|
-| | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los. | alle |
-|Mittwoch, 29.09.2021 | **10:00 - 12:00** | **Remote** | PO-Briefing | Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Bachelor: https://h-ka-de.zoom.us/j/98282978855 <br>Master: https://h-ka-de.zoom.us/j/96621751755 | alle |
-| | 13:00 - 14:00 | Karlsruhe | Mittagspause | | alle |
-| | 14:00 - 18:00 | Treffpunkt vor Gebäude E | Rallye | In einer kleinen Rallye rund um Campus und Schlossgarten machen wir ein paar kleine Spielchen | alle |
-|Donnerstag, 30.09.2021 | 08:00 - 09:30 | E311 | Programmieren | Zug B1 | Bachelor |
-| | 08:00 - 09:30 | E304 | Graphenalgorithmen |  | Master |
-| | 09:50 - 11:20 | E201 | Programmieren | Zug B2 | Bachelor |
-| | 09:50 - 12:15 | E303 | Optimierung |  | Master |
-| | 09:50 - 13:00 | E305 | Programmierparadigmen |  | Master |
-| | 14:00 - 15:30 | Online | Mathematik 1 | https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09 | Bachelor |
-| | 14:00 - 15:30 | Online | Semantic Technologies | https://zoom.us/j/96953198758?pwd=VVZWL1Jjb2FSWXZ3OFRrS2NJN1EzQT09 | Master |
-|Freitag, 01.10.2021 | 09:50 - 11:20 | Remote | Mathematik 1 | Hier könnt ihr daran teilnehmen: https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09 | Bachelor |
-| | 09:50 - 11:20 | E304 | Mathematik für Maschinelles Lernen | Freiwillig, aber empfohlen: Mehr Infos: https://ilias.hs-karlsruhe.de/goto.php?target=crs_360821&client_id=HSKA | Master |
-| | 13:30 - 19:00 | Gebäude B, Foyers | Impfaktion der HKA | Verimpft werden BioNTech und AstraZeneca für Erst-, Zweit-, und bei Bedarf auch Drittimpfungen. Es kann jeder geimpft werden (nicht nur Hochschulangehörige) | alle |
+<small>**Hinweis:** Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+<div class="table-responsive">
+    <table>
+        <tr>
+            <th>Datum</th>
+            <th>Uhrzeit</th>
+            <th>Ort</th>
+            <th>Veranstaltung</th>
+            <th>Anmerkung</th>
+            <th>Empfohlen für</th>
+        </tr>
+        <tr>
+            <td>Montag, 27.09.2021</td>
+            <td>09:00 - 09:45</td>
+            <td>Vor dem Gebäude E <br><a href="https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Informationsmaterialien/HKA_Lageplan_A4.pdf">Lageplan</a></td>
+            <td>3G-Bändchen-Ausgabe</td>
+            <td>In diesem Zeitraum erhaltet ihr ein Bändchen, was euch zur Teilnahme an den Veranstaltungen der O-Phase befugt. Details siehe oben.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>10:00 - 11:00</td>
+            <td>Hörsaal Elektrotechnik (HE)</td>
+            <td>Begrüßung + Informationsveranstaltungen</td>
+            <td>Begrüßung der Erstsemester, Vorstellung der Professoren des ersten Semesters, etc.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:00 - 13:00</td>
+            <td>E201, EU02, E203</td>
+            <td>Englisch-Kurs Einstufung</td>
+            <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der <a href="https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung">Seite des IFS</a>. In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zuhause :)</td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13:00 - 14:00</td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td>Ihr könnt in die Stadt oder zur Cafeteria (Gebäude A, unten) gehen und dort etwas essen gehen. Hier findet ihr den <a href="https://www.sw-ka.de/de/essen/?kw=39">aktuellen Essenplan</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 16:00</td>
+            <td>E201, E306 + Remote</td>
+            <td>Vorstellung der Fachschaft + AStA</td>
+            <td>Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: <a href="https://h-ka-de.zoom.us/j/94770538065">https://h-ka-de.zoom.us/j/94770538065</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>16:00 - 22:00</td>
+            <td>In den Räumen im 2. und 3. Stock im Gebäude E</td>
+            <td>Erstiabend</td>
+            <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td>Dienstag, 28.09.2021</td>
+            <td>09:30 - 11:00</td>
+            <td>E201, E311</td>
+            <td>Zeitmanagement & Nachhaltiges Lernen</td>
+            <td>Diesen Kurs aus der WI-Projektwoche werden wir auch zu euch streamen :) <a href="https://h-ka-de.zoom.us/j/93705809404">https://h-ka-de.zoom.us/j/93705809404</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:30 - 12:30</td>
+            <td>E201, E311 + Remote</td>
+            <td>Begrüßung des Rektorats</td>
+            <td>Hier findet ihr den Stream: <a href="https://youtu.be/NpOqUx2G3Go">https://youtu.be/NpOqUx2G3Go</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>12:30 - 13:00</strong></td>
+            <td>Gebäude E + Remote</td>
+            <td><strong>Vorstellung der Fachschaft + AStA</strong></td>
+            <td>Jetzt sollte es hoffentlich funktionieren <a href="https://h-ka-de.zoom.us/j/94770538065">https://h-ka-de.zoom.us/j/94770538065</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>13:00</strong> - 14:00</strong></td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 15:30</td>
+            <td>E201, E311 + Remote</td>
+            <td>IZ-Einführungsveranstaltung</td>
+            <td><a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>15:30 - 17:30</td>
+            <td>Treffpunkt vor Gebäude E</td>
+            <td>Campusrundgang</td>
+            <td>Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :)</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>17:00</strong></td>
+            <td>Vor Gebäude E</td>
+            <td>Treffen zur Wanderung zur Kneipentour</td>
+            <td>Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. Start ca. 17:15</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>18:00 - open end</td>
+            <td>Karlsruhe</td>
+            <td>Kneipentour</td>
+            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td>Mittwoch, 29.09.2021</td>
+            <td><strong>10:00 - 12:00</strong></td>
+            <td><strong>Remote</strong></td>
+            <td>PO-Briefing</td>
+            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. <br>Bachelor: <a href="https://h-ka-de.zoom.us/j/98282978855">https://h-ka-de.zoom.us/j/98282978855</a> <br>Master: <a href="https://h-ka-de.zoom.us/j/96621751755">https://h-ka-de.zoom.us/j/96621751755</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13:00 - 14:00</td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 18:00</td>
+            <td>Treffpunkt vor Gebäude E</td>
+            <td>Rallye</td>
+            <td>In einer kleinen Rallye rund um Campus und Schlossgarten machen wir ein paar kleine Spielchen</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td>Donnerstag, 30.09.2021</td>
+            <td>08:00 - 09:30</td>
+            <td>E311</td>
+            <td>Programmieren</td>
+            <td>Zug B1</td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>08:00 - 09:30</td>
+            <td>E304</td>
+            <td>Graphenalgorithmen</td>
+            <td></td>
+            <td>Master</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>09:50 - 11:20</td>
+            <td>E201</td>
+            <td>Programmieren</td>
+            <td>Zug B2</td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>09:50 - 12:15</td>
+            <td>E303</td>
+            <td>Optimierung</td>
+            <td></td>
+            <td>Master</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>09:50 - 13:00</td>
+            <td>E305</td>
+            <td>Programmierparadigmen</td>
+            <td></td>
+            <td>Master</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 15:30</td>
+            <td>Online</td>
+            <td>Mathematik 1</td>
+            <td><a href="https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09">https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09</a></td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 15:30</td>
+            <td>Online</td>
+            <td>Semantic Technologies</td>
+            <td><a href="https://zoom.us/j/96953198758?pwd=VVZWL1Jjb2FSWXZ3OFRrS2NJN1EzQT09">https://zoom.us/j/96953198758?pwd=VVZWL1Jjb2FSWXZ3OFRrS2NJN1EzQT09</a></td>
+            <td>Master</td>
+        </tr>
+        <tr>
+            <td>Freitag, 01.10.2021</td>
+            <td>09:50 - 11:20</td>
+            <td>Remote</td>
+            <td>Mathematik 1</td>
+            <td>Hier könnt ihr daran teilnehmen: <a href="https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09">https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09</a></td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>09:50 - 11:20</td>
+            <td>E304</td>
+            <td>Mathematik für Maschinelles Lernen</td>
+            <td>Freiwillig, aber empfohlen: Mehr Infos: <a href="https://ilias.hs-karlsruhe.de/goto.php?target=crs_360821&client_id=HSKA">https://ilias.hs-karlsruhe.de/goto.php?target=crs_360821&client_id=HSKA</a></td>
+            <td>Master</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13:30 - 19:00</td>
+            <td>Gebäude B, Foyers</td>
+            <td>Impfaktion der HKA</td>
+            <td>Verimpft werden BioNTech und AstraZeneca für Erst-, Zweit-, und bei Bedarf auch Drittimpfungen. Es kann jeder geimpft werden (nicht nur Hochschulangehörige)</td>
+            <td>alle</td>
+        </tr>
+    </table>
+</div>
 
 <br>
 
@@ -114,34 +313,227 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
 
 **Raumbelegung (wenn nicht anders angegeben): DS: E001, IIB: E002, WI: E003, E101**
 
-| Datum | Uhrzeit | Ort | Veranstaltung | Anmerkung | Empfohlen für |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|Montag, 27.09.2021 | 08:00 - 08:45 | Vor dem Gebäude E <br>[Lageplan](https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Informationsmaterialien/HKA_Lageplan_A4.pdf)| 3G-Bändchen-Ausgabe | In diesem Zeitraum erhaltet ihr ein Bändchen, was euch zur Teilnahme an den Veranstaltungen der O-Phase befugt. Details siehe oben. | Bachelor |
-| | 09:00 - 09:45 | DS: E001, IIB: E002,<br>WI: E003, E101<br>+ Remote | Begrüßung durch den Dekan und die Studiendekane | Infos über die technische Umgebung der Hoschschule/Fakultät | Bachelor |
-| | 10:15 - 13:00 | Gebäude E + Remote | Technisches Setup | Infos über die technische Umgebung der Hochschule/Fakultät | Bachelor |
-| | 13:00 - 14:00 | Karlsruhe | Mittagspause | Ihr könnt in die Stadt oder zur Cafeteria (Gebäude A, unten) gehen und dort etwas essen gehen. Hier findet Ihr den [aktuellen Essenplan](https://www.sw-ka.de/de/essen/?kw=39) | alle |
-| | 14:00 - 16:00 | Gebäude E + Remote | Vorstellung der Fachschaft + AStA | Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: https://zoom.us/j/99018555264?pwd=Mzk5aU5xRHBCdjZTczM0Ry9zd2x4UT09 | alle |
-| | 16:00 - 22:00 | In den Räumen im 2. und 3. Stock im Gebäude E | Erstiabend | Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt. | alle |
-|Dienstag, 28.09.2021 | 09:00 - 09:30 | Gebäude E + Remote | Akademisches Auslandsamt  | https://h-ka-de.zoom.us/j/93705809404 | Bachelor |
-| | 09:30 - 11:00 | Gebäude E + Remote |Zeitmanagement & Nachhaltiges Lernen | https://h-ka-de.zoom.us/j/93705809404| Bachelor |
-| | 11:30 - 12:30 | Gebäude E + Remote | Begrüßung des Rektorats | Hier findet ihr den Stream: https://youtu.be/NpOqUx2G3Go | alle |
-| | **12:30 - 13:00** | Gebäude E + Remote | **Vorstellung der Fachschaft + AStA** | Jetzt sollte es hoffentlich funktionieren https://h-ka-de.zoom.us/j/94770538065| alle |
-| | **13:00** - 14:00 | Karlsruhe | Mittagspause | | alle |
-| | 14:00 - 15:30 | Gebäude E + Remote | IZ-Einführungsveranstaltung | https://h-ka-de.zoom.us/j/99707595406 | alle |
-| | **15:30 - 16:30** | **E101-104 (+ Remote)** | **Einführungsveranstaltung von Dr. Fischer** | https://h-ka-de.zoom.us/j/93719590348 | alle |
-|Mittwoch, 29.09.2021 | 09:00 - 13:00 | **E101-104** | Mathe Tag | Nur für Wirtschaftsinformatik und Internationales IT Business| Bachelor WI & IIB |
-| | 10:00 - 14:00 | **E101-104** | Mathe Tag | Nur für Data Science | Bachelor DS |
-| | danach | Karlsruhe | (Mittags)pause | | alle |
-| | 15:00 - 17:30 | Treffpunkt vor Gebäude E | Campusrundgang | Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :) | alle |
-| | **17:00** | Vor Gebäude E | Treffen zur Wanderung zur Kneipentour | Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. Start ca. 17:15| alle|
-| | 18:00 - open end | Karlsruhe | Kneipentour | Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.| alle |
-|Donnerstag, 30.09.2021 | 09:00 - 13:00 | **E101-104**| Programmier-Workshop  | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB |
-| | 09:00 - 12:00 | **E101-104**| Organisation + Data Analytics | Nur für Data Science | Bachelor DS |
-| | 13:00 - 14:00 | Karlsruhe | Mittagspause | | alle|
-| | 14:00 - 18:00 | Treffpunkt vor Gebäude E | Rallye | In einer kleinen Rallye rund um Campus und Schlossgarten machen wir ein paar kleine Spielchen | alle |
-|Freitag, 01.10.2021 | 09:00 - 10:30 | **E101-104** | Quizfragen zur Orga + Stundenplan | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB|
-| | 11:00 - 11:30 | Gebäude E + Remote | Vorstellung "Erfolgreich Starten" | Nur für Wirtschaftsinformatik und Internationales IT Business | Bachelor WI & IIB|
-| | 13:30 - 19:00 | Gebäude B, Foyers | Impfaktion der HKA | Verimpft werden BioNTech und AstraZeneca für Erst-, Zweit-, und bei Bedarf auch Drittimpfungen. Es kann jeder geimpft werden (nicht nur Hochschulangehörige) | alle |
+<small>**Hinweis:** Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+<div class="table-responsive">
+    <table>
+        <tr>
+            <th>Datum</th>
+            <th>Uhrzeit</th>
+            <th>Ort</th>
+            <th>Veranstaltung</th>
+            <th>Anmerkung</th>
+            <th>Empfohlen für</th>
+        </tr>
+        <tr>
+            <td>Montag, 27.09.2021</td>
+            <td>08:00 - 08:45</td>
+            <td>Vor dem Gebäude E <br><a href="https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Informationsmaterialien/HKA_Lageplan_A4.pdf">Lageplan</a></td>
+            <td>3G-Bändchen-Ausgabe</td>
+            <td>In diesem Zeitraum erhaltet ihr ein Bändchen, was euch zur Teilnahme an den Veranstaltungen der O-Phase befugt. Details siehe oben.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>09:00 - 09:45</td>
+            <td>DS: E001, IIB: E002,<br>WI: E003, E101<br>+ Remote</td>
+            <td>Begrüßung durch den Dekan und die Studiendekane</td>
+            <td>Infos über die technische Umgebung der Hoschschule/Fakultät</td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>10:15 - 13:00</td>
+            <td>Gebäude E + Remote</td>
+            <td>Technisches Setup</td>
+            <td>Infos über die technische Umgebung der Hochschule/Fakultät</td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13:00 - 14:00</td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td>Ihr könnt in die Stadt oder zur Cafeteria (Gebäude A, unten) gehen und dort etwas essen gehen. Hier findet ihr den <a href="https://www.sw-ka.de/de/essen/?kw=39">aktuellen Essenplan</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 16:00</td>
+            <td>Gebäude E + Remote</td>
+            <td>Vorstellung der Fachschaft + AStA</td>
+            <td>Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. Vorstellung des O-Phasen Programms. Ihr könnt euch über Zoom dazu einwählen: <a href="https://zoom.us/j/99018555264?pwd=Mzk5aU5xRHBCdjZTczM0Ry9zd2x4UT09">https://zoom.us/j/99018555264?pwd=Mzk5aU5xRHBCdjZTczM0Ry9zd2x4UT09</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>16:00 - 22:00</td>
+            <td>In den Räumen im 2. und 3. Stock im Gebäude E</td>
+            <td>Erstiabend</td>
+            <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td>Dienstag, 28.09.2021</td>
+            <td>09:00 - 09:30</td>
+            <td>Gebäude E + Remote</td>
+            <td>Akademisches Auslandsamt</td>
+            <td><a href="https://h-ka-de.zoom.us/j/93705809404">https://h-ka-de.zoom.us/j/93705809404</a></td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>09:30 - 11:00</td>
+            <td>Gebäude E + Remote</td>
+            <td>Zeitmanagement & Nachhaltiges Lernen</td>
+            <td><a href="https://h-ka-de.zoom.us/j/93705809404">https://h-ka-de.zoom.us/j/93705809404</a></td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:30 - 12:30</td>
+            <td>Gebäude E + Remote</td>
+            <td>Begrüßung des Rektorats</td>
+            <td>Hier findet ihr den Stream: <a href="https://youtu.be/NpOqUx2G3Go">https://youtu.be/NpOqUx2G3Go</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>12:30 - 13:00</strong></td>
+            <td>Gebäude E + Remote</td>
+            <td><strong>Vorstellung der Fachschaft + AStA</strong></td>
+            <td>Jetzt sollte es hoffentlich funktionieren <a href="https://h-ka-de.zoom.us/j/94770538065">https://h-ka-de.zoom.us/j/94770538065</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>13:00</strong> - 14:00</td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 15:30</td>
+            <td>Gebäude E + Remote</td>
+            <td>IZ-Einführungsveranstaltung</td>
+            <td><a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>15:30 - 16:30</strong></td>
+            <td><strong>E101-104 (+ Remote)</strong></td>
+            <td><strong>Einführungsveranstaltung von Dr. Fischer</strong></td>
+            <td><a href="https://h-ka-de.zoom.us/j/93719590348">https://h-ka-de.zoom.us/j/93719590348</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td>Mittwoch, 29.09.2021</td>
+            <td>09:00 - 13:00</td>
+            <td><strong>E101-104</strong></td>
+            <td>Mathe Tag</td>
+            <td>Nur für Wirtschaftsinformatik und Internationales IT Business</td>
+            <td>Bachelor WI & IIB</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>10:00 - 14:00</td>
+            <td><strong>E101-104</strong></td>
+            <td>Mathe Tag</td>
+            <td>Nur für Data Science</td>
+            <td>Bachelor DS</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>danach</td>
+            <td>Karlsruhe</td>
+            <td>(Mittags)pause</td>
+            <td></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>15:00 - 17:30</td>
+            <td>Treffpunkt vor Gebäude E</td>
+            <td>Campusrundgang</td>
+            <td>Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :)</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>17:00</strong></td>
+            <td>Vor Gebäude E</td>
+            <td>Treffen zur Wanderung zur Kneipentour</td>
+            <td>Wer möchte kann sich uns zu einer gemeinsamen Wanderung zur ersten Kneipe anschließen. Start ca. 17:15</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>18:00 - open end</td>
+            <td>Karlsruhe</td>
+            <td>Kneipentour</td>
+            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Los geht's im Vogelbräu bzw. Old Chapel Pub um 18 Uhr. Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td>Donnerstag, 30.09.2021</td>
+            <td>09:00 - 13:00</td>
+            <td><strong>E101-104</strong></td>
+            <td>Programmier-Workshop</td>
+            <td>Nur für Wirtschaftsinformatik und Internationales IT Business</td>
+            <td>Bachelor WI & IIB</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>09:00 - 12:00</td>
+            <td><strong>E101-104</strong></td>
+            <td>Organisation + Data Analytics</td>
+            <td>Nur für Data Science</td>
+            <td>Bachelor DS</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13:00 - 14:00</td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 18:00</td>
+            <td>Treffpunkt vor Gebäude E</td>
+            <td>Rallye</td>
+            <td>In einer kleinen Rallye rund um Campus und Schlossgarten machen wir ein paar kleine Spielchen</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td>Freitag, 01.10.2021</td>
+            <td>09:00 - 10:30</td>
+            <td><strong>E101-104</strong></td>
+            <td>Quizfragen zur Orga + Stundenplan</td>
+            <td>Nur für Wirtschaftsinformatik und Internationales IT Business</td>
+            <td>Bachelor WI & IIB</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:00 - 11:30</td>
+            <td>Gebäude E + Remote</td>
+            <td>Vorstellung "Erfolgreich Starten"</td>
+            <td>Nur für Wirtschaftsinformatik und Internationales IT Business</td>
+            <td>Bachelor WI & IIB</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13:30 - 19:00</td>
+            <td>Gebäude B, Foyers</td>
+            <td>Impfaktion der HKA</td>
+            <td>Verimpft werden BioNTech und AstraZeneca für Erst-, Zweit-, und bei Bedarf auch Drittimpfungen. Es kann jeder geimpft werden (nicht nur Hochschulangehörige)</td>
+            <td>alle</td>
+        </tr>
+    </table>
+</div>
 
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du unter [Immatrikulationsinfos](https://www.h-ka.de/studieren/studium-organisieren/einstieg-ins-studium/immatrikulationsinfos-ansprechpartner).
 
