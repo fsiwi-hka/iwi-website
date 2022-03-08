@@ -196,3 +196,20 @@ If you want to display a table vertically, you must specify the table tag with a
     </table>
 </div>
 ```
+
+Using `a`-tags to display hyperlinks in tables and `strong`-tags to display bold text.
+
+```html
+<div class="table-responsive">
+    <table>
+        <tr>
+            <th><strong>Time</strong></th>
+            <th><a href="https://exmaple.com">Plan</a></th>
+        </tr>
+        <tr>
+            <td><strong>From</strong> 12:00 <strong>to</strong> 18:00</td>
+            <td>Going on <a href="https://exmaple.com">campus with friends</a></td>
+        </tr>
+    </table>
+</div>
+```
