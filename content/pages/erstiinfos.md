@@ -43,26 +43,26 @@ Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
 und von der Fachschaft Informatik und Wirtschaftsinformatik (das sind wir).
 
-**Diese Pläne richten sich an alle Studenten der Bachelor Studiengänge Informatik, Medieninformatik, Wirtschaftsinformatik, 
+**Diese Pläne richten sich an alle Studenten der Bachelor Studiengänge Informatik, Medieninformatik, Wirtschaftsinformatik,
 Internationales IT Business und Data Science. Ebenso für die Masterstudiengänge Wirtschaftsinformatik und Informatik.**
 
 ### Allgemeine Regeln
 
-Voraussetzung für die Teilnahme an der Orientierungs-Phase (genauso wie das folgende Studium in Präsenz) ist der 
-Nachweis von 3G. Geimpfte und Genesene bringen also bitte einen entsprechenden Nachweis mit, Getestete einen aktuellen 
+Voraussetzung für die Teilnahme an der Orientierungs-Phase (genauso wie das folgende Studium in Präsenz) ist der
+Nachweis von 3G. Geimpfte und Genesene bringen also bitte einen entsprechenden Nachweis mit, Getestete einen aktuellen
 Schnelltest (nicht älter als 24 Stunden, am besten morgens gemacht). Im Innenbereich gilt zudem die Pflicht zum Tragen
 einer FFP2 (oder gleichwertigen) Maske. Wenn ein Abstand von 1,5 Metern nicht eingehalten werden kann, auch im Außenbereich.
 
 Mehr Infos gibt's hier: https://www.h-ka.de/corona/news-fallzahlen.
 
-Um die 3G-Nachweispflicht leichter kontrollieren zu können, werden wir ein Bändchen-System einsetzen. Wundert euch nicht, 
-die Hochschule setzt auf Stichproben-Kontrolle. Da ihr aber übermäßigen sozialen Kontakt haben werdet, haben wir uns hier 
+Um die 3G-Nachweispflicht leichter kontrollieren zu können, werden wir ein Bändchen-System einsetzen. Wundert euch nicht,
+die Hochschule setzt auf Stichproben-Kontrolle. Da ihr aber übermäßigen sozialen Kontakt haben werdet, haben wir uns hier
 für ein strengeres Kontrollsystem für die O-Phase entschieden.
 
-Am Montagmorgen wird es eine Großkontrolle geben. Hierbei erhalten alle ein cooles Stoffbändchen, was euch als Zugehörige 
-der IWI-O-Phase identifizierbar macht. Zusätzlich erhalten Geimpfte und Genesene bereits alle benötigten Bändchen der 
-nächsten Tage, welche dann selbstständig mitgebracht werden müssen. Getestete (oder alle anderen, die ihr Tagesbändchen 
-nicht dabei haben) müssen folglich auch an den weiteren Tagen überprüft werden. Tests müssen tagesaktuell sein, 
+Am Montagmorgen wird es eine Großkontrolle geben. Hierbei erhalten alle ein cooles Stoffbändchen, was euch als Zugehörige
+der IWI-O-Phase identifizierbar macht. Zusätzlich erhalten Geimpfte und Genesene bereits alle benötigten Bändchen der
+nächsten Tage, welche dann selbstständig mitgebracht werden müssen. Getestete (oder alle anderen, die ihr Tagesbändchen
+nicht dabei haben) müssen folglich auch an den weiteren Tagen überprüft werden. Tests müssen tagesaktuell sein,
 also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am besten morgens, dann sind wir alle am sichersten.
 
 **Wer keinen 3G Nachweis hat, kann nicht an der O-Phase (oder sonstigen Präsenzveranstaltungen der Hochschule) teilnehmen!**
@@ -71,11 +71,11 @@ also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am 
 
 **Hinweis:**
 <!--Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;) -->
-Hier siehst du unseren aktuellen Terminplan der O-Phase. 
+Hier siehst du unseren aktuellen Terminplan der O-Phase.
 
-Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden , sind hier zwei 
-Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge geben, achtet hier 
-auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können - es lohnt sich also, 
+Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden , sind hier zwei
+Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge geben, achtet hier
+auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können - es lohnt sich also,
 regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu informieren.
 <!-- Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht vor Ort sein kann.-->
 
@@ -121,7 +121,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>10:00 - 13:00</td>
             <td>Gebäude A, Aula (oben)</td>
             <td>Vorstellung der Fachschaft und des O-Phasen-Programms</td>
-            <td>Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. 
+            <td>Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten.
               Vorstellung des O-Phasen-Programms.</td>
             <td>alle</td>
         </tr>
@@ -130,7 +130,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>13:00 - 14:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
-            <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen) oder zur Mensa Moltke (warmes Mittagessen) gehen 
+            <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen) oder zur Mensa Moltke (warmes Mittagessen) gehen
               und dort etwas essen gehen. Hier findet ihr den <a href="https://www.sw-ka.de/de/essen/?kw=11">aktuellen Essensplan</a></td>
             <td>alle</td>
         </tr>
@@ -163,8 +163,8 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>11:30 - 13:00</td>
             <td>E203, EU02</td>
             <td>Englisch-Kurs Einstufung</td>
-            <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der 
-              <a href="https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung">Seite des IFS</a>. 
+            <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der
+              <a href="https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung">Seite des IFS</a>.
               In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zu Hause :)</td>
             <td>Bachelor</td>
         </tr>
@@ -225,7 +225,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>11:30 - 13:00</td>
             <td>Remote <br>(+ Aula)</td>
             <td>Begrüßung durch das Rektorat</td>
-            <td>Ihr könnt direkt in der Aula dabei sein (Registrierung erforderlich) oder wir streamen euch das ganze 
+            <td>Ihr könnt direkt in der Aula dabei sein (Registrierung erforderlich) oder wir streamen euch das ganze
               vor Ort in einen Raum.</td>
             <td>alle</td>
         </tr>
@@ -245,7 +245,6 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>In einer kleinen Rallye rund um Campus machen wir ein paar Spielchen.</td>
             <td>alle</td>
         </tr>
-        <!--
         <tr>
             <th>Datum</th>
             <th>Uhrzeit</th>
@@ -257,7 +256,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td>Donnerstag, 17.03.2022</td>
             <td>08:00 - 09:30</td>
-            <td>E311</td>
+            <td>E201</td>
             <td>Technische Informatik 1</td>
             <td></td>
             <td>Bachelor</td>
@@ -265,7 +264,15 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td></td>
             <td>08:00 - 09:30</td>
-            <td>E304</td>
+            <td>LI U16</td>
+            <td>Mediengestaltung 1</td>
+            <td></td>
+            <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>08:00 - 09:30</td>
+            <td>E302</td>
             <td>Graphenalgorithmen</td>
             <td></td>
             <td>Master</td>
@@ -275,21 +282,13 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>09:50 - 11:20</td>
             <td>E201</td>
             <td>Programmieren</td>
-            <td>Zug B2</td>
+            <td></td>
             <td>Bachelor</td>
         </tr>
         <tr>
             <td></td>
-            <td>09:50 - 12:15</td>
-            <td>E303</td>
-            <td>Optimierung</td>
-            <td></td>
-            <td>Master</td>
-        </tr>
-        <tr>
-            <td></td>
             <td>09:50 - 13:00</td>
-            <td>E305</td>
+            <td>E302</td>
             <td>Programmierparadigmen</td>
             <td></td>
             <td>Master</td>
@@ -297,17 +296,17 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td></td>
             <td>14:00 - 15:30</td>
-            <td>Online</td>
-            <td>Mathematik 1</td>
-            <td><a href="https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09">https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09</a></td>
-            <td>Bachelor</td>
+            <td>E301, LI U16</td>
+            <td>Game Design + Development</td>
+            <td></td>
+            <td>Master</td>
         </tr>
         <tr>
             <td></td>
             <td>14:00 - 15:30</td>
-            <td>Online</td>
-            <td>Semantic Technologies</td>
-            <td><a href="https://zoom.us/j/96953198758?pwd=VVZWL1Jjb2FSWXZ3OFRrS2NJN1EzQT09">https://zoom.us/j/96953198758?pwd=VVZWL1Jjb2FSWXZ3OFRrS2NJN1EzQT09</a></td>
+            <td>E302</td>
+            <td>Maschinelles Lernen</td>
+            <td></td>
             <td>Master</td>
         </tr>
         <tr>
@@ -321,21 +320,20 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
        <tr>
         <tr>
             <td>Freitag, 18.03.2022</td>
-            <td>09:50 - 11:20</td>
-            <td>Remote</td>
-            <td>Mathematik 1</td>
-            <td>Hier könnt ihr daran teilnehmen: <a href="https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09">https://h-ka-de.zoom.us/j/91639345684?pwd=RlBybUhBM2FPWEJlV2J0S3FmTVNPdz09</a></td>
-            <td>Bachelor</td>
+            <td>08:00 - 09:30</td>
+            <td>E302, LI 137</td>
+            <td>Modellierung und Simulation</td>
+            <td></td>
+            <td>Master</td>
         </tr>
         <tr>
             <td></td>
             <td>09:50 - 11:20</td>
-            <td>E304</td>
-            <td>Mathematik für Maschinelles Lernen</td>
-            <td>Freiwillig, aber empfohlen: Mehr Infos: <a href="https://ilias.hs-karlsruhe.de/goto.php?target=crs_360821&client_id=HSKA">https://ilias.hs-karlsruhe.de/goto.php?target=crs_360821&client_id=HSKA</a></td>
-            <td>Master</td>
+            <td>E301</td>
+            <td>Mathematik 1</td>
+            <td></td>
+            <td>Bachelor</td>
         </tr>
-        -->
     </table>
 </div>
 
@@ -379,7 +377,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>10:00 - 13:00</td>
             <td>Gebäude A, Aula (oben)</td>
             <td>Vorstellung der Fachschaft und des O-Phasen-Programms</td>
-            <td>Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten. 
+            <td>Alles, was Erstis zum Start ihres Studiums an der HS Karlsruhe in den ersten Tagen nicht verpassen sollten.
               Vorstellung des O-Phasen-Programms.</td>
             <td>alle</td>
         </tr>
@@ -388,7 +386,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>13:00 - 14:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
-            <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen) oder zur Mensa Moltke (warmes Mittagessen) gehen 
+            <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen) oder zur Mensa Moltke (warmes Mittagessen) gehen
               und dort etwas essen gehen. Hier findet ihr den <a href="https://www.sw-ka.de/de/essen/?kw=11">aktuellen Essensplan</a></td>
             <td>alle</td>
         </tr>
@@ -481,7 +479,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>9:00 - 10:30</td>
             <td></td>
             <td>Zugangsdaten / Hoch-schulsysteme / Studien-organisation / Intranet</td>
-            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. 
+            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt.
                 Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.</td>
             <td>Bachelor</td>
         </tr>
@@ -498,7 +496,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>11:30 - 13:00</td>
             <td>Remote</td>
             <td>Begrüßung durch das Rektorat</td>
-            <td>Ihr könnt direkt in der Aula dabei sein (Registrierung erforderlich) oder wir streamen euch das ganze 
+            <td>Ihr könnt direkt in der Aula dabei sein (Registrierung erforderlich) oder wir streamen euch das ganze
                 vor Ort in einen Raum.</td>
             <td>alle</td>
         </tr>
@@ -573,7 +571,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
     </table>
 </div>
 
-Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du unter 
+Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du unter
 [Immatrikulationsinfos](https://www.h-ka.de/studieren/studium-organisieren/einstieg-ins-studium/immatrikulationsinfos-ansprechpartner).
 
 <!-- ### Schlafplatz-->
