@@ -166,7 +166,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der
               <a href="https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung">Seite des IFS</a>.
               In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zu Hause :)</td>
-            <td>Bachelor</td>
+            <td>Bachelor <stong>Anmeldeschluss für die Veranstaltungen ist am Mittwoch 16. März</strong></td>
         </tr>
         <tr>
             <td></td>
@@ -479,8 +479,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>9:00 - 10:30</td>
             <td></td>
             <td>Zugangsdaten / Hoch-schulsysteme / Studien-organisation / Intranet</td>
-            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt.
-                Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.</td>
+            <td></td>
             <td>Bachelor</td>
         </tr>
         <tr>
