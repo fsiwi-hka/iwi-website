@@ -112,6 +112,10 @@ p {
     @apply leading-6 mb-4;
 }
 
+strong {
+   font-weight: bold;
+}
+
 li {
     @apply leading-6;
 }
