@@ -188,7 +188,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-          <td<strong>Hb im B-Gebäude</strong></td>
+            <td><strong>Hb im B-Gebäude</strong></td>
             <td>PO-Briefing</td>
             <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch offene Fragen
               nach der RZ-Einführungsveranstaltung klären.</td>
