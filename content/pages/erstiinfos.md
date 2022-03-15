@@ -434,17 +434,15 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>14:00 - 15:30</td>
             <td>Gebäude A, Aula</td>
             <td>RZ-Einführungsveranstaltung</td>
-            <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.
-              <!--<a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a>--></td>
+            <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.<!--<a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a>--></td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-          <td><strong>E 103 im E-Gebäude</strong></td>
+            <td><strong>E 103 im E-Gebäude</strong></td>
             <td>PO-Briefing</td>
-            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch offene Fragen
-              nach der RZ-Einführungsveranstaltung klären.</td>
+            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -452,8 +450,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>17:00</td>
             <td>Treffpunkt vor dem Gebäude E</td>
             <td>Treffen Kneipentour-Einteilung</td>
-            <td>Ihr werdet in 4 Gruppen eingeteilt und dann wandern wir zusammen zu den entsprechenden Kneipen.
-              Start ca. 17:15</td>
+            <td>Ihr werdet in 4 Gruppen eingeteilt und dann wandern wir zusammen zu den entsprechenden Kneipen. Start ca. 17:15</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -461,8 +458,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>18:00 - open end</td>
             <td>Karlsruhe Innenstadt</td>
             <td>Kneipentour</td>
-            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur besseren Einteilung um 17 Uhr
-                vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen.</td>
+            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur besseren Einteilung um 17 Uhr vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen.</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -530,16 +526,14 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
             <td>Bachelor</td>
         </tr>
-        <!--
-        <tr>
+        <!--<tr>
             <td></td>
             <td>09:00 - 12:00</td>
             <td><strong>E101-104</strong></td>
             <td>Organisation + Data Analytics</td>
             <td>Nur für Data Science</td>
             <td>Bachelor DS</td>
-        </tr>
-        -->
+        </tr>-->
         <tr>
             <th>Datum</th>
             <th>Uhrzeit</th>
