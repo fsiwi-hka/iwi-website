@@ -317,7 +317,6 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <th>Anmerkung</th>
             <th>Empfohlen für</th>
         </tr>
-       <tr>
         <tr>
             <td>Freitag, 18.03.2022</td>
             <td>08:00 - 09:30</td>
@@ -523,7 +522,6 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <th>Anmerkung</th>
             <th>Empfohlen für</th>
         </tr>
-       <tr>
         <tr>
             <td>Donnerstag, 17.03.2022</td>
             <td>09:00 - 13:00</td>
@@ -550,7 +548,6 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <th>Anmerkung</th>
             <th>Empfohlen für</th>
         </tr>
-       <tr>
         <tr>
             <td>Freitag, 18.03.2022</td>
             <td>09:00 - 10:30</td>
