@@ -521,7 +521,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td>Donnerstag, 17.03.2022</td>
             <td>09:00 - 13:00</td>
-            <td>TBA</td>
+            <td>E103, E104</td>
             <td>Programmier-Workshop</td>
             <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
             <td>Bachelor</td>
@@ -545,7 +545,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td>Freitag, 18.03.2022</td>
             <td>09:00 - 10:30</td>
-            <td>TBA</td>
+            <td>E103, E104</td>
             <td>Quizfragen zur Orga + Stundenplan</td>
             <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
             <td>Bachelor</td>
@@ -553,7 +553,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td></td>
             <td>11:00 - 11:30</td>
-            <td>TBA</td>
+            <td>E103, E104</td>
             <td>Vorstellung "Erfolgreich Starten"</td>
             <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
             <td>Bachelor</td>
