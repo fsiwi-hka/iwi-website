@@ -43,7 +43,6 @@ groups:
   - title: 'Fachbereich Infrastruktur'
     image: '/images/fachschaft/website_iwi.png'
     people:
-      - 'Erik Dyka' (INFB)
       - 'Michael Fischer' (INFM)
       - 'Matthias Handtmann' (INFB)
       - 'Marcel Rettig' (INFB)
