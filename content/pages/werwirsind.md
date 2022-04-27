@@ -43,12 +43,12 @@ groups:
   - title: 'Fachbereich Infrastruktur'
     image: '/images/fachschaft/website_iwi.png'
     people:
-      - 'Dustin Sommerfeld'
-      - 'Erik Dyka'
-      - 'Michael Fischer'
-      - 'Marcel Rettig'
-      - 'Matthias Handtmann'
-      - 'Jonas Westenhoff'
+      - 'Erik Dyka' (INFB)
+      - 'Michael Fischer' (INFM)
+      - 'Matthias Handtmann' (INFB)
+      - 'Marcel Rettig' (INFB)
+      - 'Dustin Sommerfeld' (INFB)
+      - 'Jonas Westenhoff' (INFB)
   - title: 'Fachbereich Sponsoring'
     image: '/images/fachschaft/sponsoring_iwi.png'
     people:
