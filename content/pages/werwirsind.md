@@ -45,6 +45,8 @@ groups:
     people:
       - 'Michael Fischer' (INFM)
       - 'Matthias Handtmann' (INFB)
+      - 'Alexander Mader' (WIB)
+      - 'Charlotte Mohr' (INFB)
       - 'Marcel Rettig' (INFB)
       - 'Dustin Sommerfeld' (INFB)
       - 'Jonas Westenhoff' (INFB)
