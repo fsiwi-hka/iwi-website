@@ -48,7 +48,7 @@ groups:
       - 'Alexander Mader (WIB)'
       - 'Charlotte Mohr (INFB)'
       - 'Marcel Rettig (INFB)'
-      - 'Dustin Sommerfeld (INFB)'
+      - 'Dustin Sommerfeld (MINB)'
       - 'Jonas Westenhoff (INFB)'
   - title: 'Fachbereich Sponsoring'
     image: '/images/fachschaft/sponsoring_iwi.png'
