@@ -194,5 +194,5 @@ Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung geste
 
 ## Mehr
 
-Weitere Übungsaufgaben, zusätzlich zum Programmiervorkurs, findest du auf der
+Weitere Übungsaufgaben, zusätzlich zum Java-Programmiervorkurs, findest du auf der
 [Webseite der Freitagsrunde](https://wiki.freitagsrunde.org/Javakurs/%C3%9Cbungsaufgaben).
