@@ -153,7 +153,9 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 [Link zu allen Unterlagen](https://drive.google.com/drive/folders/1jatXAqQvVnvqhHfg9rfg-anj4bcZ0oyj?usp=sharing)
 -->
 
-### Tag 1
+Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
+
+<!-- ### Tag 1
 
 * [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
@@ -188,7 +190,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 * [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1Sbhb5PDkjbuj-u7Kv7GXQM8lKsjeXdMk/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/1EnIYj9hQDF7vzHbV6Lj2XtGbqx9WWtJr/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1E3QeaQ198ohrsJPHLUFCh7ZE4wSR8YIK/view?usp=sharing)
-* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8)
+* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8) -->
 
 ## Mehr
 
