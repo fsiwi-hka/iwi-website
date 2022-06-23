@@ -22,7 +22,6 @@ Wir bieten Ihnen Ihnen in unserem **Partnerschafts-Programm** vier **Kooperation
 Mehr zu den einzelnen Bausteinen erfahren Sie auf dieser Seite. Wir freuen uns auf Ihre Nachricht!
 
 [icon:at|Mail an das Sponsoring-Team](/scripts/email.php?address=sponsoring)
-[icon:phone|Oder Anrufen: +49 721 925-1449](tel:+497219251449)
 
 ## O-Phasen-Unterstützung
 
