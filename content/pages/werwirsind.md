@@ -43,13 +43,13 @@ groups:
   - title: 'Fachbereich Infrastruktur'
     image: '/images/fachschaft/website_iwi.png'
     people:
-      - 'Michael Fischer' (INFM)
-      - 'Matthias Handtmann' (INFB)
-      - 'Alexander Mader' (WIB)
-      - 'Charlotte Mohr' (INFB)
-      - 'Marcel Rettig' (INFB)
-      - 'Dustin Sommerfeld' (INFB)
-      - 'Jonas Westenhoff' (INFB)
+      - 'Michael Fischer (INFM)'
+      - 'Matthias Handtmann (INFB)'
+      - 'Alexander Mader (WIB)'
+      - 'Charlotte Mohr (INFB)'
+      - 'Marcel Rettig (INFB)'
+      - 'Dustin Sommerfeld (INFB)'
+      - 'Jonas Westenhoff (INFB)'
   - title: 'Fachbereich Sponsoring'
     image: '/images/fachschaft/sponsoring_iwi.png'
     people:
