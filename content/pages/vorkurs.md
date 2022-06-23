@@ -38,8 +38,15 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         </tr>
         <tr>
             <td>Zugelassene Studiengänge</td>
-            <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business
-              <span class="vorkurs_ws">, <br>Data Science</span></td>
+            <td>
+                <ul>
+                    <span class="vorkurs_ws"><li>Data Science</li></span>
+                    <li>Informatik</li>
+                    <li>Internationales IT Business</li>
+                    <li>Medieninformatik</li>
+                    <li>Wirtschaftsinformatik</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>Programmiersprachen</td>
