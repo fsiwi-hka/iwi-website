@@ -29,7 +29,7 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>28.02 -03.03.2022<br />(Mo - Do)</td>
+            <td>12.09 -15.09.2022<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
