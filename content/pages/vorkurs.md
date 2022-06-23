@@ -55,13 +55,11 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         <tr>
             <td>Themen</td>
             <td>
-                <ul>
-                    <li>Variablen</li>
-                    <li>Kontrollstrukturen</li>
-                    <li>Schleifen</li>
-                    <li>Funktionen</li>
-                    <li>Grundlagen der objektorientierten Programmierung</li>
-                </ul>
+                🪣 Variablen</br>
+                🕹️ Kontrollstrukturen</br>
+                🔄 Schleifen</br>
+                ➡️ Funktionen</br>
+                🟢 Grundlagen der objektorientierten Programmierung
             </td>
         </tr>
         <tr>
@@ -101,7 +99,7 @@ gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
   <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
   auf <a href="https://discord.gg/NJKM4yFUmg" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
 * Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
-  Die Tutoren bleiben natürlich bis zum Schluss :)
+  Die Tutoren bleiben natürlich bis zum Schluss 🙂
 * Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
@@ -126,7 +124,7 @@ gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
             <td>12 - 13 Uhr</td>
             <td>Mittagspause</td>
             <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
-            <td class="vorkurs_online">Mama kocht hoffentlich :)</td>
+            <td class="vorkurs_online">Mama kocht hoffentlich 🙂</td>
         </tr>  
         <tr>
             <td>ab 13 Uhr</td>
