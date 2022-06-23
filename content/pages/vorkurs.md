@@ -143,11 +143,15 @@ Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, de
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
-PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
+PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 ## Benötigte Software
-* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)
-* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)
+<span class="vorkurs_präsenz">Diese Software ist normalerweise auf den Pool-Rechnern installiert.</span>
+
+<span class="vorkurs_online">* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)</span>
+
+<span class="vorkurs_online">* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)</span>
+
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
 * Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
