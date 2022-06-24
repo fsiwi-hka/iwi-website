@@ -29,7 +29,7 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>28.02 -03.03.2022<br />(Mo - Do)</td>
+            <td>12.09 -15.09.2022<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
@@ -38,8 +38,15 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         </tr>
         <tr>
             <td>Zugelassene Studiengänge</td>
-            <td>Informatik, Medieninformatik, <br>Wirtschaftsinformatik, Internationales IT Business
-              <span class="vorkurs_ws">, <br>Data Science</span></td>
+            <td>
+                <ul>
+                    <span class="vorkurs_ws"><li>Data Science</li></span>
+                    <li>Informatik</li>
+                    <li>Internationales IT Business</li>
+                    <li>Medieninformatik</li>
+                    <li>Wirtschaftsinformatik</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>Programmiersprachen</td>
@@ -48,13 +55,11 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         <tr>
             <td>Themen</td>
             <td>
-                <ul>
-                    <li>Variablen</li>
-                    <li>Kontrollstrukturen</li>
-                    <li>Schleifen</li>
-                    <li>Funktionen</li>
-                    <li>Grundlagen der objektorientierten Programmierung</li>
-                </ul>
+                🪣 Variablen</br>
+                🕹️ Kontrollstrukturen</br>
+                🔄 Schleifen</br>
+                ➡️ Funktionen</br>
+                🟢 Grundlagen der objektorientierten Programmierung
             </td>
         </tr>
         <tr>
@@ -94,7 +99,7 @@ gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
   <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
   auf <a href="https://discord.gg/NJKM4yFUmg" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
 * Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
-  Die Tutoren bleiben natürlich bis zum Schluss :)
+  Die Tutoren bleiben natürlich bis zum Schluss 🙂
 * Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
@@ -119,7 +124,7 @@ gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
             <td>12 - 13 Uhr</td>
             <td>Mittagspause</td>
             <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
-            <td class="vorkurs_online">Mama kocht hoffentlich :)</td>
+            <td class="vorkurs_online">Mama kocht hoffentlich 🙂</td>
         </tr>  
         <tr>
             <td>ab 13 Uhr</td>
@@ -138,11 +143,15 @@ Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, de
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
-PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
+PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 ## Benötigte Software
-* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)
-* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)
+<span class="vorkurs_präsenz">Diese Software ist normalerweise auf den Pool-Rechnern installiert.</span>
+
+<span class="vorkurs_online">* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)</span>
+
+<span class="vorkurs_online">* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)</span>
+
 * Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
 * Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
@@ -153,7 +162,9 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 [Link zu allen Unterlagen](https://drive.google.com/drive/folders/1jatXAqQvVnvqhHfg9rfg-anj4bcZ0oyj?usp=sharing)
 -->
 
-### Tag 1
+Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
+
+<!-- ### Tag 1
 
 * [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
@@ -188,9 +199,9 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist :)
 * [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1Sbhb5PDkjbuj-u7Kv7GXQM8lKsjeXdMk/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/1EnIYj9hQDF7vzHbV6Lj2XtGbqx9WWtJr/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1E3QeaQ198ohrsJPHLUFCh7ZE4wSR8YIK/view?usp=sharing)
-* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8)
+* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8) -->
 
 ## Mehr
 
-Weitere Übungsaufgaben, zusätzlich zum Programmiervorkurs, findest du auf der
+Weitere Übungsaufgaben, zusätzlich zum Java-Programmiervorkurs, findest du auf der
 [Webseite der Freitagsrunde](https://wiki.freitagsrunde.org/Javakurs/%C3%9Cbungsaufgaben).
