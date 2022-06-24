@@ -55,7 +55,7 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         <tr>
             <td>Themen</td>
             <td>
-                🪣 Variablen</br>
+                📦 Variablen</br>
                 🕹️ Kontrollstrukturen</br>
                 🔄 Schleifen</br>
                 ➡️ Funktionen</br>
