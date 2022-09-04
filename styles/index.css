@@ -112,6 +112,10 @@ p {
     @apply leading-6 mb-4;
 }
 
+strong {
+   font-weight: bold;
+}
+
 li {
     @apply leading-6;
 }
@@ -176,15 +180,15 @@ strong {
 
 .vorkurs_ws {
     /*Comment in case of Wintersemester to show Data Science / Python text*/
-    display:none;
+    /* display:none; */
 }
 
 .vorkurs_praesenz {
     /*Comment in case of Präsenz-Vorkurs to NOT remove Präsenz-text*/
-    display:none;
+    /* display:none; */
 }
 
 .vorkurs_online {
     /*Comment in case of Online-Vorkurs to NOT remove Online-text */
-    //display:none;
+    display:none;
 }

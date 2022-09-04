@@ -166,7 +166,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der
               <a href="https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung">Seite des IFS</a>.
               In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zu Hause :)</td>
-            <td>Bachelor</td>
+            <td>Bachelor <strong>Anmeldeschluss für die Veranstaltungen ist am Mittwoch 16. März</strong></td>
         </tr>
         <tr>
             <td></td>
@@ -188,11 +188,11 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-            <td>TBA</td>
+            <td><strong>Hb im B-Gebäude</strong></td>
             <td>PO-Briefing</td>
             <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch offene Fragen
               nach der RZ-Einführungsveranstaltung klären.</td>
-            <td>Bachelor</td>
+            <td><strong>Bachelor + Master</strong></td>
         </tr>
         <tr>
             <td></td>
@@ -317,7 +317,6 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <th>Anmerkung</th>
             <th>Empfohlen für</th>
         </tr>
-       <tr>
         <tr>
             <td>Freitag, 18.03.2022</td>
             <td>08:00 - 09:30</td>
@@ -435,17 +434,15 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>14:00 - 15:30</td>
             <td>Gebäude A, Aula</td>
             <td>RZ-Einführungsveranstaltung</td>
-            <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.
-              <!--<a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a>--></td>
+            <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.<!--<a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a>--></td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-            <td>TBA</td>
+            <td><strong>E 103 im E-Gebäude</strong></td>
             <td>PO-Briefing</td>
-            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch offene Fragen
-              nach der RZ-Einführungsveranstaltung klären.</td>
+            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -453,8 +450,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>17:00</td>
             <td>Treffpunkt vor dem Gebäude E</td>
             <td>Treffen Kneipentour-Einteilung</td>
-            <td>Ihr werdet in 4 Gruppen eingeteilt und dann wandern wir zusammen zu den entsprechenden Kneipen.
-              Start ca. 17:15</td>
+            <td>Ihr werdet in 4 Gruppen eingeteilt und dann wandern wir zusammen zu den entsprechenden Kneipen. Start ca. 17:15</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -462,8 +458,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>18:00 - open end</td>
             <td>Karlsruhe Innenstadt</td>
             <td>Kneipentour</td>
-            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur besseren Einteilung um 17 Uhr
-                vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen.</td>
+            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur besseren Einteilung um 17 Uhr vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen.</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -479,8 +474,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>9:00 - 10:30</td>
             <td></td>
             <td>Zugangsdaten / Hoch-schulsysteme / Studien-organisation / Intranet</td>
-            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt.
-                Zur besseren Einteilung lauft ihr am besten schon von der Hochschule aus mit uns los.</td>
+            <td></td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -524,25 +518,22 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <th>Anmerkung</th>
             <th>Empfohlen für</th>
         </tr>
-       <tr>
         <tr>
             <td>Donnerstag, 17.03.2022</td>
             <td>09:00 - 13:00</td>
-            <td>TBA</td>
+            <td>E103, E104</td>
             <td>Programmier-Workshop</td>
             <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
             <td>Bachelor</td>
         </tr>
-        <!--
-        <tr>
+        <!--<tr>
             <td></td>
             <td>09:00 - 12:00</td>
             <td><strong>E101-104</strong></td>
             <td>Organisation + Data Analytics</td>
             <td>Nur für Data Science</td>
             <td>Bachelor DS</td>
-        </tr>
-        -->
+        </tr>-->
         <tr>
             <th>Datum</th>
             <th>Uhrzeit</th>
@@ -551,11 +542,10 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <th>Anmerkung</th>
             <th>Empfohlen für</th>
         </tr>
-       <tr>
         <tr>
             <td>Freitag, 18.03.2022</td>
             <td>09:00 - 10:30</td>
-            <td>TBA</td>
+            <td>E103, E104</td>
             <td>Quizfragen zur Orga + Stundenplan</td>
             <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
             <td>Bachelor</td>
@@ -563,7 +553,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
         <tr>
             <td></td>
             <td>11:00 - 11:30</td>
-            <td>TBA</td>
+            <td>E103, E104</td>
             <td>Vorstellung "Erfolgreich Starten"</td>
             <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
             <td>Bachelor</td>
