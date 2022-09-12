@@ -175,18 +175,27 @@ Alte Folien
 
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1BtSg20URrdgPYMD_l0EDzdkz2hm94yHC/view?usp=sharing)
 - [Link zu der Aufgabe 1 Java](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
+- [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1ubsVOG1Df1VqZCMf8kyBBygQNP_QV2Zh/view?usp=sharing)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/1Z5dJq1CMtIvg_UvbrdRrjc987Df66chj/view?usp=sharing)
 - [Link zu der Aufgabe 1 Python](https://drive.google.com/file/d/1TVfcXVoxT8pmKPyHnjJogzs8MYqs5sc7/view?usp=sharing)
 
 <!--
-* [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1naN76Y3ZbohnVMc4h3MZDZJV-JoaG2ZL/view?usp=sharing)
+
 * [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1080rIuD_Vv5Yg2x4NUh5qa2b0BHBem5-/view?usp=sharing)
+
+-->
+
 
 ### Tag 2
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1mN9SfudkwQzD2JqN2wOSIEKiEk_lX6by/view?usp=sharing)
+- [Link zu den Folien von Java](https://drive.google.com/file/d/1xm7_J65SWYWAcalMPE4IcxrPCViyeMrz/view?usp=sharing)
+- [Link zu der Aufgabe 2 Java](https://drive.google.com/file/d/1h7wERQzCWc7p__MAEPh4h3eaCDB8NGur/view?usp=sharing)
+
+<!--
+
+
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1648C5L5uV2cpGi9xaqp1tH6oUb1ycxj2/view?usp=sharing)
-* [Link zu der Aufgabe 2 Java](https://drive.google.com/file/d/1UJr-AS2uwa0CfPxUcDchNOKWAru2miJC/view?usp=sharing)
+
 * [Link zu der Aufgabe 2 C#](https://drive.google.com/file/d/1xabMZfimLFz0rNU17mS3DGhoILEGhJAM/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1T-SdrAtI86oo-nWbVL59pPV1X-skfPtE/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 2 von C#](https://drive.google.com/file/d/1lOTrtZ_41NpRS-1iKsbyx9-fofxa8i-n/view?usp=sharing)
