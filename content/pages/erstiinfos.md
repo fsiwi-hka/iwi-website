@@ -19,7 +19,8 @@ regelmäßig auf dieser Seite vorbei, um kein Update zu verpassen.**
 
 Das O-Phasen-Programm für alle Studenten der Bachelorstudiengänge Informatik, Medieninformatik, Wirtschaftsinformatik,
 Internationales IT Business und Data Science sowie Masterstudiengänge Wirtschaftsinformatik und Informatik wird derzeit 
-überarbeitet und 2-3 Tage vor Beginn aktualisiert. Die O-Phase beginnt am 26.09.2022 und endet am 29.09.2022.
+überarbeitet und 2-3 Tage vor Beginn aktualisiert. Die O-Phase beginnt am 23.09.2022 (Master) bzw. 26.09.2022 und endet 
+am 29.09.2022.
 
 ## Allgemeines
 ### Programmiervorkurs
