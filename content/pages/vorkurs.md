@@ -81,26 +81,27 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
 * Von 9:30 bis 12:00 Uhr treffen wir uns im [BBB-Raum]()(Link folgt).
 * Am Nachmittag treffen wir uns in [Discord]()(Link folgt).
 -->
-* Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
-An den Tagen 2 bis 4 werden in den ersten 30 Minuten die Aufgaben des Vortages besprochen.
-<span class="vorkurs_praesenz">Vor Ort treffen wir uns dazu vor dem E-Gebäude bzw. vor der Fachschaft (E013). </span>
-<span class="vorkurs_online">Online treffen wir uns in
-<a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09"
-style="color: #3999bf; text-decoration: underline;">Zoom  </a>.</span>
-* Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
-Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
-* Dann ist erst mal Mittagspause. <span class="vorkurs_praesenz">In Präsenz darf sich jeder der will, einem
-gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
-* Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten.
+
+- Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
+  An den Tagen 2 bis 4 werden in den ersten 30 Minuten die Aufgaben des Vortages besprochen.
+  <span class="vorkurs_praesenz">Vor Ort treffen wir uns dazu vor dem E-Gebäude bzw. vor der Fachschaft (E013). </span>
+  <span class="vorkurs_online">Online treffen wir uns in
+  <a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09"
+  style="color: #3999bf; text-decoration: underline;">Zoom </a>.</span>
+- Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
+  Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
+- Dann ist erst mal Mittagspause. <span class="vorkurs_praesenz">In Präsenz darf sich jeder der will, einem
+  gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
+- Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten.
   Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
   <span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags,
   außer euch wurde etwas anderes gesagt.</span>
-  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns 
+  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns
   auf <a href="https://discord.gg/NJKM4yFUmg" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
-* Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr. 
+- Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
   Die Tutoren bleiben natürlich bis zum Schluss 🙂
-* Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
+- Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
 
@@ -136,7 +137,6 @@ gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
     </table>
 </div>
 
-
 ## Anmeldung
 
 Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, deinem Namen und deinem Studiengang. <span class="vorkurs_praesenz vorkurs_online">Wenn du schon jetzt weißt, ob du in Präsenz oder Online teilnehmen wirst, lass uns das bitte wissen.</span>
@@ -146,18 +146,20 @@ Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, de
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 ## Benötigte Software
+
 <span class="vorkurs_präsenz">Diese Software ist normalerweise auf den Pool-Rechnern installiert.</span>
 
-<span class="vorkurs_online">* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)</span>
+<span class="vorkurs_online">\* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)</span>
 
-<span class="vorkurs_online">* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)</span>
+<span class="vorkurs_online">\* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)</span>
 
-* Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
-* Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
+- Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
+- Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
-* Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
+- Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
 
 ## Unterlagen
+
 <!--
 [Link zu allen Unterlagen](https://drive.google.com/drive/folders/1jatXAqQvVnvqhHfg9rfg-anj4bcZ0oyj?usp=sharing)
 -->
@@ -171,11 +173,10 @@ Alte Folien
 * [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
 -->
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1BtSg20URrdgPYMD_l0EDzdkz2hm94yHC/view?usp=sharing)
-* [Link zu der Aufgabe 1 Java](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
-<!--
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
-* [Link zu der Aufgabe 1 C#](https://drive.google.com/file/d/1HD5nPuTecgXe2kPk6Q_paRPEdSmSxkOP/view?usp=sharing)
+- [Link zu den Folien von Java](https://drive.google.com/file/d/1BtSg20URrdgPYMD_l0EDzdkz2hm94yHC/view?usp=sharing)
+- [Link zu der Aufgabe 1 Java](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
+- [Link zu den Folien von Python](https://drive.google.com/file/d/1Z5dJq1CMtIvg_UvbrdRrjc987Df66chj/view?usp=sharing)
+- [Link zu der Aufgabe 1 Python](https://drive.google.com/file/d/1TVfcXVoxT8pmKPyHnjJogzs8MYqs5sc7/view?usp=sharing)
 
 <!--
 * [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1naN76Y3ZbohnVMc4h3MZDZJV-JoaG2ZL/view?usp=sharing)
