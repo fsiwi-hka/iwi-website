@@ -164,12 +164,20 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
 
-<!-- ### Tag 1
+### Tag 1
 
+<!--
+Alte Folien
 * [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
+-->
+
+* [Link zu den Folien von Java](https://drive.google.com/file/d/1BtSg20URrdgPYMD_l0EDzdkz2hm94yHC/view?usp=sharing)
 * [Link zu der Aufgabe 1 Java](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
+<!--
+* [Link zu den Folien von C#](https://drive.google.com/file/d/1e1qA9-OtryB8F6HZtUQUS51bDtpFiurb/view?usp=sharing)
 * [Link zu der Aufgabe 1 C#](https://drive.google.com/file/d/1HD5nPuTecgXe2kPk6Q_paRPEdSmSxkOP/view?usp=sharing)
+
+<!--
 * [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1naN76Y3ZbohnVMc4h3MZDZJV-JoaG2ZL/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1080rIuD_Vv5Yg2x4NUh5qa2b0BHBem5-/view?usp=sharing)
 
