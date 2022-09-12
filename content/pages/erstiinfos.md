@@ -79,7 +79,7 @@ also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am 
 **Wer keinen 3G Nachweis hat, kann nicht an der O-Phase (oder sonstigen Präsenzveranstaltungen der Hochschule) teilnehmen!**
 -->
 
-### Terminplan
+### O-Phasen-Terminplan
 
 **Hinweis:**
 Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)
@@ -96,7 +96,7 @@ informieren.
 
 **Änderungen nach dem 12.09.22 sind fett hervorgehoben.**  
 
-## Terminplan: Informatik und Medieninformatik
+### Terminplan: Informatik und Medieninformatik
 
 **Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformatik**
 
@@ -350,7 +350,7 @@ informieren.
 
 -->
 
-## Terminplan: Wirtschaftsinformatik, International IT Business und Data Science
+### Terminplan: Wirtschaftsinformatik, International IT Business und Data Science
 
 **Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business und Data Science**
 
