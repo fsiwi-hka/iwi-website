@@ -7,10 +7,19 @@ du hier goldrichtig. Wir haben dir alle wichtigen Infos zu deinen ersten Tagen a
 Hochschule zusammengestellt.'
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
-
+ 
+<!-- 
 ### Achtung
 
-**Aufgrund der Auswirkungen des Corona-Virus' kann es noch zu kurzfristigen Änderungen kommen. Schau am besten regelmäßig auf dieser Seite vorbei, um kein Update zu verpassen.**
+**Aufgrund der Auswirkungen des Corona-Virus' kann es noch zu kurzfristigen Änderungen kommen. Schau am besten 
+regelmäßig auf dieser Seite vorbei, um kein Update zu verpassen.**
+-->
+
+## Hinweis zum Wintersemester 2022/23
+
+Das O-Phasen-Programm für alle Studenten der Bachelorstudiengänge Informatik, Medieninformatik, Wirtschaftsinformatik,
+Internationales IT Business und Data Science sowie Masterstudiengänge Wirtschaftsinformatik und Informatik wird derzeit 
+überarbeitet und 2-3 Tage vor Beginn aktualisiert. Die O-Phase beginnt am 26.09.2022 und endet am 29.09.2022.
 
 ## Allgemeines
 ### Programmiervorkurs
@@ -23,7 +32,8 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
 
-[icon:download|Download Ersti-Heft (PDF)](/assets/downloads/Erstiheft_SS22.pdf)
+<!-- [icon:download|Download Ersti-Heft SS 2022 (PDF)](/assets/downloads/Erstiheft_SS22.pdf) -->
+Das Ersti-Heft WS 2022/23 steht bereits in den Startlöchern. Seid gespannt!
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 - [PO-Briefing-Folien - Bachelor](/assets/downloads/po_briefing_bachelor_ss_2019.pdf)
@@ -46,6 +56,7 @@ und von der Fachschaft Informatik und Wirtschaftsinformatik (das sind wir).
 **Diese Pläne richten sich an alle Studenten der Bachelor Studiengänge Informatik, Medieninformatik, Wirtschaftsinformatik,
 Internationales IT Business und Data Science. Ebenso für die Masterstudiengänge Wirtschaftsinformatik und Informatik.**
 
+<!--
 ### Allgemeine Regeln
 
 Voraussetzung für die Teilnahme an der Orientierungs-Phase (genauso wie das folgende Studium in Präsenz) ist der
@@ -66,30 +77,31 @@ nicht dabei haben) müssen folglich auch an den weiteren Tagen überprüft werde
 also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am besten morgens, dann sind wir alle am sichersten.
 
 **Wer keinen 3G Nachweis hat, kann nicht an der O-Phase (oder sonstigen Präsenzveranstaltungen der Hochschule) teilnehmen!**
+-->
 
 ### Terminplan
 
 **Hinweis:**
-<!--Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;) -->
-Hier siehst du unseren aktuellen Terminplan der O-Phase.
+Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)
+<!-- Hier siehst du unseren aktuellen Terminplan der O-Phase. -->
 
-Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden , sind hier zwei
-Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge geben, achtet hier
-auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können - es lohnt sich also,
-regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu informieren.
+Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden, 
+sind hier zwei Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge 
+geben, achtet hier auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können 
+es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu 
+informieren.
 <!-- Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht vor Ort sein kann.-->
 
 <!--Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.-->
 
-**Änderungen nach dem 12.03.22 sind fett hervorgehoben.**  
+**Änderungen nach dem 12.09.22 sind fett hervorgehoben.**  
 
-<br>
-
-#### Informatik und Medieninformatik
+## Terminplan: Informatik und Medieninformatik
 
 **Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformatik**
 
-<small>**Hinweis:** Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+<!--
+<small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
 <div class="table-responsive">
     <table>
         <tr>
@@ -182,7 +194,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>Gebäude A, Aula</td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.
-              <!--<a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a>--></td>
+              <a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a></td>
             <td>alle</td>
         </tr>
         <tr>
@@ -336,15 +348,16 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
     </table>
 </div>
 
-<br>
+-->
 
-#### Wirtschaftsinformatik, International IT Business und Data Science
+## Terminplan: Wirtschaftsinformatik, International IT Business und Data Science
 
 **Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business und Data Science**
 
 <!--**Raumbelegung (wenn nicht anders angegeben): DS: E001, IIB: E002, WI: E003, E101**-->
 
-<small>**Hinweis:** Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+<!--
+<small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
 <div class="table-responsive">
     <table>
         <tr>
@@ -434,7 +447,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>14:00 - 15:30</td>
             <td>Gebäude A, Aula</td>
             <td>RZ-Einführungsveranstaltung</td>
-            <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.<!--<a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a>--></td>
+            <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.<a href="https://h-ka-de.zoom.us/j/99707595406">https://h-ka-de.zoom.us/j/99707595406</a></td>
             <td>alle</td>
         </tr>
         <tr>
@@ -523,17 +536,17 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>09:00 - 13:00</td>
             <td>E103, E104</td>
             <td>Programmier-Workshop</td>
-            <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
+            <td>Nur für Wirtschaftsinformatik und Internationales IT Business</td>
             <td>Bachelor</td>
         </tr>
-        <!--<tr>
+        <tr>
             <td></td>
             <td>09:00 - 12:00</td>
             <td><strong>E101-104</strong></td>
             <td>Organisation + Data Analytics</td>
             <td>Nur für Data Science</td>
             <td>Bachelor DS</td>
-        </tr>-->
+        </tr>
         <tr>
             <th>Datum</th>
             <th>Uhrzeit</th>
@@ -547,7 +560,7 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>09:00 - 10:30</td>
             <td>E103, E104</td>
             <td>Quizfragen zur Orga + Stundenplan</td>
-            <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
+            <td>Nur für Wirtschaftsinformatik und Internationales IT Business</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -555,11 +568,15 @@ regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen w
             <td>11:00 - 11:30</td>
             <td>E103, E104</td>
             <td>Vorstellung "Erfolgreich Starten"</td>
-            <td><!--Nur für Wirtschaftsinformatik und Internationales IT Business--></td>
+            <td>Nur für Wirtschaftsinformatik und Internationales IT Business</td>
             <td>Bachelor</td>
         </tr>
     </table>
 </div>
+
+-->
+
+## Sonstiges
 
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du unter
 [Immatrikulationsinfos](https://www.h-ka.de/studieren/studium-organisieren/einstieg-ins-studium/immatrikulationsinfos-ansprechpartner).
@@ -572,7 +589,7 @@ einen Schlafplatz benötigst.-->
 
 <!--[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)-->
 
-<br>
+## RZ Kennung
 
 **Habt ihr Probleme mit eurer RZ Kennung und könnt euch nicht anmelden? Dann meldet euch beim RZ:**  
 Montag - Freitag:
@@ -582,7 +599,7 @@ Moltkestr. 30, 76133 Karlsruhe
 [icon:phone|+49 721 925-2305](tel:+497219252305)
 [icon:at|bb.rz@h-ka.de](bb.rz@h-ka.de)
 
-#### Fragen?
+## Fragen?
 
 Habt ihr noch Fragen oder Probleme? Dann meldet euch in der Signal-Gruppe oder schreibt eine Mail!
 [icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
