@@ -153,7 +153,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 <span class="vorkurs_online">\* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)</span>
 
-- Für Java : Eclipse für Java Developers und JDK 11 oder neuer https://ninite.com/adoptjdkx11-eclipse/
+- Für Java : Eclipse für Java Developers und JDK 11 oder neuer <https://ninite.com/adoptjdkx11-eclipse/>
 - Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
 - Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
@@ -176,8 +176,9 @@ Alte Folien
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1BtSg20URrdgPYMD_l0EDzdkz2hm94yHC/view?usp=sharing)
 - [Link zu der Aufgabe 1 Java](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
 - [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1ubsVOG1Df1VqZCMf8kyBBygQNP_QV2Zh/view?usp=sharing)
-- [Link zu den Folien von Python](https://drive.google.com/file/d/1Z5dJq1CMtIvg_UvbrdRrjc987Df66chj/view?usp=sharing)
-- [Link zu der Aufgabe 1 Python](https://drive.google.com/file/d/1TVfcXVoxT8pmKPyHnjJogzs8MYqs5sc7/view?usp=sharing)
+- [Link zu den Folien von Python](https://drive.google.com/file/d/1PZ56v7GQzF5d49nBa3MhHLDYRi3SpeXv/view?usp=sharing)
+- [Link zu der Aufgabe 1 Python](https://drive.google.com/file/d/1sN35rO4cuG3qNYBCHp1oz3t1viRDyPzx/view?usp=sharing)
+- [Link zu den Lösungen der Aufgabe 1 von Python](https://drive.google.com/file/d/1YwQ-GK4QhAjfBZfguVl4Gs1Zo3DTiKo4/view?usp=sharing)
 
 <!--
 
@@ -185,14 +186,14 @@ Alte Folien
 
 -->
 
-
 ### Tag 2
 
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1xm7_J65SWYWAcalMPE4IcxrPCViyeMrz/view?usp=sharing)
 - [Link zu der Aufgabe 2 Java](https://drive.google.com/file/d/1h7wERQzCWc7p__MAEPh4h3eaCDB8NGur/view?usp=sharing)
+- [Link zu den Folien von Python](https://drive.google.com/file/d/1RscSv_YwpxgsnxJibQX7zbJSc3g7pNEY/view?usp=sharing)
+- [Link zu der Aufgabe 2 von Python](https://drive.google.com/file/d/1li6A4RCcMuj4vEMS4QExvPJYLL-GpPcU/view?usp=sharing)
 
 <!--
-
 
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1648C5L5uV2cpGi9xaqp1tH6oUb1ycxj2/view?usp=sharing)
 
