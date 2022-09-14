@@ -190,6 +190,7 @@ Alte Folien
 
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1xm7_J65SWYWAcalMPE4IcxrPCViyeMrz/view?usp=sharing)
 - [Link zu der Aufgabe 2 Java](https://drive.google.com/file/d/1h7wERQzCWc7p__MAEPh4h3eaCDB8NGur/view?usp=sharing)
+- [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1Jm2oNAjFIxiJNibp41asEtJkNIrKOUJo/view?usp=sharing)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/1RscSv_YwpxgsnxJibQX7zbJSc3g7pNEY/view?usp=sharing)
 - [Link zu der Aufgabe 2 von Python](https://drive.google.com/file/d/1li6A4RCcMuj4vEMS4QExvPJYLL-GpPcU/view?usp=sharing)
 
@@ -198,14 +199,16 @@ Alte Folien
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1648C5L5uV2cpGi9xaqp1tH6oUb1ycxj2/view?usp=sharing)
 
 * [Link zu der Aufgabe 2 C#](https://drive.google.com/file/d/1xabMZfimLFz0rNU17mS3DGhoILEGhJAM/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1T-SdrAtI86oo-nWbVL59pPV1X-skfPtE/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 2 von C#](https://drive.google.com/file/d/1lOTrtZ_41NpRS-1iKsbyx9-fofxa8i-n/view?usp=sharing)
+-->
 
 ### Tag 3
 
-* [Link zu den Folien von Java]( https://drive.google.com/file/d/1xj6QXFubh1X5tHMf4eguMH72TgcAeSsS/view?usp=sharing)
+- [Link zu den Folien von Java](https://drive.google.com/file/d/1kno1E5dUxOEHvu2u5BDG1EBMU6hRIRl1/view?usp=sharing)
+- [Link zu der Aufgabe 3 Java](https://drive.google.com/file/d/1DBWMHgOXctNJqtBHXXEatQ6rSnwaCQWV/view?usp=sharing)
+
+<!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1awsQUXVOXdpSU6U8sDkOi5mcacBI9LIo/view?usp=sharing)
-* [Link zu der Aufgabe 3 Java](https://drive.google.com/file/d/1103EO6f624KY42J2lQHXjx3uCaYSNn1v/view?usp=sharing)
 * [Link zu der Aufgabe 3 C#](https://drive.google.com/file/d/1OP9_ZYxYcFXpRvnPOeZe7RNPWJ1wHwQP/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 3 von Java](https://drive.google.com/file/d/10yoJ4NSHiiTFZqdWqtJljlQrFnRgIVbB/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 3 von C#](https://drive.google.com/file/d/1epXc4Gi0lOBshjZEmj5U3RDxMva8zn3M/view?usp=sharing)
