@@ -193,6 +193,7 @@ Alte Folien
 - [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1Jm2oNAjFIxiJNibp41asEtJkNIrKOUJo/view?usp=sharing)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/1RscSv_YwpxgsnxJibQX7zbJSc3g7pNEY/view?usp=sharing)
 - [Link zu der Aufgabe 2 von Python](https://drive.google.com/file/d/1li6A4RCcMuj4vEMS4QExvPJYLL-GpPcU/view?usp=sharing)
+- [Link zu den Lösungen der Aufgabe 2 von Python](https://drive.google.com/file/d/1lQfCBjTJbg-wstW1_2HmkTmvyjgsM1g8/view?usp=sharing)
 
 <!--
 
@@ -207,6 +208,9 @@ Alte Folien
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1kno1E5dUxOEHvu2u5BDG1EBMU6hRIRl1/view?usp=sharing)
 - [Link zu der Aufgabe 3 Java](https://drive.google.com/file/d/1DBWMHgOXctNJqtBHXXEatQ6rSnwaCQWV/view?usp=sharing)
 
+- [Link zu den Folien von Python](https://drive.google.com/file/d/190ndeb2Yi6aVuDFoTboiU3WekKX7Fs5n/view?usp=sharing)
+- [Link zu der Aufgabe 3 von Python](https://drive.google.com/file/d/1Cc7vsQHFesh4s35S_gtZlPiaAjuJFw_d/view?usp=sharing)
+- [Link zu den Lösungen der Aufgabe 3 von Python](https://drive.google.com/file/d/1K8fIDUzI1JiLLG86ZGiz9EVF1XtAv1NN/view?usp=sharing)
 <!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1awsQUXVOXdpSU6U8sDkOi5mcacBI9LIo/view?usp=sharing)
 * [Link zu der Aufgabe 3 C#](https://drive.google.com/file/d/1OP9_ZYxYcFXpRvnPOeZe7RNPWJ1wHwQP/view?usp=sharing)
