@@ -223,6 +223,10 @@ Alte Folien
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1Ka9pdtjSM7tuRJ4EeebXoy1dWA7tBxvN/view?usp=sharing)
 - [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1TUFv3_E2xL5fBAj2h4KkZZ0Kq88S3-mJ/view?usp=sharing)
 - [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/11IclCOWZF5ur7Nig0Uehvg9wzT3nCiO6/view?usp=sharing)
+- [Link zu den Folien von Python](https://drive.google.com/file/d/1AAI7Mf1a2zgIUTgoHUQ-uHnnqm5qiCGU/view?usp=sharing)
+- [Link zu der Aufgabe 4 von Python](https://drive.google.com/file/d/1eWOVSHnsw9MQo7KRpwulk2TJAEGnEw0L/view?usp=sharing)
+- [Link zu den Lösungen der Aufgabe 4 von Python](https://drive.google.com/file/d/1PDhbwu0mOvCTu0wZiwqcuUB8nI7f1t1Z/view?usp=sharing)
+- [Link zum Datensatz für Tag 4 Python](https://drive.google.com/file/d/1ZhXsUa-T3Z8oVDw53gfdR9CJEbAT_Wv6/view?usp=sharing)
 
 <!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1AcyLg_Natdy_QVASFjtAagCtf0wqJEG7/view?usp=sharing)
