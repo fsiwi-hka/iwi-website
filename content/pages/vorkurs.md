@@ -207,6 +207,7 @@ Alte Folien
 
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1kno1E5dUxOEHvu2u5BDG1EBMU6hRIRl1/view?usp=sharing)
 - [Link zu der Aufgabe 3 Java](https://drive.google.com/file/d/1DBWMHgOXctNJqtBHXXEatQ6rSnwaCQWV/view?usp=sharing)
+- [Link zur Lösung der Aufgabe 3 von Java](https://drive.google.com/file/d/1cRVnDcBn4eM7FZTIQzugc6SBIQcW5zqK/view?usp=sharing)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/190ndeb2Yi6aVuDFoTboiU3WekKX7Fs5n/view?usp=sharing)
 - [Link zu der Aufgabe 3 von Python](https://drive.google.com/file/d/1Cc7vsQHFesh4s35S_gtZlPiaAjuJFw_d/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 3 von Python](https://drive.google.com/file/d/1K8fIDUzI1JiLLG86ZGiz9EVF1XtAv1NN/view?usp=sharing)
@@ -214,14 +215,16 @@ Alte Folien
 <!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1awsQUXVOXdpSU6U8sDkOi5mcacBI9LIo/view?usp=sharing)
 * [Link zu der Aufgabe 3 C#](https://drive.google.com/file/d/1OP9_ZYxYcFXpRvnPOeZe7RNPWJ1wHwQP/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 3 von Java](https://drive.google.com/file/d/10yoJ4NSHiiTFZqdWqtJljlQrFnRgIVbB/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 3 von C#](https://drive.google.com/file/d/1epXc4Gi0lOBshjZEmj5U3RDxMva8zn3M/view?usp=sharing)
+-->
 
 ### Tag 4
 
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1ZefYhLt2nwhQZepY4TIjnpMvs7ENSM9m/view?usp=sharing)
+- [Link zu den Folien von Java](https://drive.google.com/file/d/1Ka9pdtjSM7tuRJ4EeebXoy1dWA7tBxvN/view?usp=sharing)
+- [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1TUFv3_E2xL5fBAj2h4KkZZ0Kq88S3-mJ/view?usp=sharing)
+
+<!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1AcyLg_Natdy_QVASFjtAagCtf0wqJEG7/view?usp=sharing)
-* [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1kjTwkkv7NK3t7GXX2LRZL2BrCFcEz1H6/view?usp=sharing)
 * [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1Sbhb5PDkjbuj-u7Kv7GXQM8lKsjeXdMk/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/1EnIYj9hQDF7vzHbV6Lj2XtGbqx9WWtJr/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1E3QeaQ198ohrsJPHLUFCh7ZE4wSR8YIK/view?usp=sharing)
