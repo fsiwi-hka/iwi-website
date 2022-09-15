@@ -222,11 +222,11 @@ Alte Folien
 
 - [Link zu den Folien von Java](https://drive.google.com/file/d/1Ka9pdtjSM7tuRJ4EeebXoy1dWA7tBxvN/view?usp=sharing)
 - [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1TUFv3_E2xL5fBAj2h4KkZZ0Kq88S3-mJ/view?usp=sharing)
+- [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/11IclCOWZF5ur7Nig0Uehvg9wzT3nCiO6/view?usp=sharing)
 
 <!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1AcyLg_Natdy_QVASFjtAagCtf0wqJEG7/view?usp=sharing)
 * [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1Sbhb5PDkjbuj-u7Kv7GXQM8lKsjeXdMk/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/1EnIYj9hQDF7vzHbV6Lj2XtGbqx9WWtJr/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1E3QeaQ198ohrsJPHLUFCh7ZE4wSR8YIK/view?usp=sharing)
 * [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8) -->
 
