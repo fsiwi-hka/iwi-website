@@ -168,14 +168,9 @@ Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung geste
 
 ### Tag 1
 
-<!--
-Alte Folien
-* [Link zu den Folien von Java](https://drive.google.com/file/d/1Qc9ys43Nam31q9GQcqPhy0nqgNNR6V5e/view?usp=sharing)
--->
-
-- [Link zu den Folien von Java](https://drive.google.com/file/d/1BtSg20URrdgPYMD_l0EDzdkz2hm94yHC/view?usp=sharing)
-- [Link zu der Aufgabe 1 Java](https://drive.google.com/file/d/1VDOpuAgcddW3C99UOqwo4iCRLdnd1_nf/view?usp=sharing)
-- [Link zur Lösung der Aufgabe 1 von Java](https://drive.google.com/file/d/1ubsVOG1Df1VqZCMf8kyBBygQNP_QV2Zh/view?usp=sharing)
+- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_1/Tag_1_Folien.pdf)
+- [Link zu der Aufgabe 1 Java](/assets/downloads/vorkurs/java/tag_1/Vorkurs_Tag1_Java_Aufgaben.pdf)
+- [Link zur Lösung der Aufgabe 1 von Java](/assets/downloads/vorkurs/java/tag_1/Vorkurs_Tag1_Java_Loesungen.pdf)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/1PZ56v7GQzF5d49nBa3MhHLDYRi3SpeXv/view?usp=sharing)
 - [Link zu der Aufgabe 1 Python](https://drive.google.com/file/d/1sN35rO4cuG3qNYBCHp1oz3t1viRDyPzx/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 1 von Python](https://drive.google.com/file/d/1YwQ-GK4QhAjfBZfguVl4Gs1Zo3DTiKo4/view?usp=sharing)
@@ -188,9 +183,9 @@ Alte Folien
 
 ### Tag 2
 
-- [Link zu den Folien von Java](https://drive.google.com/file/d/1xm7_J65SWYWAcalMPE4IcxrPCViyeMrz/view?usp=sharing)
-- [Link zu der Aufgabe 2 Java](https://drive.google.com/file/d/1h7wERQzCWc7p__MAEPh4h3eaCDB8NGur/view?usp=sharing)
-- [Link zur Lösung der Aufgabe 2 von Java](https://drive.google.com/file/d/1Jm2oNAjFIxiJNibp41asEtJkNIrKOUJo/view?usp=sharing)
+- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_2/Tag_2_Folien.pdf)
+- [Link zu der Aufgabe 2 Java](/assets/downloads/vorkurs/java/tag_2/Vorkurs_Tag2_Java_Aufgaben.pdf)
+- [Link zur Lösung der Aufgabe 2 von Java](/assets/downloads/vorkurs/java/tag_2/Vorkurs_Tag2_Java_Loesungen.pdf)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/1RscSv_YwpxgsnxJibQX7zbJSc3g7pNEY/view?usp=sharing)
 - [Link zu der Aufgabe 2 von Python](https://drive.google.com/file/d/1li6A4RCcMuj4vEMS4QExvPJYLL-GpPcU/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 2 von Python](https://drive.google.com/file/d/1lQfCBjTJbg-wstW1_2HmkTmvyjgsM1g8/view?usp=sharing)
@@ -205,9 +200,9 @@ Alte Folien
 
 ### Tag 3
 
-- [Link zu den Folien von Java](https://drive.google.com/file/d/1kno1E5dUxOEHvu2u5BDG1EBMU6hRIRl1/view?usp=sharing)
-- [Link zu der Aufgabe 3 Java](https://drive.google.com/file/d/1DBWMHgOXctNJqtBHXXEatQ6rSnwaCQWV/view?usp=sharing)
-- [Link zur Lösung der Aufgabe 3 von Java](https://drive.google.com/file/d/1cRVnDcBn4eM7FZTIQzugc6SBIQcW5zqK/view?usp=sharing)
+- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_3/Tag_3_Folien.pdf)
+- [Link zu der Aufgabe 3 Java](/assets/downloads/vorkurs/java/tag_3/Vorkurs_Tag3_Java_Aufgaben.pdf)
+- [Link zur Lösung der Aufgabe 3 von Java](/assets/downloads/vorkurs/java/tag_3/Vorkurs_Tag3_Java_Loesungen.pdf)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/190ndeb2Yi6aVuDFoTboiU3WekKX7Fs5n/view?usp=sharing)
 - [Link zu der Aufgabe 3 von Python](https://drive.google.com/file/d/1Cc7vsQHFesh4s35S_gtZlPiaAjuJFw_d/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 3 von Python](https://drive.google.com/file/d/1K8fIDUzI1JiLLG86ZGiz9EVF1XtAv1NN/view?usp=sharing)
@@ -220,9 +215,9 @@ Alte Folien
 
 ### Tag 4
 
-- [Link zu den Folien von Java](https://drive.google.com/file/d/1Ka9pdtjSM7tuRJ4EeebXoy1dWA7tBxvN/view?usp=sharing)
-- [Link zum Bahnautomat von Java](https://drive.google.com/file/d/1TUFv3_E2xL5fBAj2h4KkZZ0Kq88S3-mJ/view?usp=sharing)
-- [Link zur Lösung der Aufgabe 4 von Java](https://drive.google.com/file/d/11IclCOWZF5ur7Nig0Uehvg9wzT3nCiO6/view?usp=sharing)
+- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_4/Tag_4_Folien.pdf)
+- [Link zum Bahnautomat von Java](/assets/downloads/vorkurs/java/tag_4/FS_IWI-Bahnautomat.zip)
+- [Link zur Lösung der Aufgabe 4 von Java](/assets/downloads/vorkurs/java/tag_4/FS_IWI-Bahnautomat_Loesung.zip)
 - [Link zu den Folien von Python](https://drive.google.com/file/d/1AAI7Mf1a2zgIUTgoHUQ-uHnnqm5qiCGU/view?usp=sharing)
 - [Link zu der Aufgabe 4 von Python](https://drive.google.com/file/d/1eWOVSHnsw9MQo7KRpwulk2TJAEGnEw0L/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 4 von Python](https://drive.google.com/file/d/1PDhbwu0mOvCTu0wZiwqcuUB8nI7f1t1Z/view?usp=sharing)
