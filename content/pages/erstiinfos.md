@@ -7,19 +7,19 @@ du hier goldrichtig. Wir haben dir alle wichtigen Infos zu deinen ersten Tagen a
 Hochschule zusammengestellt.'
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
- 
-<!-- 
+
+<!--
 ### Achtung
 
-**Aufgrund der Auswirkungen des Corona-Virus' kann es noch zu kurzfristigen Änderungen kommen. Schau am besten 
+**Aufgrund der Auswirkungen des Corona-Virus' kann es noch zu kurzfristigen Änderungen kommen. Schau am besten
 regelmäßig auf dieser Seite vorbei, um kein Update zu verpassen.**
 -->
 
 ## Hinweis zum Wintersemester 2022/23
 
 Das O-Phasen-Programm für alle Studenten der Bachelorstudiengänge Informatik, Medieninformatik, Wirtschaftsinformatik,
-Internationales IT Business und Data Science sowie Masterstudiengänge Wirtschaftsinformatik und Informatik wird derzeit 
-überarbeitet und 2-3 Tage vor Beginn aktualisiert. Die O-Phase beginnt am 23.09.2022 (Master) bzw. 26.09.2022 und endet 
+Internationales IT Business und Data Science sowie Masterstudiengänge Wirtschaftsinformatik und Informatik wird derzeit
+überarbeitet und 2-3 Tage vor Beginn aktualisiert. Die O-Phase beginnt am 23.09.2022 (Master) bzw. 26.09.2022 und endet
 am 29.09.2022.
 
 ## Allgemeines
@@ -33,8 +33,7 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
 
-<!-- [icon:download|Download Ersti-Heft SS 2022 (PDF)](/assets/downloads/Erstiheft_SS22.pdf) -->
-Das Ersti-Heft WS 2022/23 steht bereits in den Startlöchern. Seid gespannt!
+[icon:download|Download Ersti-Heft WS 2022/23 (PDF)](/assets/downloads/Erstiheft_WS2022.pdf)
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 - [PO-Briefing-Folien - Bachelor](/assets/downloads/po_briefing_bachelor_ss_2019.pdf)
@@ -86,10 +85,10 @@ also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am 
 Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)
 <!-- Hier siehst du unseren aktuellen Terminplan der O-Phase. -->
 
-Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden, 
-sind hier zwei Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge 
-geben, achtet hier auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können 
-es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu 
+Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden,
+sind hier zwei Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge
+geben, achtet hier auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können
+es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu
 informieren.
 <!-- Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht vor Ort sein kann.-->
 
