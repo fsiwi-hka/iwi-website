@@ -215,7 +215,7 @@ informieren.
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-            <td><strong>???</strong></td>
+            <td><strong>E103</strong></td>
             <td>PO-Briefing</td>
             <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch 
               offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
@@ -525,7 +525,7 @@ informieren.
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-            <td>E201</td>
+            <td><strong>E003, E004</strong></td>
             <td>PO-Briefing</td>
             <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch 
               offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
