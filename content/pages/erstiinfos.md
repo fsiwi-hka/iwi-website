@@ -95,7 +95,7 @@ informieren.
 
 <!--Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.-->
 
-**Änderungen nach dem 25.09.22 sind fett hervorgehoben.**  
+**Änderungen nach dem 23.09.22 sind fett hervorgehoben.**  
 
 ### Terminplan: Informatik und Medieninformatik
 
