@@ -31,9 +31,10 @@ Seite.
 
 ### Ersti-Heft
 
-Hier findest du eine Sammlung der wichtigsten Infos für dein Studium:
+Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 
 [icon:download|Download Ersti-Heft WS 2022/23 (PDF)](/assets/downloads/Erstiheft_WS2022.pdf)
+Das Passwort zum Ersti-Heft erhältst du am Montag/Dienstag von der Fachschaft.
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 - [PO-Briefing-Folien - Bachelor](/assets/downloads/po_briefing_bachelor_ss_2019.pdf)
@@ -82,8 +83,8 @@ also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am 
 ### O-Phasen-Terminplan
 
 **Hinweis:**
-Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)
-<!-- Hier siehst du unseren aktuellen Terminplan der O-Phase. -->
+<!--Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)-->
+Hier siehst du unseren aktuellen Terminplan der O-Phase.
 
 Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden,
 sind hier zwei Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge
@@ -94,7 +95,7 @@ informieren.
 
 <!--Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.-->
 
-**Änderungen nach dem 12.09.22 sind fett hervorgehoben.**  
+**Änderungen nach dem 23.09.22 sind fett hervorgehoben.**  
 
 ### Terminplan: Informatik und Medieninformatik
 
@@ -113,11 +114,19 @@ informieren.
         </tr>
         <tr>
             <td>Montag, 26.09.2022</td>
-            <td>9:00 - 10:00</td>
-            <td><strong>???</strong></td>
+            <td>9:00 - 9:30</td>
+            <td>E201</td>
             <td>Begrüßung + Informationsveranstaltungen</td>
             <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
-            <td>alle</td>
+            <td><strong>INFB</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>9:30 - 10:00</td>
+            <td>E201</td>
+            <td>Begrüßung + Informationsveranstaltungen</td>
+            <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
+            <td><strong>MINB + INFM</strong></td>
         </tr>
         <tr>
             <td></td>
@@ -179,7 +188,7 @@ informieren.
             <td></td>
             <td>11:30 - 12:30</td>
             <td>Gebäude A/Aula + Remote</td>
-            <td>Begrüßung durch das Rektorat</td>
+            <td>Erstsemesterbegrüßung durch das Rektorat</td>
             <td>Ihr könnt direkt in der Aula dabei sein oder 
               <a href="https://www.youtube.com/watch?v=3Lxj3sq1vVs">per Livestream</a> zuschalten.</td>
             <td>alle</td>
@@ -252,7 +261,7 @@ informieren.
             <td>08:00 - 09:30</td>
             <td>Gebäude B, HB</td>
             <td>Mathematik 1</td>
-            <td>Für INFB <strong>???</strong></td>
+            <td>Zug B2</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -260,7 +269,7 @@ informieren.
             <td>08:00 - 09:30</td>
             <td>E201</td>
             <td>Programmieren</td>
-            <td>Für MINB <strong>???</strong></td>
+            <td>Zug B1</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -268,7 +277,7 @@ informieren.
             <td>08:00 - 09:30</td>
             <td>E304</td>
             <td>Graphenalgorithmen</td>
-            <td>Für INFM</td>
+            <td></td>
             <td>Master</td>
         </tr>
         <tr>
@@ -276,7 +285,7 @@ informieren.
             <td>09:50 - 11:20</td>
             <td>E201</td>
             <td>Programmieren</td>
-            <td>Für INFB <strong>???</strong></td>
+            <td>Zug B2</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -284,7 +293,7 @@ informieren.
             <td>09:50 - 11:20</td>
             <td>Gebäude B, HB</td>
             <td>Mathematik 1</td>
-            <td>Für MINB <strong>???</strong></td>
+            <td>Zug B1</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -292,7 +301,7 @@ informieren.
             <td>09:50 - 13:00</td>
             <td>E311</td>
             <td>Programmierparadigmen</td>
-            <td>Für INFM</td>
+            <td></td>
             <td>Master</td>
         </tr>
         <tr>
@@ -300,15 +309,26 @@ informieren.
             <td>11:30 - 13:00</td>
             <td>E303</td>
             <td>Optimierung</td>
-            <td>Für INFM</td>
+            <td></td>
             <td>Master</td>
         </tr>
         <tr>
             <td></td>
-            <td>16:00 - 18:00</td>
-            <td><strong>???</strong></td>
-            <td>International Office</td>
-            <td>Einführungsveranstaltung des International Office für ausländische Studierende</td>
+            <td>13:00 - 14:00</td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
+              >Speiseplan</a><br>
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Speiseplan</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 17:00</td>
+            <td>E013</td>
+            <td>Chillen in der Fachschaft</td>
+            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -342,7 +362,7 @@ informieren.
             <td>08:00 - 09:30</td>
             <td>Gebäude B, HB</td>
             <td>Mathematik 1</td>
-            <td>Für INFB <strong>???</strong></td>
+            <td>Zug B2</td>
             <td>Bachelor</td>
         </tr>
         <tr>
@@ -350,7 +370,7 @@ informieren.
             <td>09:50 - 11:20</td>
             <td>Gebäude B, HB</td>
             <td>Mathematik 1</td>
-            <td>Für MINB <strong>???</strong></td>
+            <td>Zug B1</td>
             <td>Bachelor</td>
         </tr>
     </table>
@@ -376,15 +396,15 @@ informieren.
         <tr>
             <td>Montag, 26.09.2022</td>
             <td>9:00 - 9:30</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>Begrüßung + Informationsveranstaltungen</td>
             <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
-            <td>alle</td>
+            <td>Bachelor</td>
         </tr>
         <tr>
             <td></td>
             <td>10:00 - 11:00</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>Zugangsdaten / Hochschulsysteme / Studienorganisation / Intranet</td>
             <td>Die wichtigsten Systeme für euer Studium im Überlick</td>
             <td>alle</td>
@@ -392,7 +412,7 @@ informieren.
         <tr>
             <td></td>
             <td>11:15 - 12:45</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>Alumni</td>
             <td></td>
             <td>alle</td>
@@ -400,7 +420,7 @@ informieren.
         <tr>
             <td></td>
             <td>12:45 - 13:00</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>O-Phasen-Programm</td>
             <td>Vorstellung des O-Phasen-Programms</td>
             <td>alle</td>
@@ -445,7 +465,7 @@ informieren.
         <tr>
             <td>Dienstag, 27.09.2022</td>
             <td>09:00</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>International Office (IO)</td>
             <td></td>
             <td>alle</td>
@@ -453,7 +473,7 @@ informieren.
         <tr>
             <td></td>
             <td>09:30</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>Studium Generale (SG)</td>
             <td></td>
             <td>alle</td>
@@ -461,7 +481,7 @@ informieren.
         <tr>
             <td></td>
             <td>10:15</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>Institut für Fremdsprachen (IFS)</td>
             <td></td>
             <td>alle</td>
@@ -469,7 +489,7 @@ informieren.
         <tr>
             <td></td>
             <td>10:45</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>Zeitmanagement</td>
             <td></td>
             <td>alle</td>
@@ -478,7 +498,7 @@ informieren.
             <td></td>
             <td>11:30 - 12:30</td>
             <td>Gebäude A/Aula + Remote</td>
-            <td>Begrüßung durch das Rektorat</td>
+            <td>Erstsemesterbegrüßung durch das Rektorat</td>
             <td>Ihr könnt direkt in der Aula dabei sein oder 
               <a href="https://www.youtube.com/watch?v=3Lxj3sq1vVs">per Livestream</a> zuschalten.</td>
             <td>alle</td>
@@ -530,10 +550,29 @@ informieren.
         <tr>
             <td>Mittwoch, 28.09.2022</td>
             <td>09:00 - 13:00</td>
-            <td><strong>???</strong></td>
+            <td>E002, E003, E004</td>
             <td>Mathe-Tag</td>
             <td></td>
             <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13:00 - 14:00</td>
+            <td>Karlsruhe</td>
+            <td>Mittagspause</td>
+            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
+              >Speiseplan</a><br>
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Speiseplan</a></td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>14:00 - 17:00</td>
+            <td>E013</td>
+            <td>Chillen in der Fachschaft</td>
+            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee</td>
+            <td>alle</td>
         </tr>
         <tr>
             <td></td>
@@ -564,7 +603,7 @@ informieren.
         <tr>
             <td>Donnerstag, 29.09.2022</td>
             <td>09:00 - 13:00</td>
-            <td><strong>???</strong></td>
+            <td>E103, E104</td>
             <td>Programmier-Tag</td>
             <td>Für IIBB + WIB. <strong>Nicht DS!</strong></td>
             <td>Bachelor</td>
@@ -589,11 +628,11 @@ informieren.
             <td>alle</td>
         </tr>
         <tr>
+            <td>Freitag, 30.09.2022</td>
             <td></td>
-            <td>16:00 - 18:00</td>
-            <td><strong>???</strong></td>
-            <td>International Office</td>
-            <td>Einführungsveranstaltung des International Office für ausländische Studierende</td>
+            <td></td>
+            <td>Vorlesung laut Stundenplan</td>
+            <td></td>
             <td>alle</td>
         </tr>
     </table>
