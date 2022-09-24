@@ -6,6 +6,8 @@ header:
   image: '/assets/backgrounds/unternehmen.jpg'
 ---
 
+## Unsere aktuellen Sponsoren
+
 <div id='sponsoren' class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-10">
     <div class="inline-grid content-center place-content-center">
         <a target="_blank" href="https://www.cas-mitgestalter.de/jobs/">
