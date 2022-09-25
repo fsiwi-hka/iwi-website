@@ -154,10 +154,21 @@ body.modal-active {
     opacity: .96;
 }
 
+strong {
+    font-weight: bold;
+}
+
 /* table responsive */
 
 .table-responsive {
     overflow-x: auto;
+}
+
+/* sponsors */
+
+#sponsoren img {
+    max-height: 8rem;
+    max-width: 10rem;
 }
 
 /*Dropdown User Menu */

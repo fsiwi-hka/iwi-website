@@ -8,20 +8,191 @@ header:
 
 ## Unsere aktuellen Sponsoren
 
-![Sponsoren](/images/unternehmen/Sponsoren_WS21.png)
+<div id='sponsoren' class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-10">
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.cas-mitgestalter.de/jobs/">
+            <img src="/images/unternehmen/cas.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.ferchau.com/de/de/bewerber/karriere">
+            <img src="/images/unternehmen/ferchau.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://exxeta.com/karriere">
+            <img src="/images/unternehmen/exxeta.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.capgemini.com/de-de/karriere/">
+            <img src="/images/unternehmen/capgemini.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.breuninger.com/de/">
+            <img src="/images/unternehmen/breuninger.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.inovex.de/en/">
+            <img src="/images/unternehmen/inovex.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.it-economics.de/karriere/stellenanzeigen">
+            <img src="/images/unternehmen/it-economics.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.initse.com/dede/home/">
+            <img src="/images/unternehmen/init.jpg"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://amiconsult.de">
+            <img src="/images/unternehmen/amiconsult.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.dm-jobs.com/dmTECH">
+            <img src="/images/unternehmen/dmtech.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://gameforge.com">
+            <img src="/images/unternehmen/gameforge.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.moninger.de">
+            <img src="/images/unternehmen/moninger.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.cyberforum.de">
+            <img src="/images/unternehmen/cyberforum.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://kartenbrudi.de">
+            <img src="/images/unternehmen/kartenbrudi.jpg"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.itscope.com">
+            <img src="/images/unternehmen/itscope.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.festo.com">
+            <img src="/images/unternehmen/festo.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://fit-in.de">
+            <img src="/images/unternehmen/fitin.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://objektkultur.de">
+            <img src="/images/unternehmen/objektkultur.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.cgi.com">
+            <img src="/images/unternehmen/cgi.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.instagram.com/bockaufkarlsruhe">
+            <img src="/images/unternehmen/bockaufkarlsruhe.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.kleiberit.com">
+            <img src="/images/unternehmen/kleiberit.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.utb.de">
+            <img src="/images/unternehmen/utb.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://studidruck-copyshop.de">
+            <img src="/images/unternehmen/studidruck.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://netzstrategen.com">
+            <img src="/images/unternehmen/netzstrategen.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.charly.education">
+            <img src="/images/unternehmen/charly.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://server.nitrado.net">
+            <img src="/images/unternehmen/nitrado.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.vector.com">
+            <img src="/images/unternehmen/vector.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.interflex.de">
+            <img src="/images/unternehmen/interflex.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.seeburger.com">
+            <img src="/images/unternehmen/seeburger.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://technology.salt-and-pepper.eu">
+            <img src="/images/unternehmen/saltandpepper.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.springer.com">
+            <img src="/images/unternehmen/springer.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://www.aidshilfe-karlsruhe.de">
+            <img src="/images/unternehmen/aidshilfe.jpg"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://karlsruhe.digital">
+            <img src="/images/unternehmen/karlsruhedigital.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a target="_blank" href="https://bonding.de">
+            <img src="/images/unternehmen/bonding.jpg"></img>
+        </a>
+    </div>
+</div>
 
 Wir pflegen viele Partnerschaften mit Unternehmen in der Region, nicht zuletzt durch Alumni, die der Fachschaft über das Studium hinaus treu bleiben. Auch Sie möchten mit der Fachschaft zusammenarbeiten? Gerne!
 
 Wir bieten Ihnen Ihnen in unserem **Partnerschafts-Programm** vier **Kooperations-Bausteine** an, die Sie einzeln oder in Kombination umsetzen können:
 
-* O-Phasen-Unterstützung (dies ist i.d.R. der Einstieg in eine Partnerschaft)
-* Kaminabend
-* Kooperation
-* Spende
+- O-Phasen-Unterstützung (dies ist i.d.R. der Einstieg in eine Partnerschaft)
+- Kaminabend
+- Kooperation
+- Spende
 
 Mehr zu den einzelnen Bausteinen erfahren Sie auf dieser Seite. Wir freuen uns auf Ihre Nachricht!
 
-[icon:at|Mail an das Sponsoring-Team](/scripts/email.php?address=sponsoring)
+[icon:at|Mail an das Sponsoring-Team](/scripts/email.php?address=kontakt)
 
 ## O-Phasen-Unterstützung
 
@@ -31,10 +202,10 @@ Dank unserer Sponsoren können sich die Erstsemesterstudierenden auf eine prall 
 
 Auch Sie können uns bei der Orientierungsphase unterstützen, die zum Beginn jedes Semesters durchgeführt wird. Dabei gibt es verschiedene Abstufungen:
 
-* **Paket S**: Sie tragen “Goodies” (gebrandete Werbegeschenke mit praktischem Nutzen) zu unserer Ersti-Tasche bei. Zum Dank präsentieren wir Ihr Logo im Ersti-Heft und auf unserer Website.
-* **Paket M**: Sie tragen Goodies bei und platzieren eine halbseitige Anzeige im Ersti-Heft
-* **Paket L**: Sie tragen Goodies bei und platzieren eine ganzseitige Anzeige im Ersti-Heft
-* **Paket XL**: Sie tragen Goodies bei und übernehmen einen Stand bei der Ersti-Ralley auf dem Campus
+- **Paket S**: Sie tragen “Goodies” (gebrandete Werbegeschenke mit praktischem Nutzen) zu unserer Ersti-Tasche bei. Zum Dank präsentieren wir Ihr Logo im Ersti-Heft und auf unserer Website.
+- **Paket M**: Sie tragen Goodies bei und platzieren eine halbseitige Anzeige im Ersti-Heft
+- **Paket L**: Sie tragen Goodies bei und platzieren eine ganzseitige Anzeige im Ersti-Heft
+- **Paket XL**: Sie tragen Goodies bei und übernehmen einen Stand bei der Ersti-Ralley oder ein anderes O-Phasen Event auf dem Campus
 
 Wenn Sie einen Social-Media-Account auf Instagram betreiben, besteht zusätzlich die Möglichkeit, dass wir Sie in einem zentralen Erstitüten-Post taggen.
 
@@ -44,25 +215,33 @@ Sind Sie an einer einmaligen oder langfristigen Kooperation interessiert, sind S
 
 Diese Art der Partnerschaft ist vielseitig denkbar und hängt stark davon ab, wie Sie sich präsentieren möchten. Denkbar sind beispielsweise:
 
-* Die Übernahme einer Getränkelieferung pro Semester (mit gebrandeten Etiketten)
-* Die einmalige Finanzierung von Drucksachen (Hoodies, T-Shirts, etc.) für die Fachschaft - mit Ihrem Logo
-* Sachwerte, wie ein Kicker für den Fachschaftsraum
+- Die Übernahme einer Getränkelieferung pro Semester (mit gebrandeten Etiketten)
+- Die einmalige Finanzierung von Drucksachen (Hoodies, T-Shirts, etc.) für die Fachschaft - mit Ihrem Logo
+- Sachwerte, wie ein Kicker für den Fachschaftsraum
 
 Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!
 
-<div class="flex md:flex-row flex-col">
-
-<span>
-
 ### Aktuelle Kooperationen
 
-Gameforge ist ein Anbieter von Online-Spielen. Die international tätige Unternehmensgruppe mit Hauptsitz in Karlsruhe vertreibt 13 Spiele in über 75 Ländern und hat über 450 Millionen registrierte Spieler.
-
-</span>
-
-![Kooperation mit Gameforge](/images/unternehmen/gameforge-logo.png)
-![Kooperation mit Exxeta](/images/unternehmen/exxeta-logo.png)
-
+<div id="sponsoren" class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+    <div class="inline-grid content-center place-content-center">
+      <ul>
+        <li>Gameforge ist ein Anbieter von Online-Spielen. Die international tätige Unternehmensgruppe mit Hauptsitz in Karlsruhe vertreibt 13 Spiele in über 75 Ländern und hat über 450 Millionen registrierte Spieler.</li>
+        <li>EXXETA steht für die einzigartige Verbindung von Business und IT mit Schwerpunkt in den Branchen Automotive, Energy und Financial Services.</li>
+        <li>Die INIT GmbH ist ein deutsches Unternehmen für IT-Lösungen im öffentlichen Personenverkehr</li>
+      </ul>
+    </div>
+    <div class="inline-grid content-center place-content-center gap-5">
+        <a target="_blank" href="https://gameforge.com">
+            <img src="/images/unternehmen/gameforge.png"></img>
+        </a>
+        <a target="_blank" href="https://exxeta.com">
+            <img src="/images/unternehmen/exxeta.png"></img>
+        </a>
+        <a target="_blank" href="https://www.initse.com/dede/home/">
+            <img src="/images/unternehmen/init.jpg"></img>
+        </a>
+    </div>
 </div>
 
 ## Kaminabend
