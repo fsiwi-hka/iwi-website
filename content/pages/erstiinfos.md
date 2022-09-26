@@ -399,7 +399,9 @@ informieren.
             <td>9:00 - 9:30</td>
             <td>E002, E003, E004</td>
             <td>Begrüßung + Informationsveranstaltungen</td>
-            <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
+            <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.<br>
+Raumaufteilung: Wirtschaftsinformatik & Internationales IT Business -> E004, A bis K | E003, L bis Z + Erfolgreich Starter<br>
+Data Science -> E002</td>
             <td>Bachelor</td>
         </tr>
         <tr>
