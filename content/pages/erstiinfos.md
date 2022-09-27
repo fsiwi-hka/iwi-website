@@ -316,7 +316,7 @@ informieren.
             <td>08:00 - 09:30</td>
             <td><strong>Online per Zoom</strong></td>
             <td>Graphenalgorithmen</td>
-            <td><strong>Weitere Informationen dazu im <a href="https://bit.ly/3E3sm7n">Ilias</a> zu finden. Hinweis: 
+            <td><strong>Weitere Informationen dazu sind im <a href="https://bit.ly/3E3sm7n">Ilias</a> zu finden. Hinweis: 
               Vorher in Ilias anmelden! Zoom Link in Ilias zu finden.</strong></td>
             <td>Master</td>
         </tr>
