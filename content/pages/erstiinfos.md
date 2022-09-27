@@ -15,12 +15,32 @@ Hochschule zusammengestellt.'
 regelmäßig auf dieser Seite vorbei, um kein Update zu verpassen.**
 -->
 
-## Hinweis zum Wintersemester 2022/23
+## Hinweis für Informatiker und Medieninformatiker
 
-Das O-Phasen-Programm für alle Studenten der Bachelorstudiengänge Informatik, Medieninformatik, Wirtschaftsinformatik,
-Internationales IT Business und Data Science sowie Masterstudiengänge Wirtschaftsinformatik und Informatik wird derzeit
-überarbeitet und 2-3 Tage vor Beginn aktualisiert. Die O-Phase beginnt am 23.09.2022 (Master) bzw. 26.09.2022 und endet
-am 29.09.2022.
+In Gruppe B1 sind Medieninformatiker und Informatiker A-D eingeteilt, in Gruppe B2 Informatiker E-Z.
+
+## Hinweis zu den Erstirucksäcken der Hochschule
+
+Für diejenigen, die den heutigen Termin (27.09., 10:00 - 14:00 Uhr) verpasst haben, gibt es einen zweiten Termin.
+Dieser ist am **04. Oktober von 12:00 - 14:00 Uhr**. Die Rucksäcke werden vermutlich im Gebäude A oder im Gebäude B
+verteilt. Für alle, die im **WS 2022/23 oder SS 2022** das Studium begonnen haben: **Erstirucksack-Gutschein nicht 
+vergessen!**
+
+## Hinweis zu Übungen und Laboren
+
+Diese finden grundsätzlich erst in der zweiten Vorlesungswoche statt. Manche Professoren bieten diese jedoch bereits in 
+der ersten Vorlesungswoche an. **Bitte das Schwarze Brett beachten bzw. Emails checken!**
+
+## Hinweis für Informatiker (Master)
+
+Vorlesungstausch von Data Science und Optimierung:   
+**Mittwoch, 28.09. | 9:50 - 11:20 Uhr | E305 | Optimierung**   
+**Donnerstag, 29.09. | 11:30 - 13:00 Uhr | E303 | Data Science**
+
+## Vorstellung der Fachschaft
+
+Da es leider zu technischen Schwierigkeiten kam, gibt es hierzu die Präsentation zum herunterladen:
+[icon:download|Vorstellung Fachschaft WS 2022/23 (PDF)](/assets/downloads/Vorstellung_Fachschaft_WS2022.pdf)
 
 ## Allgemeines
 
@@ -234,6 +254,22 @@ informieren.
         </tr>
         <tr>
             <td>Mittwoch, 28.09.2022</td>
+            <td><strong>9:50 - 11:20</strong></td>
+            <td><strong>E303</strong></td>
+            <td><strong>Technische Informatik 1</strong></td>
+            <td><strong>Zug B2</strong></td>
+            <td><strong>Bachelor</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>9:50 - 11:20</strong></td>
+            <td><strong>Gebäude B, HB</strong></td>
+            <td><strong>Theoretische Informatik 1</strong></td>
+            <td><strong>Zug B1</strong></td>
+            <td><strong>Bachelor</strong></td>
+        </tr>
+        <tr>
+            <td></td>
             <td>13:00 - 14:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
@@ -278,9 +314,10 @@ informieren.
         <tr>
             <td></td>
             <td>08:00 - 09:30</td>
-            <td>E304</td>
+            <td><strong>Online per Zoom</strong></td>
             <td>Graphenalgorithmen</td>
-            <td></td>
+            <td><strong>Weitere Informationen dazu im <a href="https://bit.ly/3E3sm7n">Ilias</a> zu finden. Hinweis: 
+              Vorher in Ilias anmelden! Zoom Link in Ilias zu finden.</strong></td>
             <td>Master</td>
         </tr>
         <tr>
@@ -330,8 +367,10 @@ informieren.
             <td></td>
             <td>14:00 - 17:00</td>
             <td>E013</td>
-            <td>Chillen in der Fachschaft</td>
-            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee</td>
+            <td>Chillen in der Fachschaft / <strong>Erstitaschen-Ausgabe 2.0</strong></td>
+            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee. <strong>Die Taschen, gefüllt mit Goodies von unseren 
+              Sponsoren, sind von der Fachschaft IWI und die Erstirucksäcke sind von der AStA / Center of Competence.
+              </strong></td>
             <td>alle</td>
         </tr>
         <tr>
@@ -575,8 +614,10 @@ Data Science -> E002</td>
             <td></td>
             <td>14:00 - 17:00</td>
             <td>E013</td>
-            <td>Chillen in der Fachschaft</td>
-            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee</td>
+            <td>Chillen in der Fachschaft / <strong>Erstitaschen-Ausgabe 2.0</strong></td>
+            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee. <strong>Die Taschen, gefüllt mit Goodies von unseren 
+              Sponsoren, sind von der Fachschaft IWI und die Erstirucksäcke sind von der AStA / Center of Competence.
+              </strong></td>
             <td>alle</td>
         </tr>
         <tr>
