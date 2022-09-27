@@ -616,7 +616,7 @@ Data Science -> E002</td>
             <td>E013</td>
             <td>Chillen in der Fachschaft / <strong>Erstitaschen-Ausgabe 2.0</strong></td>
             <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee. <strong>Die Taschen, gefüllt mit Goodies von unseren 
-              Sponsoren, sind von der Fachschaft IWI und die Erstirucksäcke sind von der AStA / Center of Competence.
+              Sponsoren, sind von der Fachschaft IWI und die Erstirucksäcke sind von der AStA / dem Center of Competence.
               </strong></td>
             <td>alle</td>
         </tr>
