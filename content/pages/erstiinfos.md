@@ -23,6 +23,7 @@ Internationales IT Business und Data Science sowie Masterstudiengänge Wirtschaf
 am 29.09.2022.
 
 ## Allgemeines
+
 ### Programmiervorkurs
 
 Hier geht's zu deinem [Programmiervorkurs](/vorkurs/). Der findet immer 2
@@ -37,8 +38,9 @@ Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 Das Passwort zum Ersti-Heft erhältst du am Montag/Dienstag von der Fachschaft.
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
-- [PO-Briefing-Folien - Bachelor](/assets/downloads/po_briefing_bachelor_ss_2019.pdf)
-- [PO-Briefing-Folien - Master](/assets/downloads/po_briefing_master_ws_2019.pdf)
+
+- [PO-Briefing-Folien - Bachelor Informatik/Medieninformatik](/assets/downloads/po_briefing_infb_minb_ws_2022.pdf)
+- [PO-Briefing-Folien - Master Informatik](/assets/downloads/po_briefing_infm_ws_2022.pdf)
 - [PO-Briefing-Folien - WI Bachelor](/assets/downloads/po_briefing_bachelor_wi_ws_2022.pdf)
 
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
@@ -144,9 +146,9 @@ informieren.
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
             <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen, Kaffee & Tee | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39">Speiseplan</a>) 
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39">Speiseplan</a>)
               oder zur Mensa Moltke (warmes Mittagessen | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> Speiseplan</a>) 
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> Speiseplan</a>)
               gehen und dort etwas essen.</td>
             <td>alle</td>
         </tr>
@@ -190,7 +192,7 @@ informieren.
             <td>11:30 - 12:30</td>
             <td>Gebäude A/Aula + Remote</td>
             <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>Ihr könnt direkt in der Aula dabei sein oder 
+            <td>Ihr könnt direkt in der Aula dabei sein oder
               <a href="https://www.youtube.com/watch?v=3Lxj3sq1vVs">per Livestream</a> zuschalten.</td>
             <td>alle</td>
         </tr>
@@ -201,7 +203,7 @@ informieren.
             <td>Mittagspause</td>
             <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
@@ -218,7 +220,7 @@ informieren.
             <td>15:30 - 17:00</td>
             <td><strong>E103</strong></td>
             <td>PO-Briefing</td>
-            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch 
+            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch
               offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
             <td><strong>Bachelor + Master</strong></td>
         </tr>
@@ -237,7 +239,7 @@ informieren.
             <td>Mittagspause</td>
             <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
@@ -320,7 +322,7 @@ informieren.
             <td>Mittagspause</td>
             <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
@@ -434,9 +436,9 @@ Data Science -> E002</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
             <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen, Kaffee & Tee | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39">Speiseplan</a>) 
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39">Speiseplan</a>)
               oder zur Mensa Moltke (warmes Mittagessen | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> Speiseplan</a>) 
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> Speiseplan</a>)
               gehen und dort etwas essen.</td>
             <td>alle</td>
         </tr>
@@ -502,7 +504,7 @@ Data Science -> E002</td>
             <td>11:30 - 12:30</td>
             <td>Gebäude A/Aula + Remote</td>
             <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>Ihr könnt direkt in der Aula dabei sein oder 
+            <td>Ihr könnt direkt in der Aula dabei sein oder
               <a href="https://www.youtube.com/watch?v=3Lxj3sq1vVs">per Livestream</a> zuschalten.</td>
             <td>alle</td>
         </tr>
@@ -513,7 +515,7 @@ Data Science -> E002</td>
             <td>Mittagspause</td>
             <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
@@ -530,7 +532,7 @@ Data Science -> E002</td>
             <td>15:30 - 17:00</td>
             <td><strong>E003, E004</strong></td>
             <td>PO-Briefing</td>
-            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch 
+            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch
               offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
             <td><strong>Bachelor + Master</strong></td>
         </tr>
@@ -565,7 +567,7 @@ Data Science -> E002</td>
             <td>Mittagspause</td>
             <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
@@ -618,7 +620,7 @@ Data Science -> E002</td>
             <td>Mittagspause</td>
             <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> 
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
