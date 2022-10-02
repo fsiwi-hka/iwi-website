@@ -8,31 +8,17 @@ on:
     - cron: '0 4 * * *'
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-18.04
-    steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.15.3'
-    - run: ./scripts/decrypt_credentials.sh
-      env:
-        CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
-    - run: npm install
-    - run: npm run build
-    - name: Publish artifacts from out directory
-      uses: actions/upload-artifact@v2
-      with:
-        name: out
-        path: out
-
   deploy:
     name: Deploy
     runs-on: ubuntu-18.04
-    needs: [build]
     steps:
+      - name: Wait for build to succeed
+        uses: lewagon/wait-on-check-action@v1.0.0
+        with:
+          ref: ${{ github.ref }}
+          check-name: 'build'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-interval: 20
       - name: Download artifact
         uses: actions/download-artifact@master
         with:
