@@ -18,8 +18,3 @@ jobs:
         CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
     - run: npm install
     - run: npm run build
-    - name: Publish artifacts from out directory
-      uses: actions/upload-artifact@v2
-      with:
-        name: out
-        path: out
