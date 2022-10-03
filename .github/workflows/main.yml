@@ -49,3 +49,4 @@ jobs:
           local_path: out # Folder to deploy
           remote_path: ${{ secrets.sftp_remote_path_webspace }}
           args: '-o ConnectTimeout=5'
+
