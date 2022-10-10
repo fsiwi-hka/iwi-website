@@ -12,7 +12,7 @@ Fachschaft Informatik und Wirtschaftsinformatik
 Moltkestraße 30  
 76133 Karlsruhe
 
-Vertreten durch: Anja Buchmaier, Jens Ettl
+Vertreten durch: Raphael Brand, Gülnur Kanar
 
 ### Kontakt
 
@@ -21,8 +21,8 @@ Vertreten durch: Anja Buchmaier, Jens Ettl
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-Anja Buchmaier  
-Jens Ettl
+Raphael Brand  
+Gülnur Kanar
 
 ## Verbraucherstreitbeilegung
 
