@@ -11,7 +11,7 @@ groups:
     people:
       - 'Raphael Brand (WIM)'
   - title: '2. Vorstand'
-    image: '/images/fachschaft/placeholder.png'
+    image: '/images/persons/Guelnur_Kanar.jpg'
     people:
       - 'Gülnur Kanar (MINB)'
   - title: '1. Finanzer'
@@ -44,7 +44,7 @@ groups:
     people:
       - 'Athanasia Skaroglu Chasioti (IIBB)'
   - title: 'Teamlead Infrastruktur'
-    image: '/images/fachschaft/placeholder.png'
+    image: '/images/persons/Jonas_Westenhoff.jpg'
     people:
       - 'Jonas Westenhoff (INFB)'
   - title: 'Teamlead Sponsoring'
