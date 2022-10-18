@@ -6,54 +6,51 @@ header:
   image: '/assets/backgrounds/fachschaft_iwi.png'
 groups:
 
-  - title: 'Vorstand'
-    image: '/images/fachschaft/vorstand_iwi.png'
+  - title: '1. Vorstand'
+    image: '/images/fachschaft/placeholder.png'
     people:
-      - 'Zoe Kammerdiener (IIBB)'
-      - 'Anja Buchmaier (MKIB)'
-  - title: 'Finanzer'
-    image: '/images/fachschaft/finanzer_iwi.png'
+      - 'Raphael Brand (WIM)'
+  - title: '2. Vorstand'
+    image: '/images/fachschaft/placeholder.png'
     people:
-      - 'Marcel Rettig (INFB)'
-      - 'Michael Fischer (INFM)'
-  - title: 'Senat'
-    image: '/images/fachschaft/senat_iwi.png'
+      - 'Gülnur Kanar (MINB)'
+  - title: '1. Finanzer'
+    image: '/images/fachschaft/placeholder.png'
     people:
-      - 'Zoe Kammerdiener (IIBB)'
-  - title: 'StuPa'
-    image: '/images/fachschaft/stupa_iwi.png'
+      - 'Erik Leutz (IIBB)'
+  - title: '2. Finanzer'
+    image: '/images/fachschaft/placeholder.png'
     people:
-      - 'Zoe Kammerdiener (IIBB)'
-      - 'Marcel Rettig (INFB)'
-  - title: 'Fakultätsrat'
-    image: '/images/fachschaft/fakultätsrat_iwi.png'
-    people:
-      - 'Carolin Schild (INFB)'
-  - title: 'Fachbereich Social Media'
-    image: '/images/fachschaft/socialMedia_iwi.png'
-    people:
-      - 'Melina Wünsch'
-      - 'Anja Buchmaier'
-      - 'Sabine Kaiser'
-  - title: 'Fachbereich Events'
-    image: '/images/fachschaft/events_iwi.png'
-    people:
-      - 'Athanasia Skaroglu Chasioti'
-      - 'Jens Ettl'
-  - title: 'Fachbereich Infrastruktur'
-    image: '/images/fachschaft/website_iwi.png'
-    people:
-      - 'Michael Fischer (INFM)'
       - 'Matthias Handtmann (INFB)'
-      - 'Alexander Mader (WIB)'
-      - 'Charlotte Mohr (INFB)'
-      - 'Marcel Rettig (INFB)'
-      - 'Dustin Sommerfeld (MINB)'
-      - 'Jonas Westenhoff (INFB)'
-  - title: 'Fachbereich Sponsoring'
-    image: '/images/fachschaft/sponsoring_iwi.png'
+  # - title: 'Senat'
+  #   image: '/images/fachschaft/senat_iwi.png'
+  #   people:
+  #     - 'Zoe Kammerdiener (IIBB)'
+  # - title: 'StuPa'
+  #   image: '/images/fachschaft/stupa_iwi.png'
+  #   people:
+  #     - 'Zoe Kammerdiener (IIBB)'
+  #     - 'Marcel Rettig (INFB)'
+  # - title: 'Fakultätsrat'
+  #   image: '/images/fachschaft/fakultätsrat_iwi.png'
+  #   people:
+  #     - 'Carolin Schild (INFB)'
+  - title: 'Teamlead Social Media'
+    image: '/images/fachschaft/placeholder.png'
     people:
-      - 'Anja Buchmaier'
+      - 'Anja Buchmaier (MKIB)'
+  - title: 'Teamlead Events'
+    image: '/images/fachschaft/placeholder.png'
+    people:
+      - 'Athanasia Skaroglu Chasioti (IIBB)'
+  - title: 'Teamlead Infrastruktur'
+    image: '/images/fachschaft/placeholder.png'
+    people:
+      - 'Jonas Westenhoff (INFB)'
+  - title: 'Teamlead Sponsoring'
+    image: '/images/fachschaft/placeholder.png'
+    people:
+      - 'Daniel Vera Gilliard (INFB)'
 ---
 
 ## Was ist die Fachschaft?
