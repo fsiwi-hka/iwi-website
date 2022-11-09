@@ -17,43 +17,43 @@ const userMenuItems = [
 ]
 
 function Menu() {
-    return (
-        <>
-            <nav className="w-full max-w-screen-lg mx-auto flex items-center justify-between">
-                <Link href="/"><a>
-                    <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-16 md:h-24"/>
-                </a></Link>
-                <ul className="flex list-none">
-                    { mainMenuItems.map(item => { return menuItem(item.title, item.slug)}) }
-                </ul>
-                <div className="dropdown hidden md:block relative">
-                    <img src="/assets/user.png" alt="Zugang zum internen Bereich" className="md:h-8"/>
-                    <div className="dropdown-menu top-0 right-0 absolute h-auto flex pt-4 mt-8 hidden w-[220px]">
-                        <ul className="block w-full bg-white list-none border-t-4 border-red-700">
-                            { userMenuItems.map(item => { return userMenuItem(item.title, item.link, item.icon)}) }
-                        </ul>
-                    </div>
+    return <>
+        <nav className="w-full max-w-screen-lg mx-auto flex items-center justify-between">
+            <Link href="/">
+                <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-16 md:h-24"/>
+            </Link>
+            <ul className="flex list-none">
+                { mainMenuItems.map(item => { return menuItem(item.title, item.slug)}) }
+            </ul>
+            <div className="dropdown hidden md:block relative">
+                <img src="/assets/user.png" alt="Zugang zum internen Bereich" className="md:h-8"/>
+                <div className="dropdown-menu top-0 right-0 absolute h-auto flex pt-4 mt-8 hidden w-[220px]">
+                    <ul className="block w-full bg-white list-none border-t-4 border-red-700">
+                        { userMenuItems.map(item => { return userMenuItem(item.title, item.link, item.icon)}) }
+                    </ul>
                 </div>
-                <a className="text-2xl mx-2 block md:hidden text-red-700 cursor-pointer modal-open">
-                <FontAwesomeIcon icon={faBars} />
-                </a>
-            </nav>
-            { mobileMenu() }
-        </>
-    )
+            </div>
+            <a className="text-2xl mx-2 block md:hidden text-red-700 cursor-pointer modal-open">
+            <FontAwesomeIcon icon={faBars} />
+            </a>
+        </nav>
+        { mobileMenu() }
+    </>;
 }
 
 function menuItem(title, href) {
     const classes = determineClasses(title, href)
     return (
         <li key={ href } className={ classes }>
-            <Link href={ href }>
-                <a className="text-gray-700 no-underline font-heading font-bold">
-                    { title }
-                </a>
+            <Link
+                href={ href }
+                className="text-gray-700 no-underline font-heading font-bold">
+
+                { title }
+
             </Link>
         </li>
-    )
+    );
 }
 
 function mobileMenu() {
@@ -84,28 +84,30 @@ function mobileMenu() {
 function mobileMenuItem(title, href) {
     return (
         <li key={ href } className="py-4 modal-close">
-            <Link href={ href }>
-                <a className="text-xl text-gray-700 no-underline font-heading font-bold">
-                    { title }
-                </a>
+            <Link
+                href={ href }
+                className="text-xl text-gray-700 no-underline font-heading font-bold">
+
+                { title }
+
             </Link>
         </li>
-    )
+    );
 }
 
 function userMenuItem(title, href, icon) {
     return (
         <li key={ href } className="px-8 py-4">
-            <Link href={ href } passHref>
-                <a title={title}>
-                    <span className="block cursor-pointer text-gray-700 no-underline font-heading font-bold">
-                        <FontAwesomeIcon icon={ icon } className="mr-4" fixedWidth />
-                        { title }
-                    </span>
-                </a>
+            <Link href={ href } passHref title={title}>
+
+                <span className="block cursor-pointer text-gray-700 no-underline font-heading font-bold">
+                    <FontAwesomeIcon icon={ icon } className="mr-4" fixedWidth />
+                    { title }
+                </span>
+
             </Link>
         </li>
-    )
+    );
 }
 
 function determineClasses(title, href) {
