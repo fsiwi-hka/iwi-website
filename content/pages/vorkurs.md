@@ -1,11 +1,11 @@
 ---
 title: 'Programmiervorkurs'
 header:
-  title: 'Programmiervorkurs'
-  subtitle: 'Hier findest du alle Infos zum Programmiervorkurs, die du brauchst.
-  Der Programmiervorkurs ist für alle Erstis gedacht, die in einem Studiengang
-  der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind.'
-  image: '/assets/backgrounds/vorkurs.jpg'
+title: 'Programmiervorkurs'
+subtitle: 'Hier findest du alle Infos zum Programmiervorkurs, die du brauchst.
+Der Programmiervorkurs ist für alle Erstis gedacht, die in einem Studiengang
+der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind.'
+image: '/assets/backgrounds/vorkurs.jpg'
 ---
 
 ### Hinweis
@@ -29,7 +29,7 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>12.09 -15.09.2022<br />(Mo - Do)</td>
+            <td>27.02. - 02.03.2023<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
@@ -73,14 +73,14 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     </table>
 </div>
 
+<!--
+
 ## Ablauf
 
 ### Die Tage im Einzelnen
 
-<!--
 * Von 9:30 bis 12:00 Uhr treffen wir uns im [BBB-Raum]()(Link folgt).
 * Am Nachmittag treffen wir uns in [Discord]()(Link folgt).
--->
 
 - Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
   An den Tagen 2 bis 4 werden in den ersten 30 Minuten die Aufgaben des Vortages besprochen.
@@ -137,6 +137,8 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     </table>
 </div>
 
+-->
+
 ## Anmeldung
 
 Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, deinem Namen und deinem Studiengang. <span class="vorkurs_praesenz vorkurs_online">Wenn du schon jetzt weißt, ob du in Präsenz oder Online teilnehmen wirst, lass uns das bitte wissen.</span>
@@ -166,6 +168,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
 
+<!--
 ### Tag 1
 
 - [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_1/Tag_1_Folien.pdf)
@@ -175,12 +178,10 @@ Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung geste
 - [Link zu der Aufgabe 1 Python](https://drive.google.com/file/d/1sN35rO4cuG3qNYBCHp1oz3t1viRDyPzx/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 1 von Python](https://drive.google.com/file/d/1YwQ-GK4QhAjfBZfguVl4Gs1Zo3DTiKo4/view?usp=sharing)
 
-<!--
-
 * [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1080rIuD_Vv5Yg2x4NUh5qa2b0BHBem5-/view?usp=sharing)
-
 -->
 
+<!--
 ### Tag 2
 
 - [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_2/Tag_2_Folien.pdf)
@@ -190,14 +191,13 @@ Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung geste
 - [Link zu der Aufgabe 2 von Python](https://drive.google.com/file/d/1li6A4RCcMuj4vEMS4QExvPJYLL-GpPcU/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 2 von Python](https://drive.google.com/file/d/1lQfCBjTJbg-wstW1_2HmkTmvyjgsM1g8/view?usp=sharing)
 
-<!--
-
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1648C5L5uV2cpGi9xaqp1tH6oUb1ycxj2/view?usp=sharing)
 
 * [Link zu der Aufgabe 2 C#](https://drive.google.com/file/d/1xabMZfimLFz0rNU17mS3DGhoILEGhJAM/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 2 von C#](https://drive.google.com/file/d/1lOTrtZ_41NpRS-1iKsbyx9-fofxa8i-n/view?usp=sharing)
 -->
 
+<!--
 ### Tag 3
 
 - [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_3/Tag_3_Folien.pdf)
@@ -207,12 +207,12 @@ Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung geste
 - [Link zu der Aufgabe 3 von Python](https://drive.google.com/file/d/1Cc7vsQHFesh4s35S_gtZlPiaAjuJFw_d/view?usp=sharing)
 - [Link zu den Lösungen der Aufgabe 3 von Python](https://drive.google.com/file/d/1K8fIDUzI1JiLLG86ZGiz9EVF1XtAv1NN/view?usp=sharing)
 
-<!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1awsQUXVOXdpSU6U8sDkOi5mcacBI9LIo/view?usp=sharing)
 * [Link zu der Aufgabe 3 C#](https://drive.google.com/file/d/1OP9_ZYxYcFXpRvnPOeZe7RNPWJ1wHwQP/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 3 von C#](https://drive.google.com/file/d/1epXc4Gi0lOBshjZEmj5U3RDxMva8zn3M/view?usp=sharing)
 -->
 
+<!--
 ### Tag 4
 
 - [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_4/Tag_4_Folien.pdf)
@@ -223,11 +223,11 @@ Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung geste
 - [Link zu den Lösungen der Aufgabe 4 von Python](https://drive.google.com/file/d/1PDhbwu0mOvCTu0wZiwqcuUB8nI7f1t1Z/view?usp=sharing)
 - [Link zum Datensatz für Tag 4 Python](https://drive.google.com/file/d/1ZhXsUa-T3Z8oVDw53gfdR9CJEbAT_Wv6/view?usp=sharing)
 
-<!--
 * [Link zu den Folien von C#](https://drive.google.com/file/d/1AcyLg_Natdy_QVASFjtAagCtf0wqJEG7/view?usp=sharing)
 * [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1Sbhb5PDkjbuj-u7Kv7GXQM8lKsjeXdMk/view?usp=sharing)
 * [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1E3QeaQ198ohrsJPHLUFCh7ZE4wSR8YIK/view?usp=sharing)
-* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8) -->
+* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8)
+-->
 
 ## Mehr
 
