@@ -1,9 +1,9 @@
 ---
 title: 'Aktuelle Infos zur O-Phase'
-excerpt: 'Die sehnsüchtig erwarteten Infos zur O-Phase im Wintersemester 2020/21
+excerpt: 'Die sehnsüchtig erwarteten Infos zur O-Phase im Wintersemester 2022/23
 sind nun verfügbar.'
-author: 'Simon'
-date: '2020-10-02'
+author: 'Dustin'
+date: '2022-09-14'
 header:
   title: 'Aktuelle Infos zur O-Phase'
   subtitle: 'Behaltet immer die Erstsemester-Info-Seite im Blick, um nichts zu verpassen'
