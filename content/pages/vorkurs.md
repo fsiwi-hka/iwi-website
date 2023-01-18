@@ -1,11 +1,11 @@
 ---
 title: 'Programmiervorkurs'
 header:
-title: 'Programmiervorkurs'
-subtitle: 'Hier findest du alle Infos zum Programmiervorkurs, die du brauchst.
-Der Programmiervorkurs ist für alle Erstis gedacht, die in einem Studiengang
-der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind.'
-image: '/assets/backgrounds/vorkurs.jpg'
+  title: 'Programmiervorkurs'
+  subtitle: 'Hier findest du alle Infos zum Programmiervorkurs, die du brauchst.
+  Der Programmiervorkurs ist für alle Erstis gedacht, die in einem Studiengang
+  der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind.'
+  image: '/assets/backgrounds/vorkurs.jpg'
 ---
 
 ### Hinweis
