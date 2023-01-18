@@ -18,7 +18,7 @@ all that other stuff before: This is a great opportunity to get to know them :)
 ## Contributing
 
 If you've read this far, you probably want to do something. That's great!
-Everything we do is volunteer work and we are excited for everyone who's willing
+Everything we do is volunteer work, and we are excited for everyone who's willing
 to jump in. We hope this list helps with your decision on what to do:
 
 * [First, read our contribution guidelines](./docs/contribute.md)
