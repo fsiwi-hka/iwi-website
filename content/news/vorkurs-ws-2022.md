@@ -17,7 +17,7 @@ Um Erstis, die zuvor noch nie etwas programmiert haben, den Einstieg zu vereinfa
 
 Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natürlich sind auch alle anderen Erstis der Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 
-## Herzlich Willkommen, übrigens!
+## Herzlich Willkommen, übrigens! 
 
 Wir freuen uns, euch als Fachschaft IWI an der Hochschule Karlsruhe begrüßen zu
 dürfen. Wenn Ihr noch nicht wisst, was die Fachschaft ist und tut,
