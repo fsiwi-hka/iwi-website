@@ -13,7 +13,6 @@ Hochschule zusammengestellt.'
 
 **Aufgrund der Auswirkungen des Corona-Virus' kann es noch zu kurzfristigen Änderungen kommen. Schau am besten
 regelmäßig auf dieser Seite vorbei, um kein Update zu verpassen.**
--->
 
 ## Hinweis für Informatiker und Medieninformatiker
 
@@ -41,6 +40,7 @@ Vorlesungstausch von Data Science und Optimierung:
 
 Da es leider zu technischen Schwierigkeiten kam, gibt es hierzu die Präsentation zum herunterladen:
 [icon:download|Vorstellung Fachschaft WS 2022/23 (PDF)](/assets/downloads/Vorstellung_Fachschaft_WS2022.pdf)
+-->
 
 ## Allgemeines
 
@@ -106,19 +106,26 @@ also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am 
 ### O-Phasen-Terminplan
 
 **Hinweis:**
-<!--Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)-->
+Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)
+<!--
 Hier siehst du unseren aktuellen Terminplan der O-Phase.
+-->
 
+<!--
 Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden,
 sind hier zwei Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge
 geben, achtet hier auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können
 es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu
 informieren.
-<!-- Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht vor Ort sein kann.-->
+Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht vor Ort sein kann.
+-->
 
-<!--Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.-->
+<!--
+Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.
+-->
 
-**Änderungen nach dem 23.09.22 sind fett hervorgehoben.**  
+<!--
+**Änderungen nach dem 18.01.2023 sind fett hervorgehoben.**  
 
 ### Terminplan: Informatik und Medieninformatik
 
@@ -422,7 +429,7 @@ informieren.
 
 **Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business und Data Science**
 
-<!--**Raumbelegung (wenn nicht anders angegeben): DS: E001, IIB: E002, WI: E003, E101**-->
+**Raumbelegung (wenn nicht anders angegeben): DS: E001, IIB: E002, WI: E003, E101**
 
 <small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
 <div class="table-responsive">
@@ -683,6 +690,7 @@ Data Science -> E002</td>
         </tr>
     </table>
 </div>
+-->
 
 ## Sonstiges
 
