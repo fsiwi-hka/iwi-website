@@ -4,9 +4,9 @@ excerpt: 'Bald geht es los. Der Programmiervorkurs fürs Sommersemester 2023 sta
 author: 'Dustin'
 date: '2023-01-18'
 header:
-title: 'Aktuelle Infos zum Programmiervorkurs'
-subtitle: 'Behaltet immer die Vorkurs-Info-Seite im Blick, um nichts zu verpassen'
-image: '/assets/backgrounds/vorkurs.jpg'
+    title: 'Aktuelle Infos zum Programmiervorkurs'
+    subtitle: 'Behaltet immer die Vorkurs-Info-Seite im Blick, um nichts zu verpassen'
+    image: '/assets/backgrounds/vorkurs.jpg'
 ---
 **Auf der [Programmiervorkurs-Info-Seite](/vorkurs/) findet ihr ab sofort alle wichtigen
 Infos und Updates zum kommenden Programmiervorkurs, der am 27.02.2023 startet.**
