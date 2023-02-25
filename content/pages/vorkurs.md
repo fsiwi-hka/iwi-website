@@ -8,10 +8,6 @@ header:
   image: '/assets/backgrounds/vorkurs.jpg'
 ---
 
-### Hinweis
-
-**Die Unterlagen der einzelnen Tage findest du im Verlauf des Kurses auf dieser Seite.**
-
 ## Allgemein
 
 Um Erstis, die zuvor noch nie etwas programmiert haben, den Einstieg zu vereinfachen, bieten wir einen Programmierkurs an. Keine Angst, in den Vorlesungen wird nicht vorausgesetzt, dass du schon programmieren kannst! Trotzdem ist es hilfreich, wenn du schon ein wenig mit den Grundlagen vertraut bist. So lässt sich das Gehörte leichter einordnen und behalten.
@@ -55,10 +51,10 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         <tr>
             <td>Themen</td>
             <td>
-                📦 Variablen</br>
-                🕹️ Kontrollstrukturen</br>
-                🔄 Schleifen</br>
-                ➡️ Funktionen</br>
+                📦 Variablen<br>
+                🕹️ Kontrollstrukturen<br>
+                🔄 Schleifen<br>
+                ➡️ Funktionen<br>
                 🟢 Grundlagen der objektorientierten Programmierung
             </td>
         </tr>
@@ -73,71 +69,55 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     </table>
 </div>
 
-<!--
-
 ## Ablauf
 
 ### Die Tage im Einzelnen
 
-* Von 9:30 bis 12:00 Uhr treffen wir uns im [BBB-Raum]()(Link folgt).
-* Am Nachmittag treffen wir uns in [Discord]()(Link folgt).
-
-- Wir beginnen jeden Tag um 9:30 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
-  An den Tagen 2 bis 4 werden in den ersten 30 Minuten die Aufgaben des Vortages besprochen.
-  <span class="vorkurs_praesenz">Vor Ort treffen wir uns dazu vor dem E-Gebäude bzw. vor der Fachschaft (E013). </span>
-  <span class="vorkurs_online">Online treffen wir uns in
-  <a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09"
-  style="color: #3999bf; text-decoration: underline;">Zoom </a>.</span>
+- Wir beginnen jeden Tag um 10 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
+- Raumeinteilung wird folgende sein:
+  Informatik & Medieninformatik: E201
+  Wirtschaftsinformatik & Internationales IT Business: LI137
+  Data Science: E010
 - Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
   Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
-- Dann ist erst mal Mittagspause. <span class="vorkurs_praesenz">In Präsenz darf sich jeder der will, einem
-  gemeinsamen Mittagessen mit der Gruppe anschließen.</span>
+- Dann ist erst mal Mittagspause. Da könnt ihr euch den Tutoren anschließen mit in die Mensa oder in die Stadt zu gehen.
 - Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten.
   Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
-  <span class="vorkurs_praesenz">Vor Ort treffen wir uns dann wieder im gleichen Raum wie Vormittags,
-  außer euch wurde etwas anderes gesagt.</span>
-  <span class="vorkurs_online">Online wechseln wir die Plattform und treffen uns
-  auf <a href="https://discord.gg/NJKM4yFUmg" style="color: #3999bf; text-decoration: underline;">Discord</a>.</span>
+  <span class=“vorkurs_praesenz”>Wir treffen uns dann wieder im gleichen Raum wie Vormittags.</span>
 - Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
-  Die Tutoren bleiben natürlich bis zum Schluss 🙂
-- Bei Interesse können wir den Tag auch noch gemütlich <span class="vorkurs_praesenz">in der Fachschaft </span>ausklingen lassen.
+  Die Tutoren bleiben natürlich bis zum Schluss :leichtes_lächeln:
+- Bei Interesse können wir den Tag auch noch gemütlich <span class=“vorkurs_praesenz”>in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
 
-<div class="table-responsive">
-    <table>
-        <tr>
-            <th>Zeitraum</th>
-            <th>Was?</th>
-            <th class="vorkurs_praesenz">Wo? Präsenz</th>
-            <th class="vorkurs_online">Wo? Online</th>
-        </tr>
-        <tr>
-            <td>9:30 - 12 Uhr</td>
-            <td>Infos, Übungsbesprechung, Vorlesung</td>
-            <td class="vorkurs_praesenz">Treffen vor dem Gebäude E bzw. vor der Fachschaft (E013)
-            <br> Dort erfolgt die Einteilung für den ganzen Kurs</td>
-            <td class="vorkurs_online"><a href="https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09"
-            style="color: #3999bf; text-decoration: underline;">Zoom</a></td>
-        </tr>
-        <tr>
-            <td>12 - 13 Uhr</td>
-            <td>Mittagspause</td>
-            <td class="vorkurs_praesenz">Zusammen in die Stadt</td>
-            <td class="vorkurs_online">Mama kocht hoffentlich 🙂</td>
-        </tr>  
-        <tr>
-            <td>ab 13 Uhr</td>
-            <td>Übungen, gemütliches Zusammensitzen</td>
-            <td class="vorkurs_praesenz">Wie Vormittags</td>
-            <td class="vorkurs_online"><a href="https://discord.gg/NJKM4yFUmg"
-            style="color: #3999bf; text-decoration: underline;">Discord</a></td>
-        </tr>
-    </table>
+<div class=“table-responsive”>
+  <table>
+    <tr>
+      <th>Zeitraum</th>
+      <th>Was?</th>
+      <th class=“vorkurs_praesenz”>Wo? Präsenz</th>
+    </tr>
+    <tr>
+      <td>9:30 - 12 Uhr</td>
+      <td>Infos, Übungsbesprechung, Vorlesung</td>
+      <td class=“vorkurs_praesenz”>Informatik & Medieninformatik: E201
+      <br> Wirtschaftsinformatik & Internationales IT Business: LI137
+      <br> Data Science: E010
+      </td>
+    </tr>
+    <tr>
+      <td>12 - 13 Uhr</td>
+      <td>Mittagspause</td>
+      <td class=“vorkurs_praesenz”>Zusammen in der Mensa oder Stadt</td>
+    </tr>
+    <tr>
+      <td>ab 13 Uhr</td>
+      <td>Übungen, gemütliches Zusammensitzen</td>
+      <td class=“vorkurs_praesenz”>Wie Vormittags</td>
+    </tr>
+  </table>
 </div>
-
--->
 
 ## Anmeldung
 
@@ -160,74 +140,19 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
   und [.Net](https://dotnet.microsoft.com/download)
 - Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
 
+Selbstverständlich könnt ihr euren eigenen Laptop mitbringen.
+
 ## Unterlagen
 
 <!--
-[Link zu allen Unterlagen](https://drive.google.com/drive/folders/1jatXAqQvVnvqhHfg9rfg-anj4bcZ0oyj?usp=sharing)
--->
-
 Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
-
-<!--
-### Tag 1
-
-- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_1/Tag_1_Folien.pdf)
-- [Link zu der Aufgabe 1 Java](/assets/downloads/vorkurs/java/tag_1/Vorkurs_Tag1_Java_Aufgaben.pdf)
-- [Link zur Lösung der Aufgabe 1 von Java](/assets/downloads/vorkurs/java/tag_1/Vorkurs_Tag1_Java_Loesungen.pdf)
-- [Link zu den Folien von Python](https://drive.google.com/file/d/1PZ56v7GQzF5d49nBa3MhHLDYRi3SpeXv/view?usp=sharing)
-- [Link zu der Aufgabe 1 Python](https://drive.google.com/file/d/1sN35rO4cuG3qNYBCHp1oz3t1viRDyPzx/view?usp=sharing)
-- [Link zu den Lösungen der Aufgabe 1 von Python](https://drive.google.com/file/d/1YwQ-GK4QhAjfBZfguVl4Gs1Zo3DTiKo4/view?usp=sharing)
-
-* [Link zur Lösung der Aufgabe 1 von C#](https://drive.google.com/file/d/1080rIuD_Vv5Yg2x4NUh5qa2b0BHBem5-/view?usp=sharing)
 -->
 
-<!--
-### Tag 2
+Die Aufgaben und Lösungen werden im Laufe des Kurses freigeschaltet.
 
-- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_2/Tag_2_Folien.pdf)
-- [Link zu der Aufgabe 2 Java](/assets/downloads/vorkurs/java/tag_2/Vorkurs_Tag2_Java_Aufgaben.pdf)
-- [Link zur Lösung der Aufgabe 2 von Java](/assets/downloads/vorkurs/java/tag_2/Vorkurs_Tag2_Java_Loesungen.pdf)
-- [Link zu den Folien von Python](https://drive.google.com/file/d/1RscSv_YwpxgsnxJibQX7zbJSc3g7pNEY/view?usp=sharing)
-- [Link zu der Aufgabe 2 von Python](https://drive.google.com/file/d/1li6A4RCcMuj4vEMS4QExvPJYLL-GpPcU/view?usp=sharing)
-- [Link zu den Lösungen der Aufgabe 2 von Python](https://drive.google.com/file/d/1lQfCBjTJbg-wstW1_2HmkTmvyjgsM1g8/view?usp=sharing)
-
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1648C5L5uV2cpGi9xaqp1tH6oUb1ycxj2/view?usp=sharing)
-
-* [Link zu der Aufgabe 2 C#](https://drive.google.com/file/d/1xabMZfimLFz0rNU17mS3DGhoILEGhJAM/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 2 von C#](https://drive.google.com/file/d/1lOTrtZ_41NpRS-1iKsbyx9-fofxa8i-n/view?usp=sharing)
--->
-
-<!--
-### Tag 3
-
-- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_3/Tag_3_Folien.pdf)
-- [Link zu der Aufgabe 3 Java](/assets/downloads/vorkurs/java/tag_3/Vorkurs_Tag3_Java_Aufgaben.pdf)
-- [Link zur Lösung der Aufgabe 3 von Java](/assets/downloads/vorkurs/java/tag_3/Vorkurs_Tag3_Java_Loesungen.pdf)
-- [Link zu den Folien von Python](https://drive.google.com/file/d/190ndeb2Yi6aVuDFoTboiU3WekKX7Fs5n/view?usp=sharing)
-- [Link zu der Aufgabe 3 von Python](https://drive.google.com/file/d/1Cc7vsQHFesh4s35S_gtZlPiaAjuJFw_d/view?usp=sharing)
-- [Link zu den Lösungen der Aufgabe 3 von Python](https://drive.google.com/file/d/1K8fIDUzI1JiLLG86ZGiz9EVF1XtAv1NN/view?usp=sharing)
-
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1awsQUXVOXdpSU6U8sDkOi5mcacBI9LIo/view?usp=sharing)
-* [Link zu der Aufgabe 3 C#](https://drive.google.com/file/d/1OP9_ZYxYcFXpRvnPOeZe7RNPWJ1wHwQP/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 3 von C#](https://drive.google.com/file/d/1epXc4Gi0lOBshjZEmj5U3RDxMva8zn3M/view?usp=sharing)
--->
-
-<!--
-### Tag 4
-
-- [Link zu den Folien von Java](/assets/downloads/vorkurs/java/tag_4/Tag_4_Folien.pdf)
-- [Link zum Bahnautomat von Java](/assets/downloads/vorkurs/java/tag_4/FS_IWI-Bahnautomat.zip)
-- [Link zur Lösung der Aufgabe 4 von Java](/assets/downloads/vorkurs/java/tag_4/FS_IWI-Bahnautomat_Loesung.zip)
-- [Link zu den Folien von Python](https://drive.google.com/file/d/1AAI7Mf1a2zgIUTgoHUQ-uHnnqm5qiCGU/view?usp=sharing)
-- [Link zu der Aufgabe 4 von Python](https://drive.google.com/file/d/1eWOVSHnsw9MQo7KRpwulk2TJAEGnEw0L/view?usp=sharing)
-- [Link zu den Lösungen der Aufgabe 4 von Python](https://drive.google.com/file/d/1PDhbwu0mOvCTu0wZiwqcuUB8nI7f1t1Z/view?usp=sharing)
-- [Link zum Datensatz für Tag 4 Python](https://drive.google.com/file/d/1ZhXsUa-T3Z8oVDw53gfdR9CJEbAT_Wv6/view?usp=sharing)
-
-* [Link zu den Folien von C#](https://drive.google.com/file/d/1AcyLg_Natdy_QVASFjtAagCtf0wqJEG7/view?usp=sharing)
-* [Link zu der Aufgabe 4 von C#](https://drive.google.com/file/d/1Sbhb5PDkjbuj-u7Kv7GXQM8lKsjeXdMk/view?usp=sharing)
-* [Link zur Lösung der Aufgabe 4 von C#](https://drive.google.com/file/d/1E3QeaQ198ohrsJPHLUFCh7ZE4wSR8YIK/view?usp=sharing)
-* [Link zur Umfrage](https://forms.gle/ZN2H8sDFGdkXHE5K8)
--->
+- [Unterlagen zu Java](https://drive.google.com/drive/folders/1XV3ycmwWzWfJ7sd_rUoxxiqdnfsHuw-Z?usp=share_link)
+- [Unterlagen zu C#](https://drive.google.com/drive/folders/1KewU0N5TVFZS4zbn-2PG_puC0CYzwXyL?usp=share_link)
+- [Unterlagen zu Python](https://drive.google.com/drive/folders/1uHUlEHpMK6NaoPXAEiGeW-B5lznpCJzf?usp=share_link)
 
 ## Mehr
 
