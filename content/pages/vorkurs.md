@@ -86,7 +86,7 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
   <span class=“vorkurs_praesenz”>Wir treffen uns dann wieder im gleichen Raum wie Vormittags.</span>
 - Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
-  Die Tutoren bleiben natürlich bis zum Schluss :leichtes_lächeln:
+  Die Tutoren bleiben natürlich bis zum Schluss 🙂
 - Bei Interesse können wir den Tag auch noch gemütlich <span class=“vorkurs_praesenz”>in der Fachschaft </span>ausklingen lassen.
 
 ### Kurzübersicht
