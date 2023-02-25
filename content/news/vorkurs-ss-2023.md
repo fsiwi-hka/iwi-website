@@ -8,8 +8,8 @@ header:
     subtitle: 'Behaltet immer die Vorkurs-Info-Seite im Blick, um nichts zu verpassen'
     image: '/assets/backgrounds/vorkurs.jpg'
 ---
-**Auf der [Programmiervorkurs-Info-Seite](/vorkurs/) findet ihr ab sofort alle wichtigen
-Infos und Updates zum kommenden Programmiervorkurs, der am 27.02.2023 startet.**
+**Auf der [Programmiervorkurs-Info-Seite](/vorkurs/) findet ihr ab sofort alle wichtigen Infos 
+und Updates zum kommenden Programmiervorkurs, der am 27.02.2023 startet.**
 
 ## Was ist der Programmiervorkurs?
 
