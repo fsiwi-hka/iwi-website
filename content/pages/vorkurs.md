@@ -92,7 +92,7 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natür
       <th>Wo?</th>
     </tr>
     <tr>
-      <td>9:30 - 12 Uhr</td>
+      <td>10 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
       <td >Informatik & Medieninformatik: E201
       <br> Wirtschaftsinformatik & Internationales IT Business: LI137
