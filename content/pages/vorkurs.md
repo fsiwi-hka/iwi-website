@@ -39,7 +39,7 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natür
         </tr>
         <tr>
             <td>Programmiersprachen</td>
-            <td>Java, C#, Python</span></td>
+            <td>Java, C#, Python</td>
         </tr>
         <tr>
             <td>Themen</td>
@@ -61,8 +61,6 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natür
         </tr>
     </table>
 </div>
-
-<!--
 
 ## Ablauf
 
@@ -94,7 +92,7 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natür
       <th>Wo?</th>
     </tr>
     <tr>
-      <td>9:30 - 12 Uhr</td>
+      <td>10:00 - 12:00 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
       <td >Informatik & Medieninformatik: E201
       <br> Wirtschaftsinformatik & Internationales IT Business: LI137
@@ -102,19 +100,17 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natür
       </td>
     </tr>
     <tr>
-      <td>12 - 13 Uhr</td>
+      <td>12:00 - 13:00 Uhr</td>
       <td>Mittagspause</td>
       <td>Zusammen in der Mensa oder Stadt</td>
     </tr>
     <tr>
-      <td>ab 13 Uhr</td>
+      <td>ab 13:00 Uhr</td>
       <td>Übungen, gemütliches Zusammensitzen</td>
       <td>Wie Vormittags</td>
     </tr>
   </table>
 </div>
-
--->
 
 ## Anmeldung
 
