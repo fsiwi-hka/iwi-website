@@ -84,7 +84,7 @@ Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natür
 
 ### Kurzübersicht
 
-<div class=“table-responsive”>
+<div class="table-responsive">
   <table>
     <tr>
       <th>Zeitraum</th>
