@@ -14,11 +14,6 @@ Um Erstis, die zuvor noch nie etwas programmiert haben, den Einstieg zu vereinfa
 
 Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natürlich sind auch alle anderen Erstis der Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 
-Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_online">sowohl</span>
-<span class="vorkurs_praesenz">in Präsenz</span><span class="vorkurs_praesenz vorkurs_online">, als auch </span>
-<span class="vorkurs_online">Online</span> anbieten.
-<span class="vorkurs_praesenz vorkurs_online">Wir empfehlen euch eine Teilnahme in Präsenz, sollte dies für euch möglich sein.</span>
-
 ## Überblick
 
 <div class="table-responsive">
@@ -29,14 +24,12 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         </tr>
         <tr>
             <td>Ort</td>
-            <td><span class="vorkurs_praesenz">Präsenz</span><span class="vorkurs_praesenz vorkurs_online">, </span>
-              <span class="vorkurs_online">Online</span></td>
-        </tr>
+            <td>Präsenz</tr>
         <tr>
             <td>Zugelassene Studiengänge</td>
             <td>
                 <ul>
-                    <span class="vorkurs_ws"><li>Data Science</li></span>
+                    <li>Data Science</li>
                     <li>Informatik</li>
                     <li>Internationales IT Business</li>
                     <li>Medieninformatik</li>
@@ -46,7 +39,7 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
         </tr>
         <tr>
             <td>Programmiersprachen</td>
-            <td>Java, C#<span class="vorkurs_ws">, Python</span></td>
+            <td>Java, C#, Python</span></td>
         </tr>
         <tr>
             <td>Themen</td>
@@ -69,6 +62,8 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     </table>
 </div>
 
+<!--
+
 ## Ablauf
 
 ### Die Tage im Einzelnen
@@ -84,10 +79,10 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
 - Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten.
   Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
-  <span class=“vorkurs_praesenz”>Wir treffen uns dann wieder im gleichen Raum wie Vormittags.</span>
+  Wir treffen uns dann wieder im gleichen Raum wie Vormittags.
 - Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
-  Die Tutoren bleiben natürlich bis zum Schluss :leichtes_lächeln:
-- Bei Interesse können wir den Tag auch noch gemütlich <span class=“vorkurs_praesenz”>in der Fachschaft </span>ausklingen lassen.
+  Die Tutoren bleiben natürlich bis zum Schluss 🙂
+- Bei Interesse können wir den Tag auch noch gemütlich in der Fachschaft ausklingen lassen.
 
 ### Kurzübersicht
 
@@ -96,12 +91,12 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     <tr>
       <th>Zeitraum</th>
       <th>Was?</th>
-      <th class=“vorkurs_praesenz”>Wo? Präsenz</th>
+      <th>Wo?</th>
     </tr>
     <tr>
       <td>9:30 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
-      <td class=“vorkurs_praesenz”>Informatik & Medieninformatik: E201
+      <td >Informatik & Medieninformatik: E201
       <br> Wirtschaftsinformatik & Internationales IT Business: LI137
       <br> Data Science: E010
       </td>
@@ -109,19 +104,21 @@ Dieses Semester wollen wir den Vorkurs <span class="vorkurs_praesenz vorkurs_onl
     <tr>
       <td>12 - 13 Uhr</td>
       <td>Mittagspause</td>
-      <td class=“vorkurs_praesenz”>Zusammen in der Mensa oder Stadt</td>
+      <td>Zusammen in der Mensa oder Stadt</td>
     </tr>
     <tr>
       <td>ab 13 Uhr</td>
       <td>Übungen, gemütliches Zusammensitzen</td>
-      <td class=“vorkurs_praesenz”>Wie Vormittags</td>
+      <td>Wie Vormittags</td>
     </tr>
   </table>
 </div>
 
+-->
+
 ## Anmeldung
 
-Du möchtest dabei sein? Super. Sende eine E-Mail mit einer kurzen Nachricht, deinem Namen und deinem Studiengang. <span class="vorkurs_praesenz vorkurs_online">Wenn du schon jetzt weißt, ob du in Präsenz oder Online teilnehmen wirst, lass uns das bitte wissen.</span>
+Du möchtest dabei sein? Super. Sende uns eine E-Mail mit einer kurzen Nachricht, deinem Namen und deinem Studiengang.
 
 [icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
 
@@ -129,11 +126,7 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 ## Benötigte Software
 
-<span class="vorkurs_präsenz">Diese Software ist normalerweise auf den Pool-Rechnern installiert.</span>
-
-<span class="vorkurs_online">\* Zoom [Vorlesung Vormittags](https://h-ka-de.zoom.us/j/99053467102?pwd=eFhtbXRaOHUwME81SmxPeHZlSnZEUT09)</span>
-
-<span class="vorkurs_online">\* Discord [IWI-Events (Übung Nachmittags)](https://discord.gg/NJKM4yFUmg)</span>
+Diese Software ist normalerweise auf en Pool-Rechnern installiert.
 
 - Für Java : Eclipse für Java Developers und JDK 11 oder neuer <https://ninite.com/adoptjdkx11-eclipse/>
 - Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
