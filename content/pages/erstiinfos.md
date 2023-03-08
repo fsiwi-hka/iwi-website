@@ -22,18 +22,18 @@ In Gruppe B1 sind Medieninformatiker und Informatiker A-D eingeteilt, in Gruppe 
 
 Für diejenigen, die den heutigen Termin (27.09., 10:00 - 14:00 Uhr) verpasst haben, gibt es einen zweiten Termin.
 Dieser ist am **04. Oktober von 12:00 - 14:00 Uhr**. Die Rucksäcke werden vermutlich im Gebäude A oder im Gebäude B
-verteilt. Für alle, die im **WS 2022/23 oder SS 2022** das Studium begonnen haben: **Erstirucksack-Gutschein nicht 
+verteilt. Für alle, die im **WS 2022/23 oder SS 2022** das Studium begonnen haben: **Erstirucksack-Gutschein nicht
 vergessen!**
 
 ## Hinweis zu Übungen und Laboren
 
-Diese finden grundsätzlich erst in der zweiten Vorlesungswoche statt. Manche Professoren bieten diese jedoch bereits in 
+Diese finden grundsätzlich erst in der zweiten Vorlesungswoche statt. Manche Professoren bieten diese jedoch bereits in
 der ersten Vorlesungswoche an. **Bitte das Schwarze Brett beachten bzw. Emails checken!**
 
 ## Hinweis für Informatiker (Master)
 
-Vorlesungstausch von Data Science und Optimierung:   
-**Mittwoch, 28.09. | 9:50 - 11:20 Uhr | E305 | Optimierung**   
+Vorlesungstausch von Data Science und Optimierung:
+**Mittwoch, 28.09. | 9:50 - 11:20 Uhr | E305 | Optimierung**
 **Donnerstag, 29.09. | 11:30 - 13:00 Uhr | E303 | Data Science**
 
 ## Vorstellung der Fachschaft
@@ -54,7 +54,7 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 
-[icon:download|Download Ersti-Heft WS 2022/23 (PDF)](/assets/downloads/Erstiheft_WS2022.pdf)
+[icon:download|Download Ersti-Heft SS 2023 (PDF)](/assets/downloads/Erstiheft_SS2023.pdf)
 Das Passwort zum Ersti-Heft erhältst du am Montag/Dienstag von der Fachschaft.
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
@@ -70,6 +70,10 @@ Ansonsten erreichst du uns hier:
 
 [icon:discord|Discord-Server](https://discord.gg/Ud5KQnz)
 [icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
+
+Die Semestertermine der HKA findest du hier:
+
+[icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
 ## O-Phase
 
@@ -105,33 +109,34 @@ also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am 
 
 ### O-Phasen-Terminplan
 
+<!--
 **Hinweis:**
 Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)
-<!--
-Hier siehst du unseren aktuellen Terminplan der O-Phase.
 -->
 
-<!--
+Hier siehst du unseren aktuellen Terminplan der O-Phase.
+
 Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden,
 sind hier zwei Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge
 geben, achtet hier auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können
 es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu
 informieren.
-Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht vor Ort sein kann.
--->
 
 <!--
+Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht
+vor Ort sein kann.
+
 Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.
 -->
 
-<!--
-**Änderungen nach dem 18.01.2023 sind fett hervorgehoben.**  
+**Änderungen nach dem 08.03.2023 sind fett hervorgehoben.**
 
 ### Terminplan: Informatik und Medieninformatik
 
 **Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformatik**
 
 <small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+
 <div class="table-responsive">
     <table>
         <tr>
@@ -143,57 +148,56 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Montag, 26.09.2022</td>
-            <td>9:00 - 9:30</td>
-            <td>E201</td>
-            <td>Begrüßung + Informationsveranstaltungen</td>
+            <td>Montag, 13.03.2023</td>
+            <td>9:00 - 10:00</td>
+            <td>LI he</td>
+            <td>Begrüßung & Informationsveranstaltungen</td>
             <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
-            <td><strong>INFB</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>9:30 - 10:00</td>
-            <td>E201</td>
-            <td>Begrüßung + Informationsveranstaltungen</td>
-            <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
-            <td><strong>MINB + INFM</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>10:00 - 13:00</td>
-            <td>E201, E213</td>
-            <td>Vorstellung der Fachschaft und des O-Phasen-Programms</td>
-            <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.
-              Vorstellung des O-Phasen-Programms.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>13:00 - 14:00</td>
+            <td>10:00 - 12:00</td>
+            <td><strong>E201</strong></td>
+            <td>Informationen zum Studium</td>
+            <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.
+              Vorstellung des O-Phasen-Programms.</td>
+            <td>INFB & MINB</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>12:00 - 13:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
             <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen, Kaffee & Tee | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39">Speiseplan</a>)
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=11">Speiseplan</a>)
               oder zur Mensa Moltke (warmes Mittagessen | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> Speiseplan</a>)
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=11"> Speiseplan</a>)
               gehen und dort etwas essen.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>14:00 - 16:00</td>
+            <td>13:00 - 15:30</td>
             <td>Treffpunkt vor dem Gebäude E</td>
-            <td>Campusrundgang + AStA Vorstellung</td>
-            <td>Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :)</td>
+            <td>Campusrundgang & Vorstellung Fachschaft</td>
+            <td>Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>16:00 - 02:00</td>
-            <td>Im und vor dem Gebäude E</td>
-            <td>Erstiabend</td>
-            <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.
-              Dieses Semester legt ein DJ für euch auf.</td>
+            <td>15:30 - 16:00</td>
+            <td>E013</td>
+            <td>Pause</td>
+            <td>Fachschaft - Chill and Greet.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ab 16:00</td>
+            <td><strong>E201</strong></td>
+            <td>Spieleabend</td>
+            <td>Ein gemeinsamer Spieleabend, um sich besser kennenzulernen.</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -205,51 +209,46 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Dienstag, 27.09.2022</td>
-            <td>10:00 - 13:00</td>
-            <td>E203, LI137 (Ersatz)</td>
+            <td>Dienstag, 14.03.2023</td>
+            <td>08:00 - 10:00</td>
+            <td><strong>E201</strong></td>
             <td>Englisch-Kurs Einstufung</td>
             <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der
               <a href="https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung">Seite des IFS</a>.
-              In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zu Hause :)</td>
-            <td>Bachelor <strong>Anmeldeschluss für die Einstufung ist am Mittwoch 28. September 2022</strong></td>
+              In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zu Hause.</td>
+            <td>INFB & MINB Anmeldeschluss für die Einstufung ist am Mittwoch, 15. März 2023</td>
         </tr>
         <tr>
             <td></td>
-            <td>11:30 - 12:30</td>
-            <td>Gebäude A/Aula + Remote</td>
-            <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>Ihr könnt direkt in der Aula dabei sein oder
-              <a href="https://www.youtube.com/watch?v=3Lxj3sq1vVs">per Livestream</a> zuschalten.</td>
+            <td>10:00 - 12:30</td>
+            <td><strong>E201</strong></td>
+            <td>Ersti-Frühstück</td>
+            <td>-</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>13:00 - 14:00</td>
-            <td>Karlsruhe</td>
-            <td>Mittagspause</td>
-            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
-              >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
-              Speiseplan</a></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>14:00 - 15:30</td>
-            <td>Gebäude A/Aula</td>
+            <td>12:30 - 14:30</td>
+            <td><strong>E201</strong></td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
+            <td>14:30 - 15:30</td>
+            <td>E013</td>
+            <td>Pause</td>
+            <td>Fachschaft - Chill and Greet.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
             <td>15:30 - 17:00</td>
-            <td><strong>E103</strong></td>
-            <td>PO-Briefing</td>
-            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch
-              offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
-            <td><strong>Bachelor + Master</strong></td>
+            <td><strong>E201</strong></td>
+            <td>O-Phasen-Quiz</td>
+            <td>-</td>
+            <td>INFB & MINB</td>
         </tr>
         <tr>
             <th>Datum</th>
@@ -260,35 +259,45 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Mittwoch, 28.09.2022</td>
-            <td><strong>9:50 - 11:20</strong></td>
-            <td><strong>E303</strong></td>
-            <td><strong>Technische Informatik 1</strong></td>
-            <td><strong>Zug B2</strong></td>
-            <td><strong>Bachelor</strong></td>
+            <td>Mittwoch, 15.03.2023</td>
+            <td>08:00 - 11:30</td>
+            <td>siehe Stundenplan</td>
+            <td>Vorlesung laut Stundenplan</td>
+            <td>Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/INFB/1">Stundenplan INFB</a><br>
+                Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/MINB/1">Stundenplan MINB</a><br>
+                Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/INFM/1">Stundenplan INFM</a></td>
+            <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td><strong>9:50 - 11:20</strong></td>
-            <td><strong>Gebäude B, HB</strong></td>
-            <td><strong>Theoretische Informatik 1</strong></td>
-            <td><strong>Zug B1</strong></td>
-            <td><strong>Bachelor</strong></td>
+            <td>11:30 - 13:00</td>
+            <td><strong>E201</strong></td>
+            <td>Erstsemesterbegrüßung durch das Rektorat</td>
+            <td>-</td>
+            <td>alle</td>
         </tr>
         <tr>
             <td></td>
             <td>13:00 - 14:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
-            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
+            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=11"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=11">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>14:00 - 18:00</td>
+            <td>14:00 - 15:00</td>
+            <td><strong>E201</strong></td>
+            <td>Tipps für die ersten Tage</td>
+            <td>-</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ab 15:30</td>
             <td>Treffpunkt vor Gebäude E</td>
             <td>Rallye</td>
             <td>In einer kleinen Rallye rund um den Campus machen wir ein paar Spielchen.</td>
@@ -303,99 +312,22 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Donnerstag, 29.09.2022</td>
-            <td>08:00 - 09:30</td>
-            <td>Gebäude B, HB</td>
-            <td>Mathematik 1</td>
-            <td>Zug B2</td>
-            <td>Bachelor</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>08:00 - 09:30</td>
-            <td>E201</td>
-            <td>Programmieren</td>
-            <td>Zug B1</td>
-            <td>Bachelor</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>08:00 - 09:30</td>
-            <td><strong>Online per Zoom</strong></td>
-            <td>Graphenalgorithmen</td>
-            <td><strong>Weitere Informationen dazu sind im <a href="https://bit.ly/3E3sm7n">Ilias</a> zu finden. Hinweis: 
-              Vorher im Ilias anmelden um richtig weitergeleitet zu werden! Der Zoom Link ist im Ilias zu finden.</strong></td>
-            <td>Master</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>09:50 - 11:20</td>
-            <td>E201</td>
-            <td>Programmieren</td>
-            <td>Zug B2</td>
-            <td>Bachelor</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>09:50 - 11:20</td>
-            <td>Gebäude B, HB</td>
-            <td>Mathematik 1</td>
-            <td>Zug B1</td>
-            <td>Bachelor</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>09:50 - 13:00</td>
-            <td>E311</td>
-            <td>Programmierparadigmen</td>
-            <td></td>
-            <td>Master</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>11:30 - 13:00</td>
-            <td>E303</td>
-            <td>Optimierung</td>
-            <td></td>
-            <td>Master</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>13:00 - 14:00</td>
-            <td>Karlsruhe</td>
-            <td>Mittagspause</td>
-            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
-              >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
-              Speiseplan</a></td>
+            <td>Donnerstag, 16.03.2023</td>
+            <td>08:00 - 17:00</td>
+            <td>siehe Stundenplan</td>
+            <td>Vorlesung laut Stundenplan</td>
+            <td>Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/INFB/1">Stundenplan INFB</a><br>
+                Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/MINB/1">Stundenplan MINB</a><br>
+                Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/INFM/1">Stundenplan INFM</a></td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>14:00 - 17:00</td>
-            <td>E013</td>
-            <td>Chillen in der Fachschaft / <strong>Erstitaschen-Ausgabe 2.0</strong></td>
-            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee. <strong>Die Taschen, gefüllt mit Goodies von unseren 
-              Sponsoren, sind von der Fachschaft IWI und die Erstirucksäcke sind von der AStA / Center of Competence.
-              </strong></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>17:00</td>
+            <td>ab 17:00</td>
             <td>Treffpunkt vor dem Gebäude E</td>
-            <td>Treffen Kneipentour-Einteilung</td>
-            <td>Ihr werdet in versch. Gruppen eingeteilt und dann wandern wir zusammen zu den entsprechenden Kneipen.
-              Start ca. 17:30.</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>18:00 - open end</td>
-            <td>Karlsruhe Innenstadt</td>
             <td>Kneipentour</td>
-            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur besseren Einteilung um 17 Uhr
-                vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen.</td>
+            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur Einteilung um 17 Uhr
+                vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -407,20 +339,22 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Freitag, 30.09.2022</td>
-            <td>08:00 - 09:30</td>
-            <td>Gebäude B, HB</td>
-            <td>Mathematik 1</td>
-            <td>Zug B2</td>
-            <td>Bachelor</td>
+            <td>Freitag, 17.03.2023</td>
+            <td>08:00 - 17:00</td>
+            <td>siehe Stundenplan</td>
+            <td>Vorlesung laut Stundenplan</td>
+            <td>Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/INFB/1">Stundenplan INFB</a><br>
+                Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/MINB/1">Stundenplan MINB</a><br>
+                Zum <a href="https://www.iwi.hs-karlsruhe.de/iwii/info/timetable/INFM/1">Stundenplan INFM</a></td>
+            <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>09:50 - 11:20</td>
-            <td>Gebäude B, HB</td>
-            <td>Mathematik 1</td>
-            <td>Zug B1</td>
-            <td>Bachelor</td>
+            <td>ab 17:00</td>
+            <td><strong>B-Bau</strong></td>
+            <td>Erstiparty</td>
+            <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.</td>
+            <td>alle</td>
         </tr>
     </table>
 </div>
@@ -429,9 +363,10 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
 
 **Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business und Data Science**
 
-**Raumbelegung (wenn nicht anders angegeben): DS: E001, IIB: E002, WI: E003, E101**
+**Raumbelegung (wenn nicht anders angegeben): WI / IIB / DS: E003 & E004**
 
 <small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+
 <div class="table-responsive">
     <table>
         <tr>
@@ -443,66 +378,56 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Montag, 26.09.2022</td>
-            <td>9:00 - 9:30</td>
-            <td>E002, E003, E004</td>
-            <td>Begrüßung + Informationsveranstaltungen</td>
-            <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.<br>
-Raumaufteilung: Wirtschaftsinformatik & Internationales IT Business -> E004, A bis K | E003, L bis Z + Erfolgreich Starter<br>
-Data Science -> E002</td>
+            <td>Montag, 13.03.2023</td>
+            <td>9:00 - 10:00</td>
+            <td>E003, E004</td>
+            <td>Begrüßung & Informationsveranstaltungen</td>
+            <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
             <td>Bachelor</td>
         </tr>
         <tr>
             <td></td>
-            <td>10:00 - 11:00</td>
-            <td>E002, E003, E004</td>
-            <td>Zugangsdaten / Hochschulsysteme / Studienorganisation / Intranet</td>
-            <td>Die wichtigsten Systeme für euer Studium im Überlick</td>
+            <td>10:00 - 12:00</td>
+            <td>E003, E004</td>
+            <td>Informationen zum Studium</td>
+            <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.
+              Vorstellung des O-Phasen-Programms.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>11:15 - 12:45</td>
-            <td>E002, E003, E004</td>
-            <td>Alumni</td>
-            <td></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>12:45 - 13:00</td>
-            <td>E002, E003, E004</td>
-            <td>O-Phasen-Programm</td>
-            <td>Vorstellung des O-Phasen-Programms</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>13:00 - 14:00</td>
+            <td>12:00 - 13:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
             <td>Ihr könnt in die Stadt, zur Cafeteria (Snacks, belegte Brötchen, Kaffee & Tee | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39">Speiseplan</a>)
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=11">Speiseplan</a>)
               oder zur Mensa Moltke (warmes Mittagessen | <a href=
-              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39"> Speiseplan</a>)
+              "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=11"> Speiseplan</a>)
               gehen und dort etwas essen.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>14:00 - 16:00</td>
+            <td>13:00 - 15:30</td>
             <td>Treffpunkt vor dem Gebäude E</td>
-            <td>Campusrundgang + AStA Vorstellung</td>
-            <td>Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus :)</td>
+            <td>Campusrundgang & Vorstellung Fachschaft</td>
+            <td>Wir Treffen uns vor dem E-Gebäude und drehen eine kleine Runde über den Campus.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>16:00 - 02:00</td>
-            <td>Im und vor dem Gebäude E</td>
-            <td>Erstiabend</td>
-            <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.
-              Dieses Semester legt ein DJ für euch auf.</td>
+            <td>15:30 - 16:00</td>
+            <td>E013</td>
+            <td>Pause</td>
+            <td>Fachschaft - Chill and Greet.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ab 16:00</td>
+            <td><strong>E201</strong></td>
+            <td>Spieleabend</td>
+            <td>Ein gemeinsamer Spieleabend, um sich besser kennenzulernen.</td>
             <td>alle</td>
         </tr>
         <tr>
@@ -514,136 +439,36 @@ Data Science -> E002</td>
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Dienstag, 27.09.2022</td>
-            <td>09:00</td>
-            <td>E002, E003, E004</td>
-            <td>International Office (IO)</td>
-            <td></td>
+            <td>Dienstag, 14.03.2023</td>
+            <td>09:00 - 12:30</td>
+            <td>E003, E004</td>
+            <td>Ersti-Frühstück & Vorstellung Erfolgreich Starten</td>
+            <td>-</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>09:30</td>
-            <td>E002, E003, E004</td>
-            <td>Studium Generale (SG)</td>
-            <td></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>10:15</td>
-            <td>E002, E003, E004</td>
-            <td>Institut für Fremdsprachen (IFS)</td>
-            <td></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>10:45</td>
-            <td>E002, E003, E004</td>
-            <td>Zeitmanagement</td>
-            <td></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>11:30 - 12:30</td>
-            <td>Gebäude A/Aula + Remote</td>
-            <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>Ihr könnt direkt in der Aula dabei sein oder
-              <a href="https://www.youtube.com/watch?v=3Lxj3sq1vVs">per Livestream</a> zuschalten.</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>13:00 - 14:00</td>
-            <td>Karlsruhe</td>
-            <td>Mittagspause</td>
-            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
-              >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
-              Speiseplan</a></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>14:00 - 15:30</td>
-            <td>Gebäude A/Aula</td>
+            <td>12:30 - 14:30</td>
+            <td>E003, E004</td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>15:30 - 17:00</td>
-            <td><strong>E003, E004</strong></td>
-            <td>PO-Briefing</td>
-            <td>Alles wichtige, was ihr zum Thema Studienablauf und Fristen wissen müsst. Hier können wir auch noch
-              offene Fragen nach der RZ-Einführungsveranstaltung klären.</td>
-            <td><strong>Bachelor + Master</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>17:00 - 18:00</td>
-            <td>E201</td>
-            <td>Vorstellung der Fachschaft</td>
-            <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <th>Datum</th>
-            <th>Uhrzeit</th>
-            <th>Ort</th>
-            <th>Veranstaltung</th>
-            <th>Anmerkung</th>
-            <th>Empfohlen für</th>
-        </tr>
-        <tr>
-            <td>Mittwoch, 28.09.2022</td>
-            <td>09:00 - 13:00</td>
-            <td>E002, E003, E004</td>
-            <td>Mathe-Tag</td>
-            <td></td>
-            <td>Bachelor</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>13:00 - 14:00</td>
-            <td>Karlsruhe</td>
-            <td>Mittagspause</td>
-            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
-              >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
-              Speiseplan</a></td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>14:00 - 17:00</td>
+            <td>14:30 - 15:30</td>
             <td>E013</td>
-            <td>Chillen in der Fachschaft / <strong>Erstitaschen-Ausgabe 2.0</strong></td>
-            <td>Fachschaftler kennenlernen / Kaffee, Kekse & Tee. <strong>Die Taschen, gefüllt mit Goodies von unseren 
-              Sponsoren, sind von der Fachschaft IWI und die Erstirucksäcke sind von der AStA / dem Center of Competence.
-              </strong></td>
+            <td>Pause</td>
+            <td>Fachschaft - Chill and Greet.</td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>17:00</td>
-            <td>Treffpunkt vor dem Gebäude E</td>
-            <td>Treffen Kneipentour-Einteilung</td>
-            <td>Ihr werdet in versch. Gruppen eingeteilt und dann wandern wir zusammen zu den entsprechenden Kneipen.
-              Start ca. 17:30.</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>18:00 - open end</td>
-            <td>Karlsruhe Innenstadt</td>
-            <td>Kneipentour</td>
-            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur besseren Einteilung um 17 Uhr
-                vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen.</td>
-            <td>alle</td>
+            <td>15:30 - 17:00</td>
+            <td>E003, E004</td>
+            <td>O-Phasen-Quiz</td>
+            <td>-</td>
+            <td>Bachelor</td>
         </tr>
         <tr>
             <th>Datum</th>
@@ -654,56 +479,122 @@ Data Science -> E002</td>
             <th>Empfohlen für</th>
         </tr>
         <tr>
-            <td>Donnerstag, 29.09.2022</td>
-            <td>09:00 - 13:00</td>
-            <td>E103, E104</td>
-            <td>Programmier-Tag</td>
-            <td>Für IIBB + WIB. <strong>Nicht DS!</strong></td>
+            <td>Mittwoch, 15.03.2023</td>
+            <td>08:00 - 08:30</td>
+            <td>E003, E004</td>
+            <td>Morgenkaffee</td>
+            <td>Optionale Teilnahme :-)</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>08:30 - 11:30</td>
+            <td>E003, E004</td>
+            <td>Mathe-Tag</td>
+            <td>-</td>
             <td>Bachelor</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:30 - 13:00</td>
+            <td>E003, E004</td>
+            <td>Erstsemesterbegrüßung durch das Rektorat</td>
+            <td>-</td>
+            <td>alle</td>
         </tr>
         <tr>
             <td></td>
             <td>13:00 - 14:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
-            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=39"
+            <td>Cafeteria <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_x1moltkestrasse/?kw=11"
               >Speiseplan</a><br>
-              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=39">
+              Mensa Moltke <a href="https://www.sw-ka.de/de/hochschulgastronomie/speiseplan/mensa_moltke/?kw=11">
               Speiseplan</a></td>
             <td>alle</td>
         </tr>
         <tr>
             <td></td>
-            <td>14:00 - 18:00</td>
+            <td>14:00 - 15:00</td>
+            <td>E003, E004</td>
+            <td>Tipps für die ersten Tage</td>
+            <td>-</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ab 15:30</td>
             <td>Treffpunkt vor Gebäude E</td>
             <td>Rallye</td>
             <td>In einer kleinen Rallye rund um den Campus machen wir ein paar Spielchen.</td>
             <td>alle</td>
         </tr>
         <tr>
-            <td>Freitag, 30.09.2022</td>
-            <td></td>
-            <td></td>
+            <th>Datum</th>
+            <th>Uhrzeit</th>
+            <th>Ort</th>
+            <th>Veranstaltung</th>
+            <th>Anmerkung</th>
+            <th>Empfohlen für</th>
+        </tr>
+        <tr>
+            <td>Donnerstag, 16.03.2023</td>
+            <td>08:00 - 17:00</td>
+            <td>siehe Stundenplan</td>
             <td>Vorlesung laut Stundenplan</td>
+            <td>-</td>
+            <td>alle</td>
+        </tr>
+        <tr>
             <td></td>
+            <td>ab 17:00</td>
+            <td>Treffpunkt vor dem Gebäude E</td>
+            <td>Kneipentour</td>
+            <td>Wir ziehen zusammen durch ein paar Kneipen der Stadt. Kommt zur Einteilung um 17 Uhr
+                vor das Gebäude E. Nachzügler melden sich am besten in den Signal-Gruppen</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <th>Datum</th>
+            <th>Uhrzeit</th>
+            <th>Ort</th>
+            <th>Veranstaltung</th>
+            <th>Anmerkung</th>
+            <th>Empfohlen für</th>
+        </tr>
+        <tr>
+            <td>Freitag, 17.03.2023</td>
+            <td>08:00 - 17:00</td>
+            <td>siehe Stundenplan</td>
+            <td>Vorlesung laut Stundenplan</td>
+            <td>-</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ab 17:00</td>
+            <td><strong>B-Bau</strong></td>
+            <td>Erstiparty</td>
+            <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.</td>
             <td>alle</td>
         </tr>
     </table>
 </div>
--->
 
 ## Sonstiges
 
 Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du unter
 [Immatrikulationsinfos](https://www.h-ka.de/studieren/studium-organisieren/einstieg-ins-studium/immatrikulationsinfos-ansprechpartner).
 
-<!-- ### Schlafplatz-->
+<!--
+### Schlafplatz
 
-<!--Falls du für die O-Phase einen Schlafplatz in Karlsruhe brauchst, melde dich
+Falls du für die O-Phase einen Schlafplatz in Karlsruhe brauchst, melde dich
 einfach bei uns unter der folgenden Mail. Sag uns, wer du bist und für wann du
-einen Schlafplatz benötigst.-->
+einen Schlafplatz benötigst.
 
-<!--[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)-->
+[icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
+-->
 
 ## RZ Kennung
 
@@ -720,11 +611,13 @@ Moltkestr. 30, 76133 Karlsruhe
 Habt ihr noch Fragen oder Probleme? Dann meldet euch in der Signal-Gruppe oder schreibt eine Mail!
 [icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
-<!--## Mehr für Dich -->
+<!--
+## Mehr für Dich
 
-<!--Es gibt einen Teil der Webseite, die nur uns Studenten zugänglich ist. Da findest
-du weitere interessante Infos z.B. zum Bachelor, Master und Altklausuren. -->
+Es gibt einen Teil der Webseite, die nur uns Studenten zugänglich ist. Da findest
+du weitere interessante Infos z.B. zum Bachelor, Master und Altklausuren.
 
-<!--1. Wenn du deine Zugangsdaten von der Hochschule erhalten hast, registrierst du dich mit deiner Hochschul-E-Mail-Adresse auf der Webseite.
+1. Wenn du deine Zugangsdaten von der Hochschule erhalten hast, registrierst du dich mit deiner Hochschul-E-Mail-Adresse auf der Webseite.
 2. Wir aus der Fachschaft überprüfen dann, ob deine Hochschul-E-Mail-Adresse gültig ist und geben dir Zugriff.
-3. Jetzt kannst du alle interessanten Infos auf der Webseite einsehen. -->
+3. Jetzt kannst du alle interessanten Infos auf der Webseite einsehen.
+-->
