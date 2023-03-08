@@ -22,18 +22,18 @@ In Gruppe B1 sind Medieninformatiker und Informatiker A-D eingeteilt, in Gruppe 
 
 Für diejenigen, die den heutigen Termin (27.09., 10:00 - 14:00 Uhr) verpasst haben, gibt es einen zweiten Termin.
 Dieser ist am **04. Oktober von 12:00 - 14:00 Uhr**. Die Rucksäcke werden vermutlich im Gebäude A oder im Gebäude B
-verteilt. Für alle, die im **WS 2022/23 oder SS 2022** das Studium begonnen haben: **Erstirucksack-Gutschein nicht 
+verteilt. Für alle, die im **WS 2022/23 oder SS 2022** das Studium begonnen haben: **Erstirucksack-Gutschein nicht
 vergessen!**
 
 ## Hinweis zu Übungen und Laboren
 
-Diese finden grundsätzlich erst in der zweiten Vorlesungswoche statt. Manche Professoren bieten diese jedoch bereits in 
+Diese finden grundsätzlich erst in der zweiten Vorlesungswoche statt. Manche Professoren bieten diese jedoch bereits in
 der ersten Vorlesungswoche an. **Bitte das Schwarze Brett beachten bzw. Emails checken!**
 
 ## Hinweis für Informatiker (Master)
 
-Vorlesungstausch von Data Science und Optimierung:   
-**Mittwoch, 28.09. | 9:50 - 11:20 Uhr | E305 | Optimierung**   
+Vorlesungstausch von Data Science und Optimierung:
+**Mittwoch, 28.09. | 9:50 - 11:20 Uhr | E305 | Optimierung**
 **Donnerstag, 29.09. | 11:30 - 13:00 Uhr | E303 | Data Science**
 
 ## Vorstellung der Fachschaft
@@ -123,19 +123,20 @@ es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der
 informieren.
 
 <!--
-Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht 
+Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht
 vor Ort sein kann.
 
 Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.
 -->
 
-**Änderungen nach dem 08.03.2023 sind fett hervorgehoben.**  
+**Änderungen nach dem 08.03.2023 sind fett hervorgehoben.**
 
 ### Terminplan: Informatik und Medieninformatik
 
 **Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformatik**
 
 <small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+
 <div class="table-responsive">
     <table>
         <tr>
@@ -157,7 +158,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>10:00 - 12:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>Informationen zum Studium</td>
             <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.
               Vorstellung des O-Phasen-Programms.</td>
@@ -194,7 +195,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>ab 16:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>Spieleabend</td>
             <td>Ein gemeinsamer Spieleabend, um sich besser kennenzulernen.</td>
             <td>alle</td>
@@ -210,7 +211,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td>Dienstag, 14.03.2023</td>
             <td>08:00 - 10:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>Englisch-Kurs Einstufung</td>
             <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der
               <a href="https://www.h-ka.de/studieren/kompetenzen-aufbauen/sprachen/anmeldung">Seite des IFS</a>.
@@ -220,7 +221,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>10:00 - 12:30</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>Ersti-Frühstück</td>
             <td>-</td>
             <td>alle</td>
@@ -228,7 +229,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>12:30 - 14:30</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.</td>
             <td>alle</td>
@@ -244,7 +245,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>O-Phasen-Quiz</td>
             <td>-</td>
             <td>INFB & MINB</td>
@@ -270,7 +271,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>11:30 - 13:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>Erstsemesterbegrüßung durch das Rektorat</td>
             <td>-</td>
             <td>alle</td>
@@ -289,7 +290,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>14:00 - 15:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>Tipps für die ersten Tage</td>
             <td>-</td>
             <td>alle</td>
@@ -350,7 +351,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>ab 17:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>B-Bau</strong></td>
             <td>Erstiparty</td>
             <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.</td>
             <td>alle</td>
@@ -365,6 +366,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
 **Raumbelegung (wenn nicht anders angegeben): WI / IIB / DS: E003 & E004**
 
 <small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
+
 <div class="table-responsive">
     <table>
         <tr>
@@ -423,7 +425,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>ab 16:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>E201</strong></td>
             <td>Spieleabend</td>
             <td>Ein gemeinsamer Spieleabend, um sich besser kennenzulernen.</td>
             <td>alle</td>
@@ -571,7 +573,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>ab 17:00</td>
-            <td><strong>#TBA#</strong></td>
+            <td><strong>B-Bau</strong></td>
             <td>Erstiparty</td>
             <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist gesorgt.</td>
             <td>alle</td>
