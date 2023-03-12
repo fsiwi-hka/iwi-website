@@ -59,9 +59,10 @@ Das Passwort zum Ersti-Heft erhältst du am Montag/Dienstag von der Fachschaft.
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 
-- [PO-Briefing-Folien - Bachelor Informatik/Medieninformatik](/assets/downloads/po_briefing_infb_minb_ws_2022.pdf)
+- [PO-Briefing-Folien - INFB / MINB](/assets/downloads/po_briefing_infb_minb_ss_2023.pdf)
 - [PO-Briefing-Folien - Master Informatik](/assets/downloads/po_briefing_infm_ws_2022.pdf)
-- [PO-Briefing-Folien - WI Bachelor](/assets/downloads/po_briefing_bachelor_wi_ws_2022.pdf)
+- [PO-Briefing-Folien - WI / DSC / IIB Bachelor](/assets/downloads/po_briefing_bachelor_wi_dsc_iib_ss_2023.pdf)
+- [RZ Einführung - WI / DSC / IIB Bachelor](/assets/downloads/rz_einfuehrung_wi_dsc_iib_ss_2023.pdf)
 
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
 [FAQ-Seite](/faq).
