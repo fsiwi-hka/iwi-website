@@ -9,7 +9,7 @@ Everything on this website is public per definition. Therefore, the calendar we
 use to manage the events displayed here is public as well. Whoever is adding
 events to the calendar called **Öffentliche Events (Website)** must make sure
 that they are intended to be public and only contain information that is meant
-to be seen by anyone. This includes:
+to be seen by anyone. This includes: 
 
 * public workshops
 * courses (like "Programmiervorkurs")
