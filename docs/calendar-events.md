@@ -9,7 +9,7 @@ Everything on this website is public per definition. Therefore, the calendar we
 use to manage the events displayed here is public as well. Whoever is adding
 events to the calendar called **Öffentliche Events (Website)** must make sure
 that they are intended to be public and only contain information that is meant
-to be seen by anyone. This includes: 
+to be seen by anyone. This includes:
 
 * public workshops
 * courses (like "Programmiervorkurs")
@@ -69,5 +69,4 @@ yet and need to work on the events integration.
 
 **If you don't need to work on the calendar integration, just ignore the error.**
 
-
-If you want to replace the entire calendar, you need to adjust the calendar ID in [index.tsx](../pages/index.tsx). 
+If you want to replace the entire calendar, you need to adjust the calendar ID in [index.tsx](../pages/index.tsx).
