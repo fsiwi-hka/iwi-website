@@ -41,12 +41,13 @@ jobs:
       - name: Debug Files
         run: ls
       - name: Upload to FTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: ${{ secrets.sftp_user_webspace }}
           server: ${{ secrets.sftp_server_webspace}}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: out # Folder to deploy
           remote_path: ${{ secrets.sftp_remote_path_webspace }}
+          delete_remote_files: true
           args: '-o ConnectTimeout=5'
 
