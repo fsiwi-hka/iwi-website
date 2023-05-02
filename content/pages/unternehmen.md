@@ -1,191 +1,191 @@
 ---
-title: 'Unternehmen'
+title: "Unternehmen"
 header:
-  title: 'Sponsoring & Kooperation'
-  subtitle: 'Wir stehen im engen Kontakt zu Unternehmen in der Region.'
-  image: '/assets/backgrounds/unternehmen.jpg'
+  title: "Sponsoring & Kooperation"
+  subtitle: "Wir stehen im engen Kontakt zu Unternehmen in der Region."
+  image: "/assets/backgrounds/unternehmen.jpg"
 ---
 
 ## Unsere aktuellen Sponsoren
 
 <div id='sponsoren' class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-10">
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.aidshilfe-karlsruhe.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.aidshilfe-karlsruhe.de">
             <img src="/images/unternehmen/aidshilfe.jpg"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://amiconsult.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://amiconsult.de">
             <img src="/images/unternehmen/amiconsult.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.blb-karlsruhe.de/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.blb-karlsruhe.de/">
             <img src="/images/unternehmen/blb.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.instagram.com/bockaufkarlsruhe">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.instagram.com/bockaufkarlsruhe">
             <img src="/images/unternehmen/bockaufkarlsruhe.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://bonding.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://bonding.de">
             <img src="/images/unternehmen/bonding.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.breuninger.com/de/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.breuninger.com/de/">
             <img src="/images/unternehmen/breuninger.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.capgemini.com/de-de/karriere/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.capgemini.com/de-de/karriere/">
             <img src="/images/unternehmen/capgemini.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://carlundcarla.de/">
+        <a class="flex justify-center items-center" target="_blank" href="https://carlundcarla.de/">
             <img src="/images/unternehmen/carla-carla.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.cas-mitgestalter.de/jobs/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.cas-mitgestalter.de/jobs/">
             <img src="/images/unternehmen/cas.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.cgi.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.cgi.com">
             <img src="/images/unternehmen/cgi.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.cyberforum.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.cyberforum.de">
             <img src="/images/unternehmen/cyberforum.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.dm-jobs.com/dmTECH">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.dm-jobs.com/dmTECH">
             <img src="/images/unternehmen/dmtech.jpg"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.drucksofa.de/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.drucksofa.de/">
             <img src="/images/unternehmen/drucksofa.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://exxeta.com/karriere">
+        <a class="flex justify-center items-center" target="_blank" href="https://exxeta.com/karriere">
             <img src="/images/unternehmen/exxeta.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.ferchau.com/de/de/bewerber/karriere">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.ferchau.com/de/de/bewerber/karriere">
             <img src="/images/unternehmen/ferchau.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://fit-in.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://fit-in.de">
             <img src="/images/unternehmen/fitin.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://gameforge.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://gameforge.com">
             <img src="/images/unternehmen/gameforge.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.initse.com/dede/home/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.initse.com/dede/home/">
             <img src="/images/unternehmen/init.jpg"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.inovex.de/en/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.inovex.de/en/">
             <img src="/images/unternehmen/inovex.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.interflex.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.interflex.de">
             <img src="/images/unternehmen/interflex.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.it-economics.de/karriere/stellenanzeigen">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.it-economics.de/karriere/stellenanzeigen">
             <img src="/images/unternehmen/it-economics.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.itscope.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.itscope.com">
             <img src="/images/unternehmen/itscope.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.kleiberit.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.kleiberit.com">
             <img src="/images/unternehmen/kleiberit.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.moninger.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.moninger.de">
             <img src="/images/unternehmen/moninger.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://netzstrategen.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://netzstrategen.com">
             <img src="/images/unternehmen/netzstrategen.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://server.nitrado.net">
+        <a class="flex justify-center items-center" target="_blank" href="https://server.nitrado.net">
             <img src="/images/unternehmen/nitrado.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://objektkultur.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://objektkultur.de">
             <img src="/images/unternehmen/objektkultur.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://technology.salt-and-pepper.eu">
+        <a class="flex justify-center items-center" target="_blank" href="https://technology.salt-and-pepper.eu">
             <img src="/images/unternehmen/saltandpepper.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.seeburger.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.seeburger.com">
             <img src="/images/unternehmen/seeburger.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://getvamos.app/">
+        <a class="flex justify-center items-center" target="_blank" href="https://getvamos.app/">
             <img src="/images/unternehmen/siptogether.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://smateso.com/">
+        <a class="flex justify-center items-center" target="_blank" href="https://smateso.com/">
             <img src="/images/unternehmen/smateso.jpg"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.springer.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.springer.com">
             <img src="/images/unternehmen/springer.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://studidruck-copyshop.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://studidruck-copyshop.de">
             <img src="/images/unternehmen/studidruck.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.utb.de">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.utb.de">
             <img src="/images/unternehmen/utb.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://www.vector.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.vector.com">
             <img src="/images/unternehmen/vector.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
-        <a target="_blank" href="https://wgheld.de/">
+        <a class="flex justify-center items-center" target="_blank" href="https://wgheld.de/">
             <img src="/images/unternehmen/wg-held.png"></img>
         </a>
     </div>
@@ -242,13 +242,13 @@ Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!
       </ul>
     </div>
     <div class="inline-grid content-center place-content-center gap-5">
-        <a target="_blank" href="https://gameforge.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://gameforge.com">
             <img src="/images/unternehmen/gameforge.png"></img>
         </a>
-        <a target="_blank" href="https://exxeta.com">
+        <a class="flex justify-center items-center" target="_blank" href="https://exxeta.com">
             <img src="/images/unternehmen/exxeta.png"></img>
         </a>
-        <a target="_blank" href="https://www.initse.com/dede/home/">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.initse.com/dede/home/">
             <img src="/images/unternehmen/init.jpg"></img>
         </a>
     </div>
