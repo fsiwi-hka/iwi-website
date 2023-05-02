@@ -41,7 +41,7 @@ jobs:
       - name: Debug Files
         run: ls
       - name: Upload to FTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
           username: ${{ secrets.sftp_user_webspace }}
           server: ${{ secrets.sftp_server_webspace}}
