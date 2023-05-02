@@ -48,6 +48,5 @@ jobs:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: out # Folder to deploy
           remote_path: ${{ secrets.sftp_remote_path_webspace }}
-          delete_remote_files: true
           args: '-o ConnectTimeout=5'
 
