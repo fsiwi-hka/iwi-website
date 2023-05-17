@@ -237,7 +237,7 @@ Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!
     <div class="inline-grid content-center place-content-center">
       <ul>
         <li>Gameforge ist ein Anbieter von Online-Spielen. Die international tätige Unternehmensgruppe mit Hauptsitz in Karlsruhe vertreibt 13 Spiele in über 75 Ländern und hat über 450 Millionen registrierte Spieler.</li>
-        <li>EXXETA steht für die einzigartige Verbindung von Business und IT mit Schwerpunkt in den Branchen Automotive, Energy und Financial Services.</li>
+        <li>Exxeta steht für die einzigartige Verbindung von Business und IT mit Schwerpunkt in den Branchen Automotive, Energy und Financial Services.</li>
         <li>Die INIT GmbH ist ein deutsches Unternehmen für IT-Lösungen im öffentlichen Personenverkehr</li>
       </ul>
     </div>
