@@ -203,6 +203,15 @@ Vorsicht: Wenn jemand eine Prüfung, für die er angemeldet ist, ohne triftigen 
 Wenn ihr eine Prüfung wegen Krankheit nicht mitschreiben könnt, müsst ihr dies unverzüglich im Sekretariat mitteilen und sobald wie möglich ein ärztliches Attest vorlegen.
 
 ## Wahlpflichtfächer
+
+### Wo kann man sich für die Wahlpflichtfächer anmelden?
+
+Beispiel für Informatik:
+
+1. Im [System für das Prüfungsmanagement und Noteneinsicht](https://qis2.hs-karlsruhe.de/qisserver/rds?state=user&type=0&application=qispos) anmelden
+2. Prüfungsverwaltung und Prüfungsan- und -abmeldung
+3. Unter **Informatik PO99** das richtige Wahlfach auswählen
+
 ### Ab wann darf ich Wahlpflichtfächer besuchen?
 
 Wahlpflichtfächer dürfen nach Abschluss des Grundstudiums besucht werden. Eine Ausnahme bildet das Wahlpflichtfach „Teamteaching“, das schon ab dem zweiten Semester durch Tutortätigkeiten o.Ä. abgelegt werden kann.
