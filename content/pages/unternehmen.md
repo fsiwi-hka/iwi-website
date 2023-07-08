@@ -125,6 +125,11 @@ header:
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.kleiberit.com">
+            <img src="/images/unternehmen/letsdev.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
         <a class="flex justify-center items-center" target="_blank" href="https://www.moninger.de">
             <img src="/images/unternehmen/moninger.png"></img>
         </a>
