@@ -126,14 +126,15 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
 ## Benötigte Software
 
-Die folgende Software ist normalerweise auf den Pool-Rechnern installiert.
+Es empfiehlt sich die Programmieraufgaben auf einem eigenem Laptop durchzuführen. Die hierfür benötigte Software 
+wird gemeinsam am ersten Tag installiert und eingerichtet.
 
 - Für Java : Eclipse für Java Developers und JDK 11 oder neuer <https://ninite.com/adoptjdkx11-eclipse/>
 - Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
   und [.Net](https://dotnet.microsoft.com/download)
 - Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
 
-Selbstverständlich könnt ihr euren eigenen Laptop mitbringen.
+Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
 
 ## Unterlagen
 
