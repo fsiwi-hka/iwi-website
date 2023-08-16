@@ -72,9 +72,9 @@ Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 
 - Wir beginnen jeden Tag um 10 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
 - Raumeinteilung wird folgende sein:  
-  - Informatik & Medieninformatik: TBA  
-  - Wirtschaftsinformatik & Internationales IT Business: TBA  
-  - Data Science: TBA  
+  - Java: E203
+  - C#: LI137
+  - Python: E010
 - Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
   Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
 - Dann ist erst mal Mittagspause. Da könnt ihr euch den Tutoren anschließen mit in die Mensa oder in die Stadt zu gehen.
@@ -98,9 +98,9 @@ Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
     <tr>
       <td>10 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
-      <td>Informatik & Medieninformatik: TBA
-      <br> Wirtschaftsinformatik & Internationales IT Business: TBA
-      <br> Data Science: TBA
+      <td>Java: E203
+      <br>C#: LI137
+      <br>Python: E010
       </td>
     </tr>
     <tr>
