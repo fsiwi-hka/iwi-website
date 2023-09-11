@@ -73,8 +73,8 @@ Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 - Wir beginnen jeden Tag um 10 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
 - Raumeinteilung wird folgende sein:  
   - Java: E203
-  - C#: LI137
-  - Python: E010
+  - C#: LI136
+  - Python: E302
 - Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
   Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
 - Dann ist erst mal Mittagspause. Da könnt ihr euch den Tutoren anschließen mit in die Mensa oder in die Stadt zu gehen.
@@ -99,8 +99,8 @@ Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
       <td>10 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
       <td>Java: E203
-      <br>C#: LI137
-      <br>Python: E010
+      <br>C#: LI136
+      <br>Python: E302
       </td>
     </tr>
     <tr>
@@ -138,15 +138,15 @@ Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
 
 ## Unterlagen
 
-Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
-
 <!--
+Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
+-->
+
 Die Aufgaben und Lösungen werden im Laufe des Kurses freigeschaltet.
 
 - [Unterlagen zu Java](https://drive.google.com/drive/folders/1XV3ycmwWzWfJ7sd_rUoxxiqdnfsHuw-Z?usp=share_link)
 - [Unterlagen zu C#](https://drive.google.com/drive/folders/1KewU0N5TVFZS4zbn-2PG_puC0CYzwXyL?usp=share_link)
 - [Unterlagen zu Python](https://drive.google.com/drive/folders/1uHUlEHpMK6NaoPXAEiGeW-B5lznpCJzf?usp=share_link)
--->
 
 ## Mehr
 
