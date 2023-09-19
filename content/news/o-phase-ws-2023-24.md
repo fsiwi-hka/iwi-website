@@ -2,7 +2,7 @@
 title: 'Aktuelle Infos zur O-Phase'
 excerpt: 'Die sehnsüchtig erwarteten Infos zur O-Phase im Wintersemester 2023/24
 sind nun verfügbar.'
-author: 'Simon'
+author: 'Dustin'
 date: '2023-09-19'
 header:
   title: 'Aktuelle Infos zur O-Phase'
