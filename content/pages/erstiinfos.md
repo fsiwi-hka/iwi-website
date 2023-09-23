@@ -175,7 +175,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>10:00 - 11:00</td>
-            <td>TBA</td>
+            <td><strong>E201, E306</strong></td>
             <td>Ersti-Frühstück</td>
             <td>Ein Frühstück unter Erstis zum Kennenlernen.</td>
             <td>alle</td>
@@ -183,7 +183,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>11:00 - 13:00</td>
-            <td>TBA</td>
+            <td><strong>E201, E306</strong></td>
             <td>Vorstellung der Fachschaft & Vorstellung des O-Phasen-Programms</td>
             <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.</td>
             <td>alle</td>
@@ -211,8 +211,8 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>ab 16:00 bis ca. 02:00</td>
-            <td>TBA</td>
-            <td>Erstiabend</td>
+            <td><strong>Vor Geb. E, E003, E004</strong></td>
+            <td><strong>Erstiparty</strong></td>
             <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist 
                 gesorgt.</td>
             <td>alle</td>
@@ -228,19 +228,22 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td>Dienstag, 26.09.2023</td>
             <td>10:00 - 13:00</td>
-            <td>TBA</td>
+            <td><strong>E201</strong></td>
             <td>Englisch-Kurs Einstufung</td>
             <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der
               <a href="https://www.h-ka.de/anmeldung-sprachkurse#c28548">Seite des IFS</a>.
               In diesem Zeitslot könnt ihr das in einem Poolraum oder mit eigenem Laptop tun. Gerne aber auch schon vorher zu Hause.</td>
-            <td>INFB & MINB Anmeldeschluss für die Einstufung ist am Mittwoch, 27. September 2023</td>
+            <td><strong>INFB & MINB Anmeldeschluss für die Einstufung ist am Mittwoch, 27. September 2023</strong></td>
         </tr>
         <tr>
             <td></td>
             <td>11:30 - 12:30</td>
-            <td>TBA</td>
+            <td><strong>Geb. A, Aula oder Livestream</strong></td>
             <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>-</td>
+            <td><strong>Findet hybrid statt. Für vor Ort bitte anmelden: 
+                <a href="https://www.h-ka.de/erstsemesterbegruessung">Zur Anmeldung</a>. Einen Link zum 
+                Livestream gibt es am 26.09.2023 auf <a href="https://www.h-ka.de/erstsemesterbegruessung">dieser 
+                Seite</a>.</strong></td>
             <td>alle</td>
         </tr>
         <tr>
@@ -258,7 +261,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>14:00 - 16:00</td>
-            <td>TBA</td>
+            <td><strong>E303, E306</strong></td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.</td>
             <td>alle</td>
@@ -266,7 +269,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>16:00 - 17:00</td>
-            <td>TBA</td>
+            <td><strong>E303, E306</strong></td>
             <td>PO-Briefing</td>
             <td>PO = Prüfungsordnung</td>
             <td>alle</td>
@@ -274,10 +277,10 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>17:00 - 18:00</td>
-            <td>TBA</td>
+            <td><strong>E303, E306</strong></td>
             <td>Wie studiere ich richtig?</td>
             <td></td>
-            <td>Bachelor</td>
+            <td>alle</td>
         </tr>
         <tr>
             <th>Datum</th>
@@ -418,7 +421,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>10:00 - 11:00</td>
-            <td>TBA</td>
+            <td><strong>E001, E002, E003, E004</strong></td>
             <td>Ersti-Frühstück</td>
             <td>Ein Frühstück unter Erstis zum Kennenlernen.</td>
             <td>alle</td>
@@ -426,7 +429,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>11:00 - 13:00</td>
-            <td>TBA</td>
+            <td><strong>E001, E002, E003, E004</strong></td>
             <td>Vorstellung der Fachschaft & Vorstellung des O-Phasen-Programms</td>
             <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.</td>
             <td>alle</td>
@@ -454,8 +457,8 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>ab 16:00 bis ca. 02:00</td>
-            <td>TBA</td>
-            <td>Erstiabend</td>
+            <td><strong>Vor Geb. E, E003, E004</strong></td>
+            <td><strong>Erstiparty</strong></td>
             <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist 
                 gesorgt.</td>
             <td>alle</td>
@@ -471,17 +474,20 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td>Dienstag, 26.09.2023</td>
             <td>09:00 - 11:00</td>
-            <td>TBA</td>
+            <td><strong>E001, E002, E003, E004</strong></td>
             <td>Vorstellung PPB, IO, IF, CC & Zeitmanagemant</td>
             <td>Hier erfahrt ihr alles Wichtige rund ums Studium.</td>
-            <td></td>
+            <td>alle</td>
         </tr>
         <tr>
             <td></td>
             <td>11:30 - 12:30</td>
-            <td>TBA</td>
+            <td><strong>Geb. A, Aula oder Livestream</strong></td>
             <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>-</td>
+            <td><strong>Findet hybrid statt. Für vor Ort bitte anmelden: 
+                <a href="https://www.h-ka.de/erstsemesterbegruessung">Zur Anmeldung</a>. Einen Link zum 
+                Livestream gibt es am 26.09.2023 auf <a href="https://www.h-ka.de/erstsemesterbegruessung">dieser 
+                Seite</a>.</strong></td>
             <td>alle</td>
         </tr>
         <tr>
@@ -499,7 +505,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>14:00 - 16:00</td>
-            <td>TBA</td>
+            <td><strong>E001, E002, E003, E004</strong></td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.</td>
             <td>alle</td>
@@ -507,7 +513,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>16:00 - 17:00</td>
-            <td>TBA</td>
+            <td><strong>E001, E002, E003, E004</strong></td>
             <td>PO-Briefing</td>
             <td>PO = Prüfungsordnung</td>
             <td>alle</td>
@@ -515,10 +521,10 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>17:00 - 18:00</td>
-            <td>TBA</td>
+            <td><strong>E001, E002, E003, E004</strong></td>
             <td>Wie studiere ich richtig?</td>
             <td></td>
-            <td>Bachelor</td>
+            <td>alle</td>
         </tr>
         <tr>
             <th>Datum</th>

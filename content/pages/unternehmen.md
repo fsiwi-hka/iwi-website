@@ -20,6 +20,11 @@ header:
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.bechtle.com/">
+            <img src="/images/unternehmen/bechtle.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
         <a class="flex justify-center items-center" target="_blank" href="https://www.blb-karlsruhe.de/">
             <img src="/images/unternehmen/blb.png"></img>
         </a>
@@ -32,6 +37,11 @@ header:
     <div class="inline-grid content-center place-content-center">
         <a class="flex justify-center items-center" target="_blank" href="https://bonding.de">
             <img src="/images/unternehmen/bonding.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.bosch.de/">
+            <img src="/images/unternehmen/bosch.png"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
@@ -75,6 +85,11 @@ header:
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
+        <a class="flex justify-center items-center" target="_blank" href="https://esentri.com/">
+            <img src="/images/unternehmen/essentri.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
         <a class="flex justify-center items-center" target="_blank" href="https://exxeta.com/karriere">
             <img src="/images/unternehmen/exxeta.png"></img>
         </a>
@@ -87,6 +102,11 @@ header:
     <div class="inline-grid content-center place-content-center">
         <a class="flex justify-center items-center" target="_blank" href="https://fit-in.de">
             <img src="/images/unternehmen/fitin.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a class="flex justify-center items-center" target="_blank" href="https://freiberger-pizza.com/">
+            <img src="/images/unternehmen/freiberger.jpg"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
@@ -177,6 +197,11 @@ header:
     <div class="inline-grid content-center place-content-center">
         <a class="flex justify-center items-center" target="_blank" href="https://studidruck-copyshop.de">
             <img src="/images/unternehmen/studidruck.png"></img>
+        </a>
+    </div>
+    <div class="inline-grid content-center place-content-center">
+        <a class="flex justify-center items-center" target="_blank" href="https://uninow.com/de">
+            <img src="/images/unternehmen/uninow.jpg"></img>
         </a>
     </div>
     <div class="inline-grid content-center place-content-center">
