@@ -270,8 +270,8 @@ Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!
         <li>Exxeta steht für die einzigartige Verbindung von Business und IT mit Schwerpunkt in den Branchen Automotive, Energy und Financial Services.</li>
         <li>Die INIT GmbH ist ein deutsches Unternehmen für IT-Lösungen im öffentlichen Personenverkehr</li>
       </ul>
-    </div>
-    <div class="flex justify-center items-center h-48 gap-5">
+    </div>  
+  <div style="height:150px;" class="flex justify-evenly items-center gap-5">
         <a class="flex justify-center items-center" target="_blank" href="https://gameforge.com">
             <img src="/images/unternehmen/gameforge.png"></img>
         </a>
