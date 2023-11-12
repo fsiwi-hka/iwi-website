@@ -28,7 +28,7 @@
         "@fortawesome/react-fontawesome": "^0.1.13",
         "googleapis": "^52.1.0",
         "gray-matter": "^4.0.2",
-        "next": "^10.0.3",
+        "next": "^14.0.2",
         "raw-loader": "^4.0.2",
         "react": "^16.14.0",
         "react-calendar": "^3.2.1",
