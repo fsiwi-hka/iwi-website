@@ -1,34 +1,30 @@
-function Groups({groups}) {
-    const renderedGroups = renderGroups(groups)
-    return (
-        <div className="groups grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            { renderedGroups }
-        </div>
-    )
+function Groups({ groups }) {
+  const renderedGroups = renderGroups(groups);
+  return (
+    <div className="groups grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-8">
+      {renderedGroups}
+    </div>
+  );
 }
 
 function renderGroups(groups) {
-    return groups.map((group) => {
-        const groupImage = group.image
-            ? <img src={ group.image }
-                   alt={group.title}
-                   className="object-cover"
-                   style={{ width: '320px', height: '320px' }} />
-            : null
-        return (
-            <div key={group.title}>
-                { groupImage }
-                <h4>{ group.title }</h4>
-                <ul className="my-1 list-none">
-                    {
-                        group.people.map((person) => {
-                        return <li className="leading-4" key={person}>{ person }</li>
-                        })
-                    }
-                </ul>
-            </div>
-        )
-    })
+  return groups.map((group) => {
+    const groupImage = group.image ? (
+      <img
+        src={group.image}
+        alt={group.title}
+        className="object-cover"
+        style={{ width: "250px", height: "250px" }}
+      />
+    ) : null;
+    return (
+      <div className="flex flex-col items-center" key={group.title}>
+        {groupImage}
+        <h4 className="font-semibold">{group.person}</h4>
+        <p className="text-sm text-gray-700">{group.title}</p>
+      </div>
+    );
+  });
 }
 
-export default Groups
+export default Groups;

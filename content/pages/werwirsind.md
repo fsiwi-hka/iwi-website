@@ -1,59 +1,46 @@
 ---
-title: 'Die Fachschaft IWI'
+title: "Die Fachschaft IWI"
 header:
-  title: 'Wir sind die Fachschaft IWI'
-  subtitle: 'Hallo! Wir, die Fachschaft IWI (Informatik und Wirtschaftsinformatik), stellen uns auf dieser Seite vor. Hier findest du also Informationen zu uns und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und Anregungen? Wir freuen uns auf deine Nachricht.'
-  image: '/assets/backgrounds/fachschaft_iwi.png'
+  title: "Wir sind die Fachschaft IWI"
+  subtitle: "Hallo! Wir, die Fachschaft IWI (Informatik und Wirtschaftsinformatik), stellen uns auf dieser Seite vor. Hier findest du also Informationen zu uns und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und Anregungen? Wir freuen uns auf deine Nachricht."
+  image: "/assets/backgrounds/fachschaft_iwi.png"
 groups:
-
-  - title: 'Vorstand'
-    image: '/images/fachschaft/vorstand_iwi.png'
-    people:
-      - 'Zoe Kammerdiener (IIBB)'
-      - 'Anja Buchmaier (MKIB)'
-  - title: 'Finanzer'
-    image: '/images/fachschaft/finanzer_iwi.png'
-    people:
-      - 'Marcel Rettig (INFB)'
-      - 'Michael Fischer (INFM)'
-  - title: 'Senat'
-    image: '/images/fachschaft/senat_iwi.png'
-    people:
-      - 'Zoe Kammerdiener (IIBB)'
-  - title: 'StuPa'
-    image: '/images/fachschaft/stupa_iwi.png'
-    people:
-      - 'Zoe Kammerdiener (IIBB)'
-      - 'Marcel Rettig (INFB)'
-  - title: 'Fakultätsrat'
-    image: '/images/fachschaft/fakultätsrat_iwi.png'
-    people:
-      - 'Carolin Schild (INFB)'
-  - title: 'Fachbereich Social Media'
-    image: '/images/fachschaft/socialMedia_iwi.png'
-    people:
-      - 'Melina Wünsch'
-      - 'Anja Buchmaier'
-      - 'Sabine Kaiser'
-  - title: 'Fachbereich Events'
-    image: '/images/fachschaft/events_iwi.png'
-    people:
-      - 'Athanasia Skaroglu Chasioti'
-      - 'Jens Ettl'
-  - title: 'Fachbereich Infrastruktur'
-    image: '/images/fachschaft/website_iwi.png'
-    people:
-      - 'Michael Fischer (INFM)'
-      - 'Matthias Handtmann (INFB)'
-      - 'Alexander Mader (WIB)'
-      - 'Charlotte Mohr (INFB)'
-      - 'Marcel Rettig (INFB)'
-      - 'Dustin Sommerfeld (MINB)'
-      - 'Jonas Westenhoff (INFB)'
-  - title: 'Fachbereich Sponsoring'
-    image: '/images/fachschaft/sponsoring_iwi.png'
-    people:
-      - 'Anja Buchmaier'
+  - title: "1. Vorstand"
+    image: "/images/fachschaft/1_vorstand_iwi.png"
+    person: "Dustin Sommerfeld"
+  - title: "2. Vorstand"
+    image: "/images/fachschaft/2_finanzer_iwi.png"
+    person: "Vorname Nachname"
+  - title: "1. Finanzer*in"
+    image: "/images/fachschaft/1_finanzer_iwi.png"
+    person: "Vorname Nachname"
+  - title: "2. Finanzer*in"
+    image: "/images/fachschaft/2_finanzer_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Protokollant*in"
+    image: "/images/fachschaft/protokollant_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Mail-Manager*in"
+    image: "/images/fachschaft/mail-manager_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Kaffee-Manager*in"
+    image: "/images/fachschaft/kaffee-manager_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Teamlead Events"
+    image: "/images/fachschaft/teamlead-events_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Teamlead Sponsoring"
+    image: "/images/fachschaft/teamlead-sponsoring_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Teamlead Infrastruktur"
+    image: "/images/fachschaft/teamlead-infrastruktur_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Teamlead Marketing"
+    image: "/images/fachschaft/teamlead-marketing_iwi.png"
+    person: "Vorname Nachname"
+  - title: "Teamlead O-Phase"
+    image: "/images/fachschaft/teamlead-o-phase_iwi.png"
+    person: "Vorname Nachname"
 ---
 
 ## Was ist die Fachschaft?
