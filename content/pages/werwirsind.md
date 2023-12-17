@@ -53,7 +53,7 @@ groups:
   - title: 'Teamlead Fachbereich O-Phase'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Daniel VG (INFB)'
+      - 'Daniel VG (?)'
 ---
 
 ## Was ist die Fachschaft?
