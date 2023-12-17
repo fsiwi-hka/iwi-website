@@ -1,7 +1,7 @@
 function Groups({groups}) {
     const renderedGroups = renderGroups(groups)
     return (
-        <div className="groups grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div className="groups grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 mb-16">
             { renderedGroups }
         </div>
     )
@@ -12,20 +12,22 @@ function renderGroups(groups) {
         const groupImage = group.image
             ? <img src={ group.image }
                    alt={group.title}
-                   className="object-cover"
-                   style={{ width: '320px', height: '320px' }} />
+                   className="object-cover rounded-lg"
+                   style={{ width: '228px', height: '228px' }} />
             : null
         return (
             <div key={group.title}>
                 { groupImage }
-                <h4>{ group.title }</h4>
-                <ul className="my-1 list-none">
+                
+                <ul className="mt-2 mb-0 mx-0 list-none">
                     {
                         group.people.map((person) => {
-                        return <li className="leading-4" key={person}>{ person }</li>
+                        return <li className="font-medium my-0" key={person}>{ person }</li>
                         })
                     }
                 </ul>
+
+                <p className="text-sm my-0">{ group.title }</p>
             </div>
         )
     })
