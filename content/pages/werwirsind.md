@@ -26,7 +26,7 @@ groups:
     image: '/images/fachschaft/florian_kaiser.jpg'
     people:
       - 'Florian Kaiser (INFB)'
-  - title: 'Main-Manager:in'
+  - title: 'Mail-Manager:in'
     image: '/images/fachschaft/dustin_sommerfeld.jpg'
     people:
       - 'Dustin Sommerfeld (MINB)'
