@@ -1,16 +1,11 @@
 name: Deploy Site to Server
 
-# on:
-#   push:
-#     branches:
-#       - master
-#   schedule:
-#     - cron: '0 4 * * *'
-
 on:
   push:
     branches:
-      - "*/*"
+      - master
+  schedule:
+    - cron: '0 4 * * *'
 
 jobs:
   build:
@@ -45,13 +40,13 @@ jobs:
           path: out
       - name: Debug Files
         run: ls
-      # - name: Upload to FTP
-      #   uses: wlixcc/SFTP-Deploy-Action@v1.0
-      #   with:
-      #     username: ${{ secrets.sftp_user_webspace }}
-      #     server: ${{ secrets.sftp_server_webspace}}
-      #     ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     local_path: out # Folder to deploy
-      #     remote_path: ${{ secrets.sftp_remote_path_webspace }}
-      #     args: '-o ConnectTimeout=5'
+      - name: Upload to FTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: ${{ secrets.sftp_user_webspace }}
+          server: ${{ secrets.sftp_server_webspace}}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: out # Folder to deploy
+          remote_path: ${{ secrets.sftp_remote_path_webspace }}
+          args: '-o ConnectTimeout=5'
 
