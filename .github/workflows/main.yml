@@ -10,7 +10,7 @@ name: Deploy Site to Server
 on:
   push:
     branches:
-      - "*"
+      - "*/*"
 
 jobs:
   build:
