@@ -1,11 +1,16 @@
 name: Deploy Site to Server
 
+# on:
+#   push:
+#     branches:
+#       - master
+#   schedule:
+#     - cron: '0 4 * * *'
+
 on:
   push:
     branches:
-      - master
-  schedule:
-    - cron: '0 4 * * *'
+      - "*"
 
 jobs:
   build:
@@ -14,16 +19,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16.20.0'
+      uses: actions/setup-node@v4
     - run: ./scripts/decrypt_credentials.sh
       env:
         CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
     - run: npm install
     - run: npm run build
     - name: Publish artifacts from out directory
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: out
         path: out
@@ -40,13 +43,13 @@ jobs:
           path: out
       - name: Debug Files
         run: ls
-      - name: Upload to FTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
-        with:
-          username: ${{ secrets.sftp_user_webspace }}
-          server: ${{ secrets.sftp_server_webspace}}
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: out # Folder to deploy
-          remote_path: ${{ secrets.sftp_remote_path_webspace }}
-          args: '-o ConnectTimeout=5'
+      # - name: Upload to FTP
+      #   uses: wlixcc/SFTP-Deploy-Action@v1.0
+      #   with:
+      #     username: ${{ secrets.sftp_user_webspace }}
+      #     server: ${{ secrets.sftp_server_webspace}}
+      #     ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     local_path: out # Folder to deploy
+      #     remote_path: ${{ secrets.sftp_remote_path_webspace }}
+      #     args: '-o ConnectTimeout=5'
 
