@@ -21,7 +21,7 @@ groups:
   - title: '2. Finanzer'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Bastian Knebel (?)'
+      - 'Bastian Knebel (WIIB)'
   - title: 'Protokollant:in'
     image: '/images/fachschaft/florian_kaiser.jpg'
     people:
@@ -33,7 +33,7 @@ groups:
   - title: 'Kaffee-Manager:in'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Dennis Lischer (?)'
+      - 'Denis Lischer (WIIB)'
   - title: 'Teamlead Fachbereich Events'
     image: '/images/fachschaft/placeholder.jpg'
     people:
@@ -45,15 +45,15 @@ groups:
   - title: 'Teamlead Fachbereich Infrastruktur'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'David Flaig (?)'
+      - 'David Flaig (WIIB)'
   - title: 'Teamlead Fachbereich Marketing'
     image: '/images/fachschaft/florian_kaiser.jpg'
     people:
       - 'Florian Kaiser (INFB)'
   - title: 'Teamlead Fachbereich O-Phase'
-    image: '/images/fachschaft/placeholder.jpg'
+    image: '/images/fachschaft/daniel_vg.jpg'
     people:
-      - 'Daniel VG (?)'
+      - 'Daniel VG (WIIM)'
 ---
 
 ## Was ist die Fachschaft?
