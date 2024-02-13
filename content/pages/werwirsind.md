@@ -23,9 +23,9 @@ groups:
     people:
       - 'Bastian Knebel (WIIB)'
   - title: 'Protokollant:in'
-    image: '/images/fachschaft/florian_kaiser.jpg'
+    image: '/images/fachschaft/alex_besch.jpg'
     people:
-      - 'Florian Kaiser (INFB)'
+      - 'Alex Besch (INFB)'
   - title: 'Mail-Manager:in'
     image: '/images/fachschaft/dustin_sommerfeld.jpg'
     people:
@@ -43,7 +43,7 @@ groups:
     people:
       - 'Moreno De Zorzi (INFB)'
   - title: 'Teamlead Fachbereich Infrastruktur'
-    image: '/images/fachschaft/placeholder.jpg'
+    image: '/images/fachschaft/david_flaig.jpg'
     people:
       - 'David Flaig (WIIB)'
   - title: 'Teamlead Fachbereich Marketing'
