@@ -10,7 +10,7 @@ header:
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
 **Auf der [Ersti-Info-Seite](/erstiinfos/) findet ihr ab sofort alle wichtigen
-Infos und Updates zur O-Phase, die am 25.09.2022 startet.**
+Infos und Updates zur O-Phase, die am 25.09.2023 startet.**
 
 ### Updates auch kurzfristig möglich
 

@@ -6,54 +6,54 @@ header:
   image: '/assets/backgrounds/fachschaft_iwi.png'
 groups:
 
-  - title: 'Vorstand'
-    image: '/images/fachschaft/vorstand_iwi.png'
+  - title: '1. Vorstand'
+    image: '/images/fachschaft/dustin_sommerfeld.jpg'
     people:
-      - 'Zoe Kammerdiener (IIBB)'
-      - 'Anja Buchmaier (MKIB)'
-  - title: 'Finanzer'
-    image: '/images/fachschaft/finanzer_iwi.png'
-    people:
-      - 'Marcel Rettig (INFB)'
-      - 'Michael Fischer (INFM)'
-  - title: 'Senat'
-    image: '/images/fachschaft/senat_iwi.png'
-    people:
-      - 'Zoe Kammerdiener (IIBB)'
-  - title: 'StuPa'
-    image: '/images/fachschaft/stupa_iwi.png'
-    people:
-      - 'Zoe Kammerdiener (IIBB)'
-      - 'Marcel Rettig (INFB)'
-  - title: 'Fakultätsrat'
-    image: '/images/fachschaft/fakultätsrat_iwi.png'
-    people:
-      - 'Carolin Schild (INFB)'
-  - title: 'Fachbereich Social Media'
-    image: '/images/fachschaft/socialMedia_iwi.png'
-    people:
-      - 'Melina Wünsch'
-      - 'Anja Buchmaier'
-      - 'Sabine Kaiser'
-  - title: 'Fachbereich Events'
-    image: '/images/fachschaft/events_iwi.png'
-    people:
-      - 'Athanasia Skaroglu Chasioti'
-      - 'Jens Ettl'
-  - title: 'Fachbereich Infrastruktur'
-    image: '/images/fachschaft/website_iwi.png'
-    people:
-      - 'Michael Fischer (INFM)'
-      - 'Matthias Handtmann (INFB)'
-      - 'Alexander Mader (WIB)'
-      - 'Charlotte Mohr (INFB)'
-      - 'Marcel Rettig (INFB)'
       - 'Dustin Sommerfeld (MINB)'
-      - 'Jonas Westenhoff (INFB)'
-  - title: 'Fachbereich Sponsoring'
-    image: '/images/fachschaft/sponsoring_iwi.png'
+  - title: '2. Vorstand'
+    image: '/images/fachschaft/guelnur_kanar.jpg'
     people:
-      - 'Anja Buchmaier'
+      - 'Gülnur Kanar (MINB)'
+  - title: '1. Finanzer'
+    image: '/images/fachschaft/ioannis_theodosiadis.jpg'
+    people:
+      - 'Ioannis Theodosiadis (WIIB)'
+  - title: '2. Finanzer'
+    image: '/images/fachschaft/placeholder.jpg'
+    people:
+      - 'Bastian Knebel (WIIB)'
+  - title: 'Protokollant:in'
+    image: '/images/fachschaft/alex_besch.jpg'
+    people:
+      - 'Alex Besch (INFB)'
+  - title: 'Mail-Manager:in'
+    image: '/images/fachschaft/dustin_sommerfeld.jpg'
+    people:
+      - 'Dustin Sommerfeld (MINB)'
+  - title: 'Kaffee-Manager:in'
+    image: '/images/fachschaft/placeholder.jpg'
+    people:
+      - 'Denis Lischer (WIIB)'
+  - title: 'Teamlead Fachbereich Events'
+    image: '/images/fachschaft/placeholder.jpg'
+    people:
+      - 'Wird gesucht!'
+  - title: 'Teamlead Fachbereich Sponsoring'
+    image: '/images/fachschaft/moreno_dezorzi.jpg'
+    people:
+      - 'Moreno De Zorzi (INFB)'
+  - title: 'Teamlead Fachbereich Infrastruktur'
+    image: '/images/fachschaft/david_flaig.jpg'
+    people:
+      - 'David Flaig (WIIB)'
+  - title: 'Teamlead Fachbereich Marketing'
+    image: '/images/fachschaft/florian_kaiser.jpg'
+    people:
+      - 'Florian Kaiser (INFB)'
+  - title: 'Teamlead Fachbereich O-Phase'
+    image: '/images/fachschaft/daniel_vg.jpg'
+    people:
+      - 'Daniel VG (WIIM)'
 ---
 
 ## Was ist die Fachschaft?
@@ -68,7 +68,7 @@ Sieben Studierende der Fachschaft IWI vertreten die Studierendeninteressen im Fa
 
 ## Wer sind wir?
 
-{{Groups}}
+{{Groups}} 
 
 ## Hast du Fragen? Willst du Mitmachen?
 
@@ -76,7 +76,9 @@ Habt ihr noch Fragen oder Anregungen? Dann schreibt uns doch an unsere Mail, kli
 
 Willst du bei uns mitmachen? Wir sind immer froh über engagierte Helferinnen und Helfer, die sich gerne für die Studierenden des Fachbereichs einsetzen wollen.
 
-Welche und wie viele Aufgaben ihr in der Fachschaft übernehmen und wie viel Zeit ihr investieren wollt, könnt ihr natürlich selbst entscheiden. Ob ihr einfach nur gerne an den Sitzungen teilnehmt oder euch aktiv um einen Aufgabenbereich kümmern wollt, ihr seid bei uns immer herzlich willkommen. Ein guter Anfang ist auf jeden Fall mittwochs im dritten Block (ab 11:30 Uhr) in den Sitzungen vorbei zu schauen. **Aktuell finden die Sitzungen sowohl online, als auch in Präsenz statt. Wenn du Interesse hast, Teil der aktiven Fachschaft zu werden, komm einfach zur Fachschaftssitzung. Immer mittwochs ab 11:30 Uhr im Raum E004 oder auf Zoom:** [https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09](https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09)
+Welche und wie viele Aufgaben ihr in der Fachschaft übernehmen und wie viel Zeit ihr investieren wollt, könnt ihr natürlich selbst entscheiden. Ob ihr einfach nur gerne an den Sitzungen teilnehmt oder euch aktiv um einen Aufgabenbereich kümmern wollt, ihr seid bei uns immer herzlich willkommen. Ein guter Anfang ist auf jeden Fall mittwochs im dritten Block (ab 11:30 Uhr) in den Sitzungen vorbei zu schauen. **Aktuell finden die Sitzungen sowohl online, als auch in Präsenz statt. Wenn du Interesse hast, Teil der aktiven Fachschaft zu werden, komm einfach zur Fachschaftssitzung. Immer mittwochs ab 11:30 Uhr im Raum E004 oder auf Zoom:**
+
+[Zur Fachschaftssitzung per Zoom](https://zoom.us/j/91904794188?pwd=NER5aE5wam9lcWlPQjFuUWhkMEtCdz09)
 
 ### Schreibt uns oder klingelt durch unter:
 
