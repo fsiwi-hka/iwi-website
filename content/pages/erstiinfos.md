@@ -76,7 +76,7 @@ Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase
+## O-Phase: 15.03. (Master) | 18. - 22.03.2024 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
@@ -110,11 +110,10 @@ also zum Zeitpunkt der Kontrolle maximal 24 Stunden alt. Macht den Test aber am 
 
 ### O-Phasen-Terminplan
 
-<!--
 **Hinweis:**
 Hier wird demnächst euer O-Phasen-Terminplan stehen. Wir sind gerade in der Planung eurer Events. Seid gespannt! ;)
--->
 
+<!--
 Hier siehst du unseren aktuellen Terminplan der O-Phase.
 
 Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden,
@@ -122,6 +121,7 @@ sind hier zwei Terminpläne zu sehen. Gegebenenfalls kann es auch innerhalb eine
 geben, achtet hier auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können
 es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu
 informieren.
+-->
 
 <!--
 Remote bedeutet, dass dieser Programmpunkt zusätzlich auch online verfügbar sein wird, falls jemand nicht
@@ -130,12 +130,13 @@ vor Ort sein kann.
 Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.
 -->
 
-**Änderungen nach dem 19.09.2023 sind fett hervorgehoben.**
+**Änderungen nach dem 17.03.2024 sind fett hervorgehoben.**
 
 ### Terminplan: Informatik und Medieninformatik
 
 **Wichtig für die Studiengänge Informatik (Bachelor + Master) & Medieninformatik**
 
+<!--
 <small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
 
 <div class="table-responsive">
@@ -391,11 +392,13 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
     </table>
 </div>
+-->
 
 ### Terminplan: Wirtschaftsinformatik, International IT Business und Data Science
 
 **Wichtig für die Studiengänge Wirtschaftsinformatik (Bachelor + Master), Internationales IT Business und Data Science**
 
+<!--
 **Raumbelegung (wenn nicht anders angegeben): WI / IIB / DS: E003 & E004**
 
 <small>Hinweis: Tabellen sind mobil optimiert und horizontal scrollbar.</small>
@@ -629,6 +632,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
     </table>
 </div>
+-->
 
 ## Sonstiges
 

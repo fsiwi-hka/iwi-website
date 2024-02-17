@@ -1,16 +1,16 @@
 ---
 title: 'Aktuelle Infos zur O-Phase'
-excerpt: 'Die sehnsüchtig erwarteten Infos zur O-Phase im Wintersemester 2023/24
+excerpt: 'Die sehnsüchtig erwarteten Infos zur O-Phase im Wintersemester 2021/22
 sind nun verfügbar.'
 author: 'Dustin'
-date: '2023-09-01'
+date: '2021-08-30'
 header:
   title: 'Aktuelle Infos zur O-Phase'
   subtitle: 'Behaltet immer die Erstsemester-Info-Seite im Blick, um nichts zu verpassen'
   image: '/assets/backgrounds/erstiinfos.jpg'
 ---
 **Auf der [Ersti-Info-Seite](/erstiinfos/) findet ihr ab sofort alle wichtigen
-Infos und Updates zur O-Phase, die am 25.09.2023 startet.**
+Infos und Updates zur O-Phase, die am 27.09.2021 startet.**
 
 ### Updates auch kurzfristig möglich
 
