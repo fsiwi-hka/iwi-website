@@ -18,6 +18,11 @@ leichter einordnen und behalten.
 Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natürlich sind auch alle anderen Erstis der 
 Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 
+## Wichtiger Hinweis
+
+Aufgrund des Cyberangriffs im vergangenen Oktober möchten wir euch bitten, euren eigenen Laptop mitzubringen. Es ist wahrscheinlich, 
+dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehen werden.
+
 ## Überblick
 
 <div class="table-responsive">
