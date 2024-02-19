@@ -61,6 +61,10 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
             </td>
         </tr>
         <tr>
+            <td>Benötigte Hardware</td>
+            <td>eigenen Laptop</td>
+        </tr>
+        <tr>
             <td>Benötigte Vorkenntnisse</td>
             <td>keine</td>
         </tr>

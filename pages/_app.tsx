@@ -19,13 +19,12 @@ function IWIWebsite({ Component, pageProps }) {
 
             <Menu />
 
-            <section className="main w-full mx-auto px-8 py-8" style={{ background: `#3999bf` }}>
-                <div className="text-gray-400 mx-auto max-w-screen-lg text-sm">
+            <section className="main w-full mx-auto px-8 py-4" style={{ background: `#ddd` }}>
+                <div className="mx-auto max-w-screen-lg text-sm">
                     <p className="my-0">
-                        <strong>Registrierung für das StudiBoard:</strong> Kommt bei uns in der <strong>Fachschaftssitzung (E013) mittwochs um 11:30 Uhr</strong> 
-                        vorbei, zeigt euren Studentenausweis nach der Sitzung vor, um euer RZ-Kürzel zu verifizieren <strong>ODER</strong> sendet
-                        euren Studentenausweis, euer RZ-Kürzel sowie eine private Email-Adresse an <a href="/scripts/email.php?address=kontakt">
-                        <strong>kontakt[at]iwi-hka.de</strong></a>. Anschließend wird euer Account manuell freigeschalten.
+                        <strong style={{ color: `#3999bf` }}>Registrierung für das StudiBoard (Nextcloud):</strong> Sendet euren Studentenausweis, euer RZ-Kürzel 
+                        sowie ein Bild von euch an <a href="/scripts/email.php?address=kontakt">
+                        <strong style={{ color: `#3999bf` }}>kontakt@iwi-hka.de</strong></a>. Anschließend wird euer Account manuell freigeschalten.
                     </p>
                 </div>
             </section>
