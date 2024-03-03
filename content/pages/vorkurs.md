@@ -90,7 +90,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 - Den Nachmittag (ab 13:00 Uhr) habt ihr dann, um Aufgaben zum morgens Erlernten zu bearbeiten.
   Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
   Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden kennenzulernen.
-  Wir treffen uns dann wieder im gleichen Raum wie Vormittags.
+  Wir treffen uns dann wieder im gleichen Raum wie vormittags.
 - Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen 15:00 und 17:00 Uhr.
   Die Tutoren bleiben natürlich bis zum Schluss 🙂
 - Bei Interesse können wir den Tag auch noch gemütlich in der Fachschaft ausklingen lassen.
@@ -147,15 +147,15 @@ Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
 
 ## Unterlagen
 
-Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
-
 <!--
+Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
+-->
+
 Die Aufgaben und Lösungen werden im Laufe des Kurses freigeschaltet.
 
-- [Unterlagen zu Java](https://drive.google.com/drive/folders/1XV3ycmwWzWfJ7sd_rUoxxiqdnfsHuw-Z?usp=share_link)
-- [Unterlagen zu C#](https://drive.google.com/drive/folders/1KewU0N5TVFZS4zbn-2PG_puC0CYzwXyL?usp=share_link)
-- [Unterlagen zu Python](https://drive.google.com/drive/folders/1uHUlEHpMK6NaoPXAEiGeW-B5lznpCJzf?usp=share_link)
--->
+- [Unterlagen zu Java](https://drive.google.com/drive/folders/19_GZSQDUyNBuAUBMNAwzVAh-w6iVOX-s)
+- [Unterlagen zu C#](https://drive.google.com/drive/folders/19lFbxlRweCOT0noXmKswt1HvDrzY-kRb)
+- [Unterlagen zu Python](https://drive.google.com/drive/folders/19sD7EiHtnDQ9UsEbwq0-URpEP802wqgu)
 
 ## Mehr
 
