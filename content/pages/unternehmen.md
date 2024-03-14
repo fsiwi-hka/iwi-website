@@ -79,6 +79,11 @@ header:
             <img src="/images/unternehmen/pizza_lorenzo.png"></img>
         </a>
     </div>
+    <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://online.sovendus.com/">
+            <img src="/images/unternehmen/sovendus.png"></img>
+        </a>
+    </div>
 </div>
 
 Wir pflegen viele Partnerschaften mit Unternehmen in der Region, nicht zuletzt durch Alumni, die der Fachschaft über das Studium hinaus treu bleiben. Auch Sie möchten mit der Fachschaft zusammenarbeiten? Gerne!
