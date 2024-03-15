@@ -159,7 +159,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>10:00 - 11:00</td>
-            <td>E103</td>
+            <td>E113</td>
             <td>Begrüßung & Informationsveranstaltungen</td>
             <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
             <td>WIIM</td>
