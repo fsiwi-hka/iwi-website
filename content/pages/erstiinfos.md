@@ -209,32 +209,24 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td>Montag, 18.03.2024</td>
-            <td>9:00 - 09:30</td>
-            <td>TBA</td>
+            <td>9:00 - 10:00</td>
+            <td>siehe Aushang im Geb. E</td>
             <td>Begrüßung & Informationsveranstaltungen</td>
             <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
-            <td>INFB (Nachname TBA), MINB (Nachname TBA)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>9:30 - 10:00</td>
-            <td>TBA</td>
-            <td>Begrüßung & Informationsveranstaltungen</td>
-            <td>Begrüßung der Erstsemester durch den Dekan, Vorstellung der Professoren des ersten Semesters, etc.</td>
-            <td>INFB (Nachname TBA)</td>
+            <td>INFB , MINB</td>
         </tr>
         <tr>
             <td></td>
             <td>10:00 - 12:00</td>
-            <td>LI he</td>
-            <td>Vorstellung der Fachschaft & Vorstellung des O-Phasen-Programms</td>
+            <td>E201</td>
+            <td>Vorstellung der Fachschaft, Vorstellung des O-Phasen-Programms und Powerpoint Karaoke</td>
             <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.</td>
             <td>INFB, MINB</td>
         </tr>
         <tr>
             <td></td>
             <td>12:00 - 13:00</td>
-            <td>TBA</td>
+            <td>E002</td>
             <td>Brunch</td>
             <td>Ein Brunch unter Erstis zum Kennenlernen.</td>
             <td>INFB, MINB</td>
@@ -261,8 +253,8 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td></td>
-            <td>ab 16:00 bis ca. 00:00</td>
-            <td>Vor Geb. E, E003, E004</td>
+            <td>ab 16:00 bis ca. 23:00</td>
+            <td>Vor Geb. E, E004</td>
             <td>Erstiabend</td>
             <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist 
                 gesorgt.</td>
@@ -279,7 +271,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td>Dienstag, 19.03.2024</td>
             <td>10:00 - 13:00</td>
-            <td>TBA</td>
+            <td>E203</td>
             <td>Englisch-Kurs Einstufung</td>
             <td>Im ersten Semester müsst ihr einen Englisch-Kurs belegen. Alle Infos findet ihr auf der
               <a href="https://www.h-ka.de/anmeldung-sprachkurse#c28548">Seite des IFS</a>.
@@ -320,7 +312,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-            <td>E103</td>
+            <td>E201</td>
             <td>PO-Briefing</td>
             <td>PO = Prüfungsordnung</td>
             <td>INFB, MINB</td>
@@ -462,25 +454,25 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>10:00 - 11:00</td>
-            <td>TBA</td>
-            <td>Wichtige Themen im Studium</td>
-            <td>Informationen zu Zugangsdaten, Hochschulsysteme, Studienorganisation und Intranet.</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>11:00 - 12:00</td>
-            <td>TBA</td>
-            <td>Vorstellung der Fachschaft & Vorstellung des O-Phasen-Programms</td>
+            <td>E004</td>
+            <td>Vorstellung der Fachschaft, Vorstellung des O-Phasen-Programms und Powerpoint Karaoke</td>
             <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.</td>
             <td>WIIB, IIBB, DSCB</td>
         </tr>
         <tr>
             <td></td>
-            <td>12:00 - 13:00</td>
-            <td>TBA</td>
+            <td>11:00 - 11:30</td>
+            <td>E002</td>
             <td>Brunch</td>
             <td>Ein Brunch unter Erstis zum Kennenlernen.</td>
+            <td>WIIB, IIBB, DSCB</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>12:00 - 13:00</td>
+            <td>E004</td>
+            <td>Vorstellung der Fachschaft, Vorstellung des O-Phasen-Programms und Powerpoint Karaoke</td>
+            <td>Alles, was Erstis zum Start ihres Studiums an der HKA in den ersten Tagen nicht verpassen sollten.</td>
             <td>WIIB, IIBB, DSCB</td>
         </tr>
         <tr>
@@ -505,7 +497,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td></td>
-            <td>ab 16:00 bis ca. 00:00</td>
+            <td>ab 16:00 bis ca. 23:00</td>
             <td>Vor Geb. E, E003, E004</td>
             <td>Erstiabend</td>
             <td>Ein gemütlicher Abend, an dem ihr euch alle besser kennenlernen könnt. Für Essen und Trinken ist 
@@ -562,7 +554,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>15:30 - 17:00</td>
-            <td>E201</td>
+            <td>E004</td>
             <td>PO-Briefing</td>
             <td>PO = Prüfungsordnung</td>
             <td>WIIB, IIBB, DSCB</td>
