@@ -76,7 +76,7 @@ Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase: 15.03. (Master) | 18. - 22.03.2024 (Bachelor + Master)
+## O-Phase: 18. - 22.03.2024 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
@@ -132,6 +132,7 @@ vor Ort sein kann.
 Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den Plan eingetragen.
 -->
 
+<!--
 **Änderungen nach dem 17.03.2024 sind fett hervorgehoben.**
 
 ### Terminplan: Informatik (Master) und Wirtschaftsinformatik (Master)
@@ -190,6 +191,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
     </table>
 </div>
+-->
 
 ### Terminplan: Informatik und Medieninformatik
 
@@ -288,17 +290,6 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td></td>
-            <td>11:30 - 12:30</td>
-            <td>Geb. A, Aula</td>
-            <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>Für vor Ort bitte anmelden: 
-                <a href="https://www.h-ka.de/esb">Zur Anmeldung</a>. Einen Link zum 
-                Video gibt es im Anschluss auf <a href="http://www.youtube.de/hochschulekarlsruhehka">dieser 
-                Seite</a>.</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
             <td>13:00 - 14:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
@@ -327,6 +318,14 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td></td>
+            <td><strong>17:00</strong></td>
+            <td><strong>Vor E013</strong></td>
+            <td><strong>Ausgabe Erstitaschen</strong></td>
+            <td><strong>Es erwartet euch eine prallgefüllte Erstitasche.</strong></td>
+            <td><strong>alle</strong></td>
+        </tr>
+        <tr>
+            <td></td>
             <td>ab 17:00 Uhr - open end</td>
             <td>Treffpunkt vor dem Gebäude E</td>
             <td>Bar Hopping</td>
@@ -344,6 +343,17 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td>Mittwoch, 20.03.2024</td>
+            <td><strong>11:30 - 12:30</strong></td>
+            <td><strong>Geb. A, Aula</strong></td>
+            <td><strong>Erstsemesterbegrüßung durch das Rektorat</strong></td>
+            <td>Für vor Ort bitte anmelden: 
+                <a href="https://www.h-ka.de/esb">Zur Anmeldung</a>. Einen Link zum 
+                Video gibt es im Anschluss auf <a href="http://www.youtube.de/hochschulekarlsruhehka">dieser 
+                Seite</a>.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
             <td>11:30 - 13:00</td>
             <td>E013</td>
             <td>Chillen in der Fachschaft</td>
@@ -530,17 +540,6 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td></td>
-            <td>11:30 - 12:30</td>
-            <td>Geb. A, Aula</td>
-            <td>Erstsemesterbegrüßung durch das Rektorat</td>
-            <td>Für vor Ort bitte anmelden: 
-                <a href="https://www.h-ka.de/esb">Zur Anmeldung</a>. Einen Link zum 
-                Video gibt es im Anschluss auf <a href="http://www.youtube.de/hochschulekarlsruhehka">dieser 
-                Seite</a>.</td>
-            <td>alle</td>
-        </tr>
-        <tr>
-            <td></td>
             <td>13:00 - 14:00</td>
             <td>Karlsruhe</td>
             <td>Mittagspause</td>
@@ -569,6 +568,14 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td></td>
+            <td><strong>17:00</strong></td>
+            <td><strong>Vor E013</strong></td>
+            <td><strong>Ausgabe Erstitaschen</strong></td>
+            <td><strong>Es erwartet euch eine prallgefüllte Erstitasche.</strong></td>
+            <td><strong>alle</strong></td>
+        </tr>
+        <tr>
+            <td></td>
             <td>ab 17:00 Uhr - open end</td>
             <td>Treffpunkt vor dem Gebäude E</td>
             <td>Bar Hopping</td>
@@ -586,6 +593,17 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         </tr>
         <tr>
             <td>Mittwoch, 20.03.2024</td>
+            <td><strong>11:30 - 12:30</strong></td>
+            <td><strong>Geb. A, Aula</strong></td>
+            <td><strong>Erstsemesterbegrüßung durch das Rektorat</strong></td>
+            <td>Für vor Ort bitte anmelden: 
+                <a href="https://www.h-ka.de/esb">Zur Anmeldung</a>. Einen Link zum 
+                Video gibt es im Anschluss auf <a href="http://www.youtube.de/hochschulekarlsruhehka">dieser 
+                Seite</a>.</td>
+            <td>alle</td>
+        </tr>
+        <tr>
+            <td></td>
             <td>11:30 - 13:00</td>
             <td>E013</td>
             <td>Chillen in der Fachschaft</td>
