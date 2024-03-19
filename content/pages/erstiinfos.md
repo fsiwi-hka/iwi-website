@@ -295,7 +295,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>14:00 - 15:30</td>
-            <td>TBA</td>
+            <td>Aula A-Gebäude</td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.</td>
             <td>alle</td>
@@ -545,7 +545,7 @@ Die Links zu den Veranstaltungen werden spätestens 1-2 Tage vor Beginn in den P
         <tr>
             <td></td>
             <td>14:00 - 15:30</td>
-            <td>TBA</td>
+            <td>Aula A-Gebäude</td>
             <td>RZ-Einführungsveranstaltung</td>
             <td>Hier erfahrt ihr alles Wichtige zur Hochschulinfrastruktur.</td>
             <td>alle</td>
