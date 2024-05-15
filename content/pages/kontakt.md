@@ -22,4 +22,4 @@ Raum E013
 
 Für Sponsoring und Kooperationsanfragen:
 
-[icon:at|E-Mail an das Sponsoring-Team schreiben](/scripts/email.php?address=sponsoring)
+[icon:at|E-Mail an das Sponsoring-Team schreiben](/scripts/email.php?address=kontakt)
