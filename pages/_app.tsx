@@ -19,7 +19,7 @@ function IWIWebsite({ Component, pageProps }) {
 
             <Menu />
 
-            {<!--           <section className="main w-full mx-auto px-8 py-4" style={{ background: `#ddd` }}>
+            {/*         <section className="main w-full mx-auto px-8 py-4" style={{ background: `#ddd` }}>
                 <div className="mx-auto max-w-screen-lg text-sm">
                     <p className="my-0">
                         <strong style={{ color: `#3999bf` }}>Registrierung für das StudiBoard (Nextcloud):</strong> Sendet euren Studentenausweis, euer RZ-Kürzel 
@@ -28,7 +28,7 @@ function IWIWebsite({ Component, pageProps }) {
                     </p>
                 </div>
             </section>
--->}
+*/}
             <Header {...pageProps.data.header} />
 
             <section className="main w-full max-w-screen-lg mx-auto px-8">
