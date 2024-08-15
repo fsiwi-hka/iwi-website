@@ -81,9 +81,9 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 
 - Wir beginnen jeden Tag um 10 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
 - Raumeinteilung wird folgende sein:  
-  - Java: wird noch bekanntgegeben
-  - C#: wird noch bekanntgegeben
-  - Python: wird noch bekanntgegeben
+  - Java: wird noch bekannt gegeben
+  - C#: wird noch bekannt gegeben
+  - Python: wird noch bekannt gegeben
 - Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
   Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
 - Dann ist erst mal Mittagspause. Da könnt ihr euch den Tutoren anschließen mit in die Mensa oder in die Stadt zu gehen.
@@ -107,9 +107,9 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <tr>
       <td>10 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
-      <td>Java: wird noch bekanntgegeben
-      <br>C#: wird noch bekanntgegeben
-      <br>Python: wird noch bekanntgegeben
+      <td>Java: wird noch bekannt gegeben
+      <br>C#: wird noch bekannt gegeben
+      <br>Python: wird noch bekannt gegeben
       </td>
     </tr>
     <tr>
