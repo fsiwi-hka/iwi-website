@@ -29,7 +29,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>04.03. - 07.03.2024<br />(Mo - Do)</td>
+            <td>16.09. - 19.09.2024<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
@@ -81,9 +81,9 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 
 - Wir beginnen jeden Tag um 10 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
 - Raumeinteilung wird folgende sein:  
-  - Java: E203
-  - C#: LI137
-  - Python: E302
+  - Java: wird noch bekannt gegeben
+  - C#: wird noch bekannt gegeben
+  - Python: wird noch bekannt gegeben
 - Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
   Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
 - Dann ist erst mal Mittagspause. Da könnt ihr euch den Tutoren anschließen mit in die Mensa oder in die Stadt zu gehen.
@@ -107,9 +107,9 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <tr>
       <td>10 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
-      <td>Java: E203
-      <br>C#: LI137
-      <br>Python: E302
+      <td>Java: wird noch bekannt gegeben
+      <br>C#: wird noch bekannt gegeben
+      <br>Python: wird noch bekannt gegeben
       </td>
     </tr>
     <tr>
@@ -147,15 +147,17 @@ Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
 
 ## Unterlagen
 
-<!--
 Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
--->
+
+<!--
 
 Die Aufgaben und Lösungen werden im Laufe des Kurses freigeschaltet.
 
 - [Unterlagen zu Java](https://drive.google.com/drive/folders/19_GZSQDUyNBuAUBMNAwzVAh-w6iVOX-s)
 - [Unterlagen zu C#](https://drive.google.com/drive/folders/19lFbxlRweCOT0noXmKswt1HvDrzY-kRb)
 - [Unterlagen zu Python](https://drive.google.com/drive/folders/19sD7EiHtnDQ9UsEbwq0-URpEP802wqgu)
+
+-->
 
 ## Mehr
 
