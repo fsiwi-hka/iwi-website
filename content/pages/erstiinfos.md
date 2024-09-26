@@ -20,7 +20,7 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 
-[icon:download|Download Ersti-Heft SS 2024 (PDF)](/assets/downloads/Erstiheft_SS2024.pdf)
+[icon:download|Download Ersti-Heft WS 2024/25 (PDF)](/assets/downloads/ophase/erstiheft/Erstiheft_WS_2024_25.pdf)
 Das Passwort zum Ersti-Heft erhältst du am Freitag bzw. Montag/Dienstag von der Fachschaft.
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
