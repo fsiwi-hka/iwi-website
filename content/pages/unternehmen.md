@@ -30,6 +30,11 @@ header:
         </a>
     </div>
     <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.bockaufkarlsruhe.de/">
+            <img src="/images/unternehmen/bockaufkarlsruhe.jpg"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
         <a class="flex justify-center items-center" target="_blank" href="https://www.cas-mitgestalter.de/jobs/">
             <img src="/images/unternehmen/cas.png"></img>
         </a>
@@ -65,8 +70,28 @@ header:
         </a>
     </div>
     <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://interflex.com/de-de/">
+            <img src="/images/unternehmen/interflex.png"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
         <a class="flex justify-center items-center" target="_blank" href="https://www.it-economics.de/karriere/stellenanzeigen">
             <img src="/images/unternehmen/it-economics.png"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://karlsruhe.digital/">
+            <img src="/images/unternehmen/karlsruhedigital.png"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.jugendwerk-awo.de/">
+            <img src="/images/unternehmen/KJW_Karlsruhe.png"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.notebuddys.de/">
+            <img src="/images/unternehmen/notebuddys.png"></img>
         </a>
     </div>
     <div class="flex justify-center items-center" style="height:200px;">
@@ -82,6 +107,11 @@ header:
     <div class="flex justify-center items-center" style="height:200px;">
         <a class="flex justify-center items-center" target="_blank" href="https://online.sovendus.com/">
             <img src="/images/unternehmen/sovendus.png"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://wgheld.de/">
+            <img src="/images/unternehmen/wg-held.png"></img>
         </a>
     </div>
 </div>
