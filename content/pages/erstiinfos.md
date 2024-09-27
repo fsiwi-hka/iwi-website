@@ -30,10 +30,13 @@ Die Präsentation zur Vorstellung der Fachschaft findest du hier:
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 
 - [PO-Briefing-Folien - INFM](/assets/downloads/ophase/po-briefing/PO-Briefing_INFM.pdf)
+
 <!--
+
 - [PO-Briefing-Folien - INFB / MINB](/assets/downloads/po_briefing_infm_ws_2022.pdf)
 - [PO-Briefing-Folien - WI / DSC / IIB Bachelor](/assets/downloads/po_briefing_bachelor_wi_dsc_iib_ss_2023.pdf)
 - [RZ Einführung - WI / DSC / IIB Bachelor](/assets/downloads/rz_einfuehrung_wi_dsc_iib_ss_2023.pdf)
+
 -->
 
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
