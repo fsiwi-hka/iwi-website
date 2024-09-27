@@ -23,12 +23,18 @@ Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 [icon:download|Download Ersti-Heft WS 2024/25 (PDF)](/assets/downloads/ophase/erstiheft/Erstiheft_WS_2024_25.pdf)
 Das Passwort zum Ersti-Heft erhältst du am Freitag bzw. Montag/Dienstag von der Fachschaft.
 
+Die Präsentation zur Vorstellung der Fachschaft findest du hier:
+
+- [Vorstellung Fachschaft](/assets/downloads/ophase/vorstellung/Vorstellung_Fachschaft.pdf)
+
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 
-- [PO-Briefing-Folien - INFB / MINB](/assets/downloads/po_briefing_infb_minb_ss_2023.pdf)
-- [PO-Briefing-Folien - Master Informatik](/assets/downloads/po_briefing_infm_ws_2022.pdf)
+- [PO-Briefing-Folien - INFM](/assets/downloads/ophase/po-briefing/PO-Briefing_INFM.pdf)
+<!--
+- [PO-Briefing-Folien - INFB / MINB](/assets/downloads/po_briefing_infm_ws_2022.pdf)
 - [PO-Briefing-Folien - WI / DSC / IIB Bachelor](/assets/downloads/po_briefing_bachelor_wi_dsc_iib_ss_2023.pdf)
 - [RZ Einführung - WI / DSC / IIB Bachelor](/assets/downloads/rz_einfuehrung_wi_dsc_iib_ss_2023.pdf)
+-->
 
 Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
 [FAQ-Seite](/faq).
@@ -59,7 +65,9 @@ informieren.
 
 TBA = to be announced
 
-[icon:download|Download O-Phasen-Zeitplan WS 2024/25 (PDF)](/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2024.pdf) 
+**Achtung: Version 2 !!!**
+
+[icon:download|Download O-Phasen-Zeitplan WS 2024/25 V2 (PDF)](/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2024_V2.pdf) 
 
 ## Sonstiges
 
