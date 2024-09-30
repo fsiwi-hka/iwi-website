@@ -68,9 +68,9 @@ informieren.
 
 TBA = to be announced
 
-**Achtung: Version 2 !!!**
+**Achtung: Version 3 !!!**
 
-[icon:download|Download O-Phasen-Zeitplan WS 2024/25 V2 (PDF)](/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2024_V2.pdf) 
+[icon:download|Download O-Phasen-Zeitplan WS 2024/25 V3 (PDF)](/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2024_V3.pdf) 
 
 ## Sonstiges
 
