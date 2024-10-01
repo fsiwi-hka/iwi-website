@@ -30,6 +30,8 @@ Die Präsentation zur Vorstellung der Fachschaft findest du hier:
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 
 - [PO-Briefing-Folien - INFM](/assets/downloads/ophase/po-briefing/PO-Briefing_INFM.pdf)
+- [PO-Briefing-Folien - INFB / MINB](/assets/downloads/ophase/po-briefing/PO-Briefing_INFB_MINB.pdf)
+- [PO-Briefing-Folien - WIIB / IIBB / DSCB](/assets/downloads/ophase/po-briefing/PO-Briefing_WIIB_IIBB_DSCB.pdf)
 
 <!--
 
