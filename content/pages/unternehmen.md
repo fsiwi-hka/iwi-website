@@ -110,6 +110,11 @@ header:
         </a>
     </div>
     <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://www.utb.de/">
+            <img src="/images/unternehmen/utb.png"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
         <a class="flex justify-center items-center" target="_blank" href="https://wgheld.de/">
             <img src="/images/unternehmen/wg-held.png"></img>
         </a>
@@ -158,24 +163,36 @@ Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!
 
 ### Aktuelle Kooperationen
 
-<div id="sponsoren" class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-    <div class="flex justify-center items-center" style="height:200px;">
-      <ul>
-        <li>Gameforge ist ein Anbieter von Online-Spielen. Die international tätige Unternehmensgruppe mit Hauptsitz in Karlsruhe vertreibt 13 Spiele in über 75 Ländern und hat über 450 Millionen registrierte Spieler.</li>
-        <li>Exxeta steht für die einzigartige Verbindung von Business und IT mit Schwerpunkt in den Branchen Automotive, Energy und Financial Services.</li>
-        <li>Die INIT GmbH ist ein deutsches Unternehmen für IT-Lösungen im öffentlichen Personenverkehr</li>
-      </ul>
-    </div>  
-  <div style="height:150px;" class="flex justify-evenly items-center gap-5">
-        <a class="flex justify-center items-center" target="_blank" href="https://gameforge.com">
-            <img src="/images/unternehmen/gameforge.png"></img>
-        </a>
-        <a class="flex justify-center items-center" target="_blank" href="https://exxeta.com">
-            <img src="/images/unternehmen/exxeta.png"></img>
-        </a>
-        <a class="flex justify-center items-center" target="_blank" href="https://www.initse.com/dede/home/">
-            <img src="/images/unternehmen/init.jpg"></img>
-        </a>
+<div id="sponsoren" class="grid grid-cols-1 sm:grid-cols-1 gap-10">
+    <div class="w-full bg-white rounded-lg shadow shadow-lg">
+        <div class="flex flex-row p-6 items-center">
+            <img class="h-12 max-h-12 object-contain mr-10" src="/images/unternehmen/gameforge.png" alt=""/>
+            <span class="text-sm text-gray-500 dark:text-gray-400 align-left ">Gameforge ist ein Anbieter von Online-Spielen. Die international tätige Unternehmensgruppe mit Hauptsitz in Karlsruhe vertreibt 13 Spiele in über 75 Ländern und hat über 450 Millionen registrierte Spieler.</span>
+        </div>
+    </div>
+    <div class="w-full bg-white rounded-lg shadow shadow-lg">
+        <div class="flex flex-row p-6 items-center">
+            <img class="h-12 max-h-12 object-contain mr-10" src="/images/unternehmen/exxeta.png" alt=""/>
+            <span class="text-sm text-gray-500 dark:text-gray-400 align-left">Exxeta steht für die einzigartige Verbindung von Business und IT mit Schwerpunkt in den Branchen Automotive, Energy und Financial Services.</span>
+        </div>
+    </div>
+    <div class="w-full bg-white rounded-lg shadow shadow-lg">
+        <div class="flex flex-row p-6 items-center">
+            <img class="h-12 max-h-12 object-contain mr-10" src="/images/unternehmen/init.jpg" alt=""/>
+            <span class="text-sm text-gray-500 dark:text-gray-400 align-left">Die INIT GmbH ist führender Anbieter für integrierte Telematik-Lösungen im öffentlichen Nahverkehr weltweit. Wir bieten innovative, verlässliche und nachhaltige Lösungen für alle betrieblichen Aufgaben von Verkehrsunternehmen.</span>
+        </div>
+    </div>
+    <div class="w-full bg-white rounded-lg shadow shadow-lg">
+        <div class="flex flex-row p-6 items-center">
+            <img class="h-16 max-h-16 object-contain mr-10" src="/images/unternehmen/objektkultur.png" alt=""/>
+            <span class="text-sm text-gray-500 dark:text-gray-400 align-left">Objektkultur digitalisiert Geschäftsprozesse mit innovativen IT-Lösungen, um die Wettbewerbsfähigkeit der Kunden zu steigern. Dabei setzen sie auf höchste Qualität und modernste Technologien.</span>
+        </div>
+    </div>
+    <div class="w-full bg-white rounded-lg shadow shadow-lg">
+        <div class="flex flex-row p-6 items-center">
+            <img class="h-16 max-h-16 object-contain mr-10" src="/images/unternehmen/cas.png" alt=""/>
+            <span class="text-sm text-gray-500 dark:text-gray-400 align-left">Die CAS Software AG hat sich in den vergangenen Jahren zum deutschen Marktführer für Kundenbeziehungsmanagement (CRM) im Mittelstand entwickelt und ist Spezialist für Konfigurationslösungen (CPQ) im Mittelstand und für Großunternehmen.</span>
+        </div>
     </div>
 </div>
 
