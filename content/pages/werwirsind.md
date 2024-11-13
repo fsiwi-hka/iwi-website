@@ -11,17 +11,17 @@ groups:
     people:
       - 'Dustin Sommerfeld (MINB)'
   - title: '2. Vorstand'
-    image: '/images/fachschaft/guelnur_kanar.jpg'
+    image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Gülnur Kanar (MINB)'
+      - 'Henriette Müller-Kiefer (????)'
   - title: '1. Finanzer'
-    image: '/images/fachschaft/ioannis_theodosiadis.jpg'
-    people:
-      - 'Ioannis Theodosiadis (WIIB)'
-  - title: '2. Finanzer'
     image: '/images/fachschaft/placeholder.jpg'
     people:
       - 'Bastian Knebel (WIIB)'
+  - title: '2. Finanzer'
+    image: '/images/fachschaft/placeholder.jpg'
+    people:
+      - 'Denise Scherer (????)'
   - title: 'Protokollant:in'
     image: '/images/fachschaft/alex_besch.jpg'
     people:
@@ -37,11 +37,11 @@ groups:
   - title: 'Teamlead Fachbereich Events'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Wird gesucht!'
+      - 'Denise Scherer (????)'
   - title: 'Teamlead Fachbereich Sponsoring'
-    image: '/images/fachschaft/moreno_dezorzi.jpg'
+    image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Moreno De Zorzi (INFB)'
+      - 'Denis Lischer (WIIB)'
   - title: 'Teamlead Fachbereich Infrastruktur'
     image: '/images/fachschaft/david_flaig.jpg'
     people:
@@ -51,9 +51,9 @@ groups:
     people:
       - 'Florian Kaiser (INFB)'
   - title: 'Teamlead Fachbereich O-Phase'
-    image: '/images/fachschaft/daniel_vg.jpg'
+    image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Daniel VG (WIIM)'
+      - 'Wird gesucht für SS25!'
 ---
 
 ## Was ist die Fachschaft?

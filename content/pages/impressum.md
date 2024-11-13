@@ -12,7 +12,7 @@ Fachschaft Informatik und Wirtschaftsinformatik
 Moltkestraße 30  
 76133 Karlsruhe
 
-Vertreten durch: Raphael Brand, Gülnur Kanar
+Vertreten durch: Dustin Sommerfeld, Henriette Müller-Kiefer
 
 ### Kontakt
 
@@ -21,8 +21,8 @@ Vertreten durch: Raphael Brand, Gülnur Kanar
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-Raphael Brand  
-Gülnur Kanar
+Dustin Sommerfeld
+Henriette Müller-Kiefer
 
 ## Verbraucherstreitbeilegung
 
