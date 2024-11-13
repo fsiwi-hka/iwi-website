@@ -13,7 +13,7 @@ groups:
   - title: '2. Vorstand'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Henriette Müller-Kiefer (????)'
+      - 'Henriette Müller-Kiefer (DSCB)'
   - title: '1. Finanzer'
     image: '/images/fachschaft/placeholder.jpg'
     people:
@@ -21,7 +21,7 @@ groups:
   - title: '2. Finanzer'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Denise Scherer (????)'
+      - 'Denise Scherer (WIIB)'
   - title: 'Protokollant:in'
     image: '/images/fachschaft/alex_besch.jpg'
     people:
@@ -37,7 +37,7 @@ groups:
   - title: 'Teamlead Fachbereich Events'
     image: '/images/fachschaft/placeholder.jpg'
     people:
-      - 'Denise Scherer (????)'
+      - 'Denise Scherer (WIIB)'
   - title: 'Teamlead Fachbereich Sponsoring'
     image: '/images/fachschaft/placeholder.jpg'
     people:
