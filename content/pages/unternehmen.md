@@ -132,7 +132,7 @@ Wir bieten Ihnen Ihnen in unserem **Partnerschafts-Programm** vier **Kooperation
 
 Mehr zu den einzelnen Bausteinen erfahren Sie auf dieser Seite. Wir freuen uns auf Ihre Nachricht!
 
-[icon:at|Mail an das Sponsoring-Team](/scripts/email.php?address=kontakt)
+[icon:at|Mail an das Sponsoring-Team](/scripts/email.php?address=kooperation)
 
 ## O-Phasen-Unterstützung
 
@@ -214,4 +214,4 @@ Diese Spende erfolgt ohne Gegenleistung und wir können Ihnen eine entsprechende
 
 Aktuell können wir leider keine Veranstaltungen auf der Website anzeigen.
 
-Du kannst den [Kalender](https://calendar.google.com/calendar/u/0/embed?src=b85j5fp42daj0r7g6s0mjsjvu4@group.calendar.google.com&ctz=Europe/Berlin) direkt aufrufen.
+<!-- Du kannst den [Kalender](https://calendar.google.com/calendar/u/0/embed?src=b85j5fp42daj0r7g6s0mjsjvu4@group.calendar.google.com&ctz=Europe/Berlin) direkt aufrufen.-->
