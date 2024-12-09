@@ -90,6 +90,11 @@ header:
         </a>
     </div>
     <div class="flex justify-center items-center" style="height:200px;">
+        <a class="flex justify-center items-center" target="_blank" href="https://letsdev.de/">
+            <img src="/images/unternehmen/letsdev.png"></img>
+        </a>
+    </div>
+    <div class="flex justify-center items-center" style="height:200px;">
         <a class="flex justify-center items-center" target="_blank" href="https://www.notebuddys.de/">
             <img src="/images/unternehmen/notebuddys.png"></img>
         </a>
