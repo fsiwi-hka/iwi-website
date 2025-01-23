@@ -29,7 +29,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>16.09. - 19.09.2024<br />(Mo - Do)</td>
+            <td>03.03. - 06.03.2025<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
