@@ -127,9 +127,9 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 
 ## Anmeldung
 
-Du möchtest dabei sein? Super. Sende uns eine E-Mail mit einer kurzen Nachricht, deinem Namen und deinem Studiengang.
+Du möchtest dabei sein? Super. Melde dich über das Formular direkt an!
 
-[icon:at|Per Mail zum Vorkurs anmelden](/scripts/email.php?address=vorkurs)
+[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/i6tbHJ9FHBcNRGkpnNPkWLmW)
 
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
