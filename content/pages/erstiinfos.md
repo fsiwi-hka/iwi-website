@@ -70,21 +70,8 @@ informieren.
 
 TBA = to be announced
 
-# Zeitplan O-Phase SS 25
+## Zeitplan O-Phase SS 25
 
-| Uhrzeit        | Freitag 14.03.2025 | Montag 17.03.2025 | Dienstag 18.03.2025 | Mittwoch 19.03.2025 | Donnerstag 20.03.2025 | Freitag 21.03.2025 |
-|----------------|---------------------|-------------------|---------------------|---------------------|-----------------------|--------------------|
-| 08:00 - 09:00  |                     |                   |                     | Vorlesung nach Plan (bis 11:30 Uhr) |                       | Vorlesung nach Plan |
-| 09:00 - 10:00  |                     |                   | Brunch & Sprachkurs Einstufung |                     |                       |                    |
-| 10:00 - 11:00  | Begrüßung / Informationsveranstaltung I+WI Master mit Dekan | Zugangsdaten + Hochschulsysteme + Studienorganisation + Intranet (bis 10:30) |                     |                     |                       |                    |
-| 11:00 - 12:00  | PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm | Vorstellung Fachschaft + O-Phasen Programm |                     | Begrüßung durch die Rektorin (Li-He) |                       |                    |
-| 12:00 - 13:00  | Master Brunch       |                   | Campusrundgang & Asta-Vorstellung |                     |                       |                    |
-| 13:00 - 14:00  | Campusrundgang      |                   | Mittagspause        | Mittagspause        |                       | Mittagspause       |
-| 14:00 - 15:00  |                     |                   | RZ-Einführungsveranstaltung (bis 15:30 Uhr) | Rallye              |                       |                    |
-| 15:00 - 16:00  |                     |                   | PO-Briefing (ab 15:30 Uhr) |                     |                       |                    |
-| 16:00 - 17:00  |                     |                   |                     |                     |                       | 18:00 Uhr Erstiabend (22:00 draußen / 00:00 Innen) |
-| 17:00 - 18:00  |                     |                   |                     |                     |                       |                    |
-| 18:00 - 00:00  |                     |                   |                     |                     |                       |                    |
 
 ## Sonstiges
 
