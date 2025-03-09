@@ -18,10 +18,10 @@ Seite.
 
 ### Ersti-Heft
 
-Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
+<!-- Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 
 [icon:download|Download Ersti-Heft WS 2024/25 (PDF)](/assets/downloads/ophase/erstiheft/Erstiheft_WS_2024_25.pdf)
-Das Passwort zum Ersti-Heft erhältst du am Freitag bzw. Montag/Dienstag von der Fachschaft.
+Das Passwort zum Ersti-Heft erhältst du am Freitag bzw. Montag/Dienstag von der Fachschaft. -->
 
 Die Präsentation zur Vorstellung der Fachschaft findest du hier:
 
@@ -53,7 +53,7 @@ Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase: 27.09.2024 (Master) & 30.09. - 04.10.2024 (Bachelor + Master)
+## O-Phase: 14.03.2025 (Master) & 17.03. - 21.03.2025 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
@@ -70,9 +70,21 @@ informieren.
 
 TBA = to be announced
 
-**Achtung: Version 3 !!!**
+# Zeitplan O-Phase SS 25
 
-[icon:download|Download O-Phasen-Zeitplan WS 2024/25 V3 (PDF)](/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2024_V3.pdf) 
+| Uhrzeit        | Freitag 14.03.2025 | Montag 17.03.2025 | Dienstag 18.03.2025 | Mittwoch 19.03.2025 | Donnerstag 20.03.2025 | Freitag 21.03.2025 |
+|----------------|---------------------|-------------------|---------------------|---------------------|-----------------------|--------------------|
+| 08:00 - 09:00  |                     |                   |                     | Vorlesung nach Plan (bis 11:30 Uhr) |                       | Vorlesung nach Plan |
+| 09:00 - 10:00  |                     |                   | Brunch & Sprachkurs Einstufung |                     |                       |                    |
+| 10:00 - 11:00  | Begrüßung / Informationsveranstaltung I+WI Master mit Dekan | Zugangsdaten + Hochschulsysteme + Studienorganisation + Intranet (bis 10:30) |                     |                     |                       |                    |
+| 11:00 - 12:00  | PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm | Vorstellung Fachschaft + O-Phasen Programm |                     | Begrüßung durch die Rektorin (Li-He) |                       |                    |
+| 12:00 - 13:00  | Master Brunch       |                   | Campusrundgang & Asta-Vorstellung |                     |                       |                    |
+| 13:00 - 14:00  | Campusrundgang      |                   | Mittagspause        | Mittagspause        |                       | Mittagspause       |
+| 14:00 - 15:00  |                     |                   | RZ-Einführungsveranstaltung (bis 15:30 Uhr) | Rallye              |                       |                    |
+| 15:00 - 16:00  |                     |                   | PO-Briefing (ab 15:30 Uhr) |                     |                       |                    |
+| 16:00 - 17:00  |                     |                   |                     |                     |                       | 18:00 Uhr Erstiabend (22:00 draußen / 00:00 Innen) |
+| 17:00 - 18:00  |                     |                   |                     |                     |                       |                    |
+| 18:00 - 00:00  |                     |                   |                     |                     |                       |                    |
 
 ## Sonstiges
 
