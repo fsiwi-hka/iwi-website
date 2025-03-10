@@ -70,7 +70,75 @@ informieren.
 
 TBA = to be announced
 
-## Zeitplan O-Phase SS 25
+*O-Phasen Plan Sommersemester 2025 für Studiengang Informatik & Medieninformatik:*
+
+| Datum               | Zeit          | Aktivität |
+|---------------------|---------------|-----------|
+| *Freitag 14.03.2025 (nur für Master)* |  |  |
+|                     | 10:00 - 11:00 | Begrüßung / Informationsveranstaltung |
+|                     | 11:00 - 12:00 | PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm  |
+|                     | 12:00 - 13:00 | Master Brunch |
+|                     | 13:00 - 14:00 | Campusrundgang |
+| *Montag 17.03.2025* |  |  |
+|                     | 09:00 - 10:00 | Begrüßung + Informationsveranstaltungen |
+|                     | 10:00 - 11:00 | Einstufungstest |
+|                     | 11:00 - 12:00 | Vorstellung Fachschaft + O-Phasen Programm |
+|                     | 13:00 - 14:00 | Mittagspause |
+|                     | 17:00 - 00:00 | Bar Hopping - 17:15 loslaufen |
+| *Dienstag 18.03.2025* |  |  |
+|                     | 09:00 - 12:00 | Brunch & Sprachkurs Einstufung |
+|                     | 12:00 - 13:00 | Campusrundgang & Asta-Vorstellung |
+|                     | 13:00 - 14:00 | Mittagspause |
+|                     | 14:00 - 15:30 | RZ- Einführungsveranstalltung |
+|                     | 15:30 - 16:00 | PO-Briefing |
+| *Mittwoch 19.03.2025* |  |  |
+|                     | 08:00 - 11:30 | Vorlesung nach Plan |
+|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (Li-He) |
+|                     | 13:00 - 14:00 | Mittagspause |
+|                     | 14:00 - 18:00 | Rallye |
+| *Donnerstag 20.03.2025* |  |  |
+|                     | 09:00 - 13:00 | Vorlesung nach Plan |
+|                     | 13:00 - 14:00 | Mittagspause |
+| *Freitag 21.03.2025* |  |  |
+|                     | 08:00 - 13:00 | Vorlesung nach Plan |
+|                     | 13:00 - 14:00 | Mittagspause |
+|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend (22:00 draußen / 00:00 Innen) |
+
+
+*O-Phasen Plan Sommersemester 2025 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
+
+| Datum               | Zeit          | Aktivität |
+|---------------------|---------------|-----------|
+| *Freitag 14.03.2025 (nur für Master)* |  |  |
+|                     | 10:00 - 11:00 | Begrüßung / Informationsveranstaltung |
+|                     | 11:00 - 12:00 | PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm  |
+|                     | 12:00 - 13:00 | Master Brunch |
+|                     | 13:00 - 14:00 | Campusrundgang |
+| *Montag 17.03.2025* |  |  |
+|                     | 09:00 - 10:00 | Begrüßung + Informationsveranstaltungen |
+|                     | 10:00 - 11:00 | Zugangsdaten + Hochschulsysteme + Studienorganisation + Intranet |
+|                     | 11:00 - 12:00 | Vorstellung Fachschaft + O-Phasen Programm |
+|                     | 13:00 - 14:00 | Mittagspause |
+| *Dienstag 18.03.2025* |  |  |
+|                     | 08:30 - 09:30 | Infos zu Mathematik 1 |
+|                     | 09:30 - 12:00 | WI-Frühstück |
+|                     | 12:00 - 13:00 | Campusrundgang & Asta-Vorstellung |
+|                     | 13:00 - 14:00 | Mittagspause |
+|                     | 14:00 - 15:30 | RZ-Einführungsveranstaltung |
+|                     | 15:30 - 16:00 | PO-Briefing |
+|                     | 17:00 - 00:00 | Bar Hopping - 17:15 loslaufen |
+| *Mittwoch 19.03.2025* |  |  |
+|                     | 08:00 - 11:30 | Vorlesung nach Plan |
+|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (Li-He) |
+|                     | 13:00 - 14:00 | Mittagspause |
+|                     | 14:00 - 18:00 | Rallye |
+| *Donnerstag 20.03.2025* |  |  |
+|                     | 08:00 - 13:00 | Vorlesung nach Plan |
+|                     | 13:00 - 14:00 | Mittagspause |
+| *Freitag 21.03.2025* |  |  |
+|                     | 08:00 - 13:00 | Vorlesung nach Plan |
+|                     | 13:00 - 14:00 | Mittagspause |
+|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend (22:00 draußen / 00:00 Innen) |
 
 
 ## Sonstiges
