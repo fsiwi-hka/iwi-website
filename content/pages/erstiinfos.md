@@ -99,6 +99,7 @@ TBA = to be announced
 | *Donnerstag 20.03.2025* |  |  |
 |                     | 09:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
+|                     | 14:00 - 15:30 | Vorlesung nach Plan |
 | *Freitag 21.03.2025* |  |  |
 |                     | 08:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
@@ -115,13 +116,13 @@ TBA = to be announced
 |                     | 12:00 - 13:00 | Master Brunch |
 |                     | 13:00 - 14:00 | Campusrundgang |
 | *Montag 17.03.2025* |  |  |
-|                     | 09:00 - 10:00 | Begrüßung + Informationsveranstaltungen |
-|                     | 10:00 - 11:00 | Zugangsdaten + Hochschulsysteme + Studienorganisation + Intranet |
+|                     | 09:00 - 10:20 | Begrüßung + Informationsveranstaltungen |
+|                     | 10:20 - 11:00 | Zugangsdaten + Hochschulsysteme + Studienorganisation + Intranet |
 |                     | 11:00 - 12:00 | Vorstellung Fachschaft + O-Phasen Programm |
 |                     | 13:00 - 14:00 | Mittagspause |
 | *Dienstag 18.03.2025* |  |  |
 |                     | 08:30 - 09:30 | Infos zu Mathematik 1 |
-|                     | 09:30 - 12:00 | WI-Frühstück |
+|                     | 09:45 - 12:00 | WI-Frühstück |
 |                     | 12:00 - 13:00 | Campusrundgang & Asta-Vorstellung |
 |                     | 13:00 - 14:00 | Mittagspause |
 |                     | 14:00 - 15:30 | RZ-Einführungsveranstaltung |
@@ -135,6 +136,7 @@ TBA = to be announced
 | *Donnerstag 20.03.2025* |  |  |
 |                     | 08:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
+|                     | 14:00 - 15:30 | Vorlesung nach Plan |
 | *Freitag 21.03.2025* |  |  |
 |                     | 08:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
