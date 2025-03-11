@@ -20,7 +20,7 @@ Seite.
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 
-[icon:download|Download Ersti-Heft WS 2024/25 (PDF)](assets/downloads/Erstiheft_SS25.pdf)
+[icon:download|Download Ersti-Heft WS 2024/25 (PDF)](https://iwi-hka.de/assets/downloads/Erstiheft_SS25.pdf)
 Das Passwort zum Ersti-Heft erhältst du am Freitag bzw. Montag/Dienstag von der Fachschaft.
 
 Die Präsentation zur Vorstellung der Fachschaft findest du hier:
