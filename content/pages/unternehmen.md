@@ -15,11 +15,6 @@ header:
         </a>
     </div>
     <div class="flex justify-center items-center" style="height:200px;">
-        <a class="flex justify-center items-center" target="_blank" href="https://app-club.de/">
-            <img src="/images/unternehmen/appclub.png"></img>
-        </a>
-    </div>
-    <div class="flex justify-center items-center" style="height:200px;">
         <a class="flex justify-center items-center" target="_blank" href="https://www.arconsis.com/en/">
             <img src="/images/unternehmen/arconsis.png"></img>
         </a>
