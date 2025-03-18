@@ -87,15 +87,14 @@ TBA = to be announced
 |                     | 17:00 - 00:00 | Bar Hopping - 17:15 loslaufen |
 | *Dienstag 18.03.2025* |  |  |
 |                     | 09:00 - 12:00 | Brunch & Sprachkurs Einstufung |
-|                     | 12:00 - 13:00 | Campusrundgang & Asta-Vorstellung |
 |                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 15:30 | RZ- Einführungsveranstalltung |
-|                     | 15:30 - 16:00 | PO-Briefing |
+|                     | 14:00 - 15:30 | RZ- Einführungsveranstaltung, Li-HE-Hörsaal |
+|                     | 15:30 - 16:00 | PO-Briefing, E 201 |
 | *Mittwoch 19.03.2025* |  |  |
 |                     | 08:00 - 11:30 | Vorlesung nach Plan |
-|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (Li-He) |
+|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (HB-Hörsaal) |
 |                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 18:00 | Rallye |
+|                     | 14:00 - 18:00 | Rallye, Treffpunkt vor dem E-Bau|
 | *Donnerstag 20.03.2025* |  |  |
 |                     | 09:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
@@ -103,7 +102,7 @@ TBA = to be announced
 | *Freitag 21.03.2025* |  |  |
 |                     | 08:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
-|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend (22:00 draußen / 00:00 Innen) |
+|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend mit MMT (22:00 draußen / 00:45 Innen), B-Foyer |
 
 
 *O-Phasen Plan Sommersemester 2025 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
@@ -122,17 +121,17 @@ TBA = to be announced
 |                     | 13:00 - 14:00 | Mittagspause |
 | *Dienstag 18.03.2025* |  |  |
 |                     | 08:30 - 09:30 | Infos zu Mathematik 1 |
-|                     | 09:45 - 12:00 | WI-Frühstück |
-|                     | 12:00 - 13:00 | Campusrundgang & Asta-Vorstellung |
+|                     | 09:45 - 12:00 | WI-Frühstück, E-003, E-004 |
+|                     | 12:00 - 13:00 | Campusrundgang & Asta-Vorstellung, Treffpunkt vor der Fachschaft |
 |                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 15:30 | RZ-Einführungsveranstaltung |
-|                     | 15:30 - 16:00 | PO-Briefing |
-|                     | 17:00 - 00:00 | Bar Hopping - 17:15 loslaufen |
+|                     | 14:00 - 15:30 | RZ-Einführungsveranstaltung, Li-HE Hörsaal |
+|                     | 15:30 - 16:00 | PO-Briefing, E-113 |
+|                     | 17:00 - 00:00 | Bar Hopping, Treffpunkt vor dem E-Bau - 17:15 loslaufen |
 | *Mittwoch 19.03.2025* |  |  |
 |                     | 08:00 - 11:30 | Vorlesung nach Plan |
-|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (Li-He) |
+|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (Li-He Hörsaal) |
 |                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 18:00 | Rallye |
+|                     | 14:00 - 18:00 | Rallye, Treffpunkt vor dem E-Bau |
 | *Donnerstag 20.03.2025* |  |  |
 |                     | 08:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
@@ -140,7 +139,7 @@ TBA = to be announced
 | *Freitag 21.03.2025* |  |  |
 |                     | 08:00 - 13:00 | Vorlesung nach Plan |
 |                     | 13:00 - 14:00 | Mittagspause |
-|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend (22:00 draußen / 00:00 Innen) |
+|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend (22:00 draußen / 00:45 Innen), B-Foyer |
 
 
 ## Sonstiges
