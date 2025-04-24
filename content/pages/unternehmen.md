@@ -142,7 +142,7 @@ Dank unserer Sponsoren können sich die Erstsemesterstudierenden auf eine prall 
 
 Auch Sie können uns bei der Orientierungsphase unterstützen, die zum Beginn jedes Semesters durchgeführt wird. Dabei gibt es verschiedene Abstufungen:
 
-- **Paket S**: Sie tragen “Goodies” (gebrandete Werbegeschenke mit praktischem Nutzen) zu unserer Ersti-Tasche bei. Zum Dank präsentieren wir Ihr Logo im Ersti-Heft und auf unserer Website.
+- **Paket S**: Sie tragen “Goodies” (gebrandete Werbegeschenke mit praktischem Nutzen) zu unserer Ersti-Tasche bei.
 - **Paket M**: Sie tragen Goodies bei und platzieren eine halbseitige Anzeige im Ersti-Heft
 - **Paket L**: Sie tragen Goodies bei und platzieren eine ganzseitige Anzeige im Ersti-Heft
 - **Paket XL**: Sie tragen Goodies bei und übernehmen einen Stand bei der Ersti-Ralley oder ein anderes O-Phasen Event auf dem Campus
