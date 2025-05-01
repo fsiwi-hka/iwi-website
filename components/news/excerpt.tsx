@@ -7,21 +7,27 @@ function NewsExcerpt({
     author,
     slug,
 }) {
-    return ( 
+    return (
         <div className="md:w-10/12">
             <h3>
-                <Link as={`/news/${ slug }/`} href="/news/[slug]/">
-                    <a className="text-gray-700 no-underline">{ title }</a> 
+                <Link
+                    as={`/news/${ slug }/`}
+                    href="/news/[slug]/"
+                    className="text-gray-700 no-underline">
+                    { title } 
                 </Link> 
             </h3>
             <p className="md:mb-8"> 
                 { excerpt }&nbsp;
-                <Link as={`/news/${ slug }/`} href="/news/[slug]/">
-                    <a className="text-blue-700 underline">Weiterlesen</a> 
+                <Link
+                    as={`/news/${ slug }/`}
+                    href="/news/[slug]/"
+                    className="text-blue-700 underline">
+                    Weiterlesen 
                 </Link>
-            </p> 
+            </p>
         </div>
-    )
+    );
 }
 
 export default NewsExcerpt
