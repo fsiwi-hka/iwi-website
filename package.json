@@ -28,22 +28,23 @@
         "@fortawesome/react-fontawesome": "^0.1.13",
         "googleapis": "^52.1.0",
         "gray-matter": "^4.0.2",
-        "next": "^10.0.3",
+        "next": "^15.3.1",
         "raw-loader": "^4.0.2",
-        "react": "^16.14.0",
+        "react": "^18.3.1",
         "react-calendar": "^3.2.1",
-        "react-dom": "^16.14.0",
-        "react-markdown": "^4.3.1",
-        "react-obfuscate": "^3.6.8"
+        "react-dom": "^18.3.1",
+        "react-markdown": "^10",
+        "react-obfuscate": "^3.6.8",
+        "rehype-raw": "^7.0.0"
     },
     "devDependencies": {
         "@types/node": "^14.14.10",
-        "@types/react": "^16.14.2",
+        "@types/react": "^18",
         "@types/webpack-env": "^1.16.0",
         "cross-env": "^7.0.3",
         "dotenv": "^8.2.0",
         "postcss-preset-env": "^6.7.0",
         "tailwindcss": "^1.9.6",
-        "typescript": "^3.9.7"
+        "typescript": "^5.8.3"
     }
 }
