@@ -2,7 +2,6 @@ import { GetStaticProps } from 'next'
 import MarkdownLoader from '../components/util/markdown-loader'
 import StaticPage from '../components/common/static-page'
 import getCalendarEvents from '../components/util/google-calendar'
-import forEach from 'ramda/es/forEach';
 
 function Page({ content, data }) {
     return (
