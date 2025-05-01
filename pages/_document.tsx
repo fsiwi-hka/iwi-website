@@ -11,7 +11,9 @@ class MyDocument extends Document {
     return (
       // we set the lang attribute here for accessibility
       <Html lang="de">
-        <Head />
+        <Head>
+          <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet"></link>
+        </Head>
         <body>
           <Main />
           <NextScript />

@@ -133,12 +133,23 @@ function renderMarkdown(content, className) {
  * don't have that special format are treated as inline links.
  */
 function intelligentLink(props) {
-  if (!props.children[0].props.value.includes('|')) {
-    return <a href={props.href} className="text-blue-700 underline">{props.children}</a>
+  const child = props.children?.[0];
+
+  // Get the link text as a string
+  const linkText =
+    typeof child === 'string'
+      ? child
+      : typeof child?.props?.value === 'string'
+        ? child.props.value
+        : null;
+
+  // Fallback: show a regular link if we can't parse the custom format
+  if (!linkText || !linkText.includes('|')) {
+    return <a href={props.href} className="text-blue-700 underline">{props.children}</a>;
   }
 
-  const iconLink = props.children[0].props.value.split('|')
-  var icon = null
+  const iconLink = linkText.split('|');
+  let icon;
 
   switch (iconLink[0]) {
     case "icon:link":
