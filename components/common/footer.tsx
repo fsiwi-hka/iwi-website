@@ -19,7 +19,10 @@ function Footer() {
                   {socialIcon(faTwitch, 'https://www.twitch.tv/iwi_hska')}
                   {socialIcon(faEnvelope, 'mailto:kontakt@iwi-hka.de')}
                 </ul>
-                <Link href="/" className="flex items-center justify-evenly mx-4 md:mx-8">
+                <Link
+                    href="/"
+                    className="flex items-center justify-evenly mx-4 md:mx-8"
+                    legacyBehavior>
                     <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-20 md:h-32"/>
                 </Link>
                 <ul  className="flex items-center justify-start list-none font-heading">

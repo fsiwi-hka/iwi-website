@@ -13,7 +13,8 @@ function NewsExcerpt({
                 <Link
                     as={`/news/${ slug }/`}
                     href="/news/[slug]/"
-                    className="text-gray-700 no-underline">
+                    className="text-gray-700 no-underline"
+                    legacyBehavior>
                     { title } 
                 </Link> 
             </h3>

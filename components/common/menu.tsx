@@ -20,7 +20,7 @@ function Menu() {
     return (
         <>
             <nav className="w-full max-w-screen-lg mx-auto flex items-center justify-between">
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                     <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-16 md:h-24"/>
                 </Link>
                 <ul className="flex list-none">
@@ -49,7 +49,8 @@ function menuItem(title, href) {
         <li key={ href } className={ classes }>
             <Link
                 href={ href }
-                className="text-gray-700 no-underline font-heading font-bold">
+                className="text-gray-700 no-underline font-heading font-bold"
+                legacyBehavior>
 
                 { title }
 
@@ -88,7 +89,8 @@ function mobileMenuItem(title, href) {
         <li key={ href } className="py-4 modal-close">
             <Link
                 href={ href }
-                className="text-xl text-gray-700 no-underline font-heading font-bold">
+                className="text-xl text-gray-700 no-underline font-heading font-bold"
+                legacyBehavior>
 
                 { title }
 
@@ -100,7 +102,7 @@ function mobileMenuItem(title, href) {
 function userMenuItem(title, href, icon) {
     return (
         <li key={ href } className="px-8 py-4">
-            <Link href={ href } passHref title={title}>
+            <Link href={ href } passHref title={title} legacyBehavior>
 
                 <span className="block cursor-pointer text-gray-700 no-underline font-heading font-bold">
                     <FontAwesomeIcon icon={ icon } className="mr-4" fixedWidth />
