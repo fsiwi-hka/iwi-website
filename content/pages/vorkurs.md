@@ -29,13 +29,13 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>03.03. - 06.03.2025<br />(Mo - Do)</td>
+            <td>15.09. - 18.09.2025<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
             <td>Präsenz</tr>
         <tr>
-            <td>Zugelassene Studiengänge</td>
+            <td>Zielgruppe (nach Studiengang)</td>
             <td>
                 <ul>
                     <li>Data Science</li>
@@ -43,6 +43,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
                     <li>Internationales IT Business</li>
                     <li>Medieninformatik</li>
                     <li>Wirtschaftsinformatik</li>
+                    <li>sonstige</li>
                 </ul>
             </td>
         </tr>
@@ -129,7 +130,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 
 Du möchtest dabei sein? Super. Melde dich über das Formular direkt an!
 
-[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/i6tbHJ9FHBcNRGkpnNPkWLmW)
+[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/pF7tEzxMjqpA8c8RqGmqL4zH)
 
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
@@ -138,11 +139,12 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 Es empfiehlt sich die Programmieraufgaben auf einem eigenem Laptop durchzuführen. Die hierfür benötigte Software 
 wird gemeinsam am ersten Tag installiert und eingerichtet.
 
-- Für Java : Eclipse für Java Developers und JDK 11 oder neuer <https://ninite.com/adoptjdkx11-eclipse/>
-- Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download)
+- Für Java : [IntelliJ IDEA **Community Edition**](https://www.jetbrains.com/idea/download/other.html)
+  - alternativ: Eclipse für Java Developers und JDK 11 oder neuer <https://ninite.com/adoptjdkx11-eclipse/>
+- Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) oder [Visual Studio Code](https://code.visualstudio.com/download) 
   und [.Net](https://dotnet.microsoft.com/download)
-- Für Python: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab
-
+- Für Python: [Miniconda Environment](/docs/getting-started/miniconda/install) und [Visual Studio Code](https://code.visualstudio.com/download)
+  - alternativ: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab 
 Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
 
 ## Unterlagen
