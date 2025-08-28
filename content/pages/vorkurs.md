@@ -8,6 +8,9 @@ header:
   image: '/assets/backgrounds/vorkurs.jpg'
 ---
 
+**Der Programmierkurs wurde auf den Zeitraum vom 8.9.-11.9. verschoben und findet NICHT am 15.9. - 18.9. statt!** \
+Wir bitten darum das **Formular neu auszufüllen**, wenn man am 8.9. - 11.9. teilnehmen will!
+
 ## Allgemein
 
 Um Erstis, die zuvor noch nie etwas programmiert haben, den Einstieg zu vereinfachen, bieten wir einen 
@@ -20,7 +23,7 @@ Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 
 ## Wichtiger Hinweis
 
-Aufgrund des Cyberangriffs im vergangenen Oktober möchten wir euch bitten, euren eigenen Laptop mitzubringen. Es ist wahrscheinlich, 
+Wir bitten euch darum, euren eigenen Laptop oder ähnliches mitzubringen. Es ist wahrscheinlich, 
 dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehen werden.
 
 ## Überblick
@@ -29,7 +32,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>15.09. - 18.09.2025<br />(Mo - Do)</td>
+            <td>08.09. - 11.09.2025<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
@@ -82,9 +85,9 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 
 - Wir beginnen jeden Tag um 10 Uhr. Am ersten Tag erklären wir euch in dieser Zeit den Ablauf und das Vorgehen.
 - Raumeinteilung wird folgende sein:  
-  - Java: E203
+  - Java: LI145
   - C#: LI137
-  - Python: E302
+  - Python: LI146
 - Von 10:00 bis 12:00 Uhr bekommt ihr die Theorie vermittelt. Keine Sorge!
   Wir machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
 - Dann ist erst mal Mittagspause. Da könnt ihr euch den Tutoren anschließen mit in die Mensa oder in die Stadt zu gehen.
@@ -108,9 +111,9 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <tr>
       <td>10 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
-      <td>Java: E203
+      <td>Java: LI145
       <br>C#: LI137
-      <br>Python: E302
+      <br>Python: LI146
       </td>
     </tr>
     <tr>
@@ -127,10 +130,11 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 </div>
 
 ## Anmeldung
+> Das Formular ist neu erstellt worden für den 8.9. - 11.9.
 
 Du möchtest dabei sein? Super. Melde dich über das Formular direkt an!
 
-[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/pF7tEzxMjqpA8c8RqGmqL4zH)
+[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/d7rmpSoQZ7TRMgytfqz24yLC)
 
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
