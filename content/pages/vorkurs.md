@@ -7,9 +7,9 @@ header:
   der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind.'
   image: '/assets/backgrounds/vorkurs.jpg'
 ---
-
-**Der Programmierkurs wurde auf den Zeitraum vom 8.9.-11.9. verschoben und findet NICHT am 15.9. - 18.9. statt!** \
-Wir bitten darum das **Formular neu auszufüllen**, wenn man am 8.9. - 11.9. teilnehmen will!
+## Update
+**Der Programmierkurs wurde auf den Zeitraum vom 8.9.-11.9. verschoben und findet NICHT am 15.9. - 18.9. statt!** 
+- Wir bitten darum das **Formular neu auszufüllen**, wenn man am 8.9. - 11.9. teilnehmen will!
 
 ## Allgemein
 
@@ -152,18 +152,13 @@ wird gemeinsam am ersten Tag installiert und eingerichtet.
 Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
 
 ## Unterlagen
-
-Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.
-
 <!--
 
-Die Aufgaben und Lösungen werden im Laufe des Kurses freigeschaltet.
-
-- [Unterlagen zu Java](https://drive.google.com/drive/folders/19_GZSQDUyNBuAUBMNAwzVAh-w6iVOX-s)
-- [Unterlagen zu C#](https://drive.google.com/drive/folders/19lFbxlRweCOT0noXmKswt1HvDrzY-kRb)
-- [Unterlagen zu Python](https://drive.google.com/drive/folders/19sD7EiHtnDQ9UsEbwq0-URpEP802wqgu)
+Hier werden die Vorlesungsunterlagen im Verlauf des Kurses zur Verfügung gestellt.
 
 -->
+
+[Unterlagen](https://drive.google.com/drive/folders/1_BylXi_DzYnjd15d1PE0Z8j8hwKgZKNA)
 
 ## Mehr
 
