@@ -32,13 +32,13 @@ The site is built using the following command:
 npm build
 ```
 
-This in turn runs two Next.JS commands:
+This internally runs a Next.JS command
 
 ```bash
 next build
-next export
 ```
-
+with the output type `output: 'export'`
+,
 After these build steps, the page is present in the `out` directory.
 
 ### Deploy Step
