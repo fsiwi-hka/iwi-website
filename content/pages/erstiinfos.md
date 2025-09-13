@@ -53,7 +53,7 @@ Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase: 14.03.2025 (Master) & 17.03. - 21.03.2025 (Bachelor + Master)
+## O-Phase: 25.09. - 03.10.2025 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
@@ -70,76 +70,11 @@ informieren.
 
 TBA = to be announced
 
-*O-Phasen Plan Sommersemester 2025 für Studiengang Informatik & Medieninformatik:*
-
-| Datum               | Zeit          | Aktivität |
-|---------------------|---------------|-----------|
-| *Freitag 14.03.2025 (nur für Master)* |  |  |
-|                     | 10:00 - 11:00 | Begrüßung / Informationsveranstaltung |
-|                     | 11:00 - 12:00 | PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm  |
-|                     | 12:00 - 13:00 | Master Brunch |
-|                     | 13:00 - 14:00 | Campusrundgang |
-| *Montag 17.03.2025* |  |  |
-|                     | 09:00 - 10:00 | Begrüßung + Informationsveranstaltungen |
-|                     | 10:00 - 11:00 | Einstufungstest |
-|                     | 11:00 - 12:00 | Vorstellung Fachschaft + O-Phasen Programm |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 17:00 - 00:00 | Bar Hopping - 17:15 loslaufen |
-| *Dienstag 18.03.2025* |  |  |
-|                     | 09:00 - 12:00 | Brunch & Sprachkurs Einstufung |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 15:30 | RZ- Einführungsveranstaltung, Li-HE-Hörsaal |
-|                     | 15:30 - 16:00 | PO-Briefing, E 201 |
-| *Mittwoch 19.03.2025* |  |  |
-|                     | 08:00 - 11:30 | Vorlesung nach Plan |
-|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (HB-Hörsaal) |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 18:00 | Rallye, Treffpunkt vor dem E-Bau|
-| *Donnerstag 20.03.2025* |  |  |
-|                     | 09:00 - 13:00 | Vorlesung nach Plan |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 15:30 | Vorlesung nach Plan |
-| *Freitag 21.03.2025* |  |  |
-|                     | 08:00 - 13:00 | Vorlesung nach Plan |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend mit MMT (22:00 draußen / 00:45 Innen), B-Foyer |
+*O-Phasen Plan Wintersemester 2025/26 für Studiengang Informatik & Medieninformatik:*
 
 
-*O-Phasen Plan Sommersemester 2025 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
+*O-Phasen Plan Wintersemester 2025/26 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
 
-| Datum               | Zeit          | Aktivität |
-|---------------------|---------------|-----------|
-| *Freitag 14.03.2025 (nur für Master)* |  |  |
-|                     | 10:00 - 11:00 | Begrüßung / Informationsveranstaltung |
-|                     | 11:00 - 12:00 | PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm  |
-|                     | 12:00 - 13:00 | Master Brunch |
-|                     | 13:00 - 14:00 | Campusrundgang |
-| *Montag 17.03.2025* |  |  |
-|                     | 09:00 - 10:20 | Begrüßung + Informationsveranstaltungen |
-|                     | 10:20 - 11:00 | Zugangsdaten + Hochschulsysteme + Studienorganisation + Intranet |
-|                     | 11:00 - 12:00 | Vorstellung Fachschaft + O-Phasen Programm |
-|                     | 13:00 - 14:00 | Mittagspause |
-| *Dienstag 18.03.2025* |  |  |
-|                     | 08:30 - 09:30 | Infos zu Mathematik 1 |
-|                     | 09:45 - 12:00 | WI-Frühstück, E-003, E-004 |
-|                     | 12:00 - 13:00 | Campusrundgang & Asta-Vorstellung, Treffpunkt vor der Fachschaft |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 15:30 | RZ-Einführungsveranstaltung, Li-HE Hörsaal |
-|                     | 15:30 - 16:00 | PO-Briefing, E-113 |
-|                     | 17:00 - 00:00 | Bar Hopping, Treffpunkt vor dem E-Bau - 17:15 loslaufen |
-| *Mittwoch 19.03.2025* |  |  |
-|                     | 08:00 - 11:30 | Vorlesung nach Plan |
-|                     | 11:30 - 13:00 | Begrüßung durch die Rektorin (Li-He Hörsaal) |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 18:00 | Rallye, Treffpunkt vor dem E-Bau |
-| *Donnerstag 20.03.2025* |  |  |
-|                     | 08:00 - 13:00 | Vorlesung nach Plan |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 14:00 - 15:30 | Vorlesung nach Plan |
-| *Freitag 21.03.2025* |  |  |
-|                     | 08:00 - 13:00 | Vorlesung nach Plan |
-|                     | 13:00 - 14:00 | Mittagspause |
-|                     | 18:00 - 00:00 | 18:00 Uhr Erstiabend (22:00 draußen / 00:45 Innen), B-Foyer |
 
 
 ## Sonstiges
