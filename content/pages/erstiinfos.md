@@ -70,6 +70,8 @@ informieren.
 
 TBA = to be announced
 
+### Version 4 - 24.09.2025, 12:35
+
 *O-Phasen Plan Wintersemester 2025/26 für Studiengang Informatik & Medieninformatik:*
 
 [O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2025_I.pdf)
