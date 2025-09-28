@@ -1,10 +1,11 @@
 module.exports = {
-    webpack: function(config) {
-        config.module.rules.push({
-            test: /\.md$/,
-            use: 'raw-loader',
-        })
-        return config
-    },
-    trailingSlash: true
-}
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.md$/,
+      type: 'asset/source',
+    });
+    return config;
+  },
+  trailingSlash: true,
+  output: 'export',
+};
