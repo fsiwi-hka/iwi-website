@@ -24,23 +24,23 @@ directory and the `pages` directory.
 ### Components
 
 Components are ready-to-use elements that fulfill some kind of functionality or
-render content. For example, the `StaticPage` component takes Markdown content
-and turns it into HTML that can be output on the page. The `FaqTile` component
-creates a nice clickable tile based on data it gets handed. These two are
-examples for components that render output in the form of React elements that
-can be placed on the page.
+render content. <br>
+Every page is wrapped like so:
 
-There are also helper components that do not create React elements but rather
-fulfill functionality: The `MarkdownLoader` traverses a given directory and
-reads the content of Markdown files. The result of this process can then be
-passed on, e. g. to the `StaticPage` component. The `GoogleCalendar` component
-connects to the Google Calendar API and loads an array of events that can be
-used to populate the event calendar.
+└ **app.tsx** (contains the head part like favicon or page title)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;├ menu.tsx<br>
+&nbsp;&nbsp;&nbsp;&nbsp;├ **your page content**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└ footer.tsx
+
+You don't really need to care about the actual structure and how a page is built, 
+as long as you stick to the structure of the given pages.
+
+[Click here to learn more about the structure of the used components](components.md)
 
 Components that render same sort of output should be placed under the
 `components/common` directory if they're used on several different pages. If
 they used only on a specific page, consider creating a dedicated subdirectory
-underneath `components`. (Like for `faq` and `news`). Components that have a
+underneath `components`. Components that have a
 functionality instead of rendered output live in the `components/util` folder.
 
 ### Pages
@@ -58,42 +58,18 @@ So consequentially, if you have a look at our `pages` directory, you will see it
 resembles the site structure and every static page has it's corresponding `.tsx`
 file.
 
-As *news* and *FAQ* are a type of content and we don't know in advance which and
-how many posts there will be, we use dynamic routes for them. Next.JS supports
-this with the bracket notation. Every file in the `content/news` folder will
-become a page on the website based on `pages/news/[slug].tsx`.
+[Click here to learn more about the structure of the pages](pages.md)
+
+
 
 ## Retrieving Data
 
-The pages in the `pages` directory are rather empty and would be useless without
-the content coming from:
+Most pages in the `pages` directory contain their content either directly or in a used subcomponent.
+Anyway, some information is fetched from the server, like blog posts (fetched by `/pages/api/loader_news.js` from `/content/news`), 
+calendar events (fetched by `pages/api/loader_news.js` via the Nextcloud API) or the 'Sitzungsprotokolle' section on the `Fachschaft` page 
+(fetched by `pages/api/loader-sitzungsprotokolle.js`).
 
-* The Markdown files,
-* The GoogleCalendar component,
-* Images from the `public` directory,
-* and so on.
-
-To get these contents to the pages, Next.JS offers different approaches:
-
-> * `getStaticProps` (Static Generation): Fetch data at build time.
-> * `getStaticPaths` (Static Generation): Specify dynamic routes to pre-render
->   based on data.
-> * `getServerSideProps` (Server-side Rendering): Fetch data on each request.
-
-[Next.JS Data Fetching Docs](https://nextjs.org/docs/basic-features/data-fetching)
-
-We currently *don't* want to use `getServerSideProps` because as soon as you do,
-you lose the ability to pre-render the entire website. The contents need to be
-provided by a Node server. This increases the effort for deployment.
-
-As a result, e. g. the Google Calendar data is integrated during build time.
-This can lead to some delay but can be compensated with frequent (nightly)
-builds.
-
-`getStaticPaths` is used in the dynamic `/news/*` and `faq/*` sections of the
-page to dynamically create routes - but also during build time.
-
-All other content is inserted into the pages using `getStaticProps`.
+Other content is inserted into the pages using `getStaticProps`.
 
 When you create a production build of the website using
 
@@ -103,3 +79,5 @@ npm run build
 
 Next.JS will output which pages are statically rendered and which will have
 dynamic parts.
+
+[Back to documentation index](./readme.md)

@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "custom.css";
 
 /* We use Tailwind CSS in this project: https://tailwindcss.com/
  *
@@ -16,23 +17,29 @@
  */
 
 * {
-    @apply font-light;
+    font-family: 'Poppins';
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    @apply font-heading;
+    text-transform: uppercase;
+    color: #354850;
+}
+
+h1 {
+    @apply text-5xl mb-4 font-bold leading-none;
 }
 
 h2 {
-    @apply text-3xl leading-10 mt-8 mb-4 text-gray-700 font-bold;
+    @apply text-4xl leading-10 mt-8 mb-4 font-bold;
 }
 
 h3 {
-    @apply text-2xl leading-9 mt-4 mb-2 text-gray-700 font-normal;
+    @apply text-2xl leading-9 font-bold;
 }
 
 .faq-post h3 {
@@ -40,7 +47,11 @@ h3 {
 }
 
 h4 {
-    @apply text-lg leading-8 mt-2 mb-1 text-gray-700;
+    @apply text-lg font-bold;
+}
+
+h5 {
+    @apply text-xl font-bold;
 }
 
 ul {
@@ -110,6 +121,7 @@ table tr th:last-child {
 
 p {
     @apply leading-6 mb-4;
+    color: #6C6C6C;
 }
 
 strong {
@@ -118,6 +130,7 @@ strong {
 
 li {
     @apply leading-6;
+    color: #6C6C6C;
 }
 
 code {
@@ -128,26 +141,24 @@ pre {
     @apply w-full bg-gray-400 p-2 my-4;
 }
 
+/*
 h2:after {
     content: "";
     width: 10%;
     @apply border-red-700 border-b-4 -ml-3 block;
 }
-
-nav .active a:after {
-    content: "";
-    width: 30%;
-    min-width: 50px;
-    @apply border-red-700 border-b-4 block;
-}
+*/
 
 .modal {
     transition: opacity 0.25s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 body.modal-active {
-    overflow-x: hidden;
-    overflow-y: visible !important;
+    overflow: hidden;
 }
 
 .opacity-95 {

@@ -1,0 +1,1 @@
+To learn more about how the pages work, have a look at [this document](../docs/pages.md)

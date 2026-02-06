@@ -48,3 +48,5 @@ entire folder via FTP. Existing files are overwritten.
 
 The necessary credentials for the deployment are injected as environment
 variables.
+
+[Back to documentation index](./readme.md)

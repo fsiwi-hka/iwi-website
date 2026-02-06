@@ -1,26 +1,31 @@
-import Link from 'next/link'
+import Breadcrumb from "./breadcrumb";
+import ResponsiveWrapper from "./responsive-wrapper";
 
-function Header({image, title, subtitle}) {
-    return (
-        <header
-            className="flex items-center flex-col justify-center mb-16 bg-cover px-8"
-            style={{
-                background: `linear-gradient(
-                        rgba(57, 153, 191, 0.7),
-                        rgba(57, 153, 191, 0.7)
-                    ), 
-                    url('${ image }') 
-                    no-repeat
-                    50% / cover`
-            }}>
-            <h1 className="text-4xl md:text-6xl text-center text-white py-4 md:py-8 mt-4 md:mt-16 font-heading font-bold max-w-4xl">
-                { title }
-            </h1>
-            <p className="text-xl text-center text-white mb-8 md:mb-32 max-w-2xl">
-                { subtitle }
-            </p>
-        </header>
-    )
+interface HeaderProps {
+  title: string;
+  subtitle: string;
+  showBreadcrumbs?: boolean;
 }
 
-export default Header
+const Header: React.FC<HeaderProps> = ({
+  title,
+  subtitle,
+  showBreadcrumbs = true,
+}) => {
+  return (
+    <div className="w-full md:h-100 flex flex-col justify-center primary_blue_bg overflow-hidden">
+      <ResponsiveWrapper>
+        {" "}
+        <div className="flex flex-col justify-between py-6 xl:py-12">
+          <div>
+            {showBreadcrumbs ? <Breadcrumb></Breadcrumb> : ""}
+            <h1 className="text-white mb-6 md:w-3/4vw ">{title}</h1>
+            <p className="text-white mb-0 md:w-4/5vw">{subtitle}</p>
+          </div>
+        </div>
+      </ResponsiveWrapper>
+    </div>
+  );
+};
+
+export default Header;

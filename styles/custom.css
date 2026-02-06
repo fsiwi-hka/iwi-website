@@ -1,0 +1,265 @@
+/* custom.css */
+
+:root {
+  --primary_blue: #3999bf;
+  --primary_red: #f2380f;
+  --primary_grey: #6c6c6c;
+
+  --secondary_red: #d33f49;
+  --secondary_blue: #2a7595;
+  --secondary_grey: #282828;
+
+  --white: #f4f6f7;
+  --petrol_pale: #354850;
+  --petrol: #1b485a;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  hyphens: auto;
+}
+
+body {
+  font-family: "Poppins-Regular", sans-serif;
+  overflow-x: hidden;
+}
+
+/* primary colors */
+.primary_blue {
+  color: var(--primary_blue);
+}
+
+.primary_blue_bg {
+  background-color: var(--primary_blue);
+}
+
+.primary_red {
+  color: var(--primary_red);
+}
+
+.primary_red_bg {
+  background-color: var(--primary_red);
+}
+
+.primary_grey {
+  color: var(--primary_grey);
+}
+
+.primary_grey_bg {
+  background-color: var(--primary_grey);
+}
+
+/* secondary colors */
+.secondary_blue {
+  color: var(--secondary_blue);
+}
+
+.secondary_blue_bg {
+  background-color: var(--secondary_blue);
+}
+
+.secondary_red {
+  color: var(--secondary_red);
+}
+
+.secondary_red_bg {
+  background-color: var(--secondary_red);
+}
+
+.secondary_grey {
+  color: var(--secondary_grey);
+}
+
+.secondary_grey_bg {
+  background-color: var(--secondary_grey);
+}
+
+/* text and background colors */
+
+.white_text {
+  color: var(--white);
+}
+
+.petrol_text {
+  color: var(--petrol);
+}
+
+.petrol_pale_text {
+  color: var(--petrol_pale);
+}
+
+.white_bg {
+  background-color: var(--white);
+}
+
+.petrol_bg {
+  background-color: var(--petrol);
+}
+
+.petrol_pale_bg {
+  background-color: var(--petrol_pale);
+}
+
+/* Navbar underline */
+
+nav .active a:after {
+  content: "";
+  min-width: 50px;
+  border-color: var(--petrol);
+  @apply border-b-2 block;
+}
+
+.menu_element:not(.active):hover a {
+  color: var(--primary_blue);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.max-w-max {
+  max-width: max-content;
+}
+
+.max-h-max {
+  max-height: max-content;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+nav li:not(.active) a:hover {
+  color: var(--primary_blue);
+}
+
+/* no margin */
+.no-margin {
+  margin: unset !important;
+}

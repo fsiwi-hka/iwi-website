@@ -14,9 +14,7 @@ function PageHead({ title, og }) {
             <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-            <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet"></link>
-
-            <title>{ title } | Fachschaft IWI</title>
+            <title>{`${Array.isArray(title) ? title.join(" ") : title} | Fachschaft IWI`}</title>
       </Head>
     )
 }

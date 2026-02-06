@@ -1,25 +1,31 @@
-import { GetStaticProps } from 'next'
-import MarkdownLoader from '../components/util/markdown-loader'
-import StaticPage from '../components/common/static-page'
+import { GetStaticProps } from "next";
 
-function Page({content, data}) {
-    return (
-        <StaticPage
-            className=""
-            data={data}
-            content={content}
-        />
-    )
+import Button from "../components/common/button";
+import Header from "../components/common/header";
+import ResponsiveWrapper from "../components/common/responsive-wrapper";
+
+
+export default function Custom500() {
+  return (
+    <>
+      <Header
+        title="Server-Fehler"
+        subtitle="Wir machen das Ganze ja auch nur ehrenamtlich."
+        showBreadcrumbs={false}
+      ></Header>
+     <ResponsiveWrapper>
+        <Button type={"large-blue1"} text={"Gib uns gerne Bescheid"} url={"mailto:kontakt@hka-iwi.de?subject=Error 500 auf der Website"}></Button>
+     </ResponsiveWrapper>
+    </>
+  );
 }
-
-export default Page
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const markdown = await MarkdownLoader.single('pages', '500')
-    return { 
-        props: {
-            content: markdown.content,
-            data: markdown.data
-        }
-    }
-}
+  return {
+    props: {
+      data: {
+        title: "500",
+      },
+    },
+  };
+};

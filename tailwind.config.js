@@ -1,13 +1,13 @@
 module.exports = {
-    purge: [
+    content: [
         './components/**/*.tsx',
         './pages/**/*.tsx'
     ],
     theme: {
         extend: {},
         fontFamily: {
-            'heading': ['Muli', 'sans-serif'],
-            'sans': ['Roboto', 'sans-serif']
+            'heading': ['Poppins', 'sans-serif'],
+            'sans': ['Poppins', 'sans-serif']
         },
         colors: {
             transparent: 'transparent',

@@ -1,0 +1,1 @@
+Learn how to create a new blog post / article by reading [this article](../../docs/create-blogpost.md)
