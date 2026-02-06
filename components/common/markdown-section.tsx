@@ -19,8 +19,8 @@ const MarkdownSection: React.FC<MarkdownProps> = ({ fileUrl }) => {
   return (
     <ReactMarkdown
       components={{
-        a: ({ node, href }) => {
-          const text = node.children?.map((child) => child.value).join("");
+        a: ({ href, children }) => {
+          const text = children?.toString() || "";
 
           if (text) {
             const match = text.split("|");
