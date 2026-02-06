@@ -8,13 +8,18 @@ jobs:
     name: Build
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '16.20.0'
     - run: ./scripts/decrypt_credentials.sh
       env:
         CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
     - run: npm install
     - run: npm run build
+    - name: Publish artifacts from out directory
+      uses: actions/upload-artifact@v4
+      with:
+        name: out
+        path: out
