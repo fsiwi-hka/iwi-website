@@ -1,6 +1,7 @@
 name: Deploy Site to Server
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
