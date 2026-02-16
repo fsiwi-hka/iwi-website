@@ -21,7 +21,6 @@ Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 
 Wir bitten euch darum, euren eigenen Laptop oder ähnliches mitzubringen. Es ist wahrscheinlich, 
 dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehen werden.
-
 ## Überblick
 
 <div class="table-responsive">
