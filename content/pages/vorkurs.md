@@ -7,10 +7,6 @@ header:
   der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind.'
   image: '/assets/backgrounds/vorkurs.jpg'
 ---
-## Update
-**Der Programmierkurs wurde auf den Zeitraum vom 8.9.-11.9. verschoben und findet NICHT am 15.9. - 18.9. statt!** 
-- Wir bitten darum das **Formular neu auszufüllen**, wenn man am 8.9. - 11.9. teilnehmen will!
-
 ## Allgemein
 
 Um Erstis, die zuvor noch nie etwas programmiert haben, den Einstieg zu vereinfachen, bieten wir einen 
@@ -25,14 +21,13 @@ Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
 
 Wir bitten euch darum, euren eigenen Laptop oder ähnliches mitzubringen. Es ist wahrscheinlich, 
 dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehen werden.
-
 ## Überblick
 
 <div class="table-responsive">
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>08.09. - 11.09.2025<br />(Mo - Do)</td>
+            <td>02.03. - 5.03.2026<br />(Mi - Fr)</td>
         </tr>
         <tr>
             <td>Ort</td>
@@ -134,7 +129,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 
 Du möchtest dabei sein? Super. Melde dich über das Formular direkt an!
 
-[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/d7rmpSoQZ7TRMgytfqz24yLC)
+[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/Hc2KMpwrQTpwLX2KDKgKfGMR)
 
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
@@ -147,7 +142,7 @@ wird gemeinsam am ersten Tag installiert und eingerichtet.
   - alternativ: Eclipse für Java Developers und JDK 11 oder neuer <https://ninite.com/adoptjdkx11-eclipse/>
 - Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) oder [Visual Studio Code](https://code.visualstudio.com/download) 
   und [.Net](https://dotnet.microsoft.com/download)
-- Für Python: [Miniconda Environment](/docs/getting-started/miniconda/install) und [Visual Studio Code](https://code.visualstudio.com/download)
+- Für Python: [Anaconda](https://www.anaconda.com/download) und [Visual Studio Code](https://code.visualstudio.com/download)
   - alternativ: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab 
 Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
 
