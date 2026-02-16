@@ -27,7 +27,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>02.03. - 5.03.2026<br />(Mi - Fr)</td>
+            <td>02.03. - 5.03.2026<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
@@ -125,8 +125,6 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 </div>
 
 ## Anmeldung
-> Das Formular ist neu erstellt worden für den 8.9. - 11.9.
-
 Du möchtest dabei sein? Super. Melde dich über das Formular direkt an!
 
 [icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/Hc2KMpwrQTpwLX2KDKgKfGMR)
