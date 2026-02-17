@@ -24,7 +24,7 @@ Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 
 Die Präsentation zur Vorstellung der Fachschaft findest du hier:
 
-- [Vorstellung Fachschaft](/assets/downloads/ophase/vorstellung/Vorstellung_Fachschaft.pdf)
+- [Vorstellung Fachschaft](/assets/downloads/ophase/SS26/Vorstellung/Vorstellung_Fachschaft.pdf)
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 
@@ -45,14 +45,14 @@ Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
 
 Ansonsten erreichst du uns hier:
 
-[icon:discord|Discord-Server](https://discord.gg/Ud5KQnz)
+[icon:discord|Discord-Server](https://discord.gg/u9DfmQw8Rx)
 [icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase: 25.09. - 03.10.2025 (Bachelor + Master)
+## O-Phase: 12.03. - 20.03.2025 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
@@ -69,15 +69,15 @@ informieren.
 
 TBA = to be announced
 
-### Version 5 - 28.09.2025, 17:35
+### Version 1 - 17.02.2026, 20:00
 
-*O-Phasen Plan Wintersemester 2025/26 für Studiengang Informatik & Medieninformatik:*
+*O-Phasen Plan Sommersemester 2026 für Studiengang Informatik & Medieninformatik:*
 
-[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2025_I.pdf)
+[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
-*O-Phasen Plan Wintersemester 2025/26 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
+*O-Phasen Plan Sommersemester 2026 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
 
-[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2025_WI.pdf)
+[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
 ## Sonstiges
 
