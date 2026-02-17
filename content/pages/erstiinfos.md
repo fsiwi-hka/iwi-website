@@ -45,14 +45,14 @@ Für Fragen rund ums Studium und darüber hinaus besuche gerne unsere
 
 Ansonsten erreichst du uns hier:
 
-[icon:discord|Discord-Server](https://discord.gg/Ud5KQnz)
+[icon:discord|Discord-Server](https://discord.gg/u9DfmQw8Rx)
 [icon:at|E-Mail schreiben](/scripts/email.php?address=kontakt)
 
 Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase: 25.09. - 03.10.2025 (Bachelor + Master)
+## O-Phase: 12.03. - 20.03.2025 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
@@ -71,11 +71,11 @@ TBA = to be announced
 
 ### Version 1 - 17.02.2026, 20:00
 
-*O-Phasen Plan Wintersemester 2025/26 für Studiengang Informatik & Medieninformatik:*
+*O-Phasen Plan Sommersemester 2026 für Studiengang Informatik & Medieninformatik:*
 
 [O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
-*O-Phasen Plan Wintersemester 2025/26 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
+*O-Phasen Plan Sommersemester 2026 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
 
 [O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/SS26/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
