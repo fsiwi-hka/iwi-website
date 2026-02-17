@@ -69,15 +69,15 @@ informieren.
 
 TBA = to be announced
 
-### Version 5 - 28.09.2025, 17:35
+### Version 1 - 17.02.2026, 20:00
 
 *O-Phasen Plan Wintersemester 2025/26 für Studiengang Informatik & Medieninformatik:*
 
-[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2025_I.pdf)
+[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
 *O-Phasen Plan Wintersemester 2025/26 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
 
-[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/ophase/zeitplan/O-Phasen-Zeitplan_IWI_WS_2025_WI.pdf)
+[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/SS26/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
 ## Sonstiges
 
