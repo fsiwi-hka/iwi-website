@@ -73,11 +73,11 @@ TBA = to be announced
 
 *O-Phasen Plan Sommersemester 2026 für Studiengang Informatik & Medieninformatik:*
 
-[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
+[O-Phasen Plan Informatik & Medieninformatik](/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
 *O-Phasen Plan Sommersemester 2026 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
 
-[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
+[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
 ## Sonstiges
 
