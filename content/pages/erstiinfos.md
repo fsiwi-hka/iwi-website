@@ -24,7 +24,7 @@ Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 
 Die Präsentation zur Vorstellung der Fachschaft findest du hier:
 
-- [Vorstellung Fachschaft](/assets/downloads/ophase/vorstellung/Vorstellung_Fachschaft.pdf)
+- [Vorstellung Fachschaft](/assets/downloads/ophase/SS26/Vorstellung/Vorstellung_Fachschaft.pdf)
 
 Die Präsentation zum PO-Briefing findest du hier (PO = Prüfungsordnung):
 
@@ -73,11 +73,11 @@ TBA = to be announced
 
 *O-Phasen Plan Sommersemester 2026 für Studiengang Informatik & Medieninformatik:*
 
-[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
+[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
 *O-Phasen Plan Sommersemester 2026 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
 
-[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/SS26/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
+[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 
 ## Sonstiges
 
