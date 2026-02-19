@@ -3,7 +3,7 @@ import MarkdownLoader from '../components/util/markdown-loader'
 import StaticPage from '../components/common/static-page'
 import getCalendarEvents from '../components/util/google-calendar'
 
-function Page({content, data}) {
+function Page({ content, data }) {
     return (
         <>
             <StaticPage
@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     // TODO this is currently the same calendar as on the homepage
     // replace when a company calendar was created
     const events = {} //await getCalendarEvents('f229fvilfl8peun924t109pouo@group.calendar.google.com')
-    return { 
+    return {
         props: {
             content: markdown.content,
             data: {

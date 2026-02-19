@@ -1,6 +1,4 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
 /* We use Tailwind CSS in this project: https://tailwindcss.com/
  *
@@ -18,7 +16,6 @@
 * {
     @apply font-light;
 }
-
 h2,
 h3,
 h4,

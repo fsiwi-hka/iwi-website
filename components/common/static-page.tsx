@@ -1,9 +1,10 @@
-import ReactMarkdown from 'react-markdown/with-html'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faPhone, faAt, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import Groups from './groups'
 import EventArea from './event-area'
-import {faDiscord} from "@fortawesome/free-brands-svg-icons";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 /* The static page module became bigger as expected.
  * First, it was just a Wrapper for creating a Markdown
@@ -11,7 +12,7 @@ import {faDiscord} from "@fortawesome/free-brands-svg-icons";
  * parser that searches for custom patterns like
  * components or IconLinks.
  */
-function StaticPage({data, content, className}) {
+function StaticPage({ data, content, className }) {
   // first we split the content into sections
   const sections = explodeContent(content)
   return (
@@ -19,13 +20,13 @@ function StaticPage({data, content, className}) {
       // each section is then rendered
       sections.map(section => {
         return (
-          <div key={section.id}> 
-            { 
+          <div key={section.id}>
+            {
               // first the Markdown part, which is always
               // present (even though sometimes it's empty)
               renderMarkdown(section.markdown, className)
             }
-            { 
+            {
               // second we render the component based on
               // a component reference. This can also be
               // undefined - caught by renderComponent()
@@ -52,7 +53,7 @@ function explodeContent(content) {
   var sections = [], re = /\{{[^)]*\}}/g, text, i = 0;
   var markdown = content.split(re)
 
-  while(text = re.exec(content)) {
+  while (text = re.exec(content)) {
     sections.push({
       id: i,
       markdown: markdown[i],
@@ -84,16 +85,16 @@ function explodeContent(content) {
  * The string needs to be matched exactly.
  */
 function renderComponent(componentName, data) {
-  if(componentName == undefined) {
+  if (componentName == undefined) {
     return
   }
   var component = null
   switch (componentName) {
     case "{{Groups}}":
-      component = <Groups groups={ data.groups } />
+      component = <Groups groups={data.groups} />
       break
     case "{{EventArea}}":
-      component = <EventArea events={ data.events } />
+      component = <EventArea events={data.events} />
       break
     default:
       component = null
@@ -108,18 +109,16 @@ function renderComponent(componentName, data) {
  * intelligent link logic (see below)
  */
 function renderMarkdown(content, className) {
-  return ( 
+  return (
     <ReactMarkdown
-      className={className}
-      source={content}
-      escapeHtml={false}
-      renderers={{
-        link: props => {
-          return intelligentLink(props)
-        }
+      rehypePlugins={[rehypeRaw]}
+      components={{
+        a: props => intelligentLink(props)
       }}
-    />
-  )
+    >
+      {content}
+    </ReactMarkdown>
+  );
 }
 
 /* With plain Markdown, the nice links we want to have are
@@ -134,12 +133,23 @@ function renderMarkdown(content, className) {
  * don't have that special format are treated as inline links.
  */
 function intelligentLink(props) {
-  if(!props.children[0].props.value.includes('|')) {
-    return <a href={props.href} className="text-blue-700 underline">{props.children}</a>
+  const child = props.children?.[0];
+
+  // Get the link text as a string
+  const linkText =
+    typeof child === 'string'
+      ? child
+      : typeof child?.props?.value === 'string'
+        ? child.props.value
+        : null;
+
+  // Fallback: show a regular link if we can't parse the custom format
+  if (!linkText || !linkText.includes('|')) {
+    return <a href={props.href} className="text-blue-700 underline">{props.children}</a>;
   }
 
-  const iconLink = props.children[0].props.value.split('|')
-  var icon = null
+  const iconLink = linkText.split('|');
+  let icon;
 
   switch (iconLink[0]) {
     case "icon:link":
@@ -163,13 +173,13 @@ function intelligentLink(props) {
   }
 
   return (
-    <a 
+    <a
       href={props.href}
       className="flex text-red-700 text-2xl items-center cursor-pointer my-6"
     >
-      <FontAwesomeIcon icon={ icon } />
+      <FontAwesomeIcon icon={icon} />
       <span className="text-gray-700 text-xl ml-4">
-        { iconLink[1] }
+        {iconLink[1]}
       </span>
     </a>
   )
