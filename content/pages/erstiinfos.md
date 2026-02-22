@@ -52,7 +52,7 @@ Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase: 12.03. - 20.03.2025 (Bachelor + Master)
+## O-Phase: 12.03. - 20.03.2026 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
