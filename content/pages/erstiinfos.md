@@ -52,7 +52,7 @@ Die Semestertermine der HKA findest du hier:
 
 [icon|Terminübersicht](https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine)
 
-## O-Phase: 12.03. - 20.03.2025 (Bachelor + Master)
+## O-Phase: 12.03. - 20.03.2026 (Bachelor + Master)
 
 Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg
 ins Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät
@@ -75,10 +75,11 @@ TBA = to be announced
 
 [O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
 ![O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/SS26/Plan/OPhasenPlan.jpeg)
+[O-Phasen Plan Informatik & Medieninformatik](https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Bilder_FK-IWI/O-Phase/PDF/SoSe2026_O-Phasenplan-IWI_an-extern.pdf)
 
 *O-Phasen Plan Sommersemester 2026 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
 
-[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://iwi-hka.de/assets/downloads/SS26/Plan/SoSe26_O-Phasenplan_IWI-für-Mitwirkende.pdf)
+[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Bilder_FK-IWI/O-Phase/PDF/SoSe2026_O-Phasenplan-IWI_an-extern.pdf)
 
 ## Sonstiges
 
