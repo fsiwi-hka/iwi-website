@@ -61,25 +61,14 @@ und von der Fachschaft Informatik und Wirtschaftsinformatik (das sind wir).
 **Diese Pläne richten sich an alle Studenten der Bachelor Studiengänge Informatik, Medieninformatik, Wirtschaftsinformatik,
 Internationales IT Business und Data Science. Ebenso für die Masterstudiengänge Wirtschaftsinformatik und Informatik.**
 
-Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der O-Phase angeboten werden,
-sind zwei Terminpläne in einer PDF. Gegebenenfalls kann es auch innerhalb eines Zeitplans verschiedene Zeitstränge
-geben, achtet hier auf die betroffene Gruppe. Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können
+Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können
 es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu
 informieren.
 
-TBA = to be announced
-
-### Version 1 - 17.02.2026, 20:00
-
-*O-Phasen Plan Sommersemester 2026 für Studiengang Informatik & Medieninformatik:*
+### Version 2 - 09.03.2026
 
 [O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/OPhasenPlan.jpeg)
 ![O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/OPhasenPlan.jpeg)
-[O-Phasen Plan Informatik & Medieninformatik](https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Bilder_FK-IWI/O-Phase/PDF/SoSe2026_O-Phasenplan-IWI_an-extern.pdf)
-
-*O-Phasen Plan Sommersemester 2026 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science:*
-
-[O-Phasen Plan Wirtschaftsinformatik & Internationales IT Business & Data Science](https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Bilder_FK-IWI/O-Phase/PDF/SoSe2026_O-Phasenplan-IWI_an-extern.pdf)
 
 ## Sonstiges
 
