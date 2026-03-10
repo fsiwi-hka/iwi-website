@@ -67,7 +67,6 @@ informieren.
 
 ### Version 2 - 09.03.2026
 
-[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/OPhasenPlan.jpeg)
 ![O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/OPhasenPlan.jpeg)
 
 ## Sonstiges
