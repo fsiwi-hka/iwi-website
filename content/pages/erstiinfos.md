@@ -19,6 +19,7 @@ Seite.
 ### Ersti-Heft
 
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
+Die updated Version für 2026 kommt am Montag, den 16.03.
 
 [icon:download|Download Ersti-Heft WS 2025 (PDF)](https://iwi-hka.de/assets/downloads/Erstiheft_WS25.pdf)
 
@@ -65,10 +66,10 @@ Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können
 es lohnt sich also, regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu
 informieren.
 
-### Version 2 - 09.03.2026
+### Version 3 - 12.03.2026
 
-[O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/O-Phasen-Zeitplan_SS_2026_V2.png)
-![O-Phasen Plan Informatik & Medieninformatik](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/O-Phasen-Zeitplan_SS_2026_V2.png)
+[O-Phasen Plan](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/O-Phasen-Zeitplan_SS_2026.png)
+![O-Phasen Plan](https://iwi-hka.de/assets/downloads/ophase/SS26/Plan/O-Phasen-Zeitplan_SS_2026.png)
 
 ## Sonstiges
 
