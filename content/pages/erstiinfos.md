@@ -21,7 +21,7 @@ Seite.
 Hier findest du eine Sammlung der wichtigsten Infos für dein Studium.
 Die updated Version für 2026 kommt am Montag, den 16.03.
 
-[icon:download|Download Ersti-Heft WS 2025 (PDF)](https://iwi-hka.de/assets/downloads/Erstiheft_SS26.pdf)
+[icon:download|Download Ersti-Heft SS 2026 (PDF)](https://iwi-hka.de/assets/downloads/Erstiheft_SS26.pdf)
 
 Die Präsentation zur Vorstellung der Fachschaft findest du hier:
 
