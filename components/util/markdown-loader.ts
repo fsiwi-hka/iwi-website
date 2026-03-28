@@ -28,7 +28,7 @@ MarkdownLoader.single = async (dir, slug) => {
      * https://github.com/vercel/next.js/issues/11993 
      */
     delete data.orig
-    
+
     return { ...data }
 }
 
@@ -50,7 +50,8 @@ MarkdownLoader.multiple = (context, options) => {
             .slice(0, -1)
             .join('.')
         const value = values[index]
-        const document = matter(value.default)
+        const content = value && value.default ? value.default : value;
+        const document = matter(content)
 
         /* we need to remove the original data, as it's
          * a stream buffer that can't be easily converted
@@ -60,21 +61,21 @@ MarkdownLoader.multiple = (context, options) => {
          * https://github.com/vercel/next.js/issues/11993 
          */
         delete document.orig
-        
+
         return { ...document, slug: slug }
     })
 
-    if(options.sortBy == 'date') {
+    if (options.sortBy == 'date') {
         data = data.slice().sort(
             (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
         )
     }
 
-    if(options.max != undefined) {
+    if (options.max != undefined) {
         data = data.slice(0, options.max)
     }
 
     return data
-} 
+}
 
 export default MarkdownLoader

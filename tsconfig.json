@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2020",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "DOM",
+      "DOM.iterable",
+      "ES2020"
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -16,7 +15,9 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "strict": false,
+    "incremental": true
   },
   "exclude": [
     "node_modules"

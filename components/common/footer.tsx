@@ -19,9 +19,12 @@ function Footer() {
                   {socialIcon(faTwitch, 'https://www.twitch.tv/iwi_hska')}
                   {socialIcon(faEnvelope, 'mailto:kontakt@iwi-hka.de')}
                 </ul>
-                <Link href="/"><a className="flex items-center justify-evenly mx-4 md:mx-8" >
+                <Link
+                    href="/"
+                    className="flex items-center justify-evenly mx-4 md:mx-8"
+                    legacyBehavior>
                     <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-20 md:h-32"/>
-                </a></Link>
+                </Link>
                 <ul  className="flex items-center justify-start list-none font-heading">
                     { socialIcon(faInstagram, 'https://www.instagram.com/iwi_fachschaft/') }
                     { socialIcon(faDiscord, 'https://discord.com/invite/Ud5KQnz') }
@@ -32,11 +35,11 @@ function Footer() {
                     &copy; { new Date().getFullYear() } Fachschaft IWI
                 </span>
                 <span>
-                    <Link href="/impressum/"><a className="text-gray-700 no-underline">Impressum</a></Link>
+                    <Link href="/impressum/" className="text-gray-700 no-underline">Impressum</Link>
                 </span>
             </p>
         </footer>
-    )
+    );
 }
 
 function socialIcon(icon, href) {
