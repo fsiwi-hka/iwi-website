@@ -1,10 +1,23 @@
+import fs from "fs";
+import matter from "gray-matter";
 import { GetStaticProps } from "next";
+import path from "path";
 
 import BoxBig from "../components/common/box-big";
 import Button from "../components/common/button";
 import Carousel from "../components/common/carousel";
 import InstagramFeed from "../components/common/InstagramFeed";
 import Slider from "../components/common/slider";
+
+function slugify(str: string): string {
+  return str
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .replace(/--+/g, "-");
+}
 
 
 export interface Slide {
@@ -176,11 +189,44 @@ function Index({ news, events, slides }) {
 
 export default Index;
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch(`http://localhost:3001/api/loader_news?start=0&end=3`);
-  const data = await res.json();
+export const getStaticProps: GetStaticProps = async () => {
+  const baseDir = path.join(process.cwd(), "content/news");
+  const now = new Date();
+  const oneYearAgo = new Date(new Date().setFullYear(new Date().getFullYear() - 1));
+  const maxWordCountExcerpt = 10;
 
-  const slides: Slide[] = data.news.map((item: any) => ({
+  const files = fs
+    .readdirSync(baseDir)
+    .filter((file) => file.toLowerCase().endsWith(".md") && file !== "readme.md")
+    .sort((a, b) => a.localeCompare(b));
+
+  const allNews = files
+    .map((file) => {
+      const { data } = matter(fs.readFileSync(path.join(baseDir, file), "utf-8"));
+      return data;
+    })
+    .filter(
+      (data) =>
+        data.title &&
+        data.excerpt &&
+        data.author &&
+        now >= new Date(data.publishDate) &&
+        new Date(data.publishDate) >= oneYearAgo &&
+        data.image &&
+        data.published
+    )
+    .map((data) => ({
+      uuid: data.publishDate + "_" + slugify(data.title),
+      title: data.title as string,
+      excerpt:
+        data.excerpt.split(" ").length < maxWordCountExcerpt
+          ? data.excerpt
+          : data.excerpt.split(" ").slice(0, maxWordCountExcerpt).join(" ") + "...",
+      cta: (data.cta as string) || "",
+      image: data.image as string,
+    }));
+
+  const slides: Slide[] = allNews.slice(0, 3).map((item) => ({
     title: item.title,
     subtitle: item.excerpt,
     image: item.image,
@@ -191,10 +237,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      slides: slides,
-      data: {
-        title: "Homepage",
-      },
+      slides,
+      data: { title: "Homepage" },
     },
   };
 };

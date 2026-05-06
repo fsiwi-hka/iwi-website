@@ -30,6 +30,8 @@ const Slider = ({ slides }: { slides: Slide[] }) => {
     return () => clearInterval(interval); // Interval zurücksetzen, wenn die Komponente entladen wird
   }, [slides.length]);
 
+  if (!slides || slides.length === 0) return null;
+
   const currentSlide = slides[imageIndex];
 
   return (
