@@ -177,7 +177,7 @@ function Index({ news, events, slides }) {
 export default Index;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch(`http://localhost:3000/api/loader_news?start=0&end=3`);
+  const res = await fetch(`http://localhost:3001/api/loader_news?start=0&end=3`);
   const data = await res.json();
 
   const slides: Slide[] = data.news.map((item: any) => ({
