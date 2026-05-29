@@ -1,0 +1,19 @@
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      secrets:
+        - instagram_token
+        - nextcloud_url
+    image: iwi-website:latest
+    container_name: iwi-website
+    restart: always
+    ports:
+      - "8080:80"
+
+secrets:
+  instagram_token:
+    environment: INSTAGRAM_TOKEN
+  nextcloud_url:
+    environment: NEXTCLOUD_URL

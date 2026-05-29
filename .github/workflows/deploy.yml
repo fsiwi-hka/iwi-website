@@ -1,0 +1,49 @@
+name: Deploy Website
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Copy project to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./"
+          target: ${{ secrets.DEPLOY_PATH }}
+          strip_components: 1
+          rm: false
+          debug: true
+
+      - name: Build and start container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL
+          script: |
+            set -e
+
+            cd ${{ secrets.DEPLOY_PATH }}/deploy
+
+            # Build-time Secrets als Env-Vars für docker compose bereitstellen
+            export INSTAGRAM_TOKEN
+            export NEXTCLOUD_URL
+
+            docker compose down
+            docker compose up -d --build
+
+            # Aufräumen: alte ungenutzte Images entfernen
+            docker image prune -f
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
