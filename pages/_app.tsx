@@ -20,7 +20,7 @@ function IWIWebsite({ Component, pageProps }) {
 
       <Menu />
 
-      <section className="main w-full mx-auto">
+      <section className="main w-full mx-auto flex flex-col flex-grow">
         <Component {...pageProps} />
       </section>
 

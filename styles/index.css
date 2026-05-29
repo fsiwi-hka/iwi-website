@@ -20,6 +20,16 @@
     font-family: 'Poppins';
 }
 
+html, body {
+    height: 100vh;
+}
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 h1,
 h2,
 h3,
