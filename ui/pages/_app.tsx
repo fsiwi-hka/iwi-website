@@ -10,12 +10,16 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 function IWIWebsite({ Component, pageProps }) {
+  if ((Component as any).noLayout) {
+    return <Component {...pageProps} />;
+  }
+
   const og = pageProps.data?.og;
   const title = pageProps.data?.title;
 
   return (
     <>
-  
+
       <PageHead title={title} og={og} />
 
       <Menu />

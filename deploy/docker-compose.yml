@@ -1,7 +1,7 @@
 services:
   web:
     build:
-      context: ..
+      context: ../ui
       dockerfile: Dockerfile
       secrets:
         - instagram_token
