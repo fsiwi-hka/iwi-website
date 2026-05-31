@@ -1,7 +1,4 @@
 :80 {
-    root * /usr/share/caddy
-    file_server
-    try_files {path} {path}.html {path}/ =404
     encode gzip zstd
 
     header {
@@ -11,6 +8,16 @@
         -Server
     }
 
-    @static path /_next/static/* /static/*
-    header @static Cache-Control "public, max-age=31536000, immutable"
+    handle /api/* {
+        reverse_proxy backend:8080
+    }
+
+    handle {
+        root * /usr/share/caddy
+        try_files {path} {path}.html {path}/ =404
+        file_server
+
+        @static path /_next/static/* /static/*
+        header @static Cache-Control "public, max-age=31536000, immutable"
+    }
 }

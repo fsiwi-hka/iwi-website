@@ -1,0 +1,7 @@
+bin/
+obj/
+cache/
+.git/
+.gitignore
+README.md
+frontend/

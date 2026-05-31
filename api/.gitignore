@@ -1,0 +1,6 @@
+bin/
+obj/
+cache/
+appsettings.*.json
+!appsettings.json
+*.user

@@ -4,16 +4,34 @@ services:
       context: ../ui
       dockerfile: Dockerfile
       secrets:
-        - instagram_token
         - nextcloud_url
     image: iwi-website:latest
     container_name: iwi-website
     restart: always
     ports:
       - "8080:80"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ../api
+      dockerfile: ./IWI-Backend.Api/Dockerfile
+    image: iwi-backend:latest
+    container_name: iwi-backend
+    restart: always
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - Sync__CacheDirectory=/home/app/cache
+    user: "1654:1654"
+    volumes:
+      - media_cache:/home/app/cache
+    ports:
+      - "5200:8080"
 
 secrets:
-  instagram_token:
-    environment: INSTAGRAM_TOKEN
   nextcloud_url:
     environment: NEXTCLOUD_URL
+
+volumes:
+  media_cache:

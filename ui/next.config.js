@@ -13,7 +13,10 @@ const nextConfig = {
     return config
   },
   trailingSlash: true,
-  output: "export"
+  output: "export",
+  rewrites: () => {
+    return [{ source: '/api/:path*', destination: 'http://localhost:5200/api/:path*' }];
+  }
 }
 
 module.exports = nextConfig
