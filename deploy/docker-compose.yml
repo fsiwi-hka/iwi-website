@@ -9,7 +9,7 @@ services:
     container_name: iwi-website
     restart: always
     ports:
-      - "8080:80"
+      - "127.0.0.1:8080:80"
     depends_on:
       - backend
 
@@ -27,7 +27,7 @@ services:
     volumes:
       - media_cache:/home/app/cache
     ports:
-      - "5200:8080"
+      - "127.0.0.1:5200:8080"
 
 secrets:
   nextcloud_url:
