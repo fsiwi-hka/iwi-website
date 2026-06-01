@@ -10,6 +10,8 @@ services:
     restart: always
     ports:
       - "127.0.0.1:8080:80"
+    networks:
+      - npm
     depends_on:
       - backend
 
@@ -28,6 +30,8 @@ services:
       - media_cache:/home/app/cache
     ports:
       - "127.0.0.1:5200:8080"
+    networks:
+      - npm
 
 secrets:
   nextcloud_url:
@@ -35,3 +39,8 @@ secrets:
 
 volumes:
   media_cache:
+
+networks:
+  npm:
+    name: nginx-proxy-manager_default
+    external: true
