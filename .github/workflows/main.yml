@@ -1,52 +1,49 @@
-name: Deploy Site to Server
+name: Deploy Website
 
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '0 4 * * *'
+  workflow_dispatch:
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-22.04
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '16.20.0'
-    - run: ./scripts/decrypt_credentials.sh
-      env:
-        CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
-    - run: npm install
-    - run: npm run build
-    - name: Publish artifacts from out directory
-      uses: actions/upload-artifact@v4
-      with:
-        name: out
-        path: out
-
   deploy:
-    name: Deploy
-    runs-on: ubuntu-22.04
-    needs: [build]
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: out
-          path: out
-      - name: Debug Files
-        run: ls
-      - name: Upload to FTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
-        with:
-          username: ${{ secrets.sftp_user_webspace }}
-          server: ${{ secrets.sftp_server_webspace}}
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: out # Folder to deploy
-          remote_path: ${{ secrets.sftp_remote_path_webspace }}
-          args: '-o ConnectTimeout=5'
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Copy project to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./"
+          target: ${{ secrets.DEPLOY_PATH }}
+          strip_components: 1
+          rm: false
+          debug: true
+
+      - name: Build and start container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL
+          script: |
+            set -e
+
+            cd ${{ secrets.DEPLOY_PATH }}/deploy
+
+            # Build-time Secrets als Env-Vars für docker compose bereitstellen
+            export INSTAGRAM_TOKEN
+            export NEXTCLOUD_URL
+
+            docker compose down
+            docker compose up -d --build
+
+            # Aufräumen: alte ungenutzte Images entfernen
+            docker image prune -f
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
