@@ -12,8 +12,8 @@ const Breadcrumb = ({ siteName }: BreadcrumbProps) => {
   return (
     <div aria-label="breadcrumb" className="flex text-white mb-2 flex-wrap">
       <span>
-        <Link href="/Startseite" className="text-blue-500 hover:underline">
-          Startseite
+        <Link href="/" className="text-blue-500 hover:underline">
+          Home
         </Link>
       </span>
       {pathArray.map((segment, index) => {

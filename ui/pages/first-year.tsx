@@ -65,9 +65,9 @@ function Index() {
               </h2>
               <h4 className="petrol_pale_text mt-0 mb-4">O-Phase</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
-                <ButtonButBigger bgcolor="petrol" text={"Programmiervorkurs"} link={"/Programmiervorkurs/"} newTab={true}></ButtonButBigger>
+                <ButtonButBigger bgcolor="petrol" text={"Programmiervorkurs"} link={"/pre-course/"} newTab={true}></ButtonButBigger>
                 <ButtonButBigger bgcolor="petrol" text={"Ersti-Heft"} link={"/assets/downloads/ophase/erstiheft/Erstiheft_SS25.pdf"} newTab={true}></ButtonButBigger>
-                <ButtonButBigger bgcolor="petrol" text={"O-Phasen-Programm"} link={"/O-Phase"} newTab={true}></ButtonButBigger> {/* Link fehlt */}
+                <ButtonButBigger bgcolor="petrol" text={"O-Phasen-Programm"} link={"/orientation"} newTab={true}></ButtonButBigger> {/* Link fehlt */}
               </div>
 
               <h4 className="petrol_pale_text mt-0 mb-0"> Studien- und Prüfungsordnung (SPO)</h4>
@@ -238,7 +238,7 @@ function Index() {
                   </>
                 }
                 boxText="O-Phasen-Programm"
-                boxLink="/O-Phase"
+                boxLink="/orientation"
                 newTab={true}
                 note={
                   <>

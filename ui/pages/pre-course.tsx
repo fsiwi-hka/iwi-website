@@ -170,7 +170,7 @@ function Index() {
           title="Möchtest du mit dabei sein?"
           subtitle="Sende uns eine E-Mail mit einer kurzen Nachricht, deinem Namen und deinem Studiengang."
           buttontext="Jetzt mitmachen"
-          buttonlink="../Mitmachen" // # macht das hier überhaupt Sinn?
+          buttonlink="/join" // # macht das hier überhaupt Sinn?
           belowText="Keine Vorkenntnisse nötig - jede:r ist willkommen!"
         />
       </div>

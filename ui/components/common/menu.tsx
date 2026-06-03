@@ -5,19 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "./button";
 
 const mainMenuItems = [
-  { title: "Startseite", slug: "/Startseite/" },
-  { title: "Erstsemester", slug: "/Erstsemester" },
-  { title: "Fachschaft", slug: "/Fachschaft/" },
-  { title: "Aktuelles", slug: "/Aktuelles/" },
-  { title: "Studium", slug: "/Studium/" },
-  { title: "Kontakt", slug: "/Kontakt/" },
+  { title: "Startseite", slug: "/" },
+  { title: "Erstsemester", slug: "/first-year" },
+  { title: "Fachschaft", slug: "/about/" },
+  { title: "Aktuelles", slug: "/news/" },
+  { title: "Studium", slug: "/studies/" },
+  { title: "Kontakt", slug: "/contact/" },
 ];
 
 function Menu() {
   return (
     <>
       <nav className="w-full max-w-screen-xl mx-auto px-6 flex items-center justify-between flex-wrap">
-        <Link href="/Startseite">
+        <Link href="/">
           <img src="/assets/iwi-logo.svg" alt="IWI-Logo" className="h-16 md:h-18 lg:h-24" />
         </Link>
         <div className="flex gap-1 md:gap-8 mx-auto">
@@ -32,7 +32,7 @@ function Menu() {
             url={"https://cloud.iwi-hka.de/apps/files/files/525?dir=/StudiBoard"}
             newtab={true}
           ></Button>
-          <Button type={"small-blue1"} text={"für Unternehmen"} url={"/Sponsoring-und-Kooperation"}></Button>
+          <Button type={"small-blue1"} text={"für Unternehmen"} url={"/sponsoring"}></Button>
         </div>
 
         <a className="text-2xl mx-2 block md:hidden primary_blue cursor-pointer modal-open">
@@ -76,7 +76,7 @@ function mobileMenu() {
               text={"StudiBoard"}
               url={"https://cloud.iwi-hka.de/apps/files/files/525?dir=/StudiBoard"}
             ></Button>
-            <Button type={"small-blue1"} text={"für Unternehmen"} url={"/Sponsoring-und-Kooperation"}></Button>
+            <Button type={"small-blue1"} text={"für Unternehmen"} url={"/sponsoring"}></Button>
           </div>
         </div>
       </div>
@@ -103,8 +103,7 @@ function determineClasses(title, href, mobile) {
     // we need to append the trailing slash because the router
     // pathname doesn't contain it (it's added in the NextJS config)
     router.pathname + "/" === href ||
-    (router.pathname.startsWith(href) && href != "/") ||
-    (router.pathname.startsWith("/news") && href === "/")
+    (router.pathname.startsWith(href) && href != "/")
   ) {
     if (mobile) {
       return "text-xl text-white underline font-heading font-medium";

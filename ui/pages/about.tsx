@@ -176,7 +176,7 @@ function Index() {
           title="Möchtest du mit dabei sein?"
           subtitle="Melde dich direkt bei uns vor Ort in der Fachschaft, per Email oder komm zur Fachschaftssitzung!"
           buttontext="Jetzt mitmachen"
-          buttonlink="../Mitmachen"
+          buttonlink="/join"
         />
       </div>
 

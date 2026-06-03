@@ -86,7 +86,7 @@ export default function NewsPage() {
               {newsItem.tags?.map((tag) => (
                 <a
                   key={tag}
-                  href={`/Aktuelles/search?tag=${encodeURIComponent(tag)}`}
+                  href={`/news/search?tag=${encodeURIComponent(tag)}`}
                   style={{ marginRight: "0.5rem" }}
                   className="hover:underline primary_blue"
                 >
@@ -166,7 +166,7 @@ export default function NewsPage() {
               Verfasst von{" "}
               <a
                 className="hover:underline primary_blue"
-                href={`/Aktuelles/search?author=${encodeURIComponent(newsItem.author)}`}
+                href={`/news/search?author=${encodeURIComponent(newsItem.author)}`}
               >
                 {newsItem.author}
               </a>

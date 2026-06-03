@@ -1,4 +1,4 @@
-import { CarouselImage } from "../../pages/Startseite";
+import { CarouselImage } from "../../pages/index";
 import { useEffect, useRef } from "react";
 
 interface CarouselProps {

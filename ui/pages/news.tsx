@@ -151,7 +151,7 @@ function Index() {
                     title={item.title}
                     subtitle={item.excerpt}
                     image={item.image}
-                    link={`/Aktuelles/article?item=${item.uuid}`}
+                    link={`/news/article?item=${item.uuid}`}
                   />
                 ))}
 
@@ -172,7 +172,7 @@ function Index() {
                     title={displayedNewsMobile[0].title}
                     subtitle={displayedNewsMobile[0].excerpt}
                     image={displayedNewsMobile[0].image}
-                    link={`/Aktuelles/article?item=${displayedNewsMobile[0].uuid}`}
+                    link={`/news/article?item=${displayedNewsMobile[0].uuid}`}
                   />
                 ) : null}
 

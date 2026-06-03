@@ -62,7 +62,7 @@ export default function NewsPage() {
                   title={item.title}
                   subtitle={item.content.split(" ").slice(0, 10).join(" ") + "..."}
                   image={item.image}
-                  link={`/Aktuelles/article?item=${item.uuid}`}
+                  link={`/news/article?item=${item.uuid}`}
                 />
               ))}
             </div>
@@ -88,7 +88,7 @@ export default function NewsPage() {
                   title={item.title}
                   subtitle={item.content.split(" ").slice(0, 10).join(" ") + "..."}
                   image={item.image}
-                  link={`/Aktuelles/article?item=${item.uuid}`}
+                  link={`/news/article?item=${item.uuid}`}
                 />
               ))}
             </div>

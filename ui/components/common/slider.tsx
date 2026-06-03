@@ -1,7 +1,7 @@
 import Button from "./button";
 import { useState, useEffect } from "react";
 import SliderButton from "./slider-button";
-import { Slide } from "../../pages/Startseite";
+import { Slide } from "../../pages/index";
 
 const Slider = ({ slides }: { slides: Slide[] }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -45,7 +45,7 @@ const Slider = ({ slides }: { slides: Slide[] }) => {
             </div>
             <div className="flex flex-col lg:flex-row">
               <Button type={"large-blue2"} text={currentSlide.buttontext} url={currentSlide.buttonlink} />
-              <Button type={"large-blue1"} text="Weitere Neuigkeiten" url="/Aktuelles" />
+              <Button type={"large-blue1"} text="Weitere Neuigkeiten" url="/news" />
             </div>
           </div>
           <div className="md:w-1/2 flex-1 relative">

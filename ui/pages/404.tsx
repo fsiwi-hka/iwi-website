@@ -17,7 +17,7 @@ export default function Custom404() {
         <Button
           type={"large-blue1"}
           text={"Zur Startseite"}
-          url={"/Startseite"}
+          url={"/"}
         ></Button>
       </ResponsiveWrapper>
     </>

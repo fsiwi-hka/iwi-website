@@ -36,27 +36,27 @@ function Footer() {
 
           <div className="flex flex-col gap-1">
             <h5 className="mb-2 md:mb-5 text-white">Studierende</h5>
-            <FooterLink href="/Erstsemester" newtab="false" name="Erstsemester" />
-            <FooterLink href="/Aktuelles" newtab="false" name="Aktuelles" />
+            <FooterLink href="/first-year" newtab="false" name="Erstsemester" />
+            <FooterLink href="/news" newtab="false" name="Aktuelles" />
             <FooterLink
               href="https://cloud.iwi-hka.de/apps/files/files/525?dir=/StudiBoard"
               newtab="true"
               name="StudiBoard"
             />
-            <FooterLink href="/Programmiervorkurs/" newtab="false" name="Programmiervorkurs" />
-            <FooterLink href="/Studium" newtab="false" name="Studium" />
+            <FooterLink href="/pre-course/" newtab="false" name="Programmiervorkurs" />
+            <FooterLink href="/studies" newtab="false" name="Studium" />
           </div>
 
           <div className="flex flex-col gap-1">
             <h5 className="mb-2 md:mb-5 text-white">Fachschaft</h5>
-            <FooterLink newtab="false" href="/Fachschaft/#mitmachen" name="Mitmachen" />
-            <FooterLink newtab="false" href="/Fachbereiche" name="Fachbereiche" />
-            <FooterLink newtab="false" href="/Fachschaft/#sitzungsprotokolle" name="Sitzungsprotokolle" />
+            <FooterLink newtab="false" href="/about/#mitmachen" name="Mitmachen" />
+            <FooterLink newtab="false" href="/departments" name="Fachbereiche" />
+            <FooterLink newtab="false" href="/about/#sitzungsprotokolle" name="Sitzungsprotokolle" />
           </div>
 
           <div className="flex flex-col gap-1">
             <h5 className="mb-2 md:mb-5 text-white">Unternehmen</h5>
-            <FooterLink newtab="false" href="/Sponsoring-und-Kooperation" name="Sponsoring & Kooperation" />
+            <FooterLink newtab="false" href="/sponsoring" name="Sponsoring & Kooperation" />
           </div>
 
           <div className="flex flex-col gap-1">
@@ -76,7 +76,7 @@ function Footer() {
         <span className="my-auto mb-5 md:mb-auto">
           &copy; {new Date().getFullYear()} Fachschaft Informatik und Wirtschaftsinformatik
         </span>
-        <a className="hidden md:block" href="/Startseite">
+        <a className="hidden md:block" href="/">
           <img src="/assets/iwi-logo-white.png" className="w-20" alt="IWI-Logo" />
         </a>
         <span className="my-auto text-right">
@@ -87,11 +87,11 @@ function Footer() {
             Fachschaftsordnung
           </a>{" "}
           |{" "}
-          <a href="/Impressum" className="hover:underline">
+          <a href="/imprint" className="hover:underline">
             Impressum
           </a>
         </span>
-        <a className="block md:hidden " href="/Startseite">
+        <a className="block md:hidden " href="/">
           <img src="/assets/iwi-logo-white.png" className="w-20 mx-auto" alt="IWI-Logo" />
         </a>
       </div>
