@@ -27,7 +27,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <table class="table-vertical">
         <tr>
             <td>Datum</td>
-            <td>02.03. - 5.03.2026<br />(Mo - Do)</td>
+            <td>21.09. - 24.09.2026<br />(Mo - Do)</td>
         </tr>
         <tr>
             <td>Ort</td>
@@ -106,10 +106,11 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
     <tr>
       <td>10 - 12 Uhr</td>
       <td>Infos, Übungsbesprechung, Vorlesung</td>
-      <td>Java: LI145
+      <td>Infos folgen</td>
+      <!--<td>Java: LI145
       <br>C#: LI137
       <br>Python: LI146
-      </td>
+      </td>-->
     </tr>
     <tr>
       <td>12 - 13 Uhr</td>
@@ -127,7 +128,7 @@ dass die Poolräume mit den vorhandenen Poolcomputern nicht zur Verfügung stehe
 ## Anmeldung
 Du möchtest dabei sein? Super. Melde dich über das Formular direkt an!
 
-[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/Hc2KMpwrQTpwLX2KDKgKfGMR)
+[icon:link|Zur Anmeldung](https://cloud.iwi-hka.de/apps/forms/s/PrZYAES5pcM5ZQGE8W66e4KY)
 
 PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 
@@ -136,10 +137,10 @@ PS: Für eine Anmeldung ist es erst zu spät, wenn der Vorkurs vorbei ist 🙂
 Es empfiehlt sich die Programmieraufgaben auf einem eigenem Laptop durchzuführen. Die hierfür benötigte Software 
 wird gemeinsam am ersten Tag installiert und eingerichtet.
 
-- Für Java : [IntelliJ IDEA **Community Edition**](https://www.jetbrains.com/idea/download/other.html)
+- Für Java : [IntelliJ IDEA](https://www.jetbrains.com/idea/download)
   - alternativ: Eclipse für Java Developers und JDK 11 oder neuer <https://ninite.com/adoptjdkx11-eclipse/>
-- Für C# : [Visual Studio Community Edition](https://code.visualstudio.com/download) oder [Visual Studio Code](https://code.visualstudio.com/download) 
-  und [.Net](https://dotnet.microsoft.com/download)
+- Für C# : [Visual Studio Community Edition](https://visualstudio.microsoft.com/downloads) oder [Visual Studio Code](https://code.visualstudio.com/download) 
+  und [.NET](https://dotnet.microsoft.com/download)
 - Für Python: [Anaconda](https://www.anaconda.com/download) und [Visual Studio Code](https://code.visualstudio.com/download)
   - alternativ: [Python 3.x](https://www.python.org/downloads/) und Jupyter Lab 
 Ansonsten ist es auch möglich einen Rechner von der Hochschule zu verwenden.
