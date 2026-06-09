@@ -1,55 +1,32 @@
 name: Deploy Website
-
 on:
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    if: github.ref_name == 'develop' || github.ref_name == 'main'
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Deploy
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD
+          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD,BRANCH
           script: |
             set -e
             cd ${{ secrets.DEPLOY_PATH }}
             git fetch origin
-            git reset --hard origin/develop
-            git clean -fdx        # entfernt nicht-getrackte Reste, ABER siehe Warnung
+            git reset --hard "origin/$BRANCH"
+            git clean -fd
             cd deploy
             export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD
             docker compose down
             docker compose up -d --build
             docker image prune -f
         env:
-          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
-          NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
-          WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
-          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
-
-      - name: Build and start container
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL
-          script: |
-            set -e
-            cd ${{ secrets.DEPLOY_PATH }}/deploy
-            export INSTAGRAM_TOKEN WEBDAV_USERNAME WEBDAV_PASSWORD NEXTCLOUD_URL
-            docker compose down
-            docker compose up -d --build
-            docker image prune -f
-        env:
+          BRANCH: ${{ github.ref_name }}
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
           WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
