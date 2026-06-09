@@ -11,17 +11,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Copy project to server
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "./"
-          target: ${{ secrets.DEPLOY_PATH }}
-          strip_components: 1
-          rm: true
-          debug: true
+          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD
+          script: |
+            set -e
+            cd ${{ secrets.DEPLOY_PATH }}
+            git fetch origin
+            git reset --hard origin/main
+            git clean -fdx        # entfernt nicht-getrackte Reste, ABER siehe Warnung
+            cd deploy
+            export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD
+            docker compose down
+            docker compose up -d --build
+            docker image prune -f
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
+          WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
+          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
 
       - name: Build and start container
         uses: appleboy/ssh-action@v1.0.3
