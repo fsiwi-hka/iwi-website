@@ -1,15 +1,10 @@
-export interface Member {
-    img?: string;
-    name: string;
-    position: string;
+export interface Mitglied {
+    img?: string; // image of the member
+    position: string; // position of the member, f.e. "Vorstand"
+    name: string; // name of the member
 }
 
 export const members = [
-
-
-
-
-
     {
         position: "1. Vorstand",
         name: "Dustin Sommerfeld",
@@ -83,4 +78,4 @@ export const members = [
         position: "FB Fachschaftsraum",
         name: "Denis Lischer",
     }
-] satisfies Member[];
+] satisfies Mitglied[];

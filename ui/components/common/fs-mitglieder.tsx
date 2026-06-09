@@ -1,10 +1,5 @@
 import React from "react";
-
-interface Mitglied {
-  img: string; // image of the member
-  position: string; // position of the member, f.e. "Vorstand"
-  name: string; // name of the member
-}
+import {Mitglied} from "../../content/member";
 
 interface FsMitgliederProps {
   mitglieder: (Mitglied | null)[]; // Das Array kann auch null-Werte enthalten
