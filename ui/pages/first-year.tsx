@@ -9,6 +9,7 @@ import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import BoxTextButton from "../components/common/box-text-button";
+import {strings} from "@lib/strings";
 
 
 function Index() {
@@ -274,7 +275,7 @@ function Index() {
                 Sollte die <b>Registrierung</b> fehlschlagen, bitten wir dich
                 uns eine Email mit deinem <b>RZ Kürzel</b> und deiner{" "}
                 <b>Hochschulemail</b> an folgende Email zu senden:{" "}
-                <Obfuscate email="kontakt@hka.iwi.de"></Obfuscate>
+                <Obfuscate email={strings.contact.mail}></Obfuscate>
               </InfoBox>
 
               <div className="text-xl mb-20"></div> {/*Abstand*/}
@@ -289,7 +290,7 @@ function Index() {
               <p className="primary_grey">
                 Wenn ihr Fragen oder Probleme habt, meldet euch einfach in der
                 Signal-Gruppe oder schreibt eine Mail:{" "}
-                <Obfuscate email="kontakt@hka.iwi.de"></Obfuscate>
+                <Obfuscate email={strings.contact.mail}></Obfuscate>
               </p>
             </div>
           </div>

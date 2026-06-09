@@ -25,20 +25,26 @@ services:
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - Sync__CacheDirectory=/home/app/cache
+      - Instagram__TokenFilePath=/home/app/state/instagram_token.json
+      - Instagram__AccessToken=${INSTAGRAM_TOKEN}
+      - WebDav__Username=${WEBDAV_USERNAME}
+      - WebDav__Password=${WEBDAV_PASSWORD}
     user: "1654:1654"
     volumes:
       - media_cache:/home/app/cache
+      - instagram_state:/home/app/state
     ports:
       - "127.0.0.1:5200:8080"
     networks:
       - npm
 
+volumes:
+  media_cache:
+  instagram_state:
+
 secrets:
   nextcloud_url:
     environment: NEXTCLOUD_URL
-
-volumes:
-  media_cache:
 
 networks:
   npm:

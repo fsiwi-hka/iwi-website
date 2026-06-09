@@ -7,6 +7,7 @@ import InfoBox from "../components/common/infobox";
 import NewsPreviewElement from "../components/common/news-preview-element";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import SliderButton from "../components/common/slider-button";
+import {strings} from "@lib/strings";
 
 function Index() {
   const handleButtonClickNews = (id: string, mobile: boolean) => {
@@ -222,8 +223,8 @@ function Index() {
 
           <InfoBox
             icon={"exclamation"}
-            buttonlink="https://h-ka-de.zoom-x.de/j/64304270469"
-            buttontext="Online teilnehmen"
+            buttonlink={strings.participate.online.url}
+            buttontext={strings.participate.online.title}
             buttonNewTab={true}
           >
             Aktuell finden die Sitzungen sowohl online, als auch in Präsenz statt. Wenn du Interesse hast, Teil der

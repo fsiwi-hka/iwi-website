@@ -8,6 +8,7 @@ import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import PackageBox from "../components/common/package-box";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
+import {strings} from "@lib/strings";
 
 
 const contacts = [
@@ -19,7 +20,7 @@ const contacts = [
         contactItems: [
           {
             imageSrc: mdiEmailFast,
-            items: ["kontakt@iwi-hka.de"],
+            items: [strings.contact.mail],
           },
         ],
       },

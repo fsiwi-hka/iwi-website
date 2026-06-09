@@ -139,11 +139,11 @@ function Index({ news, events, slides }) {
           </div>
           <div className="md:w-1/2 pl-6 flex flex-col md:justify-between">
             <div>
-              <h2 className="petrol_pale_text mt-0">36+ aktive Fachschaft'ler</h2>
+              <h2 className="petrol_pale_text mt-0">Die Fachschaft IWI</h2>
               <p className="primary_grey">
                 Wir stehen euch als Ansprechpartner für studienbezogene Fragen zur Verfügung. <br></br>Außerdem
-                organisieren wir die O-Phase und den Programmiervorkurs, sammeln Klausuren in unserer Nextcloud, bieten
-                Hilfe bei Problemen zwischen Studierenden und ProfessorInnen an, und vieles mehr.
+                organisieren wir die O-Phase und den Programmiervorkurs, bieten Hilfe bei Problemen zwischen
+                Studierenden und Professor:innen und vieles mehr an.
               </p>
             </div>
             <Button type={"large-red"} text={"Jetzt mitmachen"} url={"/join"}></Button>

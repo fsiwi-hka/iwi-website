@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FooterLink from "./footer-link";
 import Button from "./button";
 import Obfuscate from "react-obfuscate";
+import { strings } from "@lib/strings";
 
 function Footer() {
   return (
@@ -28,7 +29,7 @@ function Footer() {
               76133 Karlsruhe
             </p>
             <p className="mb-0 text-white">
-              <Obfuscate email="kontakt@hka.iwi.de"></Obfuscate>
+              <Obfuscate email={strings.contact.mail}></Obfuscate>
               <br />
               <Obfuscate tel="+49 721 925-1449"></Obfuscate>
             </p>
@@ -64,8 +65,8 @@ function Footer() {
             <p className="mb-1 text-white">Mittwochs um 11:30 Uhr in E004</p>
             <Button
               type="small-white"
-              text="Online teilnehmen"
-              url="https://h-ka-de.zoom-x.de/j/64304270469"
+              text={strings.participate.online.title}
+              url={strings.participate.online.url}
               newtab={true}
             ></Button>
           </div>
@@ -74,7 +75,7 @@ function Footer() {
 
       <div className="max-w-screen-xl w-full m-auto mt-10 md:gap-5 text-white text-center md:text-left flex md:justify-between items-center flex-col md:flex-row">
         <span className="my-auto mb-5 md:mb-auto">
-          &copy; {new Date().getFullYear()} Fachschaft Informatik und Wirtschaftsinformatik
+          Fachschaft Informatik und Wirtschaftsinformatik &copy; {new Date().getFullYear()}
         </span>
         <a className="hidden md:block" href="/">
           <img src="/assets/iwi-logo-white.png" className="w-20" alt="IWI-Logo" />

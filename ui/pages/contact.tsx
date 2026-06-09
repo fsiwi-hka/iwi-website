@@ -12,6 +12,7 @@ import {
   mdiInstagram,
   mdiLinkedin,
 } from "@mdi/js";
+import {strings} from "@lib/strings";
 //Discord fehlt, wurde durch PNG ersetzt
 
 interface ContactList {
@@ -57,7 +58,7 @@ const contacts: ContactBox[] = [
         contactItems: [
           {
             imageSrc: mdiEmailFast,
-            items: ["kontakt@iwi-hka.de"],
+            items: [strings.contact.mail],
           },
         ],
       },
@@ -84,7 +85,7 @@ const sponsoring: ContactBox[] = [
         contactItems: [
           {
             imageSrc: mdiEmailFast,
-            items: ["kontakt@iwi-hka.de"],
+            items: [strings.contact.mail],
           },
         ],
       },

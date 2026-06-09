@@ -3,7 +3,7 @@
 //This script loads the latest X Instagram Postings from the Fachschaft account (using credentials from .env) to then be displayed in the frontend
 
 import "dotenv/config";
-const instagram_token = process.env.INSTAGRAM_TOKEN;
+const instagram_token = "IGAAWAV5PZBQBJBZAFlJTmk1elVxRWxkTVExYnpXUmd2aUwtVUpvQldrVTBtS3JIUHpjQzU4RDBWU1RlblA0N1pIa2tCVzdTOUFJeVF0a0Fxdk8zNVFqVWNhNzBKdFBXa0RIUXpmYkhENk85SndvREg4WTJDeTM0RVUyN0o0VGVTNAZDZD";
 
 // 1. long lived Token erzeugen (60 Tage gültig) und im Backend speichern (.env)
 // 2. regelmäßig das Token erneuern

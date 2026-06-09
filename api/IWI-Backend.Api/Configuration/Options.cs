@@ -18,3 +18,11 @@ public sealed class SyncOptions
     /// <summary>Optional. Wenn gesetzt, verlangt POST /api/refresh den Header X-Refresh-Token.</summary>
     public string? RefreshToken { get; set; }
 }
+
+public sealed class InstagramGraphOptions
+{
+    public string ClientId { get; set; } = "";
+    public string ClientSecret { get; set; } = "";
+    public string AccessToken { get; set; } = "";
+    public string TokenFilePath { get; set; } = "";
+}

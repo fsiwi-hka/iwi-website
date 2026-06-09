@@ -7,85 +7,10 @@ import InfoBox from "../components/common/infobox";
 import ProtokollBox from "../components/common/protokollbox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import Sitzungsprotokolle from "../components/common/sitzungsprotokolle-list";
+import {strings} from "@lib/strings";
+import {members} from "../content/member";
 
 // Auflistung der Mitglieder unter "Vorstand & Fachschaft"
-const mitgliederDaten = [
-  {
-    img: "/images/fachschaft/dustin_sommerfeld.jpg",
-    position: "1. Vorstand",
-    name: "Dustin Sommerfeld",
-  },
-  {
-    img: "/images/fachschaft/guelnur_kanar.jpg",
-    position: "2. Vorstand",
-    name: "Gülnur Kanar",
-  },
-  {
-    img: "/images/fachschaft/ioannis_theodosiadis.jpg",
-    position: "1. Finanzer",
-    name: "Ioannis Theodosiadis",
-  },
-  {
-    img: "/images/fachschaft/placeholder.jpg",
-    position: "2. Finanzer",
-    name: "Bastian Knebel",
-  },
-  {
-    img: "/images/fachschaft/alex_besch.jpg",
-    position: "Protokollant:in",
-    name: "Alex Besch",
-  },
-  {
-    img: "/images/fachschaft/dustin_sommerfeld.jpg",
-    position: "Mail Manager:in",
-    name: "Dustin Sommerfeld",
-  },
-  {
-    img: "/images/fachschaft/placeholder.jpg",
-    position: "Kaffee Manager:in",
-    name: "Denis Lischer",
-  },
-  {
-    img: "/images/fachschaft/placeholder.jpg",
-    position: "Förderverein",
-    name: "Simon Parker",
-  },
-  {
-    img: "/images/fachschaft/ioannis_theodosiadis.jpg",
-    position: "FB Finanzen",
-    name: "Ioannis Theodosiadis",
-  },
-  {
-    img: "/images/fachschaft/placeholder_gesucht.jpg",
-    position: "FB Events",
-    name: "Wird gesucht!",
-  },
-  {
-    img: "/images/fachschaft/placeholder.jpg",
-    position: "FB Sponsoring",
-    name: "Denis Lischer",
-  },
-  {
-    img: "/images/fachschaft/david_flaig.jpg",
-    position: "FB Infrastruktur",
-    name: "David Flaig",
-  },
-  {
-    img: "/images/fachschaft/florian_kaiser.jpg",
-    position: "FB Marketing",
-    name: "Florian Kaiser",
-  },
-  {
-    img: "/images/fachschaft/placeholder.jpg",
-    position: "FB O-Phase",
-    name: "Lukas Hörnle",
-  },
-  {
-    img: "/images/fachschaft/placeholder.jpg",
-    position: "FB Fachschaftsraum",
-    name: "Denis Lischer",
-  },
-];
 
 function Index() {
   return (
@@ -155,8 +80,8 @@ function Index() {
 
             <InfoBox
               icon="exclamation"
-              buttontext="Online Teilnehmen"
-              buttonlink="https://h-ka-de.zoom-x.de/j/64304270469"
+              buttontext={strings.participate.online.title}
+              buttonlink={strings.participate.online.url}
               buttonNewTab={true}
             >
               Aktuell finden die{" "}
@@ -198,9 +123,9 @@ function Index() {
             </div>
 
             <div className="mb-12">
-              <FsMitglieder mitglieder={mitgliederDaten.slice(0, 4)} />
-              <FsMitglieder mitglieder={mitgliederDaten.slice(4, 9)} />
-              <FsMitglieder mitglieder={mitgliederDaten.slice(9, 15)} />
+              <FsMitglieder mitglieder={members.slice(0, 4)} />
+              <FsMitglieder mitglieder={members.slice(4, 9)} />
+              <FsMitglieder mitglieder={members.slice(9, 15)} />
             </div>
           </div>
         </div>

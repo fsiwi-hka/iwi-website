@@ -9,10 +9,13 @@ builder
     .AddJsonFile($"appsettings.json", true, true)
     .AddJsonFile($"appsettings.Development.json", true, true)
     .AddJsonFile($"appsettings.{Environment.MachineName}.json", true, true)
+    .AddJsonFile($"appsettings.Production.json", true, true)
     .AddEnvironmentVariables();
 
 builder.Services.Configure<WebDavOptions>(builder.Configuration.GetSection("WebDav"));
 builder.Services.Configure<SyncOptions>(builder.Configuration.GetSection("Sync"));
+builder.Services.Configure<InstagramGraphOptions>(
+    builder.Configuration.GetSection("Instagram"));
 
 builder.Services.AddHttpClient<WebDavClient>(c => c.Timeout = TimeSpan.FromMinutes(5));
 
@@ -20,6 +23,11 @@ builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerUI();
 builder.Services.AddControllers();
+
+builder.Services.AddHttpClient();
+builder.Services.AddSingleton<InstagramTokenStore>();
+builder.Services.AddHostedService<InstagramTokenRefresher>();
+builder.Services.AddScoped<InstagramGraphApiService>();
 
 builder.Services.AddSingleton<MediaStore>();
 builder.Services.AddSingleton<MediaSyncService>();
