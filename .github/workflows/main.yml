@@ -32,18 +32,13 @@ jobs:
           envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL
           script: |
             set -e
-
             cd ${{ secrets.DEPLOY_PATH }}/deploy
-
-            # Build-time Secrets als Env-Vars für docker compose bereitstellen
-            export INSTAGRAM_TOKEN
-            export NEXTCLOUD_URL
-
+            export INSTAGRAM_TOKEN WEBDAV_USERNAME WEBDAV_PASSWORD NEXTCLOUD_URL
             docker compose down
             docker compose up -d --build
-
-            # Aufräumen: alte ungenutzte Images entfernen
             docker image prune -f
         env:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
+          WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
+          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
