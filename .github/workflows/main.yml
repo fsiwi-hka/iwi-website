@@ -22,7 +22,7 @@ jobs:
             set -e
             cd ${{ secrets.DEPLOY_PATH }}
             git fetch origin
-            git reset --hard origin/main
+            git reset --hard origin/develop
             git clean -fdx        # entfernt nicht-getrackte Reste, ABER siehe Warnung
             cd deploy
             export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD
