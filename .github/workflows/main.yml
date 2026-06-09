@@ -20,7 +20,7 @@ jobs:
           source: "./"
           target: ${{ secrets.DEPLOY_PATH }}
           strip_components: 1
-          rm: false
+          rm: true
           debug: true
 
       - name: Build and start container
