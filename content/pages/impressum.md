@@ -12,7 +12,7 @@ Fachschaft Informatik und Wirtschaftsinformatik
 Moltkestraße 30  
 76133 Karlsruhe
 
-Vertreten durch: Dustin Sommerfeld, Henriette Müller-Kiefer
+Vertreten durch: Ludwig Tschirner, Chris Jemming
 
 ### Kontakt
 
@@ -21,8 +21,8 @@ Vertreten durch: Dustin Sommerfeld, Henriette Müller-Kiefer
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-Dustin Sommerfeld
-Henriette Müller-Kiefer
+Ludwig Tschirner  
+Chris Jemming
 
 ## Verbraucherstreitbeilegung
 
