@@ -121,7 +121,7 @@ const marketing: ContactBox[] = [
         contactItems: [
           {
             imageSrc: "/images/discordLogo.png", //Icon als PNG, kein mdi (Material Design Icon) vorhanden
-            items: ["discord.com/invite/Ud5KQnz"],
+            items: ["www.discord.com/invite/Ud5KQnz"],
             isLink: true,
           },
         ],
@@ -131,7 +131,7 @@ const marketing: ContactBox[] = [
         contactItems: [
           {
             imageSrc: mdiInstagram,
-            items: ["instagram.com/iwi_fachschaft"],
+            items: ["www.instagram.com/iwi_fachschaft"],
             isLink: true,
           },
         ],
@@ -141,7 +141,7 @@ const marketing: ContactBox[] = [
         contactItems: [
           {
             imageSrc: mdiLinkedin,
-            items: ["linkedin.com/in/fachschaft-iwi"],
+            items: ["www.linkedin.com/in/fachschaft-iwi"],
             isLink: true,
           },
         ],
@@ -170,7 +170,7 @@ function Index() {
               />
             ))}
           </div>
-          <div className={"flex flex-col justify-between gap-10"}>
+          <div className={"flex flex-col justify-between gap-5"}>
             <div className="flex-1">
               {sponsoring.map((sponsor, index) => (
                 <ContactBox

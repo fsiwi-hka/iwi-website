@@ -20,7 +20,7 @@ interface ContactBoxProps {
 
 const ContactBox: React.FC<ContactBoxProps> = ({ title, contactLists, direction }) => {
   return (
-    <div className="bg-[#F4F6F7] rounded-lg flex flex-col">
+    <div className="bg-[#F4F6F7] rounded-lg flex flex-col h-full">
       {title && <h2 className={"px-4"}>{title}</h2>}
       <div className={`flex flex-col ${direction == "horizontal" && "xl:flex-row justify-between"}`}>
         {contactLists.map((contactList, listIndex) => (
@@ -28,7 +28,7 @@ const ContactBox: React.FC<ContactBoxProps> = ({ title, contactLists, direction 
             <h4>{contactList.title}</h4>
             <div className={`flex flex-col gap-4 pt-2`}>
               {contactList.contactItems.map((contactItem, itemIndex) => (
-                <div className={"flex flex-row items-start gap-6"} key={`contact-${listIndex}-${itemIndex}`}>
+                <div className={"flex flex-row items-start gap-2"} key={`contact-${listIndex}-${itemIndex}`}>
                   {contactItem.imageSrc.endsWith(".png") || contactItem.imageSrc.endsWith(".svg") ? (
                     <Image src={contactItem.imageSrc} alt="" width={24} height={24} className="mt-1" />
                   ) : (
@@ -40,7 +40,7 @@ const ContactBox: React.FC<ContactBoxProps> = ({ title, contactLists, direction 
                         <a
                           href={item.startsWith("http") ? item : `https://${item}`}
                           key={`item-${listIndex}-${itemIndex}-${pIndex}`}
-                          className={"mb-0 pt-1 text-blue-600 hover:text-blue-800 underline"}
+                          className={"mb-0 pt-1 text-blue-600 hover:text-blue-800"}
                           target="_blank"
                           rel="noopener noreferrer"
                         >

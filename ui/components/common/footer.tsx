@@ -51,7 +51,7 @@ function Footer() {
           <div className="flex flex-col gap-1">
             <h5 className="mb-2 md:mb-5 text-white">Fachschaft</h5>
             <FooterLink newtab="false" href="/about/#mitmachen" name="Mitmachen" />
-            <FooterLink newtab="false" href="/departments" name="Fachbereiche" />
+            <FooterLink newtab="false" href="/about/#fachbereiche" name="Fachbereiche" />
             <FooterLink newtab="false" href="/about/#sitzungsprotokolle" name="Sitzungsprotokolle" />
           </div>
 
@@ -75,7 +75,7 @@ function Footer() {
 
       <div className="max-w-screen-xl w-full m-auto mt-10 md:gap-5 text-white text-center md:text-left flex md:justify-between items-center flex-col md:flex-row">
         <span className="my-auto mb-5 md:mb-auto">
-          Fachschaft Informatik und Wirtschaftsinformatik &copy; {new Date().getFullYear()}
+          Fachschaft IWI &copy; {new Date().getFullYear()}
         </span>
         <a className="hidden md:block" href="/">
           <img src="/assets/iwi-logo-white.png" className="w-20" alt="IWI-Logo" />

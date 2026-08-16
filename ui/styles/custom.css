@@ -263,3 +263,17 @@ nav li:not(.active) a:hover {
 .no-margin {
   margin: unset !important;
 }
+
+/* Sanftes Scrollen für Anker-Links (z. B. /about/#mitmachen).
+   Muss auch auf body stehen: durch "overflow-x: hidden" oben und der
+   Höhe von 100vh (siehe index.css) ist body der tatsächlich scrollende
+   Container, nicht html. */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* Etwas Abstand über dem Anker-Ziel, damit die Überschrift nicht am Rand klebt */
+[id] {
+  scroll-margin-top: 1.5rem;
+}

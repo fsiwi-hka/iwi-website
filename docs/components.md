@@ -148,6 +148,16 @@ You can place any text or additional JSX content between the opening `<BoxTextIm
 Usually the site name is automatically determined. If this doesn't work properly, you can specify a site name manually, as it's done in the component `header-news` to show the name of the article instead of just 'Aktuelles'.<br>
 This component is only used within the `header` and `header-news` components.
 
+The displayed names do **not** come from the URL itself but from the key-value store
+`routeNames` in `/lib/routes.ts` (path → display name), which is read via the helper
+`routeName(path)`. That way `/pre-course` shows up as "Programmiervorkurs" instead of
+"pre-course", and intermediate segments of nested routes get a proper name too
+(`/news/article` → "Home > Aktuelles > Artikel").
+
+**When you add a new page, add its display name to `/lib/routes.ts`.** Without an entry
+the helper falls back to prettifying the last path segment ("pre-course" → "Pre Course"),
+which is readable but usually not what we want to show.
+
 ## button.tsx
 
 <img src = './docs-images/button.png' width = '200'>
@@ -282,6 +292,24 @@ The `EventElement` component is purely for presentation - it receives event deta
 The actual event data is provided by the API route.
 
 TODO: Implement automatic loading of events from the Nextcloud calendar.
+
+## fachbereich-box.tsx
+
+**How to use:**
+
+```html
+<FachbereichBox fachbereich = {fachbereich} />
+```
+
+- `fachbereich` - one entry of the `departments` array from `/content/departments.ts`
+  - `position` - name of the department, has to match the `position` of the corresponding entry in `/content/member.ts`
+  - `tasks` - array of the department's responsibilities
+
+The component shows the department name, its team lead and the list of responsibilities.
+The team lead (photo and name) is resolved from the member list in `/content/member.ts` via
+the `position`, so members only have to be maintained in one place. If nobody holds the
+position, "Wird gesucht!" and the corresponding placeholder image are displayed.
+Used on `/about.tsx` in the "Fachbereiche" section.
 
 ## footer-link.tsx
 

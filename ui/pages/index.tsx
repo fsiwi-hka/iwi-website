@@ -37,92 +37,40 @@ export interface CarouselImage {
 
 const carouselImages: CarouselImage[] = [
   {
-    url: "/images/unternehmen/arconsis.png",
+    url: "/images/unternehmen/8com.png",
     size: 140,
   },
   {
-    url: "/images/unternehmen/cas.png",
-    size: 60,
+    url: "/images/unternehmen/bock.png",
+    size: 70,
   },
   {
-    url: "/images/unternehmen/init.png",
-    size: 80,
-  },
-  {
-    url: "/images/unternehmen/dmtech.jpg",
-    size: 50,
-  },
-  {
-    url: "/images/unternehmen/exxeta.png",
-    size: 120,
-  },
-  {
-    url: "/images/unternehmen/amiconsult.png",
-    size: 180,
-  },
-  {
-    url: "/images/unternehmen/bee360.png",
-    size: 100,
-  },
-  {
-    url: "/images/unternehmen/bockaufkarlsruhe.png",
-    size: 80,
-  },
-  {
-    url: "/images/unternehmen/cyberforum.png",
-    size: 110,
-  },
-  {
-    url: "/images/unternehmen/essentri.png",
+    url: "/images/unternehmen/broadpin.jpg",
     size: 130,
   },
   {
-    url: "/images/unternehmen/gameforge.png",
-    size: 150,
-  },
-  {
-    url: "/images/unternehmen/interflex.png",
-    size: 140,
-  },
-  {
-    url: "/images/unternehmen/it-economics.png",
-    size: 180,
-  },
-  {
-    url: "/images/unternehmen/karlsruhedigital.png",
-    size: 170,
-  },
-  {
-    url: "/images/unternehmen/KJW_Karlsruhe.png",
-    size: 100,
-  },
-  {
-    url: "/images/unternehmen/letsdev.png",
-    size: 80,
-  },
-  {
-    url: "/images/unternehmen/notebuddys.png",
-    size: 120,
-  },
-  {
-    url: "/images/unternehmen/moninger.png",
-    size: 100,
-  },
-  {
-    url: "/images/unternehmen/pizza_lorenzo.png",
-    size: 120,
-  },
-  {
-    url: "/images/unternehmen/sovendus.png",
+    url: "/images/unternehmen/ctdi.png",
     size: 160,
   },
   {
-    url: "/images/unternehmen/utb.png",
-    size: 100,
+    url: "/images/unternehmen/dmTech.png",
+    size: 50,
   },
   {
-    url: "/images/unternehmen/wg-held.png",
-    size: 120,
+    url: "/images/unternehmen/gameforge.jpg",
+    size: 180,
+  },
+  {
+    url: "/images/unternehmen/init.png",
+    size: 95,
+  },
+  {
+    url: "/images/unternehmen/the_laend.png",
+    size: 180,
+  },
+  {
+    url: "/images/unternehmen/vector.png",
+    size: 105,
   },
 ];
 
@@ -146,7 +94,7 @@ function Index({ news, events, slides }) {
                 Studierenden und Professor:innen und vieles mehr an.
               </p>
             </div>
-            <Button type={"large-red"} text={"Jetzt mitmachen"} url={"/join"}></Button>
+            <Button type={"large-red"} text={"Jetzt mitmachen"} url={"/about/#mitmachen"}></Button>
           </div>
         </div>
       </div>
@@ -158,7 +106,7 @@ function Index({ news, events, slides }) {
             subtitle={"Verschiedene Teams mit unterschiedlichen Aufgaben"}
             bgcolor={"primary_blue_bg"}
             buttontext={"Kennenlernen"}
-            buttonlink={"/departments"}
+            buttonlink={"/about/#fachbereiche"}
           ></BoxBig>
 
           <BoxBig

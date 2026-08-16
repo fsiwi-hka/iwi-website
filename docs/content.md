@@ -29,6 +29,8 @@ basic structure from an existing page. When naming the file, make sure to replac
 spaces with hyphens (`-`). Try to reuse existing components from `/components` as 
 much as possible to keep the folder structure clear. If necessary, document what 
 you are doing to make it easier for your colleagues.<br>
+Add the display name of your new page to the `routeNames` store in `/lib/routes.ts`, 
+otherwise the breadcrumbs will show the raw path segment instead of a proper name.<br>
 Each page has a header at the top (see the corresponding component `header.tsx`), 
 which is integrated into the corresponding page, as well as the footer and menu, 
 which are defined in the surrounding `_app.tsx`. The content of each page is packaged in 

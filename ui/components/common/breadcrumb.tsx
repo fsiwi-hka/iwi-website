@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { routeName } from "@lib/routes";
 
 type BreadcrumbProps = {
   siteName?: string;
@@ -13,12 +14,13 @@ const Breadcrumb = ({ siteName }: BreadcrumbProps) => {
     <div aria-label="breadcrumb" className="flex text-white mb-2 flex-wrap">
       <span>
         <Link href="/" className="text-blue-500 hover:underline">
-          Home
+          {routeName("/")}
         </Link>
       </span>
       {pathArray.map((segment, index) => {
         const path = "/" + pathArray.slice(0, index + 1).join("/");
-        const name = segment;
+        // Anzeigename kommt aus dem Store in lib/routes.ts, nicht aus dem Pfad
+        const name = routeName(path);
 
         if (index != pathArray.length - 1) {
           return (

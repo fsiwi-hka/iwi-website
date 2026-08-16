@@ -72,6 +72,8 @@ Information page for first semester students containing O-Phase details, program
 ## Fachschaft.tsx
 **used components:**
 - box-full-width-blue
+- button
+- fachbereich-box
 - fs-mitglieder
 - header
 - infobox
@@ -79,7 +81,13 @@ Information page for first semester students containing O-Phase details, program
 - responsive-wrapper
 - sitzungsprotokolle-list
 
-Main page about the student council (Fachschaft) featuring information about what the student council does, member listings with photos and positions, meeting protocols, and the student council constitution. Uses the `FsMitglieder` component to display member grids and `Sitzungsprotokolle` for protocol downloads.
+Main page about the student council (Fachschaft) featuring information about what the student council does, member listings with photos and positions, the departments (Fachbereiche) with their team leads and responsibilities, meeting protocols, and the student council constitution. Uses the `FsMitglieder` component to display the grids of the board and the other roles (fed by `/content/member.ts`) and `FachbereichBox` for the departments (fed by `/content/departments.ts`, linked to the member list via the position). `Sitzungsprotokolle` renders the protocol downloads.
+
+Two former standalone pages were merged into this one, because their content belongs together and was too little to justify its own page:
+- `Fachbereiche.tsx` (`/departments`) → section "Fachbereiche", anchor `/about/#fachbereiche`
+- `Mitmachen.tsx` (`/join`, fed by `/public/mitmachen.md`) → section "Mitmachen", anchor `/about/#mitmachen`
+
+The `BoxFullWidthBlue` in the upper part of the page links to `#mitmachen`, so its button scrolls down to that section instead of opening another page.
 
 ## Impressum.tsx
 **used components:**
@@ -143,21 +151,6 @@ Main homepage featuring a hero `Slider` with dynamic news content, student counc
 - responsive-wrapper
 
 Student resources page organized into categories: important platforms, literature & learning materials, software & tools, cloud storage & servers, mobility & transport, food & drinks, and miscellaneous. Uses `StudyCard` components extensively to display various student services with descriptions, requirements, and action buttons linking to external resources.
-
-## Fachbereiche.tsx
-**used components:**
-- header
-- responsive-wrapper
-
-Page displaying student council departments and executive positions. Shows board member information with photos and roles, department responsibilities, and contact information for the executive board. Uses a grid layout to display member profiles and department structures.
-
-## Mitmachen.tsx
-**used components:**
-- header
-- markdown-section
-- responsive-wrapper
-
-Simple page that renders markdown content from `/mitmachen.md` file, providing information about how to get involved with the student council. Uses the `MarkdownSection` component to convert markdown to HTML.
 
 ## O-Phase.tsx
 **used components:**

@@ -4,7 +4,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "./button";
 
-const mainMenuItems = [
+export const mainMenuItems = [
   { title: "Startseite", slug: "/" },
   { title: "Erstsemester", slug: "/first-year" },
   { title: "Fachschaft", slug: "/about/" },
@@ -99,11 +99,12 @@ function determineClasses(title, href, mobile) {
   // Using the router allows us to check which page
   // we're on, so we can style the active link
   const router = useRouter();
+  console.log("Router: ", title, router.pathname, href)
   if (
     // we need to append the trailing slash because the router
     // pathname doesn't contain it (it's added in the NextJS config)
     router.pathname + "/" === href ||
-    (router.pathname.startsWith(href) && href != "/")
+    (router.pathname.startsWith(href) && (href != "/" || (href == "/" && router.pathname == "/")))
   ) {
     if (mobile) {
       return "text-xl text-white underline font-heading font-medium";

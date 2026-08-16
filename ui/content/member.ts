@@ -7,75 +7,54 @@ export interface Mitglied {
 export const members = [
     {
         position: "1. Vorstand",
-        name: "Dustin Sommerfeld",
+        name: "Ludwig Tschirner",
     },
     {
-        img: "/images/fachschaft/guelnur_kanar.jpg",
         position: "2. Vorstand",
-        name: "Gülnur Kanar",
+        name: "Chris Jemming",
     },
     {
-        img: "/images/fachschaft/ioannis_theodosiadis.jpg",
         position: "1. Finanzer",
-        name: "Ioannis Theodosiadis",
+        name: "Aaron Kastner",
     },
     {
-        img: "/images/fachschaft/placeholder.jpg",
         position: "2. Finanzer",
-        name: "Bastian Knebel",
+        name: "Julius Freudenberger",
     },
     {
-        img: "/images/fachschaft/alex_besch.jpg",
-        position: "Protokollant:in",
-        name: "Alex Besch",
-    },
-    {
-        img: "/images/fachschaft/dustin_sommerfeld.jpg",
         position: "Mail Manager:in",
-        name: "Dustin Sommerfeld",
+        name: "Steffanie Pefferkorn",
     },
     {
-        img: "/images/fachschaft/placeholder.jpg",
         position: "Kaffee Manager:in",
         name: "Denis Lischer",
     },
     {
-        img: "/images/fachschaft/placeholder.jpg",
         position: "Förderverein",
-        name: "Simon Parker",
+        name: "Florian Kaiser",
     },
     {
-        img: "/images/fachschaft/ioannis_theodosiadis.jpg",
         position: "FB Finanzen",
-        name: "Ioannis Theodosiadis",
+        name: "Aaron Kastner",
     },
     {
-        img: "/images/fachschaft/placeholder_gesucht.jpg",
         position: "FB Events",
-        name: "Wird gesucht!",
+        name: "Charlie Maier",
     },
     {
-        img: "/images/fachschaft/placeholder.jpg",
         position: "FB Sponsoring",
-        name: "Denis Lischer",
+        name: "Luca Claus",
     },
     {
-        img: "/images/fachschaft/david_flaig.jpg",
         position: "FB Infrastruktur",
-        name: "David Flaig",
+        name: "Julian Hareng",
     },
     {
         position: "FB Marketing",
-        name: "",
+        name: "Alec Engelhardt",
     },
     {
-        img: "",
-        position: "FB O-Phase",
-        name: "Lukas Hörnle",
-    },
-    {
-        img: "/images/fachschaft/placeholder.jpg",
         position: "FB Fachschaftsraum",
-        name: "Denis Lischer",
+        name: "Björn Bruckmann",
     }
 ] satisfies Mitglied[];

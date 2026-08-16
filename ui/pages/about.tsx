@@ -1,6 +1,8 @@
 import { GetStaticProps } from "next";
 
 import BoxFullWidthBlue from "../components/common/box-full-width-blue";
+import Button from "../components/common/button";
+import FachbereichBox from "../components/common/fachbereich-box";
 import FsMitglieder from "../components/common/fs-mitglieder";
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
@@ -8,9 +10,10 @@ import ProtokollBox from "../components/common/protokollbox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import Sitzungsprotokolle from "../components/common/sitzungsprotokolle-list";
 import {strings} from "@lib/strings";
+import {departments} from "../content/departments";
 import {members} from "../content/member";
 
-// Auflistung der Mitglieder unter "Vorstand & Fachschaft"
+// Vorstand und Ämter unter "Vorstand & Fachschaft", Fachbereiche unter "Fachbereiche"
 
 function Index() {
   return (
@@ -78,30 +81,16 @@ function Index() {
               </div>
             </div>
 
-            <InfoBox
-              icon="exclamation"
-              buttontext={strings.participate.online.title}
-              buttonlink={strings.participate.online.url}
-              buttonNewTab={true}
-            >
-              Aktuell finden die{" "}
-              <b>Sitzungen sowohl online, als auch in Präsenz</b> statt. Wenn du
-              Interesse hast, Teil der aktiven Fachschaft zu werden, komm
-              einfach zur <b>Fachschaftssitzung</b>. Immer{" "}
-              <b>mittwochs ab 11:30 Uhr im Raum E004</b> oder auf <b>Zoom</b>.
-            </InfoBox>
-            
           </div>
         </div>
       </ResponsiveWrapper>
 
-      <div id="mitmachen">
-        {" "}
+      <div>
         <BoxFullWidthBlue
           title="Möchtest du mit dabei sein?"
           subtitle="Melde dich direkt bei uns vor Ort in der Fachschaft, per Email oder komm zur Fachschaftssitzung!"
           buttontext="Jetzt mitmachen"
-          buttonlink="/join"
+          buttonlink="#mitmachen"
         />
       </div>
 
@@ -123,9 +112,99 @@ function Index() {
             </div>
 
             <div className="mb-12">
+              {/* Vorstand */}
               <FsMitglieder mitglieder={members.slice(0, 4)} />
-              <FsMitglieder mitglieder={members.slice(4, 9)} />
-              <FsMitglieder mitglieder={members.slice(9, 15)} />
+              {/* Ämter – die Fachbereiche folgen weiter unten im Abschnitt "Fachbereiche" */}
+              <FsMitglieder mitglieder={members.slice(4, 8)} />
+            </div>
+          </div>
+        </div>
+      </ResponsiveWrapper>
+
+      <ResponsiveWrapper>
+        <div
+          className="max-w-screen-xl w-full md:m-auto flex flex-col-reverse md:flex-row"
+          id="fachbereiche"
+        >
+          <div className="flex flex-col justify-between mb-12">
+            <div>
+              <h2 className="petrol_pale_text mt-0">Fachbereiche</h2>
+            </div>
+
+            <div className="col-span-1">
+              <p>
+                Die inhaltliche Arbeit passiert in den Fachbereichen. Jeder
+                Fachbereich hat eine <b>feste Ansprechperson</b> und einen klar
+                abgegrenzten Aufgabenbereich. Bei Fachbereichen, die noch
+                gesucht werden, freuen wir uns über deine Unterstützung.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
+              {departments.map((fachbereich) => (
+                <FachbereichBox key={fachbereich.position} fachbereich={fachbereich} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </ResponsiveWrapper>
+
+      <ResponsiveWrapper>
+        <div
+          className="max-w-screen-xl w-full md:m-auto flex flex-col-reverse md:flex-row"
+          id="mitmachen"
+        >
+          <div className="flex flex-col justify-between mb-12">
+            <div>
+              <h2 className="petrol_pale_text mt-0">Mitmachen</h2>
+            </div>
+
+            <div className="col-span-1">
+              <p>
+                Wir sind immer froh über <b>engagierte Helfer:innen</b>, die sich
+                für die Studierenden des Fachbereichs einsetzen wollen. Welche
+                und wie viele Aufgaben du übernimmst und wie viel Zeit du
+                investierst, entscheidest du selbst: Ob du einfach nur an den
+                Sitzungen teilnimmst oder dich aktiv um einen eigenen
+                Aufgabenbereich kümmerst – du bist bei uns immer herzlich
+                willkommen.
+              </p>
+              <p>
+                Ein guter Anfang ist es, bei einer <b>Fachschaftssitzung</b>{" "}
+                vorbeizuschauen. Hast du vorher noch Fragen oder Anregungen?
+                Dann schreib uns eine Mail, klingel bei uns durch oder komm
+                einfach in <b>Raum E013</b> vorbei.
+              </p>
+            </div>
+
+            <InfoBox
+              icon="exclamation"
+              buttontext={strings.participate.online.title}
+              buttonlink={strings.participate.online.url}
+              buttonNewTab={true}
+            >
+              Aktuell finden die{" "}
+              <b>Sitzungen sowohl online, als auch in Präsenz</b> statt. Wenn du
+              Interesse hast, Teil der aktiven Fachschaft zu werden, komm
+              einfach zur <b>Fachschaftssitzung</b>. Immer{" "}
+              <b>mittwochs ab 11:30 Uhr im Raum E004</b> oder auf{" "}
+              <a
+                href={strings.participate.zoom.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                <b>Zoom</b>
+              </a>
+              .
+            </InfoBox>
+
+            <div className="mt-4">
+              <Button
+                type="large-blue1"
+                text="Kontakt aufnehmen"
+                url="/contact"
+              />
             </div>
           </div>
         </div>
