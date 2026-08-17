@@ -5,14 +5,14 @@ Gebäude E - Raum 013
 Moltkestraße 30  
 76133 Karlsruhe
 
-Vertreten durch: Dustin Sommerfeld
+Vertreten durch: Ludwig Tschirner
 
-vorstand@iwi-hka.de  
+kontakt@iwi-hka.de  
 +49 721 925-2949
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-Dustin Sommerfeld
+Ludwig Tschirner
 
 ## Verbraucherstreitbeilegung
 

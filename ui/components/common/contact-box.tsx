@@ -44,7 +44,7 @@ const ContactBox: React.FC<ContactBoxProps> = ({ title, contactLists, direction 
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {item}
+                          {contactList.title}
                         </a>
                       ) : (
                         <p key={`item-${listIndex}-${itemIndex}-${pIndex}`} className={"mb-0 pt-1"}>

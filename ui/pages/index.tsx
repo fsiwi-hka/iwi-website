@@ -8,6 +8,7 @@ import Button from "../components/common/button";
 import Carousel from "../components/common/carousel";
 import InstagramFeed from "../components/common/InstagramFeed";
 import Slider from "../components/common/slider";
+import { sponsorLogos } from "../content/sponsors";
 
 function slugify(str: string): string {
   return str
@@ -29,50 +30,6 @@ export interface Slide {
   buttonlink: string;
   cta?: string;
 }
-
-export interface CarouselImage {
-  url: string;
-  size: number;
-}
-
-const carouselImages: CarouselImage[] = [
-  {
-    url: "/images/unternehmen/8com.png",
-    size: 140,
-  },
-  {
-    url: "/images/unternehmen/bock.png",
-    size: 70,
-  },
-  {
-    url: "/images/unternehmen/broadpin.jpg",
-    size: 130,
-  },
-  {
-    url: "/images/unternehmen/ctdi.png",
-    size: 160,
-  },
-  {
-    url: "/images/unternehmen/dmTech.png",
-    size: 50,
-  },
-  {
-    url: "/images/unternehmen/gameforge.jpg",
-    size: 180,
-  },
-  {
-    url: "/images/unternehmen/init.png",
-    size: 95,
-  },
-  {
-    url: "/images/unternehmen/the_laend.png",
-    size: 180,
-  },
-  {
-    url: "/images/unternehmen/vector.png",
-    size: 105,
-  },
-];
 
 function Index({ news, events, slides }) {
   return (
@@ -130,7 +87,7 @@ function Index({ news, events, slides }) {
 
       <InstagramFeed></InstagramFeed>
 
-      <Carousel images={carouselImages} speed={50} />
+      <Carousel images={sponsorLogos} speed={50} />
     </>
   );
 }

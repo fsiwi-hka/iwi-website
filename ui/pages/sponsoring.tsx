@@ -1,5 +1,18 @@
 import { GetStaticProps } from "next";
-import { mdiAccount, mdiEmailFast } from "@mdi/js";
+import { useState } from "react";
+import Icon from "@mdi/react";
+import {
+  mdiAccount,
+  mdiArrowTopRight,
+  mdiBankOutline,
+  mdiCheck,
+  mdiContentCopy,
+  mdiEmailFast,
+  mdiFireplace,
+  mdiHandshakeOutline,
+  mdiHeartOutline,
+  mdiSchoolOutline,
+} from "@mdi/js";
 
 import Carousel from "../components/common/carousel";
 import ContactBox from "../components/common/contact-box";
@@ -8,8 +21,21 @@ import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import PackageBox from "../components/common/package-box";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
+import { sponsorLogos } from "../content/sponsors";
 import {strings} from "@lib/strings";
 
+// ---------------------------------------------------------------------------
+// TODO: Von der Fachschaft bestätigen lassen! Die Platzhalter unten dürfen so
+// NICHT online gehen – eine erfundene IBAN auf einer Spendenseite ist deutlich
+// schlimmer als gar keine.
+// ---------------------------------------------------------------------------
+const foerderverein = {
+  name: "Förderverein der Fachschaft IWI e. V.",
+  accountHolder: "Förderverein der Fachschaft IWI e. V.",
+  iban: "DE00 0000 0000 0000 0000 00",
+  bic: "XXXXDEXXXXX",
+  contact: "Florian Kaiser", // Ansprechperson laut content/member.ts
+};
 
 const contacts = [
   {
@@ -20,7 +46,7 @@ const contacts = [
         contactItems: [
           {
             imageSrc: mdiEmailFast,
-            items: [strings.contact.mail],
+            items: [strings.sponsoring.mail],
           },
         ],
       },
@@ -35,16 +61,50 @@ const contacts = [
         contactItems: [
           {
             imageSrc: mdiAccount,
-            items: ["Denis Lischer"],
-          },
-          {
-            imageSrc: mdiAccount,
-            items: ["Dustin Sommerfeld  "],
-          },
+            items: ["Luca Claus"],
+          }
         ],
       },
     ],
     direction: "vertical",
+  },
+];
+
+interface Baustein {
+  icon: string;
+  title: string;
+  description: string;
+  anchor: string;
+}
+
+const bausteine: Baustein[] = [
+  {
+    icon: mdiSchoolOutline,
+    title: "O-Phase",
+    description:
+      "Der übliche Einstieg in eine Partnerschaft: Goodies, Anzeigen oder ein Stand bei der Ersti-Rallye.",
+    anchor: "#o-phase",
+  },
+  {
+    icon: mdiHandshakeOutline,
+    title: "Kooperation",
+    description:
+      "Einmalig oder langfristig – von gebrandeten Getränken bis zum Kicker für den Fachschaftsraum.",
+    anchor: "#kooperation",
+  },
+  {
+    icon: mdiFireplace,
+    title: "Kaminabend",
+    description:
+      "Ein Abend mit fachlichem Vortrag, Diskussion und Networking – bei Ihnen oder bei uns.",
+    anchor: "#kaminabend",
+  },
+  {
+    icon: mdiHeartOutline,
+    title: "Spende",
+    description:
+      "Unterstützung ohne Gegenleistung, über unseren Förderverein und mit Spendenquittung.",
+    anchor: "#spende",
   },
 ];
 
@@ -54,18 +114,12 @@ interface CooperationsBox {
   link: string;
 }
 
-const cooperations = [
+const cooperations: CooperationsBox[] = [
   {
-    companyLogo: "/images/unternehmen/gameforge.png",
+    companyLogo: "/images/unternehmen/gameforge.jpg",
     description:
       "Gameforge ist ein Anbieter von Online-Spielen. Die international tätige Unternehmensgruppe mit Hauptsitz in Karlsruhe vertreibt 13 Spiele in über 75 Ländern und hat über 450 Millionen registrierte Spieler.",
     link: "https://gameforge.com/de-DE/",
-  },
-  {
-    companyLogo: "/images/unternehmen/exxeta.png",
-    description:
-      "Exxeta steht für die einzigartige Verbindung von Business und IT mit Schwerpunkt in den Branchen Automotive, Energy und Financial Services.",
-    link: "https://exxeta.com/",
   },
   {
     companyLogo: "/images/unternehmen/init.png",
@@ -145,102 +199,80 @@ const packages: PackageBox[] = [
   },
 ];
 
+const kaminabendImages = [
+  "/images/events/kaminabend/kaminabend1.png",
+  "/images/events/kaminabend/kaminabend2.png",
+  "/images/events/kaminabend/kaminabend3.png",
+  "/images/events/kaminabend/kaminabend4.png",
+];
 
-export interface CarouselImage {
-  url: string;
-  size: number;
+function BausteinCard({ baustein }: { baustein: Baustein }) {
+  return (
+    <a
+      href={baustein.anchor}
+      className="group white_bg rounded-xl p-6 flex flex-col h-full transition duration-200 hover:shadow-lg"
+    >
+      <Icon
+        path={baustein.icon}
+        size={1.6}
+        color="var(--primary_blue)"
+        className="mb-4"
+      />
+      <h4 className="mb-2">{baustein.title}</h4>
+      <p className="text-sm primary_grey mb-6 flex-grow">
+        {baustein.description}
+      </p>
+      <span className="petrol_text font-medium text-sm inline-flex items-center gap-1">
+        Mehr erfahren
+        <Icon
+          path={mdiArrowTopRight}
+          size={0.6}
+          className="group-hover:rotate-45 transition duration-300"
+        />
+      </span>
+    </a>
+  );
 }
 
-const carouselImages: CarouselImage[] = [
-  {
-    url: "/images/unternehmen/arconsis.png",
-    size: 140,
-  },
-  {
-    url: "/images/unternehmen/cas.png",
-    size: 60,
-  },
-  {
-    url: "/images/unternehmen/init.png",
-    size: 80,
-  },
-  {
-    url: "/images/unternehmen/dmtech.jpg",
-    size: 50,
-  },
-  {
-    url: "/images/unternehmen/exxeta.png",
-    size: 120,
-  },
-  {
-    url: "/images/unternehmen/amiconsult.png",
-    size: 180,
-  },
-  {
-    url: "/images/unternehmen/bee360.png",
-    size: 100,
-  },
-  {
-    url: "/images/unternehmen/bockaufkarlsruhe.png",
-    size: 80,
-  },
-  {
-    url: "/images/unternehmen/cyberforum.png",
-    size: 110,
-  },
-  {
-    url: "/images/unternehmen/essentri.png",
-    size: 130,
-  },
-  {
-    url: "/images/unternehmen/gameforge.png",
-    size: 150,
-  },
-  {
-    url: "/images/unternehmen/interflex.png",
-    size: 140,
-  },
-  {
-    url: "/images/unternehmen/it-economics.png",
-    size: 180,
-  },
-  {
-    url: "/images/unternehmen/karlsruhedigital.png",
-    size: 170,
-  },
-  {
-    url: "/images/unternehmen/KJW_Karlsruhe.png",
-    size: 100,
-  },
-  {
-    url: "/images/unternehmen/letsdev.png",
-    size: 80,
-  },
-  {
-    url: "/images/unternehmen/notebuddys.png",
-    size: 120,
-  },
-  {
-    url: "/images/unternehmen/moninger.png",
-    size: 100,
-  },
-  {
-    url: "/images/unternehmen/pizza_lorenzo.png",
-    size: 120,
-  },
-  {
-    url: "/images/unternehmen/sovendus.png",
-    size: 160,
-  },
-  {
-    url: "/images/unternehmen/utb.png",
-    size: 100,
-  },
-  {
-    url: "/images/unternehmen/wg-held.png",
-    size: 120,
-  },
-];
+// Zeile der Kontoverbindung mit Kopier-Button. Die Zwischenablage ist nicht in
+// jedem Kontext verfügbar (z. B. ohne HTTPS), deshalb steht der Wert immer auch
+// als markierbarer Text da.
+function BankRow({ label, value }: { label: string; value: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Kein Zugriff auf die Zwischenablage – Nutzer kann den Text markieren
+    }
+  };
+
+  return (
+    <div className="flex items-center justify-between gap-4 py-3 border-b border-[#DFE4E6] last:border-b-0">
+      <div className="flex flex-col">
+        <span className="text-sm primary_grey">{label}</span>
+        <span className="petrol_text font-medium hyphens-none break-all">
+          {value}
+        </span>
+      </div>
+      <button
+        type="button"
+        onClick={copy}
+        aria-label={`${label} kopieren`}
+        className="flex-shrink-0 p-2 rounded-full transition duration-200 hover:bg-[#DFE4E6]"
+      >
+        <Icon
+          path={copied ? mdiCheck : mdiContentCopy}
+          size={0.8}
+          color="var(--primary_blue)"
+        />
+      </button>
+    </div>
+  );
+}
 
 function Index() {
   return (
@@ -249,181 +281,221 @@ function Index() {
         title="Recruiting durch Sponsoring"
         subtitle="Werden Sie Sponsor oder Kooperationspartner der Fachschaft IWI – Vernetzen Sie sich mit talentierten Studierenden und sichern Sie sich Ihre zukünftigen Fachkräfte!"
       ></Header>
+
       <ResponsiveWrapper>
-        <div className="flex flex-col lg:flex-row gap-10">
-          <div className="flex-1">
-            <h2>Partner Programm</h2>
-            <p>
-              Wir pflegen viele Partnerschaften mit Unternehmen in der Region,
-              nicht zuletzt durch Alumni, die der Fachschaft über das Studium
-              hinaus treu bleiben. Auch Sie möchten mit der Fachschaft
-              zusammenarbeiten? Sehr Gerne!
-            </p>
-            <p>
-              Wir bieten Ihnen in unserem Partner-Programm vier
-              Kooperations-Bausteine an, die Sie einzeln oder in Kombination
-              umsetzen können:
-            </p>
-            <ul className={"text-[#6C6C6C]"}>
-              <li>
-                O-Phasen-Unterstützung (dies ist i.d.R. der Einstieg in eine
-                Partnerschaft)
-              </li>
-              <li>Kooperation</li>
-              <li>Kaminabend</li>
-              <li>Spende</li>
-            </ul>
-            <p>
-              Mehr zu den einzelnen Bausteinen erfahren Sie auf dieser Seite.{" "}
-              <br />
-              Wir freuen uns auf Ihre Nachricht!
-            </p>
+        <div className="w-full flex flex-col gap-12 mb-4">
+          <div className="flex flex-col lg:flex-row gap-10">
+            <div className="flex-1">
+              <h2 className="mt-0">Partner Programm</h2>
+              <p>
+                Wir pflegen viele Partnerschaften mit Unternehmen in der Region,
+                nicht zuletzt durch Alumni, die der Fachschaft über das Studium
+                hinaus treu bleiben. Auch Sie möchten mit der Fachschaft
+                zusammenarbeiten? Sehr gerne!
+              </p>
+              <p>
+                Wir bieten Ihnen vier Kooperations-Bausteine an, die Sie einzeln
+                oder in Kombination umsetzen können. Wir freuen uns auf Ihre
+                Nachricht!
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-10 mt-auto">
+              {contacts.map((contact, index) => (
+                <ContactBox
+                  key={index}
+                  title={contact.title}
+                  contactLists={contact.contactLists}
+                  direction={"vertical"}
+                />
+              ))}
+            </div>
           </div>
 
-          <div className={"flex flex-col gap-10 mt-auto"}>
-            {contacts.map((contact, index) => (
-              <ContactBox
-                key={index}
-                title={contact.title}
-                contactLists={contact.contactLists}
-                direction={"vertical"}
-              />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {bausteine.map((baustein) => (
+              <BausteinCard key={baustein.title} baustein={baustein} />
             ))}
           </div>
         </div>
       </ResponsiveWrapper>
 
       <ResponsiveWrapper>
-        <Carousel images={carouselImages} speed={50} />
+        <Carousel images={sponsorLogos} speed={50} />
       </ResponsiveWrapper>
 
       <ResponsiveWrapper>
-        <div>
-          <h2>O-Phasen Unterstützung</h2>
-          <InfoBox icon={"heart"}>
-            Dank unserer Sponsoren können sich die Erstsemesterstudierenden auf
-            eine prall gefüllte Erstitasche freuen. Hiermit bedanken wir uns
-            recht herzlich bei allen Sponsoren, die dies jedes Semester aufs
-            Neue möglich machen!
-          </InfoBox>
-          <h4>O-Phasen-Supporter werden</h4>
-          <p>
-            Auch Sie können uns bei der Orientierungsphase unterstützen, die zum
-            Beginn jedes Semesters durchgeführt wird. Dabei gibt es verschiedene
-            Abstufungen:
-          </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {packages.map((packageElem: PackageBox, index: number) => (
-              <PackageBox
-                key={index}
-                title={packageElem.title}
-                subtitle={packageElem.subtitle}
-                color={index % 2 === 0 ? "petrol_pale_bg" : "primary_blue_bg"}
-                services={packageElem.services}
-              >
-                {packageElem.text}
-              </PackageBox>
-            ))}
+        <div className="w-full flex flex-col gap-16 mb-16">
+          <div id="o-phase">
+            <h2 className="mt-0">O-Phasen Unterstützung</h2>
+            <InfoBox icon={"heart"}>
+              Dank unserer Sponsoren können sich die Erstsemesterstudierenden
+              auf eine prall gefüllte Erstitasche freuen. Hiermit bedanken wir
+              uns recht herzlich bei allen Sponsoren, die dies jedes Semester
+              aufs Neue möglich machen!
+            </InfoBox>
+
+            <h4 className="mt-8">O-Phasen-Supporter werden</h4>
+            <p>
+              Auch Sie können uns bei der Orientierungsphase unterstützen, die
+              zum Beginn jedes Semesters durchgeführt wird. Dabei gibt es
+              verschiedene Abstufungen:
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              {packages.map((packageElem: PackageBox, index: number) => (
+                <PackageBox
+                  key={index}
+                  title={packageElem.title}
+                  subtitle={packageElem.subtitle}
+                  color={index % 2 === 0 ? "petrol_pale_bg" : "primary_blue_bg"}
+                  services={packageElem.services}
+                >
+                  {packageElem.text}
+                </PackageBox>
+              ))}
+            </div>
+
+            <InfoBox icon={"exclamation"}>
+              Wenn Sie einen Social-Media-Account auf Instagram betreiben,
+              besteht zusätzlich die Möglichkeit, dass wir Sie in einem zentralen
+              Erstitüten-Post taggen.
+            </InfoBox>
           </div>
 
-          <h4 className="mb-4">Mehr Reichweite durch Social Media</h4>
-          <InfoBox icon={"exclamation"}>
-            Wenn Sie einen Social-Media-Account auf Instagram betreiben, besteht
-            zusätzlich die Möglichkeit, dass wir Sie in einem zentralen
-            Erstitüten-Post taggen.
-          </InfoBox>
+          <div id="kooperation">
+            <h2 className="mt-0">Kooperation</h2>
+            <p>
+              Sind Sie an einer <b>einmaligen oder langfristigen Kooperation</b>{" "}
+              interessiert, sind Sie hier richtig. Diese Art der Partnerschaft
+              ist vielseitig denkbar und hängt stark davon ab, wie Sie sich
+              präsentieren möchten. Denkbar sind beispielsweise:
+            </p>
+            <ul className="pl-4">
+              <li>
+                Die Übernahme einer Getränkelieferung pro Semester (mit
+                gebrandeten Etiketten)
+              </li>
+              <li>
+                Die einmalige Finanzierung von Drucksachen (Hoodies, T-Shirts,
+                etc.) für die Fachschaft – mit Ihrem Logo
+              </li>
+              <li>Sachwerte, wie ein Kicker für den Fachschaftsraum</li>
+            </ul>
+            <p>
+              Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir
+              freuen uns!
+            </p>
 
-          <h2 className="mt-20">Kooperation</h2>
-          <p>
-            Sind Sie an einer <b>einmaligen oder langfristigen Kooperation</b>{" "}
-            interessiert, sind Sie hier richtig.
-          </p>
-          <p>
-            Diese Art der Partnerschaft ist vielseitig denkbar und hängt stark
-            davon ab, wie Sie sich präsentieren möchten. Denkbar sind
-            beispielsweise:
-          </p>
-          <ul className="pl-4">
-            <li>
-              Die Übernahme einer Getränkelieferung pro Semester (mit
-              gebrandeten Etiketten)
-            </li>
-            <li>
-              Die einmalige Finanzierung von Drucksachen (Hoodies, T-Shirts,
-              etc.) für die Fachschaft - mit Ihrem Logo
-            </li>
-            <li>Sachwerte, wie ein Kicker für den Fachschaftsraum</li>
-          </ul>
-          <p>
-            Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir
-            freuen uns!
-          </p>
-
-          <h4 className="mb-4 mt-12">Aktuelle Kooperationen</h4>
-          <div className="grid grid-cols-1 gap-4 md:gap-6 md:grid-cols-3 mb-12 ">
-            {cooperations.map(
-              (cooperationsElem: CooperationsBox, index: number) => (
+            <h4 className="mt-8 mb-4">Aktuelle Kooperationen</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {cooperations.map((cooperationsElem, index) => (
                 <CooperationBox
                   key={index}
                   logo={cooperationsElem.companyLogo}
                   description={cooperationsElem.description}
                   link={cooperationsElem.link}
                 />
-              )
-            )}
+              ))}
+            </div>
           </div>
 
-          <h2 className="mt-20">Kaminabend</h2>
-          <p className={"py-2"}>
-            Im Rahmen dieses Bausteins organisieren Sie{" "}
-            <b>in Zusammenarbeit mit uns</b> einen Kaminabend, zu dem wir die
-            IWI-Studierendenschaft einladen. Dabei stehen{" "}
-            <b>fachliche Themen im Fokus</b>, und Ihre EntwicklerInnen oder
-            ProjektmanagerInnen berichten aus dem <b>Arbeitsalltag</b>. Die
-            Veranstaltung lebt vom Dialog, und oft ergeben sich aus Fragen der
-            Studierenden spannende Diskussionen. Das <b>Networking</b> steht
-            natürlich ebenso im Zentrum, und Informationen zu Praktika oder
-            Einstiegspositionen nach dem Studium können eingebaut werden. Findet
-            die Veranstaltung vor Ort statt, geht der Kaminabend damit einher,
-            dass Sie ein Catering (i. d. R. Pizza) anbieten und (falls möglich)
-            auch die Location stellen.
-          </p>
+          <div id="kaminabend">
+            <h2 className="mt-0">Kaminabend</h2>
+            <p>
+              Im Rahmen dieses Bausteins organisieren Sie{" "}
+              <b>in Zusammenarbeit mit uns</b> einen Kaminabend, zu dem wir die
+              IWI-Studierendenschaft einladen. Dabei stehen{" "}
+              <b>fachliche Themen im Fokus</b>, und Ihre EntwicklerInnen oder
+              ProjektmanagerInnen berichten aus dem <b>Arbeitsalltag</b>. Die
+              Veranstaltung lebt vom Dialog, und oft ergeben sich aus Fragen der
+              Studierenden spannende Diskussionen. Das <b>Networking</b> steht
+              natürlich ebenso im Zentrum, und Informationen zu Praktika oder
+              Einstiegspositionen nach dem Studium können eingebaut werden.
+              Findet die Veranstaltung vor Ort statt, geht der Kaminabend damit
+              einher, dass Sie ein Catering (i. d. R. Pizza) anbieten und (falls
+              möglich) auch die Location stellen.
+            </p>
 
-          <h4>Impressionen von vergangenen Kaminabenden</h4>
-          <div
-            className={
-              "flex flex-col lg:flex-row lg:justify-between gap-10 py-10"
-            }
-          >
-            <img
-              src={"/images/events/kaminabend/kaminabend1.png"}
-              alt={"kamindabend"}
-              className={"rounded-lg w-full lg:w-1/5"}
-            />
-            <img
-              src={"/images/events/kaminabend/kaminabend2.png"}
-              alt={"kamindabend"}
-              className={"rounded-lg w-full lg:w-1/5"}
-            />
-            <img
-              src={"/images/events/kaminabend/kaminabend3.png"}
-              alt={"kamindabend"}
-              className={"rounded-lg w-full lg:w-1/5"}
-            />
-            <img
-              src={"/images/events/kaminabend/kaminabend4.png"}
-              alt={"kamindabend"}
-              className={"rounded-lg w-full lg:w-1/5"}
-            />
+            <h4 className="mt-8 mb-4">
+              Impressionen von vergangenen Kaminabenden
+            </h4>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {kaminabendImages.map((image) => (
+                <img
+                  key={image}
+                  src={image}
+                  alt="Kaminabend"
+                  className="rounded-lg w-full h-40 object-cover"
+                />
+              ))}
+            </div>
           </div>
 
-          <h2 className="mt-20">Spenden</h2>
-          <p>
-            Jederzeit haben Sie zusätzlich natürlich auch die Möglichkeit, uns
-            finanziell mit einer Spende zu unterstützen. Diese Spende erfolgt
-            ohne Gegenleistung und wir können Ihnen eine entsprechende
-            Spendenquittung ausstellen.
-          </p>
+          <div id="foerderverein">
+            <h2 className="mt-0">Unser Förderverein</h2>
+            <InfoBox icon={"exclamation"}>
+              Alle Pakete, Kooperationen und Spenden laufen im Hintergrund über
+              den <b>{foerderverein.name}</b>. Er ist unser rechtlicher und
+              finanzieller Träger – Verträge, Rechnungen und Spendenquittungen
+              kommen also vom Verein, inhaltlich betreut Sie weiterhin die
+              Fachschaft.
+            </InfoBox>
+            <p>
+              Für Sie ändert das nichts am Ablauf: Sie sprechen mit dem
+              Fachbereich Sponsoring, die Abwicklung übernimmt der Verein im
+              Hintergrund. Ansprechperson für Vereinsangelegenheiten ist{" "}
+              <b>{foerderverein.contact}</b>.
+            </p>
+          </div>
+
+          <div id="spende">
+            <h2 className="mt-0">Spende</h2>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div className="lg:col-span-2 petrol_pale_bg rounded-xl p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <Icon path={mdiHeartOutline} size={1.2} color="#7ED1F2" />
+                  <h4 className="text-white">Unterstützen ohne Gegenleistung</h4>
+                </div>
+                <p className="text-white opacity-80 mb-4">
+                  Sie können uns jederzeit auch finanziell mit einer Spende
+                  unterstützen. Diese erfolgt ohne Gegenleistung – dafür stellen
+                  wir Ihnen eine <b>Spendenquittung</b> aus.
+                </p>
+                <p className="text-white opacity-80 mb-0">
+                  Geben Sie bei der Überweisung bitte Ihre Anschrift im
+                  Verwendungszweck an, damit wir Ihnen die Quittung zuschicken
+                  können. Bei Fragen wenden Sie sich an{" "}
+                  <a
+                    href={`mailto:${strings.sponsoring.mail}`}
+                    className="text-white underline hyphens-none"
+                  >
+                    {strings.sponsoring.mail}
+                  </a>
+                  .
+                </p>
+              </div>
+
+              <div className="white_bg rounded-xl p-8 flex flex-col">
+                <div className="flex items-center gap-3 mb-2">
+                  <Icon
+                    path={mdiBankOutline}
+                    size={1.2}
+                    color="var(--primary_blue)"
+                  />
+                  <h4>Kontoverbindung</h4>
+                </div>
+                <div className="flex flex-col">
+                  <BankRow
+                    label="Kontoinhaber"
+                    value={foerderverein.accountHolder}
+                  />
+                  <BankRow label="IBAN" value={foerderverein.iban} />
+                  <BankRow label="BIC" value={foerderverein.bic} />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </ResponsiveWrapper>
     </>
