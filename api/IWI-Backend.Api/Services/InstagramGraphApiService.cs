@@ -7,7 +7,6 @@ using Microsoft.Extensions.Options;
 namespace IWI_Backend.Api.Services;
 
 public class InstagramGraphApiService(
-    IOptions<InstagramGraphOptions> options,
     InstagramTokenStore tokenStore,
     IHttpClientFactory httpFactory)
 {
@@ -15,9 +14,14 @@ public class InstagramGraphApiService(
 
     private static readonly string[] MediaFields =
     [
-        "id", "media_url", "media_type", "caption",
+        "id", "media_url", "thumbnail_url", "media_type", "caption",
         "permalink", "timestamp", "like_count", "comments_count",
         "children{id,media_type,media_url}"
+    ];
+
+    private static readonly string[] ProfileFields =
+    [
+        "id", "username", "profile_picture_url"
     ];
 
     public async Task<IReadOnlyList<InstagramMedia>> GetInstagramPostsAsync(int limit = 5, CancellationToken ct = default)
@@ -27,6 +31,26 @@ public class InstagramGraphApiService(
 
         var resp = await client.GetFromJsonAsync<MediaResponse>(url, ct);
         return resp?.Data ?? [];
+    }
+
+    public async Task<InstagramProfile?> GetProfileAsync(CancellationToken ct = default)
+    {
+        var client = httpFactory.CreateClient();
+        var url = await GraphApiUrlBuilder("me", ProfileFields);
+
+        return await client.GetFromJsonAsync<InstagramProfile>(url, ct);
+    }
+
+    /// <summary>
+    /// Lädt eine signierte CDN-URL herunter. Der Aufrufer muss sicherstellen,
+    /// dass die URL frisch ist - abgelaufene Links antworten mit 403.
+    /// </summary>
+    public async Task<Stream> OpenMediaStreamAsync(string url, CancellationToken ct)
+    {
+        var client = httpFactory.CreateClient();
+        var resp = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, ct);
+        resp.EnsureSuccessStatusCode();
+        return await resp.Content.ReadAsStreamAsync(ct);
     }
 
     private async Task<string> GraphApiUrlBuilder(string route, IReadOnlyList<string> fields, int? limit = null)
@@ -48,14 +72,27 @@ public sealed class InstagramTokenStore(IOptions<InstagramGraphOptions> options)
     private readonly InstagramGraphOptions _opt = options.Value;
     private readonly SemaphoreSlim _lock = new(1, 1);
 
+    /// <summary>
+    /// Bevorzugt das zuletzt erneuerte Token aus der Datei; faellt auf das
+    /// konfigurierte Token zurueck, wenn die Datei fehlt, leer oder kaputt ist.
+    /// </summary>
     public async Task<string> GetTokenAsync()
     {
         if (File.Exists(_opt.TokenFilePath))
         {
-            var json = await File.ReadAllTextAsync(_opt.TokenFilePath);
-            var data = JsonSerializer.Deserialize<TokenData>(json);
-            if (!string.IsNullOrEmpty(data?.AccessToken))
-                return data.AccessToken;
+            try
+            {
+                var json = await File.ReadAllTextAsync(_opt.TokenFilePath);
+                var data = string.IsNullOrWhiteSpace(json)
+                    ? null
+                    : JsonSerializer.Deserialize<TokenData>(json);
+                if (!string.IsNullOrEmpty(data?.AccessToken))
+                    return data.AccessToken;
+            }
+            catch (JsonException)
+            {
+                // Beschaedigte Token-Datei darf den Start nicht blockieren.
+            }
         }
         return _opt.AccessToken;
     }

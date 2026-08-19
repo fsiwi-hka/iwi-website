@@ -1,8 +1,6 @@
 import {useEffect, useState} from "react";
-import {insta_posts} from "../../pages/api/media";
 
 const PROFILE = {username: "iwi_fachschaft", url: "https://www.instagram.com/iwi_fachschaft/?hl=de"};
-const USE_BACKEND = false;
 
 function InstagramFeed() {
     const [postings, setPostings] = useState([]);
@@ -11,21 +9,22 @@ function InstagramFeed() {
 
     useEffect(() => {
         async function loadPostings() {
+            // Immer zur Laufzeit laden: das Backend spiegelt die Bilder und liefert
+            // eigene, dauerhaft gueltige URLs. Die Original-URLs der Graph API sind
+            // signiert und laufen nach wenigen Stunden ab - ein zur Buildzeit
+            // eingebackener Snapshot waere nach dem Deploy sofort kaputt.
             try {
-                let data;
-                let user;
-                if (USE_BACKEND) {
-                    const res = await fetch(`/api/loader_instagram?count=${count}`);
-                    data = (await res.json()).data;
-                    user = (await res.json()).user;
-                } else {
-                    user = insta_posts.user;
-                    data = insta_posts.data;
-                }
-                setUser(user);
-                setPostings(data.slice(0, count));
+                const res = await fetch(`/api/content/insta-posts?limit=${count}`);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+                const feed = await res.json();
+                if (!feed?.data?.length) throw new Error("leerer Feed");
+
+                if (feed.user) setUser(feed.user);
+                setPostings(feed.data.slice(0, count));
             } catch (error) {
                 console.error("Error loading Instagram postings:", error);
+                setPostings([]);
             }
         }
 
@@ -62,7 +61,13 @@ export default InstagramFeed;
 function InstagramPost({post, user}) {
     const isVideo = post.media_type === "VIDEO";
     const isAlbum = post.media_type === "CAROUSEL_ALBUM";
-    const src = isVideo ? post.thumbnail_url : post.media_url;
+    const src = post.media_url ?? post.thumbnail_url;
+    // Instagram-Posts sind 4:5, 1:1 oder 1.91:1. Die Kachel bleibt quadratisch,
+    // damit das Raster gleichmaessig bleibt, das Bild wird darin aber vollstaendig
+    // eingepasst statt beschnitten. Nicht-quadratische Posts bekommen die freien
+    // Raender mit einer unscharfen Kopie gefuellt, sonst klaffen weisse Balken.
+    const hasSize = Boolean(post.width && post.height);
+    const needsBackdrop = hasSize && Math.abs(post.width / post.height - 1) > 0.02;
     const date = post.timestamp ? new Date(post.timestamp).toLocaleDateString("de-DE", {
         day: "numeric",
         month: "long"
@@ -71,17 +76,30 @@ function InstagramPost({post, user}) {
     return (
         <div className="flex flex-col overflow-hidden rounded-xl border border-gray-400 bg-white shadow-sm">
             <div className="flex items-center gap-2 px-3 py-2.5">
-                <img src={user.profile_picture_url} alt="" className="h-8 w-8 rounded-full object-cover"/>
+                {user?.profile_picture_url
+                    ? <img src={user.profile_picture_url} alt="" className="h-8 w-8 rounded-full object-cover"/>
+                    : <span className="h-8 w-8 rounded-full bg-gray-400"/>}
                 <div className="flex flex-col leading-tight">
                     <a href={PROFILE.url}
-                       className="text-sm font-semibold text-gray-900 hover:underline">{PROFILE.username}</a>
+                       className="text-sm font-semibold text-gray-900 hover:underline">{user?.username ?? PROFILE.username}</a>
                     {date && <span className="text-xs text-gray-400">{date}</span>}
                 </div>
                 <span className="ml-auto text-gray-500">···</span>
             </div>
 
-            <a href={post.permalink} target="_blank" rel="noopener noreferrer" className="relative block">
-                <img src={src} alt="" className="aspect-square w-full object-cover duration-300 hover:opacity-95"/>
+            <a href={post.permalink} target="_blank" rel="noopener noreferrer"
+               className="relative block aspect-square overflow-hidden bg-gray-400">
+                {needsBackdrop && (
+                    <img src={src} alt="" aria-hidden="true"
+                         className="absolute inset-0 h-full w-full scale-110 object-cover blur-xl"/>
+                )}
+                <img
+                    src={src}
+                    alt={post.caption ? post.caption.split("\n")[0].slice(0, 120) : ""}
+                    width={hasSize ? post.width : undefined}
+                    height={hasSize ? post.height : undefined}
+                    className="relative h-full w-full object-contain duration-300 hover:opacity-95"
+                />
                 {(isVideo || isAlbum) && (
                     <span className="absolute right-2 top-2 text-white drop-shadow">{isVideo ? <PlayIcon/> :
                         <AlbumIcon/>}</span>

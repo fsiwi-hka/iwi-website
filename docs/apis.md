@@ -5,12 +5,22 @@
 (pages/api/loader_events.js)<br>
 Loads the events from the specified URL (defined in the .env file) in the iCal format. If the description of an event is a link, it will be displayed as a button. Time and date are formatted accordingly.
 
-## loader_instagram
+## Instagram-Feed
 
-(pages/api/loader_instagram.js)<br>
+(Backend: `/api/content/insta-posts`)<br>
 
-TODO: Describe the Instagram API<br>
-Can be called with a number-query and returns the corresponding number of Instagram Postings.
+Der Instagram-Feed kommt vom Backend, nicht aus dem Next.js-Frontend.
+
+`GET /api/content/insta-posts?limit=4` liefert `{ user, data }`. Die Bilder werden vom
+Backend gespiegelt und liegen unter `/api/content/insta-media/{name}`.
+
+Das ist notwendig, weil `media_url`, `thumbnail_url` und `profile_picture_url` der Graph
+API signierte CDN-Links sind, die nach wenigen Stunden bis Tagen ablaufen. Sie duerfen
+deshalb nicht ans Frontend durchgereicht und erst recht nicht zur Buildzeit in den
+statischen Export eingebacken werden. Der `InstagramSyncService` laedt jedes Medium
+einmal anhand seiner stabilen Media-ID herunter; die eigenen URLs laufen nicht ab.
+
+`POST /api/content/refresh` stoesst einen Sync manuell an.
 
 ## loader_news
 

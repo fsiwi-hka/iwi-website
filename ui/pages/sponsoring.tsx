@@ -103,7 +103,7 @@ const bausteine: Baustein[] = [
     icon: mdiHeartOutline,
     title: "Spende",
     description:
-      "Unterstützung ohne Gegenleistung, über unseren Förderverein und mit Spendenquittung.",
+      "Unterstützung ohne Gegenleistung – unkompliziert über unseren Förderverein.",
     anchor: "#spende",
   },
 ];
@@ -436,9 +436,8 @@ function Index() {
             <InfoBox icon={"exclamation"}>
               Alle Pakete, Kooperationen und Spenden laufen im Hintergrund über
               den <b>{foerderverein.name}</b>. Er ist unser rechtlicher und
-              finanzieller Träger – Verträge, Rechnungen und Spendenquittungen
-              kommen also vom Verein, inhaltlich betreut Sie weiterhin die
-              Fachschaft.
+              finanzieller Träger – Verträge und Rechnungen kommen also vom
+              Verein, inhaltlich betreut Sie weiterhin die Fachschaft.
             </InfoBox>
             <p>
               Für Sie ändert das nichts am Ablauf: Sie sprechen mit dem
@@ -459,13 +458,10 @@ function Index() {
                 </div>
                 <p className="text-white opacity-80 mb-4">
                   Sie können uns jederzeit auch finanziell mit einer Spende
-                  unterstützen. Diese erfolgt ohne Gegenleistung – dafür stellen
-                  wir Ihnen eine <b>Spendenquittung</b> aus.
+                  unterstützen. Diese erfolgt ohne Gegenleistung.
                 </p>
                 <p className="text-white opacity-80 mb-0">
-                  Geben Sie bei der Überweisung bitte Ihre Anschrift im
-                  Verwendungszweck an, damit wir Ihnen die Quittung zuschicken
-                  können. Bei Fragen wenden Sie sich an{" "}
+                  Bei Fragen zu Ihrer Spende wenden Sie sich gerne an{" "}
                   <a
                     href={`mailto:${strings.sponsoring.mail}`}
                     className="text-white underline hyphens-none"

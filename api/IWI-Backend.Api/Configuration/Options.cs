@@ -25,4 +25,13 @@ public sealed class InstagramGraphOptions
     public string ClientSecret { get; set; } = "";
     public string AccessToken { get; set; } = "";
     public string TokenFilePath { get; set; } = "";
+
+    /// <summary>Ablageort der gespiegelten Instagram-Medien.</summary>
+    public string CacheDirectory { get; set; } = "cache/instagram";
+
+    /// <summary>Muss deutlich unter der Lebensdauer der signierten CDN-URLs liegen.</summary>
+    public int SyncIntervalMinutes { get; set; } = 30;
+
+    /// <summary>Anzahl der Posts, die gespiegelt werden.</summary>
+    public int PostLimit { get; set; } = 12;
 }

@@ -27,7 +27,10 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 builder.Services.AddSingleton<InstagramTokenStore>();
 builder.Services.AddHostedService<InstagramTokenRefresher>();
-builder.Services.AddScoped<InstagramGraphApiService>();
+builder.Services.AddSingleton<InstagramGraphApiService>();
+builder.Services.AddSingleton<InstagramStore>();
+builder.Services.AddSingleton<InstagramSyncService>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<InstagramSyncService>());
 
 builder.Services.AddSingleton<MediaStore>();
 builder.Services.AddSingleton<MediaSyncService>();
@@ -39,7 +42,8 @@ builder.Services.AddSingleton(_ =>
     {
         Mappings =
         {
-            [".avif"] = "image/avif"
+            [".avif"] = "image/avif",
+            [".heic"] = "image/heic"
         }
     };
     return p;
@@ -54,8 +58,15 @@ builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 app.UseCors();
 
-app.MapGet("/api/health", (MediaStore store) =>
-    Results.Ok(new { status = "ok", lastSync = store.LastSync, slides = store.Slides.Count }));
+app.MapGet("/api/health", (MediaStore store, InstagramStore instagram) =>
+    Results.Ok(new
+    {
+        status = "ok",
+        lastSync = store.LastSync,
+        slides = store.Slides.Count,
+        instagramLastSync = instagram.LastSync,
+        instagramPosts = instagram.Feed.Data.Count
+    }));
 
 app.MapGet("/api/config", (MediaStore store) => Results.Ok(store.Config));
 

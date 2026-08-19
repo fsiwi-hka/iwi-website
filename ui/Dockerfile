@@ -6,9 +6,10 @@ RUN npm ci
 
 COPY . .
 
-RUN --mount=type=secret,id=instagram_token \
-    --mount=type=secret,id=nextcloud_url \
-    INSTAGRAM_TOKEN=$(cat /run/secrets/instagram_token) \
+# Kein Instagram-Token mehr noetig: der Feed wird zur Laufzeit vom Backend
+# geladen, das die Bilder spiegelt. Signierte CDN-URLs zur Buildzeit
+# einzubacken funktioniert nicht, weil sie nach wenigen Stunden ablaufen.
+RUN --mount=type=secret,id=nextcloud_url \
     NEXTCLOUD_URL=$(cat /run/secrets/nextcloud_url) \
     npm run build
 

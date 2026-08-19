@@ -26,6 +26,7 @@ services:
       - ASPNETCORE_URLS=http://+:8080
       - Sync__CacheDirectory=/home/app/cache
       - Instagram__TokenFilePath=/home/app/state/instagram_token.json
+      - Instagram__CacheDirectory=/home/app/instagram-cache
       - Instagram__AccessToken=${INSTAGRAM_TOKEN}
       - WebDav__Username=${WEBDAV_USERNAME}
       - WebDav__Password=${WEBDAV_PASSWORD}
@@ -33,6 +34,7 @@ services:
     volumes:
       - media_cache:/home/app/cache
       - instagram_state:/home/app/state
+      - instagram_cache:/home/app/instagram-cache
     ports:
       - "127.0.0.1:5200:8080"
     networks:
@@ -41,6 +43,7 @@ services:
 volumes:
   media_cache:
   instagram_state:
+  instagram_cache:
 
 secrets:
   nextcloud_url:
