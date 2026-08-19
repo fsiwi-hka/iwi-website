@@ -75,26 +75,36 @@ public sealed class InstagramTokenStore(IOptions<InstagramGraphOptions> options)
     /// <summary>
     /// Bevorzugt das zuletzt erneuerte Token aus der Datei; faellt auf das
     /// konfigurierte Token zurueck, wenn die Datei fehlt, leer oder kaputt ist.
+    ///
+    /// Wichtig fuers Deployment: die Datei liegt auf einem persistenten Volume und
+    /// ueberlebt jeden Redeploy. Damit ein rotiertes Secret trotzdem greift, merkt
+    /// sich die Datei, aus welchem konfigurierten Token ihre Refresh-Kette stammt -
+    /// aendert sich Instagram:AccessToken, gewinnt die Konfiguration.
     /// </summary>
     public async Task<string> GetTokenAsync()
     {
-        if (File.Exists(_opt.TokenFilePath))
+        var configured = _opt.AccessToken;
+        var stored = await ReadStoredAsync();
+
+        if (string.IsNullOrEmpty(stored?.AccessToken)) return configured;
+        if (string.IsNullOrEmpty(configured)) return stored.AccessToken;
+
+        return stored.Seed == configured ? stored.AccessToken : configured;
+    }
+
+    private async Task<TokenData?> ReadStoredAsync()
+    {
+        if (!File.Exists(_opt.TokenFilePath)) return null;
+        try
         {
-            try
-            {
-                var json = await File.ReadAllTextAsync(_opt.TokenFilePath);
-                var data = string.IsNullOrWhiteSpace(json)
-                    ? null
-                    : JsonSerializer.Deserialize<TokenData>(json);
-                if (!string.IsNullOrEmpty(data?.AccessToken))
-                    return data.AccessToken;
-            }
-            catch (JsonException)
-            {
-                // Beschaedigte Token-Datei darf den Start nicht blockieren.
-            }
+            var json = await File.ReadAllTextAsync(_opt.TokenFilePath);
+            return string.IsNullOrWhiteSpace(json) ? null : JsonSerializer.Deserialize<TokenData>(json);
         }
-        return _opt.AccessToken;
+        catch (JsonException)
+        {
+            // Beschaedigte Token-Datei darf den Start nicht blockieren.
+            return null;
+        }
     }
 
     public async Task SaveTokenAsync(string token, DateTimeOffset expiresAt)
@@ -102,7 +112,7 @@ public sealed class InstagramTokenStore(IOptions<InstagramGraphOptions> options)
         await _lock.WaitAsync();
         try
         {
-            var json = JsonSerializer.Serialize(new TokenData(token, expiresAt));
+            var json = JsonSerializer.Serialize(new TokenData(token, expiresAt, _opt.AccessToken));
             var tmp = _opt.TokenFilePath + ".tmp";
             await File.WriteAllTextAsync(tmp, json);
             File.Move(tmp, _opt.TokenFilePath, overwrite: true);
@@ -110,7 +120,8 @@ public sealed class InstagramTokenStore(IOptions<InstagramGraphOptions> options)
         finally { _lock.Release(); }
     }
 
-    private record TokenData(string AccessToken, DateTimeOffset ExpiresAt);
+    /// <param name="Seed">Das konfigurierte Token, aus dem dieses erneuerte Token hervorging.</param>
+    private record TokenData(string AccessToken, DateTimeOffset ExpiresAt, string? Seed = null);
 }
 
 public class InstagramTokenRefresher(

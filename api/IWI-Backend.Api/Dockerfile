@@ -21,7 +21,7 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Noch als root: Cache-Verzeichnis anlegen und dem App-User geben
-RUN mkdir -p /home/app/cache /home/app/state && chown -R $APP_UID:$APP_UID /home/app/
+RUN mkdir -p /home/app/cache /home/app/state /home/app/instagram-cache && chown -R $APP_UID:$APP_UID /home/app/
 
 # Erst jetzt auf den non-root User wechseln
 USER $APP_UID
