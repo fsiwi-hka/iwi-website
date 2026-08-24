@@ -5,8 +5,9 @@ import BoxFullWidthBlue from "../components/common/box-full-width-blue";
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import InfoTile from "../components/common/infotile";
-import StudyCard from "../components/common/study-card";
+import StudyCard, {StudyCardProps} from "../components/common/study-card";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
+import {LinkButton} from "./studies";
 
 
 interface Button {
@@ -15,20 +16,13 @@ interface Button {
   buttonNewTab?: boolean;
 }
 
-interface StudyCard {
-  title: string;
-  subtitle: string;
-  listElements: string[];
-  buttons: Button[];
-}
-
-const requiredSoftware: StudyCard[] = [
+const requiredSoftware: StudyCardProps[] = [
   {
     title: "Java",
     subtitle: "IntelliJ IDEA von Jetbrains",
     listElements: [],
     buttons: [
-      { text: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/", buttonNewTab: true },
+      new LinkButton({ text: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/", buttonNewTab: true }),
     ],
   },
   {
@@ -36,8 +30,8 @@ const requiredSoftware: StudyCard[] = [
     subtitle: "Visual Studio Community Edition & .NET",
     listElements: [],
     buttons: [
-      { text: "Visual Studio", url: "https://visualstudio.microsoft.com/", buttonNewTab: true },
-      { text: ".net", url: "https://dotnet.microsoft.com/", buttonNewTab: true },
+      new LinkButton({ text: "Visual Studio", url: "https://visualstudio.microsoft.com/", buttonNewTab: true }),
+      new LinkButton({ text: ".net", url: "https://dotnet.microsoft.com/", buttonNewTab: true }),
     ],
   },
   {
@@ -45,17 +39,17 @@ const requiredSoftware: StudyCard[] = [
     subtitle: "Python 3.x und Jupyter Lab",
     listElements: [],
     buttons: [
-      { text: "Python", url: "https://www.python.org/", buttonNewTab: true },
-      { text: "Jupyter Lab", url: "https://jupyter.org/", buttonNewTab: true },
+      new LinkButton({ text: "Python", url: "https://www.python.org/", buttonNewTab: true }),
+      new LinkButton({ text: "Jupyter Lab", url: "https://jupyter.org/", buttonNewTab: true }),
     ],
   },
 ];
 
-const downloadMaterials: StudyCard[] = [
-  { title: "Tag 1", subtitle: "", listElements: [], buttons: [{ text: "Herunterladen", url: "#", buttonNewTab: true }] }, // Link muss ergänzt werden
-  { title: "Tag 2", subtitle: "", listElements: [], buttons: [{ text: "Herunterladen", url: "#", buttonNewTab: true }] }, // Link muss ergänzt werden
-  { title: "Tag 3", subtitle: "", listElements: [], buttons: [{ text: "Herunterladen", url: "#", buttonNewTab: true }] }, // Link muss ergänzt werden
-  { title: "Tag 4", subtitle: "", listElements: [], buttons: [{ text: "Herunterladen", url: "#", buttonNewTab: true }] }, // Link muss ergänzt werden
+const downloadMaterials: StudyCardProps[] = [
+  { title: "Tag 1", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
+  { title: "Tag 2", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
+  { title: "Tag 3", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
+  { title: "Tag 4", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
 ]; 
 
 

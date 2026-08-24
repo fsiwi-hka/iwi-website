@@ -21,7 +21,7 @@ const SCOPE_TITLE: Record<LinkScope, string> = {
     both: "",
 };
 
-interface StudyCardProps {
+export interface StudyCardProps {
     title: string;
     subtitle: string;
     listElements: string[]

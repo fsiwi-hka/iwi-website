@@ -99,7 +99,6 @@ function determineClasses(title, href, mobile) {
   // Using the router allows us to check which page
   // we're on, so we can style the active link
   const router = useRouter();
-  console.log("Router: ", title, router.pathname, href)
   if (
     // we need to append the trailing slash because the router
     // pathname doesn't contain it (it's added in the NextJS config)
