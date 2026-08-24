@@ -32,19 +32,15 @@ function Index() {
                 Um euch den Einstieg ins Studium zu erleichtern, unterstützen
                 wir euch Erstis bereits vor Beginn der Vorlesungen. Darüber
                 hinaus gibt es eine Orientierungsphase für euch, die am Montag
-                in der ersten Vorlesungswoche startet."
+                in der ersten Vorlesungswoche startet.
               </InfoBox>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
                 <BoxWithIcon icon={mdiConsoleNetworkOutline}>
                   Zum einen bieten wir einen <b>Programmiervorkurs</b> an, in
                   dem ihr euch mit den Programmiersprachen{" "}
-                  <ul>
-                    <li>
-                      <b>Java</b>, <b>C++</b> und <b>Python</b>
-                    </li>
-                  </ul>{" "}
-                  vertraut machen könnt. Dieser Kurs findet{" "}
+                  <b>Java</b>, <b>C++</b> und <b>Python</b> vertraut machen
+                  könnt. Dieser Kurs findet{" "}
                   <b>zwei Wochen vor Vorlesungsbeginn</b> statt.
                 </BoxWithIcon>
 

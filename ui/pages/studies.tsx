@@ -5,54 +5,72 @@ import Header from "../components/common/header";
 import StudyCard from "../components/common/study-card";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 
-interface Button {
-  text: string;
+export class LinkButton {
+  text?: string;
   url: string;
   buttonNewTab?: boolean;
+  scope?: "intern" | "extern" | "both" = "both";
+
+  constructor(data: Partial<LinkButton> & { url: string }) {
+    Object.assign(this, data);
+  }
+
+  getText(): string {
+    if (this.text) return this.text;
+    if (this.scope === "both") return "Öffnen";
+    if (this.scope === "intern") return "Intern öffnen";
+    if (this.scope === "extern") return "Extern öffnen";
+    return "Öffnen";
+  }
 }
 
 interface StudyCard {
   title: string;
   subtitle: string;
   listElements: string[];
-  buttons: Button[];
+  buttons: LinkButton[];
 }
 
 const platforms: StudyCard[] = [
   {
     title: "HISinOne",
     subtitle: "",
-    listElements: ["Campusverwaltung"],
+    listElements: ["Bescheinigungen, z. B. Immatrikulationsbescheinigung"],
     buttons: [
-      {
-        text: "Zum HISinOne",
-        url: "https://hisinone.extern-hs-karlsruhe.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces",
+      new LinkButton({
+        scope: "both",
+        url: "https://hisinone.extern-hs-karlsruhe.de/",
         buttonNewTab: true,
-      },
+      })
     ],
   },
   {
     title: "Ilias",
     subtitle: "",
     listElements: ["Lernplattform"],
-    buttons: [{ text: "Zum Ilias", url: "https://ilias.h-ka.de/", buttonNewTab: true }],
+    buttons: [
+        new LinkButton({ text: "Öffnen", url: "https://ilias.h-ka.de/", buttonNewTab: true })
+    ],
   },
   {
     title: "Webmail",
     subtitle: "",
     listElements: ["Zugang zu Hochschulmail"],
-    buttons: [{ text: "Zur Webmail", url: "https://owa.h-ka.de/", buttonNewTab: true }],
+    buttons: [
+        new LinkButton({ scope: "extern", url: "https://owa.h-ka.de/", buttonNewTab: true }),
+        new LinkButton({ scope: "intern", url: "https://webmail.h-ka.de/", buttonNewTab: true })
+    ],
   },
   {
     title: "HKA-APP",
     subtitle: "",
     listElements: ["Verschiedene Services"],
     buttons: [
-      {
-        text: "Zur HKA-App",
+      new LinkButton({
+        text: "Öffnen",
         url: "https://www.h-ka.de/hka-app",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -60,11 +78,11 @@ const platforms: StudyCard[] = [
     subtitle: "",
     listElements: ["Chatplattform"],
     buttons: [
-      {
-        text: "Zu Mattermost",
+      new LinkButton({
+        text: "Öffnen",
         url: "https://mattermost.hska-iwi.de",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -72,30 +90,30 @@ const platforms: StudyCard[] = [
     subtitle: "",
     listElements: ["Stundenpläne"],
     buttons: [
-      {
-        text: "Zu Raumzeit",
+      new LinkButton({
+        text: "Öffnen",
         url: "https://raumzeit.hka-iwi.de/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
     title: "Intranet (INFB, INFM, MINB)",
     subtitle: "",
-    listElements: ["Campusverwaltung"],
+    listElements: ["Internes Tool"],
     buttons: [
-      {
-        text: "Zum HISinOne",
-        url: "https://hisinone.extern-hs-karlsruhe.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces",
+      new LinkButton({
+        text: "Öffnen",
+        url: "https://intranet.hka-iwi.de/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
     title: "Intranet (WIIB, WIIM, IIBB, DSCB)",
     subtitle: "",
     listElements: ["Internes Tool"],
-    buttons: [{ text: "Zum Intranet", url: "https://intranet.hka-iwi.de/", buttonNewTab: true }],
+    buttons: [new LinkButton({ text: "Öffnen", url: "https://intranet.hka-iwi.de/", buttonNewTab: true })],
 
   },
   {
@@ -103,11 +121,16 @@ const platforms: StudyCard[] = [
     subtitle: "",
     listElements: ["Prüfungsverwaltung"],
     buttons: [
-      {
-        text: "Zum QIS",
+      new LinkButton({
+        scope: "extern",
         url: "https://qis-extern.hs-karlsruhe.de",
         buttonNewTab: true,
-      },
+      }),
+      new LinkButton({
+        scope: "intern",
+        url: "https://qis2.hs-karlsruhe.de/",
+        buttonNewTab: true,
+      }),
     ],
   },
   {
@@ -115,26 +138,46 @@ const platforms: StudyCard[] = [
     subtitle: "",
     listElements: ["Öffnungszeiten und Service-Bereiche"],
     buttons: [
-      {
-        text: "Zur Website",
+      new LinkButton({
+        text: "Öffnen",
         url: "https://www.h-ka.de/oeffnungszeiten",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
 ];
 
 const literature: StudyCard[] = [
   {
+    title: "Bibliothek der HKA",
+    subtitle:
+      "Ausleihe, Lernplätze und buchbare Gruppenräume im Steinbeis-Haus (Raum SH-101, Moltkestraße 30). Die Literaturrecherche in den Beständen von HKA, KIT und DHBW läuft zentral über den KIT-Katalog.",
+    listElements: [
+      "Bibliothek: Mo-Fr 8-17 Uhr",
+      "Lernbereiche & Gruppenräume: Mo-Fr 8-22 Uhr",
+    ],
+    buttons: [
+      new LinkButton({
+        url: "https://www.h-ka.de/die-hochschule-karlsruhe/einrichtungen/bibliothek",
+        buttonNewTab: true,
+      }),
+      new LinkButton({
+        text: "KIT-Katalog",
+        url: "https://katalog.bibliothek.kit.edu/",
+        buttonNewTab: true,
+      }),
+    ],
+  },
+  {
     title: "Springer Link",
     subtitle: "",
     listElements: ["Login via: Shibboleth"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Anmeldung",
         url: "https://link.springer.com/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -142,11 +185,11 @@ const literature: StudyCard[] = [
     subtitle: "",
     listElements: ["Login via: Hochschulnetz"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Anmeldung",
         url: "https://herdt.com/campus/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -154,11 +197,11 @@ const literature: StudyCard[] = [
     subtitle: "",
     listElements: ["Login via: Hochschulnetz & Shibboleth"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Anmeldung",
         url: "https://de.statista.com",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -166,11 +209,11 @@ const literature: StudyCard[] = [
     subtitle: "",
     listElements: ["Login via: Hochschulnetz"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Anmeldung",
         url: "https://beck-online.beck.de/Home",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -178,11 +221,11 @@ const literature: StudyCard[] = [
     subtitle: "",
     listElements: ["Login via: Shibboleth"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Anmeldung",
         url: "https://ieeexplore.ieee.org/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -190,11 +233,11 @@ const literature: StudyCard[] = [
     subtitle: "",
     listElements: ["Login via: Shibboleth"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Anmeldung",
         url: "https://www.emerald.com/insight/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
 ];
@@ -205,29 +248,29 @@ const softwares: StudyCard[] = [
     subtitle: "Word, Excel, PowerPoint, OneNote und vieles mehr. Lizenz gilt für bis zu 5 Desktop und 5 Mobile Geräte.",
     listElements: ["Registrieren via: Shibboleth", "Kosten: 4,39 € pro Jahr"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Registrierung",
         url: "https://bildung365.de",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
     title: "Windows 10/11",
     subtitle: "Windows Education Lizenz zum persönlichen Gebrauch.",
     listElements: ["Login via: Shibboleth"],
-    buttons: [{ text: "Zur Anmeldung", url: "https://bildung365.de/", buttonNewTab: true }],
+    buttons: [new LinkButton({ text: "Zur Anmeldung", url: "https://bildung365.de/", buttonNewTab: true })],
   },
   {
     title: "Jetbrains IDE",
     subtitle: "Lizenz für alle alle Tools von Jetbrains (nicht nur die Community Editions)..",
     listElements: ["Registrierung via: Hochschulmail (ggf. hs-karlsruhe.de)"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Registrierung",
         url: "https://www.jetbrains.com/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -235,12 +278,12 @@ const softwares: StudyCard[] = [
     subtitle: "",
     listElements: ["Registrierung via: Hochschulmail"],
     buttons: [
-      {
+      new LinkButton({
         text: "Mehr Infos",
         url: "https://education.github.com/pack",
         buttonNewTab: true,
-      },
-      { text: "Zur Registrierung", url: "https://github.com/education/students", buttonNewTab: true },
+      }),
+      new LinkButton({ text: "Zur Registrierung", url: "https://github.com/education/students", buttonNewTab: true }),
     ],
   },
   {
@@ -248,11 +291,11 @@ const softwares: StudyCard[] = [
     subtitle: "",
     listElements: ["Registrierung via: Hochschulmail & Mircosoft Konto"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Registrierung",
         url: "https://azureforeducation.microsoft.com/devtools",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
 ];
@@ -264,26 +307,26 @@ const clouds: StudyCard[] = [
       "Eine vom KIT gehostete Nextcloud Instanz mit 50GB Speicher für jeden Student. Kann über die offiziellen Nextcloud-Clients auf allen bekannten Plattformen eingebunden werden. Funktionen: Dateien ablegen, teilen, anfordern, usw.",
     listElements: ["Login via: Shibboleth"],
     buttons: [
-      {
+      new LinkButton({
         text: "Zur Registrierung",
         url: "https://bwsyncandshare.kit.edu/apps/user/_saml/saml/selectUserBackEnd?redirectUrl=",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
-    title: "BW SYNC&SHARE",
+    title: "bwCloud-OS",
     subtitle:
-      "Infrastructure as a Service (IaaS) Angebot. Standardmäßig maximale Ressourcen: 4 Cloudserver (mit je 10 GB Speicher), 4 CPUs, 8 GB RAM, 4 extra Datenträger (insg. max. 50 GB), öffentliche IPv4 Adresse je Server. Alle großen Linux-Distributionen stehen als Abbild zur Verfügung, weitere können manuell hinzugefügt werden.",
-    listElements: ["Login via: Shibboleth"],
+      "Infrastructure as a Service (IaaS) auf OpenStack-Basis: virtuelle Maschinen mit CPU, RAM, Storage und Netzwerkressourcen, alle großen Linux-Distributionen als Abbild verfügbar. Wie viele Ressourcen dir zustehen, hängt vom Quota-Profil deiner Hochschule ab - die aktuellen Profile stehen unter \"Ressourcen & Flavors\".",
+    listElements: ["Login via: bwIDM"],
     buttons: [
-      {
+      new LinkButton({
         text: "Mehr Infos",
-        url: "https://www.bw-cloud.org/",
+        url: "https://bwcloud-os.de/",
         buttonNewTab: true,
-      },
-      { text: "Zur Registrierung", url: "https://login.bwidm.de/welcome/index.xhtml", buttonNewTab: true },
-      { text: "Anmeldeportal", url: "https://portal.bw-cloud.org/auth/login/?next=/", buttonNewTab: true },
+      }),
+      new LinkButton({ text: "Ressourcen & Flavors", url: "https://bwcloud-os.de/nutzung/flavors", buttonNewTab: true }),
+      new LinkButton({ text: "Zur Registrierung", url: "https://login.bwidm.de/welcome/index.xhtml", buttonNewTab: true }),
     ],
   },
   {
@@ -291,21 +334,22 @@ const clouds: StudyCard[] = [
     subtitle:
       "Bis zu 100GB große Dateien mit einer Gesamtgröße von maximal 1000GB für bis zu 14 Tage bereitstellen oder empfangen.",
     listElements: ["Login via: Shibboleth"],
-    buttons: [{ text: "Zur Registrierung", url: "https://gigamove.rwth-aachen.de/de", buttonNewTab: true }],
+    buttons: [new LinkButton({ text: "Zur Registrierung", url: "https://gigamove.rwth-aachen.de/de", buttonNewTab: true })],
   },
 ];
 
 const mobilities: StudyCard[] = [
   {
-    title: "KVV Studi ticket",
-    subtitle: "Semesterticket für den Karlsruher VerkehrsVerbund.",
-    listElements: ["Bestätigung via: Shibboleth", "Kosten: 215,50 € / 6 Monate"],
+    title: "KVV Studikarte (läuft aus)",
+    subtitle:
+      "Das Semesterticket für den Karlsruher Verkehrsverbund wird eingestellt: die Vereinbarung zwischen Hochschulen und KVV wurde gekündigt, ein Neuabschluss ist nicht mehr möglich und laufende Karten enden im Oktober 2026. Als Nachfolge empfiehlt der KVV das D-Ticket JugendBW oder KVV.luftlinie.",
+    listElements: ["Bestätigung via: Shibboleth", "Kosten zuletzt: 229,00 € / Semester"],
     buttons: [
-      {
-        text: "Zur Registrierung",
+      new LinkButton({
+        text: "Mehr Infos",
         url: "https://www.kvv.de/fahrkarten/fahrkarten-preise/schueler-studentinnen/studikarte.html",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
@@ -314,34 +358,34 @@ const mobilities: StudyCard[] = [
       "Nutzung des Nextbike Systems Deutschlandweit. CampusBike Konditionen: Erste 30 Minuten kostenlos, danach 0,50 € pro halbe Stunde bis maximal 5 € pro Tag. Gilt für bis zu 2 Räder gleichzeitig.",
     listElements: ["Freischaltung via: Hochschulmail (bei Registrierung angeben und dann über Link bestätigen)"],
     buttons: [
-      {
+      new LinkButton({
         text: "Mehr Infos",
         url: "https://www.kvv-nextbike.de/de/campusbike/",
         buttonNewTab: true,
-      },
-      {
+      }),
+      new LinkButton({
         text: "Zur Registrierung",
         url: "https://secure.nextbike.net/fg/de/registrierung/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
   {
-    title: "BW 365€ Jugendticket",
+    title: "D-Ticket JugendBW",
     subtitle:
-      "Berechtigt zur Nutzung des reginalen ÖPNVs in ganz Baden-Württemberg über den Zeitraum eines Jahres. Berechtigt zum Kauf ist jeder bis 21 oder bis 27, wenn in einer Ausbildung oder in einem Studium.",
-    listElements: ["Kosten 356 € / Jahr"],
+      "Gilt deutschlandweit im Nah- und Regionalverkehr (IRE, RE, RB, S-Bahnen, Straßen- und Stadtbahnen, Busse), nicht im Fernverkehr. Berechtigt sind Kinder und Jugendliche bis zum vollendeten 21. Lebensjahr sowie Schüler:innen, Studierende, Auszubildende und Freiwilligendienstleistende bis zum vollendeten 27. Lebensjahr mit Wohn- oder Studienort in Baden-Württemberg.",
+    listElements: ["Kosten: 540 € / Jahr (45 € / Monat)"],
     buttons: [
-      {
+      new LinkButton({
         text: "Mehr Infos",
-        url: "https://vm.baden-wuerttemberg.de/de/mobilitaet-verkehr/oepnv/verkehrsverbuende-tarife/alles-zum-d-ticket-jugendbw",
+        url: "https://www.kvv.de/fahrkarten/fahrkarten-preise/schueler-studentinnen/d-ticket-jugendbw.html",
         buttonNewTab: true,
-      },
-      {
+      }),
+      new LinkButton({
         text: "Zur Registrierung",
         url: "https://abo.kvv.de/abo/",
         buttonNewTab: true,
-      },
+      }),
     ],
   },
 ];
@@ -388,15 +432,14 @@ const other: StudyCard[] = [
       "Kosten: 34 € pro Jahr / 4 € pro Monat",
       "Ref-Link des Förderverein der Fachschaft IWI e.V.",
     ],
-    buttons: [{ text: "Zur Registrierung", url: "https://www.amazon.de/amazonprime?primeCampaignId=studentWlpPrimeRedir&tag=fachschaftiwi-21", buttonNewTab: true }],
-    //LINK FEHLT (reflink erfragen!)
+    buttons: [new LinkButton({ text: "Zur Registrierung", url: "https://www.amazon.de/amazonprime?primeCampaignId=studentWlpPrimeRedir&tag=fachschaftiwi-21", buttonNewTab: true })],
   },
   {
     title: "Hochschulsport",
     subtitle:
       "Der Hochschulsport am KIT bietet für über 4000 Studierende und Beschäftigte des KIT ein buntes Sportangebot in über 70 verschiedenen Disziplinen.",
     listElements: [],
-    buttons: [{ text: "Zum Hochschulsport", url: "https://www.ifss.kit.edu/hochschulsport/english/index.php", buttonNewTab: true }],
+    buttons: [new LinkButton({ text: "Öffnen", url: "https://www.ifss.kit.edu/hochschulsport/english/index.php", buttonNewTab: true })],
   },
   {
     title: "Apotheke",
@@ -422,7 +465,7 @@ function Index() {
       <ResponsiveWrapper>
         <div className={"flex flex-col"}>
           <h2>Wichtige Plattformen</h2>
-          <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 mt-2"}>
+          <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-2"}>
             {platforms.map((platform: StudyCard, index: number) => (
               <StudyCard
                 key={index}

@@ -42,6 +42,10 @@ export const sponsorLogos: CarouselImage[] = [
         size: 95,
     },
     {
+        url: "/images/unternehmen/nitrado.png",
+        size: 95,
+    },
+    {
         url: "/images/unternehmen/the_laend.png",
         size: 180,
     },

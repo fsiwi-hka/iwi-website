@@ -32,8 +32,8 @@ import {strings} from "@lib/strings";
 const foerderverein = {
   name: "Förderverein der Fachschaft IWI e. V.",
   accountHolder: "Förderverein der Fachschaft IWI e. V.",
-  iban: "DE00 0000 0000 0000 0000 00",
-  bic: "XXXXDEXXXXX",
+  iban: "DE25 6619 0000 0096 0155 93",
+  bic: "GENODE61KA1",
   contact: "Florian Kaiser", // Ansprechperson laut content/member.ts
 };
 
@@ -341,7 +341,7 @@ function Index() {
               zum Beginn jedes Semesters durchgeführt wird. Dabei gibt es
               verschiedene Abstufungen:
             </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {packages.map((packageElem: PackageBox, index: number) => (
                 <PackageBox
                   key={index}
@@ -434,10 +434,10 @@ function Index() {
           <div id="foerderverein">
             <h2 className="mt-0">Unser Förderverein</h2>
             <InfoBox icon={"exclamation"}>
-              Alle Pakete, Kooperationen und Spenden laufen im Hintergrund über
-              den <b>{foerderverein.name}</b>. Er ist unser rechtlicher und
-              finanzieller Träger – Verträge und Rechnungen kommen also vom
-              Verein, inhaltlich betreut Sie weiterhin die Fachschaft.
+              Alle Pakete, Kooperationen und Spenden werden im Hintergrund über
+              den <b>{foerderverein.name}</b> abgewickelt. Verträge und
+              Rechnungen kommen also vom Verein, inhaltlich betreut Sie
+              weiterhin die Fachschaft.
             </InfoBox>
             <p>
               Für Sie ändert das nichts am Ablauf: Sie sprechen mit dem

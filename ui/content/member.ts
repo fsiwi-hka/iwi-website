@@ -1,60 +1,77 @@
+export interface Person {
+    img?: string; // Bild der Person
+    name: string; // Name der Person
+}
+
 export interface Mitglied {
-    img?: string; // image of the member
-    position: string; // position of the member, f.e. "Vorstand"
-    name: string; // name of the member
+    position: string; // Position, z. B. "Vorstand"
+    // Eine Position kann von einer oder von zwei Personen besetzt sein.
+    // Bei zwei Personen werden beide Bilder nebeneinander in klein gezeigt,
+    // ein Klick vergrößert eines davon.
+    personen: Person[];
 }
 
 export const members = [
     {
-        position: "1. Vorstand",
-        name: "Ludwig Tschirner",
+        position: "1. Vorsitz",
+        personen: [{ name: "Ludwig Tschirner" }],
     },
     {
-        position: "2. Vorstand",
-        name: "Chris Jemming",
+        position: "2. Vorsitz",
+        personen: [{ name: "Chris Jemming" }],
     },
     {
         position: "1. Finanzer",
-        name: "Aaron Kastner",
+        personen: [{ name: "Aaron Kastner" }],
     },
     {
         position: "2. Finanzer",
-        name: "Julius Freudenberger",
+        personen: [{ name: "Julius Freudenberger" }],
     },
     {
         position: "Mail Manager:in",
-        name: "Steffanie Pefferkorn",
+        personen: [
+            { name: "Steffanie Pefferkorn" },
+            { name: "Hannah Caasmann" }
+        ],
     },
     {
         position: "Kaffee Manager:in",
-        name: "Denis Lischer",
+        personen: [],
     },
     {
         position: "Förderverein",
-        name: "Florian Kaiser",
+        personen: [
+            { name: "Florian Kaiser" },
+            { name: "Chris Jemming"}
+        ],
     },
     {
         position: "FB Finanzen",
-        name: "Aaron Kastner",
+        personen: [{ name: "Aaron Kastner" }],
     },
     {
         position: "FB Events",
-        name: "Charlie Maier",
+        personen: [{ name: "Charlie Maier" }],
     },
     {
         position: "FB Sponsoring",
-        name: "Luca Claus",
+        personen: [{ name: "Luca Claus" }],
     },
     {
         position: "FB Infrastruktur",
-        name: "Julian Hareng",
+        personen: [{ name: "Julian Hareng" }],
     },
     {
         position: "FB Marketing",
-        name: "Alec Engelhardt",
+        personen: [{ name: "Alec Engelhardt" }],
+    },
+    {
+        position: "FB Archiv",
+        personen: [{ name: "Florian Hatzfeld" }],
     },
     {
         position: "FB Fachschaftsraum",
-        name: "Björn Bruckmann",
+        personen: [{ name: "Björn Bruckmann" }],
     }
 ] satisfies Mitglied[];

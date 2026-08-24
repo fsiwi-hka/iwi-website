@@ -12,13 +12,16 @@ interface ButtonProps {
     | "small-blue2"
     | "small-gray"
     | "small-white"
+    | "small-outline"
     | "small-petrol-pale";
   text: string;
   url: string;
   newtab?: boolean;
+  /** Erklaerender Hinweis beim Hovern, z. B. wofuer ein Zugangsweg gilt. */
+  title?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ type, text, url, newtab=false }) => {
+const Button: React.FC<ButtonProps> = ({ type, text, url, newtab=false, title }) => {
   const baseStyles =
     "rounded-full font-semibold transition duration-100 max-w-max";
 
@@ -32,6 +35,8 @@ const Button: React.FC<ButtonProps> = ({ type, text, url, newtab=false }) => {
     "small-blue2": "secondary_blue_bg text-white px-4 py-2 text-sm",
     "small-gray": "secondary_grey_bg text-white px-4 py-2 text-sm",
     "small-white": "bg-white secondary_grey px-4 py-2 text-sm",
+    "small-outline":
+      "bg-white petrol_pale_text border border-gray-400 px-4 py-2 text-sm hover:border-gray-700",
     "small-petrol-pale": "petrol_pale_bg text-white px-4 py-2 text-sm",
   };
 
@@ -39,6 +44,7 @@ const Button: React.FC<ButtonProps> = ({ type, text, url, newtab=false }) => {
     <a
       href={url}
       className="max-w-max group"
+      title={title}
       target={newtab ? "_blank" : undefined}
       rel={newtab ? "noopener noreferrer" : undefined}
     >

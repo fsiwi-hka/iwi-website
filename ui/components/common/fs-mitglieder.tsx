@@ -1,5 +1,6 @@
-import React from "react";
-import {Mitglied} from "../../content/member";
+import React, { useState } from "react";
+import { Mitglied } from "../../content/member";
+import MemberAvatar, { anzeigeName } from "./member-avatar";
 
 interface FsMitgliederProps {
   mitglieder: (Mitglied | null)[]; // Das Array kann auch null-Werte enthalten
@@ -15,40 +16,32 @@ const FsMitglieder: React.FC<FsMitgliederProps> = ({ mitglieder }) => {
             className="flex flex-col items-center justify-start"
           >
             {mitglied ? (
-              <>
-                {/* img */}
-
-                  {mitglied.name.length == 0 || mitglied.name == "Wird gesucht!" ? (
-                      <>
-                          <img
-                              src="/images/fachschaft/placeholder_gesucht.jpg"
-                              alt="Wird gesucht!"
-                              className="w-full h-auto rounded-full object-cover mb-2"
-                          />
-                      </>
-                  ):(
-                      <>
-                          <img
-                              src={mitglied.img?.length>0?mitglied.img:"/images/fachschaft/placeholder.jpg"}
-                              alt={mitglied.name}
-                              className="w-full h-auto rounded-full object-cover mb-2"
-                          />
-                      </>
-                  )}
-
-
-                {/* position */}
-                <p className="text-center font-bold petrol_text no-margin">{mitglied.position}</p>
-                {/* name */}
-                <p className="text-center text-gray-700">{mitglied.name.length>0?mitglied.name:'Wird gesucht!'}</p>
-              </>
+              <MitgliedKachel mitglied={mitglied} />
             ) : (
-              <div className="w-full h-full rounded-full mb-4"></div> 
+              <div className="w-full h-full rounded-full mb-4"></div>
             )}
           </div>
         ))}
       </div>
     </div>
+  );
+};
+
+// Eigene Komponente, weil jede Kachel ihre eigene Auswahl behalten muss.
+const MitgliedKachel: React.FC<{ mitglied: Mitglied }> = ({ mitglied }) => {
+  const [ausgewaehlt, setAusgewaehlt] = useState<number | null>(null);
+
+  return (
+    <>
+      <MemberAvatar
+        personen={mitglied.personen}
+        ausgewaehlt={ausgewaehlt}
+        onAuswahl={setAusgewaehlt}
+        className="w-full mb-2"
+      />
+      <p className="text-center font-bold petrol_text no-margin">{mitglied.position}</p>
+      <p className="text-center text-gray-700">{anzeigeName(mitglied.personen, ausgewaehlt)}</p>
+    </>
   );
 };
 

@@ -72,9 +72,8 @@ function Index() {
                     Verfügung, sondern{" "}
                     <b>
                       organisieren die O-Phase und den Programmiervorkurs,
-                      sammeln Klausuren
                     </b>{" "}
-                    in unserer Cloud, <b>bieten Hilfe bei Problemen</b> zwischen
+                    <b>bieten Hilfe bei Problemen</b> zwischen
                     Studierenden und ProfessorInnen an und vieles mehr.
                   </p>
                 </div>
@@ -105,7 +104,7 @@ function Index() {
               <p>
                 Die Rollen in der Fachschaft sind klar verteilt. Es gibt die
                 Vorstandsebene und die Fachbereiche innerhalb der Fachschaft.
-                Der Vorstand (1. & 2. Vorstand sowie 1. & 2. Finanzer) werden
+                Der Vorstand (1. & 2. Vorsitz sowie 1. & 2. Finanzer) werden
                 für ein Jahr laut Satzung zu Beginn jedes Wintersemesters
                 gewählt.
               </p>
@@ -115,7 +114,7 @@ function Index() {
               {/* Vorstand */}
               <FsMitglieder mitglieder={members.slice(0, 4)} />
               {/* Ämter – die Fachbereiche folgen weiter unten im Abschnitt "Fachbereiche" */}
-              <FsMitglieder mitglieder={members.slice(4, 8)} />
+              <FsMitglieder mitglieder={members.slice(4, 7)} />
             </div>
           </div>
         </div>
@@ -184,17 +183,17 @@ function Index() {
               buttonNewTab={true}
             >
               Aktuell finden die{" "}
-              <b>Sitzungen sowohl online, als auch in Präsenz</b> statt. Wenn du
+              <b>Sitzungen sowohl in Präsenz als auch remote</b> statt. Wenn du
               Interesse hast, Teil der aktiven Fachschaft zu werden, komm
               einfach zur <b>Fachschaftssitzung</b>. Immer{" "}
               <b>mittwochs ab 11:30 Uhr im Raum E004</b> oder auf{" "}
               <a
-                href={strings.participate.zoom.url}
+                href={strings.participate.online.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                <b>Zoom</b>
+                <b>Discord</b>
               </a>
               .
             </InfoBox>

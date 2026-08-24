@@ -11,28 +11,28 @@ export const departments = [
     {
         position: "FB Finanzen",
         tasks: [
-            "Haushaltsplan aufstellen und überwachen",
-            "Rechnungen und Belege prüfen",
-            "Anträge auf Fachschaftsmittel bearbeiten",
-            "Kassenbericht für die Sitzung",
+            "Verwaltung des Gelds der Fachschaft",
+            "Geldmittel über Haushaltsmittelanträge abrufen",
+            "Verantwortungsvoller Umgang mit euren Studierendenbeiträgen",
+            "Kommunikation mit dem AStA",
         ],
     },
     {
         position: "FB Events",
         tasks: [
-            "Semesterpartys und Grillfeste organisieren",
-            "Spieleabende und LAN-Partys planen",
-            "Räume und Material für Veranstaltungen buchen",
-            "Absprache mit Fakultät und Hochschulgruppen",
+            "Planung: Semesterplan aufstellen und Events konzipieren",
+            "Organisation: Raumreservierungen, Einkauf und Helferlisten",
+            "Durchführung: Koordination vor Ort sowie Auf- und Abbau",
         ],
     },
     {
         position: "FB Sponsoring",
         tasks: [
-            "Kontakt zu Unternehmen und Partnern pflegen",
-            "Sponsoringpakete betreuen",
-            "Kooperationen für die O-Phase einwerben",
-            "Firmenauftritte auf dem Campus koordinieren",
+            "Goodies für eure O-Phase organisieren",
+            "Firmenkontakte aufbauen und pflegen",
+            "Kooperationen für alle Studis im Semester einwerben",
+            "Events mit Firmenunterstützung, z. B. Kaminabende",
+            "Networking-Möglichkeiten für Werkstudi-, Praxis- und Thesis-Stellen schaffen",
         ],
     },
     {
@@ -56,7 +56,6 @@ export const departments = [
         position: "FB O-Phase",
         tasks: [
             "O-Phase für die Erstsemester planen",
-            "Tutor:innen anwerben und einteilen",
             "Erstiheft und Zeitplan erstellen",
             "Programmiervorkurs mitorganisieren",
         ],
@@ -68,6 +67,14 @@ export const departments = [
             "Pflanzen pflegen und erhalten",
             "Sauberkeit, Ordnung und Hygiene sicherstellen",
             "Raumentwicklung planen und Verbesserungen umsetzen",
+        ],
+    },
+    {
+        position: "FB Archiv",
+        tasks: [
+            "Dokumentation der Fachschaftsarbeit",
+            "Bestandspflege der Nextcloud",
+            "Protokollierung der Sitzungen",
         ],
     },
 ] satisfies Fachbereich[];

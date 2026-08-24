@@ -1,12 +1,8 @@
 {
   "participate": {
-    "online":{
+    "online": {
       "title": "Online teilnehmen",
       "url": "https://discord.com/invite/Ud5KQnz"
-    },
-    "zoom":{
-      "title": "Zoom",
-      "url": "https://h-ka-de.zoom.us/j/64304270469"
     }
   },
   "contact": {

@@ -227,9 +227,9 @@ function Index() {
             buttontext={strings.participate.online.title}
             buttonNewTab={true}
           >
-            Aktuell finden die Sitzungen sowohl online, als auch in Präsenz statt. Wenn du Interesse hast, Teil der
+            Aktuell finden die Sitzungen sowohl in Präsenz als auch remote statt. Wenn du Interesse hast, Teil der
             aktiven Fachschaft zu werden, komm einfach zur Fachschaftssitzung. Immer mittwochs ab 11:30 Uhr im Raum E004
-            oder auf Zoom.
+            oder auf Discord.
           </InfoBox>
         </div>
       </ResponsiveWrapper>

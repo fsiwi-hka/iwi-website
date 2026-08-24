@@ -1,5 +1,6 @@
-import React from "react";
-import {Fachbereich, departmentLead} from "../../content/departments";
+import React, { useState } from "react";
+import { Fachbereich, departmentLead } from "../../content/departments";
+import MemberAvatar, { anzeigeName } from "./member-avatar";
 
 interface FachbereichBoxProps {
   fachbereich: Fachbereich; // Fachbereich aus content/departments.ts
@@ -7,30 +8,24 @@ interface FachbereichBoxProps {
 
 // Zeigt einen Fachbereich mit Teamlead und Aufgabenbereich.
 // Der Teamlead wird anhand der "position" aus der Mitgliederliste (content/member.ts) aufgelöst.
+// Teilen sich zwei Personen den Fachbereich, stehen beide Bilder klein nebeneinander.
 const FachbereichBox: React.FC<FachbereichBoxProps> = ({ fachbereich }) => {
   const teamlead = departmentLead(fachbereich);
-  const gesucht =
-    !teamlead || teamlead.name.length == 0 || teamlead.name == "Wird gesucht!";
+  const personen = teamlead?.personen ?? [];
+  const [ausgewaehlt, setAusgewaehlt] = useState<number | null>(null);
 
   return (
     <div className="mb-8">
       <div className="flex items-center gap-4 mb-2">
-        <img
-          src={
-            gesucht
-              ? "/images/fachschaft/placeholder_gesucht.jpg"
-              : teamlead.img?.length > 0
-              ? teamlead.img
-              : "/images/fachschaft/placeholder.jpg"
-          }
-          alt={gesucht ? "Wird gesucht!" : teamlead.name}
-          className="w-14 h-14 rounded-full object-cover"
+        <MemberAvatar
+          personen={personen}
+          ausgewaehlt={ausgewaehlt}
+          onAuswahl={setAusgewaehlt}
+          className="w-14 shrink-0"
         />
         <div>
           <h4 className="no-margin">{fachbereich.position}</h4>
-          <p className="petrol_text no-margin">
-            {gesucht ? "Wird gesucht!" : teamlead.name}
-          </p>
+          <p className="petrol_text no-margin">{anzeigeName(personen, ausgewaehlt)}</p>
         </div>
       </div>
 
