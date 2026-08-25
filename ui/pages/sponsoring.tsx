@@ -466,7 +466,7 @@ function Index() {
                     href={`mailto:${strings.sponsoring.mail}`}
                     className="text-white underline hyphens-none"
                   >
-                    {strings.sponsoring.mail}
+                    {strings.verein.mail}
                   </a>
                   .
                 </p>
