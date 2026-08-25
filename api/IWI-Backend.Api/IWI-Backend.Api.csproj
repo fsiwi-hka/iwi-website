@@ -12,6 +12,8 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7"/>
         <PackageReference Include="SwaggerUI.AspNetCore" Version="5.32.6" />
         <PackageReference Include="SwaggerUI.OpenApi" Version="2.5.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.2.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.2.3" />
     </ItemGroup>
 
     <ItemGroup>
@@ -21,6 +23,10 @@
       <Content Update="appsettings.Development.json">
         <DependentUpon>appsettings.json</DependentUpon>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="cache\protocolls\" />
     </ItemGroup>
 
 </Project>

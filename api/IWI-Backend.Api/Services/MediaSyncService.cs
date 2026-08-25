@@ -1,6 +1,7 @@
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using IWI_Backend.Api.Configuration;
+using IWI_Backend.Api.Models;
 using IwiDisplayBackend.Models;
 using Microsoft.Extensions.Options;
 
@@ -28,22 +29,27 @@ public sealed class MediaSyncService : BackgroundService
     };
 
     private readonly WebDavClient _webdav;
+    private readonly WebDavFolder _root;
     private readonly MediaStore _store;
+    private readonly MediaOptions _mediaOpts;
     private readonly SyncOptions _opts;
-    private readonly WebDavOptions _webdavOpts;
     private readonly ILogger<MediaSyncService> _logger;
     private readonly SemaphoreSlim _gate = new(1, 1);
 
     public MediaSyncService(
         WebDavClient webdav, MediaStore store,
-        IOptions<SyncOptions> opts, IOptions<WebDavOptions> webdavOpts,
+        IOptions<SyncOptions> opts,
+        IOptions<MediaOptions> mediaOpts,
         ILogger<MediaSyncService> logger)
     {
         _webdav = webdav;
         _store = store;
         _opts = opts.Value;
-        _webdavOpts = webdavOpts.Value;
+        _mediaOpts = mediaOpts.Value;
         _logger = logger;
+
+        // Einstiegspunkt: Root-Ordner, auf dem wir ListAsync() aufrufen.
+        _root = _webdav.GetFolder(_mediaOpts.BaseUrl);
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -79,39 +85,40 @@ public sealed class MediaSyncService : BackgroundService
         try
         {
             _logger.LogInformation("Starte WebDAV-Sync ...");
-            var remote = await _webdav.ListAsync(ct);
+            var listing = await _root.ListAsync(ct);
 
             // --- Remote-Config laden (falls vorhanden) ---
-            var configFile = remote.FirstOrDefault(f =>
-                string.Equals(f.Name, _webdavOpts.ConfigFileName, StringComparison.OrdinalIgnoreCase));
+            var configFile = listing.Files.FirstOrDefault(f =>
+                string.Equals(f.Name, _mediaOpts.ConfigFileName, StringComparison.OrdinalIgnoreCase));
 
             MediaConfig remoteConfig = new();
             if (configFile is not null)
             {
                 var path = Path.Combine(_store.CacheDirectory, "config.remote.json");
-                await _webdav.DownloadToAsync(configFile.Href, path, ct);
+                await configFile.DownloadToAsync(path, ct);
                 remoteConfig = JsonSerializer.Deserialize<MediaConfig>(
                     await File.ReadAllTextAsync(path, ct), Json) ?? new MediaConfig();
             }
 
             // --- Mediendateien herunterladen (unveränderte überspringen) ---
-            var mediaFiles = remote.Where(f => IsMedia(f.Name)).ToList();
+            var mediaFiles = listing.Files.Where(f => IsMedia(f.Name)).ToList();
             var manifest = LoadManifest();
             var newManifest = new Dictionary<string, string?>(StringComparer.OrdinalIgnoreCase);
 
             foreach (var f in mediaFiles)
             {
                 var dest = Path.Combine(_store.CacheDirectory, f.Name);
+                var stamp = Stamp(f);
                 var unchanged = File.Exists(dest)
                     && manifest.TryGetValue(f.Name, out var prev)
-                    && prev == f.LastModified;
+                    && prev == stamp;
 
                 if (!unchanged)
                 {
                     _logger.LogInformation("Lade {Name}", f.Name);
-                    await _webdav.DownloadToAsync(f.Href, dest, ct);
+                    await f.DownloadToAsync(dest, ct);
                 }
-                newManifest[f.Name] = f.LastModified;
+                newManifest[f.Name] = stamp;
             }
 
             // --- Verwaiste Dateien (nicht mehr remote) lokal entfernen ---
@@ -172,7 +179,8 @@ public sealed class MediaSyncService : BackgroundService
                     Name = f.Name,
                     Duration = _opts.DefaultDurationSeconds,
                     Active = true,
-                    UploadDate = ParseDate(f.LastModified) ?? DateTime.UtcNow.ToString("yyyy-MM-dd"),
+                    UploadDate = f.LastModified?.ToString("yyyy-MM-dd")
+                                 ?? DateTime.UtcNow.ToString("yyyy-MM-dd"),
                 });
             }
         }
@@ -237,8 +245,9 @@ public sealed class MediaSyncService : BackgroundService
         return ImageExt.Contains(ext) || VideoExt.Contains(ext);
     }
 
-    private static string? ParseDate(string? lastModified)
-        => DateTimeOffset.TryParse(lastModified, out var dt) ? dt.ToString("yyyy-MM-dd") : null;
+    /// <summary>Stabiler Änderungs-Stempel für den Manifest-Vergleich (ISO-8601, UTC-normalisiert).</summary>
+    private static string? Stamp(WebDavFile f)
+        => f.LastModified?.ToUniversalTime().ToString("o");
 
     private static void TryDelete(string path)
     {

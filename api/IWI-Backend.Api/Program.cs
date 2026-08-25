@@ -13,15 +13,16 @@ builder
     .AddEnvironmentVariables();
 
 builder.Services.Configure<WebDavOptions>(builder.Configuration.GetSection("WebDav"));
+builder.Services.Configure<ProtocolOptions>(builder.Configuration.GetSection("Protocols"));
+builder.Services.Configure<MediaOptions>(builder.Configuration.GetSection("Media"));
 builder.Services.Configure<SyncOptions>(builder.Configuration.GetSection("Sync"));
 builder.Services.Configure<InstagramGraphOptions>(
     builder.Configuration.GetSection("Instagram"));
 
 builder.Services.AddHttpClient<WebDavClient>(c => c.Timeout = TimeSpan.FromMinutes(5));
 
-builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerUI();
+builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
 builder.Services.AddHttpClient();
@@ -34,7 +35,9 @@ builder.Services.AddHostedService(sp => sp.GetRequiredService<InstagramSyncServi
 
 builder.Services.AddSingleton<MediaStore>();
 builder.Services.AddSingleton<MediaSyncService>();
+builder.Services.AddSingleton<ProtocolSyncService>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<MediaSyncService>());
+builder.Services.AddHostedService(sp => sp.GetRequiredService<ProtocolSyncService>());
 
 builder.Services.AddSingleton(_ =>
 {
@@ -70,8 +73,8 @@ app.MapGet("/api/health", (MediaStore store, InstagramStore instagram) =>
 
 app.MapGet("/api/config", (MediaStore store) => Results.Ok(store.Config));
 
-app.MapOpenApi();
-app.MapSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 app.MapControllers();
 
 app.Run();

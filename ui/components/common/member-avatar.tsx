@@ -66,7 +66,7 @@ const MemberAvatar: React.FC<MemberAvatarProps> = ({
                 <img
                     src={bildVon(personen[0])}
                     alt={anzeigeName(personen, null)}
-                    className={`h-full w-full ${RUND}`}
+                    className={`h-full w-full ${RUND} aspect-square`}
                 />
             </div>
         );

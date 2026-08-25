@@ -2,11 +2,21 @@ namespace IWI_Backend.Api.Configuration;
 
 public sealed class WebDavOptions
 {
-    /// <summary>URL des Ordners, mit Slash am Ende. Z.B. https://cloud.example.com/remote.php/dav/files/USER/Display/</summary>
-    public string BaseUrl { get; set; } = "";
     public string? Username { get; set; }
     public string? Password { get; set; }
+}
+
+public sealed class MediaOptions
+{
+    public string BaseUrl { get; set; } = "";
     public string ConfigFileName { get; set; } = "config.json";
+}
+
+public sealed class ProtocolOptions {
+    public string BaseUrl { get; set; } = "";
+    public string CacheDirectory { get; set; } = "cache/protocol";
+    public int SyncIntervalMinutes { get; set; } = 60 * 60 * 24;
+    public string IndexFileName { get; set; } = "index.cached.json";
 }
 
 public sealed class SyncOptions
