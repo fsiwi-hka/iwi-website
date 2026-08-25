@@ -216,7 +216,7 @@ function Index() {
         >
           <div className="flex flex-col justify-between mb-12">
             <div>
-              <h2 className="petrol_pale_text mt-0">Sitzungsprotokolle</h2>
+              <h2 className="petrol_pale_text mt-0">Sitzungs<wbr/>protokolle</h2>
             </div>
             <div className="col-span-1">
               <p>
@@ -254,7 +254,7 @@ function Index() {
         >
           <div className="flex flex-col justify-between w-full">
             <div>
-              <h2 className="petrol_pale_text mt-0">Fachschaftsordnung</h2>
+              <h2 className="petrol_pale_text mt-0">Fachschafts<wbr/>ordnung</h2>
             </div>
 
             <div className="col-span-1">

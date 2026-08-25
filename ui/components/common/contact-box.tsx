@@ -47,9 +47,19 @@ const ContactBox: React.FC<ContactBoxProps> = ({ title, contactLists, direction 
                           {contactList.title}
                         </a>
                       ) : (
+                        item.includes("@") ? (
+                            <a
+                                href={`mailto:${item}`}
+                                key={`item-${listIndex}-${itemIndex}-${pIndex}`}
+                                className={"mb-0 pt-1 text-blue-600 hover:text-blue-800"}
+                            >
+                              {item}
+                            </a>
+                        ) : (
                         <p key={`item-${listIndex}-${itemIndex}-${pIndex}`} className={"mb-0 pt-1"}>
                           {item}
                         </p>
+                        )
                       )
                     )}
                   </div>

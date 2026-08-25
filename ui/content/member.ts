@@ -26,7 +26,12 @@ export const members = [
     },
     {
         position: "2. Finanzer",
-        personen: [{ name: "Julius Freudenberger" }],
+        personen: [
+            {
+                name: "Julius Freudenberger",
+                img: "/images/fachschaft/julius.jpeg"
+            }
+        ],
     },
     {
         position: "Mail Manager:in",
@@ -64,7 +69,12 @@ export const members = [
     },
     {
         position: "FB Marketing",
-        personen: [{ name: "Alec Engelhardt" }],
+        personen: [
+            {
+                name: "Alec Engelhardt",
+                img: "/images/fachschaft/alec.jpeg"
+            }
+            ],
     },
     {
         position: "FB Archiv",
@@ -72,6 +82,13 @@ export const members = [
     },
     {
         position: "FB Fachschaftsraum",
-        personen: [{ name: "Björn Bruckmann" }],
+        personen: [
+            {
+                name: "Björn Bruckmann",
+                img: "/images/fachschaft/björn.png"
+            }
+
+        ],
+
     }
 ] satisfies Mitglied[];
