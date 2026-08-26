@@ -125,7 +125,7 @@ public class ProtocolSyncService(
         
         var json = JsonSerializer.Serialize(result);
 
-        var tmp = protocolOpts.Value.IndexFileName + ".tmp";
+        var tmp = Path.Combine(protocolOpts.Value.CacheDirectory, protocolOpts.Value.IndexFileName + ".tmp");
         await File.WriteAllTextAsync(tmp, json, ct);
         Directory.CreateDirectory(protocolOpts.Value.CacheDirectory);
         File.Move(tmp, Path.Combine(protocolOpts.Value.CacheDirectory, protocolOpts.Value.IndexFileName), overwrite: true);
