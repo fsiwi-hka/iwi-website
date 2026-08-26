@@ -30,6 +30,7 @@ services:
       - Instagram__AccessToken=${INSTAGRAM_TOKEN}
       - WebDav__Username=${WEBDAV_USERNAME}
       - WebDav__Password=${WEBDAV_PASSWORD}
+      - Board__Secret=${BOARD_SECRET}
     user: "1654:1654"
     volumes:
       - media_cache:/home/app/cache

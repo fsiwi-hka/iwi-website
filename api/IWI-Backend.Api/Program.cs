@@ -1,6 +1,14 @@
 using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Services;
+using IWI_Backend.Api.Services.Auth;
 using Microsoft.AspNetCore.StaticFiles;
+
+if (args is ["key", var info])
+{
+    Console.WriteLine(ApiKey.Create(info, Environment.GetEnvironmentVariable("Board__Secret")!));
+    return;
+}
+
 
 var builder = WebApplication.CreateBuilder(args);
 
