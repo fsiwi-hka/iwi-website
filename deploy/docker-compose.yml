@@ -27,6 +27,7 @@ services:
       - Sync__CacheDirectory=/home/app/cache
       - Instagram__TokenFilePath=/home/app/state/instagram_token.json
       - Instagram__CacheDirectory=/home/app/instagram-cache
+      - Protocols__CacheDirectory=/home/app/state
       - Instagram__AccessToken=${INSTAGRAM_TOKEN}
       - WebDav__Username=${WEBDAV_USERNAME}
       - WebDav__Password=${WEBDAV_PASSWORD}
