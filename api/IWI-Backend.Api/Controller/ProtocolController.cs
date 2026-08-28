@@ -26,10 +26,21 @@ public class ProtocolController(
         return Ok();
     }
     
+    [HttpGet]
+    public async Task<ActionResult<Dictionary<string, List<string>>>> ListProtocols(CancellationToken ct)
+    {
+        var index = await syncService.ReadProtocolsAsync(ct);
+        
+        var result = index.ToDictionary(
+            kvp => kvp.Key,
+            kvp => kvp.Value.Select(e => e.FileName).ToList());
+
+        return Ok(result);
+    }
+    
     [HttpGet("{fileName}")]
     public async Task<IActionResult> DownloadProtocolFile(string fileName, CancellationToken ct)
     {
-        // Pfad-Traversal verhindern
         if (fileName.Contains("..") || fileName.Contains('/') || fileName.Contains('\\'))
             return BadRequest("Ungültiger Dateiname.");
 

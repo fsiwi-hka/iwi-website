@@ -1,6 +1,7 @@
 using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.Auth;
+using IWI_Backend.Api.Services.Raumzeit;
 using Microsoft.AspNetCore.StaticFiles;
 
 if (args is ["key", var info])
@@ -32,14 +33,20 @@ builder.Services.AddHttpClient<WebDavClient>(c => c.Timeout = TimeSpan.FromMinut
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+builder.Services.AddMemoryCache();
+
+builder.Services.AddSingleton<BulletinCache>();
 
 builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<BulletinApiService>(c =>
+    c.BaseAddress = new Uri("https://raumzeit.hka-iwi.de/api/v1/"));
 builder.Services.AddSingleton<InstagramTokenStore>();
 builder.Services.AddHostedService<InstagramTokenRefresher>();
 builder.Services.AddSingleton<InstagramGraphApiService>();
 builder.Services.AddSingleton<InstagramStore>();
 builder.Services.AddSingleton<InstagramSyncService>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<InstagramSyncService>());
+
 
 builder.Services.AddSingleton<MediaStore>();
 builder.Services.AddSingleton<MediaSyncService>();

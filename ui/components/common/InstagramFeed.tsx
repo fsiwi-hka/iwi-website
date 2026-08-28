@@ -18,7 +18,7 @@ function InstagramFeed() {
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
                 const feed = await res.json();
-                if (!feed?.data?.length) throw new Error("leerer Feed");
+                if (!feed?.data?.length) return;
 
                 if (feed.user) setUser(feed.user);
                 setPostings(feed.data.slice(0, count));

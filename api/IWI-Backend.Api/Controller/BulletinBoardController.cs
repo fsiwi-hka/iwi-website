@@ -1,53 +1,50 @@
 using System.Text.Json.Serialization;
+using IWI_Backend.Api.Models;
 using IWI_Backend.Api.Services.Auth;
+using IWI_Backend.Api.Services.Raumzeit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IWI_Backend.Api.Controller;
 
-public class BulletinDto
-{
-    public BulletinContent Content { get; set; } = new BulletinContent();
-    
-    [JsonPropertyName("event_id")]
-    public string EventId { get; set; } = "";
-    
-    [JsonPropertyName("origin_server_ts")]
-    public long OriginServerTs { get; set; }
-    public string Sender { get; set; } = "";
-    public string Type { get; set; } = "";
-    public record Unsigned(long Age);
-    
-    [JsonIgnore]
-    public DateTimeOffset Timestamp => DateTimeOffset.FromUnixTimeMilliseconds(OriginServerTs);
-    
-    
-    [JsonPropertyName("room_id")]
-    public string RoomId { get; set; } = "";
-}
-
-public class BulletinContent
-{
-    public string Body { get; set; } = "";
-    public string Format { get; set; } = "";
-    
-    [JsonPropertyName("formatted_body")]
-    public string FormattedBody { get; set; } = "";
-    public string MsgType { get; set; } = "";
-}
-
 [ApiController]
 [Route("/api/bulletin")]
-public class BulletinBoardController(ILogger<BulletinBoardController> logger) : ControllerBase
+public class BulletinBoardController(
+    ILogger<BulletinBoardController> logger,
+    BulletinApiService bulletinApi
+    ) : ControllerBase
 {
     
-    [HttpPost("push/{board}")]
-    [RequireApiKey]
-    public async Task<IActionResult> PushBulletin([FromRoute] string board, [FromBody] BulletinDto bulletin, CancellationToken ct)
+    [HttpGet("posts")]
+    public async Task<ActionResult<IEnumerable<BulletinPostDto>>> GetBulletinPosts(
+        [FromQuery] string board, 
+        [FromQuery] int limit = 5, 
+        [FromQuery] int offset = 0)
     {
-        logger.LogInformation("Received bulletin: {bulletin}", bulletin);
-        logger.LogInformation("From board: {board}", board);
-        logger.LogInformation("From user: {user}", User.Identity?.Name);
-        
-        return Ok();
+        try
+        {
+            var posts = (await bulletinApi.GetBulletinPosts(board))
+                .Select(b => new BulletinPostDto
+                {
+                    Title = b.Title,
+                    PublicationTimestamp = b.PublicationTimestamp,
+                    Content = b.Content,
+                    CoursesOfStudy = b.CoursesOfStudy,
+                    Departments = b.Departments,
+                    Id = b.Id,
+                    Creator = b.Creator,
+                    Type = b.Type
+                }).ToList();
+            
+            Response.Headers["X-Total-Count"] = posts.Count.ToString();
+            posts = posts.Skip(offset).Take(limit).ToList();
+            
+            return Ok(posts);
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e, "Error fetching bulletin posts for board {board}", board);
+            return StatusCode(500, new { error = "An error occurred while fetching bulletin posts." });
+        }
     }
 }
