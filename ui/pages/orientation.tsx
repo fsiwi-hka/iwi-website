@@ -2,6 +2,9 @@ import { GetStaticProps } from "next";
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
+import OphaseService, {OPhaseInfo} from "./api/ophase-service";
+import {useEffect, useState} from "react";
+import {DateTime} from "rrule/dist/esm/datetime";
 
 interface Button {
   text: string;
@@ -17,17 +20,47 @@ interface NewsBox {
 }
 
 function Index() {
+  const [info, setInfo] = useState<OPhaseInfo | null>(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    OphaseService
+        .getOPhaseInfo(controller.signal)
+        .then(x => {
+          console.log(x);
+          setInfo(x);
+        })
+        .catch((err) => {
+          if (err?.name !== "AbortError") console.error(err);
+        });
+
+    console.log(info);
+
+    return () => controller.abort();
+  }, []);
+
+  let subtitle =
+      (info?.orientierungsphase.beginn
+        ? new Date(info?.orientierungsphase.beginn).toLocaleDateString("de-DE")
+        : "–") + " - " + new Date(info?.orientierungsphase.ende).toLocaleDateString("de-DE");
+
   return (
     <>
       <Header
         title="O-Phasen-Programm"
-        subtitle="14.03.2025 (Master) & 17.03.2025 - 21.03.2025 (Bachelor + Master)"
+        subtitle={subtitle}
       />
 
       <ResponsiveWrapper>
         <div className="max-w-screen-xl w-full mx-auto">
           <div className="flex flex-col justify-between">
-                        <p>Letzte Aktualisierung: März 2025</p>
+            <p>
+              Letzte Aktualisierung:{" "}
+              {info?.changedAt
+                  ? new Date(info.changedAt).toLocaleDateString("de-DE")
+                  : "–"}
+            </p>
             <h3 className="petrol_pale_text mt-4 mb-4"> Was ist die O-Phase? </h3>
             <p>
               Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg ins Studentenleben erleichtern sollen. 
@@ -50,139 +83,14 @@ function Index() {
       <ResponsiveWrapper>
         <div className="w-full mt-0 mb-4">
           <div className="overflow-x-auto">
-            <h3 className="petrol_pale_text mt-4 mb-0"> O-Phasen Plan Sommersemester 2025 für Studiengang Informatik & Medieninformatik </h3>
+            <h3 className="petrol_pale_text mt-4 mb-0">
+              O-Phasen Plan {info?.semesterName} {info?.semesterYear} für Studiengang Informatik & Medieninformatik
+            </h3>
             <p>
               <i> TBA = to be announced </i>
             </p>
 
-            <table className="w-full border-collapse text-sm md:text-base">
-              <thead className="bg-white text-primary_blue font-semibold">
-                <tr>
-                  <th className="border border-gray-300 px-4 py-2 text-left">DATUM</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">ZEIT</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">AKTIVITÄT</th>
-                </tr>
-              </thead>
-              <tbody className="primary_grey">
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">
-                    Freitag 14.03.2025 (nur für Master)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">10:00 – 11:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Begrüßung / Informationsveranstaltung</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">11:00 – 12:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">12:00 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Master Brunch</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Campusrundgang</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Montag 17.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">09:00 – 10:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Begrüßung + Informationsveranstaltungen</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">10:00 – 11:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Einstufungstest</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">11:00 – 12:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorstellung Fachschaft + O-Phasen Programm</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">17:00 – 00:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Bar Hopping – 17:15 loslaufen</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Dienstag 18.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">09:00 – 12:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Brunch & Sprachkurs Einstufung</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">14:00 – 15:30</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">RZ-Einführungsveranstaltung, Li-HE-Hörsaal</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">15:30 – 16:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">PO-Briefing, E 201</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittwoch 19.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">08:00 – 11:30</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">11:30 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Begrüßung durch die Rektorin (HB-Hörsaal)</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">14:00 – 18:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Rallye, Treffpunkt vor dem E-Bau</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Donnerstag 20.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">09:00 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">14:00 – 15:30</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Freitag 21.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">08:00 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">18:00 – 00:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Erstiabend mit MMT (22:00 draußen / 00:45 innen), B-Foyer</td>
-                </tr>
-              </tbody>
-            </table>
+            <img src={OphaseService.getTimetableUrl("I")} alt="Stundenplan" />
           </div>
         </div>
       </ResponsiveWrapper>
@@ -192,155 +100,13 @@ function Index() {
         <div className="w-full mt-6 mb-8">
           <div className="overflow-x-auto">
             <h3 className="petrol_pale_text mt-4 mb-0">
-              O-Phasen Plan Sommersemester 2025 für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science
+              O-Phasen Plan {info?.semesterName} {info?.semesterYear} für Studiengang Wirtschaftsinformatik & Internationales IT Business & Data Science
             </h3>
             <p>
               <i> TBA = to be announced </i>
             </p>
 
-            <table className="w-full border-collapse text-sm md:text-base">
-              <thead className="bg-white text-primary_blue font-semibold">
-                <tr>
-                  <th className="border border-gray-300 px-4 py-2 text-left">DATUM</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">ZEIT</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">AKTIVITÄT</th>
-                </tr>
-              </thead>
-              <tbody className="primary_grey">
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">
-                    Freitag 14.03.2025 (nur für Master)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">10:00 – 11:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Begrüßung / Informationsveranstaltung</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">11:00 – 12:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">PO-Briefing & Vorstellung Fachschaft + O-Phasen Programm</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">12:00 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Master Brunch</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Campusrundgang</td>
-                </tr>
-
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Montag 17.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">09:00 – 10:20</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Begrüßung + Informationsveranstaltungen</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">10:20 – 11:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Zugangsdaten + Hochschulsysteme + Studienorganisation + Intranet</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">11:00 – 12:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorstellung Fachschaft + O-Phasen Programm</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Dienstag 18.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">08:30 – 09:30</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Infos zu Mathematik 1</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">09:45 – 12:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">WI-Frühstück, E-003, E-004</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">12:00 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Campusrundgang & AStA-Vorstellung, Treffpunkt vor der Fachschaft</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">14:00 – 15:30</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">RZ-Einführungsveranstaltung, Li-HE Hörsaal</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">15:30 – 16:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">PO-Briefing, E-113</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">17:00 – 00:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Bar Hopping, Treffpunkt vor dem E-Bau – 17:15 loslaufen</td>
-                </tr>
-
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittwoch 19.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">08:00 – 11:30</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">11:30 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Begrüßung durch die Rektorin (Li-HE Hörsaal)</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">14:00 – 18:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Rallye, Treffpunkt vor dem E-Bau</td>
-                </tr>
-
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Donnerstag 20.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">08:00 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">14:00 – 15:30</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-
-                <tr>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Freitag 21.03.2025</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">08:00 – 13:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Vorlesung nach Plan</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">13:00 – 14:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Mittagspause</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">18:00 – 00:00</td>
-                  <td className="border border-gray-300 px-4 py-4 align-middle">Erstiabend (22:00 draußen / 00:45 Innen), B-Foyer</td>
-                </tr>
-              </tbody>
-            </table>
+            <img src={OphaseService.getTimetableUrl("WI")} alt="Stundenplan" />
           </div>
         </div>
       </ResponsiveWrapper>

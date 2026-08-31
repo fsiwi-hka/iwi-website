@@ -1,6 +1,8 @@
 using IWI_Backend.Api.Configuration;
+using IWI_Backend.Api.Controller;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.Auth;
+using IWI_Backend.Api.Services.OPhase;
 using IWI_Backend.Api.Services.Raumzeit;
 using Microsoft.AspNetCore.StaticFiles;
 
@@ -21,6 +23,7 @@ builder
     .AddJsonFile($"appsettings.Production.json", true, true)
     .AddEnvironmentVariables();
 
+builder.Services.Configure<OPhaseOptions>(builder.Configuration.GetSection("OPhase"));
 builder.Services.Configure<WebDavOptions>(builder.Configuration.GetSection("WebDav"));
 builder.Services.Configure<ProtocolOptions>(builder.Configuration.GetSection("Protocols"));
 builder.Services.Configure<MediaOptions>(builder.Configuration.GetSection("Media"));
@@ -50,6 +53,7 @@ builder.Services.AddHostedService(sp => sp.GetRequiredService<InstagramSyncServi
 
 builder.Services.AddSingleton<MediaStore>();
 builder.Services.AddSingleton<MediaSyncService>();
+builder.Services.AddSingleton<OPhaseSyncService>();
 builder.Services.AddSingleton<ProtocolSyncService>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<MediaSyncService>());
 builder.Services.AddHostedService(sp => sp.GetRequiredService<ProtocolSyncService>());

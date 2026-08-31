@@ -54,7 +54,6 @@ public class ProtocolSyncService(
 
     private async Task CleanUpOldCacheAsync(CancellationToken ct)
     {
-        await _gate.WaitAsync(ct);
         try
         {
             var cacheDir = protocolOpts.Value.CacheDirectory;
@@ -79,9 +78,9 @@ public class ProtocolSyncService(
             }
             
         }
-        finally
+        catch (Exception e)
         {
-            _gate.Release();
+            logger.LogError(e, "Konnte alte Protokolle nicht aufräumen.");
         }
     }
     

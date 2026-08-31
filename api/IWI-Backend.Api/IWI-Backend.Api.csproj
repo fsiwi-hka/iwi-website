@@ -26,6 +26,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="cache\ophase\" />
       <Folder Include="cache\protocolls\" />
     </ItemGroup>
 
