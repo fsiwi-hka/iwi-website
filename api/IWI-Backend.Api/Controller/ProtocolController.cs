@@ -14,7 +14,7 @@ public class ProtocolController(
     ) : ControllerBase
 {
     
-    [HttpGet("/sync")]
+    [HttpGet("sync")]
     public async Task<IActionResult> Sync()
     {
         if (syncService.ExecuteTask == null) return BadRequest();

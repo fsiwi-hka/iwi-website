@@ -8,27 +8,16 @@ import NewsPreviewElement from "../components/common/news-preview-element";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import SliderButton from "../components/common/slider-button";
 import { strings } from "@lib/strings";
+import BulletinService, {BulletinDto} from "./api/bulletin-service";
 
 const BOARD = "STUDENT_COUNCILS";
 const NEWS_PAGE_SIZE = 5;
 
-export interface BulletinPost {
-  title: string;
-  type: string;
-  content: string;
-  id: number;
-  creator: string;
-  coursesOfStudy: string[];
-  departments: string[];
-  publicationTimestamp: string; // ISO-8601 DateTimeOffset
-}
-
 function Index() {
-  //NEWS (aus dem Bulletin-Endpunkt /api/bulletin/posts) – mehrere Posts pro Seite, einspaltig
   const [newsVisible, setNewsVisible] = useState<[number, number]>([0, NEWS_PAGE_SIZE]);
-  const [displayedNews, setDisplayedNews] = useState<BulletinPost[]>([]);
+  const [displayedNews, setDisplayedNews] = useState<BulletinDto[]>([]);
   const [totalNewsCount, setTotalNewsCount] = useState(0);
-  const cachedNewsRef = useRef<Record<number, BulletinPost>>({});
+  const cachedNewsRef = useRef<Record<number, BulletinDto>>({});
 
   const loadNewsIfMissing = async (start: number, end: number) => {
     const missingIndices = [];
@@ -37,17 +26,13 @@ function Index() {
     }
 
     if (missingIndices.length > 0) {
-      // Proxy leitet /api/... ans Backend weiter
-      const res = await fetch(`/api/bulletin/posts?board=${BOARD}&limit=${end - start}&offset=${start}`, {
-        cache: "no-store",
-      });
-      const posts: BulletinPost[] = await res.json();
+      let {items, count} = await BulletinService.getBulletinPosts(BOARD, NEWS_PAGE_SIZE, Math.floor(start / NEWS_PAGE_SIZE));
 
-      if (Array.isArray(posts)) {
-        for (let i = 0; i < posts.length; i++) {
-          cachedNewsRef.current[start + i] = posts[i];
+      if (Array.isArray(items)) {
+        for (let i = 0; i < items.length; i++) {
+          cachedNewsRef.current[start + i] = items[i];
         }
-        setTotalNewsCount(Number(res.headers.get("X-Total-Count") ?? posts.length));
+        setTotalNewsCount(Number(count ?? items.length));
       }
     }
 
@@ -76,7 +61,6 @@ function Index() {
     }
   };
 
-  //EVENTS (Endpunkt wird noch nachgezogen – aktuell keine Datenquelle)
   const [eventsVisible, setEventsVisible] = useState<[number, number]>([0, 3]);
   const [displayedEvents, setDisplayedEvents] = useState<any[]>([]);
   const [totalEventsCount, setTotalEventsCount] = useState(0);
@@ -189,7 +173,6 @@ function SliderNavigation({ current, total, onClick, mobile }) {
   const renderButtons = () => {
     const buttons = [];
 
-    // Less than or equal to 6 pages → show all buttons
     if (total <= 6) {
       for (let i = 0; i < total; i++) {
         buttons.push(<SliderButton key={i} number={i} active={current === i} onClick={() => onClick(i, mobile)} />);
@@ -197,7 +180,6 @@ function SliderNavigation({ current, total, onClick, mobile }) {
       return buttons;
     }
 
-    // More than 6 pages → "intelligent" display with dots on the left/right side
     if (current > 2) {
       buttons.push(
           <span key="start-dots" className="px-2">
@@ -206,7 +188,6 @@ function SliderNavigation({ current, total, onClick, mobile }) {
       );
     }
 
-    // Determine the center: display a maximum of 5 buttons around current
     const start = Math.max(0, Math.min(current - 2, total - 5));
     const end = Math.min(total, start + 5);
 

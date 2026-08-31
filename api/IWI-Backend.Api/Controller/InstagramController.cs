@@ -8,8 +8,8 @@ using Microsoft.Extensions.Options;
 namespace IWI_Backend.Api.Controller;
 
 [ApiController]
-[Route("/api/content")]
-public class ContentController(
+[Route("/api/insta")]
+public class InstagramController(
     InstagramStore store,
     InstagramSyncService sync,
     FileExtensionContentTypeProvider contentTypes,
@@ -23,11 +23,7 @@ public class ContentController(
         var feed = store.Feed;
         return feed with { Data = feed.Data.Take(Math.Max(0, limit)).ToList() };
     }
-
-    /// <summary>
-    /// Liefert ein gespiegeltes Instagram-Medium aus. Die Dateien sind unveränderlich
-    /// (Name enthält die Media-ID), können also lange gecacht werden.
-    /// </summary>
+    
     [HttpGet("insta-media/{name}")]
     public ActionResult GetInstagramMedia(string name)
     {

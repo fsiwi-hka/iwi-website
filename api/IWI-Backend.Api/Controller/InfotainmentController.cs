@@ -22,7 +22,7 @@ public class InfotainmentController(
         store.Slides.ToList();
 
     [HttpGet("{name}")]
-    public ActionResult<SlideDto> GetSlide(string name)
+    public ActionResult<SlideDto> GetSlide([FromRoute] string name)
     {
         if (name.Contains('/') || name.Contains('\\') || name.Contains("..") || Path.IsPathRooted(name))
             return BadRequest();

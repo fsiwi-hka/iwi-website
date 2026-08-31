@@ -1,22 +1,18 @@
 import { useEffect, useState } from "react";
 import Accordion from "./accordion";
 import ProtokollBox from "./protokollbox";
-
-type ProtocolIndex = Record<string, string[]>; // Semester -> Dateinamen
+import ProtocolService, {ProtocolIndex} from "../../pages/api/protocol-service";
 
 export default function DownloadsList() {
   const [ordner, setOrdner] = useState<[string, string[]][]>([]);
 
   useEffect(() => {
-    // Proxy leitet /api/... ans Backend weiter
-    fetch("/api/protocols")
-        .then((res) => res.json())
+    ProtocolService.listProtocols()
         .then((data: ProtocolIndex) => {
-          // neueste Semester zuerst
-          const entries = Object.entries(data).sort(
-              ([a], [b]) => semesterSortKey(b) - semesterSortKey(a)
-          );
-          setOrdner(entries);
+            const entries = Object.entries(data).sort(
+                ([a], [b]) => semesterSortKey(b) - semesterSortKey(a)
+            );
+            setOrdner(entries);
         })
         .catch((err) => console.error("Fehler beim Abrufen:", err));
   }, []);
@@ -30,7 +26,7 @@ export default function DownloadsList() {
                     <ProtokollBox
                         key={file}
                         buttontext="Herunterladen"
-                        buttonlink={`/api/protocols/${encodeURIComponent(file)}`}
+                        buttonlink={ProtocolService.getProtocolUrl(file)}
                         buttonNewTab
                     >
                       {file.replace(/\.pdf$/i, "")}
@@ -43,14 +39,12 @@ export default function DownloadsList() {
   );
 }
 
-// "25WS" -> "WS 2025/26", "26SS" -> "SS 2026"
 function formatSemester(key: string) {
   const year = 2000 + Number(key.slice(0, 2));
   const term = key.slice(2).toUpperCase();
   return term === "WS" ? `WS ${year}/${(year + 1) % 100}` : `SS ${year}`;
 }
 
-// chronologisch: WS liegt nach dem SS desselben Jahres
 function semesterSortKey(key: string) {
   const year = 2000 + Number(key.slice(0, 2));
   const term = key.slice(2).toUpperCase();

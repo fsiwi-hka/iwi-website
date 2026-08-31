@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import InstagramService from "../../pages/api/instagram-service";
 
 const PROFILE = {username: "iwi_fachschaft", url: "https://www.instagram.com/iwi_fachschaft/?hl=de"};
 
@@ -9,19 +10,10 @@ function InstagramFeed() {
 
     useEffect(() => {
         async function loadPostings() {
-            // Immer zur Laufzeit laden: das Backend spiegelt die Bilder und liefert
-            // eigene, dauerhaft gueltige URLs. Die Original-URLs der Graph API sind
-            // signiert und laufen nach wenigen Stunden ab - ein zur Buildzeit
-            // eingebackener Snapshot waere nach dem Deploy sofort kaputt.
             try {
-                const res = await fetch(`/api/content/insta-posts?limit=${count}`);
-                if (!res.ok) throw new Error(`HTTP ${res.status}`);
-
-                const feed = await res.json();
-                if (!feed?.data?.length) return;
-
-                if (feed.user) setUser(feed.user);
-                setPostings(feed.data.slice(0, count));
+                const res = await InstagramService.getPosts(count);
+                if (res.user) setUser(res.user);
+                setPostings(res.data.slice(0, count));
             } catch (error) {
                 console.error("Error loading Instagram postings:", error);
                 setPostings([]);

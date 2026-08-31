@@ -12,6 +12,14 @@ export abstract class BaseService {
         return this.request<T>(path, { method: "GET", cache: "no-store", signal });
     }
 
+    protected async getRaw(path = "", signal?: AbortSignal): Promise<Response> {
+        const res = await fetch(`${this.baseUrl}${path}`, { cache: "no-store", signal });
+        if (!res.ok) {
+            throw new Error(`Request failed: ${res.status} ${res.statusText}`);
+        }
+        return res;
+    }
+
     protected async post<T>(path: string, body: unknown, signal?: AbortSignal): Promise<T> {
         return this.request<T>(path, {
             method: "POST",

@@ -1,30 +1,16 @@
-"use client";
-
 import { useState, useEffect, useRef, useCallback } from "react";
 import Head from "next/head";
+import {SlideDto} from "./api/infotainment-service";
+import InfotainmentService from "./api/infotainment-service";
 
-type SlideType = "image" | "video";
+const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
 
-interface Slide {
-  type: SlideType;
-  src: string;
-  duration: number; // Sekunden
-  alt?: string;
-}
-
-// Basis-URL des Backends. Bei Reverse-Proxy (gleiche Domain) leer lassen,
-const API_BASE = process.env.NEXT_PUBLIC_DISPLAY_API ?? "";
-
-// Slides regelmäßig neu laden, damit Änderungen ohne Redeploy ankommen.
-const REFRESH_INTERVAL_MS = 10 * 60 * 1000; // 10 Minuten
-
-function DisplaySlideshow({ slides }: { slides: Slide[] }) {
+function DisplaySlideshow({ slides }: { slides: SlideDto[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progressKey, setProgressKey] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Index zurücksetzen, falls sich die Slide-Liste verkürzt hat
   const safeIndex = currentIndex % slides.length;
   const currentSlide = slides[safeIndex];
 
@@ -63,7 +49,7 @@ function DisplaySlideshow({ slides }: { slides: Slide[] }) {
             <video
                 ref={videoRef}
                 key={currentSlide.src}
-                src={`${API_BASE}${currentSlide.src}`}
+                src={InfotainmentService.getSlideUrl(currentSlide.src)}
                 autoPlay
                 muted
                 playsInline
@@ -73,7 +59,7 @@ function DisplaySlideshow({ slides }: { slides: Slide[] }) {
         ) : (
             <img
                 key={`${safeIndex}-${currentSlide.src}`}
-                src={`${API_BASE}${currentSlide.src}`}
+                src={InfotainmentService.getSlideUrl(currentSlide.src)}
                 alt={currentSlide.alt ?? ""}
                 className="w-full h-full object-contain"
                 draggable={false}
@@ -111,21 +97,19 @@ function DisplaySlideshow({ slides }: { slides: Slide[] }) {
 }
 
 export default function DisplayPage() {
-  const [slides, setSlides] = useState<Slide[] | null>(null);
+  const [slides, setSlides] = useState<SlideDto[] | null>(null);
 
   useEffect(() => {
     let cancelled = false;
 
     const load = async () => {
       try {
-        const res = await fetch(`${API_BASE}/api/info`, { cache: "no-store" });
-        const data = await res.json();
-        console.log(data);
-        if (!cancelled && Array.isArray(data) && data.length > 0) {
-          setSlides(data);
+        const slides = await InfotainmentService.getSlides();
+        if (!cancelled && Array.isArray(slides) && slides.length > 0) {
+          setSlides(slides);
         }
       } catch {
-        // Netzwerkfehler ignorieren – alte Slides laufen weiter
+        console.error("Fehler beim Laden der Slides");
       }
     };
 
