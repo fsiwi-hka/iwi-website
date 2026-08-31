@@ -32,6 +32,7 @@ services:
       - WebDav__Username=${WEBDAV_USERNAME}
       - WebDav__Password=${WEBDAV_PASSWORD}
       - Board__Secret=${BOARD_SECRET}
+      - OPhase__CacheDirectory=/home/app/cache/ophase
     user: "1654:1654"
     volumes:
       - media_cache:/home/app/cache
