@@ -1,6 +1,7 @@
 using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Services;
 using IwiDisplayBackend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Options;
@@ -38,7 +39,8 @@ public class InfotainmentController(
         return PhysicalFile(full, contentType, enableRangeProcessing: true);
     }
 
-    [HttpPost("refresh")]
+    [Authorize]
+    [HttpGet("refresh")]
     public async Task<IActionResult> Refresh(CancellationToken ct)
     {
         var token = options.Value.RefreshToken;

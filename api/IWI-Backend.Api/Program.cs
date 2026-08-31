@@ -5,13 +5,7 @@ using IWI_Backend.Api.Services.Auth;
 using IWI_Backend.Api.Services.OPhase;
 using IWI_Backend.Api.Services.Raumzeit;
 using Microsoft.AspNetCore.StaticFiles;
-
-if (args is ["key", var info])
-{
-    Console.WriteLine(ApiKey.Create(info, Environment.GetEnvironmentVariable("Board__Secret")!));
-    return;
-}
-
+using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,8 +28,23 @@ builder.Services.Configure<InstagramGraphOptions>(
 builder.Services.AddHttpClient<WebDavClient>(c => c.Timeout = TimeSpan.FromMinutes(5));
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(o =>
+{
+    o.AddSecurityDefinition(FixedTokenHandler.SchemeName, new OpenApiSecurityScheme
+    {
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        Description = "Fester Token aus der Konfiguration (Auth:Token)."
+    });
+    o.OperationFilter<AuthorizeOperationFilter>();
+});
 builder.Services.AddControllers();
+
+builder.Services
+    .AddAuthentication(FixedTokenHandler.SchemeName)
+    .AddScheme<FixedTokenOptions, FixedTokenHandler>(FixedTokenHandler.SchemeName,
+        o => o.Token = builder.Configuration["Auth:Token"] ?? "");
+builder.Services.AddAuthorization();
 builder.Services.AddMemoryCache();
 
 builder.Services.AddSingleton<BulletinCache>();
@@ -91,10 +100,10 @@ app.MapGet("/api/health", (MediaStore store, InstagramStore instagram) =>
         instagramPosts = instagram.Feed.Data.Count
     }));
 
-app.MapGet("/api/config", (MediaStore store) => Results.Ok(store.Config));
-
 app.UseSwagger();
 app.UseSwaggerUI();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 app.Run();

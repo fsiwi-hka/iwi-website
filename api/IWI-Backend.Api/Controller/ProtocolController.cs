@@ -1,5 +1,6 @@
 using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -14,7 +15,8 @@ public class ProtocolController(
     ) : ControllerBase
 {
     
-    [HttpGet("sync")]
+    [Authorize]
+    [HttpGet("refresh")]
     public async Task<IActionResult> Sync()
     {
         if (syncService.ExecuteTask == null) return BadRequest();

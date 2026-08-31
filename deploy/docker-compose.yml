@@ -31,7 +31,7 @@ services:
       - Instagram__AccessToken=${INSTAGRAM_TOKEN}
       - WebDav__Username=${WEBDAV_USERNAME}
       - WebDav__Password=${WEBDAV_PASSWORD}
-      - Board__Secret=${BOARD_SECRET}
+      - Auth__Token=${AUTH_TOKEN}
       - OPhase__CacheDirectory=/home/app/cache/ophase
     user: "1654:1654"
     volumes:

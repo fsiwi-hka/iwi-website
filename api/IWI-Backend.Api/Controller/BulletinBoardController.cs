@@ -11,9 +11,26 @@ namespace IWI_Backend.Api.Controller;
 [Route("/api/bulletin")]
 public class BulletinBoardController(
     ILogger<BulletinBoardController> logger,
-    BulletinApiService bulletinApi
+    BulletinApiService bulletinApi,
+    BulletinCache cache
     ) : ControllerBase
 {
+    
+    [HttpGet("refresh")]
+    [Authorize]
+    public async Task<ActionResult<bool>> RefreshBulletinBoards()
+    {
+        try
+        {
+            cache.Invalidate();
+            return Ok(true);
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e, "Error refreshing bulletin boards");
+            return StatusCode(500, new { error = "An error occurred while refreshing bulletin boards." });
+        }
+    }
     
     [HttpGet("posts")]
     public async Task<ActionResult<IEnumerable<BulletinPostDto>>> GetBulletinPosts(

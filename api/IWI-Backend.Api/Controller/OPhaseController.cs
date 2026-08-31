@@ -2,6 +2,7 @@ using System.Text.Json;
 using IWI_Backend.Api.Models;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.OPhase;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -41,6 +42,7 @@ public class OPhaseController(
         return PhysicalFile(full, "image/png", enableRangeProcessing: true);
     }
 
+    [Authorize]
     [HttpGet("refresh")]
     public async Task<IActionResult> RefreshOPhaseCache()
     {
