@@ -10,9 +10,12 @@ import InfoBox from "../components/common/infobox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import BoxTextButton from "../components/common/box-text-button";
 import {strings} from "@lib/strings";
+import { formatDate, formatRange, semesterLabel, useOPhaseInfo } from "@lib/ophase";
 
 
 function Index() {
+  const info = useOPhaseInfo();
+
   return (
     <>
       <Header
@@ -64,7 +67,7 @@ function Index() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
                 <ButtonButBigger bgcolor="petrol" text={"Programmiervorkurs"} link={"/pre-course/"} newTab={true}></ButtonButBigger>
                 <ButtonButBigger bgcolor="petrol" text={"Ersti-Heft"} link={"/assets/downloads/ophase/erstiheft/Erstiheft_SS25.pdf"} newTab={true}></ButtonButBigger>
-                <ButtonButBigger bgcolor="petrol" text={"O-Phasen-Programm"} link={"/orientation"} newTab={true}></ButtonButBigger> {/* Link fehlt */}
+                <ButtonButBigger bgcolor="petrol" text={"O-Phasen-Programm"} link={"/orientation/"} newTab={true}></ButtonButBigger>
               </div>
 
               <h4 className="petrol_pale_text mt-0 mb-0"> Studien- und Prüfungsordnung (SPO)</h4>
@@ -170,10 +173,11 @@ function Index() {
               */}
               
               <InfoBox icon={"exclamation"}>
-                Die O-Phase im Wintersemester 24/2025 beginnt am 30.09.2024 und
-                endet am 04.10.2024. Ab dem 07.10.2024 sind regulär Vorlesungen!
-                Schaut bitte in euren Stundenplan. Übungen und Labore beginnen
-                ab der 2. Vorlesungswoche (mit Ausnahmen).
+                Die O-Phase im {semesterLabel(info)} läuft vom{" "}
+                <b>{formatRange(info?.orientierungsphase)}</b>. Ab dem{" "}
+                <b>{formatDate(info?.vorlesungszeit?.beginn)}</b> sind regulär
+                Vorlesungen! Schaut bitte in euren Stundenplan. Übungen und
+                Labore beginnen ab der 2. Vorlesungswoche (mit Ausnahmen).
               </InfoBox>
 
               <div className="flex flex-col gap-12 mb-12 mt-12">

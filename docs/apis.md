@@ -1,51 +1,84 @@
 # How the APIs work
 
-## loader_events
+Alle dynamischen Inhalte kommen aus dem .NET-Backend unter `/api/*` (siehe `api/`).
+Das Frontend ist ein statischer Export (`output: "export"`) und enthaelt selbst
+**keine** Next.js-API-Routen mehr - die frueheren `loader_*`-Skripte gibt es nicht mehr.
 
-(pages/api/loader_events.js)<br>
-Loads the events from the specified URL (defined in the .env file) in the iCal format. If the description of an event is a link, it will be displayed as a button. Time and date are formatted accordingly.
+## Wie die Calls beim Backend landen
+
+- **Produktion:** Caddy proxied `handle /api/*` an den `backend`-Container
+  (siehe `ui/Caddyfile` und `deploy/docker-compose.yml`).
+- **Lokal (`npm run dev`):** die `rewrites`-Regel in `ui/next.config.js` leitet
+  `/api/:path*` an `http://localhost:5200` weiter.
+- Alternativ kann `NEXT_PUBLIC_DISPLAY_API` auf eine absolute Backend-URL gesetzt
+  werden; dann rufen die Services direkt dort an.
+
+## Service-Klassen
+
+Die Clients liegen in `ui/services/` (Alias `@services/*`) und erben von
+`BaseService` (`services/api-service-base.ts`), der die Basis-URL zusammenbaut
+und `get` / `getRaw` / `post` kapselt.
+
+Wichtig: Diese Dateien duerfen **nicht** unter `pages/` liegen. Next.js wuerde
+sie sonst als Seiten bzw. API-Routen behandeln und der Build bricht ab
+("found pages without a React Component as default export").
+
+| Service | Backend-Route | Verwendet in |
+| --- | --- | --- |
+| `bulletin-service` | `/api/bulletin` | `pages/news.tsx` |
+| `infotainment-service` | `/api/info` | `pages/display.tsx` |
+| `instagram-service` | `/api/insta` | `components/common/InstagramFeed.tsx` |
+| `ophase-service` | `/api/ophase` | `lib/ophase.ts` (Hook fuer mehrere Seiten) |
+| `protocol-service` | `/api/protocols` | `components/common/sitzungsprotokolle-list.tsx` |
+
+## Bulletin Board (Aktuelles)
+
+`GET /api/bulletin/posts?board={board}&limit={limit}&offset={offset}`
+
+Liefert die Beitraege des Boards (aktuell `STUDENT_COUNCILS`) und die Gesamtzahl
+im Header `X-Total-Count`. `offset` ist der **Index des ersten Beitrags**, nicht
+die Seitennummer.
+
+Der Inhalt ist HTML aus dem Bulletin Board und wird in
+`components/common/news-preview-element.tsx` vor dem Rendern mit DOMPurify
+bereinigt.
+
+## O-Phase
+
+`GET /api/ophase` liefert die Semestertermine (Vorkurse, Orientierungsphase,
+Vorlesungszeit, Semestername). `GET /api/ophase/timetable?course=I|WI` liefert
+den Stundenplan als PNG.
+
+Alle Termine auf der Website kommen hierher - **keine Daten fest in Seiten
+schreiben**. Der Hook `useOPhaseInfo()` in `lib/ophase.ts` samt der Formatierer
+`formatDate` / `formatRange` / `semesterLabel` ist der einzige Zugriffsweg; er
+liefert `-`, solange nichts geladen ist.
 
 ## Instagram-Feed
 
-(Backend: `/api/content/insta-posts`)<br>
+`GET /api/insta/insta-posts?limit=4` liefert `{ user, data }`. Die Bilder werden
+vom Backend gespiegelt und liegen unter `/api/insta/insta-media/{name}`.
 
-Der Instagram-Feed kommt vom Backend, nicht aus dem Next.js-Frontend.
+Das ist notwendig, weil `media_url`, `thumbnail_url` und `profile_picture_url`
+der Graph API signierte CDN-Links sind, die nach wenigen Stunden bis Tagen
+ablaufen. Sie duerfen deshalb nicht ans Frontend durchgereicht und erst recht
+nicht zur Buildzeit in den statischen Export eingebacken werden. Der
+`InstagramSyncService` laedt jedes Medium einmal anhand seiner stabilen Media-ID
+herunter; die eigenen URLs laufen nicht ab.
 
-`GET /api/content/insta-posts?limit=4` liefert `{ user, data }`. Die Bilder werden vom
-Backend gespiegelt und liegen unter `/api/content/insta-media/{name}`.
+`POST /api/insta/refresh` stoesst einen Sync manuell an.
 
-Das ist notwendig, weil `media_url`, `thumbnail_url` und `profile_picture_url` der Graph
-API signierte CDN-Links sind, die nach wenigen Stunden bis Tagen ablaufen. Sie duerfen
-deshalb nicht ans Frontend durchgereicht und erst recht nicht zur Buildzeit in den
-statischen Export eingebacken werden. Der `InstagramSyncService` laedt jedes Medium
-einmal anhand seiner stabilen Media-ID herunter; die eigenen URLs laufen nicht ab.
+## Sitzungsprotokolle
 
-`POST /api/content/refresh` stoesst einen Sync manuell an.
+`GET /api/protocols` liefert `{ semester: [dateiname, ...] }`, die einzelne PDF
+kommt von `GET /api/protocols/{fileName}`.
 
-## loader_news
+Die Protokolle werden vom Backend aus der Nextcloud synchronisiert. Sie liegen
+**nicht** mehr im Repo unter `public/assets/downloads/sitzungsprotokolle`.
 
-(pages/api/loader_news.js)<br>
+## Infotainment (Display)
 
-Responds to an API call with a defined amount of blog posts.
-
-Every news article / blog post is basically a file in /content/news. To learn how to write a new article and which components such a file consists of, see [this page](create-blogpost.md).
-
-You can call `/api/loader_news?start=${start}&end=${end}` with `start` and `end` as the start and end indexes you want to display as it is used in `pages/Aktuelles.tsx`. This is important, so the client doesn't get all articles at once but only the ones that are displayed currently.
-
-To get a specfic article by its unique UUID, you can call `/api/loader_news?uuid=${uuid}`. This API call is used in
-`/pages/Aktuelles/article.tsx`.
-
-You can also filter by tags or author by using the following API calls (as used in `search.tsx`):
-`/Aktuelles/search?author=${author}`
-`/Aktuelles/search?tag=${tag}`
-
-There's a server sided filter that decides which articles are shown. It can be adjusted in line ~50 of the script.
-
-## loader_sitzungsprotokolle
-
-(pages/api/loader_sitzungsprotokolle.js)
-
-Returns the folder structure of `public/assets/downloads/sitzungsprotokolle` as a JSON structure so the files can be displayed accordingly on `/Fachschaft/#sitzungsprotokolle`.
-The structure of this folder and the naming of the subfolders and files it contains as described [here](/public/assets/downloads/sitzungsprotokolle/readme.md) must be complied with under all circumstances.
+`GET /api/info` liefert die Slides fuer den Infoscreen unter `/display`,
+`GET /api/info/{name}` das jeweilige Medium.
 
 [Back to documentation index](./readme.md)

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Accordion from "./accordion";
 import ProtokollBox from "./protokollbox";
-import ProtocolService, {ProtocolIndex} from "../../pages/api/protocol-service";
+import ProtocolService, {ProtocolIndex} from "@services/protocol-service";
 
 export default function DownloadsList() {
   const [ordner, setOrdner] = useState<[string, string[]][]>([]);

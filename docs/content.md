@@ -8,14 +8,23 @@ in the `/pages` folder:
 
 - `/404.tsx`
 - `/500.tsx`
-- `/Aktuelles.tsx` → Learn how to create [blog posts (news articles)](create-blogpost.md) and how they are [fetched from the server](apis.md)
-- `/Erstsemester.tsx`
-- `/Fachschaft.tsx`
-- `/Kontakt.tsx`
-- `/Programmiervorkurs.tsx`
-- `/Sponsoring-und-Kooperation.tsx`
-- `/Startseite.tsx`
-- `/Studium.tsx`
+- `/about.tsx`
+- `/contact.tsx`
+- `/first-year.tsx`
+- `/index.tsx`
+- `/pre-course.tsx`
+- `/sponsoring.tsx`
+- `/studies.tsx`
+
+Dynamische Inhalte kommen dagegen aus dem Backend und werden **nicht** im Code
+gepflegt – siehe [APIs](apis.md):
+
+- `/news.tsx` (Bulletin Board)
+- `/orientation.tsx` sowie die Termine auf `/first-year.tsx` und `/pre-course.tsx` (O-Phase)
+- `/display.tsx` (Infoscreen)
+
+Redaktionelle Listen, die zu strukturiert für Fließtext sind, liegen als
+TypeScript in `/content` (`slides.ts`, `member.ts`, `departments.ts`, `sponsors.ts`).
 
 The only page whose content is fed directly from an .md file is the imprint (`/pages/Impressum.tsx`, `/public/impressum.md`) 
 
@@ -64,7 +73,7 @@ to be referenced with a relative link. Follow these steps:
 2. Add your image to the appropriate sub folder of the `public` directory. All
    images you want to use go to `public/images/<type-of-content>`.
 3. All files in the `public` folder are copied to the website root. Reference
-   your image accordingly: `/assets/backgrounds/filename.png`
+   your image accordingly: `/images/<type-of-content>/filename.png`
 4. Check that the image is loaded correctly by running `npm run dev`.
 
 [Back to documentation index](./readme.md)

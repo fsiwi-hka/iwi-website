@@ -2,26 +2,6 @@
 
 Read here to find out how the individual pages are structured, how they work, and which components they use.
 
-## /Aktuelles/article.tsx
-**used components:**
-- responsive-wrapper
-- header-news
-
-The content of every news article/blog post (read [here](./create-blogpost.md) how to create one) is rendered as a page like this by calling an API (click [here](./apis.md#loader_news) for more details). By clicking on the author's name or a tag you can see all articles by this author / all articles with this tag (for more details see next section). Depending on what's possible in the client's browser the user can either share the article by the native share functionality or copy the link.
-
-## /Aktuelles/search.tsx
-**used components:**
-- responsive-wrapper
-- news-preview-element
-
-Shows the search results for either a specific tag or a specific author by calling the news_loader API (click [here](./apis.md#loader_news) for more details) with the corresponding query.
-
-## /api
-Contains three scripts:
-- loader_events.js ([learn more](./apis.md#loader_events))
-- loader_news.js ([learn more](./apis.md#loader_news))
-- loader_sitzungsprotokolle.js ([learn more](./apis.md#loader_sitzungsprotokolle))
-
 ## _app.tsx
 **used components:**
 - page-head
@@ -56,7 +36,7 @@ This page is returned automatically every time an internal server error occurs.
 - slider-button
 
 This page is quite complicated compared to the most other ones. This is because the content is rendered dynamically and a lot of states need to be considered.
-It is divided in two sections: Blog posts, which are fetched by the API (more on that [here](./apis.md#loader_news)) and events from the Nextcloud Calendar (more on that [here](./apis.md#loader_events)). If the API of one section doesn't return any elements, the corresponding section is not displayed at all.
+Die Beitraege kommen aus dem Bulletin Board des Backends (mehr dazu [hier](./apis.md#bulletin-board-aktuelles)). Liefert das Backend nichts, wird der Abschnitt gar nicht erst angezeigt.
 
 ## Erstsemester.tsx
 **used components:**

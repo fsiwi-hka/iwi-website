@@ -4,8 +4,6 @@ export abstract class BaseService {
     protected constructor(resource: string) {
         const API_BASE = process.env.NEXT_PUBLIC_DISPLAY_API ?? "";
         this.baseUrl = `${API_BASE}${resource}`;
-        console.log("API_BASE", API_BASE);
-        console.log("resource", resource);
     }
 
     protected async get<T>(path = "", signal?: AbortSignal): Promise<T> {

@@ -65,9 +65,7 @@ file.
 ## Retrieving Data
 
 Most pages in the `pages` directory contain their content either directly or in a used subcomponent.
-Anyway, some information is fetched from the server, like blog posts (fetched by `/pages/api/loader_news.js` from `/content/news`), 
-calendar events (fetched by `pages/api/loader_news.js` via the Nextcloud API) or the 'Sitzungsprotokolle' section on the `Fachschaft` page 
-(fetched by `pages/api/loader-sitzungsprotokolle.js`).
+Anyway, some information is fetched at runtime from the .NET backend under `/api/*`: die Beitraege auf `/news`, die O-Phasen-Termine, der Instagram-Feed, die Sitzungsprotokolle und die Slides des Infoscreens. Siehe [APIs](./apis.md).
 
 Other content is inserted into the pages using `getStaticProps`.
 

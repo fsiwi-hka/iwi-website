@@ -6,8 +6,10 @@ class BulletinService extends BaseService {
         super("/api/bulletin");
     }
 
-    async getBulletinPosts(board: string, limit: number = 5, page: number = 0, signal?: AbortSignal): Promise<BulletinBoard> {
-        let res = await this.getRaw(`/posts/${board}?limit=${limit}&page=${page}`, signal);
+    /** offset ist der Index des ersten Posts, nicht die Seitennummer - so erwartet es der BulletinBoardController. */
+    async getBulletinPosts(board: string, limit: number = 5, offset: number = 0, signal?: AbortSignal): Promise<BulletinBoard> {
+        const query = new URLSearchParams({ board, limit: String(limit), offset: String(offset) });
+        const res = await this.getRaw(`/posts?${query}`, signal);
         const items = (await res.json()) as BulletinDto[];
         const total = Number(res.headers.get("X-Total-Count") ?? items.length);
         return {

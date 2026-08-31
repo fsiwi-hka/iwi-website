@@ -2,11 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { routeName } from "@lib/routes";
 
-type BreadcrumbProps = {
-  siteName?: string;
-};
-
-const Breadcrumb = ({ siteName }: BreadcrumbProps) => {
+const Breadcrumb = () => {
   const router = useRouter();
   const pathArray = router.pathname.split("/").filter((path) => path);
 
@@ -36,7 +32,7 @@ const Breadcrumb = ({ siteName }: BreadcrumbProps) => {
           return (
             <span key={path} className="flex items-center">
               <span className="mx-2">&gt;</span>
-              {siteName ? siteName : name} {/* Es kann auch ein optionaler Seitenname mitgegeben werden (benötigt für header-news) */}
+              {name}
             </span>
           );
         }

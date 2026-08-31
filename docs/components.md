@@ -381,7 +381,7 @@ The component displays members in a responsive grid layout (3-6 columns dependin
 />
 ```
 
-This header is shown in every blog post. `date`and `time` are optional, as not every blog post refers to an event. The content is automatically filled by `news_loader.js`. More on that [here](./apis.md#loader_news).
+_Entfernt._ Die Artikelseiten und damit dieser Header existieren nicht mehr, seit die News aus dem Bulletin Board kommen.
 
 
 ## header.tsx
@@ -522,7 +522,7 @@ The component displays content in a card layout with automatic height adjustment
 />
 ```
 
-Used in 'Aktuelles' and in 'aktuelles/search'. Every field is filled in automatically from the information provided by the server. Learn [how to create a blog post](./create-blogpost.md) and [how to use the news_loader API](./apis.md#loader_news).
+Wird auf `/news` verwendet und zeigt einen Beitrag aus dem Bulletin Board. `title` und `content` kommen vom Backend, das HTML in `content` wird vor dem Rendern mit DOMPurify bereinigt. Mehr dazu [hier](./apis.md#bulletin-board-aktuelles).
 
 ## package-box.tsx
 
@@ -618,7 +618,7 @@ Sitzungsprotokolle-liste
  ├─ Accordion
  │    └─ ...
 ```
-Fetches meeting protocol folders from `/api/loader_sitzungsprotokolle` and displays them in collapsible `accordion` sections.
+Fetches meeting protocol folders from `/api/protocols` (Backend) and displays them in collapsible `accordion` sections.
 Each `accordion` contains multiple `ProtokollBox` entries, each showing a file name (without .pdf) and a download button linking directly to the PDF.
 
 ## slider-button.tsx

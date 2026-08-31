@@ -4,7 +4,6 @@
 
 - [Contribution Guidelines](contribute.md)
 - [Create and update content](content.md)
-- [Write a new blog post / article](create-blogpost.md)
 
 ## Develop and Deploy
 

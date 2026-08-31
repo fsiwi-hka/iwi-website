@@ -1,14 +1,13 @@
 import { GetStaticProps } from "next";
 import { useEffect, useRef, useState } from "react";
 
-import EventElement from "../components/common/event-preview-element";
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import NewsPreviewElement from "../components/common/news-preview-element";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import SliderButton from "../components/common/slider-button";
 import { strings } from "@lib/strings";
-import BulletinService, {BulletinDto} from "./api/bulletin-service";
+import BulletinService, {BulletinDto} from "@services/bulletin-service";
 
 const BOARD = "STUDENT_COUNCILS";
 const NEWS_PAGE_SIZE = 5;
@@ -26,7 +25,7 @@ function Index() {
     }
 
     if (missingIndices.length > 0) {
-      let {items, count} = await BulletinService.getBulletinPosts(BOARD, NEWS_PAGE_SIZE, Math.floor(start / NEWS_PAGE_SIZE));
+      let {items, count} = await BulletinService.getBulletinPosts(BOARD, NEWS_PAGE_SIZE, start);
 
       if (Array.isArray(items)) {
         for (let i = 0; i < items.length; i++) {
@@ -61,23 +60,6 @@ function Index() {
     }
   };
 
-  const [eventsVisible, setEventsVisible] = useState<[number, number]>([0, 3]);
-  const [displayedEvents, setDisplayedEvents] = useState<any[]>([]);
-  const [totalEventsCount, setTotalEventsCount] = useState(0);
-
-  const handleButtonClickEvents = (id: string) => {
-    if (id === "right") {
-      setEventsVisible(([start, end]) => [start + 3, end + 3]);
-    } else if (id === "left") {
-      setEventsVisible(([start, end]) => [Math.max(0, start - 3), Math.max(3, end - 3)]);
-    } else if (!isNaN(Number(id))) {
-      const page = Number(id);
-      setEventsVisible([page * 3, page * 3 + 3]);
-    }
-  };
-
-  // TODO: Events Endpunkt
-
   return (
       <>
         <Header
@@ -103,38 +85,6 @@ function Index() {
                         current={newsVisible[0] / NEWS_PAGE_SIZE}
                         total={Math.ceil(totalNewsCount / NEWS_PAGE_SIZE)}
                         onClick={(id) => handleButtonClickNews(id)}
-                        mobile={false}
-                    />
-                  </div>
-                </>
-            )}
-
-            {displayedEvents.length > 0 && (
-                <>
-                  <h2>Zukünftige Veranstaltungen</h2>
-                  <span style={{ color: "red" }}>
-                Es gibt Stand jetzt keine aktuelleren Events, daher alle ab 01.05.2025
-              </span>
-                  <br></br>
-                  <br></br>
-                  <div className="flex flex-col gap-0 mb-20">
-                    <div className="flex flex-col gap-6 mb-4 xl:mb-8">
-                      {displayedEvents.map(({ date, time, title, location, locationLink, buttonLink }) => (
-                          <EventElement
-                              key={`${title}-${date}`}
-                              date={date}
-                              time={time}
-                              title={title}
-                              location={location}
-                              locationLink={locationLink}
-                              buttonLink={buttonLink}
-                          ></EventElement>
-                      ))}
-                    </div>
-                    <SliderNavigation
-                        current={eventsVisible[0] / 3}
-                        total={Math.ceil(totalEventsCount / 3)}
-                        onClick={(id) => handleButtonClickEvents(id)}
                         mobile={false}
                     />
                   </div>

@@ -5,15 +5,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: 'raw-loader',
-    })
-    return config
-  },
   trailingSlash: true,
   output: "export",
+  // Nur fuer `next dev`: im statischen Export werden Rewrites nicht angewendet,
+  // dort uebernimmt der `handle /api/*`-Block im Caddyfile den Proxy aufs Backend.
   rewrites: () => {
     return [{ source: '/api/:path*', destination: 'http://localhost:5200/api/:path*' }];
   }

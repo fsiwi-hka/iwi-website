@@ -8,6 +8,7 @@ import InfoTile from "../components/common/infotile";
 import StudyCard, {StudyCardProps} from "../components/common/study-card";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import {LinkButton} from "./studies";
+import { formatRange, useOPhaseInfo } from "@lib/ophase";
 
 
 interface Button {
@@ -45,16 +46,58 @@ const requiredSoftware: StudyCardProps[] = [
   },
 ];
 
+const VORKURS_DIR = "/assets/downloads/vorkurs/java";
+
+// Die Unterlagen liegen bisher nur fuer den Java-Kurs vor; C# und Python werden
+// waehrend des Kurses verteilt.
 const downloadMaterials: StudyCardProps[] = [
-  { title: "Tag 1", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
-  { title: "Tag 2", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
-  { title: "Tag 3", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
-  { title: "Tag 4", subtitle: "", listElements: [], buttons: [new LinkButton({ text: "Herunterladen", url: "#", buttonNewTab: true })] }, // Link muss ergänzt werden
-]; 
+  {
+    title: "Tag 1",
+    subtitle: "Java",
+    listElements: [],
+    buttons: [
+      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_1/Tag_1_Folien.pdf`, buttonNewTab: true }),
+      new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/tag_1/Vorkurs_Tag1_Java_Aufgaben.pdf`, buttonNewTab: true }),
+      new LinkButton({ text: "Lösungen", url: `${VORKURS_DIR}/tag_1/Vorkurs_Tag1_Java_Loesungen.pdf`, buttonNewTab: true }),
+    ],
+  },
+  {
+    title: "Tag 2",
+    subtitle: "Java",
+    listElements: [],
+    buttons: [
+      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_2/Tag_2_Folien.pdf`, buttonNewTab: true }),
+      new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/tag_2/Vorkurs_Tag2_Java_Aufgaben.pdf`, buttonNewTab: true }),
+      new LinkButton({ text: "Lösungen", url: `${VORKURS_DIR}/tag_2/Vorkurs_Tag2_Java_Loesungen.pdf`, buttonNewTab: true }),
+    ],
+  },
+  {
+    title: "Tag 3",
+    subtitle: "Java",
+    listElements: [],
+    buttons: [
+      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_3/Tag_3_Folien.pdf`, buttonNewTab: true }),
+      new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/tag_3/Vorkurs_Tag3_Java_Aufgaben.pdf`, buttonNewTab: true }),
+      new LinkButton({ text: "Lösungen", url: `${VORKURS_DIR}/tag_3/Vorkurs_Tag3_Java_Loesungen.pdf`, buttonNewTab: true }),
+    ],
+  },
+  {
+    title: "Tag 4",
+    subtitle: "Java – Projekt Bahnautomat",
+    listElements: [],
+    buttons: [
+      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_4/Tag_4_Folien.pdf`, buttonNewTab: true }),
+      new LinkButton({ text: "Projekt", url: `${VORKURS_DIR}/tag_4/FS_IWI-Bahnautomat.zip`, buttonNewTab: true }),
+      new LinkButton({ text: "Lösung", url: `${VORKURS_DIR}/tag_4/FS_IWI-Bahnautomat_Loesung.zip`, buttonNewTab: true }),
+    ],
+  },
+];
 
 
 
 function Index() {
+  const info = useOPhaseInfo();
+
   return (
     <>
       <Header
@@ -87,7 +130,7 @@ function Index() {
             <div className="">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-12 lg:col-span-4">
-                  <InfoTile title="Datum" text="16. - 19.09.2024 (Montag - Donnerstag)" />
+                  <InfoTile title="Datum" text={formatRange(info?.vorkurse?.programmieren)} />
                 </div>
                 <div className="col-span-12 lg:col-span-2">
                   <InfoTile title="Ort" text="Präsenz" />

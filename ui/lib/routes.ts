@@ -10,8 +10,6 @@ export const routeNames: Record<string, string> = {
     "/first-year": "Erstsemester",
     "/about": "Fachschaft",
     "/news": "Aktuelles",
-    "/news/article": "Artikel",
-    "/news/search": "Suche",
     "/studies": "Studium",
     "/contact": "Kontakt",
     "/pre-course": "Programmiervorkurs",
@@ -21,7 +19,7 @@ export const routeNames: Record<string, string> = {
 };
 
 // Liefert den Anzeigenamen einer Route. Trailing Slashes werden ignoriert, damit
-// sowohl "/news/article" als auch "/news/article/" gefunden werden.
+// sowohl "/first-year" als auch "/first-year/" gefunden werden.
 export function routeName(path: string): string {
     const segments = path.split("/").filter((segment) => segment);
     const normalizedPath = "/" + segments.join("/");

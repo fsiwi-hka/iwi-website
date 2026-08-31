@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Head from "next/head";
-import {SlideDto} from "./api/infotainment-service";
-import InfotainmentService from "./api/infotainment-service";
+import {SlideDto} from "@services/infotainment-service";
+import InfotainmentService from "@services/infotainment-service";
 
 const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
 

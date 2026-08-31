@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import InstagramService from "../../pages/api/instagram-service";
+import InstagramService from "@services/instagram-service";
 
 const PROFILE = {username: "iwi_fachschaft", url: "https://www.instagram.com/iwi_fachschaft/?hl=de"};
 
