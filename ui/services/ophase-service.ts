@@ -1,8 +1,8 @@
 import {BaseService} from "./api-service-base";
 
 export interface Zeitraum {
-    beginn: string; // ISO-Date "2026-09-14"
-    ende: string;
+    beginn: string | null; // ISO-Date "2026-09-14", null wenn das Backend nichts hat
+    ende: string | null;
 }
 
 export interface Vorkurse {
@@ -15,7 +15,7 @@ export interface OPhaseInfo {
     vorkurse: Vorkurse;
     orientierungsphase: Zeitraum;
     vorlesungszeit: Zeitraum;
-    changedAt: string;
+    changedAt: string | null;
     semesterName: string;
     semesterYear: string;
 }

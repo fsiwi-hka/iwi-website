@@ -57,6 +57,7 @@ builder.Services.AddSingleton<OPhaseSyncService>();
 builder.Services.AddSingleton<ProtocolSyncService>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<MediaSyncService>());
 builder.Services.AddHostedService(sp => sp.GetRequiredService<ProtocolSyncService>());
+builder.Services.AddHostedService(sp => sp.GetRequiredService<OPhaseSyncService>());
 
 builder.Services.AddSingleton(_ =>
 {

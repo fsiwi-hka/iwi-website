@@ -83,6 +83,10 @@ public class OPhaseSyncService(
         
         if (nextSemester is not null)
         {
+            // File.Create() legt fehlende Verzeichnisse nicht an; ohne das hier
+            // scheitert der Download mit DirectoryNotFoundException.
+            Directory.CreateDirectory(opt.Value.CacheDirectory);
+
             var optionFile = (await nextSemester.ListAsync(ct)).Files.FirstOrDefault(f => f.Name == "info.json");
             if (optionFile is null) return;
             
