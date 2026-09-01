@@ -99,7 +99,7 @@ export const members = [
         personen: [
             {
                 name: "Björn Bruckmann",
-                img: "/images/fachschaft/björn.png"
+                img: "/images/fachschaft/bjoern.png"
             }
 
         ],
