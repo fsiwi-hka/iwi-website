@@ -185,7 +185,7 @@ public sealed class InstagramSyncService : BackgroundService
     {
         expected.Add(name);
         var dest = Path.Combine(_store.CacheDirectory, name);
-        var publicPath = $"/api/content/insta-media/{Uri.EscapeDataString(name)}";
+        var publicPath = $"/api/insta/insta-media/{Uri.EscapeDataString(name)}";
 
         if (!File.Exists(dest))
         {
