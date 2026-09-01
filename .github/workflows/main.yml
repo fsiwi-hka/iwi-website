@@ -21,7 +21,7 @@ jobs:
             git reset --hard "origin/$BRANCH"
             git clean -fd
             cd deploy
-            export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD
+            export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD AUTH_TOKEN
             docker compose down
             docker compose up -d --build
             docker image prune -f
@@ -31,3 +31,4 @@ jobs:
           NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
           WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
           WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
