@@ -36,7 +36,7 @@ builder.Services.AddSwaggerGen(o =>
         Scheme = "bearer",
         Description = "Fester Token aus der Konfiguration (Auth:Token)."
     });
-    o.OperationFilter<AuthorizeOperationFilter>();
+    o.DocumentFilter<AuthorizeSecurityFilter>();
 });
 builder.Services.AddControllers();
 
