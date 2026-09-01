@@ -14,7 +14,11 @@ export interface Mitglied {
 export const members = [
     {
         position: "1. Vorsitz",
-        personen: [{ name: "Ludwig Tschirner" }],
+        personen: [
+            {
+                name: "Ludwig Tschirner",
+                img: "/images/fachschaft/ludwig.jpeg"
+            }],
     },
     {
         position: "2. Vorsitz",
@@ -57,11 +61,21 @@ export const members = [
     },
     {
         position: "FB Events",
-        personen: [{ name: "Charlie Maier" }],
+        personen: [
+            {
+                name: "Charlie Maier",
+                img: "/images/fachschaft/charlie.jpeg"
+            }
+        ],
     },
     {
         position: "FB Sponsoring",
-        personen: [{ name: "Luca Claus" }],
+        personen: [
+            {
+                name: "Luca Claus",
+                img: "/images/fachschaft/luca.jpeg"
+            }
+        ],
     },
     {
         position: "FB Infrastruktur",
