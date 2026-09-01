@@ -13,7 +13,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD,BRANCH
+          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD,AUTH_TOKEN,BRANCH
           script: |
             set -e
             cd ${{ secrets.DEPLOY_PATH }}
