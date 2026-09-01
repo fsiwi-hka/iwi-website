@@ -35,7 +35,7 @@ const Slider = ({ slides }: { slides: Slide[] }) => {
               Wechsel nicht mehr. "invisible" nimmt die inaktiven Slides zusaetzlich
               aus der Tab-Reihenfolge - mit reinem opacity-0 waeren ihre Buttons
               per Tastatur erreichbar. */}
-          <div className="md:w-1/2 grid p-6 xl:pt-12">
+          <div className="md:w-1/2 min-w-0 grid grid-cols-1 p-6 xl:pt-12">
             {slides.map((slide, index) => (
               <div
                 key={index}
