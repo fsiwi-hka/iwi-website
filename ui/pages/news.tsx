@@ -9,7 +9,7 @@ import SliderButton from "../components/common/slider-button";
 import { strings } from "@lib/strings";
 import BulletinService, {BulletinDto} from "@services/bulletin-service";
 
-const BOARD = "STUDENT_COUNCILS";
+const BOARD = "STUDENT_COUNCIL";
 const NEWS_PAGE_SIZE = 5;
 
 function Index() {
