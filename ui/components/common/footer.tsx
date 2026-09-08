@@ -4,6 +4,7 @@ import FooterLink from "./footer-link";
 import Button from "./button";
 import Obfuscate from "react-obfuscate";
 import { strings } from "@lib/strings";
+import GameDialog from "../game/game-dialog";
 
 function Footer() {
   return (
@@ -74,8 +75,9 @@ function Footer() {
       </div>
 
       <div className="max-w-screen-xl w-full m-auto mt-10 md:gap-5 text-white text-center md:text-left flex md:justify-between items-center flex-col md:flex-row">
-        <span className="my-auto mb-5 md:mb-auto">
+        <span className="my-auto mb-5 md:mb-auto flex items-center gap-3">
           Fachschaft IWI &copy; {new Date().getFullYear()}
+          <GameDialog />
         </span>
         <a className="hidden md:block" href="/">
           <img src="/assets/iwi-logo-white.png" className="w-20" alt="IWI-Logo" />
