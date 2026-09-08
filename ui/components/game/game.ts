@@ -48,7 +48,7 @@ const PLAYER_ANIMATIONS: Parameters<typeof buildGridAnimations>[0] = {
     run: { row: 0, frameCount: 2, fps: 12 },
     // Eigenes Sprungbild gibt es im Sheet nicht -> erster Run-Frame als Standbild.
     jump: { row: 0, frameCount: 1, fps: 1, loop: false },
-    dead: { row: 1, frameCount: 3, fps: 8, loop: false },
+    dead: { row: 1, frameCount: 3, fps: 5, loop: true },
 };
 
 // Trefferflächen, abgemessen an den sichtbaren Pixeln im Sheet: der Stein sitzt in
@@ -58,6 +58,12 @@ const STONE_INSET_X = 2;
 const STONE_HEIGHT = 30;
 const PLAYER_INSET_X = 8;
 const PLAYER_INSET_TOP = 6;
+
+// Endscreen: die Sterbe-Animation gross zeigen. Die dead-Frames füllen ihre
+// Kachel nicht aus – sichtbare Pixel erst ab y=19 –, deshalb wird für die
+// Zentrierung die Kunsthöhe gerechnet und nicht die Kachelhöhe.
+const DEAD_SCALE = 3;
+const DEAD_ART_TOP = 19;
 
 interface Obstacle {
     x: number; // Bildschirm-X der linken Kachelkante
@@ -332,17 +338,38 @@ export class PlatformerGame {
         ctx.fillText(`Best: ${this.bestScore}m`, 16, 46);
 
         if (this.gameOver) {
-            ctx.fillStyle = "rgba(0,0,0,0.55)";
+            ctx.fillStyle = "rgba(0,0,0,0.6)";
             ctx.fillRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
-            ctx.fillStyle = "#f97316";
-            ctx.font = "bold 28px sans-serif";
-            ctx.textAlign = "center";
-            ctx.fillText("Game Over", GAME_WIDTH / 2, GAME_HEIGHT / 2 - 10);
-            ctx.fillStyle = "#e5e7eb";
-            ctx.font = "16px sans-serif";
-            ctx.fillText("Taste R zum Neustart", GAME_WIDTH / 2, GAME_HEIGHT / 2 + 20);
-            ctx.textAlign = "left";
+            this.drawGameOverScreen();
         }
+    }
+
+    /** Sterbe-Animation gross plus Beschriftung, als Block vertikal zentriert. */
+    private drawGameOverScreen(): void {
+        const ctx = this.ctx;
+        const box = PLAYER_W * DEAD_SCALE;
+        const artHeight = (PLAYER_H - DEAD_ART_TOP) * DEAD_SCALE;
+        const gapToTitle = 12;
+        const titleSize = 28;
+        const gapToHint = 14;
+        const hintSize = 16;
+
+        const blockHeight = artHeight + gapToTitle + titleSize + gapToHint + hintSize;
+        const artBottom = (GAME_HEIGHT - blockHeight) / 2 + artHeight;
+
+        // Die Animation läuft auch nach dem Game Over weiter (update() aktualisiert
+        // den Animator), hier wird also derselbe Frame nur grösser gezeichnet.
+        this.sprite.draw(ctx, (GAME_WIDTH - box) / 2, artBottom - box, box, box);
+
+        ctx.textAlign = "center";
+        ctx.fillStyle = "#f97316";
+        ctx.font = `bold ${titleSize}px sans-serif`;
+        ctx.fillText("Game Over", GAME_WIDTH / 2, artBottom + gapToTitle + titleSize);
+        ctx.fillStyle = "#e5e7eb";
+        ctx.font = `${hintSize}px sans-serif`;
+        ctx.fillText("R oder tippen zum Neustart", GAME_WIDTH / 2,
+            artBottom + gapToTitle + titleSize + gapToHint + hintSize);
+        ctx.textAlign = "left";
     }
 
     private loop = (timestamp: number): void => {
