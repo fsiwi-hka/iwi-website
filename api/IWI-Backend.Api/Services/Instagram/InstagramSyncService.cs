@@ -2,6 +2,7 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Models;
+using IWI_Backend.Api.Services.Instagram;
 using Microsoft.Extensions.Options;
 
 namespace IWI_Backend.Api.Services;

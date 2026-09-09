@@ -1,6 +1,6 @@
 using System.Buffers.Binary;
 
-namespace IWI_Backend.Api.Services;
+namespace IWI_Backend.Api.Services.Instagram;
 
 /// <summary>
 /// Liest Breite und Hoehe aus dem Dateikopf, ohne das Bild zu dekodieren.
