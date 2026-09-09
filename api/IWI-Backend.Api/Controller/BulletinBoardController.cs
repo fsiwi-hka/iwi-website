@@ -18,11 +18,11 @@ public class BulletinBoardController(
     
     [HttpGet("refresh")]
     [Authorize]
-    public async Task<ActionResult<bool>> RefreshBulletinBoards()
+    public async Task<ActionResult<bool>> RefreshBulletinBoards([FromQuery] string courseOfStudy = "STUDENT_COUNCIL")
     {
         try
         {
-            cache.Invalidate();
+            cache.Invalidate(courseOfStudy);
             return Ok(true);
         }
         catch (Exception e)

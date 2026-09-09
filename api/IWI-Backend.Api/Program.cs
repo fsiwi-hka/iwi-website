@@ -58,6 +58,7 @@ builder.Services.AddSingleton<InstagramGraphApiService>();
 builder.Services.AddSingleton<InstagramStore>();
 builder.Services.AddSingleton<InstagramSyncService>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<InstagramSyncService>());
+builder.Services.AddHostedService<BulletinListener>();
 
 
 builder.Services.AddSingleton<MediaStore>();
