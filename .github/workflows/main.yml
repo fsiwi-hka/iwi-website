@@ -4,7 +4,7 @@ on: [pull_request]
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.ref_name == 'develop' || github.ref_name == 'main'
+    if: github.ref_name == 'develop' || github.ref_name == 'master'
     steps:
       - name: Deploy
         uses: appleboy/ssh-action@v1.0.3
