@@ -32,7 +32,7 @@ export abstract class BaseService {
         if (!res.ok) {
             throw new Error(`Request failed: ${res.status} ${res.statusText}`);
         }
-        return await res.json() as Promise<T>;
+        return (await res.json()) as T;
     }
 
     protected buildUrl(path: string, params?: Record<string, string>): string {
