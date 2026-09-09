@@ -15,7 +15,15 @@ export default function Custom500() {
         showBreadcrumbs={false}
       ></Header>
      <ResponsiveWrapper>
-        <Button type={"large-blue1"} text={"Gib uns gerne Bescheid"} url={`mailto:${strings.contact.mail}?subject=Error 500 auf der Website`}></Button>
+         <Button
+             type={"large-blue1"}
+             text={"Gib uns gerne Bescheid"}
+             url=
+                 {`mailto:${
+                 strings.contact.mail}
+                 ?subject=${encodeURIComponent("Error 500 auf der Website")}`
+                 }
+         ></Button>
      </ResponsiveWrapper>
     </>
   );

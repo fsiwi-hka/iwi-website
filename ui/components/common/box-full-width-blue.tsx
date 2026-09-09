@@ -1,5 +1,6 @@
 import Button from "./button";
 import ResponsiveWrapper from "./responsive-wrapper";
+import React from "react";
 
 interface BoxFullWidthBlueProps {
   title: string;

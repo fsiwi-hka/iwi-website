@@ -16,8 +16,8 @@ function Index() {
       <div className="md:px-6 mb-24">
         <div className="flex flex-col md:flex-row md:px-0 gap-y-4 max-w-screen-xl mx-4 md:mx-auto my-6">
           <div className="md:w-1/2 relative">
-            <img className="rounded-xl lg:w-3/4 lg:float-right" src="/images/fs-iwi-gesamtbild.jpg"></img>
-            <img className="absolute top-0 left-0 invisible lg:visible w-24" src="/images/Shape-1.svg"></img>
+            <img className="rounded-xl lg:w-3/4 lg:float-right" src="/images/fs-iwi-gesamtbild.jpg" alt="Gruppenfoto der Fachschaft IWI" />
+            <img className="absolute top-0 left-0 invisible lg:visible w-24" src="/images/Shape-1.svg" alt="" aria-hidden="true" />
           </div>
           <div className="md:w-1/2 pl-6 flex flex-col md:justify-between">
             <div>

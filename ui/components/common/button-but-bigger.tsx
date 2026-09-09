@@ -1,5 +1,6 @@
 import { mdiArrowTopRight } from "@mdi/js";
 import Icon from "@mdi/react";
+import React from "react";
 
 interface ButtonButBiggerProps {
   text: React.ReactNode;

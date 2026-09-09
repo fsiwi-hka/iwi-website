@@ -19,23 +19,17 @@ const MarkdownSection: React.FC<MarkdownProps> = ({ fileUrl }) => {
   return (
     <ReactMarkdown
       components={{
-        a: ({ node, href }) => {
-          const text = node.children?.map((child) => child.data).join("");
-
-          if (text) {
-            const match = text.split("|");
-            if (match) {
-              const name = match[0].trim(); // Name des Links
-              const newtab = match[1].trim(); // true | false für newtab
-
-              return (
-                <FooterLink href={href || "#"} name={name} newtab={newtab} />
-              );
+        a: ({ children, href }) => {
+          const text = React.Children.toArray(children).join("");
+          const parts = text.split("|").map((p) => p.trim());
+          if (parts.length >= 2) {
+            const [name, newtab] = parts;
+            if (newtab === "true" || newtab === "false") {
+              return <FooterLink href={href || "#"} name={name} newtab={newtab} />;
             }
           }
 
-          // Falls nicht erkannt, normalen Link rendern
-          return <a href={href}>{text}</a>;
+          return <a href={href}>{children}</a>;
         },
       }}
     >

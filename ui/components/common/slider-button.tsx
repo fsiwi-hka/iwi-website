@@ -34,13 +34,19 @@ const SliderButton: React.FC<ButtonProps> = ({
     const iconColorClass = inverted ? "text-[#3999BF]" : "text-white group-hover:text-[#3999BF]";
 
     return (
-      <div className={`${baseClasses} ${bgClass} ${hoverable}`} onClick={!disabled ? onClick : undefined}>
+        <button
+            type="button"
+            className={`${baseClasses} ${bgClass} ${hoverable}`}
+            onClick={!disabled ? onClick : undefined}
+            disabled={disabled}
+            aria-label={arrow === "left" ? "Vorherige Folie" : "Nächste Folie"}
+        >
         <Icon
           className={`${symbolClass} ${iconColorClass}`}
           path={arrow === "left" ? mdiChevronLeft : mdiChevronRight}
           size={1.5}
         />
-      </div>
+      </button>
     );
   } else if (number !== undefined) {
     const bgClass = active ? buttonClassActive : buttonClassInactive;
