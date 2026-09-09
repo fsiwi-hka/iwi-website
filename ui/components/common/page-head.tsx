@@ -15,7 +15,7 @@ function PageHead({ title, og }) {
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
             <title>{`${Array.isArray(title) ? title.join(" ") : title} | Fachschaft IWI`}</title>
-      </Head>
+        </Head>
     )
 }
 
