@@ -8,6 +8,9 @@
         -Server
     }
 
+    @erstiinfos path /erstiinfos /erstiinfos/
+    redir @erstiinfos /first-year permanent
+
     handle /api/* {
         reverse_proxy backend:8080
     }

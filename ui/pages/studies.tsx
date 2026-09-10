@@ -31,6 +31,45 @@ interface StudyCard {
   buttons: LinkButton[];
 }
 
+const informations: StudyCard[] = [
+  {
+    title: "Semestertermine",
+    subtitle: "",
+    listElements: ["Semestertermine"],
+    buttons: [
+      new LinkButton({
+        text: "Öffnen",
+        url: "https://www.h-ka.de/die-hochschule-karlsruhe/aktuelles/termine/semestertermine",
+        buttonNewTab: true,
+      }),
+    ],
+  },
+  {
+    title: "Öffnungszeiten der Gebäude",
+    subtitle: "",
+    listElements: ["Öffnungszeiten und Service-Bereiche"],
+    buttons: [
+      new LinkButton({
+        text: "Öffnen",
+        url: "https://www.h-ka.de/oeffnungszeiten",
+        buttonNewTab: true,
+      }),
+    ],
+  },
+  {
+    title: "Rechenzentrum Infos",
+    subtitle: "",
+    listElements: ["Informationen PDF"],
+    buttons: [
+      new LinkButton({
+        text: "Öffnen",
+        url: "https://rz.h-ka.de/intro",
+        buttonNewTab: true,
+      }),
+    ],
+  },
+];
+
 const platforms: StudyCard[] = [
   {
     title: "HISinOne",
@@ -110,13 +149,6 @@ const platforms: StudyCard[] = [
     ],
   },
   {
-    title: "Intranet (WIIB, WIIM, IIBB, DSCB)",
-    subtitle: "",
-    listElements: ["Internes Tool"],
-    buttons: [new LinkButton({ text: "Öffnen", url: "https://intranet.hka-iwi.de/", buttonNewTab: true })],
-
-  },
-  {
     title: "QIS",
     subtitle: "",
     listElements: ["Prüfungsverwaltung"],
@@ -133,18 +165,7 @@ const platforms: StudyCard[] = [
       }),
     ],
   },
-  {
-    title: "Öffnungszeiten der Gebäude",
-    subtitle: "",
-    listElements: ["Öffnungszeiten und Service-Bereiche"],
-    buttons: [
-      new LinkButton({
-        text: "Öffnen",
-        url: "https://www.h-ka.de/oeffnungszeiten",
-        buttonNewTab: true,
-      }),
-    ],
-  },
+
 ];
 
 const literature: StudyCard[] = [
@@ -340,19 +361,6 @@ const clouds: StudyCard[] = [
 
 const mobilities: StudyCard[] = [
   {
-    title: "KVV Studikarte (läuft aus)",
-    subtitle:
-      "Das Semesterticket für den Karlsruher Verkehrsverbund wird eingestellt: die Vereinbarung zwischen Hochschulen und KVV wurde gekündigt, ein Neuabschluss ist nicht mehr möglich und laufende Karten enden im Oktober 2026. Als Nachfolge empfiehlt der KVV das D-Ticket JugendBW oder KVV.luftlinie.",
-    listElements: ["Bestätigung via: Shibboleth", "Kosten zuletzt: 229,00 € / Semester"],
-    buttons: [
-      new LinkButton({
-        text: "Mehr Infos",
-        url: "https://www.kvv.de/fahrkarten/fahrkarten-preise/schueler-studentinnen/studikarte.html",
-        buttonNewTab: true,
-      }),
-    ],
-  },
-  {
     title: "KVV NEXTBIKE",
     subtitle:
       "Nutzung des Nextbike Systems Deutschlandweit. CampusBike Konditionen: Erste 30 Minuten kostenlos, danach 0,50 € pro halbe Stunde bis maximal 5 € pro Tag. Gilt für bis zu 2 Räder gleichzeitig.",
@@ -464,7 +472,20 @@ function Index() {
       ></Header>
       <ResponsiveWrapper>
         <div className={"flex flex-col"}>
-          <h2>Wichtige Plattformen</h2>
+          <h2 >Informationen der Hochschule</h2>
+          <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-2"}>
+            {informations.map((platform: StudyCard, index: number) => (
+                <StudyCard
+                    key={index}
+                    title={platform.title}
+                    subtitle={platform.subtitle}
+                    listElements={platform.listElements}
+                    buttons={platform.buttons}
+                />
+            ))}
+          </div>
+
+          <h2 className="mt-20">Wichtige Plattformen</h2>
           <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-2"}>
             {platforms.map((platform: StudyCard, index: number) => (
               <StudyCard

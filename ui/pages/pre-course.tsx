@@ -201,17 +201,6 @@ function Index() {
         </div>
       </ResponsiveWrapper>
 
-      
-      <div id="mitmachen">
-        <BoxFullWidthBlue
-          title="Möchtest du mit dabei sein?"
-          subtitle="Sende uns eine E-Mail mit einer kurzen Nachricht, deinem Namen und deinem Studiengang."
-          buttontext="Jetzt mitmachen"
-          buttonlink="/about/#mitmachen" // # macht das hier überhaupt Sinn?
-          belowText="Keine Vorkenntnisse nötig - jede:r ist willkommen!"
-        />
-      </div>
-
       <ResponsiveWrapper>
         <div className="w-full my-4">
             <h3 className="petrol_pale_text mt-4 mb-4">Kurzübersicht</h3>
