@@ -1,0 +1,58 @@
+services:
+  web:
+    build:
+      context: ../ui
+      dockerfile: Dockerfile
+      secrets:
+        - nextcloud_url
+    image: iwi-website:latest
+    container_name: iwi-website
+    restart: always
+    ports:
+      - "127.0.0.1:8080:80"
+    networks:
+      - npm
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ../api
+      dockerfile: ./IWI-Backend.Api/Dockerfile
+    image: iwi-backend:latest
+    container_name: iwi-backend
+    restart: always
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - Sync__CacheDirectory=/home/app/cache
+      - Instagram__TokenFilePath=/home/app/state/instagram_token.json
+      - Instagram__CacheDirectory=/home/app/instagram-cache
+      - Protocols__CacheDirectory=/home/app/state
+      - Instagram__AccessToken=${INSTAGRAM_TOKEN}
+      - WebDav__Username=${WEBDAV_USERNAME}
+      - WebDav__Password=${WEBDAV_PASSWORD}
+      - Auth__Token=${AUTH_TOKEN}
+      - OPhase__CacheDirectory=/home/app/cache/ophase
+    user: "1654:1654"
+    volumes:
+      - media_cache:/home/app/cache
+      - instagram_state:/home/app/state
+      - instagram_cache:/home/app/instagram-cache
+    ports:
+      - "127.0.0.1:5200:8080"
+    networks:
+      - npm
+
+volumes:
+  media_cache:
+  instagram_state:
+  instagram_cache:
+
+secrets:
+  nextcloud_url:
+    environment: NEXTCLOUD_URL
+
+networks:
+  npm:
+    name: nginx-proxy-manager_default
+    external: true

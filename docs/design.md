@@ -9,22 +9,28 @@ consistent look and feel.
 
 ### Fonts
 
-* Headings (`h1` - `h3`, `th`, main menu items and so on): **Muli** - available
-  in weights `400` and `700`.
-* Paragraphs, lists and everything else: **Roboto**, in the light version -
-  available in weights `300` and `500`.
+We use the font "Poppins" (placed in /public/assets/font) for both headlines and paragraphs and everything else.
+Make sure to keep the overall look consistent by having a look on how things are designed on the existing pages.
 
 ### Colors
 
-We reduced the color palette down to three primary colors, available in two
-shades each:
+We use the following nine colors, defined as variables and classes in `/styles/custom.css`,
+so you can easily use them by adding the corresponding class to an element:
 
-* **Red**: `#f2380f` and `#df424e`
-* **Blue**: `#7ed1f2` and `#3999bf`
-* **Gray**: `#d7d7d9` and `#87878c`
+- ![#3999bf](https://placehold.co/10x10/3999bf/3999bf.png) primary_blue: `#3999bf`
+- ![#f2380f](https://placehold.co/10x10/f2380f/f2380f.png) primary_red: `#f2380f`
+- ![#6c6c6c](https://placehold.co/10x10/6c6c6c/6c6c6c.png) primary_grey: `#6c6c6c`<br><br>
+- ![#2a7595](https://placehold.co/10x10/2a7595/2a7595.png) secondary_blue: `#2a7595`
+- ![#d33f49](https://placehold.co/10x10/d33f49/d33f49.png) secondary_red: `#d33f49`
+- ![#282828](https://placehold.co/10x10/282828/282828.png) secondary_grey: `#282828`<br><br>
+- ![#f4f6f7](https://placehold.co/10x10/f4f6f7/f4f6f7.png) white: `#f4f6f7` (it's actually a very light grey)
+- ![#354850](https://placehold.co/10x10/354850/354850.png) petrol_pale: `#354850`
+- ![#1b485a](https://placehold.co/10x10/1b485a/1b485a.png) petrol: `#1b485a`
 
-Additionally, we use `black`, `white` and `transparent`. You don't need to work
-with the hex values when you design components, see *Using Tailwind CSS*.
+Make sure to mainly use "primary_blue" as it's the main color of the design.
+The other ones are accent colors or contrast colors. Just have a look at the
+existing pages to get a feeling about how things should look like.
+To understand how to use these defined colors, see the section "using colors" below.
 
 ## Using Tailwind CSS
 
@@ -45,21 +51,27 @@ open as a reference during development.
 
 ### Using Colors
 
-As we have a defined color palette, Tailwind allows us to enforce it without
-having to worry about the actual hex values. Whenever you want to give a color
-to an element (be it text, border, background), use one of the following
-classes:
+As we have a defined color palette, we don't to worry about the actual hex values.
+Whenever you want to give a color to an element (be it text or background),
+use one of the following classes:
 
-* `*-red-400` for `#f2380f`
-* `*-red-700` for `#df424e`
-* `*-blue-400` for `#7ed1f2`
-* `*-blue-700` for `#3999bf`
-* `*-gray-400` for `#d7d7d9`
-* `*-gray-700` for `#87878c`
-* `*-black` for `#000000`
-* `*-white` for `#ffffff`
-* `*-transparent` for no color
+_primary_blue_ for text color<br>
+_primary_blue_bg_ for background color<br>
+_primary_red for_ text color<br>
+_primary_red_bg_ for background color<br>
+_primary_grey_ for text color<br>
+_primary_grey_bg_ for background color<br>
+_secondary_blue_ for text color<br>
+_secondary_blue_bg_ for background color<br>
+_secondary_red_ for text color<br>
+_secondary_red_bg_ for background color<br>
+_secondary_grey_ for text color<br>
+_secondary_grey_bg_ for background color<br>
+_white_text_ for text color<br>
+_white_bg_ for background color<br>
+_petrol_text_ for text color<br>
+_petrol_bg_ for background color<br>
+_petrol_pale_text_ for text color<br>
+_petrol_pale_bg_ for background color<br>
 
-**No other colors should be used.** The `*-` wildcard indicates that these classes
-work everywhere where colors are allowed, e. g. `text-blue-700`,
-`border-blue-700`, etc.
+[Back to documentation index](./readme.md)

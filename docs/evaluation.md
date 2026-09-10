@@ -279,3 +279,5 @@ The software to be used in this project will be **Next.js**.
 
 The following step is to set up the basic page and component structure, which
 will happen in this very Git repository.
+
+[Back to documentation index](./readme.md)

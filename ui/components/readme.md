@@ -1,0 +1,1 @@
+To learn more about how to use the components, have a look at [this document](../docs/components.md)

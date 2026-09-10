@@ -1,53 +1,33 @@
-name: Deploy Site to Server
-
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '0 4 * * *'
+name: Deploy Website
+on: [pull_request]
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-22.04
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '16.20.0'
-    - run: ./scripts/decrypt_credentials.sh
-      env:
-        CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
-    - run: npm install
-    - run: npm run build
-    - name: Publish artifacts from out directory
-      uses: actions/upload-artifact@v4
-      with:
-        name: out
-        path: out
-
   deploy:
-    name: Deploy
-    runs-on: ubuntu-22.04
-    needs: [build]
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'develop' || github.ref_name == 'master'
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
+      - name: Deploy
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          name: out
-          path: out
-      - name: Debug Files
-        run: ls
-      - name: Upload to FTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
-        with:
-          username: ${{ secrets.sftp_user_webspace }}
-          server: ${{ secrets.sftp_server_webspace}}
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: out # Folder to deploy
-          remote_path: ${{ secrets.sftp_remote_path_webspace }}
-          args: '-o ConnectTimeout=5'
-
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD,AUTH_TOKEN,BRANCH
+          script: |
+            set -e
+            cd ${{ secrets.DEPLOY_PATH }}
+            git fetch origin
+            git reset --hard "origin/$BRANCH"
+            git clean -fd
+            cd deploy
+            export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD AUTH_TOKEN
+            docker compose down
+            docker compose up -d --build
+            docker image prune -f
+        env:
+          BRANCH: ${{ github.ref_name }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
+          WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
+          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}

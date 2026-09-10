@@ -57,19 +57,19 @@ a stack of database and server (usually LAMP stack). If containerized,
 `docker-compose` would come into play. Highly accepted and well-known. Usually
 come with beginner-friendly, non-technical UI.
 
-*Advantages*
+_Advantages_
 
-* very mature
-* beginner-friendly web UI
-* variety of themes
-* plugin-extendable
+- very mature
+- beginner-friendly web UI
+- variety of themes
+- plugin-extendable
 
-*Disadvantages*
+_Disadvantages_
 
-* full server needed (costs, maintenance)
-* unnecessary attacks possible (database, user accounts, server itself)
-* regular updating necessary to avoid security issues
-* large overhead for simple sites
+- full server needed (costs, maintenance)
+- unnecessary attacks possible (database, user accounts, server itself)
+- regular updating necessary to avoid security issues
+- large overhead for simple sites
 
 ### API-based
 
@@ -77,15 +77,15 @@ You'd use an API-based system if you want to bring your content to a variety of
 end devices and formats. Most API-based CMS are hosted. If not, the same as for
 full-stack applies.
 
-*Advantages*
+_Advantages_
 
-* usually hosted (ease of use)
-* can distribute content format-agnostic (extendable)
+- usually hosted (ease of use)
+- can distribute content format-agnostic (extendable)
 
-*Disadvantages*
+_Disadvantages_
 
-* usually hosted (expenses, loss of data sovereignty)
-* unnecessary effort on client-side needed (for simple sites)
+- usually hosted (expenses, loss of data sovereignty)
+- unnecessary effort on client-side needed (for simple sites)
 
 ### static-site
 
@@ -96,19 +96,19 @@ git-based). The frameworks themselves just converts the input files (e. g
 Markdown or more eloquent template languages like React) into the output, which
 can be deployed wherever you like.
 
-*Advantages*
+_Advantages_
 
-* simple to host (no server backend needed)
-* no server-side exploits possible
-* git-based workflow for versioning
-* git-based workflow allows forke/merge approach instead of user management
-* easily scalable
+- simple to host (no server backend needed)
+- no server-side exploits possible
+- git-based workflow for versioning
+- git-based workflow allows forke/merge approach instead of user management
+- easily scalable
 
-*Disadvantages*
+_Disadvantages_
 
-* No "dynamic" site rendering, a pipeline needs to run every time content is
+- No "dynamic" site rendering, a pipeline needs to run every time content is
   updated
-* Dynamic functionality (comments, collaborative editing, etc.) is complicated
+- Dynamic functionality (comments, collaborative editing, etc.) is complicated
   to implement
 
 ### Result
@@ -133,13 +133,13 @@ ranking SSG frameworks.
 As of April 2020, [StaticGen](https://www.staticgen.com/) lists around 280 SSGs.
 That's of course too many, so I reduced the number of candidates down to four:
 
-* **Hugo**, because it's written in Go and promises extremely speedy builds.
-* **Gatsby**, because it claims to be able to access multiple data sources
+- **Hugo**, because it's written in Go and promises extremely speedy builds.
+- **Gatsby**, because it claims to be able to access multiple data sources
   (which would ease integration of third-party services) and has a lot of
   plugins.
-* **Next.js**, because it has the most GitHub stars and, judging by a first
+- **Next.js**, because it has the most GitHub stars and, judging by a first
   glance, a great documentation.
-* **Eleventy**, because it can handle an extraordinary amount of different
+- **Eleventy**, because it can handle an extraordinary amount of different
   template languages and came up in
   [several](https://t3n.de/news/krisenmodus-sollten-websites-1266878/)
   ["Get Static"](https://meyerweb.com/eric/thoughts/2020/03/22/get-static/)
@@ -149,16 +149,18 @@ That's of course too many, so I reduced the number of candidates down to four:
 
 A brief overview:
 
-|            | Hugo         | Gatsby     | Next.js    |Eleventy       |
-|------------|--------------|------------|------------|---------------|
-| License    | Apache-2.0   | MIT        | MIT        | MIT           |
+|            | Hugo                                       | Gatsby                                       | Next.js                                   | Eleventy                                   |
+| ---------- | ------------------------------------------ | -------------------------------------------- | ----------------------------------------- | ------------------------------------------ |
+| License    | Apache-2.0                                 | MIT                                          | MIT                                       | MIT                                        |
 | Repository | [GitHub](https://github.com/gohugoio/hugo) | [GitHub](https://github.com/gatsbyjs/gatsby) | [GitHub](https://github.com/zeit/next.js) | [GitHub](https://github.com/11ty/eleventy) |
-| Stars*     | 42557        | 43034      | 46181      | 4742          |
-| Language   | Go           | Javascript | JavaScript | JavaScript    |
-| Templating | Go, Markdown | React      | React      | a. o. Liquid, JavaScript, HTML, Markdown |
-| Packacking | go Ecosystem | npm        | npm        | npm           |
+| Stars\*    | 42557                                      | 43034                                        | 46181                                     | 4742                                       |
+| Language   | Go                                         | Javascript                                   | JavaScript                                | JavaScript                                 |
+| Templating | Go, Markdown                               | React                                        | React                                     | a. o. Liquid, JavaScript, HTML, Markdown   |
+| Packacking | go Ecosystem                               | npm                                          | npm                                       | npm                                        |
 
-*GitHub stars as of 25.03.2020
+\*GitHub stars as of 25.03.2020
 
 Now the goal is to further evaluate the candidates by actually
 [trying them out](./evaluation.md).
+
+[Back to documentation index](./readme.md)

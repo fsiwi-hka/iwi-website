@@ -1,7 +1,7 @@
 .idea/
-.next/
-node_modules/
-out/
+**/node_modules/
+**/.next/
+**/out/
 credentials.json
 .env*
 .DS_Store
