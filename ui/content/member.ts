@@ -40,7 +40,7 @@ export const members = [
     {
         position: "Mail Manager:in",
         personen: [
-            { name: "Steffanie Pefferkorn" },
+            { name: "Stefanie Pfefferkorn" },
             { name: "Hannah Caasmann" }
         ],
     },
