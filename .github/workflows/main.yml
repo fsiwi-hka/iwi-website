@@ -61,11 +61,6 @@ jobs:
 
             cd deploy
 
-            # Der Projektname trennt Container, Netzwerke und Volumes beider
-            # Stacks. Fuer Produktion bleibt es bewusst "deploy": das ist der
-            # bisherige Default aus dem Verzeichnisnamen, sodass die
-            # vorhandenen Volumes (u. a. der Instagram-Token) weiterbenutzt
-            # werden statt neu und leer angelegt zu werden.
             export COMPOSE_PROJECT_NAME="deploy${SUFFIX}"
             export STACK_SUFFIX="$SUFFIX"
             export WEB_PORT BACKEND_PORT IMAGE_TAG
