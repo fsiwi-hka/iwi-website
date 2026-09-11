@@ -1,88 +1,126 @@
-# IWI Display Backend
+# IWI Backend
 
-Kleines ASP.NET-Core-Backend (.NET 8, Minimal API, **keine externen NuGet-Pakete**), das
-Mediendateien aus einem WebDAV-Ordner synchronisiert und für das Display-Frontend per API
-bereitstellt.
+ASP.NET Core auf **.NET 10**, ausgeliefert als Container. Das Backend bedient
+alles unter `/api/*` und haelt die dynamischen Inhalte der Website aktuell:
+Semestertermine, Sitzungsprotokolle, Infoscreen-Slides, den Instagram-Feed und
+die Beitraege des Bulletin Boards.
+
+Das Frontend in `ui/` ist ein statischer Export und kann selbst nichts
+nachladen. Alles, was sich ohne Deployment aendern soll, laeuft deshalb hier
+durch.
 
 ## Was es macht
 
-1. **Sync alle 6 h** (`MediaSyncService`, ein `BackgroundService` – das .NET-Pendant zum
-   Service Worker): listet den WebDAV-Ordner per `PROPFIND`, lädt geänderte Dateien
-   herunter, entfernt verwaiste lokale Dateien.
-2. **Config zusammenführen**: liest `config.json` aus dem WebDAV-Ordner. Dateien ohne
-   Eintrag bekommen automatisch einen Standard-Eintrag (`duration: 30`, `active: true`).
-   Die effektive Config wird lokal als `config.cached.json` gecacht.
-3. **API**: liefert die Slide-Liste und die Mediendateien aus.
+Die Inhalte liegen in der Nextcloud beziehungsweise bei externen APIs. Fuer
+jede Quelle gibt es einen `BackgroundService`, der in seinem eigenen Intervall
+synchronisiert und die Dateien lokal cacht:
 
-Fällt der Sync aus (WebDAV down), läuft das Backend mit dem letzten Cache weiter.
+| Dienst | Quelle | Cache |
+| --- | --- | --- |
+| `OPhaseSyncService` | Nextcloud, Ordner der O-Phase | `cache/ophase` |
+| `ProtocolSyncService` | Nextcloud, Sitzungsprotokolle | `cache/protocolls` |
+| `MediaSyncService` | Nextcloud, Infoscreen | `cache` |
+| `InstagramSyncService` | Instagram Graph API | `cache/instagram` |
+| `BulletinListener` | Bulletin Board der Hochschule | in-memory |
+
+Faellt eine Quelle aus, wird der Fehler geloggt und der vorhandene Cache bleibt
+stehen. Eine nicht erreichbare Nextcloud nimmt die Website also nicht mit.
+
+Der Instagram-Sync spiegelt die Bilder bewusst. Die URLs der Graph API sind
+signierte CDN-Links, die nach Stunden bis Tagen ablaufen, und duerfen deshalb
+weder ans Frontend durchgereicht noch in den statischen Export gebacken werden.
 
 ## Endpoints
 
-| Methode | Pfad | Zweck |
-|---|---|---|
-| `GET`  | `/api/slides` | `{ "slides": [{ type, src, duration, alt }] }` fürs Frontend |
-| `GET`  | `/api/media/{name}` | liefert die Datei (mit Range-Support für Videos) |
-| `GET`  | `/api/config` | effektive Config (Debug/Admin) |
-| `GET`  | `/api/health` | Status + letzter Sync-Zeitpunkt |
-| `POST` | `/api/refresh` | Sync manuell auslösen (optional per `X-Refresh-Token`) |
+Eine vollstaendige Beschreibung mit Parametern und Antwortformaten steht in
+[docs/apis.md](./../docs/apis.md). Im Ueberblick:
+
+| Pfad | Zweck |
+| --- | --- |
+| `/api/ophase` | Semestertermine, siehe [docs/ophase.md](./../docs/ophase.md) |
+| `/api/ophase/timetable?course=I\|WI` | Stundenplan als PNG |
+| `/api/protocols` | Liste der Sitzungsprotokolle, `/{fileName}` liefert das PDF |
+| `/api/info` | Slides des Infoscreens, `/{name}` liefert das Medium |
+| `/api/insta/insta-posts` | Instagram-Feed, `/insta-media/{name}` die gespiegelten Bilder |
+| `/api/bulletin/posts` | Beitraege des Bulletin Boards |
+
+Dazu kommt pro Dienst ein `GET .../refresh`, das den Sync sofort ausloest.
+
+Im Entwicklungsmodus gibt es zusaetzlich eine Swagger-Oberflaeche.
+
+## Authentifizierung
+
+Alle `refresh`-Endpunkte sind mit `[Authorize]` geschuetzt. Das Schema ist ein
+fester Token, siehe `Services/Auth/FixedTokenAuth.cs`:
+
+```
+Authorization: Bearer <Auth__Token>
+```
+
+Ist `Auth:Token` leer, lehnt der Handler jede Anfrage ab. Die lesenden
+Endpunkte sind offen, weil die Website sie ohne Anmeldung braucht.
 
 ## Konfiguration
 
-In `appsettings.json` bzw. per Environment-Variablen (Doppel-Unterstrich = Doppelpunkt):
+Alles steht in `appsettings.json` und laesst sich per Environment-Variable
+ueberschreiben. Doppelter Unterstrich ersetzt dabei den Doppelpunkt, aus
+`WebDav:Username` wird also `WebDav__Username`.
+
+Diese Werte kommen in der Produktion aus GitHub-Secrets und werden von
+`deploy/docker-compose.yml` gesetzt:
 
 ```
-WebDav__BaseUrl   = https://cloud.example.com/remote.php/dav/files/USER/Display/   # mit / am Ende!
-WebDav__Username  = USER
-WebDav__Password  = <App-Passwort>
-Sync__IntervalHours = 6
-Sync__CacheDirectory = /data/cache
+WebDav__Username   = <Nextcloud-Benutzer>
+WebDav__Password   = <App-Passwort, kein Kontopasswort>
+Instagram__AccessToken = <Graph-API-Token>
+Auth__Token        = <Token fuer die refresh-Endpunkte>
 ```
 
-**Credentials nicht committen.** Lokal `dotnet user-secrets`, in Prod Env-Vars / Docker-
-Secrets (BuildKit-Secrets bringen hier nichts, weil die Creds zur *Laufzeit* gebraucht
-werden – also über `--env-file` oder ein Compose-`secrets:`-Mount).
+Die Basis-URLs der Nextcloud-Ordner stehen dagegen fest in `appsettings.json`,
+weil sie sich praktisch nie aendern.
+
+**Credentials gehoeren nicht ins Repository.** Lokal nimmt man dafuer
+`dotnet user-secrets`, in der Produktion Environment-Variablen.
 
 ## Lokal starten
 
 ```bash
-dotnet run
-# -> http://localhost:5000/api/slides
+dotnet run --project IWI-Backend.Api
 ```
 
-## Docker
+Das Backend laeuft dann auf `http://localhost:5200`. Genau dorthin leitet
+`ui/next.config.js` waehrend `npm run dev` alle Anfragen an `/api/*` weiter,
+ein zusaetzlicher Proxy ist also nicht noetig.
+
+Ohne Zugangsdaten starten alle Dienste trotzdem. Die betroffenen Endpunkte
+liefern dann leere Ergebnisse, der Rest funktioniert normal.
+
+## Bauen und Testen
 
 ```bash
-docker build -t iwi-display-backend .
-docker run -p 8080:8080 \
-  -e WebDav__BaseUrl="https://cloud.example.com/remote.php/dav/files/USER/Display/" \
-  -e WebDav__Username="USER" \
-  -e WebDav__Password="..." \
-  -v iwi_display_cache:/data/cache \
-  iwi-display-backend
+dotnet build IWI-Backend.sln -c Release
 ```
 
-## Frontend-Anbindung
+Testprojekte gibt es derzeit keine. Bei jedem Pull Request prueft der Workflow
+[.github/workflows/build.yml](./../.github/workflows/build.yml) im Job
+`Backend`, ob die Solution durchbaut.
 
-`frontend/display-page.tsx` ersetzt deine bisherige `display`-Seite. Sie holt die Slides
-client-seitig (kompatibel mit `output: 'export'`) und lädt sie alle 10 min neu.
+## Deployment
 
-- Gleiche Domain (nginx-Reverse-Proxy leitet `/api` ans Backend): `NEXT_PUBLIC_DISPLAY_API`
-  leer lassen.
-- Andere Domain: `NEXT_PUBLIC_DISPLAY_API=https://display-api.iwi.example.de` setzen **und**
-  diese Origin in `Cors:AllowedOrigins` eintragen.
+Das Image wird auf dem Server aus `IWI-Backend.Api/Dockerfile` gebaut, wenn
+`docker compose up -d --build` laeuft. Der Container hoert intern auf Port
+8080; Caddy reicht `/api/*` an ihn weiter. Einzelheiten zu Umgebungen, Ports
+und Volumes stehen in [docs/deploy.md](./../docs/deploy.md).
 
-Beispiel nginx (gleiche Domain):
+Der Prozess laeuft als `1654:1654`. Die Cache-Verzeichnisse liegen in
+Docker-Volumes und ueberstehen damit ein Deployment.
 
-```nginx
-location /api/ {
-    proxy_pass http://display-backend:8080;
-}
-```
+## Hinweise
 
-## Annahmen / mögliche Erweiterungen
-
-- WebDAV nutzt Basic-Auth (Nextcloud/ownCloud-typisch). Für andere Auth den
-  `WebDavClient`-Konstruktor anpassen.
-- Die effektive Config wird **nicht** zurück ins WebDAV geschrieben (vermeidet Konflikte
-  mit manuellen Edits). Bei Bedarf in `SyncAsync` ein `PUT` ergänzen.
-- Unterstützte Endungen: png, jpg/jpeg, gif, svg, webp, avif (Bild) · mp4, webm, mov (Video).
+- WebDAV nutzt Basic Auth, wie bei Nextcloud und ownCloud ueblich. Fuer ein
+  anderes Verfahren muss der Konstruktor von `WebDavClient` angepasst werden.
+- Das Backend schreibt nie in die Nextcloud zurueck. Alle Zugriffe sind lesend,
+  ein Lese-Token genuegt.
+- `Cors:AllowedOrigins` muss nur gepflegt werden, wenn das Frontend unter einer
+  anderen Domain laeuft als das Backend. In der Produktion liegen beide hinter
+  demselben Caddy, dort ist das kein Thema.

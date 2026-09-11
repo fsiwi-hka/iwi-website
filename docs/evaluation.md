@@ -1,5 +1,12 @@
 # Evaluation
 
+> **Historical document.** This was written when the website was rebuilt and the
+> technology stack was chosen. It is kept as a record of that decision and is
+> **not** maintained. Next.js won the comparison and is what the site runs on
+> today; the backend described in [apis.md](apis.md) did not exist yet at the
+> time of writing. For how things work now, start at the
+> [documentation index](readme.md).
+
 After deciding on four SSGs at the end of the previous [research](./research.md)
 step, it is necessary to further evaluate those frameworks. The process is
 straightforward: First, we define a list of criteria, mostly containing features

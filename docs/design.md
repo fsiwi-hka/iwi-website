@@ -9,13 +9,19 @@ consistent look and feel.
 
 ### Fonts
 
-We use the font "Poppins" (placed in /public/assets/font) for both headlines and paragraphs and everything else.
-Make sure to keep the overall look consistent by having a look on how things are designed on the existing pages.
+We use the font "Poppins" for headlines, paragraphs and everything else. The
+files are served from `ui/public/assets/fonts` and are declared as `@font-face`
+rules at the top of `ui/styles/custom.css`. Nothing is loaded from Google Fonts,
+so the site works without a third-party request.
+
+Make sure to keep the overall look consistent by having a look at how things are
+designed on the existing pages.
 
 ### Colors
 
-We use the following nine colors, defined as variables and classes in `/styles/custom.css`,
-so you can easily use them by adding the corresponding class to an element:
+We use the following nine colors, defined as CSS variables and utility classes
+in `ui/styles/custom.css`, so you can use them by adding the corresponding class
+to an element:
 
 - ![#3999bf](https://placehold.co/10x10/3999bf/3999bf.png) primary_blue: `#3999bf`
 - ![#f2380f](https://placehold.co/10x10/f2380f/f2380f.png) primary_red: `#f2380f`
@@ -40,10 +46,10 @@ you tag your elements with. This works very well in combination with the React
 components that we use: Design them right where they're kept - in the `.tsx`
 file.
 
-You'll see our [main style sheet](./../styles/index.css) is quite empty. We only
-use it to give some basic design to the content that comes out of the Markdown
-files, as we can't apply the Tailwind classes there. All other CSS rules are
-defined in the components themselves.
+You'll see our [main style sheet](./../ui/styles/index.css) is quite empty. We
+only use it to give some basic design to the content that comes out of the
+Markdown files, as we can't apply the Tailwind classes there. All other CSS
+rules are defined in the components themselves.
 
 So, as a general rule: **Avoid writing CSS rules on your own.** Whenever
 possible, use Tailwind classes. Keep the [Tailwind Docs](https://tailwindcss.com/docs)  

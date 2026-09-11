@@ -1,5 +1,12 @@
 # Research
 
+> **Historical document.** This was written when the website was rebuilt and the
+> technology stack was chosen. It is kept as a record of that decision and is
+> **not** maintained. Next.js won the comparison and is what the site runs on
+> today; the backend described in [apis.md](apis.md) did not exist yet at the
+> time of writing. For how things work now, start at the
+> [documentation index](readme.md).
+
 As the website was created as an official project with the faculty of computer
 science, quite a bit of research went into it. Because of this, and for future
 reference, I wanted to record the the decisions that led to the final system

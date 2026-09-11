@@ -25,7 +25,7 @@ sie sonst als Seiten bzw. API-Routen behandeln und der Build bricht ab
 
 | Service | Backend-Route | Verwendet in |
 | --- | --- | --- |
-| `bulletin-service` | `/api/bulletin` | `pages/news.tsx` |
+| `bulletin-service` | `/api/bulletin` | `pages/news.tsx`, `pages/bulletin.tsx` |
 | `infotainment-service` | `/api/info` | `pages/display.tsx` |
 | `instagram-service` | `/api/insta` | `components/common/InstagramFeed.tsx` |
 | `ophase-service` | `/api/ophase` | `lib/ophase.ts` (Hook fuer mehrere Seiten) |
@@ -54,6 +54,10 @@ schreiben**. Der Hook `useOPhaseInfo()` in `lib/ophase.ts` samt der Formatierer
 `formatDate` / `formatRange` / `semesterLabel` ist der einzige Zugriffsweg; er
 liefert `-`, solange nichts geladen ist.
 
+Die Daten stammen aus einem Nextcloud-Ordner, den das Backend taeglich abholt.
+Wie dieser Ordner aufgebaut sein muss und was passiert, wenn er es nicht ist,
+steht in [O-Phase: Termine und Stundenplaene](./ophase.md).
+
 ## Instagram-Feed
 
 `GET /api/insta/insta-posts?limit=4` liefert `{ user, data }`. Die Bilder werden
@@ -66,7 +70,8 @@ nicht zur Buildzeit in den statischen Export eingebacken werden. Der
 `InstagramSyncService` laedt jedes Medium einmal anhand seiner stabilen Media-ID
 herunter; die eigenen URLs laufen nicht ab.
 
-`POST /api/insta/refresh` stoesst einen Sync manuell an.
+`GET /api/insta/refresh` stoesst einen Sync manuell an, siehe
+[Sync manuell ausloesen](#sync-manuell-ausloesen).
 
 ## Sitzungsprotokolle
 
@@ -80,5 +85,26 @@ Die Protokolle werden vom Backend aus der Nextcloud synchronisiert. Sie liegen
 
 `GET /api/info` liefert die Slides fuer den Infoscreen unter `/display`,
 `GET /api/info/{name}` das jeweilige Medium.
+
+## Sync manuell ausloesen
+
+Jeder der synchronisierenden Dienste hat einen Refresh-Endpunkt. Alle sind
+`GET` und alle sind mit `[Authorize]` geschuetzt, brauchen also den Token aus
+`Auth:Token` als `Authorization: Bearer <token>`:
+
+| Endpunkt | Holt neu |
+| --- | --- |
+| `GET /api/ophase/refresh` | Semestertermine und Stundenplaene aus der Nextcloud |
+| `GET /api/protocols/refresh` | Sitzungsprotokolle aus der Nextcloud |
+| `GET /api/info/refresh` | Slides des Infoscreens aus der Nextcloud |
+| `GET /api/insta/refresh` | Instagram-Feed ueber die Graph API |
+| `GET /api/bulletin/refresh` | Beitraege des Bulletin Boards |
+
+Ohne Aufruf laufen alle Dienste ohnehin in ihrem eigenen Intervall. Der
+Endpunkt ist nur dafuer da, eine Aenderung sofort sichtbar zu machen, statt auf
+den naechsten Durchlauf zu warten.
+
+Schlaegt ein Sync fehl, behalten alle Dienste ihren bisherigen Cache. Ein
+Ausfall der Nextcloud nimmt die Website also nicht mit.
 
 [Back to documentation index](./readme.md)

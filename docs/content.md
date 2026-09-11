@@ -16,17 +16,33 @@ in the `/pages` folder:
 - `/sponsoring.tsx`
 - `/studies.tsx`
 
+Die Seiten liegen unter `ui/pages`. Alle Pfadangaben auf dieser Seite sind
+relativ zu `ui/`, weil dort das Frontend wohnt.
+
 Dynamische Inhalte kommen dagegen aus dem Backend und werden **nicht** im Code
 gepflegt – siehe [APIs](apis.md):
 
-- `/news.tsx` (Bulletin Board)
+- `/news.tsx` und `/bulletin.tsx` (Bulletin Board)
 - `/orientation.tsx` sowie die Termine auf `/first-year.tsx` und `/pre-course.tsx` (O-Phase)
 - `/display.tsx` (Infoscreen)
 
-Redaktionelle Listen, die zu strukturiert für Fließtext sind, liegen als
-TypeScript in `/content` (`slides.ts`, `member.ts`, `departments.ts`, `sponsors.ts`).
+Die O-Phasen-Termine und die Stundenplaene pflegt die Fachschaft in einem
+Nextcloud-Ordner, nicht im Code. Wie der aufgebaut sein muss, steht in
+[O-Phase](ophase.md).
 
-The only page whose content is fed directly from an .md file is the imprint (`/pages/Impressum.tsx`, `/public/impressum.md`) 
+Redaktionelle Listen, die zu strukturiert für Fließtext sind, liegen als
+TypeScript in `/content`:
+
+| Datei | Inhalt |
+| --- | --- |
+| `slides.ts` | Die Slides des Sliders auf der Startseite |
+| `member.ts` | Mitglieder der Fachschaft, Vorstand und weitere Rollen |
+| `departments.ts` | Die Fachbereiche samt Leitung |
+| `sponsors.ts` | Logos und Links der Partnerfirmen |
+| `bulletin-boards.ts` | Welche Bretter die Seite `/bulletin` durchlaeuft |
+
+The only page whose content is fed directly from an .md file is the imprint
+(`/pages/imprint.tsx`, `/public/impressum.md`).
 
 Information on how to maintain the content on the individual pages and how to use the components 
 can be found [here](pages.md).
@@ -49,8 +65,9 @@ to be configured centrally in one file depending on the device size.
 
 ## Change existing Pages
 
-Open the file, change what you want to change. Make sure everything works correctly 
-and is displayed properly on different screen-sizes (always test with `npm run dev`).
+Open the file, change what you want to change. Make sure everything works
+correctly and is displayed properly on different screen-sizes. Always test with
+`npm run dev`, started from the `ui` directory.
 
 
 ## Linking to an E-Mail Address

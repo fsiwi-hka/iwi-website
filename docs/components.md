@@ -2,6 +2,14 @@
 
 Read here to find out how the individual components work and how to use them.
 
+The components live in `ui/components`. Everything documented below sits in
+`ui/components/common`, which is the folder for components used on more than one
+page. The only other folder is `ui/components/game`, a small canvas game that
+`footer.tsx` opens in a dialog. It is self-contained and not documented here.
+
+Helpers without rendered output do not belong in `components`. Shared hooks go
+to `ui/lib`, backend clients to `ui/services`.
+
 
 ## accordion.tsx 
 <img src = './docs-images/accordion.jpg' width = '600'>
@@ -268,31 +276,6 @@ The carousel automatically duplicates the image set 4 times to create a smooth i
 
 The component displays a clean card with the partner logo, description text, and a "Zum Kooperationspartner" link with an animated arrow icon.
 
-## event-preview-element.tsx
-
-<img src = './docs-images/event-preview-element.jpg' width = '600'>
-
-How to use:
-```html
-<EventElement
-  key = {`${title}-${date}`}
-  date = {date}
-  time = {time}
-  title = {title}
-  location = {location}
-  locationLink = {locationLink}
-  buttonLink = {buttonLink}
-/>
-```
-
-- `locationLink` (optional) - the location becomes a clickable link
-- `buttonLink` (optional) - a “Zur Anmeldung” button is shown (both desktop & mobile)
-
-The `EventElement` component is purely for presentation - it receives event details as props and renders them in a responsive layout for both desktop and mobile.
-The actual event data is provided by the API route.
-
-TODO: Implement automatic loading of events from the Nextcloud calendar.
-
 ## fachbereich-box.tsx
 
 **How to use:**
@@ -363,26 +346,6 @@ This component is only used in \_app.tsx, so it is automatically displayed on ev
   - `name` - member's full name
 
 The component displays members in a responsive grid layout (3-6 columns depending on screen size). Null values create empty spaces in the grid. Profile images are automatically displayed as circles.
-
-## header-news.tsx
-
-<img src = './docs-images/header-news.png' width = '400'>
-
-**How to use:**
-
-```html
-<HeaderNews
-  title = "{newsItem.title}"
-  image = "{newsItem.image}"
-  date = "{newsItem.eventinfos.date}"
-  time = "{newsItem.eventinfos.time}"
-  location = "{newsItem.eventinfos.location}"
-  locationlink = "{newsItem.eventinfos.locationlink}"
-/>
-```
-
-_Entfernt._ Die Artikelseiten und damit dieser Header existieren nicht mehr, seit die News aus dem Bulletin Board kommen.
-
 
 ## header.tsx
 
@@ -458,6 +421,30 @@ TODO: Erklären wie die API funktioniert!
 ```
 
 This is not a graphic element. It simply renders the content of a specified .md-file as HTML. Currently only used in 'Impressum'.
+
+## member-avatar.tsx
+
+Not a rendered component but the helper module behind the member grids on
+`/about`. It answers the three questions those grids have about a person from
+`content/member.ts`:
+
+```ts
+istGesucht(person)                  // is the position vacant?
+bildVon(person)                     // photo, or the matching placeholder
+namenVon(person)                    // name, or "Wird gesucht!"
+anzeigeName(personen, ausgewaehlt)  // caption under a shared photo
+```
+
+A position counts as vacant when the person is missing, the name is empty or the
+name is literally "Wird gesucht!". Vacant positions get
+`/images/fachschaft/placeholder_gesucht.jpg`, a person without a photo gets the
+neutral placeholder, so the grid never renders a broken image.
+
+`anzeigeName` exists for positions held by two people. As long as neither is
+selected it lists both, afterwards only the selected one, and it avoids printing
+"Wird gesucht! & Wird gesucht!" when both slots are empty.
+
+Used by `fs-mitglieder.tsx` and `fachbereich-box.tsx`.
 
 ## menu.tsx
 
@@ -681,5 +668,16 @@ const slideData: Slide[] = [
 The slider automatically transitions between slides every 10 seconds and includes navigation arrows. It displays a split layout on desktop with text on the left and images on the right. Used as the main hero section on the homepage.
 
 ---
+
+## Removed components
+
+These used to be documented here and are gone. They are listed so that old
+branches and screenshots still make sense:
+
+- **`header-news.tsx`** - the header of a single news article. Dropped together
+  with the article pages when the news moved to the Bulletin Board.
+- **`event-preview-element.tsx`** - the preview tile for a single event. The
+  planned automatic import of events from the Nextcloud calendar never
+  happened, and the component had no data source left.
 
 [Back to documentation index](./readme.md)

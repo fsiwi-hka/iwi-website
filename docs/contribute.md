@@ -10,14 +10,18 @@ We're students here, and some of us are beginners. Being nice and answering
 questions are an easy way to make everyone feel welcome and thus increasing the
 chances of motivated contributions to our website.
 
-## Why English?
+## Which Language?
 
-We know, we're mostly non-native English speakers. Nonetheless, it's a public
-code repository and we want to include everyone. We feel like English is the
-best language to achieve this. You might want to consider it practice for
-yourself. Also: English is only mandatory in code, comments and docs. If you're
-working on content, this rule obviously doesn't apply. (However English versions
-of e. g. news posts are of course highly appreciated!)
+Identifiers in code are English. That part is not up for debate, it keeps the
+codebase readable for everyone.
+
+For comments and documentation the picture is mixed. The original docs were
+written in English, while most newer comments and some newer doc sections are
+German. Both are fine. What is not fine is mixing them inside one file, so
+follow whatever the file you are editing already does.
+
+Content is German, obviously. English versions of news posts are of course
+appreciated.
 
 ## Contributing Content, Design or Something Else
 
@@ -42,6 +46,22 @@ That means you can create your branches on the original repository instead of
 working in your fork all the time. Please ask for access in the Slack channel
 **#ak_website**.
 
+## Branches
+
+There are two long-lived branches:
+
+- **`develop`** is where work is collected. Open your pull request against this
+  one.
+- **`master`** is what is live. It only ever receives merges from `develop`.
+
+Both branches deploy automatically when something is pushed to them, `master` to
+production and `develop` to the staging environment. A feature branch can also
+be deployed to staging on demand. See [deploy.md](deploy.md).
+
+Every pull request runs the build check, which compiles the website and the
+backend. If it fails, the pull request is not ready, regardless of how small the
+change looks.
+
 ### I Want to Contribute, But I Don't Know What
 
 There are probably some open issues that need attention. Pick something that's
@@ -55,11 +75,16 @@ Please adhere to the following rules for your commit messages:
 * Use the present tense ("Add feature" not "Added feature")
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 * Limit the first line to 72 characters or less
-* If you're working on a certain area that is not website content, consider
-  adding brackets with an area for quick identification like so:
-  * `[Design] Change color palette in footer component`
-  * `[Fix] Fix missing className param on static pages`
-  * `[CI/CD] Update deployment container image`
+* Prefix the subject with the kind of change, which is what the repository has
+  settled on in practice:
+  * `feat: add member avatar fallback`
+  * `fix: correct typo of member name in member.ts`
+  * `refactor: split build workflow into frontend and backend`
+  * `docs: describe the o-phase sync`
+  * `chore: update github actions workflows`
+
+Older commits use a bracket style like `[Design] ...` instead. Do not copy that,
+it is no longer in use.
 
 [See this blog post for background information](https://chris.beams.io/posts/git-commit/).
 

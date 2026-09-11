@@ -7,14 +7,29 @@ not familiar with those, don't worry. It's not that hard.
 
 ## Development Workflow
 
-When you develop locally, start your development server by running
+The frontend lives in `ui/`, and that is where every `npm` command has to run.
+There is no `package.json` in the repository root.
 
 ```bash
+cd ui
+npm install
 npm run dev
 ```
 
 Next.js will start the server at [localhost:3000](http://localhost:3000) and
 hot-reload pages while you're working on them.
+
+Everything dynamic stays empty until the backend runs as well. If you need the
+news, the O-Phase dates, the Instagram feed, the protocols or the info screen,
+start it in a second terminal:
+
+```bash
+cd api
+dotnet run --project IWI-Backend.Api
+```
+
+It listens on port 5200, which is where `ui/next.config.js` forwards `/api/*`
+during development. See [api/README.md](./../api/README.md) for what it needs.
 
 ## The Building Blocks
 
@@ -37,11 +52,15 @@ as long as you stick to the structure of the given pages.
 
 [Click here to learn more about the structure of the used components](components.md)
 
-Components that render same sort of output should be placed under the
+Components that render the same sort of output should be placed under the
 `components/common` directory if they're used on several different pages. If
-they used only on a specific page, consider creating a dedicated subdirectory
-underneath `components`. Components that have a
-functionality instead of rendered output live in the `components/util` folder.
+they are used only on a specific page, consider creating a dedicated
+subdirectory underneath `components`. That is what `components/game` is, the
+little easter egg behind the footer.
+
+Code that has a function instead of rendered output does not belong in
+`components` at all. Shared helpers and hooks live in `lib/`, the clients that
+talk to the backend live in `services/`.
 
 ### Pages
 
@@ -64,10 +83,18 @@ file.
 
 ## Retrieving Data
 
-Most pages in the `pages` directory contain their content either directly or in a used subcomponent.
-Anyway, some information is fetched at runtime from the .NET backend under `/api/*`: die Beitraege auf `/news`, die O-Phasen-Termine, der Instagram-Feed, die Sitzungsprotokolle und die Slides des Infoscreens. Siehe [APIs](./apis.md).
+Most pages in the `pages` directory contain their content either directly or in
+a subcomponent they use.
 
-Other content is inserted into the pages using `getStaticProps`.
+Everything that has to change without a new deployment is fetched at runtime
+from the .NET backend under `/api/*`: the posts on `/news`, the O-Phase dates,
+the Instagram feed, the meeting protocols and the slides of the info screen. See
+[APIs](./apis.md) for the routes and [O-Phase](./ophase.md) for the one source
+that the student council maintains in Nextcloud.
+
+Note that the site is exported statically (`output: "export"`). There are no
+Next.js API routes in this project, and `getServerSideProps` does not work.
+Anything that is not known at build time has to be fetched in the browser.
 
 When you create a production build of the website using
 
@@ -75,7 +102,17 @@ When you create a production build of the website using
 npm run build
 ```
 
-Next.JS will output which pages are statically rendered and which will have
-dynamic parts.
+Next.js will output which pages are statically rendered and which use
+`getStaticProps`. The result lands in `ui/out`.
+
+## Before You Open a Pull Request
+
+The build check runs `npm run build` and `dotnet build` on every pull request,
+so a broken build is caught there. You can save yourself the round trip by
+running the type check locally:
+
+```bash
+npx tsc --noEmit
+```
 
 [Back to documentation index](./readme.md)
