@@ -12,7 +12,7 @@
     redir @erstiinfos /first-year permanent
 
     handle /api/* {
-        reverse_proxy backend:8080
+        reverse_proxy {$BACKEND_HOST:backend}:8080
     }
 
     handle {

@@ -1,10 +1,23 @@
 name: Deploy Website
-on: [pull_request]
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+  # Damit laesst sich jeder beliebige Branch von Hand auf die Develop-Umgebung
+  # ausrollen (Actions -> Deploy Website -> Run workflow -> Branch waehlen).
+  workflow_dispatch:
+
+# Pro Umgebung darf nur ein Deploy gleichzeitig laufen. Sonst arbeiten zwei
+# "git reset --hard" und "docker compose up" im selben Verzeichnis gegeneinander.
+concurrency:
+  group: deploy-${{ github.ref_name == 'master' && 'prod' || 'develop' }}
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.ref_name == 'develop' || github.ref_name == 'master'
     steps:
       - name: Deploy
         uses: appleboy/ssh-action@v1.0.3
@@ -12,20 +25,59 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          envs: INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD,AUTH_TOKEN,BRANCH
+          envs: BRANCH,DEPLOY_PATH,REPO_URL,INSTAGRAM_TOKEN,NEXTCLOUD_URL,WEBDAV_USERNAME,WEBDAV_PASSWORD,AUTH_TOKEN
           script: |
-            set -e
-            cd ${{ secrets.DEPLOY_PATH }}
+            set -eu
+
+            # master geht auf Produktion, alles andere (develop und manuell
+            # angestossene Branches) auf die Develop-Umgebung.
+            if [ "$BRANCH" = "master" ]; then
+              SUFFIX=""
+              WEB_PORT=8080
+              BACKEND_PORT=5200
+              IMAGE_TAG=latest
+            else
+              SUFFIX="-develop"
+              WEB_PORT=8081
+              BACKEND_PORT=5201
+              IMAGE_TAG=develop
+            fi
+
+            DEPLOY_DIR="${DEPLOY_PATH}${SUFFIX}"
+
+            if [ ! -d "$DEPLOY_DIR/.git" ]; then
+              echo "FEHLER: $DEPLOY_DIR ist kein Git-Repository."
+              echo "Einmalig auf dem Server anlegen:"
+              echo "  git clone $REPO_URL $DEPLOY_DIR"
+              exit 1
+            fi
+
+            echo "Deploy von '$BRANCH' nach $DEPLOY_DIR (Web $WEB_PORT, API $BACKEND_PORT)"
+
+            cd "$DEPLOY_DIR"
             git fetch origin
             git reset --hard "origin/$BRANCH"
             git clean -fd
+
             cd deploy
+
+            # Der Projektname trennt Container, Netzwerke und Volumes beider
+            # Stacks. Fuer Produktion bleibt es bewusst "deploy": das ist der
+            # bisherige Default aus dem Verzeichnisnamen, sodass die
+            # vorhandenen Volumes (u. a. der Instagram-Token) weiterbenutzt
+            # werden statt neu und leer angelegt zu werden.
+            export COMPOSE_PROJECT_NAME="deploy${SUFFIX}"
+            export STACK_SUFFIX="$SUFFIX"
+            export WEB_PORT BACKEND_PORT IMAGE_TAG
             export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD AUTH_TOKEN
+
             docker compose down
             docker compose up -d --build
             docker image prune -f
         env:
           BRANCH: ${{ github.ref_name }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}.git
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           NEXTCLOUD_URL: ${{ secrets.NEXTCLOUD_URL }}
           WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
