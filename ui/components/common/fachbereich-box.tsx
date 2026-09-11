@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Fachbereich, departmentLead } from "../../content/departments";
-import MemberAvatar, { anzeigeName } from "./member-avatar";
+import React, {useState} from "react";
+import {departmentLead, Fachbereich} from "../../content/departments";
+import MemberAvatar, {anzeigeName} from "./member-avatar";
 
 interface FachbereichBoxProps {
   fachbereich: Fachbereich; // Fachbereich aus content/departments.ts

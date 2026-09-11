@@ -1,9 +1,9 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import OphaseService from "@services/ophase-service";
-import { formatDate, formatRange, useOPhaseInfo } from "@lib/ophase";
+import {formatDate, formatRange, useOPhaseInfo} from "@lib/ophase";
 
 function Index() {
   const info = useOPhaseInfo();

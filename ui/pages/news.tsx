@@ -1,12 +1,12 @@
-import { GetStaticProps } from "next";
-import { useEffect, useRef, useState } from "react";
+import {GetStaticProps} from "next";
+import {useEffect, useRef, useState} from "react";
 
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import NewsPreviewElement from "../components/common/news-preview-element";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import SliderButton from "../components/common/slider-button";
-import { strings } from "@lib/strings";
+import {strings} from "@lib/strings";
 import BulletinService, {BulletinDto} from "@services/bulletin-service";
 
 const BOARD = "STUDENT_COUNCIL";

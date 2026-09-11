@@ -1,6 +1,6 @@
-import { useState } from "react";
+import {useState} from "react";
 import Icon from "@mdi/react";
-import { mdiArrowUp } from "@mdi/js";
+import {mdiArrowUp} from "@mdi/js";
 
 interface AccordionProps {
   title: string;
