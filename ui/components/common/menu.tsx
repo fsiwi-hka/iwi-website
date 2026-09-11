@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {useRouter} from "next/router";
+import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Button from "./button";
 
 export const mainMenuItems = [

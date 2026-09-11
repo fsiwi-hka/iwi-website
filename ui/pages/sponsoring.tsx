@@ -1,17 +1,17 @@
-import { GetStaticProps } from "next";
-import { useState } from "react";
+import {GetStaticProps} from "next";
+import {useState} from "react";
 import Icon from "@mdi/react";
 import {
-  mdiAccount,
-  mdiArrowTopRight,
-  mdiBankOutline,
-  mdiCheck,
-  mdiContentCopy,
-  mdiEmailFast,
-  mdiFireplace,
-  mdiHandshakeOutline,
-  mdiHeartOutline,
-  mdiSchoolOutline,
+    mdiAccount,
+    mdiArrowTopRight,
+    mdiBankOutline,
+    mdiCheck,
+    mdiContentCopy,
+    mdiEmailFast,
+    mdiFireplace,
+    mdiHandshakeOutline,
+    mdiHeartOutline,
+    mdiSchoolOutline,
 } from "@mdi/js";
 
 import Carousel from "../components/common/carousel";
@@ -21,7 +21,7 @@ import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import PackageBox from "../components/common/package-box";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
-import { sponsorLogos } from "../content/sponsors";
+import {sponsorLogos} from "../content/sponsors";
 import {strings} from "@lib/strings";
 
 // ---------------------------------------------------------------------------

@@ -1,6 +1,4 @@
-import { GetStaticProps } from "next";
-
-import Button from "../components/common/button";
+import {GetStaticProps} from "next";
 import Header from "../components/common/header";
 import StudyCard from "../components/common/study-card";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";

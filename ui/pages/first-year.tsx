@@ -1,7 +1,7 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 import Obfuscate from "react-obfuscate";
 import Icon from "@mdi/react";
-import { mdiBookEducationOutline, mdiConsoleNetworkOutline } from "@mdi/js";
+import {mdiBookEducationOutline, mdiConsoleNetworkOutline} from "@mdi/js";
 
 import ButtonButBigger from "../components/common/button-but-bigger";
 import BoxTextImg from "../components/common/box-text-img";
@@ -10,7 +10,7 @@ import InfoBox from "../components/common/infobox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import BoxTextButton from "../components/common/box-text-button";
 import {strings} from "@lib/strings";
-import { formatDate, formatRange, semesterLabel, useOPhaseInfo } from "@lib/ophase";
+import {formatDate, formatRange, semesterLabel, useOPhaseInfo} from "@lib/ophase";
 
 
 function Index() {

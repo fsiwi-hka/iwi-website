@@ -1,99 +1,216 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 import Icon from "@mdi/react";
 
-import BoxFullWidthBlue from "../components/common/box-full-width-blue";
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import InfoTile from "../components/common/infotile";
 import StudyCard, {StudyCardProps} from "../components/common/study-card";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import {LinkButton} from "./studies";
-import { formatRange, useOPhaseInfo } from "@lib/ophase";
+import {formatRange, useOPhaseInfo} from "@lib/ophase";
 
-
-interface Button {
-  text: string;
-  url: string;
-  buttonNewTab?: boolean;
+export interface PreCourse {
+    title: string;
+    materials: StudyCardProps[];
 }
 
 const requiredSoftware: StudyCardProps[] = [
   {
-    title: "Java",
+    title: "java",
     subtitle: "IntelliJ IDEA von Jetbrains",
     listElements: [],
     buttons: [
-      new LinkButton({ text: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/", buttonNewTab: true }),
+        new LinkButton( {text: "Jetbrains IntelliJ IDEA", url: "https://www.jetbrains.com/idea/", buttonNewTab: true}),
+        new LinkButton({ text: "Java SE 17", url: "https://www.oracle.com/de/java/technologies/downloads/", buttonNewTab: true }),
     ],
   },
   {
-    title: "C#",
+    title: "cs",
     subtitle: "Visual Studio Community Edition & .NET",
     listElements: [],
     buttons: [
-      new LinkButton({ text: "Visual Studio", url: "https://visualstudio.microsoft.com/", buttonNewTab: true }),
-      new LinkButton({ text: ".net", url: "https://dotnet.microsoft.com/", buttonNewTab: true }),
+        new LinkButton( {text: "Jetbrains Rider IDE", url: "https://www.jetbrains.com/rider/", buttonNewTab: true}),
+        new LinkButton({ text: "Visual Studio", url: "https://visualstudio.microsoft.com/", buttonNewTab: true }),
+        new LinkButton({ text: "Microsoft .net SDK", url: "https://dotnet.microsoft.com/", buttonNewTab: true }),
     ],
   },
   {
-    title: "Python",
-    subtitle: "Python 3.x und Jupyter Lab",
+    title: "python",
+    subtitle: "python 3.x und Jupyter Lab",
     listElements: [],
     buttons: [
-      new LinkButton({ text: "Python", url: "https://www.python.org/", buttonNewTab: true }),
-      new LinkButton({ text: "Jupyter Lab", url: "https://jupyter.org/", buttonNewTab: true }),
+        new LinkButton( {text: "Jetbrains Pycharm IDE", url: "https://www.jetbrains.com/pycharm/", buttonNewTab: true}),
+        new LinkButton({ text: "Python", url: "https://www.python.org/", buttonNewTab: true }),
+        new LinkButton({ text: "Jupyter Lab", url: "https://jupyter.org/", buttonNewTab: true }),
     ],
   },
 ];
 
-const VORKURS_DIR = "/assets/downloads/vorkurs/java";
+const VORKURS_DIR = "/assets/downloads/vorkurs";
 
-// Die Unterlagen liegen bisher nur fuer den Java-Kurs vor; C# und Python werden
-// waehrend des Kurses verteilt.
-const downloadMaterials: StudyCardProps[] = [
-  {
-    title: "Tag 1",
-    subtitle: "Java",
-    listElements: [],
-    buttons: [
-      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_1/Tag_1_Folien.pdf`, buttonNewTab: true }),
-      new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/tag_1/Vorkurs_Tag1_Java_Aufgaben.pdf`, buttonNewTab: true }),
-      new LinkButton({ text: "Lösungen", url: `${VORKURS_DIR}/tag_1/Vorkurs_Tag1_Java_Loesungen.pdf`, buttonNewTab: true }),
-    ],
-  },
-  {
-    title: "Tag 2",
-    subtitle: "Java",
-    listElements: [],
-    buttons: [
-      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_2/Tag_2_Folien.pdf`, buttonNewTab: true }),
-      new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/tag_2/Vorkurs_Tag2_Java_Aufgaben.pdf`, buttonNewTab: true }),
-      new LinkButton({ text: "Lösungen", url: `${VORKURS_DIR}/tag_2/Vorkurs_Tag2_Java_Loesungen.pdf`, buttonNewTab: true }),
-    ],
-  },
-  {
-    title: "Tag 3",
-    subtitle: "Java",
-    listElements: [],
-    buttons: [
-      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_3/Tag_3_Folien.pdf`, buttonNewTab: true }),
-      new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/tag_3/Vorkurs_Tag3_Java_Aufgaben.pdf`, buttonNewTab: true }),
-      new LinkButton({ text: "Lösungen", url: `${VORKURS_DIR}/tag_3/Vorkurs_Tag3_Java_Loesungen.pdf`, buttonNewTab: true }),
-    ],
-  },
-  {
-    title: "Tag 4",
-    subtitle: "Java – Projekt Bahnautomat",
-    listElements: [],
-    buttons: [
-      new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/tag_4/Tag_4_Folien.pdf`, buttonNewTab: true }),
-      new LinkButton({ text: "Projekt", url: `${VORKURS_DIR}/tag_4/FS_IWI-Bahnautomat.zip`, buttonNewTab: true }),
-      new LinkButton({ text: "Lösung", url: `${VORKURS_DIR}/tag_4/FS_IWI-Bahnautomat_Loesung.zip`, buttonNewTab: true }),
-    ],
-  },
-];
+// Die Dateinamen enthalten teils "#", Leerzeichen und Umlaute. Im href müssen die
+// kodiert sein, sonst liest der Browser z. B. "C#.pdf" als Fragment "#.pdf".
+const vorkursFile = (path: string) =>
+    `${VORKURS_DIR}/${path.split("/").map(encodeURIComponent).join("/")}`;
 
-
+const courses = [
+    {
+        title: "Vorkurs Java",
+        materials: [
+            {
+                title: "Tag 1",
+                subtitle: "Java",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/java/tag_1/Vorkurs_Java_Tag1.pdf`, buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/java/tag_1/Vorkurs_Tag1_Java_Aufgaben.pdf`, buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 2",
+                subtitle: "Java",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/java/tag_2/Vorkurs_Java_Tag2.pdf`, buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/java/tag_2/Vorkurs_Tag2_Java_Aufgaben.pdf`, buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 3",
+                subtitle: "Java",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/java/tag_3/Vorkurs_Java_Tag3.pdf`, buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: `${VORKURS_DIR}/java/tag_3/Vorkurs_Tag3_Java_Aufgaben.pdf`, buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 4",
+                subtitle: "Java",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: `${VORKURS_DIR}/java/tag_4/Vorkurs_Java_Tag4.pdf`, buttonNewTab: true }),
+                ],
+            }
+        ]
+    },
+    {
+        title: "Vorkurs C#",
+        materials: [
+            {
+                title: "Tag 1",
+                subtitle: "C#",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: vorkursFile("cs/tag_1/Vorkurs_Tag1_C#.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("cs/tag_1/Vorkurs_Tag1_C#_Aufgaben.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("cs/tag_1/Vorkurs_Tag1_C#_Loesungen.pdf"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 2",
+                subtitle: "C#",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: vorkursFile("cs/tag_2/Vorkurs_Tag2_C#.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("cs/tag_2/Vorkurs_Tag2_C#_Aufgaben.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("cs/tag_2/Vorkurs_Tag2_C#_Loesungen.pdf"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 3",
+                subtitle: "C#",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: vorkursFile("cs/tag_3/Vorkurs_Tag3_C#.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("cs/tag_3/C#_Tag3_Aufgaben.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("cs/tag_3/Vorkurs_Tag3_C#_Loesungen.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen (VS Code)", url: vorkursFile("cs/tag_3/Vorkurs_Tag3_C#_Lösungen (in VSCode).pdf"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 4",
+                subtitle: "C#",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Folien", url: vorkursFile("cs/tag_4/Vorkurs_Tag4_C#.pdf"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("cs/tag_4/Vorkurs_Tag4_C#_Aufgaben.pdf"), buttonNewTab: true }),
+                    // Die Lösungen zu den Aufgaben 4.1-4.8 liegen nur als Screenshot vor.
+                    // Vorkurs_Tag4_C#_Loesungen.pdf gehört zu einer anderen Aufgabenreihe (Kaffeemaschine).
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("cs/tag_4/Vorkurs_Tag4_C4_new_Lösungen.png"), buttonNewTab: true }),
+                    new LinkButton({ text: "Weitere Aufgaben", url: vorkursFile("cs/tag_4/Vorkurs_Tag_C#_weitere Aufgaben mit Lösungen.pdf"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Blackjack",
+                subtitle: "C# – Projekt (Tag 4)",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Anleitung", url: vorkursFile("cs/tag_4/Blackjack/Blackjack_mitAnweisungen_mitAbfragen.png"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösung", url: vorkursFile("cs/tag_4/Blackjack/Blackjack_ohneAnweisungen.png"), buttonNewTab: true }),
+                    new LinkButton({ text: "Program.cs", url: vorkursFile("cs/tag_4/Blackjack/Program.cs"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Schere, Stein, Papier",
+                subtitle: "C# – Projekt (Tag 4)",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Vorlage", url: vorkursFile("cs/tag_4/Schere Stein Papier/SchereSteinPapier_Vorlage.cs"), buttonNewTab: true }),
+                ],
+            },
+        ]
+    },
+    {
+        title: "Vorkurs Python",
+        materials: [
+            {
+                title: "Tag 1",
+                subtitle: "Python",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Notebook", url: vorkursFile("python/tag_1/Vorkurs_Tag_1.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("python/tag_1/Vorkurs_Tag_1_Aufgaben.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("python/tag_1/Vorkurs_Tag_1_Loesungen.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Notizen", url: vorkursFile("python/tag_1/Vorkurs_Tag_1_Notizen.ipynb"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 2",
+                subtitle: "Python",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Notebook", url: vorkursFile("python/tag_2/Vorkurs_Tag_2.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("python/tag_2/Vorkurs_Tag_2_Aufgaben.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("python/tag_2/Vorkurs_Tag_2_Loesungen.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Notizen", url: vorkursFile("python/tag_2/Vorkurs_Tag_2_Notizen.ipynb"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 3",
+                subtitle: "Python",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Notebook", url: vorkursFile("python/tag_3/Vorkurs_Tag_3.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("python/tag_3/Vorkurs_Tag_3_Aufgaben.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Bonusaufgaben", url: vorkursFile("python/tag_3/Vorkurs_Tag_3_Aufgaben_Bonus.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("python/tag_3/Vorkurs_Tag_3_Loesungen.ipynb"), buttonNewTab: true }),
+                ],
+            },
+            {
+                title: "Tag 4",
+                subtitle: "Python",
+                listElements: [],
+                buttons: [
+                    new LinkButton({ text: "Notebook", url: vorkursFile("python/tag_4/Vorkurs_Tag_4.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Aufgaben", url: vorkursFile("python/tag_4/Vorkurs_Tag_4_Aufgaben.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "Lösungen", url: vorkursFile("python/tag_4/Vorkurs_Tag_4_Loesungen.ipynb"), buttonNewTab: true }),
+                    new LinkButton({ text: "diamonds.csv", url: vorkursFile("python/tag_4/diamonds.csv"), buttonNewTab: true }),
+                ],
+            },
+        ]
+    }
+] satisfies PreCourse[];
 
 function Index() {
   const info = useOPhaseInfo();
@@ -174,9 +291,9 @@ function Index() {
 
           <p className="mb-4">Raumeinteilung wird folgende sein:</p>
           <ul className="list-disc list-inside mb-4">
-            <li><strong>Java:</strong> E203</li>
-            <li><strong>C#:</strong> LI137</li>
-            <li><strong>Python:</strong> E302</li>
+            <li><strong>Java:</strong> LI137</li>
+            <li><strong>C#:</strong> LI146</li>
+            <li><strong>Python:</strong> LI145</li>
           </ul>
 
           <p className="mb-4">
@@ -221,9 +338,9 @@ function Index() {
                     Infos, Übungsbesprechung,<br />Vorlesung
                     </td>
                     <td className="border border-gray-300 px-4 py-4 align-middle">
-                    <div>Java: E203</div>
-                    <div>C#: LI137</div>
-                    <div>Python: E302</div>
+                    <div>Java: LI137</div>
+                    <div>C#: LI146</div>
+                    <div>Python: LI145</div>
                     </td>
                 </tr>
                 <tr>
@@ -265,18 +382,25 @@ function Index() {
         <ResponsiveWrapper>
             <div className="w-full my-4">
                 <h3 className="petrol_pale_text mt-4 mb-4">Unterlagen</h3>
-                <p className="mb-4">Hier werden die Vorlesungsunterlagen im Verlaufe des Kurses zur Verfügung gestellt.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
-                    {downloadMaterials.map((day, index) => (
-                    <StudyCard
-                        key={index}
-                        title={day.title}
-                        subtitle={day.subtitle}
-                        listElements={day.listElements}
-                        buttons={day.buttons}
-                    />
-                    ))}
-                </div>
+                <p className="mb-4">Hier werden die Kursunterlagen im Verlaufe des Kurses zur Verfügung gestellt.</p>
+                {courses.map((course, index_out) => (
+                    <div key={index_out} className="flex flex-col w-full mb-8">
+                        <h4 className={"pretrol_pale_text mt-4 mb-4"} key={index_out}>{course.title}</h4>
+                        <div className={"flex flex-row w-full "}>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+                                {course.materials.map((day, index_inner) => (
+                                    <StudyCard
+                                        key={index_inner}
+                                        title={day.title}
+                                        subtitle={day.subtitle}
+                                        listElements={day.listElements}
+                                        buttons={day.buttons}/>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                ))}
             </div>
         </ResponsiveWrapper>
 

@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import {useCallback, useEffect, useRef, useState} from "react";
 import Head from "next/head";
 import DOMPurify from "isomorphic-dompurify";
-import BulletinService, { BulletinDto } from "@services/bulletin-service";
-import { bulletinBoards, BulletinBoardConfig } from "../content/bulletin-boards";
+import BulletinService, {BulletinDto} from "@services/bulletin-service";
+import {BulletinBoardConfig, bulletinBoards} from "../content/bulletin-boards";
 
 const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
 /** Wie lange ein Brett stehen bleibt, bevor auf das nächste gewischt wird. */

@@ -1,20 +1,18 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 import Icon from "@mdi/react";
 import {
-  mdiAccountTie,
-  mdiArrowTopRight,
-  mdiCurrencyEur,
-  mdiHandshakeOutline,
-  mdiHelpCircleOutline,
-  mdiInstagram,
-  mdiLinkedin,
-  mdiMapMarkerRadius,
-  mdiPhone,
+    mdiArrowTopRight,
+    mdiHandshakeOutline,
+    mdiHelpCircleOutline,
+    mdiInstagram,
+    mdiLinkedin,
+    mdiMapMarkerRadius,
+    mdiPhone,
 } from "@mdi/js";
 
 import Header from "../components/common/header";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
-import { strings } from "@lib/strings";
+import {strings} from "@lib/strings";
 
 const address = {
   room: "Gebäude E · Raum 013",

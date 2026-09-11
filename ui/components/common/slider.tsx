@@ -1,7 +1,7 @@
 import Button from "./button";
-import {useState, useEffect, useCallback} from "react";
+import {useCallback, useEffect, useState} from "react";
 import SliderButton from "./slider-button";
-import { Slide } from "../../content/slides";
+import {Slide} from "../../content/slides";
 
 const AUTOPLAY_MS = 10000;
 

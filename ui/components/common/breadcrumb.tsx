@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { routeName } from "@lib/routes";
+import {useRouter} from "next/router";
+import {routeName} from "@lib/routes";
 
 const Breadcrumb = () => {
   const router = useRouter();

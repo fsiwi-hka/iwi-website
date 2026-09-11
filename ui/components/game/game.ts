@@ -3,8 +3,8 @@
 // flacher Boden, der Spieler läuft automatisch, Steine kommen von rechts, springen
 // oder Game Over. Nutzt spriteAnimation.ts (Spieler) und tileset.ts (Boden + Stein).
 
-import { SpriteAnimator, buildGridAnimations, loadImage, type AnimationSet } from "./spriteAnimation";
-import { TileSet } from "./tileset";
+import {type AnimationSet, buildGridAnimations, loadImage, SpriteAnimator} from "./spriteAnimation";
+import {TileSet} from "./tileset";
 
 export const GAME_WIDTH = 640;
 export const GAME_HEIGHT = 360;

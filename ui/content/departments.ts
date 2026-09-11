@@ -1,4 +1,4 @@
-import { Mitglied, members } from "./member";
+import {members, Mitglied} from "./member";
 
 export interface Fachbereich {
     position: string; // muss der "position" des zugehörigen Eintrags in member.ts entsprechen
