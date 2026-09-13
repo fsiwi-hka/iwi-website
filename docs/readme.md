@@ -13,6 +13,7 @@
 - [Use the different APIs](apis.md)
 - [Work on the design using Tailwind](design.md)
 - [Deployment considerations and strategies](deploy.md)
+- [Backrooms (CMS): Setup, Architektur und Backend-Anforderungen](../backrooms/README.md)
 
 ## Project background
 

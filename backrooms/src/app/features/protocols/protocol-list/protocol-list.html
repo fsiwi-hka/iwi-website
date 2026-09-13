@@ -1,0 +1,94 @@
+<app-page-header
+  title="Sitzungsprotokolle"
+  subtitle="PDF-Protokolle der Fachschaftssitzungen, gruppiert nach Semester. Die Website bietet sie zum Download an."
+>
+  <a actions matButton="filled" routerLink="new">
+    <mat-icon svgIcon="upload" />
+    Protokoll hochladen
+  </a>
+</app-page-header>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  @if (groups().length === 0) {
+    <app-empty-state
+      title="Noch keine Protokolle"
+      description="Lade das erste Sitzungsprotokoll als PDF hoch."
+      icon="archive"
+    >
+      <a matButton="filled" routerLink="new">Protokoll hochladen</a>
+    </app-empty-state>
+  } @else {
+    <div class="page-sections">
+      @for (group of groups(); track group.semester) {
+        <mat-card appearance="outlined">
+          <mat-card-header class="d-flex align-items-center justify-content-between">
+            <mat-card-title>{{ group.semester }}</mat-card-title>
+            <span class="muted text-sm">{{ group.protocols.length }} Protokolle</span>
+          </mat-card-header>
+          <div class="table-scroll border-0">
+            <table mat-table [dataSource]="group.protocols" class="w-100">
+              <ng-container matColumnDef="meetingDate">
+                <th mat-header-cell *matHeaderCellDef>Datum</th>
+                <td mat-cell *matCellDef="let protocol">{{ date(protocol.meetingDate) }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="title">
+                <th mat-header-cell *matHeaderCellDef>Titel</th>
+                <td mat-cell *matCellDef="let protocol" class="fw-medium">{{ protocol.title }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="file">
+                <th mat-header-cell *matHeaderCellDef>Datei</th>
+                <td mat-cell *matCellDef="let protocol">
+                  @if (protocol.file; as file) {
+                    <a
+                      class="d-inline-flex align-items-center gap-1 text-sm"
+                      [href]="file.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <mat-icon class="icon-inline" svgIcon="file" />
+                      {{ file.name }}
+                      <span class="muted">({{ bytes(file.size) }})</span>
+                    </a>
+                  } @else {
+                    <span class="muted">Keine Datei</span>
+                  }
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef>
+                  <span class="visually-hidden">Aktionen</span>
+                </th>
+                <td mat-cell *matCellDef="let protocol" class="cell-actions">
+                  <a
+                    matIconButton
+                    [routerLink]="[protocol.id]"
+                    matTooltip="Bearbeiten"
+                    aria-label="Bearbeiten"
+                  >
+                    <mat-icon svgIcon="edit" />
+                  </a>
+                  <button
+                    matIconButton
+                    type="button"
+                    (click)="remove(protocol)"
+                    [disabled]="runner.isBusy(protocol.id)"
+                    matTooltip="Löschen"
+                    aria-label="Löschen"
+                  >
+                    <mat-icon svgIcon="trash" />
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="columns"></tr>
+              <tr mat-row *matRowDef="let row; columns: columns"></tr>
+            </table>
+          </div>
+        </mat-card>
+      }
+    </div>
+  }
+</app-data-state>

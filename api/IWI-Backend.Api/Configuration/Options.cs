@@ -45,3 +45,16 @@ public sealed class InstagramGraphOptions
     /// <summary>Anzahl der Posts, die gespiegelt werden.</summary>
     public int PostLimit { get; set; } = 12;
 }
+
+public sealed class OPhaseOptions
+{
+    public string BaseUrl { get; set; } = "";
+    public int SyncIntervalMinutes { get; set; } = 60 * 24;
+    public string CacheDirectory { get; set; } = "cache/ophase";
+}
+
+public sealed class BackroomOptions
+{
+    public string DataDirectory { get; set; } = "state/backrooms";
+    public long MaxUploadBytes { get; set; } = 50L * 1024 * 1024;
+}

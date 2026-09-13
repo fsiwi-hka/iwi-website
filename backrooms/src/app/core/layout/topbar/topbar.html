@@ -1,0 +1,34 @@
+<mat-toolbar class="topbar">
+  @if (showMenuButton()) {
+    <button matIconButton type="button" (click)="toggleNav.emit()" aria-label="Navigation öffnen">
+      <mat-icon svgIcon="menu" />
+    </button>
+  }
+
+  <span class="topbar__spacer"></span>
+
+  @if (user(); as current) {
+    <button
+      matButton
+      type="button"
+      class="topbar__user"
+      [matMenuTriggerFor]="userMenu"
+      [attr.aria-label]="'Benutzermenü für ' + current.displayName"
+    >
+      <span class="topbar__avatar" aria-hidden="true">{{ initials() }}</span>
+      <span class="topbar__name">{{ current.displayName }}</span>
+    </button>
+
+    <mat-menu #userMenu="matMenu">
+      <!-- Kein mat-menu-item: das ist eine Kopfzeile, kein Menuepunkt. -->
+      <div class="topbar__menu-head">
+        <span class="topbar__menu-name">{{ current.displayName }}</span>
+        <span class="topbar__menu-role">{{ roleLabel() }}</span>
+      </div>
+      <button mat-menu-item type="button" (click)="logout.emit()">
+        <mat-icon svgIcon="log-out" />
+        <span>Abmelden</span>
+      </button>
+    </mat-menu>
+  }
+</mat-toolbar>

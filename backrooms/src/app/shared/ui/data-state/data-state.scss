@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+.data-state__loading {
+  padding: 2rem;
+}
+
+.data-state__error {
+  padding: 1rem;
+  border: 1px solid var(--mat-sys-error);
+  border-radius: var(--mat-sys-corner-medium);
+  background: var(--mat-sys-error-container);
+  color: var(--mat-sys-on-error-container);
+}
+
+.data-state__error-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  min-width: 0;
+}

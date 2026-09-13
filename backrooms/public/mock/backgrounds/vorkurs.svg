@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Programmiervorkurs">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b485a"/><stop offset="1" stop-color="#3999bf"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Poppins, sans-serif" font-size="75" font-weight="600" fill="#ffffff" opacity="0.9">Programmiervorkurs</text>
+</svg>

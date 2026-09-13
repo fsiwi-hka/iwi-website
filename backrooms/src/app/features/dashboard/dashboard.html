@@ -1,0 +1,85 @@
+<app-page-header title="Übersicht" [subtitle]="greeting()" />
+
+<section class="row g-3" aria-label="Inhalte">
+  @for (item of stats(); track item.path) {
+    <div class="col-6 col-md-4 col-xl-3">
+      <a class="stat-card h-100" [routerLink]="item.path">
+        <mat-card class="h-100" appearance="outlined">
+          <mat-card-content>
+            <span class="stat-card__label d-flex align-items-center gap-1">
+              <mat-icon class="icon-inline" [svgIcon]="item.icon" />
+              {{ item.label }}
+            </span>
+            <span class="stat-card__value">
+              @if (item.value === null) {
+                <mat-spinner [diameter]="24" />
+              } @else {
+                {{ item.value }}
+              }
+            </span>
+            <span class="stat-card__meta muted">{{ item.meta }}</span>
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </div>
+  }
+</section>
+
+<div class="row g-3 mt-1">
+  <div class="col-12 col-xl-7">
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Zuletzt geändert</mat-card-title>
+      </mat-card-header>
+      @if (recent().length === 0) {
+        <mat-card-content>
+          <p class="muted text-sm mb-0">Noch keine Änderungen.</p>
+        </mat-card-content>
+      } @else {
+        <mat-nav-list>
+          @for (item of recent(); track item.key) {
+            <a mat-list-item [routerLink]="item.path">
+              <span matListItemTitle>{{ item.title }}</span>
+              <span matListItemLine class="muted">{{ item.type }}</span>
+              <span matListItemMeta class="text-sm muted">{{ relative(item.updatedAt) }}</span>
+            </a>
+          }
+        </mat-nav-list>
+      }
+    </mat-card>
+  </div>
+
+  <div class="col-12 col-xl-5">
+    <mat-card appearance="outlined">
+      <mat-card-header class="d-flex align-items-center justify-content-between">
+        <mat-card-title>Backend-Status</mat-card-title>
+        <a matButton routerLink="/system">Details</a>
+      </mat-card-header>
+      <mat-card-content>
+        @switch (system.healthStatus()) {
+          @case ('loading') {
+            <span class="muted text-sm">Prüfe…</span>
+          }
+          @case ('error') {
+            <app-status-badge variant="danger">Nicht erreichbar</app-status-badge>
+          }
+          @default {
+            @if (system.health(); as health) {
+              <app-status-badge [variant]="health.status === 'ok' ? 'success' : 'warning'">
+                {{ health.status === 'ok' ? 'Erreichbar' : 'Eingeschränkt' }}
+              </app-status-badge>
+              <dl class="facts mt-3 mb-0">
+                <dt>Letzter Medien-Sync</dt>
+                <dd>{{ dateTime(health.lastSync) }}</dd>
+                <dt>Instagram-Sync</dt>
+                <dd>{{ dateTime(health.instagramLastSync) }}</dd>
+                <dt>Aktive Infoscreen-Slides</dt>
+                <dd>{{ health.slides }}</dd>
+              </dl>
+            }
+          }
+        }
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

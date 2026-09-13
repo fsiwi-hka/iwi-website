@@ -1,4 +1,5 @@
 using System.Text.Json;
+using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Models;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.OPhase;
@@ -58,11 +59,4 @@ public class OPhaseController(
     }
 
 
-}
-
-public sealed class OPhaseOptions
-{
-    public string BaseUrl { get; set; } = "";
-    public int SyncIntervalMinutes { get; set; } = 60 * 24;
-    public string CacheDirectory { get; set; } = "cache/ophase";
 }

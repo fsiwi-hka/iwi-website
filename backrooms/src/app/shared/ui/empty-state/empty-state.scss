@@ -1,0 +1,33 @@
+.empty-state {
+  padding: 3rem 1rem;
+  border: 1px dashed var(--mat-sys-outline);
+  border-radius: var(--mat-sys-corner-medium);
+  background: var(--mat-sys-surface);
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--mat-sys-secondary-container);
+    color: var(--mat-sys-on-secondary-container);
+
+    mat-icon {
+      width: 28px;
+      height: 28px;
+      font-size: 28px;
+    }
+  }
+
+  &__title {
+    font: var(--mat-sys-title-medium);
+  }
+
+  &__description {
+    max-width: 44ch;
+    font: var(--mat-sys-body-medium);
+  }
+
+  &__actions:empty {
+    display: none;
+  }
+}

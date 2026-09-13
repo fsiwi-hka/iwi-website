@@ -1,0 +1,133 @@
+<app-page-header
+  title="Synchronisation"
+  subtitle="Status des Backends und manuelle Aktualisierung der gespiegelten Inhalte."
+>
+  <button actions matButton="outlined" type="button" (click)="store.reloadHealth()">
+    <mat-icon svgIcon="refresh" />
+    Status neu laden
+  </button>
+</app-page-header>
+
+<div class="page-sections">
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Backend</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-data-state
+        [status]="store.healthStatus()"
+        [error]="store.healthError()"
+        (retry)="store.reloadHealth()"
+      >
+        @if (store.health(); as health) {
+          <dl class="facts mb-0">
+            <dt>Status</dt>
+            <dd>
+              <app-status-badge [variant]="health.status === 'ok' ? 'success' : 'warning'">
+                {{ health.status === 'ok' ? 'Erreichbar' : 'Eingeschränkt' }}
+              </app-status-badge>
+            </dd>
+            <dt>Letzter Medien-Sync</dt>
+            <dd>{{ dateTime(health.lastSync) }}</dd>
+            <dt>Aktive Infoscreen-Slides</dt>
+            <dd>{{ health.slides }}</dd>
+            <dt>Letzter Instagram-Sync</dt>
+            <dd>{{ dateTime(health.instagramLastSync) }}</dd>
+            <dt>Gespiegelte Instagram-Posts</dt>
+            <dd>{{ health.instagramPosts }}</dd>
+          </dl>
+        }
+      </app-data-state>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Manuell synchronisieren</mat-card-title>
+    </mat-card-header>
+
+    @if (!auth.isAdmin()) {
+      <mat-card-content>
+        <div class="notice d-flex align-items-center gap-2">
+          <mat-icon svgIcon="info" />
+          <span>Synchronisationen können nur Admins anstoßen.</span>
+        </div>
+      </mat-card-content>
+    }
+
+    <div class="table-scroll border-0">
+      <table mat-table [dataSource]="kinds" class="w-100">
+        <ng-container matColumnDef="source">
+          <th mat-header-cell *matHeaderCellDef>Quelle</th>
+          <td mat-cell *matCellDef="let kind" class="fw-medium">{{ kind.label }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef>Beschreibung</th>
+          <td mat-cell *matCellDef="let kind" class="muted">{{ kind.description }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="result">
+          <th mat-header-cell *matHeaderCellDef>Letztes Ergebnis</th>
+          <td mat-cell *matCellDef="let kind">
+            @if (syncResult(kind.kind); as result) {
+              <div class="d-flex align-items-center gap-2 py-2">
+                <app-status-badge [variant]="result.status === 'synced' ? 'success' : 'danger'">
+                  {{ result.status === 'synced' ? 'OK' : 'Fehler' }}
+                </app-status-badge>
+                <span class="text-sm muted">{{ dateTime(result.finishedAt) }}</span>
+              </div>
+              @if (result.status === 'failed' && result.message) {
+                <div class="field-error pb-2">{{ result.message }}</div>
+              }
+            } @else {
+              <span class="muted">–</span>
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef>
+            <span class="visually-hidden">Aktion</span>
+          </th>
+          <td mat-cell *matCellDef="let kind" class="cell-actions">
+            <button
+              matButton="outlined"
+              type="button"
+              [disabled]="!auth.isAdmin() || store.syncing() !== null"
+              [attr.aria-busy]="store.syncing() === kind.kind"
+              (click)="sync(kind.kind)"
+            >
+              @if (store.syncing() === kind.kind) {
+                <mat-spinner [diameter]="16" />
+              } @else {
+                <mat-icon svgIcon="refresh" />
+              }
+              {{ store.syncing() === kind.kind ? 'Läuft…' : 'Jetzt synchronisieren' }}
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns"></tr>
+      </table>
+    </div>
+  </mat-card>
+
+  @if (config.useMocks) {
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Mockdaten</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="muted text-sm">
+          Im Mock-Modus liegen alle Inhalte im localStorage dieses Browsers. Zurücksetzen stellt den
+          Ausgangszustand (die heutigen Website-Inhalte) wieder her.
+        </p>
+        <button matButton="filled" type="button" class="reset-button" (click)="resetMocks()">
+          Mockdaten zurücksetzen
+        </button>
+      </mat-card-content>
+    </mat-card>
+  }
+</div>

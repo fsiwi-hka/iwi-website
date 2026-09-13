@@ -1,0 +1,41 @@
+.stat-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover mat-card {
+    border-color: var(--mat-sys-primary);
+  }
+
+  &__label {
+    font: var(--mat-sys-label-medium);
+    color: var(--mat-sys-on-surface-variant);
+  }
+
+  &__value {
+    display: block;
+    margin: 0.25rem 0;
+    font: var(--mat-sys-headline-medium);
+    line-height: 1.1;
+  }
+
+  &__meta {
+    font: var(--mat-sys-body-small);
+  }
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  font: var(--mat-sys-body-medium);
+
+  dt {
+    color: var(--mat-sys-on-surface-variant);
+  }
+
+  dd {
+    margin: 0;
+  }
+}

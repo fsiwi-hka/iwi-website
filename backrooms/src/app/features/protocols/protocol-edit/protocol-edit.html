@@ -1,0 +1,76 @@
+<app-page-header [title]="title()" backLink="/protocols" backLabel="Zurück zur Liste" />
+
+<app-data-state [status]="draft.status()" [error]="draft.error()" (retry)="draft.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <fieldset class="border-0 p-0 m-0">
+          <legend class="form-legend">PDF-Datei</legend>
+          <app-media-picker
+            folder="protocols"
+            label="Protokoll"
+            accept="application/pdf"
+            hint="Nur PDF. Der Dateiname wird als Titel vorgeschlagen."
+            [value]="form.file().value()"
+            (valueChange)="onFileChange($event)"
+          />
+          @if (form.file().touched() && form.file().invalid()) {
+            <p class="field-error mt-1 mb-0">{{ errorText(form.file) }}</p>
+          }
+        </fieldset>
+
+        <mat-form-field class="w-100 mt-3">
+          <mat-label>Titel</mat-label>
+          <input matInput type="text" [formField]="form.title" />
+          <mat-error>{{ errorText(form.title) }}</mat-error>
+        </mat-form-field>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <mat-form-field class="w-100">
+              <mat-label>Semester</mat-label>
+              <input
+                matInput
+                type="text"
+                list="semester-suggestions"
+                placeholder="WS 2025/26"
+                [formField]="form.semester"
+              />
+              <mat-hint>Format: „WS 2025/26“ oder „SS 2026“.</mat-hint>
+              <mat-error>{{ errorText(form.semester) }}</mat-error>
+            </mat-form-field>
+            <datalist id="semester-suggestions">
+              @for (semester of semesterSuggestions(); track semester) {
+                <option [value]="semester"></option>
+              }
+            </datalist>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field class="w-100">
+              <mat-label>Sitzungsdatum</mat-label>
+              <input matInput [matDatepicker]="picker" [formField]="form.meetingDate" />
+              <mat-datepicker-toggle matIconSuffix [for]="picker" />
+              <mat-datepicker #picker />
+              <mat-error>{{ errorText(form.meetingDate) }}</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <a matButton routerLink="/protocols">Abbrechen</a>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

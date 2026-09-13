@@ -1,0 +1,41 @@
+name: Build Backrooms
+
+on:
+  pull_request:
+    paths:
+      - "backrooms/**"
+      - ".github/workflows/backrooms.yml"
+  push:
+    branches:
+      - master
+      - develop
+    paths:
+      - "backrooms/**"
+
+jobs:
+  build:
+    name: Format, Test, Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backrooms
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: backrooms/package-lock.json
+
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm test
+      - run: npm run build
+
+      - name: Publish build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backrooms-dist
+          path: backrooms/dist/backrooms/browser

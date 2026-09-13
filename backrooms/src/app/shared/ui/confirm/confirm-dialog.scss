@@ -1,0 +1,6 @@
+// Destruktive Bestaetigung in Fehlerfarbe, damit sie sich vom Abbrechen abhebt.
+.confirm--danger {
+  --mat-button-filled-container-color: var(--mat-sys-error);
+  --mat-button-filled-label-text-color: var(--mat-sys-on-error);
+  --mat-button-filled-state-layer-color: var(--mat-sys-on-error);
+}

@@ -1,0 +1,117 @@
+<app-page-header
+  title="Fachbereiche"
+  subtitle="Aufgabenbereiche der Fachschaft. Die Leitung kommt aus der gleichnamigen Position bei den Mitgliedern."
+>
+  <a actions matButton="filled" routerLink="new">
+    <mat-icon svgIcon="plus" />
+    Neuer Fachbereich
+  </a>
+</app-page-header>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  @if (store.items().length === 0) {
+    <app-empty-state
+      title="Noch keine Fachbereiche"
+      description="Lege den ersten Fachbereich mit seinen Aufgaben an."
+      icon="layers"
+    >
+      <a matButton="filled" routerLink="new">Neuer Fachbereich</a>
+    </app-empty-state>
+  } @else {
+    <div class="table-scroll">
+      <table
+        mat-table
+        [dataSource]="store.items()"
+        cdkDropList
+        (cdkDropListDropped)="drop($event)"
+        class="w-100"
+      >
+        <ng-container matColumnDef="order">
+          <th mat-header-cell *matHeaderCellDef>Reihenfolge</th>
+          <td mat-cell *matCellDef="let department; let first = first; let last = last">
+            <div class="d-flex align-items-center">
+              <mat-icon
+                cdkDragHandle
+                class="drag-handle"
+                svgIcon="drag"
+                matTooltip="Zum Sortieren ziehen"
+              />
+              <button
+                matIconButton
+                type="button"
+                (click)="move(department, -1)"
+                [disabled]="first || runner.isBusy(department.id)"
+                matTooltip="Nach oben"
+                aria-label="Nach oben verschieben"
+              >
+                <mat-icon svgIcon="arrow-up" />
+              </button>
+              <button
+                matIconButton
+                type="button"
+                (click)="move(department, 1)"
+                [disabled]="last || runner.isBusy(department.id)"
+                matTooltip="Nach unten"
+                aria-label="Nach unten verschieben"
+              >
+                <mat-icon svgIcon="arrow-down" />
+              </button>
+            </div>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>Fachbereich</th>
+          <td mat-cell *matCellDef="let department" class="fw-medium">{{ department.position }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="lead">
+          <th mat-header-cell *matHeaderCellDef>Leitung</th>
+          <td mat-cell *matCellDef="let department">
+            @if (lead(department); as name) {
+              {{ name }}
+            } @else {
+              <app-status-badge variant="warning">Keine Position gefunden</app-status-badge>
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="tasks">
+          <th mat-header-cell *matHeaderCellDef>Aufgaben</th>
+          <td mat-cell *matCellDef="let department" class="muted">
+            {{ department.tasks.length }} Aufgaben
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>
+            <span class="visually-hidden">Aktionen</span>
+          </th>
+          <td mat-cell *matCellDef="let department" class="cell-actions">
+            <a
+              matIconButton
+              [routerLink]="[department.id]"
+              matTooltip="Bearbeiten"
+              aria-label="Bearbeiten"
+            >
+              <mat-icon svgIcon="edit" />
+            </a>
+            <button
+              matIconButton
+              type="button"
+              (click)="remove(department)"
+              [disabled]="runner.isBusy(department.id)"
+              matTooltip="Löschen"
+              aria-label="Löschen"
+            >
+              <mat-icon svgIcon="trash" />
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns" cdkDrag [cdkDragData]="row"></tr>
+      </table>
+    </div>
+  }
+</app-data-state>

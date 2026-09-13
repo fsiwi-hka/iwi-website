@@ -1,0 +1,71 @@
+<app-page-header
+  title="Seiten"
+  subtitle="Freitext-Inhalte in Markdown, z. B. Impressum. Der Slug ist der Schlüssel, über den die Website den Text lädt."
+>
+  <a actions matButton="filled" routerLink="new">
+    <mat-icon svgIcon="plus" />
+    Neue Seite
+  </a>
+</app-page-header>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  @if (store.items().length === 0) {
+    <app-empty-state
+      title="Noch keine Seiten"
+      description="Lege die erste Markdown-Seite an."
+      icon="file-text"
+    >
+      <a matButton="filled" routerLink="new">Neue Seite</a>
+    </app-empty-state>
+  } @else {
+    <div class="table-scroll">
+      <table mat-table [dataSource]="store.items()" class="w-100">
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef>Titel</th>
+          <td mat-cell *matCellDef="let page" class="fw-medium">{{ page.title }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="slug">
+          <th mat-header-cell *matHeaderCellDef>Slug</th>
+          <td mat-cell *matCellDef="let page">
+            <code class="text-sm">{{ page.slug }}</code>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="updated">
+          <th mat-header-cell *matHeaderCellDef>Geändert</th>
+          <td mat-cell *matCellDef="let page" class="muted">{{ dateTime(page.updatedAt) }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>
+            <span class="visually-hidden">Aktionen</span>
+          </th>
+          <td mat-cell *matCellDef="let page" class="cell-actions">
+            <a
+              matIconButton
+              [routerLink]="[page.id]"
+              matTooltip="Bearbeiten"
+              aria-label="Bearbeiten"
+            >
+              <mat-icon svgIcon="edit" />
+            </a>
+            <button
+              matIconButton
+              type="button"
+              (click)="remove(page)"
+              [disabled]="runner.isBusy(page.id)"
+              matTooltip="Löschen"
+              aria-label="Löschen"
+            >
+              <mat-icon svgIcon="trash" />
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns"></tr>
+      </table>
+    </div>
+  }
+</app-data-state>

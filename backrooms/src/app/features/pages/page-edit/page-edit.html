@@ -1,0 +1,64 @@
+<app-page-header [title]="title()" backLink="/pages" backLabel="Zurück zur Liste" />
+
+<app-data-state [status]="draft.status()" [error]="draft.error()" (retry)="draft.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <mat-form-field class="w-100">
+              <mat-label>Titel</mat-label>
+              <input matInput type="text" [formField]="form.title" />
+              <mat-error>{{ errorText(form.title) }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-5">
+            <mat-form-field class="w-100">
+              <mat-label>Slug</mat-label>
+              <input
+                matInput
+                class="mono"
+                type="text"
+                placeholder="impressum"
+                autocapitalize="none"
+                [formField]="form.slug"
+              />
+              <mat-hint
+                >Technischer Schlüssel; nach der Veröffentlichung nicht mehr ändern.</mat-hint
+              >
+              <mat-error>{{ errorText(form.slug) }}</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <mat-form-field class="w-100 mt-2">
+          <mat-label>Inhalt (Markdown)</mat-label>
+          <textarea
+            matInput
+            class="mono"
+            rows="18"
+            spellcheck="true"
+            [formField]="form.body"
+          ></textarea>
+          <mat-hint> Überschriften mit ##, Listen mit -, Links als [Text](/pfad/). </mat-hint>
+          <mat-error>{{ errorText(form.body) }}</mat-error>
+        </mat-form-field>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <a matButton routerLink="/pages">Abbrechen</a>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

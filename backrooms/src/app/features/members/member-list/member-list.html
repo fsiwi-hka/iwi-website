@@ -1,0 +1,126 @@
+<app-page-header
+  title="Mitglieder"
+  subtitle="Positionen der Fachschaft mit den Personen, die sie ausfüllen. Fachbereichsleitungen werden über die Position mit den Fachbereichen verknüpft."
+>
+  <a actions matButton="filled" routerLink="new">
+    <mat-icon svgIcon="plus" />
+    Neue Position
+  </a>
+</app-page-header>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  @if (store.items().length === 0) {
+    <app-empty-state
+      title="Noch keine Positionen"
+      description="Lege Vorstand, Rollen und Fachbereichsleitungen an."
+      icon="users"
+    >
+      <a matButton="filled" routerLink="new">Neue Position</a>
+    </app-empty-state>
+  } @else {
+    <div class="table-scroll">
+      <table
+        mat-table
+        [dataSource]="store.items()"
+        cdkDropList
+        (cdkDropListDropped)="drop($event)"
+        class="w-100"
+      >
+        <ng-container matColumnDef="order">
+          <th mat-header-cell *matHeaderCellDef>Reihenfolge</th>
+          <td mat-cell *matCellDef="let member; let first = first; let last = last">
+            <div class="d-flex align-items-center">
+              <mat-icon
+                cdkDragHandle
+                class="drag-handle"
+                svgIcon="drag"
+                matTooltip="Zum Sortieren ziehen"
+              />
+              <button
+                matIconButton
+                type="button"
+                (click)="move(member, -1)"
+                [disabled]="first || runner.isBusy(member.id)"
+                matTooltip="Nach oben"
+                aria-label="Nach oben verschieben"
+              >
+                <mat-icon svgIcon="arrow-up" />
+              </button>
+              <button
+                matIconButton
+                type="button"
+                (click)="move(member, 1)"
+                [disabled]="last || runner.isBusy(member.id)"
+                matTooltip="Nach unten"
+                aria-label="Nach unten verschieben"
+              >
+                <mat-icon svgIcon="arrow-down" />
+              </button>
+            </div>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>Position</th>
+          <td mat-cell *matCellDef="let member" class="fw-medium">{{ member.position }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="group">
+          <th mat-header-cell *matHeaderCellDef>Gruppe</th>
+          <td mat-cell *matCellDef="let member">
+            <app-status-badge variant="info">{{ groupLabel(member.group) }}</app-status-badge>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="persons">
+          <th mat-header-cell *matHeaderCellDef>Personen</th>
+          <td mat-cell *matCellDef="let member">
+            @if (member.persons.length === 0) {
+              <app-status-badge variant="warning">Unbesetzt</app-status-badge>
+            } @else {
+              <div class="d-flex flex-wrap align-items-center gap-3 py-2">
+                @for (person of member.persons; track $index) {
+                  <span class="d-flex align-items-center gap-2">
+                    @if (person.image; as image) {
+                      <img class="avatar" [src]="image.url" alt="" />
+                    }
+                    <span>{{ person.name }}</span>
+                  </span>
+                }
+              </div>
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>
+            <span class="visually-hidden">Aktionen</span>
+          </th>
+          <td mat-cell *matCellDef="let member" class="cell-actions">
+            <a
+              matIconButton
+              [routerLink]="[member.id]"
+              matTooltip="Bearbeiten"
+              aria-label="Bearbeiten"
+            >
+              <mat-icon svgIcon="edit" />
+            </a>
+            <button
+              matIconButton
+              type="button"
+              (click)="remove(member)"
+              [disabled]="runner.isBusy(member.id)"
+              matTooltip="Löschen"
+              aria-label="Löschen"
+            >
+              <mat-icon svgIcon="trash" />
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns" cdkDrag [cdkDragData]="row"></tr>
+      </table>
+    </div>
+  }
+</app-data-state>

@@ -1,0 +1,49 @@
+<div class="sidebar">
+  <div class="sidebar__brand d-flex align-items-center gap-3">
+    <img
+      class="sidebar__logo"
+      ngSrc="/images/iwi-logo.svg"
+      width="36"
+      height="36"
+      alt=""
+      priority
+    />
+    <div class="sidebar__brand-text d-flex flex-column">
+      <strong>Backrooms</strong>
+      <span class="sidebar__brand-sub">Fachschaft IWI</span>
+    </div>
+    @if (showClose()) {
+      <button
+        matIconButton
+        type="button"
+        class="ms-auto"
+        (click)="closeRequested.emit()"
+        aria-label="Navigation schließen"
+      >
+        <mat-icon svgIcon="x" />
+      </button>
+    }
+  </div>
+
+  <nav aria-label="Hauptnavigation">
+    @for (section of sections(); track section.label) {
+      <mat-nav-list>
+        <h3 matSubheader>{{ section.label }}</h3>
+        @for (item of section.items; track item.path) {
+          <a
+            mat-list-item
+            #link="routerLinkActive"
+            [routerLink]="item.path"
+            routerLinkActive
+            ariaCurrentWhenActive="page"
+            [activated]="link.isActive"
+            (click)="navigated.emit()"
+          >
+            <mat-icon matListItemIcon [svgIcon]="item.icon" />
+            <span matListItemTitle>{{ item.label }}</span>
+          </a>
+        }
+      </mat-nav-list>
+    }
+  </nav>
+</div>

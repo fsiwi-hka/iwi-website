@@ -1,0 +1,39 @@
+:80 {
+    encode gzip zstd
+
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "camera=(), microphone=(), geolocation=()"
+        -Server
+    }
+
+    # Backend-API ueber dieselbe Origin -> kein CORS, Token bleibt first-party.
+    # Der Backend-Container heisst in deploy/docker-compose.yml "backend".
+    handle /api/* {
+        reverse_proxy backend:8080
+    }
+
+    handle {
+        root * /usr/share/caddy
+
+        # Gehashte Bundles (main-XXXXXXXX.js, chunk-XXXXXXXX.js, styles-XXXXXXXX.css, media/*-HASH.ttf)
+        # aendern bei jedem Build ihren Namen und duerfen daher unbegrenzt gecacht werden.
+        # Der Hash ist base64url (A-Z, a-z, 0-9, _ und -), bei Kollisionen mit Suffix.
+        @hashed path_regexp -[A-Za-z0-9_-]{8,}\.(js|css|ttf|woff2|png|jpg|jpeg|svg|webp)$
+        header @hashed Cache-Control "public, max-age=31536000, immutable"
+
+        # Ungehashte Assets aus /public (Fonts, Logo) moderat cachen.
+        @assets path /fonts/* /images/* /favicon.ico /favicon.png
+        header @assets Cache-Control "public, max-age=604800"
+
+        # index.html nie cachen, sonst laden Clients nach einem Deploy alte Bundle-Namen.
+        @index path / /index.html
+        header @index Cache-Control "no-store"
+
+        # SPA-Fallback: unbekannte Pfade gehen an den Angular-Router.
+        try_files {path} /index.html
+        file_server
+    }
+}

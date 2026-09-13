@@ -1,0 +1,43 @@
+{
+  "name": "backrooms",
+  "version": "0.1.0",
+  "description": "Backrooms - das CMS der Fachschaft IWI (Angular)",
+  "private": true,
+  "packageManager": "npm@11.13.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "start:api": "ng serve --configuration development-api",
+    "build": "ng build",
+    "build:dev": "ng build --configuration development",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "format": "prettier --write \"src/**/*.{ts,html,scss}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,html,scss}\"",
+    "build-api": "curl -fsS -o swagger.json http://localhost:5200/swagger/v1/swagger.json && npx rimraf projects/api/src/lib && openapi-generator-cli generate --generator-key=fs-erp-api && npx rimraf swagger.json"
+  },
+  "dependencies": {
+    "@angular/cdk": "^22.1.6",
+    "@angular/common": "^22.1.0",
+    "@angular/compiler": "^22.1.0",
+    "@angular/core": "^22.1.0",
+    "@angular/forms": "^22.1.0",
+    "@angular/material": "^22.1.6",
+    "@angular/platform-browser": "^22.1.0",
+    "@angular/router": "^22.1.0",
+    "bootstrap": "^5.3.8",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.1.7",
+    "@angular/cli": "^22.1.7",
+    "@angular/compiler-cli": "^22.1.0",
+    "@openapitools/openapi-generator-cli": "^2.41.0",
+    "jsdom": "^28.0.0",
+    "ng-packagr": "^22.1.0",
+    "prettier": "^3.8.1",
+    "typescript": "~6.0.2",
+    "vitest": "^4.0.8"
+  }
+}

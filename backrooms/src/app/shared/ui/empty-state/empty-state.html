@@ -1,0 +1,12 @@
+<div class="empty-state d-flex flex-column align-items-center text-center gap-2">
+  <div class="empty-state__icon d-flex align-items-center justify-content-center">
+    <mat-icon [svgIcon]="icon()" />
+  </div>
+  <h2 class="empty-state__title mb-0">{{ title() }}</h2>
+  @if (description(); as text) {
+    <p class="empty-state__description muted mb-0">{{ text }}</p>
+  }
+  <div class="empty-state__actions mt-3">
+    <ng-content />
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<app-page-header [title]="title()" backLink="/departments" backLabel="Zurück zur Liste" />
+
+<app-data-state [status]="draft.status()" [error]="draft.error()" (retry)="draft.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <mat-form-field class="w-100">
+          <mat-label>Fachbereich</mat-label>
+          <input
+            matInput
+            type="text"
+            list="position-suggestions"
+            placeholder="z. B. FB Events"
+            [formField]="form.position"
+          />
+          <mat-hint>
+            Muss exakt der Position der Fachbereichsleitung bei den Mitgliedern entsprechen.
+          </mat-hint>
+          <mat-error>{{ errorText(form.position) }}</mat-error>
+        </mat-form-field>
+        <datalist id="position-suggestions">
+          @for (position of positionSuggestions(); track position) {
+            <option [value]="position"></option>
+          }
+        </datalist>
+
+        <fieldset class="border-0 p-0 m-0 mt-3">
+          <legend class="form-legend">Aufgaben</legend>
+
+          @for (task of form.tasks; track $index; let i = $index) {
+            <div class="d-flex align-items-start gap-1">
+              <mat-form-field class="flex-grow-1">
+                <mat-label>Aufgabe {{ i + 1 }}</mat-label>
+                <input matInput type="text" [formField]="task" />
+                <mat-error>{{ errorText(task) }}</mat-error>
+              </mat-form-field>
+              <button
+                matIconButton
+                type="button"
+                class="mt-2"
+                (click)="removeTask(i)"
+                matTooltip="Aufgabe entfernen"
+                aria-label="Aufgabe entfernen"
+              >
+                <mat-icon svgIcon="trash" />
+              </button>
+            </div>
+          }
+
+          @if (form.tasks().touched() && form.tasks().invalid()) {
+            <p class="field-error mb-0">{{ errorText(form.tasks) }}</p>
+          }
+
+          <button matButton="outlined" type="button" class="mt-2" (click)="addTask()">
+            <mat-icon svgIcon="plus" />
+            Aufgabe hinzufügen
+          </button>
+        </fieldset>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <a matButton routerLink="/departments">Abbrechen</a>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

@@ -1,0 +1,10 @@
+:host {
+  display: inline-flex;
+}
+
+// Kompakter als der Material-Standard, die Marken stehen meist in Tabellen.
+mat-chip {
+  --mat-chip-container-height: 26px;
+  --mat-chip-label-text-size: var(--mat-sys-label-small-size);
+  --mat-chip-with-avatar-avatar-size: 0;
+}

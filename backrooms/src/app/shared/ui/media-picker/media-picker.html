@@ -1,0 +1,67 @@
+<div class="media-picker d-flex flex-wrap gap-3">
+  <div [class]="'media-picker__preview media-picker__preview--' + previewMode()">
+    @if (value(); as ref) {
+      @if (showImage()) {
+        <img class="media-picker__img" [src]="ref.url" [alt]="ref.name" />
+      } @else if (showVideo()) {
+        <video class="media-picker__img" [src]="ref.url" muted playsinline></video>
+      } @else {
+        <div class="media-picker__file muted">
+          <mat-icon svgIcon="file" />
+          <span class="text-truncate">{{ ref.name }}</span>
+        </div>
+      }
+    } @else {
+      <div class="media-picker__file muted">
+        <mat-icon svgIcon="upload" />
+        <span>Keine Datei</span>
+      </div>
+    }
+  </div>
+
+  <div class="media-picker__meta d-flex flex-column">
+    @if (value(); as ref) {
+      <span class="media-picker__name text-truncate" [title]="ref.name">{{ ref.name }}</span>
+      <span class="text-sm muted">{{ ref.contentType }} · {{ sizeLabel() }}</span>
+    } @else {
+      <span class="text-sm muted">Noch keine Datei ausgewählt.</span>
+    }
+    @if (hint()) {
+      <span class="text-sm muted">{{ hint() }}</span>
+    }
+
+    <input
+      #fileInput
+      type="file"
+      class="visually-hidden"
+      [id]="inputId"
+      [accept]="accept()"
+      [disabled]="busy()"
+      [attr.aria-label]="label() + ' hochladen'"
+      (change)="onFileSelected($event)"
+    />
+
+    <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+      <button
+        matButton="outlined"
+        type="button"
+        [disabled]="busy()"
+        [attr.aria-busy]="uploading()"
+        (click)="fileInput.click()"
+      >
+        @if (uploading()) {
+          <mat-spinner [diameter]="18" />
+        } @else {
+          <mat-icon svgIcon="upload" />
+        }
+        {{ uploading() ? 'Lädt hoch…' : value() ? 'Ersetzen' : 'Datei wählen' }}
+      </button>
+      @if (value() && !disabled()) {
+        <button matButton type="button" class="media-picker__remove" (click)="clear()">
+          <mat-icon svgIcon="trash" />
+          Entfernen
+        </button>
+      }
+    </div>
+  </div>
+</div>

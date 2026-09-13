@@ -1,0 +1,74 @@
+<app-page-header [title]="title()" backLink="/infoscreen" backLabel="Zurück zur Liste" />
+
+<app-data-state [status]="draft.status()" [error]="draft.error()" (retry)="draft.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <fieldset class="border-0 p-0 m-0">
+          <legend class="form-legend">Medium</legend>
+          <app-media-picker
+            folder="infoscreen"
+            label="Medium"
+            [accept]="accept()"
+            previewMode="contain"
+            hint="Bild (16:9, 1920 × 1080 px) oder Video (MP4/WebM)."
+            [value]="form.media().value()"
+            (valueChange)="onMediaChange($event)"
+          />
+          @if (form.media().touched() && form.media().invalid()) {
+            <p class="field-error mt-1 mb-0">{{ errorText(form.media) }}</p>
+          }
+        </fieldset>
+
+        <div class="row mt-3">
+          <div class="col-12 col-md-5">
+            <mat-form-field class="w-100">
+              <mat-label>Name</mat-label>
+              <input matInput type="text" [formField]="form.name" />
+              <mat-error>{{ errorText(form.name) }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-3">
+            <mat-form-field class="w-100">
+              <mat-label>Typ</mat-label>
+              <mat-select [formField]="form.type">
+                <mat-option value="image">Bild</mat-option>
+                <mat-option value="video">Video</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-4">
+            <mat-form-field class="w-100">
+              <mat-label>Anzeigedauer</mat-label>
+              <input matInput type="number" [formField]="form.durationSeconds" />
+              <span matTextSuffix>Sekunden</span>
+              <mat-error>{{ errorText(form.durationSeconds) }}</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <mat-slide-toggle
+          [checked]="form.active().value()"
+          (change)="form.active().value.set($event.checked)"
+        >
+          Aktiv – wird auf dem Infoscreen abgespielt
+        </mat-slide-toggle>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <a matButton routerLink="/infoscreen">Abbrechen</a>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

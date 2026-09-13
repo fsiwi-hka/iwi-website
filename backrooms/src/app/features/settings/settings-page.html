@@ -1,0 +1,95 @@
+<app-page-header
+  title="Einstellungen"
+  subtitle="Globale Texte und Links der Website (bisher locales/de.json). Nur für Admins."
+/>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <fieldset class="border-0 p-0 m-0">
+          <legend class="form-legend">E-Mail-Adressen</legend>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <mat-form-field class="w-100">
+                <mat-label>Kontakt</mat-label>
+                <input matInput type="email" [formField]="form.contactMail" />
+                <mat-error>{{ errorText(form.contactMail) }}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+              <mat-form-field class="w-100">
+                <mat-label>Sponsoring &amp; Kooperation</mat-label>
+                <input matInput type="email" [formField]="form.sponsoringMail" />
+                <mat-error>{{ errorText(form.sponsoringMail) }}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+              <mat-form-field class="w-100">
+                <mat-label>Förderverein</mat-label>
+                <input matInput type="email" [formField]="form.associationMail" />
+                <mat-error>{{ errorText(form.associationMail) }}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="border-0 p-0 m-0 mt-2">
+          <legend class="form-legend">Links</legend>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <mat-form-field class="w-100">
+                <mat-label>Discord-Einladung</mat-label>
+                <input
+                  matInput
+                  type="url"
+                  placeholder="https://discord.com/invite/…"
+                  [formField]="form.discordUrl"
+                />
+                <mat-error>{{ errorText(form.discordUrl) }}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field class="w-100">
+                <mat-label>Instagram-Profil</mat-label>
+                <input
+                  matInput
+                  type="url"
+                  placeholder="https://www.instagram.com/…"
+                  [formField]="form.instagramUrl"
+                />
+                <mat-error>{{ errorText(form.instagramUrl) }}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </fieldset>
+
+        <mat-form-field class="w-100 mt-2">
+          <mat-label>Sitzungshinweis</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="Mittwochs, 13:00 Uhr, Raum E013"
+            [formField]="form.meetingInfo"
+          />
+          <mat-hint>Wird auf der Fachschaftsseite unter „Mitmachen“ angezeigt.</mat-hint>
+        </mat-form-field>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <button matButton type="button" (click)="discard()">Änderungen verwerfen</button>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

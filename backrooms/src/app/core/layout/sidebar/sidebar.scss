@@ -1,0 +1,47 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-bottom: 1.5rem;
+
+  &__brand {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--mat-sys-outline-variant);
+  }
+
+  &__logo {
+    border-radius: var(--mat-sys-corner-extra-small);
+    background: #fff;
+  }
+
+  &__brand-text {
+    line-height: 1.2;
+    min-width: 0;
+
+    strong {
+      font: var(--mat-sys-title-medium);
+    }
+  }
+
+  &__brand-sub {
+    font: var(--mat-sys-label-small);
+    color: var(--mat-sys-on-surface-variant);
+  }
+
+  // Die Abschnitte sollen als eine Liste wirken, nicht als mehrere Bloecke.
+  mat-nav-list {
+    padding-top: 0;
+  }
+
+  h3[matSubheader] {
+    font: var(--mat-sys-label-small);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--mat-sys-on-surface-variant);
+  }
+}

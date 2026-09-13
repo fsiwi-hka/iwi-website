@@ -1,0 +1,91 @@
+<app-page-header [title]="title()" backLink="/hero-slides" backLabel="Zurück zur Liste" />
+
+<app-data-state [status]="draft.status()" [error]="draft.error()" (retry)="draft.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <mat-form-field class="w-100">
+          <mat-label>Titel</mat-label>
+          <input matInput type="text" [formField]="form.title" />
+          <mat-error>{{ errorText(form.title) }}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+          <mat-label>Untertitel</mat-label>
+          <textarea matInput rows="3" [formField]="form.subtitle"></textarea>
+          <mat-hint>Ein bis zwei Sätze, die unter dem Titel stehen.</mat-hint>
+          <mat-error>{{ errorText(form.subtitle) }}</mat-error>
+        </mat-form-field>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <mat-form-field class="w-100">
+              <mat-label>Button-Text</mat-label>
+              <input matInput type="text" [formField]="form.buttonText" />
+              <mat-error>{{ errorText(form.buttonText) }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field class="w-100">
+              <mat-label>Button-Link</mat-label>
+              <input
+                matInput
+                type="text"
+                placeholder="/orientation/"
+                [formField]="form.buttonLink"
+              />
+              <mat-hint>Interner Pfad der Website oder absolute URL.</mat-hint>
+              <mat-error>{{ errorText(form.buttonLink) }}</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <fieldset class="border-0 p-0 m-0 mt-3">
+          <legend class="form-legend">Hintergrundbild</legend>
+          <app-media-picker
+            folder="hero"
+            label="Hintergrundbild"
+            accept="image/*"
+            hint="Empfohlen: 1920 px Breite, JPG oder WebP, komprimiert."
+            [value]="form.image().value()"
+            (valueChange)="form.image().value.set($event)"
+          />
+          @if (form.image().touched() && form.image().invalid()) {
+            <p class="field-error mt-1 mb-0">{{ errorText(form.image) }}</p>
+          }
+        </fieldset>
+
+        <div class="d-flex flex-column gap-2 mt-4">
+          <mat-checkbox
+            [checked]="form.imageOverlay().value()"
+            (change)="form.imageOverlay().value.set($event.checked)"
+          >
+            Dunkles Overlay über dem Bild (bessere Lesbarkeit des Textes)
+          </mat-checkbox>
+
+          <mat-slide-toggle
+            [checked]="form.active().value()"
+            (change)="form.active().value.set($event.checked)"
+          >
+            Aktiv – wird auf der Startseite angezeigt
+          </mat-slide-toggle>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <a matButton routerLink="/hero-slides">Abbrechen</a>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

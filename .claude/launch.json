@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--prefix", "ui"],
       "port": 3000
+    },
+    {
+      "name": "backrooms-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start", "--prefix", "backrooms"],
+      "port": 4200
     }
   ]
 }

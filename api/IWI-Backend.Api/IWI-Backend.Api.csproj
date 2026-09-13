@@ -9,7 +9,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.12">
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+          <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.12" />
         <PackageReference Include="Netina.Stomp.Client" Version="2.0.5" />
         <PackageReference Include="SwaggerUI.AspNetCore" Version="5.32.6" />
         <PackageReference Include="SwaggerUI.OpenApi" Version="2.5.0" />
@@ -29,6 +34,12 @@
     <ItemGroup>
       <Folder Include="cache\ophase\" />
       <Folder Include="cache\protocolls\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Database\CoreContext.Backrooms.cs">
+        <DependentUpon>CoreContext.cs</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>

@@ -1,0 +1,162 @@
+// Wenige App-Helfer, die weder Bootstrap noch Material abdecken.
+// Layout (Grid, Flex, Abstaende) kommt aus den Bootstrap-Utilities,
+// alles Sichtbare aus Material.
+
+// Bootstrap-Utilities bringen nur statische Farben mit. Die wenigen, die wir
+// nutzen, werden hier an die Material-Tokens gekoppelt, damit sie im Dark Mode
+// mitziehen.
+:root {
+  --bs-body-font-family: var(--mat-sys-body-medium-font);
+  --bs-secondary-color: var(--mat-sys-on-surface-variant);
+  --bs-border-color: var(--mat-sys-outline-variant);
+}
+
+.muted {
+  color: var(--mat-sys-on-surface-variant);
+}
+
+// Ueberschrift einer Feldgruppe (fieldset/legend ausserhalb von mat-form-field).
+.form-legend {
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font: var(--mat-sys-title-small);
+}
+
+// Fehlertext fuer Eingaben, die kein mat-form-field haben (z. B. Datei-Upload).
+.field-error {
+  font: var(--mat-sys-body-small);
+  color: var(--mat-sys-error);
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+// mat-icon mitten im Fliesstext, z. B. hinter einem Link.
+.icon-inline.mat-icon {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.text-sm {
+  font: var(--mat-sys-body-small);
+}
+
+// Inhaltsbreite der Seiten innerhalb der Shell.
+.page {
+  width: 100%;
+  max-width: 1200px;
+}
+
+// Abstand zwischen den Karten einer Seite.
+.page-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+// Tabellen sollen horizontal scrollen statt die Seite zu sprengen.
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--mat-sys-outline-variant);
+  border-radius: var(--mat-sys-corner-medium);
+  background: var(--mat-sys-surface);
+}
+
+// Aktionsspalte einer Tabelle: so schmal wie ihr Inhalt, Buttons in einer Zeile.
+// `td` mit im Selektor, damit die Ausrichtung die Material-Zellenstyles schlaegt.
+td.cell-actions {
+  width: 1%;
+  white-space: nowrap;
+  text-align: right;
+
+  // Links und Buttons stehen sonst 4 px versetzt zueinander.
+  .mat-mdc-button-base {
+    vertical-align: middle;
+  }
+}
+
+// Vorschaubilder in Tabellen.
+.thumb {
+  width: 64px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: var(--mat-sys-corner-extra-small);
+  background: var(--mat-sys-surface-container);
+}
+
+.thumb--contain {
+  object-fit: contain;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--mat-sys-surface-container);
+}
+
+// Statusfarben fuer mat-chip. Material kennt keine semantischen Chip-Varianten,
+// deshalb hier ueber Tokens der jeweiligen Palette.
+// "Erfolg" bewusst ueber ein eigenes Gruen: die Tertiaerfarbe der Marke ist rot
+// und wuerde als Fehler gelesen.
+.chip--success {
+  --mat-chip-elevated-container-color: light-dark(#d7ecdd, #204d33);
+  --mat-chip-label-text-color: light-dark(#0f3d24, #b7e1c6);
+}
+
+.chip--info {
+  --mat-chip-elevated-container-color: var(--mat-sys-secondary-container);
+  --mat-chip-label-text-color: var(--mat-sys-on-secondary-container);
+}
+
+.chip--warning {
+  --mat-chip-elevated-container-color: var(--mat-sys-surface-container-highest);
+  --mat-chip-label-text-color: var(--mat-sys-on-surface);
+}
+
+.chip--danger {
+  --mat-chip-elevated-container-color: var(--mat-sys-error-container);
+  --mat-chip-label-text-color: var(--mat-sys-on-error-container);
+}
+
+// Snackbar-Varianten (Material faerbt Snackbars nicht nach Bedeutung).
+.snackbar--success {
+  --mat-snack-bar-container-color: light-dark(#0f3d24, #b7e1c6);
+  --mat-snack-bar-supporting-text-color: light-dark(#e4f4ea, #0f3d24);
+  --mat-snack-bar-button-color: light-dark(#e4f4ea, #0f3d24);
+}
+
+.snackbar--error {
+  --mat-snack-bar-container-color: var(--mat-sys-error-container);
+  --mat-snack-bar-supporting-text-color: var(--mat-sys-on-error-container);
+  --mat-snack-bar-button-color: var(--mat-sys-on-error-container);
+}
+
+// Drag & Drop beim Sortieren von Listen (CDK).
+.cdk-drag-preview {
+  box-shadow: var(--mat-sys-level3);
+  background: var(--mat-sys-surface);
+  border-radius: var(--mat-sys-corner-extra-small);
+  opacity: 0.95;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.4;
+}
+
+.cdk-drop-list-dragging .cdk-drag:not(.cdk-drag-placeholder) {
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.drag-handle {
+  cursor: grab;
+  color: var(--mat-sys-on-surface-variant);
+
+  &:active {
+    cursor: grabbing;
+  }
+}

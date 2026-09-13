@@ -1,10 +1,12 @@
 using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Controller;
+using IWI_Backend.Api.Database;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.Auth;
 using IWI_Backend.Api.Services.OPhase;
 using IWI_Backend.Api.Services.Raumzeit;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +19,11 @@ builder
     .AddJsonFile($"appsettings.Production.json", true, true)
     .AddEnvironmentVariables();
 
+builder.Services.AddDbContext<CoreContext>(o =>
+    o.UseSqlite(builder.Configuration.GetConnectionString("Sqlite")));
+
 builder.Services.Configure<OPhaseOptions>(builder.Configuration.GetSection("OPhase"));
+builder.Services.Configure<BackroomOptions>(builder.Configuration.GetSection("Backrooms"));
 builder.Services.Configure<WebDavOptions>(builder.Configuration.GetSection("WebDav"));
 builder.Services.Configure<ProtocolOptions>(builder.Configuration.GetSection("Protocols"));
 builder.Services.Configure<MediaOptions>(builder.Configuration.GetSection("Media"));
@@ -106,5 +112,12 @@ app.UseSwaggerUI();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<CoreContext>();
+    await db.Database.MigrateAsync();
+    await db.Database.ExecuteSqlRawAsync("PRAGMA journal_mode=WAL;");
+}
 
 app.Run();

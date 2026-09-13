@@ -1,0 +1,19 @@
+.page-header {
+  &__text {
+    min-width: 0;
+  }
+
+  &__back {
+    // Buendig zum Titel, Material-Buttons bringen eigenes Innenpolster mit.
+    margin-left: -0.75rem;
+  }
+
+  &__subtitle {
+    max-width: 80ch;
+    font: var(--mat-sys-body-medium);
+  }
+
+  &__actions:empty {
+    display: none;
+  }
+}

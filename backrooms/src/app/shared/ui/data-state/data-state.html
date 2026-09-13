@@ -1,0 +1,31 @@
+@switch (status()) {
+  @case ('loading') {
+    <div
+      class="data-state__loading d-flex align-items-center gap-3"
+      role="status"
+      aria-live="polite"
+    >
+      <mat-spinner [diameter]="28" />
+      <span class="muted">{{ loadingLabel() }}</span>
+    </div>
+  }
+  @case ('error') {
+    <div class="data-state__error d-flex flex-wrap align-items-center gap-3" role="alert">
+      <mat-icon svgIcon="alert" />
+      <div class="data-state__error-text">
+        <strong>Laden fehlgeschlagen.</strong>
+        <span>{{ message() }}</span>
+      </div>
+      <button matButton="outlined" class="ms-auto" (click)="retry.emit()">
+        <mat-icon svgIcon="refresh" />
+        Erneut versuchen
+      </button>
+    </div>
+  }
+  @case ('reloading') {
+    <mat-progress-bar class="mb-3" mode="indeterminate" aria-label="Aktualisiere" />
+  }
+}
+@if (showContent()) {
+  <ng-content />
+}

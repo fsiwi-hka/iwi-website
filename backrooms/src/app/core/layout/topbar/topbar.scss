@@ -1,0 +1,49 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  gap: 0.5rem;
+  padding-inline: 0.5rem;
+  background: var(--mat-sys-surface);
+  border-bottom: 1px solid var(--mat-sys-outline-variant);
+
+  &__spacer {
+    flex: 1;
+  }
+
+  &__avatar {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--mat-sys-secondary-container);
+    color: var(--mat-sys-on-secondary-container);
+    font: var(--mat-sys-label-small);
+    font-weight: 600;
+  }
+
+  &__name {
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+
+  &__menu-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    line-height: 1.3;
+    border-bottom: 1px solid var(--mat-sys-outline-variant);
+  }
+
+  &__menu-name {
+    font: var(--mat-sys-body-medium);
+  }
+
+  &__menu-role {
+    font: var(--mat-sys-label-small);
+    color: var(--mat-sys-on-surface-variant);
+  }
+}

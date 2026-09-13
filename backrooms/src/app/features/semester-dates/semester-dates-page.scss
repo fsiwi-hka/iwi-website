@@ -1,0 +1,7 @@
+// Jeder Zeitraum als abgesetzter Block, damit Beginn und Ende zusammen gelesen werden.
+.range {
+  padding: 1rem !important;
+  margin-bottom: 1rem !important;
+  border-radius: var(--mat-sys-corner-medium);
+  background: var(--mat-sys-surface-container-low);
+}

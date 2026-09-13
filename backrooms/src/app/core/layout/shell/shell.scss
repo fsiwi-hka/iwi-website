@@ -1,0 +1,36 @@
+.shell {
+  // Volle Hoehe, damit die Navigation stehen bleibt und nur der Inhalt scrollt.
+  height: 100dvh;
+  background: var(--mat-sys-surface-container-low);
+
+  &__sidenav {
+    width: 264px;
+    max-width: 85vw;
+    border-right: 1px solid var(--mat-sys-outline-variant);
+    background: var(--mat-sys-surface);
+  }
+
+  &__banner {
+    padding: 0.5rem 1rem;
+    // Sekundaerfarbe: ein Hinweis, keine Warnung (tertiaer ist das Rot der Marke).
+    background: var(--mat-sys-secondary-container);
+    color: var(--mat-sys-on-secondary-container);
+    font: var(--mat-sys-label-medium);
+
+    mat-icon {
+      width: 18px;
+      height: 18px;
+      font-size: 18px;
+    }
+  }
+
+  &__main {
+    display: block;
+    padding: 1.5rem 1rem 3rem;
+    outline: none;
+
+    @media (min-width: 768px) {
+      padding: 1.5rem 1.5rem 3rem;
+    }
+  }
+}

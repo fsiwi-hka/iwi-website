@@ -15,6 +15,24 @@ services:
     depends_on:
       - backend
 
+  # Backrooms: das CMS (Angular, statisch per Caddy ausgeliefert). Caddy im
+  # Container proxied /api/* auf "backend", daher kein CORS. Im Nginx Proxy
+  # Manager als eigener Host (z. B. backrooms.iwi-hka.de -> iwi-backrooms:80)
+  # anlegen; lokal erreichbar unter http://127.0.0.1:8081.
+  backrooms:
+    build:
+      context: ../backrooms
+      dockerfile: Dockerfile
+    image: iwi-backrooms:latest
+    container_name: iwi-backrooms
+    restart: always
+    ports:
+      - "127.0.0.1:8081:80"
+    networks:
+      - npm
+    depends_on:
+      - backend
+
   backend:
     build:
       context: ../api
@@ -33,11 +51,14 @@ services:
       - WebDav__Password=${WEBDAV_PASSWORD}
       - Auth__Token=${AUTH_TOKEN}
       - OPhase__CacheDirectory=/home/app/cache/ophase
+      - ConnectionStrings__Sqlite=Data Source=/home/app/state/iwi.db;Default Timeout=30;Foreign Keys=True
+      - Backrooms__DataDirectory=/home/app/backrooms
     user: "1654:1654"
     volumes:
       - media_cache:/home/app/cache
       - instagram_state:/home/app/state
       - instagram_cache:/home/app/instagram-cache
+      - backrooms_data:/home/app/backrooms
     ports:
       - "127.0.0.1:5200:8080"
     networks:
@@ -47,6 +68,7 @@ volumes:
   media_cache:
   instagram_state:
   instagram_cache:
+  backrooms_data:
 
 secrets:
   nextcloud_url:

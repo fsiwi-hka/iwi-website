@@ -1,0 +1,45 @@
+.login {
+  min-height: 100dvh;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at 20% 10%, var(--mat-sys-secondary-container), transparent 45%),
+    radial-gradient(circle at 80% 90%, var(--mat-sys-tertiary-container), transparent 40%),
+    var(--mat-sys-surface-container-low);
+
+  &__card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--mat-sys-surface);
+  }
+
+  &__logo {
+    border-radius: var(--mat-sys-corner-small);
+  }
+
+  &__title {
+    font: var(--mat-sys-headline-small);
+  }
+
+  &__error {
+    padding: 0.75rem 1rem;
+    border-radius: var(--mat-sys-corner-medium);
+    background: var(--mat-sys-error-container);
+    color: var(--mat-sys-on-error-container);
+    font: var(--mat-sys-body-small);
+  }
+
+  &__hint {
+    padding: 0.75rem 1rem;
+    border-radius: var(--mat-sys-corner-medium);
+    background: var(--mat-sys-surface-container);
+    color: var(--mat-sys-on-surface-variant);
+    font: var(--mat-sys-body-small);
+
+    code {
+      padding: 1px 4px;
+      border-radius: 4px;
+      background: var(--mat-sys-surface-container-highest);
+      color: var(--mat-sys-on-surface);
+    }
+  }
+}

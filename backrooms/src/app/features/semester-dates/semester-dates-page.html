@@ -1,0 +1,195 @@
+<app-page-header
+  title="Semestertermine"
+  subtitle="Termine für O-Phase, Vorkurse und Vorlesungszeit sowie die Stundenpläne der O-Phase. Die Website zeigt diese Daten auf mehreren Seiten an."
+/>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <div class="row align-items-start">
+          <div class="col-12 col-md-4">
+            <mat-form-field class="w-100">
+              <mat-label>Semester</mat-label>
+              <input matInput type="text" placeholder="WS26" [formField]="form.semester" />
+              <mat-hint>
+                @if (semesterName(); as name) {
+                  Wird angezeigt als „{{ name }}“
+                } @else {
+                  Kurzform wie „WS26“ oder „SS27“
+                }
+              </mat-hint>
+              <mat-error>{{ errorText(form.semester) }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="muted text-sm mb-0 mt-2">
+              Zuletzt geändert: {{ dateTime(model().changedAt) }}
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <fieldset class="range border-0 p-0 m-0">
+              <legend class="form-legend">Mathe-Vorkurs</legend>
+              <div class="d-flex flex-wrap gap-3">
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Beginn</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="mathePickerStart"
+                    [formField]="form.vorkurse.mathe.beginn"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="mathePickerStart" />
+                  <mat-datepicker #mathePickerStart />
+                </mat-form-field>
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Ende</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="mathePickerEnd"
+                    [formField]="form.vorkurse.mathe.ende"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="mathePickerEnd" />
+                  <mat-datepicker #mathePickerEnd />
+                </mat-form-field>
+              </div>
+              @if (form.vorkurse.mathe().invalid()) {
+                <p class="field-error mb-0">{{ errorText(form.vorkurse.mathe) }}</p>
+              }
+            </fieldset>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <fieldset class="range border-0 p-0 m-0">
+              <legend class="form-legend">Programmiervorkurs</legend>
+              <div class="d-flex flex-wrap gap-3">
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Beginn</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="progPickerStart"
+                    [formField]="form.vorkurse.programmieren.beginn"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="progPickerStart" />
+                  <mat-datepicker #progPickerStart />
+                </mat-form-field>
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Ende</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="progPickerEnd"
+                    [formField]="form.vorkurse.programmieren.ende"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="progPickerEnd" />
+                  <mat-datepicker #progPickerEnd />
+                </mat-form-field>
+              </div>
+              @if (form.vorkurse.programmieren().invalid()) {
+                <p class="field-error mb-0">{{ errorText(form.vorkurse.programmieren) }}</p>
+              }
+            </fieldset>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <fieldset class="range border-0 p-0 m-0">
+              <legend class="form-legend">Orientierungsphase</legend>
+              <div class="d-flex flex-wrap gap-3">
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Beginn</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="ophasePickerStart"
+                    [formField]="form.orientierungsphase.beginn"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="ophasePickerStart" />
+                  <mat-datepicker #ophasePickerStart />
+                </mat-form-field>
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Ende</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="ophasePickerEnd"
+                    [formField]="form.orientierungsphase.ende"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="ophasePickerEnd" />
+                  <mat-datepicker #ophasePickerEnd />
+                </mat-form-field>
+              </div>
+              @if (form.orientierungsphase().invalid()) {
+                <p class="field-error mb-0">{{ errorText(form.orientierungsphase) }}</p>
+              }
+            </fieldset>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <fieldset class="range border-0 p-0 m-0">
+              <legend class="form-legend">Vorlesungszeit</legend>
+              <div class="d-flex flex-wrap gap-3">
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Beginn</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="vlPickerStart"
+                    [formField]="form.vorlesungszeit.beginn"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="vlPickerStart" />
+                  <mat-datepicker #vlPickerStart />
+                </mat-form-field>
+                <mat-form-field class="flex-grow-1">
+                  <mat-label>Ende</mat-label>
+                  <input
+                    matInput
+                    [matDatepicker]="vlPickerEnd"
+                    [formField]="form.vorlesungszeit.ende"
+                  />
+                  <mat-datepicker-toggle matIconSuffix [for]="vlPickerEnd" />
+                  <mat-datepicker #vlPickerEnd />
+                </mat-form-field>
+              </div>
+              @if (form.vorlesungszeit().invalid()) {
+                <p class="field-error mb-0">{{ errorText(form.vorlesungszeit) }}</p>
+              }
+            </fieldset>
+          </div>
+        </div>
+
+        <fieldset class="border-0 p-0 m-0 mt-3">
+          <legend class="form-legend">Stundenpläne der O-Phase</legend>
+          <div class="row">
+            @for (course of courses; track course.value) {
+              <div class="col-12 col-lg-6 mb-3">
+                <p class="text-sm muted mb-1">{{ course.label }}</p>
+                <app-media-picker
+                  folder="timetables"
+                  [label]="'Stundenplan ' + course.label"
+                  accept="image/*"
+                  previewMode="contain"
+                  hint="PNG, wird auf der O-Phase-Seite als Bild angezeigt."
+                  [value]="form.timetables[course.value]().value()"
+                  (valueChange)="form.timetables[course.value]().value.set($event)"
+                />
+              </div>
+            }
+          </div>
+        </fieldset>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <button matButton type="button" (click)="discard()">Änderungen verwerfen</button>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

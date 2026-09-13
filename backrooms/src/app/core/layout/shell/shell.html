@@ -1,0 +1,37 @@
+<mat-sidenav-container class="shell" [hasBackdrop]="!isDesktop()">
+  <mat-sidenav
+    class="shell__sidenav"
+    [mode]="sidenavMode()"
+    [opened]="sidenavOpened()"
+    [disableClose]="isDesktop()"
+    (closedStart)="closeSidenav()"
+  >
+    <app-sidebar
+      [showClose]="!isDesktop()"
+      (navigated)="closeOnMobile()"
+      (closeRequested)="closeSidenav()"
+    />
+  </mat-sidenav>
+
+  <mat-sidenav-content class="shell__content">
+    <app-topbar
+      [user]="user()"
+      [showMenuButton]="!isDesktop()"
+      (toggleNav)="toggleSidenav()"
+      (logout)="logout()"
+    />
+
+    @if (config.useMocks) {
+      <div class="shell__banner d-flex align-items-center gap-2" role="status">
+        <mat-icon svgIcon="info" />
+        <span>Mock-Modus: Daten kommen aus dem Browser (localStorage), nicht vom Backend.</span>
+      </div>
+    }
+
+    <main id="main" class="shell__main" tabindex="-1">
+      <div class="page mx-auto">
+        <router-outlet />
+      </div>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

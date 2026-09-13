@@ -1,0 +1,42 @@
+// Globale Styles der Backrooms.
+//
+// Die Optik kommt aus drei Quellen, in dieser Reihenfolge:
+//   1. Bootstrap (nur Grid + Utilities, eingebunden in angular.json)
+//   2. Angular Material (Theme unten, Komponenten bringen ihre Styles selbst mit)
+//   3. Dieses Verzeichnis (Schrift, Basis-Elemente, wenige App-Helfer)
+//
+// Eigene Button-, Formular- oder Tabellen-Styles gibt es bewusst nicht mehr,
+// dafuer sind die Material-Komponenten da.
+@use '@angular/material' as mat;
+@use 'theme-colors';
+@use 'fonts';
+@use 'base';
+@use 'app';
+
+html {
+  // Material erzeugt mit dem Standard-Theme-Typ `color-scheme` alle Farben als
+  // light-dark(). Damit folgt das CMS ohne weiteren Code der Systemeinstellung.
+  color-scheme: light dark;
+
+  @include mat.theme(
+    (
+      color: (
+        primary: theme-colors.$primary-palette,
+        tertiary: theme-colors.$tertiary-palette,
+      ),
+      typography: (
+        plain-family: (
+          Poppins,
+          system-ui,
+          sans-serif,
+        ),
+        brand-family: (
+          Poppins,
+          system-ui,
+          sans-serif,
+        ),
+      ),
+      density: 0,
+    )
+  );
+}

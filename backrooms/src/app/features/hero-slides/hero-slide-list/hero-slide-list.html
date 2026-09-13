@@ -1,0 +1,139 @@
+<app-page-header
+  title="Startseiten-Slider"
+  subtitle="Die großen Slides auf der Startseite. Die Reihenfolge hier ist die Anzeige-Reihenfolge."
+>
+  <a actions matButton="filled" routerLink="new">
+    <mat-icon svgIcon="plus" />
+    Neuer Slide
+  </a>
+</app-page-header>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  @if (store.items().length === 0) {
+    <app-empty-state
+      title="Noch keine Slides"
+      description="Lege den ersten Slide für die Startseite an."
+      icon="image"
+    >
+      <a matButton="filled" routerLink="new">Neuer Slide</a>
+    </app-empty-state>
+  } @else {
+    <div class="table-scroll mat-elevation-z0">
+      <table
+        mat-table
+        [dataSource]="store.items()"
+        cdkDropList
+        (cdkDropListDropped)="drop($event)"
+        class="w-100"
+      >
+        <ng-container matColumnDef="order">
+          <th mat-header-cell *matHeaderCellDef>Reihenfolge</th>
+          <td mat-cell *matCellDef="let slide; let first = first; let last = last">
+            <div class="d-flex align-items-center">
+              <mat-icon
+                cdkDragHandle
+                class="drag-handle"
+                svgIcon="drag"
+                matTooltip="Zum Sortieren ziehen"
+              />
+              <button
+                matIconButton
+                type="button"
+                (click)="move(slide, -1)"
+                [disabled]="first || runner.isBusy(slide.id)"
+                matTooltip="Nach oben"
+                aria-label="Nach oben verschieben"
+              >
+                <mat-icon svgIcon="arrow-up" />
+              </button>
+              <button
+                matIconButton
+                type="button"
+                (click)="move(slide, 1)"
+                [disabled]="last || runner.isBusy(slide.id)"
+                matTooltip="Nach unten"
+                aria-label="Nach unten verschieben"
+              >
+                <mat-icon svgIcon="arrow-down" />
+              </button>
+            </div>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="image">
+          <th mat-header-cell *matHeaderCellDef>Bild</th>
+          <td mat-cell *matCellDef="let slide">
+            @if (slide.image; as image) {
+              <img class="thumb" [src]="image.url" alt="" />
+            } @else {
+              <span class="muted">–</span>
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef>Titel</th>
+          <td mat-cell *matCellDef="let slide">
+            <div class="fw-medium">{{ slide.title }}</div>
+            <div class="text-sm muted">{{ slide.subtitle }}</div>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="link">
+          <th mat-header-cell *matHeaderCellDef>Link</th>
+          <td mat-cell *matCellDef="let slide">
+            <span class="mono text-sm">{{ slide.buttonLink }}</span>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let slide">
+            <app-status-badge [variant]="slide.active ? 'success' : 'muted'">
+              {{ slide.active ? 'Aktiv' : 'Inaktiv' }}
+            </app-status-badge>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>
+            <span class="visually-hidden">Aktionen</span>
+          </th>
+          <td mat-cell *matCellDef="let slide" class="cell-actions">
+            <button
+              matIconButton
+              type="button"
+              (click)="toggleActive(slide)"
+              [disabled]="runner.isBusy(slide.id)"
+              [matTooltip]="slide.active ? 'Deaktivieren' : 'Aktivieren'"
+              [attr.aria-label]="slide.active ? 'Deaktivieren' : 'Aktivieren'"
+            >
+              <mat-icon [svgIcon]="slide.active ? 'eye-off' : 'eye'" />
+            </button>
+            <a
+              matIconButton
+              [routerLink]="[slide.id]"
+              matTooltip="Bearbeiten"
+              aria-label="Bearbeiten"
+            >
+              <mat-icon svgIcon="edit" />
+            </a>
+            <button
+              matIconButton
+              type="button"
+              (click)="remove(slide)"
+              [disabled]="runner.isBusy(slide.id)"
+              matTooltip="Löschen"
+              aria-label="Löschen"
+            >
+              <mat-icon svgIcon="trash" />
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns" cdkDrag [cdkDragData]="row"></tr>
+      </table>
+    </div>
+  }
+</app-data-state>

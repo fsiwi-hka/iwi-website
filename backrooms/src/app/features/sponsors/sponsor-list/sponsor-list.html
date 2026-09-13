@@ -1,0 +1,153 @@
+<app-page-header
+  title="Sponsoren"
+  subtitle="Logos für das Karussell auf der Startseite und der Sponsoring-Seite."
+>
+  <a actions matButton="filled" routerLink="new">
+    <mat-icon svgIcon="plus" />
+    Neuer Sponsor
+  </a>
+</app-page-header>
+
+<app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
+  @if (store.items().length === 0) {
+    <app-empty-state
+      title="Noch keine Sponsoren"
+      description="Lade das erste Logo hoch."
+      icon="briefcase"
+    >
+      <a matButton="filled" routerLink="new">Neuer Sponsor</a>
+    </app-empty-state>
+  } @else {
+    <div class="table-scroll">
+      <table
+        mat-table
+        [dataSource]="store.items()"
+        cdkDropList
+        (cdkDropListDropped)="drop($event)"
+        class="w-100"
+      >
+        <ng-container matColumnDef="order">
+          <th mat-header-cell *matHeaderCellDef>Reihenfolge</th>
+          <td mat-cell *matCellDef="let sponsor; let first = first; let last = last">
+            <div class="d-flex align-items-center">
+              <mat-icon
+                cdkDragHandle
+                class="drag-handle"
+                svgIcon="drag"
+                matTooltip="Zum Sortieren ziehen"
+              />
+              <button
+                matIconButton
+                type="button"
+                (click)="move(sponsor, -1)"
+                [disabled]="first || runner.isBusy(sponsor.id)"
+                matTooltip="Nach oben"
+                aria-label="Nach oben verschieben"
+              >
+                <mat-icon svgIcon="arrow-up" />
+              </button>
+              <button
+                matIconButton
+                type="button"
+                (click)="move(sponsor, 1)"
+                [disabled]="last || runner.isBusy(sponsor.id)"
+                matTooltip="Nach unten"
+                aria-label="Nach unten verschieben"
+              >
+                <mat-icon svgIcon="arrow-down" />
+              </button>
+            </div>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="logo">
+          <th mat-header-cell *matHeaderCellDef>Logo</th>
+          <td mat-cell *matCellDef="let sponsor">
+            @if (sponsor.logo; as logo) {
+              <img class="thumb thumb--contain" [src]="logo.url" alt="" />
+            } @else {
+              <span class="muted">–</span>
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let sponsor" class="fw-medium">{{ sponsor.name }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="website">
+          <th mat-header-cell *matHeaderCellDef>Website</th>
+          <td mat-cell *matCellDef="let sponsor">
+            @if (sponsor.website) {
+              <a
+                class="d-inline-flex align-items-center gap-1 text-sm"
+                [href]="sponsor.website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ sponsor.website }}
+                <mat-icon class="icon-inline" svgIcon="external" />
+              </a>
+            } @else {
+              <span class="muted">–</span>
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="width">
+          <th mat-header-cell *matHeaderCellDef>Breite</th>
+          <td mat-cell *matCellDef="let sponsor" class="muted">{{ sponsor.width }} px</td>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let sponsor">
+            <app-status-badge [variant]="sponsor.active ? 'success' : 'muted'">
+              {{ sponsor.active ? 'Sichtbar' : 'Ausgeblendet' }}
+            </app-status-badge>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>
+            <span class="visually-hidden">Aktionen</span>
+          </th>
+          <td mat-cell *matCellDef="let sponsor" class="cell-actions">
+            <button
+              matIconButton
+              type="button"
+              (click)="toggleActive(sponsor)"
+              [disabled]="runner.isBusy(sponsor.id)"
+              [matTooltip]="sponsor.active ? 'Ausblenden' : 'Einblenden'"
+              [attr.aria-label]="sponsor.active ? 'Ausblenden' : 'Einblenden'"
+            >
+              <mat-icon [svgIcon]="sponsor.active ? 'eye-off' : 'eye'" />
+            </button>
+            <a
+              matIconButton
+              [routerLink]="[sponsor.id]"
+              matTooltip="Bearbeiten"
+              aria-label="Bearbeiten"
+            >
+              <mat-icon svgIcon="edit" />
+            </a>
+            <button
+              matIconButton
+              type="button"
+              (click)="remove(sponsor)"
+              [disabled]="runner.isBusy(sponsor.id)"
+              matTooltip="Löschen"
+              aria-label="Löschen"
+            >
+              <mat-icon svgIcon="trash" />
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns" cdkDrag [cdkDragData]="row"></tr>
+      </table>
+    </div>
+  }
+</app-data-state>

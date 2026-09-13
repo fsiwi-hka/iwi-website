@@ -1,0 +1,103 @@
+<app-page-header [title]="title()" backLink="/members" backLabel="Zurück zur Liste" />
+
+<app-data-state [status]="draft.status()" [error]="draft.error()" (retry)="draft.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <mat-form-field class="w-100">
+              <mat-label>Position</mat-label>
+              <input
+                matInput
+                type="text"
+                placeholder="z. B. FB Events"
+                [formField]="form.position"
+              />
+              <mat-hint>
+                Für Fachbereichsleitungen muss die Position exakt dem Fachbereich entsprechen.
+              </mat-hint>
+              <mat-error>{{ errorText(form.position) }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-5">
+            <mat-form-field class="w-100">
+              <mat-label>Gruppe</mat-label>
+              <mat-select [formField]="form.group">
+                @for (group of groups; track group.value) {
+                  <mat-option [value]="group.value">{{ group.label }}</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <fieldset class="border-0 p-0 m-0 mt-3">
+          <legend class="form-legend">Personen</legend>
+
+          @if (form.persons().value().length === 0) {
+            <p class="muted text-sm">
+              Keine Person eingetragen – die Position wird als „unbesetzt“ angezeigt.
+            </p>
+          }
+
+          <div class="d-flex flex-column gap-3">
+            @for (person of form.persons; track $index; let i = $index) {
+              <div class="row align-items-start pb-3 border-bottom">
+                <div class="col-12 col-md-5">
+                  <mat-form-field class="w-100">
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" [formField]="person.name" />
+                    <mat-error>{{ errorText(person.name) }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-12 col-md-6">
+                  <app-media-picker
+                    folder="members"
+                    label="Foto"
+                    accept="image/*"
+                    previewMode="avatar"
+                    hint="Quadratisch, mindestens 400 × 400 px."
+                    [value]="person.image().value()"
+                    (valueChange)="person.image().value.set($event)"
+                  />
+                </div>
+                <div class="col-12 col-md-1 d-flex justify-content-md-end">
+                  <button
+                    matIconButton
+                    type="button"
+                    (click)="removePerson(i)"
+                    matTooltip="Person entfernen"
+                    aria-label="Person entfernen"
+                  >
+                    <mat-icon svgIcon="trash" />
+                  </button>
+                </div>
+              </div>
+            }
+          </div>
+
+          <button matButton="outlined" type="button" class="mt-3" (click)="addPerson()">
+            <mat-icon svgIcon="plus" />
+            Person hinzufügen
+          </button>
+        </fieldset>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <a matButton routerLink="/members">Abbrechen</a>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>
