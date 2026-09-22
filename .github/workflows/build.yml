@@ -1,25 +1,73 @@
+name: Build
 
-name: Build Site
+# Reiner Build-Check: prueft, ob Frontend und Backend durchbauen, und rollt
+# nichts aus. Das Deployment macht ausschliesslich main.yml.
+#
+# Beide Jobs laufen unabhaengig und parallel, damit am Pull Request direkt
+# sichtbar ist, welche Haelfte kaputt ist.
+on:
+  pull_request:
+  workflow_dispatch:
 
-on: [pull_request]
-  
+# Bei mehreren Pushes auf denselben Pull Request zaehlt nur der letzte Build.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-22.04
+  frontend:
+    name: Frontend
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        # Die Next.js-App liegt seit dem Backend-Refactoring unter ui/.
+        working-directory: ui
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18.20.8'
-    - run: ./scripts/decrypt_credentials.sh
-      env:
-        CREDENTIALS_PASSPHRASE: ${{ secrets.CREDENTIALS_PASSPHRASE }}
-    - run: npm install
-    - run: npm run build
-    - name: Publish artifacts from out directory
-      uses: actions/upload-artifact@v4
-      with:
-        name: out
-        path: out
+      - uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          # Gleiche Major-Version wie im Produktions-Image (ui/Dockerfile:
+          # node:20-alpine), damit CI und Deployment nicht auseinanderlaufen.
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: ui/package-lock.json
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Export-Verzeichnis als Artefakt ablegen
+        uses: actions/upload-artifact@v4
+        with:
+          name: out
+          # Pfade in "uses"-Schritten sind immer repo-relativ, working-directory
+          # greift dort nicht.
+          path: ui/out
+          retention-days: 7
+
+  backend:
+    name: Backend
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+    env:
+      DOTNET_NOLOGO: 'true'
+      DOTNET_CLI_TELEMETRY_OPTOUT: 'true'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: .NET einrichten
+        uses: actions/setup-dotnet@v4
+        with:
+          # Gleiche Major-Version wie im Produktions-Image
+          # (api/IWI-Backend.Api/Dockerfile: dotnet/sdk:10.0).
+          dotnet-version: '10.0.x'
+
+      - run: dotnet restore IWI-Backend.sln
+
+      # Release, weil das Dockerfile ebenfalls in Release publiziert.
+      # Testprojekte gibt es derzeit keine, daher kein "dotnet test".
+      - run: dotnet build IWI-Backend.sln -c Release --no-restore

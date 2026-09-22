@@ -1,3 +1,12 @@
+# Zwei Stacks laufen parallel auf demselben Host: Produktion (master) und
+# Develop. Alles, was nur einmal existieren kann - Containername, Image-Tag und
+# der veroeffentlichte Port - haengt deshalb an STACK_SUFFIX. Ohne gesetzte
+# Variablen ergibt sich exakt die alte Produktionskonfiguration, damit ein
+# blosses "docker compose up" lokal weiterhin funktioniert.
+#
+# Der Compose-Projektname (COMPOSE_PROJECT_NAME) trennt zusaetzlich Netzwerke
+# und Volumes und wird vom Deploy-Workflow gesetzt.
+
 services:
   web:
     build:
@@ -5,11 +14,17 @@ services:
       dockerfile: Dockerfile
       secrets:
         - nextcloud_url
-    image: iwi-website:latest
-    container_name: iwi-website
+    image: iwi-website:${IMAGE_TAG:-latest}
+    container_name: iwi-website${STACK_SUFFIX:-}
     restart: always
+    environment:
+      # Beide Stacks haengen am gemeinsamen npm-Netzwerk und tragen dort
+      # denselben Compose-Alias "backend". Caddy bekommt darum den eindeutigen
+      # Containernamen, sonst landen /api-Anfragen der Produktion unter
+      # Umstaenden beim Develop-Backend.
+      - BACKEND_HOST=iwi-backend${STACK_SUFFIX:-}
     ports:
-      - "127.0.0.1:8080:80"
+      - "127.0.0.1:${WEB_PORT:-8080}:80"
     networks:
       - npm
     depends_on:
@@ -19,8 +34,8 @@ services:
     build:
       context: ../api
       dockerfile: ./IWI-Backend.Api/Dockerfile
-    image: iwi-backend:latest
-    container_name: iwi-backend
+    image: iwi-backend:${IMAGE_TAG:-latest}
+    container_name: iwi-backend${STACK_SUFFIX:-}
     restart: always
     environment:
       - ASPNETCORE_URLS=http://+:8080
@@ -39,7 +54,7 @@ services:
       - instagram_state:/home/app/state
       - instagram_cache:/home/app/instagram-cache
     ports:
-      - "127.0.0.1:5200:8080"
+      - "127.0.0.1:${BACKEND_PORT:-5200}:8080"
     networks:
       - npm
 

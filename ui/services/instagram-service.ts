@@ -44,11 +44,6 @@ class InstagramService extends BaseService {
     getPosts(limit = 5, signal?: AbortSignal): Promise<InstagramFeedDto> {
         return this.get<InstagramFeedDto>(`/insta-posts?limit=${limit}`, signal);
     }
-
-    /** URL zu einem Medium (Bild/Video) – für <img>/<video src>. */
-    getMediaUrl(name: string): string {
-        return this.buildUrl(`/insta-media/${encodeURIComponent(name)}`);
-    }
 }
 
 export default new InstagramService();
