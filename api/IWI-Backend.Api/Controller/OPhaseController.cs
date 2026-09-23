@@ -36,9 +36,10 @@ public class OPhaseController(
         if (!full.StartsWith(root, StringComparison.Ordinal) || !System.IO.File.Exists(full))
             return NotFound();
 
-        const string contentType = "application/octet-stream";
-
-        Response.Headers.CacheControl = "public, max-age=31536000, immutable";
+        // Der Plan aendert sich unter derselben URL, darf also nie ungefragt aus dem
+        // Browser-Cache kommen. "no-cache" erzwingt eine Rueckfrage bei jedem Laden;
+        // PhysicalFile setzt ETag/Last-Modified, unveraendert kommt nur ein 304 zurueck.
+        Response.Headers.CacheControl = "no-cache";
         return PhysicalFile(full, "image/png", enableRangeProcessing: true);
     }
 

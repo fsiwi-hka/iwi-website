@@ -51,7 +51,7 @@ function Index() {
               <i> TBA = to be announced </i>
             </p>
 
-            <img src={OphaseService.getTimetableUrl("I")} alt="Stundenplan" />
+            {info && <img src={OphaseService.getTimetableUrl("I", info.changedAt)} alt="Stundenplan" />}
           </div>
         </div>
       </ResponsiveWrapper>
@@ -67,7 +67,7 @@ function Index() {
               <i> TBA = to be announced </i>
             </p>
 
-            <img src={OphaseService.getTimetableUrl("WI")} alt="Stundenplan" />
+            {info && <img src={OphaseService.getTimetableUrl("WI", info.changedAt)} alt="Stundenplan" />}
           </div>
         </div>
       </ResponsiveWrapper>
