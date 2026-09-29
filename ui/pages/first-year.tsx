@@ -256,7 +256,7 @@ function Index() {
                   <>
                     Wir betreiben eine Cloud, die{" "}
                     <b>wichtige Informationen zum Studium</b> bereitstellt und
-                    natürlich <b>Altklausuren</b> verwaltet. Hierzu werden{" "}
+                    weitere <b>Dokumente</b> verwaltet. Hierzu werden{" "}
                     <b>RZ Zugangsdaten benötigt</b>.
                     <br />
                     <br />
