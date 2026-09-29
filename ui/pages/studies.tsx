@@ -147,6 +147,18 @@ const platforms: StudyCard[] = [
     ],
   },
   {
+    title: "Intranet (WIIB, IIBB, DSCB)",
+    subtitle: "",
+    listElements: ["Internes Tool, nur mit Zertifikat zugänglich"],
+    buttons: [
+      new LinkButton({
+        text: "Intern Öffnen",
+        url: "https://iwi-intranet-cert.h-ka.de/",
+        buttonNewTab: true,
+      }),
+    ],
+  },
+  {
     title: "QIS",
     subtitle: "",
     listElements: ["Prüfungsverwaltung"],
@@ -159,6 +171,30 @@ const platforms: StudyCard[] = [
       new LinkButton({
         scope: "intern",
         url: "https://qis2.hs-karlsruhe.de/",
+        buttonNewTab: true,
+      }),
+    ],
+  },
+  {
+    title: "MFA",
+    subtitle: "Multifaktor Authentifizierung",
+    listElements: ["Internes Tool"],
+    buttons: [
+      new LinkButton({
+        text: "Intern Öffnen",
+        url: "https://mfa.h-ka.de/",
+        buttonNewTab: true,
+      }),
+    ],
+  },
+  {
+    title: "RZ-Passwort ändern",
+    subtitle: "",
+    listElements: ["Internes Tool"],
+    buttons: [
+      new LinkButton({
+        text: "Intern Öffnen",
+        url: "https://ulm.h-ka.de/",
         buttonNewTab: true,
       }),
     ],
