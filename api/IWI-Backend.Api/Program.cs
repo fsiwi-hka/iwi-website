@@ -2,6 +2,7 @@ using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Controller;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.Auth;
+using IWI_Backend.Api.Services.Calendar;
 using IWI_Backend.Api.Services.OPhase;
 using IWI_Backend.Api.Services.Raumzeit;
 using Microsoft.AspNetCore.StaticFiles;
@@ -22,6 +23,7 @@ builder.Services.Configure<WebDavOptions>(builder.Configuration.GetSection("WebD
 builder.Services.Configure<ProtocolOptions>(builder.Configuration.GetSection("Protocols"));
 builder.Services.Configure<MediaOptions>(builder.Configuration.GetSection("Media"));
 builder.Services.Configure<SyncOptions>(builder.Configuration.GetSection("Sync"));
+builder.Services.Configure<CalendarOptions>(builder.Configuration.GetSection("Calendar"));
 builder.Services.Configure<InstagramGraphOptions>(
     builder.Configuration.GetSection("Instagram"));
 
@@ -69,6 +71,10 @@ builder.Services.AddHostedService(sp => sp.GetRequiredService<MediaSyncService>(
 builder.Services.AddHostedService(sp => sp.GetRequiredService<ProtocolSyncService>());
 builder.Services.AddHostedService(sp => sp.GetRequiredService<OPhaseSyncService>());
 
+builder.Services.AddSingleton<CalendarStore>();
+builder.Services.AddSingleton<CalendarSyncService>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<CalendarSyncService>());
+
 builder.Services.AddSingleton(_ =>
 {
     var p = new FileExtensionContentTypeProvider
@@ -91,14 +97,16 @@ builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 app.UseCors();
 
-app.MapGet("/api/health", (MediaStore store, InstagramStore instagram) =>
+app.MapGet("/api/health", (MediaStore store, InstagramStore instagram, CalendarStore calendar) =>
     Results.Ok(new
     {
         status = "ok",
         lastSync = store.LastSync,
         slides = store.Slides.Count,
         instagramLastSync = instagram.LastSync,
-        instagramPosts = instagram.Feed.Data.Count
+        instagramPosts = instagram.Feed.Data.Count,
+        calendarLastSync = calendar.LastSync,
+        calendarEvents = calendar.Events.Count
     }));
 
 app.UseSwagger();

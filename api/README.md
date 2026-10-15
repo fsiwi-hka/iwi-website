@@ -25,6 +25,10 @@ Fällt der Sync aus (WebDAV down), läuft das Backend mit dem letzten Cache weit
 | `GET`  | `/api/config` | effektive Config (Debug/Admin) |
 | `GET`  | `/api/health` | Status + letzter Sync-Zeitpunkt |
 | `POST` | `/api/refresh` | Sync manuell auslösen (optional per `X-Refresh-Token`) |
+| `GET`  | `/api/calendar/events?from=YYYY-MM-DD&to=YYYY-MM-DD` | FS-Termine (Serien aufgelöst), die `[from, to)` überschneiden |
+| `GET`  | `/api/calendar/events/{id}.ics` | einzelner Termin zum Hinzufügen |
+| `GET`  | `/api/calendar.ics` | gefilterter FS-Kalender zum Abonnieren |
+| `GET`  | `/api/calendar/refresh` | Kalender-Sync manuell auslösen (Bearer-Token `Auth:Token`) |
 
 ## Konfiguration
 
@@ -36,7 +40,17 @@ WebDav__Username  = USER
 WebDav__Password  = <App-Passwort>
 Sync__IntervalHours = 6
 Sync__CacheDirectory = /data/cache
+Calendar__ExportUrl = https://cloud.example.com/remote.php/dav/calendars/USER/KALENDER/?export
+Calendar__SyncIntervalMinutes = 15
+Calendar__CacheDirectory = /data/cache/calendar
 ```
+
+**FS-Kalender:** `CalendarSyncService` lädt den ICS-Export des Nextcloud-Kalenders (Login über
+`WebDav__Username`/`WebDav__Password`), wirft Events mit `CLASS:PRIVATE`/`CONFIDENTIAL` und
+Erinnerungen raus und löst Serientermine per [Ical.Net](https://github.com/ical-org/ical.net)
+für `Calendar__PastMonths` (3) bis `Calendar__FutureMonths` (12) auf. Ist `ExportUrl` leer,
+bleibt der Sync aus. Die Export-URL steht in Nextcloud unter Kalender → „…“ → Link kopieren,
+ergänzt um `?export`.
 
 **Credentials nicht committen.** Lokal `dotnet user-secrets`, in Prod Env-Vars / Docker-
 Secrets (BuildKit-Secrets bringen hier nichts, weil die Creds zur *Laufzeit* gebraucht

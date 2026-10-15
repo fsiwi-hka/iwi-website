@@ -45,3 +45,21 @@ public sealed class InstagramGraphOptions
     /// <summary>Anzahl der Posts, die gespiegelt werden.</summary>
     public int PostLimit { get; set; } = 12;
 }
+
+public sealed class CalendarOptions
+{
+    /// <summary>CalDAV-Export-URL, z. B. https://cloud.iwi-hka.de/remote.php/dav/calendars/USER/KALENDER/?export</summary>
+    public string ExportUrl { get; set; } = "";
+    public int SyncIntervalMinutes { get; set; } = 15;
+    public string CacheDirectory { get; set; } = "cache/calendar";
+
+    /// <summary>Expansionsfenster für Serientermine, relativ zum Sync-Zeitpunkt.</summary>
+    public int PastMonths { get; set; } = 3;
+    public int FutureMonths { get; set; } = 12;
+
+    /// <summary>Zeitzone für Floating Times und die Ausgabe.</summary>
+    public string TimeZone { get; set; } = "Europe/Berlin";
+
+    /// <summary>Name des gespiegelten Kalenders beim Abonnieren (X-WR-CALNAME).</summary>
+    public string CalendarName { get; set; } = "Fachschaft IWI";
+}

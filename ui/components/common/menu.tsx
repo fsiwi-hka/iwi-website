@@ -9,6 +9,7 @@ export const mainMenuItems = [
   { title: "Erstsemester", slug: "/first-year" },
   { title: "Fachschaft", slug: "/about/" },
   { title: "Aktuelles", slug: "/news/" },
+  { title: "Termine", slug: "/events/" },
   { title: "Studium", slug: "/studies/" },
   { title: "Kontakt", slug: "/contact/" },
 ];
