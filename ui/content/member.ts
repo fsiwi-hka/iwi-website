@@ -16,13 +16,17 @@ export const members = [
         position: "1. Vorsitz",
         personen: [
             {
-                name: "Ludwig Tschirner",
-                img: "/images/fachschaft/ludwig.jpeg"
+                name: "Stefanie Pfefferkorn",
             }],
     },
     {
         position: "2. Vorsitz",
-        personen: [{ name: "Chris Jemming" }],
+        personen: [
+            {
+                name: "Charlotte Maier",
+                img: "/images/fachschaft/charlie.jpeg"
+            }
+        ],
     },
     {
         position: "1. Finanzer",
@@ -32,15 +36,13 @@ export const members = [
         position: "2. Finanzer",
         personen: [
             {
-                name: "Julius Freudenberger",
-                img: "/images/fachschaft/julius.jpeg"
+                name: "Oliver",
             }
         ],
     },
     {
         position: "Mail Manager:in",
         personen: [
-            { name: "Stefanie Pfefferkorn" },
             { name: "Hannah Caasmann" }
         ],
     },
@@ -63,7 +65,7 @@ export const members = [
         position: "FB Events",
         personen: [
             {
-                name: "Charlie Maier",
+                name: "Charlotte Maier",
                 img: "/images/fachschaft/charlie.jpeg"
             }
         ],
