@@ -25,6 +25,10 @@ public sealed class CalendarEventDto
     [JsonPropertyName("allDay")]
     public bool AllDay { get; set; }
 
+    /// <summary>Instanz eines Serientermins (z. B. die wöchentliche FS-Sitzung).</summary>
+    [JsonPropertyName("recurring")]
+    public bool Recurring { get; set; }
+
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 

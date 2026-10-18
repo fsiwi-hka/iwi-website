@@ -83,6 +83,8 @@ public static class CalendarProcessor
             Uid = ev.Uid ?? "",
             Title = string.IsNullOrWhiteSpace(ev.Summary) ? "(ohne Titel)" : ev.Summary.Trim(),
             AllDay = allDay,
+            // Overrides einzelner Instanzen tragen nur RECURRENCE-ID, gehören aber zur Serie.
+            Recurring = ev.RecurrenceRules.Count > 0 || ev.RecurrenceId != null,
             Location = NullIfEmpty(ev.Location),
             Description = NullIfEmpty(ev.Description),
             Url = ev.Url?.ToString()

@@ -36,7 +36,7 @@ export const members = [
         position: "2. Finanzer",
         personen: [
             {
-                name: "Oliver",
+                name: "Oliver Häßler",
             }
         ],
     },

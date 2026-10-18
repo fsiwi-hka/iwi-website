@@ -8,10 +8,19 @@ export interface CalendarEvent {
     start: string;       // ISO mit Offset, bei allDay reines Datum "2026-11-04"
     end: string;         // bei allDay exklusiv (wie in iCal)
     allDay: boolean;
+    recurring: boolean;  // Instanz eines Serientermins
     location: string | null;
     description: string | null;
     url: string | null;
 }
+
+export interface CalendarTeaser {
+    meeting: CalendarEvent | null;  // naechste FS-Sitzung
+    others: CalendarEvent[];
+}
+
+/* Erkennt die FS-Sitzung im Kalender ("Fachschaftssitzung", "FS-Sitzung", ...). */
+const MEETING_TITLE = /sitzung/i;
 
 class CalendarService extends BaseService {
     constructor() {
@@ -23,22 +32,24 @@ class CalendarService extends BaseService {
         return this.get<CalendarEvent[]>(`/events?${new URLSearchParams({from, to})}`, signal);
     }
 
-    /* Naechste Termine fuer den Teaser. Serien (z. B. die woechentliche FS-Sitzung)
-     * tauchen nur mit ihrem naechsten Termin auf, damit Einzelevents nicht untergehen. */
-    async getUpcoming(count: number, signal?: AbortSignal): Promise<CalendarEvent[]> {
+    /* Startseiten-Teaser: die naechste FS-Sitzung separat, daneben die uebrigen Termine.
+     * Serien tauchen dort nur mit ihrem naechsten Termin auf, damit Einzelevents nicht untergehen. */
+    async getTeaser(count: number, signal?: AbortSignal): Promise<CalendarTeaser> {
         const today = todayKey();
         const events = await this.getEvents(today, addDays(today, 92), signal);
         const now = Date.now();
-        const seen = new Set<string>();
-        const result: CalendarEvent[] = [];
-        for (const e of events) {
-            if (e.allDay ? e.end <= today : new Date(e.end).getTime() <= now) continue;
+        const upcoming = events.filter((e) => (e.allDay ? e.end > today : new Date(e.end).getTime() > now));
+
+        const meeting = upcoming.find((e) => e.recurring && MEETING_TITLE.test(e.title)) ?? null;
+        const seen = new Set<string>(meeting ? [meeting.uid] : []);
+        const others: CalendarEvent[] = [];
+        for (const e of upcoming) {
             if (seen.has(e.uid)) continue;
             seen.add(e.uid);
-            result.push(e);
-            if (result.length === count) break;
+            others.push(e);
+            if (others.length === count) break;
         }
-        return result;
+        return {meeting, others};
     }
 
     getEventIcsUrl(id: string): string {
