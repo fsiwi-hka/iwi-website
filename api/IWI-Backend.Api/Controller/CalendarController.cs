@@ -54,15 +54,12 @@ public class CalendarController(
         return File(Encoding.UTF8.GetBytes(ics), IcsContentType, $"{SafeFileName(ev.Title)}.ics");
     }
 
-    /// <summary>Gefilterter Kalender zum Abonnieren.</summary>
-    [HttpGet("/api/calendar.ics")]
-    public IActionResult CalendarIcs()
+    /// <summary>Öffentlicher Nextcloud-Link zum Abonnieren, null wenn keiner konfiguriert ist.</summary>
+    [HttpGet("subscription")]
+    public IActionResult Subscription()
     {
-        var ics = store.Ics;
-        if (ics == null) return NotFound();
-
         Response.Headers.CacheControl = "public, max-age=300";
-        return Content(ics, IcsContentType);
+        return Ok(new { url = opt.Value.EffectiveSubscribeUrl });
     }
 
     [Authorize]

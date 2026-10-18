@@ -23,29 +23,32 @@ class CalendarService extends BaseService {
         return this.get<CalendarEvent[]>(`/events?${new URLSearchParams({from, to})}`, signal);
     }
 
+    /* Naechste Termine fuer den Teaser. Serien (z. B. die woechentliche FS-Sitzung)
+     * tauchen nur mit ihrem naechsten Termin auf, damit Einzelevents nicht untergehen. */
     async getUpcoming(count: number, signal?: AbortSignal): Promise<CalendarEvent[]> {
         const today = todayKey();
         const events = await this.getEvents(today, addDays(today, 92), signal);
         const now = Date.now();
-        return events
-            .filter((e) => (e.allDay ? e.end > today : new Date(e.end).getTime() > now))
-            .slice(0, count);
+        const seen = new Set<string>();
+        const result: CalendarEvent[] = [];
+        for (const e of events) {
+            if (e.allDay ? e.end <= today : new Date(e.end).getTime() <= now) continue;
+            if (seen.has(e.uid)) continue;
+            seen.add(e.uid);
+            result.push(e);
+            if (result.length === count) break;
+        }
+        return result;
     }
 
     getEventIcsUrl(id: string): string {
         return `${this.baseUrl}/events/${encodeURIComponent(id)}.ics`;
     }
 
-    /* https-URL des abonnierbaren Kalenders (zum Kopieren). */
-    getSubscribeUrl(): string {
-        const url = `${this.baseUrl}.ics`;
-        if (/^https?:\/\//.test(url)) return url;
-        return typeof window === "undefined" ? url : `${window.location.origin}${url}`;
-    }
-
-    /* webcal:// oeffnet direkt die Kalender-App (iOS/macOS/Outlook/Thunderbird). */
-    getWebcalUrl(): string {
-        return this.getSubscribeUrl().replace(/^https?:\/\//, "webcal://");
+    /* Oeffentlicher Nextcloud-Link zum Abonnieren (kommt aus der Backend-Config), null wenn keiner gesetzt ist. */
+    async getSubscribeUrl(signal?: AbortSignal): Promise<string | null> {
+        const {url} = await this.get<{ url: string | null }>("/subscription", signal);
+        return url;
     }
 }
 

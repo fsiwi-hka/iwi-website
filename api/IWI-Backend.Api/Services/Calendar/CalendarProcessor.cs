@@ -17,25 +17,13 @@ public static class CalendarProcessor
     private static readonly HashSet<string> HiddenClasses = new(StringComparer.OrdinalIgnoreCase)
         { "PRIVATE", "CONFIDENTIAL" };
 
-    public sealed record Result(string PublicIcs, List<CalendarEventDto> Events);
-
-    public static Result Process(string ics, DateTime windowStartUtc, DateTime windowEndUtc, TimeZoneInfo tz,
-        string calendarName)
+    public static List<CalendarEventDto> Process(string ics, DateTime windowStartUtc, DateTime windowEndUtc,
+        TimeZoneInfo tz)
     {
         var calendar = Ical.Net.Calendar.Load(ics) ?? throw new FormatException("ICS konnte nicht geparst werden.");
 
         RemoveHiddenEvents(calendar);
-
-        // Abonnenten sollen nicht von unseren Erinnerungen geweckt werden.
-        foreach (var ev in calendar.Events)
-            ev.Alarms.Clear();
-
-        calendar.Properties.Set("X-WR-CALNAME", calendarName);
-
-        var publicIcs = new CalendarSerializer().SerializeToString(calendar) ?? "";
-        var events = Expand(calendar, windowStartUtc, windowEndUtc, tz);
-
-        return new Result(publicIcs, events);
+        return Expand(calendar, windowStartUtc, windowEndUtc, tz);
     }
 
     /// <summary>

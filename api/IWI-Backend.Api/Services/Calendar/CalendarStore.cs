@@ -11,14 +11,13 @@ namespace IWI_Backend.Api.Services.Calendar;
 /// </summary>
 public sealed class CalendarStore
 {
-    public const string IcsFileName = "public.ics";
     public const string EventsFileName = "events.json";
 
     private readonly CalendarOptions _opt;
     private readonly ILogger<CalendarStore> _logger;
-    private volatile Snapshot _snapshot = new([], null, null);
+    private volatile Snapshot _snapshot = new([], null);
 
-    private sealed record Snapshot(IReadOnlyList<CalendarEventDto> Events, string? Ics, DateTimeOffset? LastSync);
+    private sealed record Snapshot(IReadOnlyList<CalendarEventDto> Events, DateTimeOffset? LastSync);
 
     public CalendarStore(IOptions<CalendarOptions> opt, ILogger<CalendarStore> logger)
     {
@@ -30,17 +29,15 @@ public sealed class CalendarStore
 
     public TimeZoneInfo TimeZone { get; }
     public IReadOnlyList<CalendarEventDto> Events => _snapshot.Events;
-    public string? Ics => _snapshot.Ics;
     public DateTimeOffset? LastSync => _snapshot.LastSync;
 
     public CalendarEventDto? Find(string id) => _snapshot.Events.FirstOrDefault(e => e.Id == id);
 
-    public async Task UpdateAsync(CalendarProcessor.Result result, CancellationToken ct)
+    public async Task UpdateAsync(List<CalendarEventDto> events, CancellationToken ct)
     {
         Directory.CreateDirectory(_opt.CacheDirectory);
-        await WriteAtomicAsync(IcsFileName, result.PublicIcs, ct);
-        await WriteAtomicAsync(EventsFileName, JsonSerializer.Serialize(result.Events), ct);
-        _snapshot = new Snapshot(result.Events, result.PublicIcs, DateTimeOffset.UtcNow);
+        await WriteAtomicAsync(EventsFileName, JsonSerializer.Serialize(events), ct);
+        _snapshot = new Snapshot(events, DateTimeOffset.UtcNow);
     }
 
     private async Task WriteAtomicAsync(string fileName, string content, CancellationToken ct)
@@ -55,15 +52,13 @@ public sealed class CalendarStore
     {
         try
         {
-            var icsPath = Path.Combine(_opt.CacheDirectory, IcsFileName);
             var eventsPath = Path.Combine(_opt.CacheDirectory, EventsFileName);
-            if (!File.Exists(icsPath) || !File.Exists(eventsPath)) return;
+            if (!File.Exists(eventsPath)) return;
 
             var events = JsonSerializer.Deserialize<List<CalendarEventDto>>(File.ReadAllText(eventsPath)) ?? [];
             foreach (var e in events) CalendarProcessor.RestoreUtc(e, TimeZone);
 
-            _snapshot = new Snapshot(events, File.ReadAllText(icsPath),
-                new DateTimeOffset(File.GetLastWriteTimeUtc(eventsPath), TimeSpan.Zero));
+            _snapshot = new Snapshot(events, new DateTimeOffset(File.GetLastWriteTimeUtc(eventsPath), TimeSpan.Zero));
         }
         catch (Exception ex)
         {

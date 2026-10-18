@@ -27,7 +27,7 @@ Fällt der Sync aus (WebDAV down), läuft das Backend mit dem letzten Cache weit
 | `POST` | `/api/refresh` | Sync manuell auslösen (optional per `X-Refresh-Token`) |
 | `GET`  | `/api/calendar/events?from=YYYY-MM-DD&to=YYYY-MM-DD` | FS-Termine (Serien aufgelöst), die `[from, to)` überschneiden |
 | `GET`  | `/api/calendar/events/{id}.ics` | einzelner Termin zum Hinzufügen |
-| `GET`  | `/api/calendar.ics` | gefilterter FS-Kalender zum Abonnieren |
+| `GET`  | `/api/calendar/subscription` | `{ url }`: öffentlicher Nextcloud-Link zum Abonnieren (oder `null`) |
 | `GET`  | `/api/calendar/refresh` | Kalender-Sync manuell auslösen (Bearer-Token `Auth:Token`) |
 
 ## Konfiguration
@@ -43,14 +43,19 @@ Sync__CacheDirectory = /data/cache
 Calendar__ExportUrl = https://cloud.example.com/remote.php/dav/calendars/USER/KALENDER/?export
 Calendar__SyncIntervalMinutes = 15
 Calendar__CacheDirectory = /data/cache/calendar
+Calendar__SubscribeUrl = https://cloud.example.com/remote.php/dav/public-calendars/TOKEN/?export   # optional
 ```
 
 **FS-Kalender:** `CalendarSyncService` lädt den ICS-Export des Nextcloud-Kalenders (Login über
-`WebDav__Username`/`WebDav__Password`), wirft Events mit `CLASS:PRIVATE`/`CONFIDENTIAL` und
-Erinnerungen raus und löst Serientermine per [Ical.Net](https://github.com/ical-org/ical.net)
+`WebDav__Username`/`WebDav__Password`), wirft Events mit `CLASS:PRIVATE`/`CONFIDENTIAL` raus und löst Serientermine per [Ical.Net](https://github.com/ical-org/ical.net)
 für `Calendar__PastMonths` (3) bis `Calendar__FutureMonths` (12) auf. Ist `ExportUrl` leer,
 bleibt der Sync aus. Die Export-URL steht in Nextcloud unter Kalender → „…“ → Link kopieren,
 ergänzt um `?export`.
+
+Zum Abonnieren erzeugt das Backend keine eigene ICS, sondern verweist auf den öffentlichen
+Nextcloud-Link (Kalender → Teilen → Link teilen, `…/public-calendars/TOKEN/?export`). Der kommt aus
+`Calendar__SubscribeUrl`; ist der leer und `ExportUrl` selbst ein öffentlicher Link, wird der genommen.
+Ohne öffentlichen Link blendet die Website die Abo-Buttons aus.
 
 **Credentials nicht committen.** Lokal `dotnet user-secrets`, in Prod Env-Vars / Docker-
 Secrets (BuildKit-Secrets bringen hier nichts, weil die Creds zur *Laufzeit* gebraucht

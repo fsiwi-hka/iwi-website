@@ -62,11 +62,11 @@ public class CalendarSyncService(
             var ics = await resp.Content.ReadAsStringAsync(ct);
 
             var now = DateTime.UtcNow;
-            var result = CalendarProcessor.Process(ics, now.AddMonths(-o.PastMonths), now.AddMonths(o.FutureMonths),
-                store.TimeZone, o.CalendarName);
+            var events = CalendarProcessor.Process(ics, now.AddMonths(-o.PastMonths), now.AddMonths(o.FutureMonths),
+                store.TimeZone);
 
-            await store.UpdateAsync(result, ct);
-            logger.LogInformation("Kalender gespiegelt: {Count} Termine.", result.Events.Count);
+            await store.UpdateAsync(events, ct);
+            logger.LogInformation("Kalender gespiegelt: {Count} Termine.", events.Count);
         }
         finally
         {

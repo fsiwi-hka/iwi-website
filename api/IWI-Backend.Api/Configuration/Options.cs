@@ -60,6 +60,18 @@ public sealed class CalendarOptions
     /// <summary>Zeitzone für Floating Times und die Ausgabe.</summary>
     public string TimeZone { get; set; } = "Europe/Berlin";
 
-    /// <summary>Name des gespiegelten Kalenders beim Abonnieren (X-WR-CALNAME).</summary>
+    /// <summary>Name im PRODID der Einzeltermin-Downloads.</summary>
     public string CalendarName { get; set; } = "Fachschaft IWI";
+
+    /// <summary>
+    /// Öffentlicher Nextcloud-Link zum Abonnieren (Teilen → Link teilen, z. B.
+    /// https://cloud.iwi-hka.de/remote.php/dav/public-calendars/TOKEN/?export).
+    /// Leer: es wird ExportUrl genommen, sofern das ein öffentlicher Link ist.
+    /// </summary>
+    public string SubscribeUrl { get; set; } = "";
+
+    public string? EffectiveSubscribeUrl =>
+        !string.IsNullOrWhiteSpace(SubscribeUrl) ? SubscribeUrl
+        : ExportUrl.Contains("/public-calendars/", StringComparison.Ordinal) ? ExportUrl
+        : null;
 }
