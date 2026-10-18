@@ -17,7 +17,7 @@ public class ProtocolController(
     
     [Authorize]
     [HttpGet("refresh")]
-    public async Task<IActionResult> Sync()
+    public async Task<IActionResult> RefreshProtocols()
     {
         if (syncService.ExecuteTask == null) return BadRequest();
         
@@ -41,6 +41,8 @@ public class ProtocolController(
     }
     
     [HttpGet("{fileName}")]
+    [ProducesResponseType(typeof(FileStreamResult), StatusCodes.Status200OK, "application/pdf")]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> DownloadProtocolFile(string fileName, CancellationToken ct)
     {
         if (fileName.Contains("..") || fileName.Contains('/') || fileName.Contains('\\'))

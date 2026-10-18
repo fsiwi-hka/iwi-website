@@ -23,7 +23,9 @@ public class InfotainmentController(
         store.Slides.ToList();
 
     [HttpGet("{name}")]
-    public ActionResult<SlideDto> GetSlide([FromRoute] string name)
+    [ProducesResponseType(typeof(PhysicalFileResult), StatusCodes.Status200OK, "application/octet-stream")]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public IActionResult GetSlide([FromRoute] string name)
     {
         if (name.Contains('/') || name.Contains('\\') || name.Contains("..") || Path.IsPathRooted(name))
             return BadRequest();
@@ -41,7 +43,7 @@ public class InfotainmentController(
 
     [Authorize]
     [HttpGet("refresh")]
-    public async Task<IActionResult> Refresh(CancellationToken ct)
+    public async Task<IActionResult> RefreshSlides(CancellationToken ct)
     {
         var token = options.Value.RefreshToken;
         if (!string.IsNullOrEmpty(token) &&

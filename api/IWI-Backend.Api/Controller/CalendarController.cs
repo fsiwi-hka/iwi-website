@@ -22,7 +22,7 @@ public class CalendarController(
 
     /// <summary>Termine, die den Zeitraum [from, to) überschneiden. Ohne Parameter alle gecachten.</summary>
     [HttpGet("events")]
-    public ActionResult<IEnumerable<CalendarEventDto>> Events([FromQuery] string? from, [FromQuery] string? to)
+    public ActionResult<IEnumerable<CalendarEventDto>> GetCalendarEvents([FromQuery] string? from, [FromQuery] string? to)
     {
         DateTime? fromUtc = null, toUtc = null;
         if (from != null)
@@ -45,7 +45,9 @@ public class CalendarController(
     }
 
     [HttpGet("events/{id}.ics")]
-    public IActionResult EventIcs(string id)
+    [ProducesResponseType(typeof(FileContentResult), StatusCodes.Status200OK, "text/calendar")]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public IActionResult GetCalendarEventIcs(string id)
     {
         var ev = store.Find(id);
         if (ev == null) return NotFound();
@@ -56,15 +58,15 @@ public class CalendarController(
 
     /// <summary>Öffentlicher Nextcloud-Link zum Abonnieren, null wenn keiner konfiguriert ist.</summary>
     [HttpGet("subscription")]
-    public IActionResult Subscription()
+    public ActionResult<CalendarSubscriptionDto> GetCalendarSubscription()
     {
         Response.Headers.CacheControl = "public, max-age=300";
-        return Ok(new { url = opt.Value.EffectiveSubscribeUrl });
+        return Ok(new CalendarSubscriptionDto(opt.Value.EffectiveSubscribeUrl));
     }
 
     [Authorize]
     [HttpGet("refresh")]
-    public async Task<IActionResult> Refresh()
+    public async Task<IActionResult> RefreshCalendar()
     {
         try
         {

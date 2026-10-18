@@ -45,3 +45,7 @@ public sealed class CalendarEventDto
     [JsonIgnore]
     public DateTime EndUtc { get; set; }
 }
+
+/// <summary>Öffentlicher Nextcloud-Link zum Abonnieren, null wenn keiner konfiguriert ist.</summary>
+public sealed record CalendarSubscriptionDto(
+    [property: JsonPropertyName("url")] string? Url);

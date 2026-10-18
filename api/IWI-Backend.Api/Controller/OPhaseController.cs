@@ -18,14 +18,16 @@ public class OPhaseController(
 {
 
     [HttpGet]
-    public async Task<ActionResult<OPhaseInfoDto>> OPhaseInfos(CancellationToken ct)
+    public async Task<ActionResult<OPhaseInfoDto>> GetOPhaseInfo(CancellationToken ct)
     {
         var infos = await syncService.ReadOptionsFileAsync(ct);
         return Ok(infos);
     }
 
     [HttpGet("timetable")]
-    public async Task<IActionResult> OPhaseTimetable([FromQuery] string course)
+    [ProducesResponseType(typeof(PhysicalFileResult), StatusCodes.Status200OK, "image/png")]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetOPhaseTimetable([FromQuery] string course)
     {
 
         var cacheDir = opt.Value.CacheDirectory;

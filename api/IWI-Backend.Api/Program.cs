@@ -4,7 +4,10 @@ using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.Auth;
 using IWI_Backend.Api.Services.Calendar;
 using IWI_Backend.Api.Services.OPhase;
+using IWI_Backend.Api.Services.OpenApi;
 using IWI_Backend.Api.Services.Raumzeit;
+using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.OpenApi;
 
@@ -32,6 +35,14 @@ builder.Services.AddHttpClient<WebDavClient>(c => c.Timeout = TimeSpan.FromMinut
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
 {
+    // Sprechende, eindeutige operationIds ("GetCalendarEvents" statt "apiCalendarEventsGet").
+    // Daraus entstehen die Methodennamen im generierten Angular-Client (ui-angular/projects/api).
+    o.CustomOperationIds(api =>
+        api.ActionDescriptor.EndpointMetadata.OfType<IEndpointNameMetadata>().FirstOrDefault()?.EndpointName
+        ?? (api.ActionDescriptor is ControllerActionDescriptor action ? action.ActionName : null));
+    o.SupportNonNullableReferenceTypes();
+    o.SchemaFilter<RequiredPropertiesSchemaFilter>();
+
     o.AddSecurityDefinition(FixedTokenHandler.SchemeName, new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.Http,
@@ -90,7 +101,9 @@ builder.Services.AddSingleton(_ =>
 
 var corsOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? [];
 builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
-    p.WithOrigins(corsOrigins).AllowAnyHeader().AllowAnyMethod()));
+    p.WithOrigins(corsOrigins).AllowAnyHeader().AllowAnyMethod()
+        // Die News-Seite liest die Gesamtzahl der Posts fuers Blaettern aus diesem Header.
+        .WithExposedHeaders("X-Total-Count")));
 
 builder.Services.AddHttpContextAccessor();
 
@@ -107,7 +120,9 @@ app.MapGet("/api/health", (MediaStore store, InstagramStore instagram, CalendarS
         instagramPosts = instagram.Feed.Data.Count,
         calendarLastSync = calendar.LastSync,
         calendarEvents = calendar.Events.Count
-    }));
+    }))
+    .WithName("GetHealth")
+    .WithTags("Health");
 
 app.UseSwagger();
 app.UseSwaggerUI();
