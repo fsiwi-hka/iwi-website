@@ -1,7 +1,6 @@
+// Inline statt Flexbox: bricht der Text um, bleibt der Pfeil am letzten Wort haengen.
 :host {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
+  display: inline-block;
   max-width: max-content;
   color: inherit;
   text-decoration: none;
@@ -17,5 +16,7 @@
 }
 
 .iwi-arrow-link__arrow {
+  margin-left: 0.25rem;
+  vertical-align: -0.2em;
   transition: transform 300ms ease;
 }

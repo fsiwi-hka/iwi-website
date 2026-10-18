@@ -4,8 +4,23 @@
     {
       "name": "ui-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "ui"],
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "ui"
+      ],
       "port": 3000
+    },
+    {
+      "name": "ui-angular-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "start",
+        "--prefix",
+        "ui-angular"
+      ],
+      "port": 4200
     }
   ]
 }

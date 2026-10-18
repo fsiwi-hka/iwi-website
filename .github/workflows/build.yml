@@ -47,6 +47,31 @@ jobs:
           path: ui/out
           retention-days: 7
 
+  frontend-angular:
+    name: Frontend (Angular)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ui-angular
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          # Gleiche Major-Version wie im Produktions-Image (ui-angular/Dockerfile).
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: ui-angular/package-lock.json
+
+      - run: npm ci --ignore-scripts
+
+      - run: npm run format:check
+
+      - run: npm test
+
+      - run: npm run build
+
   backend:
     name: Backend
     runs-on: ubuntu-latest

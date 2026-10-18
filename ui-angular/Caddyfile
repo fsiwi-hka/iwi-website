@@ -1,0 +1,44 @@
+:80 {
+    encode gzip zstd
+
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        -Server
+    }
+
+    @erstiinfos path /erstiinfos /erstiinfos/
+    redir @erstiinfos /first-year permanent
+
+    handle /api/* {
+        reverse_proxy {$BACKEND_HOST:backend}:8080
+    }
+
+    handle {
+        root * /usr/share/caddy
+        # Jede Route liegt vorgerendert als <route>/index.html vor.
+        try_files {path} {path}/index.html =404
+        file_server
+
+        # Die Bundles tragen einen Hash im Namen und aendern sich nie unter derselben URL.
+        @hashed path_regexp hashed ^/(main|chunk|polyfills|styles)-[A-Za-z0-9_-]+\.(js|css)$
+        header @hashed Cache-Control "public, max-age=31536000, immutable"
+
+        # HTML immer frisch, sonst sieht man nach einem Deploy alte Seiten mit
+        # Verweisen auf geloeschte Bundles.
+        @html path / *.html */
+        header @html Cache-Control "no-cache"
+    }
+
+    handle_errors {
+        @404 expression {err.status_code} == 404
+        handle @404 {
+            rewrite * /404/index.html
+            file_server {
+                status 404
+            }
+        }
+        respond "{err.status_code} {err.status_text}"
+    }
+}
