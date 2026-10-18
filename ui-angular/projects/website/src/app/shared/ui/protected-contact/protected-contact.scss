@@ -1,0 +1,10 @@
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.reversed {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}

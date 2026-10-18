@@ -1,0 +1,31 @@
+<nav class="pager" [attr.aria-label]="label()">
+  <button
+    iwiIconButton="chevron-left"
+    variant="blue"
+    label="Vorherige Seite"
+    [disabled]="page() <= 0"
+    (click)="go(page() - 1)"
+  ></button>
+  @for (item of items(); track item.kind === 'page' ? item.page : item.key) {
+    @if (item.kind === 'page') {
+      <button
+        type="button"
+        class="pager__page"
+        [class.pager__page--active]="item.page === page()"
+        [attr.aria-current]="item.page === page() ? 'page' : null"
+        (click)="go(item.page)"
+      >
+        {{ item.page + 1 }}
+      </button>
+    } @else {
+      <span class="pager__gap" aria-hidden="true">…</span>
+    }
+  }
+  <button
+    iwiIconButton="chevron-right"
+    variant="blue"
+    label="Nächste Seite"
+    [disabled]="page() >= pageCount() - 1"
+    (click)="go(page() + 1)"
+  ></button>
+</nav>

@@ -1,0 +1,119 @@
+.contact-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.contact-line__icon {
+  margin-top: 0.1rem;
+  color: var(--iwi-blue);
+}
+
+.contact-line__link {
+  color: #2563eb;
+
+  &:hover {
+    color: #1e40af;
+  }
+}
+
+.block-card__icon {
+  margin-bottom: 1rem;
+  color: var(--iwi-blue);
+}
+
+.block-card__description {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.block-card__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--iwi-petrol);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.block-card__arrow,
+.cooperation__arrow {
+  transition: transform 300ms ease;
+}
+
+.block-card:hover .block-card__arrow,
+.cooperation__link:hover .cooperation__arrow {
+  transform: rotate(45deg);
+}
+
+.cooperation__logo {
+  width: auto;
+  height: 2rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.cooperation__link {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  color: var(--iwi-petrol);
+  font-weight: 500;
+}
+
+.fireside__image {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  border-radius: var(--iwi-radius);
+  object-fit: cover;
+}
+
+.donation__icon {
+  color: var(--iwi-blue-light);
+}
+
+.donation__text {
+  opacity: 0.8;
+}
+
+.donation__mail {
+  text-decoration: underline;
+  hyphens: none;
+}
+
+.bank__icon {
+  color: var(--iwi-blue);
+}
+
+.bank {
+  margin: 0;
+}
+
+.bank__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.75rem;
+
+  & + & {
+    border-top: 1px solid var(--iwi-divider);
+  }
+
+  dt {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--iwi-petrol);
+    font-weight: 500;
+    hyphens: none;
+    word-break: break-all;
+  }
+}

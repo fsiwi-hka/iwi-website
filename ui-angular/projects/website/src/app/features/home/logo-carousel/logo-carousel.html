@@ -1,0 +1,20 @@
+<div class="carousel" role="region" aria-label="Unsere Sponsoren und Partner">
+  <ul
+    class="carousel__track"
+    [style.--carousel-shift]="shift()"
+    [style.--carousel-duration]="speed() + 's'"
+  >
+    @for (copy of copies; track copy) {
+      @for (logo of logos(); track logo.url) {
+        <li [attr.aria-hidden]="copy > 0 ? 'true' : null" [style.margin-right.px]="gap">
+          <img
+            [src]="logo.url"
+            [alt]="copy === 0 ? logo.name : ''"
+            [width]="logo.width"
+            loading="lazy"
+          />
+        </li>
+      }
+    }
+  </ul>
+</div>

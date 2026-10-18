@@ -1,0 +1,15 @@
+<ul class="event-list">
+  @for (event of events(); track event.id) {
+    <li>
+      <button type="button" class="event-list__item" (click)="opened.emit(event)">
+        <span class="event-list__title">{{ event.title }}</span>
+        <span class="event-list__meta">
+          {{ range(event) }}
+          @if (event.location) {
+            · {{ event.location }}
+          }
+        </span>
+      </button>
+    </li>
+  }
+</ul>

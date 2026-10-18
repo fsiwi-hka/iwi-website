@@ -1,0 +1,39 @@
+<div class="event-dialog">
+  <button
+    iwiIconButton="close"
+    label="Schließen"
+    round
+    class="event-dialog__close"
+    mat-dialog-close
+  ></button>
+
+  <h3 id="event-dialog-title" class="event-dialog__title">{{ event.title }}</h3>
+
+  <div class="event-dialog__facts">
+    <span><iwi-icon name="clock" [size]="1.35" />{{ range }}</span>
+    @if (event.location; as location) {
+      <span><iwi-icon name="map-marker" [size]="1.35" />{{ location }}</span>
+    }
+  </div>
+
+  @if (description; as html) {
+    <p class="event-dialog__description" [innerHTML]="html"></p>
+  }
+
+  <div class="event-dialog__actions">
+    <a iwiButton [href]="icsUrl" download [icon]="null" leadingIcon="calendar-plus"
+      >Zu meinem Kalender hinzufügen</a
+    >
+    @if (event.url; as url) {
+      <a
+        iwiButton="outline"
+        [href]="url"
+        target="_blank"
+        rel="noopener noreferrer"
+        [icon]="null"
+        leadingIcon="open-in-new"
+        >Mehr Infos</a
+      >
+    }
+  </div>
+</div>

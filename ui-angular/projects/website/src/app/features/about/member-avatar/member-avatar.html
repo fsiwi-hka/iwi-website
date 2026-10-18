@@ -1,0 +1,29 @@
+@switch (mode()) {
+  @case ('single') {
+    <img class="avatar__image" [src]="singleImage()" [alt]="singleAlt()" loading="lazy" />
+  }
+  @case ('zoomed') {
+    <button
+      type="button"
+      class="avatar__button"
+      title="Zurück zu beiden Personen"
+      (click)="select(null)"
+    >
+      <img class="avatar__image" [src]="image(zoomed())" [alt]="name(zoomed())" />
+    </button>
+  }
+  @case ('pair') {
+    <div class="avatar__pair">
+      @for (person of people(); track $index) {
+        <button
+          type="button"
+          class="avatar__button avatar__button--half"
+          [title]="name(person) + ' vergrößern'"
+          (click)="select($index)"
+        >
+          <img class="avatar__image" [src]="images()[$index]" [alt]="name(person)" loading="lazy" />
+        </button>
+      }
+    </div>
+  }
+}

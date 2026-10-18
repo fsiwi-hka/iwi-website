@@ -1,0 +1,36 @@
+@use 'breakpoints' as bp;
+
+:host {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.download-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: var(--iwi-radius-sm);
+  background: var(--iwi-surface);
+
+  @include bp.up(bp.$md) {
+    flex-direction: row;
+  }
+}
+
+.download-row__text {
+  flex-grow: 1;
+}
+
+.download-row__title {
+  margin: 0;
+  color: var(--iwi-petrol);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.download-row__subtext {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+}

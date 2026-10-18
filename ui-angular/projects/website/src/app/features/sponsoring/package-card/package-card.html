@@ -1,0 +1,21 @@
+<article class="package">
+  <h4 class="package__title" [class.package__title--blue]="tone() === 'blue'">
+    {{ package().title }}
+  </h4>
+  <div class="package__body">
+    <p class="package__lead">
+      @for (line of package().lead; track line; let last = $last) {
+        <iwi-rich-text [text]="line" />
+        @if (!last) {
+          <br />
+        }
+      }
+    </p>
+    <h5>Leistungen</h5>
+    <ul>
+      @for (service of package().services; track service) {
+        <li>{{ service }}</li>
+      }
+    </ul>
+  </div>
+</article>

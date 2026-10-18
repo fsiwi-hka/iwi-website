@@ -1,0 +1,36 @@
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  transition:
+    background-color var(--iwi-transition),
+    border-color var(--iwi-transition);
+}
+
+.copy-button--icon {
+  flex-shrink: 0;
+  padding: 0.5rem;
+  border-radius: var(--iwi-radius-pill);
+  background: transparent;
+  color: var(--iwi-blue);
+
+  &:hover {
+    background: var(--iwi-divider);
+  }
+}
+
+.copy-button--pill {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--iwi-grey-light);
+  border-radius: var(--iwi-radius-pill);
+  background: var(--iwi-white);
+  color: var(--iwi-petrol-pale);
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  &:hover {
+    border-color: var(--iwi-grey-medium);
+  }
+}

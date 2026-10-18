@@ -1,0 +1,18 @@
+<header class="header">
+  <div>
+    <p class="header__eyebrow">Schwarzes Brett</p>
+    <h1 class="header__title">{{ board().title }}</h1>
+  </div>
+  <span class="header__badge">{{ board().shortName }}</span>
+</header>
+<div class="posts">
+  @for (post of board().posts; track post.id) {
+    <article class="post">
+      <div class="post__head">
+        <h2 class="post__title">{{ post.title }}</h2>
+        <p class="post__date">{{ post.date }}</p>
+      </div>
+      <p class="post__preview">{{ post.preview }}</p>
+    </article>
+  }
+</div>

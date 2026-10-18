@@ -1,0 +1,34 @@
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-list__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--iwi-grey-light);
+  border-radius: var(--iwi-radius-xl);
+  background: var(--iwi-white);
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--iwi-grey-medium);
+  }
+}
+
+.event-list__title {
+  color: var(--iwi-petrol-pale);
+  font-weight: 600;
+}
+
+.event-list__meta {
+  color: var(--iwi-grey);
+  font-size: 0.875rem;
+}

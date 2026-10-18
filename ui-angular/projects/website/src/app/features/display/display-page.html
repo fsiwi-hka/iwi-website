@@ -1,0 +1,30 @@
+@if (current(); as slide) {
+  <!-- Der Schluessel wechselt mit jeder Folie: Medium und Fortschrittsbalken werden
+       neu erzeugt, damit Video und Animation von vorn beginnen. -->
+  @for (key of [progressKey()]; track key) {
+    @if (slide.type === 'video') {
+      <video
+        class="media"
+        [src]="currentUrl()"
+        autoplay
+        muted
+        playsinline
+        (ended)="advance()"
+      ></video>
+    } @else {
+      <img class="media" [src]="currentUrl()" [alt]="slide.alt" draggable="false" />
+    }
+
+    <div class="progress">
+      <div class="progress__bar" [style.animation-duration.s]="slide.duration"></div>
+    </div>
+  }
+
+  <div class="dots" aria-hidden="true">
+    @for (item of slides(); track $index) {
+      <span class="dot" [class.dot--active]="$index === index() % slides().length"></span>
+    }
+  </div>
+} @else {
+  <div class="placeholder">Lade Inhalte …</div>
+}

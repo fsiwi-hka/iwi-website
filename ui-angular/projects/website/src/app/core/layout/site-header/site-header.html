@@ -1,0 +1,73 @@
+<a class="skip-link visually-hidden-focusable" href="#inhalt">Zum Inhalt springen</a>
+
+<nav class="iwi-container site-header" aria-label="Hauptnavigation">
+  <a routerLink="/" class="site-header__logo">
+    <img src="/assets/iwi-logo.svg" alt="IWI-Logo, zur Startseite" width="160" height="96" />
+  </a>
+
+  <ul class="site-header__nav">
+    @for (item of nav; track item.path) {
+      <li
+        class="site-header__item"
+        routerLinkActive="site-header__item--active"
+        [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+      >
+        <a [routerLink]="item.path">{{ item.title }}</a>
+      </li>
+    }
+  </ul>
+
+  <div class="site-header__actions">
+    <a iwiButton="petrol-pale" [href]="studiBoardUrl" target="_blank" rel="noopener noreferrer"
+      >StudiBoard</a
+    >
+    <a iwiButton="blue" routerLink="/sponsoring">für Unternehmen</a>
+  </div>
+
+  <button
+    iwiIconButton="menu"
+    label="Menü öffnen"
+    class="site-header__menu-toggle"
+    aria-controls="mobile-menu"
+    [attr.aria-expanded]="menuOpen()"
+    (click)="openMenu()"
+  ></button>
+</nav>
+
+@if (menuOpen()) {
+  <div
+    id="mobile-menu"
+    class="mobile-menu"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Menü"
+    cdkTrapFocus
+    [cdkTrapFocusAutoCapture]="true"
+  >
+    <button
+      iwiIconButton="close"
+      label="Menü schließen"
+      class="mobile-menu__close"
+      (click)="closeMenu()"
+    ></button>
+    <ul class="mobile-menu__nav">
+      @for (item of nav; track item.path) {
+        <li>
+          <a
+            [routerLink]="item.path"
+            routerLinkActive="mobile-menu__link--active"
+            [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+            class="mobile-menu__link"
+            >{{ item.title }}</a
+          >
+        </li>
+      }
+    </ul>
+    <div class="mobile-menu__actions">
+      <a iwiButton="petrol-pale" [href]="studiBoardUrl" target="_blank" rel="noopener noreferrer"
+        >StudiBoard</a
+      >
+      <a iwiButton="blue" routerLink="/sponsoring">für Unternehmen</a>
+    </div>
+  </div>
+}

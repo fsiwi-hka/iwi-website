@@ -1,0 +1,34 @@
+.kiwi-runner {
+  width: min(92vw, 672px);
+  padding: 1rem;
+  border-radius: var(--iwi-radius-lg);
+  background: #111827;
+}
+
+.kiwi-runner__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  color: #e5e7eb;
+  font-size: 0.875rem;
+}
+
+.kiwi-runner__close {
+  color: #e5e7eb;
+
+  &:hover {
+    color: var(--iwi-white);
+    background: rgb(255 255 255 / 10%);
+  }
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--iwi-radius);
+  image-rendering: pixelated;
+  touch-action: none;
+}

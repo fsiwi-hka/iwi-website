@@ -1,0 +1,86 @@
+<section class="instagram">
+  <div class="iwi-container instagram__inner">
+    <img class="instagram__shape" src="/images/Shape-2.svg" alt="" aria-hidden="true" />
+    <h2 class="iwi-heading-flush">Die Fachschaft IWI <br />auf Instagram</h2>
+    <p class="instagram__lead">Bleib up to date mit Events, News und vielem mehr!</p>
+
+    @if (posts().length > 0) {
+      <div class="row g-4">
+        @for (view of posts(); track view.post.id) {
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="post">
+              <header class="post__header">
+                @if (avatar(); as picture) {
+                  <img class="post__avatar" [src]="picture" alt="" />
+                } @else {
+                  <span class="post__avatar"></span>
+                }
+                <span class="d-flex flex-column">
+                  <a
+                    class="post__user"
+                    [href]="profileUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >{{ username() }}</a
+                  >
+                  @if (view.date) {
+                    <span class="post__date">{{ view.date }}</span>
+                  }
+                </span>
+                <span class="post__more" aria-hidden="true">···</span>
+              </header>
+
+              <a
+                class="post__media"
+                [href]="view.post.permalink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @if (view.src; as src) {
+                  @if (view.backdrop) {
+                    <img class="post__backdrop" [src]="src" alt="" aria-hidden="true" />
+                  }
+                  <img
+                    class="post__image"
+                    [src]="src"
+                    [alt]="view.alt"
+                    [attr.width]="view.post.width"
+                    [attr.height]="view.post.height"
+                    loading="lazy"
+                  />
+                }
+                @if (view.post.media_type === 'VIDEO') {
+                  <iwi-icon class="post__type" name="play" [size]="1.25" label="Video" />
+                } @else if (view.post.media_type === 'CAROUSEL_ALBUM') {
+                  <iwi-icon class="post__type" name="cards" [size]="1.25" label="Album" />
+                }
+              </a>
+
+              <div class="post__footer">
+                @if (view.post.like_count !== null) {
+                  <p class="post__likes">
+                    {{ view.post.like_count.toLocaleString('de-DE') }} Likes
+                  </p>
+                }
+                @if (view.post.comments_count !== null) {
+                  <a
+                    class="post__comments"
+                    [href]="view.post.permalink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Alle {{ view.post.comments_count.toLocaleString('de-DE') }} Kommentare ansehen
+                  </a>
+                }
+              </div>
+            </article>
+          </div>
+        }
+      </div>
+    } @else if (failed()) {
+      <div class="instagram__error">Instagram Feed konnte nicht geladen werden.</div>
+    } @else {
+      <div class="instagram__loading" aria-busy="true">Instagram-Posts werden geladen …</div>
+    }
+  </div>
+</section>

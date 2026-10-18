@@ -1,0 +1,13 @@
+:host {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: var(--iwi-icon-size);
+  height: var(--iwi-icon-size);
+  line-height: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}

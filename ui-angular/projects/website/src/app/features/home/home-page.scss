@@ -1,0 +1,40 @@
+@use 'breakpoints' as bp;
+
+.intro__media {
+  position: relative;
+}
+
+.intro__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--iwi-radius-xl);
+
+  @include bp.up(bp.$lg) {
+    width: 75%;
+    margin-left: auto;
+  }
+}
+
+.intro__shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 6rem;
+
+  @include bp.up(bp.$lg) {
+    display: block;
+  }
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include bp.up(bp.$md) {
+    justify-content: space-between;
+    padding-left: 2rem;
+  }
+}

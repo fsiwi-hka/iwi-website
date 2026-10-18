@@ -1,0 +1,51 @@
+.event-dialog {
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.event-dialog__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.event-dialog__title {
+  margin: 0 0 1rem;
+  padding-right: 2.5rem;
+  color: var(--iwi-petrol-pale);
+}
+
+.event-dialog__facts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  span {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  iwi-icon {
+    margin-top: 0.1rem;
+  }
+}
+
+.event-dialog__description {
+  word-break: break-word;
+
+  ::ng-deep a {
+    color: var(--iwi-blue);
+    text-decoration: underline;
+  }
+}
+
+.event-dialog__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}

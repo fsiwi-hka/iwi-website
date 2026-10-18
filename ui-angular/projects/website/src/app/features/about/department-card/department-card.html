@@ -1,0 +1,12 @@
+<div class="department__head">
+  <iwi-member-avatar class="department__avatar" [people]="people()" [(selected)]="selected" />
+  <div>
+    <h4 class="m-0">{{ department().position }}</h4>
+    <p class="department__lead">{{ name() }}</p>
+  </div>
+</div>
+<ul>
+  @for (task of department().tasks; track task) {
+    <li>{{ task }}</li>
+  }
+</ul>

@@ -1,0 +1,219 @@
+<iwi-page-header
+  title="Recruiting durch Sponsoring"
+  subtitle="Werden Sie Sponsor oder Kooperationspartner der Fachschaft IWI – Vernetzen Sie sich mit talentierten Studierenden und sichern Sie sich Ihre zukünftigen Fachkräfte!"
+/>
+
+<section class="iwi-container iwi-section">
+  <div class="d-flex flex-column flex-lg-row gap-5 mb-5">
+    <div class="flex-grow-1">
+      <h2 class="iwi-heading-flush">Partner Programm</h2>
+      <p>
+        Wir pflegen viele Partnerschaften mit Unternehmen in der Region, nicht zuletzt durch Alumni,
+        die der Fachschaft über das Studium hinaus treu bleiben. Auch Sie möchten mit der Fachschaft
+        zusammenarbeiten? Sehr gerne!
+      </p>
+      <p>
+        Wir bieten Ihnen vier Kooperations-Bausteine an, die Sie einzeln oder in Kombination
+        umsetzen können. Wir freuen uns auf Ihre Nachricht!
+      </p>
+    </div>
+
+    <div class="d-flex flex-column gap-4 mt-lg-auto">
+      <iwi-card padding="sm">
+        <h4>Sie erreichen uns per Email</h4>
+        <div class="contact-line">
+          <iwi-icon class="contact-line__icon" name="email-fast" />
+          <a class="contact-line__link" [href]="'mailto:' + site.mail.sponsoring">{{
+            site.mail.sponsoring
+          }}</a>
+        </div>
+      </iwi-card>
+      <iwi-card padding="sm">
+        <h4>Ansprechpartner im Fachbereich Sponsoring</h4>
+        <div class="contact-line">
+          <iwi-icon class="contact-line__icon" name="account" />
+          <span>{{ contact }}</span>
+        </div>
+      </iwi-card>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    @for (block of blocks; track block.anchor) {
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a iwiCard class="h-100 block-card" routerLink="." [fragment]="block.anchor">
+          <iwi-icon class="block-card__icon" [name]="block.icon" [size]="2.4" />
+          <h4 class="mb-2">{{ block.title }}</h4>
+          <p class="block-card__description">{{ block.description }}</p>
+          <span class="block-card__more">
+            Mehr erfahren
+            <iwi-icon class="block-card__arrow" name="arrow-top-right" [size]="0.9" />
+          </span>
+        </a>
+      </div>
+    }
+  </div>
+</section>
+
+<section class="iwi-container">
+  <iwi-logo-carousel [logos]="logos" [speed]="50" />
+</section>
+
+<div class="iwi-container iwi-section d-flex flex-column gap-5 mb-5">
+  <section id="o-phase">
+    <h2 class="iwi-heading-flush">O-Phasen Unterstützung</h2>
+    <iwi-info-box icon="heart">
+      Dank unserer Sponsoren können sich die Erstsemesterstudierenden auf eine prall gefüllte
+      Erstitasche freuen. Hiermit bedanken wir uns recht herzlich bei allen Sponsoren, die dies
+      jedes Semester aufs Neue möglich machen!
+    </iwi-info-box>
+
+    <h4 class="mt-5">O-Phasen-Supporter werden</h4>
+    <p>
+      Auch Sie können uns bei der Orientierungsphase unterstützen, die zum Beginn jedes Semesters
+      durchgeführt wird. Dabei gibt es verschiedene Abstufungen:
+    </p>
+    <div class="row g-3 mb-5">
+      @for (item of packages; track item.title; let even = $even) {
+        <div class="col-12 col-sm-6 col-lg-3">
+          <iwi-package-card [package]="item" [tone]="even ? 'petrol-pale' : 'blue'" />
+        </div>
+      }
+    </div>
+
+    <iwi-info-box>
+      Wenn Sie einen Social-Media-Account auf Instagram betreiben, besteht zusätzlich die
+      Möglichkeit, dass wir Sie in einem zentralen Erstitüten-Post taggen.
+    </iwi-info-box>
+  </section>
+
+  <section id="kooperation">
+    <h2 class="iwi-heading-flush">Kooperation</h2>
+    <p>
+      Sind Sie an einer <b>einmaligen oder langfristigen Kooperation</b> interessiert, sind Sie hier
+      richtig. Diese Art der Partnerschaft ist vielseitig denkbar und hängt stark davon ab, wie Sie
+      sich präsentieren möchten. Denkbar sind beispielsweise:
+    </p>
+    <ul>
+      <li>Die Übernahme einer Getränkelieferung pro Semester (mit gebrandeten Etiketten)</li>
+      <li>
+        Die einmalige Finanzierung von Drucksachen (Hoodies, T-Shirts, etc.) für die Fachschaft –
+        mit Ihrem Logo
+      </li>
+      <li>Sachwerte, wie ein Kicker für den Fachschaftsraum</li>
+    </ul>
+    <p>Kommen Sie hier auch gerne mit Ihren eigenen Ideen auf uns zu, wir freuen uns!</p>
+
+    <h4 class="mt-5 mb-3">Aktuelle Kooperationen</h4>
+    <div class="row g-4">
+      @for (cooperation of cooperations; track cooperation.link) {
+        <div class="col-12 col-md-6">
+          <iwi-card padding="lg" class="h-100">
+            <img
+              class="cooperation__logo"
+              [src]="cooperation.logo"
+              [alt]="cooperation.name"
+              loading="lazy"
+            />
+            <p>{{ cooperation.description }}</p>
+            <a
+              class="cooperation__link"
+              [href]="cooperation.link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Zum Kooperationspartner</span>
+              <iwi-icon class="cooperation__arrow" name="arrow-top-right" />
+            </a>
+          </iwi-card>
+        </div>
+      }
+    </div>
+  </section>
+
+  <section id="kaminabend">
+    <h2 class="iwi-heading-flush">Kaminabend</h2>
+    <p>
+      Im Rahmen dieses Bausteins organisieren Sie <b>in Zusammenarbeit mit uns</b> einen Kaminabend,
+      zu dem wir die IWI-Studierendenschaft einladen. Dabei stehen <b>fachliche Themen im Fokus</b>,
+      und Ihre EntwicklerInnen oder ProjektmanagerInnen berichten aus dem <b>Arbeitsalltag</b>. Die
+      Veranstaltung lebt vom Dialog, und oft ergeben sich aus Fragen der Studierenden spannende
+      Diskussionen. Das <b>Networking</b> steht natürlich ebenso im Zentrum, und Informationen zu
+      Praktika oder Einstiegspositionen nach dem Studium können eingebaut werden. Findet die
+      Veranstaltung vor Ort statt, geht der Kaminabend damit einher, dass Sie ein Catering (i. d. R.
+      Pizza) anbieten und (falls möglich) auch die Location stellen.
+    </p>
+
+    <h4 class="mt-5 mb-3">Impressionen von vergangenen Kaminabenden</h4>
+    <div class="row g-3">
+      @for (image of firesideImages; track image) {
+        <div class="col-6 col-lg-3">
+          <img class="fireside__image" [src]="image" alt="Kaminabend" loading="lazy" />
+        </div>
+      }
+    </div>
+  </section>
+
+  <section id="foerderverein">
+    <h2 class="iwi-heading-flush">Unser Förderverein</h2>
+    <iwi-info-box>
+      Alle Pakete, Kooperationen und Spenden werden im Hintergrund über den
+      <b>{{ association.name }}</b>
+      abgewickelt. Verträge und Rechnungen kommen also vom Verein, inhaltlich betreut Sie weiterhin
+      die Fachschaft.
+    </iwi-info-box>
+    <p>
+      Für Sie ändert das nichts am Ablauf: Sie sprechen mit dem Fachbereich Sponsoring, die
+      Abwicklung übernimmt der Verein im Hintergrund. Ansprechperson für Vereinsangelegenheiten ist
+      <b>{{ association.contact }}</b
+      >.
+    </p>
+  </section>
+
+  <section id="spende">
+    <h2 class="iwi-heading-flush">Spende</h2>
+    <div class="row g-4">
+      <div class="col-12 col-lg-8">
+        <iwi-card tone="petrol-pale" padding="lg" class="h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <iwi-icon class="donation__icon" name="heart-outline" [size]="1.8" />
+            <h4 class="m-0">Unterstützen ohne Gegenleistung</h4>
+          </div>
+          <p class="donation__text">
+            Sie können uns jederzeit auch finanziell mit einer Spende unterstützen. Diese erfolgt
+            ohne Gegenleistung.
+          </p>
+          <p class="donation__text mb-0">
+            Bei Fragen zu Ihrer Spende wenden Sie sich gerne an
+            <a class="donation__mail" [href]="'mailto:' + site.mail.association">{{
+              site.mail.association
+            }}</a
+            >.
+          </p>
+        </iwi-card>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <iwi-card padding="lg" class="h-100">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <iwi-icon class="bank__icon" name="bank" [size]="1.8" />
+            <h4 class="m-0">Kontoverbindung</h4>
+          </div>
+          <!-- Die Zwischenablage ist nicht in jedem Kontext verfuegbar, deshalb steht
+               der Wert immer auch als markierbarer Text da. -->
+          <dl class="bank">
+            @for (row of bankRows; track row.label) {
+              <div class="bank__row">
+                <div>
+                  <dt>{{ row.label }}</dt>
+                  <dd>{{ row.value }}</dd>
+                </div>
+                <iwi-copy-button [value]="row.value" [label]="row.label + ' kopieren'" />
+              </div>
+            }
+          </dl>
+        </iwi-card>
+      </div>
+    </div>
+  </section>
+</div>

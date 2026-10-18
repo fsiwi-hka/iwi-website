@@ -1,0 +1,12 @@
+<header class="page-header">
+  <div class="iwi-container page-header__inner">
+    @if (showBreadcrumbs()) {
+      <iwi-breadcrumb />
+    }
+    <h1>{{ title() }}</h1>
+    @if (subtitle()) {
+      <p>{{ subtitle() }}</p>
+    }
+    <ng-content />
+  </div>
+</header>

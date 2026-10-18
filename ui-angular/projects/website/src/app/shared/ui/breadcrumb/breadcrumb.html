@@ -1,0 +1,17 @@
+<nav aria-label="Brotkrumen-Navigation">
+  <ol>
+    <li>
+      <a [routerLink]="home.path">{{ home.name }}</a>
+    </li>
+    @for (crumb of crumbs(); track crumb.path; let last = $last) {
+      <li>
+        <span class="separator" aria-hidden="true">&gt;</span>
+        @if (last) {
+          <span aria-current="page">{{ crumb.name }}</span>
+        } @else {
+          <a [routerLink]="crumb.path">{{ crumb.name }}</a>
+        }
+      </li>
+    }
+  </ol>
+</nav>

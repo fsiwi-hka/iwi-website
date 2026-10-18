@@ -1,0 +1,21 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  max-width: max-content;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover .iwi-arrow-link__label {
+    text-decoration: underline;
+  }
+
+  &:hover .iwi-arrow-link__arrow {
+    transform: rotate(45deg);
+  }
+}
+
+.iwi-arrow-link__arrow {
+  transition: transform 300ms ease;
+}

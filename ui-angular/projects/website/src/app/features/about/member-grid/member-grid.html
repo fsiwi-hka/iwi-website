@@ -1,0 +1,5 @@
+<ul class="member-grid">
+  @for (member of members(); track member.position) {
+    <li><iwi-member-tile [member]="member" /></li>
+  }
+</ul>

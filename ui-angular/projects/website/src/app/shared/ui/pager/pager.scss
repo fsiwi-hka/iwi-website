@@ -1,0 +1,30 @@
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.pager__page {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: var(--iwi-radius-sm);
+  background: var(--iwi-blue);
+  color: var(--iwi-white);
+  font-size: 1.25rem;
+  font-weight: 500;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity var(--iwi-transition);
+
+  &:hover,
+  &--active {
+    opacity: 1;
+  }
+}
+
+.pager__gap {
+  padding-inline: 0.5rem;
+}

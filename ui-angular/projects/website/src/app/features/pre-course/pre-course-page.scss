@@ -1,0 +1,33 @@
+.fact__title {
+  margin-bottom: 0.25rem;
+  color: var(--iwi-petrol-pale);
+  font-weight: 600;
+}
+
+.fact__text {
+  margin: 0;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.schedule {
+  font-size: 0.875rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  th {
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    vertical-align: middle;
+  }
+}

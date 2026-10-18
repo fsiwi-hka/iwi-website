@@ -1,0 +1,105 @@
+<div class="month-view">
+  <div class="month-view__head">
+    <h2 class="month-view__title" aria-live="polite">{{ monthTitle() }}</h2>
+    <div class="d-flex align-items-center gap-1">
+      <button type="button" class="month-view__today" (click)="goToToday()">Heute</button>
+      <button
+        iwiIconButton="chevron-left"
+        label="Vorheriger Monat"
+        round
+        (click)="changeMonth(-1)"
+      ></button>
+      <button
+        iwiIconButton="chevron-right"
+        label="Nächster Monat"
+        round
+        (click)="changeMonth(1)"
+      ></button>
+    </div>
+  </div>
+
+  <div class="month-view__calendar">
+    <div class="month-view__weekdays" aria-hidden="true">
+      @for (weekday of weekdays; track weekday) {
+        <div>{{ weekday }}</div>
+      }
+    </div>
+    <div class="month-view__grid">
+      @for (cell of cells(); track cell.day; let i = $index) {
+        <div
+          role="button"
+          tabindex="0"
+          class="day"
+          [class.day--outside]="!cell.inMonth"
+          [class.day--selected]="cell.day === selectedDay()"
+          [class.day--last-column]="i % 7 === 6"
+          [attr.aria-pressed]="cell.day === selectedDay()"
+          [attr.aria-label]="cell.label"
+          (click)="select(cell.day)"
+          (keydown.enter)="select(cell.day)"
+          (keydown.space)="$event.preventDefault(); select(cell.day)"
+        >
+          <span class="day__number" [class.day__number--today]="cell.isToday">{{
+            cell.number
+          }}</span>
+
+          @if (cell.events.length > 0) {
+            <span class="day__dots" aria-hidden="true">
+              @for (event of cell.events.slice(0, 3); track event.id) {
+                <span></span>
+              }
+            </span>
+          }
+
+          <span class="day__titles">
+            @for (event of cell.visible; track event.id) {
+              <button
+                type="button"
+                class="day__event"
+                [class.day__event--all-day]="event.allDay"
+                [title]="event.title + ' – ' + range(event)"
+                (click)="open(event, $event)"
+              >
+                @if (startsHere(event, cell.day)) {
+                  <strong>{{ time(event.start) }} </strong>
+                }
+                {{ event.title }}
+              </button>
+            }
+            @if (cell.hidden > 0) {
+              <span class="day__more">+{{ cell.hidden }} weitere</span>
+            }
+          </span>
+        </div>
+      }
+    </div>
+    @if (events.isLoading()) {
+      <div class="month-view__loading">Termine werden geladen …</div>
+    }
+  </div>
+
+  @if (events.status() === 'error') {
+    <div class="month-view__error">
+      <span>Termine konnten nicht geladen werden.</span>
+      <button type="button" class="month-view__retry" (click)="events.reload()">
+        Erneut versuchen
+      </button>
+    </div>
+  }
+
+  @if (events.hasValue() && !events.isLoading()) {
+    @if (!monthHasEvents()) {
+      <p class="mt-3">In diesem Monat stehen keine Termine an.</p>
+    }
+    @if (selectedDay()) {
+      <div class="mt-4">
+        <h3 class="month-view__day-title">{{ selectedTitle() }}</h3>
+        @if (selectedEvents().length > 0) {
+          <iwi-event-list [events]="selectedEvents()" (opened)="open($event)" />
+        } @else {
+          <p>Keine Termine an diesem Tag.</p>
+        }
+      </div>
+    }
+  }
+</div>

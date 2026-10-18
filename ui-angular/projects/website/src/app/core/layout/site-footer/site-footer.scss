@@ -1,0 +1,129 @@
+@use 'breakpoints' as bp;
+
+.site-footer {
+  padding: 1.5rem;
+  background: var(--iwi-blue);
+  color: var(--iwi-white);
+
+  p,
+  h5 {
+    color: var(--iwi-white);
+  }
+}
+
+.site-footer__top {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  @include bp.up(bp.$md) {
+    flex-direction: row;
+  }
+}
+
+.site-footer__socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include bp.up(bp.$md) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  a {
+    display: block;
+    color: var(--iwi-white);
+    transition: transform 300ms ease;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+}
+
+.site-footer__columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem 1rem;
+  width: 100%;
+
+  @include bp.up(bp.$sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include bp.up(bp.$md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include bp.up(bp.$xl) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.site-footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  h5 {
+    margin-bottom: 0.5rem;
+
+    @include bp.up(bp.$md) {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.site-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  text-align: center;
+
+  @include bp.up(bp.$md) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.25rem;
+    text-align: left;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.site-footer__copyright {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+
+  @include bp.up(bp.$md) {
+    margin-bottom: 0;
+  }
+}
+
+// Mobil steht das Logo unter den Links, ab md in der Mitte.
+.site-footer__logo {
+  order: 3;
+
+  @include bp.up(bp.$md) {
+    order: 0;
+  }
+
+  img {
+    display: block;
+    width: 5rem;
+    height: auto;
+    margin-top: 1rem;
+
+    @include bp.up(bp.$md) {
+      margin-top: 0;
+    }
+  }
+}

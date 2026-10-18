@@ -1,0 +1,19 @@
+<iwi-page-header
+  title="Wissenswertes für dein Studium"
+  subtitle="Alles, was du für dein Studium und neben dem Hörsaal brauchst."
+/>
+
+<div class="iwi-container iwi-section studies">
+  @for (section of sections; track section.title; let first = $first) {
+    <section [class.studies__section]="!first">
+      <h2>{{ section.title }}</h2>
+      <div class="row g-4 mt-0">
+        @for (card of section.cards; track card.title; let i = $index) {
+          <div [class]="columnClass(section.layout, i)">
+            <iwi-link-card [card]="card" />
+          </div>
+        }
+      </div>
+    </section>
+  }
+</div>

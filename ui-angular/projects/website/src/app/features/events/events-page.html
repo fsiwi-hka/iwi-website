@@ -1,0 +1,24 @@
+<iwi-page-header
+  title="Termine"
+  subtitle="Sitzungen, Partys, Spieleabende und alles andere, was bei der Fachschaft IWI ansteht. Abonnier den Kalender, dann hast du die Termine immer automatisch in deiner Kalender-App."
+/>
+
+<section class="iwi-container iwi-section iwi-section--spaced">
+  @if (webcalUrl(); as webcal) {
+    <div class="subscribe">
+      <a iwiButton [href]="webcal" [icon]="null" leadingIcon="calendar-sync">Kalender abonnieren</a>
+      @if (subscribeUrl(); as url) {
+        <iwi-copy-button
+          [value]="url"
+          label="Kalender-Link kopieren"
+          text="Link kopieren"
+          copiedText="Link kopiert"
+        />
+      }
+    </div>
+  }
+
+  <!-- Der Monat haengt vom heutigen Datum ab und wird deshalb im Browser neu
+       aufgebaut statt den beim Build vorgerenderten Stand zu uebernehmen. -->
+  <iwi-month-view ngSkipHydration />
+</section>

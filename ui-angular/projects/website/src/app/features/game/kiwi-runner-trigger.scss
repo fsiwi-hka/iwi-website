@@ -1,0 +1,28 @@
+.trigger {
+  padding: 0;
+  border: 0;
+  background: none;
+  opacity: 0.3;
+  cursor: pointer;
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+    transform: translateY(-0.25rem);
+  }
+}
+
+.trigger__sprite {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url('/assets/game/sprites.png');
+  background-repeat: no-repeat;
+  // Sheet auf 1/2 skaliert -> 24px pro Frame, erster Lauf-Frame
+  background-size: 72px 48px;
+  background-position: 0 0;
+  image-rendering: pixelated;
+}

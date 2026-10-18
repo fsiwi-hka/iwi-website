@@ -1,0 +1,25 @@
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  color: var(--iwi-white);
+}
+
+a {
+  color: #dbeafe;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.separator {
+  margin-inline: 0.5rem;
+}

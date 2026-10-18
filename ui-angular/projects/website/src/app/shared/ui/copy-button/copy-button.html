@@ -1,0 +1,13 @@
+<button
+  type="button"
+  [class]="text() ? 'copy-button copy-button--pill' : 'copy-button copy-button--icon'"
+  [attr.aria-label]="text() ? null : label()"
+  [attr.title]="label()"
+  (click)="copy()"
+>
+  <iwi-icon [name]="copied() ? 'check' : 'copy'" [size]="text() ? 1.2 : 1.25" />
+  @if (text(); as caption) {
+    <span>{{ copied() ? copiedText() : caption }}</span>
+  }
+</button>
+<span class="visually-hidden-focusable" aria-live="polite">{{ copied() ? copiedText() : '' }}</span>

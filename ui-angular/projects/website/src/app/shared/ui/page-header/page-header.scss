@@ -1,0 +1,32 @@
+@use 'breakpoints' as bp;
+
+.page-header {
+  background: var(--iwi-blue);
+  overflow: hidden;
+}
+
+.page-header__inner {
+  padding-block: 1.5rem;
+
+  @include bp.up(bp.$xl) {
+    padding-block: 3rem;
+  }
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: var(--iwi-white);
+
+  @include bp.up(bp.$md) {
+    max-width: 75vw;
+  }
+}
+
+p {
+  margin: 0;
+  color: var(--iwi-white);
+
+  @include bp.up(bp.$md) {
+    max-width: 80vw;
+  }
+}

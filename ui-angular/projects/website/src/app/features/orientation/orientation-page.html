@@ -1,0 +1,52 @@
+<iwi-page-header title="O-Phasen-Programm" [subtitle]="range()" />
+
+<div class="iwi-container iwi-section">
+  <p>Letzte Aktualisierung: {{ changedAt() }}</p>
+  <h3 class="my-3">Was ist die O-Phase?</h3>
+  <p>
+    Vor und in der ersten Woche finden Veranstaltungen statt, die dir den Einstieg ins
+    Studentenleben erleichtern sollen. Organisiert werden sie von der Hochschule bzw. Fakultät und
+    von der Fachschaft Informatik und Wirtschaftsinformatik (das sind wir).
+  </p>
+  <iwi-info-box>
+    Diese Pläne richten sich an alle Studenten der Bachelor Studiengänge Informatik,
+    Medieninformatik, Wirtschaftsinformatik, Internationales IT Business und Data Science. Ebenso
+    für die Masterstudiengänge Wirtschaftsinformatik und Informatik.
+  </iwi-info-box>
+  <p>
+    Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik verschiedene Programme in der
+    O-Phase angeboten werden, findest du hier zwei Terminpläne. Gegebenenfalls kann es auch
+    innerhalb eines Zeitplans verschiedene Zeitstränge geben, achtet hier auf die betroffene Gruppe.
+    Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können es lohnt sich also,
+    regelmäßig vorbeizuschauen. Über Änderungen während der O-Phase versuchen wir euch rechtzeitig
+    zu informieren.
+  </p>
+
+  @for (timetable of timetables; track timetable.course) {
+    <section class="timetable">
+      <h3 class="timetable__title">
+        O-Phasen Plan {{ semester() }} für Studiengang {{ timetable.programs }}
+      </h3>
+      <p><i>TBA = to be announced</i></p>
+      @if (info()) {
+        <img
+          class="timetable__image"
+          [src]="timetableUrl(timetable.course)"
+          [alt]="'Stundenplan der O-Phase für ' + timetable.programs"
+        />
+      }
+    </section>
+  }
+
+  <h3 class="mt-3">Sonstiges</h3>
+  <p>
+    Weitere Termine der Fakultät und wichtige Infos zum Studienbeginn findest du unter
+    <a
+      class="inline-link"
+      href="https://www.h-ka.de/studieren/studium-organisieren/einstieg-ins-studium/immatrikulationsinfos-ansprechpartner"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Immatrikulationsinfos</a
+    >.
+  </p>
+</div>

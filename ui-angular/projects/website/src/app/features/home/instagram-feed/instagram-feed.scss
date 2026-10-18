@@ -1,0 +1,141 @@
+@use 'breakpoints' as bp;
+
+.instagram {
+  padding: 1.5rem 0 2.5rem;
+  background: var(--iwi-surface);
+}
+
+.instagram__inner {
+  position: relative;
+  margin-block: 1.5rem;
+}
+
+.instagram__shape {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  display: none;
+  width: 6rem;
+
+  @include bp.up(bp.$sm) {
+    display: block;
+  }
+}
+
+.instagram__lead {
+  @include bp.up(bp.$sm) {
+    margin-bottom: 3rem;
+  }
+}
+
+.instagram__error,
+.instagram__loading {
+  padding: 1.25rem;
+  border-radius: var(--iwi-radius-xl);
+  background: var(--iwi-white);
+  text-align: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--iwi-grey-light);
+  border-radius: var(--iwi-radius-xl);
+  background: var(--iwi-white);
+  box-shadow: var(--iwi-shadow-sm);
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  line-height: 1.25;
+}
+
+.post__avatar {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--iwi-grey-light);
+  object-fit: cover;
+}
+
+.post__user {
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.post__date {
+  color: var(--iwi-grey-medium);
+  font-size: 0.75rem;
+}
+
+.post__more {
+  margin-left: auto;
+}
+
+.post__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--iwi-grey-light);
+}
+
+.post__backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(24px);
+  transform: scale(1.1);
+}
+
+.post__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 300ms ease;
+
+  &:hover {
+    opacity: 0.95;
+  }
+}
+
+.post__type {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: var(--iwi-white);
+  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 50%));
+}
+
+.post__footer {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.post__likes {
+  margin: 0;
+  color: #111827;
+  font-weight: 600;
+}
+
+.post__comments {
+  color: var(--iwi-grey-medium);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

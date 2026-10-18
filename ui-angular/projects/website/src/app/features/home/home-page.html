@@ -1,0 +1,57 @@
+<iwi-hero-slider [slides]="slides" />
+
+<section class="iwi-container iwi-section iwi-section--spaced">
+  <div class="row g-4">
+    <div class="col-12 col-md-6 intro__media">
+      <img
+        class="intro__photo"
+        src="/images/fs-iwi-gesamtbild.jpg"
+        alt="Gruppenfoto der Fachschaft IWI"
+        width="1200"
+        height="800"
+      />
+      <img class="intro__shape" src="/images/Shape-1.svg" alt="" aria-hidden="true" />
+    </div>
+    <div class="col-12 col-md-6 intro__text">
+      <div>
+        <h2 class="iwi-heading-flush">Die Fachschaft IWI</h2>
+        <p>
+          Wir stehen euch als Ansprechpartner für studienbezogene Fragen zur Verfügung.
+          <br />Außerdem organisieren wir die O-Phase und den Programmiervorkurs, bieten Hilfe bei
+          Problemen zwischen Studierenden und Professor:innen und vieles mehr an.
+        </p>
+      </div>
+      <a iwiButton="red" size="lg" routerLink="/about" fragment="mitmachen">Jetzt mitmachen</a>
+    </div>
+  </div>
+</section>
+
+<section class="iwi-container iwi-section iwi-section--spaced">
+  <div class="row g-4">
+    @for (teaser of teasers; track teaser.title) {
+      <div class="col-12 col-lg-4">
+        <iwi-card [tone]="teaser.tone" class="h-100 justify-content-between gap-3">
+          <div>
+            <h4 class="mb-3">{{ teaser.title }}</h4>
+            <p>{{ teaser.subtitle }}</p>
+          </div>
+          @if (teaser.url; as url) {
+            <a iwiButton="white" [href]="url" target="_blank" rel="noopener noreferrer">{{
+              teaser.buttonText
+            }}</a>
+          } @else {
+            <a iwiButton="white" [routerLink]="teaser.path" [fragment]="teaser.fragment">{{
+              teaser.buttonText
+            }}</a>
+          }
+        </iwi-card>
+      </div>
+    }
+  </div>
+</section>
+
+<iwi-upcoming-events />
+
+<iwi-instagram-feed />
+
+<iwi-logo-carousel [logos]="logos" [speed]="50" />

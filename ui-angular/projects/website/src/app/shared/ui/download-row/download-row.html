@@ -1,0 +1,11 @@
+<div class="download-row">
+  <div class="download-row__text">
+    <p class="download-row__title">{{ title() }}</p>
+    @if (subtext(); as sub) {
+      <p class="download-row__subtext">{{ sub }}</p>
+    }
+  </div>
+  <a iwiButton="petrol-pale" [href]="href()" target="_blank" rel="noopener noreferrer">{{
+    buttonText()
+  }}</a>
+</div>
