@@ -37,13 +37,15 @@ function UpcomingEvents() {
                     <Link href="/events/" className="petrol_text font-semibold">Alle Termine →</Link>
                 </div>
 
-                <div className={meeting ? "grid lg:grid-cols-3 gap-6" : ""}>
+                {/* grid-cols-1 = minmax(0, 1fr): sonst waechst die Spalte auf die volle Laenge des
+                    abgeschnittenen Orts und die Karten laufen auf dem Handy aus dem Bild. */}
+                <div className={meeting ? "grid grid-cols-1 lg:grid-cols-3 gap-6" : ""}>
                     {meeting && <MeetingCard event={meeting} onOpen={setOpenEvent}/>}
 
-                    <div className="lg:col-span-2 flex flex-col">
+                    <div className="lg:col-span-2 flex flex-col min-w-0">
                         {meeting && <h3 className="petrol_pale_text mt-0 mb-3 text-lg">Weitere Termine</h3>}
                         {others.length > 0 ? (
-                            <div className={meeting ? "flex flex-col gap-3" : "grid md:grid-cols-3 gap-4"}>
+                            <div className={meeting ? "flex flex-col gap-3" : "grid grid-cols-1 md:grid-cols-3 gap-4"}>
                                 {others.map((e) => (
                                     <EventCard key={e.id} event={e} onOpen={setOpenEvent}/>
                                 ))}
@@ -76,10 +78,10 @@ function MeetingCard({event, onOpen}: CardProps) {
         <button
             type="button"
             onClick={() => onOpen(event)}
-            className="petrol_bg text-white text-left rounded-xl p-6 flex flex-col gap-4 hover:opacity-95"
+            className="petrol_bg text-white text-left rounded-xl p-6 flex flex-col gap-4 min-w-0 hover:opacity-95"
         >
             <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">Nächste Fachschaftssitzung</span>
-            <span className="flex items-center gap-4">
+            <span className="flex items-center gap-4 min-w-0">
                 <span className="bg-white petrol_text rounded-lg w-16 shrink-0 flex flex-col items-center py-2 leading-tight">
                     <span className="text-2xl font-semibold">{formatDayKey(day, {day: "numeric"})}</span>
                     <span className="text-xs uppercase">{formatDayKey(day, {month: "short"}).replace(".", "")}</span>
@@ -103,7 +105,7 @@ function EventCard({event, onOpen}: CardProps) {
         <button
             type="button"
             onClick={() => onOpen(event)}
-            className="text-left rounded-xl border border-gray-400 bg-white p-4 hover:border-gray-700 flex gap-4 items-start"
+            className="text-left rounded-xl border border-gray-400 bg-white p-4 hover:border-gray-700 flex gap-4 items-start min-w-0"
         >
             <span className="primary_blue_bg text-white rounded-lg w-14 shrink-0 flex flex-col items-center py-2 leading-tight">
                 <span className="text-xl font-semibold">{formatDayKey(day, {day: "numeric"})}</span>
