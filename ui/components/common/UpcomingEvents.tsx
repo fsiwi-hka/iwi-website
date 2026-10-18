@@ -37,21 +37,22 @@ function UpcomingEvents() {
                     <Link href="/events/" className="petrol_text font-semibold">Alle Termine →</Link>
                 </div>
 
-                {/* grid-cols-1 = minmax(0, 1fr): sonst waechst die Spalte auf die volle Laenge des
-                    abgeschnittenen Orts und die Karten laufen auf dem Handy aus dem Bild. */}
-                <div className={meeting ? "grid grid-cols-1 lg:grid-cols-3 gap-6" : ""}>
+                {/* Sitzung oben ueber die volle Breite, weitere Termine darunter. grid-cols-1 =
+                    minmax(0, 1fr): sonst waechst die Spalte auf die volle Laenge des abgeschnittenen
+                    Orts und die Karten laufen auf dem Handy aus dem Bild. */}
+                <div className="flex flex-col gap-8 min-w-0">
                     {meeting && <MeetingCard event={meeting} onOpen={setOpenEvent}/>}
 
-                    <div className="lg:col-span-2 flex flex-col min-w-0">
+                    <div className="min-w-0">
                         {meeting && <h3 className="petrol_pale_text mt-0 mb-3 text-lg">Weitere Termine</h3>}
                         {others.length > 0 ? (
-                            <div className={meeting ? "flex flex-col gap-3" : "grid grid-cols-1 md:grid-cols-3 gap-4"}>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 {others.map((e) => (
                                     <EventCard key={e.id} event={e} onOpen={setOpenEvent}/>
                                 ))}
                             </div>
                         ) : (
-                            <div className="rounded-xl border border-gray-400 bg-white p-4 primary_grey flex-grow flex items-center">
+                            <div className="rounded-xl border border-gray-400 bg-white p-4 primary_grey">
                                 Gerade sind keine weiteren Termine geplant. Schau bald wieder vorbei!
                             </div>
                         )}
@@ -78,21 +79,26 @@ function MeetingCard({event, onOpen}: CardProps) {
         <button
             type="button"
             onClick={() => onOpen(event)}
-            className="petrol_bg text-white text-left rounded-xl p-6 flex flex-col gap-4 min-w-0 hover:opacity-95"
+            className="petrol_bg text-white text-left rounded-xl p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-10 min-w-0 hover:opacity-95"
         >
-            <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">Nächste Fachschaftssitzung</span>
-            <span className="flex items-center gap-4 min-w-0">
-                <span className="bg-white petrol_text rounded-lg w-16 shrink-0 flex flex-col items-center py-2 leading-tight">
-                    <span className="text-2xl font-semibold">{formatDayKey(day, {day: "numeric"})}</span>
-                    <span className="text-xs uppercase">{formatDayKey(day, {month: "short"}).replace(".", "")}</span>
+            <span className="flex flex-col gap-4 min-w-0">
+                <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">Nächste Fachschaftssitzung</span>
+                <span className="flex items-center gap-4 min-w-0">
+                    <span className="bg-white petrol_text rounded-lg w-16 shrink-0 flex flex-col items-center py-2 leading-tight">
+                        <span className="text-2xl font-semibold">{formatDayKey(day, {day: "numeric"})}</span>
+                        <span className="text-xs uppercase">{formatDayKey(day, {month: "short"}).replace(".", "")}</span>
+                    </span>
+                    <span className="flex flex-col min-w-0">
+                        <span className="text-lg font-semibold">{formatDayKey(day, {weekday: "long"})}</span>
+                        <span className="text-sm">{formatEventRange(event).split(" · ").slice(1).join(" · ")}</span>
+                        {event.location && <span className="text-sm truncate">{event.location}</span>}
+                    </span>
                 </span>
-                <span className="flex flex-col min-w-0">
-                    <span className="text-lg font-semibold">{formatDayKey(day, {weekday: "long"})}</span>
-                    <span className="text-sm">{formatEventRange(event).split(" · ").slice(1).join(" · ")}</span>
-                    {event.location && <span className="text-sm truncate">{event.location}</span>}
-                </span>
+                {event.recurrence && (
+                    <span className="text-sm font-semibold text-blue-400">Wiederholt sich {event.recurrence}</span>
+                )}
             </span>
-            <span className="text-sm mt-auto">
+            <span className="text-sm md:ml-auto md:max-w-sm">
                 Die Sitzung ist öffentlich, komm einfach vorbei! Weitere Sitzungstermine findest du im Kalender.
             </span>
         </button>

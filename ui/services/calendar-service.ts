@@ -9,6 +9,7 @@ export interface CalendarEvent {
     end: string;         // bei allDay exklusiv (wie in iCal)
     allDay: boolean;
     recurring: boolean;  // Instanz eines Serientermins
+    recurrence: string | null;  // Rhythmus der Serie, z. B. "wöchentlich"
     location: string | null;
     description: string | null;
     url: string | null;

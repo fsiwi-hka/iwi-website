@@ -29,6 +29,10 @@ public sealed class CalendarEventDto
     [JsonPropertyName("recurring")]
     public bool Recurring { get; set; }
 
+    /// <summary>Rhythmus der Serie als Text, z. B. "wöchentlich" oder "alle 2 Wochen". Null bei Einzelterminen.</summary>
+    [JsonPropertyName("recurrence")]
+    public string? Recurrence { get; set; }
+
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
