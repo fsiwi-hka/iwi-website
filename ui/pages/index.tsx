@@ -5,6 +5,7 @@ import Button from "../components/common/button";
 import Carousel from "../components/common/carousel";
 import InstagramFeed from "../components/common/InstagramFeed";
 import Slider from "../components/common/slider";
+import UpcomingEvents from "../components/common/UpcomingEvents";
 import {slides} from "../content/slides";
 import {sponsorLogos} from "../content/sponsors";
 
@@ -61,6 +62,8 @@ function Index() {
           ></BoxBig>
         </div>
       </div>
+
+      <UpcomingEvents />
 
       <InstagramFeed></InstagramFeed>
 

@@ -48,6 +48,7 @@ services:
       - WebDav__Password=${WEBDAV_PASSWORD}
       - Auth__Token=${AUTH_TOKEN}
       - OPhase__CacheDirectory=/home/app/cache/ophase
+      - Calendar__CacheDirectory=/home/app/cache/calendar
     user: "1654:1654"
     volumes:
       - media_cache:/home/app/cache
