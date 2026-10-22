@@ -29,8 +29,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           # Gleiche Major-Version wie im Produktions-Image (ui/Dockerfile:
-          # node:20-alpine), damit CI und Deployment nicht auseinanderlaufen.
-          node-version: '20'
+          # node:24-alpine), damit CI und Deployment nicht auseinanderlaufen.
+          node-version: '24'
           cache: npm
           cache-dependency-path: ui/package-lock.json
 
