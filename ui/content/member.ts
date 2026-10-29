@@ -60,9 +60,17 @@ export const members = [
         ],
     },
     {
-        position: "Kaffee Manager:in",
+        position: "Kalender Manager:in",
         personen: [],
     },
+    {
+        position: "Kaffee Manager:in",
+        personen: [
+            {
+                name: "Charlotte Maier",
+                img: "/images/fachschaft/charlie.jpg"
+            }
+        ],    },
     {
         position: "Förderverein",
         personen: [
