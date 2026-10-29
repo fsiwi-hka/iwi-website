@@ -70,7 +70,8 @@ export const members = [
                 name: "Charlotte Maier",
                 img: "/images/fachschaft/charlie.jpg"
             }
-        ],    },
+        ],
+    },
     {
         position: "Förderverein",
         personen: [
