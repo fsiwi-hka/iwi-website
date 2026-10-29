@@ -114,7 +114,7 @@ function Index() {
               {/* Vorstand */}
               <FsMitglieder mitglieder={members.slice(0, 4)} />
               {/* Ämter – die Fachbereiche folgen weiter unten im Abschnitt "Fachbereiche" */}
-              <FsMitglieder mitglieder={members.slice(4, 7)} />
+              <FsMitglieder mitglieder={members.slice(4, 8)} />
             </div>
           </div>
         </div>
