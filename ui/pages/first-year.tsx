@@ -66,7 +66,7 @@ function Index() {
               <h4 className="petrol_pale_text mt-0 mb-4">O-Phase</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
                 <ButtonButBigger bgcolor="petrol" text={"Programmiervorkurs"} link={"/pre-course/"} newTab={true}></ButtonButBigger>
-                <ButtonButBigger bgcolor="petrol" text={"Ersti-Heft"} link={"/assets/downloads/ophase/erstiheft/Erstiheft_SS25.pdf"} newTab={true}></ButtonButBigger>
+                <ButtonButBigger bgcolor="petrol" text={"Ersti-Heft"} link={"/assets/downloads/ophase/erstiheft/Erstiheft_WS2627.pdf"} newTab={true}></ButtonButBigger>
                 <ButtonButBigger bgcolor="petrol" text={"O-Phasen-Programm"} link={"/orientation/"} newTab={true}></ButtonButBigger>
               </div>
 
