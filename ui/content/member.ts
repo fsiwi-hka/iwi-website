@@ -17,6 +17,7 @@ export const members = [
         personen: [
             {
                 name: "Stefanie Pfefferkorn",
+                img: "/images/fachschaft/steffi.jpg"
             }],
     },
     {
@@ -24,13 +25,17 @@ export const members = [
         personen: [
             {
                 name: "Charlotte Maier",
-                img: "/images/fachschaft/charlie.jpeg"
+                img: "/images/fachschaft/charlie.jpg"
             }
         ],
     },
     {
         position: "1. Finanzer",
-        personen: [{ name: "Aaron Kastner" }],
+        personen: [
+            {
+                name: "Aaron Kastner",
+                img: "/images/fachschaft/aaron.jpg"
+            }],
     },
     {
         position: "2. Finanzer",
@@ -43,7 +48,15 @@ export const members = [
     {
         position: "Mail Manager:in",
         personen: [
-            { name: "Hannah Caasmann" }
+            {
+                name: "Hannah Caasmann"
+            },
+            {
+                name: "Stefanie Pfeffferkorn"
+            },
+            {
+                name: "Björn Bruckmann"
+            }
         ],
     },
     {
@@ -59,14 +72,17 @@ export const members = [
     },
     {
         position: "FB Finanzen",
-        personen: [{ name: "Aaron Kastner" }],
+        personen: [{
+            name: "Aaron Kastner",
+            img: "/images/fachschaft/aaron.jpg"
+        }],
     },
     {
         position: "FB Events",
         personen: [
             {
                 name: "Charlotte Maier",
-                img: "/images/fachschaft/charlie.jpeg"
+                img: "/images/fachschaft/charlie.jpg"
             }
         ],
     },
@@ -88,20 +104,23 @@ export const members = [
         personen: [
             {
                 name: "Alec Engelhardt",
-                img: "/images/fachschaft/alec.jpeg"
+                img: "/images/fachschaft/alec.jpg"
             }
             ],
     },
     {
         position: "FB Archiv",
-        personen: [{ name: "Florian Hatzfeld" }],
+        personen: [{
+            name: "Milo Gebert",
+            img: "/images/fachschaft/milo.jpg"
+        }],
     },
     {
         position: "FB Fachschaftsraum",
         personen: [
             {
                 name: "Björn Bruckmann",
-                img: "/images/fachschaft/bjoern.png"
+                img: "/images/fachschaft/bjoern.jpg"
             }
 
         ],
