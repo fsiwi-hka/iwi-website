@@ -17,7 +17,7 @@
 
     handle {
         root * /usr/share/caddy
-        try_files {path} {path}.html {path}/ =404
+        try_files {path} {path}.html {path}/ {path}/index.html =404
         file_server
 
         @static path /_next/static/* /static/*
