@@ -13,7 +13,8 @@ RUN --mount=type=secret,id=nextcloud_url \
     NEXTCLOUD_URL=$(cat /run/secrets/nextcloud_url) \
     npm run build
 
-FROM caddy:alpine
+# Version gepinnt: caddy 2.11.8 hat eine try_files-Regression, durch die "/" 404 liefert.
+FROM caddy:2.11.7-alpine
 COPY --from=builder /app/out /usr/share/caddy
 COPY Caddyfile /etc/caddy/Caddyfile
 EXPOSE 80
