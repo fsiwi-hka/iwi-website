@@ -49,13 +49,8 @@ export const members = [
         position: "Mail Manager:in",
         personen: [
             {
-                name: "Hannah Caasmann"
-            },
-            {
-                name: "Stefanie Pfeffferkorn"
-            },
-            {
-                name: "Björn Bruckmann"
+                name: "Stefanie Pfefferkorn",
+                img: "/images/fachschaft/steffi.jpg"
             }
         ],
     },
