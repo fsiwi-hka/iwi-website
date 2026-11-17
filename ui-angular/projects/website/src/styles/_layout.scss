@@ -1,0 +1,48 @@
+// Seitenweite Layout-Helfer. Spalten, Abstaende und Flexbox kommen aus den
+// Bootstrap-Utilities (row/col-*, d-flex, gap-*, mb-*); hier steht nur, was
+// Bootstrap so nicht mitbringt.
+@use 'breakpoints' as bp;
+
+// Inhaltsbreite der Seite (bisher "max-w-screen-xl mx-4 md:mx-auto").
+.iwi-container {
+  width: 100%;
+  max-width: calc(var(--iwi-container-width) + 2rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @include bp.up(bp.$md) {
+    max-width: calc(var(--iwi-container-width) + 3rem);
+    padding-inline: 1.5rem;
+  }
+}
+
+// Ein Inhaltsblock mit vertikalem Abstand (bisher "ResponsiveWrapper").
+.iwi-section {
+  padding-block: 1.5rem;
+}
+
+.iwi-section--spaced {
+  margin-bottom: 6rem;
+}
+
+// Ueberschriften, die direkt am Blockanfang stehen.
+.iwi-heading-flush {
+  margin-top: 0;
+}
+
+.iwi-text-petrol {
+  color: var(--iwi-petrol);
+}
+
+.iwi-text-muted {
+  color: var(--iwi-grey);
+}
+
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+}

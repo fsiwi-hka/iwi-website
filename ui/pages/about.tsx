@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 
 import BoxFullWidthBlue from "../components/common/box-full-width-blue";
 import Button from "../components/common/button";

@@ -1,0 +1,156 @@
+@use 'breakpoints' as bp;
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  border-radius: var(--iwi-radius);
+  background: var(--iwi-petrol);
+  color: var(--iwi-white);
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo img {
+  display: block;
+  width: auto;
+  height: 4rem;
+
+  @include bp.up(bp.$lg) {
+    height: 6rem;
+  }
+}
+
+.site-header__nav {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  @include bp.up(bp.$md) {
+    gap: 2rem;
+  }
+}
+
+// Mobil bleibt nur der aktive Eintrag als Seitenname stehen, alles Weitere im Menue.
+.site-header__item {
+  display: none;
+  line-height: 1.5;
+
+  @include bp.up(bp.$md) {
+    display: block;
+  }
+
+  a {
+    color: var(--iwi-petrol);
+    font-weight: 500;
+  }
+
+  &:not(.site-header__item--active) a:hover {
+    color: var(--iwi-blue);
+  }
+}
+
+.site-header__item--active {
+  display: block;
+
+  a::after {
+    content: '';
+    display: block;
+    min-width: 50px;
+    border-bottom: 2px solid var(--iwi-petrol);
+  }
+}
+
+.site-header__actions {
+  display: none;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-block: 1.5rem;
+
+  @include bp.up(bp.$md) {
+    display: flex;
+  }
+
+  @include bp.up(bp.$lg) {
+    flex-direction: column;
+  }
+
+  @include bp.up(bp.$xl) {
+    flex-direction: row;
+  }
+}
+
+.site-header__menu-toggle {
+  margin-inline: 0.5rem;
+  color: var(--iwi-blue);
+
+  @include bp.up(bp.$md) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  padding-top: 2rem;
+  background: var(--iwi-blue);
+  color: var(--iwi-white);
+  text-align: center;
+  animation: menu-fade 200ms ease;
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--iwi-white);
+
+  &:hover {
+    background: rgb(255 255 255 / 15%);
+    color: var(--iwi-white);
+  }
+}
+
+.mobile-menu__nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.mobile-menu__link {
+  color: var(--iwi-white);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.mobile-menu__link--active {
+  text-decoration: underline;
+}
+
+.mobile-menu__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+@keyframes menu-fade {
+  from {
+    opacity: 0;
+  }
+}

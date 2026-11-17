@@ -1,0 +1,22 @@
+.timetable {
+  margin-block: 1.5rem 2rem;
+  overflow-x: auto;
+}
+
+.timetable__title {
+  margin-top: 1rem;
+}
+
+.timetable__image {
+  display: block;
+  max-width: none;
+
+  @media (max-width: 991.98px) {
+    max-width: 100%;
+  }
+}
+
+.inline-link {
+  color: var(--iwi-petrol-pale);
+  text-decoration: underline;
+}

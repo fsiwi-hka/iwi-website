@@ -1,0 +1,66 @@
+@if (slides().length > 0) {
+  <section class="hero" aria-roledescription="Karussell" aria-label="Aktuelle Themen">
+    <div class="hero__inner">
+      <!-- Alle Texte liegen im selben Grid-Feld uebereinander. So ist die Spalte immer
+           so hoch wie der laengste Text und die Hoehe springt beim Wechsel nicht.
+           "inert" nimmt die inaktiven Slides aus Tab-Reihenfolge und Screenreader. -->
+      <div class="hero__texts">
+        @for (slide of slides(); track slide.title; let i = $index) {
+          <div
+            class="hero__text"
+            [class.hero__text--active]="i === index()"
+            [inert]="i !== index()"
+            aria-roledescription="Folie"
+            [attr.aria-label]="i + 1 + ' von ' + slides().length"
+          >
+            <div>
+              <h1>{{ slide.title }}</h1>
+              <p>{{ slide.subtitle }}</p>
+            </div>
+            <div class="hero__buttons">
+              <a
+                iwiButton="blue-dark"
+                size="lg"
+                [routerLink]="slide.buttonLink"
+                [fragment]="slide.buttonFragment"
+                >{{ slide.buttonText }}</a
+              >
+              <a iwiButton size="lg" routerLink="/news">Weitere Neuigkeiten</a>
+            </div>
+          </div>
+        }
+      </div>
+
+      <div class="hero__media">
+        <div class="hero__controls">
+          <button
+            iwiIconButton="chevron-left"
+            variant="white"
+            label="Vorherige Folie"
+            (click)="previous()"
+          ></button>
+          <button
+            iwiIconButton="chevron-right"
+            variant="white"
+            label="Nächste Folie"
+            (click)="next()"
+          ></button>
+        </div>
+        @if (current()?.imageOverlay) {
+          <div class="hero__overlay"></div>
+        }
+        <div class="hero__track" [style.transform]="offset()">
+          @for (slide of slides(); track slide.title; let first = $first) {
+            <img
+              class="hero__image"
+              [class.hero__image--grayscale]="slide.imageOverlay"
+              [src]="slide.image"
+              alt=""
+              [attr.loading]="first ? 'eager' : 'lazy'"
+            />
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+}

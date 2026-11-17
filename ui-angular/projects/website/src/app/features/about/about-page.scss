@@ -1,0 +1,55 @@
+@use 'breakpoints' as bp;
+
+.about__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  border-radius: var(--iwi-radius-xl);
+
+  @include bp.up(bp.$lg) {
+    width: 75%;
+    margin-right: 0;
+  }
+}
+
+.about__inline-link {
+  text-decoration: underline;
+}
+
+.cta {
+  margin-bottom: 3rem;
+  background: var(--iwi-blue);
+}
+
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 1.5rem;
+  text-align: center;
+
+  @include bp.up(bp.$xl) {
+    padding-block: 3rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: var(--iwi-white);
+
+    @include bp.up(bp.$md) {
+      width: 75%;
+    }
+  }
+}
+
+.cta__title {
+  margin: 0 0 1.5rem;
+  color: var(--iwi-white);
+  font-size: 1.875rem;
+
+  @include bp.up(bp.$md) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}

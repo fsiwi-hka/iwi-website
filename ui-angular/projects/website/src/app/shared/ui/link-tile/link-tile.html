@@ -1,0 +1,7 @@
+<span class="iwi-link-tile__text">
+  <span class="iwi-link-tile__title"><ng-content /></span>
+  @if (subtext(); as sub) {
+    <span class="iwi-link-tile__subtext">{{ sub }}</span>
+  }
+</span>
+<iwi-icon class="iwi-link-tile__arrow" name="arrow-top-right" [size]="1.5" />

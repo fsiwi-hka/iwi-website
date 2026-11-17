@@ -1,0 +1,26 @@
+@if (current(); as board) {
+  <!-- Der Schluessel wechselt mit jeder Rotation: beide Panels werden neu erzeugt,
+       damit die Wisch-Animationen erneut ablaufen. -->
+  @for (key of [rotation().transition]; track key) {
+    @if (previous(); as old) {
+      <iwi-board-panel [board]="old" direction="out" />
+    }
+    <iwi-board-panel [board]="board" [direction]="rotation().transition > 0 ? 'in' : 'static'" />
+
+    @if (rotates()) {
+      <div class="progress">
+        <div class="progress__bar" [style.animation-duration.s]="duration"></div>
+      </div>
+    }
+  }
+
+  @if (rotates()) {
+    <div class="dots" aria-hidden="true">
+      @for (item of boards(); track item.board) {
+        <span class="dot" [class.dot--active]="item.board === board.board"></span>
+      }
+    </div>
+  }
+} @else {
+  <div class="placeholder">{{ boards() ? 'Keine aktuellen Beiträge' : 'Lade Inhalte …' }}</div>
+}

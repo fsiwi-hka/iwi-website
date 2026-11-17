@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import Accordion from "./accordion";
 import ProtokollBox from "./protokollbox";
 import ProtocolService, {ProtocolIndex} from "@services/protocol-service";

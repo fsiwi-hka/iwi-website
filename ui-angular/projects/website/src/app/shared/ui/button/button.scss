@@ -1,0 +1,85 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: max-content;
+  border: 1px solid transparent;
+  border-radius: var(--iwi-radius-pill);
+  font-family: var(--iwi-font);
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    filter var(--iwi-transition),
+    border-color var(--iwi-transition);
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+
+  &:hover .iwi-button__arrow {
+    transform: rotate(45deg);
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.iwi-button__arrow {
+  transition: transform 300ms ease;
+}
+
+:host(.iwi-button--sm) {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+:host(.iwi-button--lg) {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+:host(.iwi-button--blue) {
+  background: var(--iwi-blue);
+  color: var(--iwi-white);
+}
+
+:host(.iwi-button--blue-dark) {
+  background: var(--iwi-blue-dark);
+  color: var(--iwi-white);
+}
+
+:host(.iwi-button--red) {
+  background: var(--iwi-red);
+  color: var(--iwi-white);
+}
+
+:host(.iwi-button--petrol-pale) {
+  background: var(--iwi-petrol-pale);
+  color: var(--iwi-white);
+}
+
+:host(.iwi-button--grey) {
+  background: var(--iwi-grey-dark);
+  color: var(--iwi-white);
+}
+
+:host(.iwi-button--white) {
+  background: var(--iwi-white);
+  color: var(--iwi-grey-dark);
+}
+
+:host(.iwi-button--outline) {
+  background: var(--iwi-white);
+  color: var(--iwi-petrol-pale);
+  border-color: var(--iwi-grey-light);
+
+  &:hover {
+    filter: none;
+    border-color: var(--iwi-grey-medium);
+  }
+}

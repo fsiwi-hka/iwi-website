@@ -23,7 +23,7 @@ export const slides: Slide[] = [
     {
         title: "Programmiervorkurs",
         subtitle:
-            "Vor Vorlesungsbeginn von Null auf Java, C# oder Python - kostenlos, ohne Vorkenntnisse und mit Tutoren an deiner Seite.",
+            "Vor Vorlesungsbeginn von Null auf java, cs oder python - kostenlos, ohne Vorkenntnisse und mit Tutoren an deiner Seite.",
         image: "/assets/backgrounds/vorkurs.jpg",
         imageOverlay: true,
         buttontext: "Zum Vorkurs",

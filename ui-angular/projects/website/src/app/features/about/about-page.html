@@ -1,0 +1,147 @@
+<iwi-page-header
+  title="Wir sind die Fachschaft IWI"
+  subtitle="Hier findest du also Informationen zu uns und wie du uns erreichen kannst. Möchtest du mitmachen oder hast du Fragen und Anregungen? Wir freuen uns auf deine Nachricht."
+/>
+
+<section class="iwi-container iwi-section">
+  <h2>Was ist die Fachschaft?</h2>
+  <div class="row g-4 mb-4">
+    <div class="col-12 col-md-8">
+      <p>
+        Im weitesten Sinne gehören alle Studierenden der Fakultät für Informatik und
+        Wirtschaftsinformatik der
+        <b>Fachschaft für Informatik und Wirtschaftsinformatik</b>, kurz IWI, an.
+        <br />
+        <br />
+        Die <b>aktive Fachschaft</b> setzt sich allerdings nur aus einem kleinen Kreis freiwilliger
+        Helfer zusammen, die sich <b>aktiv für die Interessen der Studierenden</b> in ihrem
+        Fachbereich einsetzen.
+      </p>
+    </div>
+    <div class="col-12 col-md-4">
+      <img
+        class="about__photo"
+        src="/images/fs-iwi-gesamtbild.jpg"
+        alt="Fachschaft Gruppenbild"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <h4 class="mb-4">Primärer Aufgabenbereich</h4>
+  <p>
+    Die Fachschaft ist für <b>alle Belange der Studierenden</b> im Fachbereich Informatik und
+    Wirtschaftsinformatik zuständig. Wir stehen euch nicht nur als
+    <b>Ansprechpartner für studienbezogene Fragen</b> zur Verfügung, sondern
+    <b>organisieren die O-Phase und den Programmiervorkurs,</b>
+    <b>bieten Hilfe bei Problemen</b> zwischen Studierenden und ProfessorInnen an und vieles mehr.
+  </p>
+</section>
+
+<section class="cta">
+  <div class="iwi-container cta__inner">
+    <h2 class="cta__title">Möchtest du mit dabei sein?</h2>
+    <p>
+      Melde dich direkt bei uns vor Ort in der Fachschaft, per Email oder komm zur
+      Fachschaftssitzung!
+    </p>
+    <a iwiButton="petrol-pale" size="lg" routerLink="/about" fragment="mitmachen"
+      >Jetzt mitmachen</a
+    >
+  </div>
+</section>
+
+<section class="iwi-container iwi-section">
+  <h2 class="iwi-heading-flush">Vorstand &amp; Fachschaft</h2>
+  <p>
+    Die Rollen in der Fachschaft sind klar verteilt. Es gibt die Vorstandsebene und die Fachbereiche
+    innerhalb der Fachschaft. Der Vorstand (1. &amp; 2. Vorsitz sowie 1. &amp; 2. Finanzer) werden
+    für ein Jahr laut Satzung zu Beginn jedes Wintersemesters gewählt.
+  </p>
+  <div class="mb-5">
+    <iwi-member-grid [members]="board" />
+    <!-- Ämter - die Fachbereiche folgen weiter unten im Abschnitt "Fachbereiche" -->
+    <iwi-member-grid [members]="offices" />
+  </div>
+</section>
+
+<section class="iwi-container iwi-section" id="fachbereiche">
+  <h2 class="iwi-heading-flush">Fachbereiche</h2>
+  <p>
+    Die inhaltliche Arbeit passiert in den Fachbereichen. Jeder Fachbereich hat eine
+    <b>feste Ansprechperson</b> und einen klar abgegrenzten Aufgabenbereich. Bei Fachbereichen, die
+    noch gesucht werden, freuen wir uns über deine Unterstützung.
+  </p>
+  <div class="row gx-5 mb-5">
+    @for (department of departments; track department.position) {
+      <div class="col-12 col-md-6 col-lg-4">
+        <iwi-department-card [department]="department" />
+      </div>
+    }
+  </div>
+</section>
+
+<section class="iwi-container iwi-section" id="mitmachen">
+  <h2 class="iwi-heading-flush">Mitmachen</h2>
+  <p>
+    Wir sind immer froh über <b>engagierte Helfer:innen</b>, die sich für die Studierenden des
+    Fachbereichs einsetzen wollen. Welche und wie viele Aufgaben du übernimmst und wie viel Zeit du
+    investierst, entscheidest du selbst: Ob du einfach nur an den Sitzungen teilnimmst oder dich
+    aktiv um einen eigenen Aufgabenbereich kümmerst – du bist bei uns immer herzlich willkommen.
+  </p>
+  <p>
+    Ein guter Anfang ist es, bei einer <b>Fachschaftssitzung</b> vorbeizuschauen. Hast du vorher
+    noch Fragen oder Anregungen? Dann schreib uns eine Mail, klingel bei uns durch oder komm einfach
+    in <b>Raum E013</b> vorbei.
+  </p>
+
+  <iwi-info-box>
+    Aktuell finden die <b>Sitzungen sowohl in Präsenz als auch remote</b> statt. Wenn du Interesse
+    hast, Teil der aktiven Fachschaft zu werden, komm einfach zur <b>Fachschaftssitzung</b>. Immer
+    <b>mittwochs ab 11:30 Uhr im Raum E004</b> oder auf
+    <a
+      class="about__inline-link"
+      [href]="site.links.discord"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><b>Discord</b></a
+    >.
+    <a
+      infoBoxAction
+      iwiButton
+      [href]="site.links.discord"
+      target="_blank"
+      rel="noopener noreferrer"
+      >{{ site.meeting.onlineTitle }}</a
+    >
+  </iwi-info-box>
+
+  <div class="mt-3 mb-5">
+    <a iwiButton size="lg" routerLink="/contact">Kontakt aufnehmen</a>
+  </div>
+</section>
+
+<section class="iwi-container iwi-section" id="sitzungsprotokolle">
+  <h2 class="iwi-heading-flush">Sitzungs<wbr />protokolle</h2>
+  <p>
+    Die Protokollierung der Fachschaftssitzungen dient dazu, wichtige Themen und Abstimmungen für
+    alle Studierenden transparent zugänglich zu machen. Wir bemühen uns jedes Protokoll zur
+    Verfügung zu stellen.
+  </p>
+  <div class="mb-5">
+    <iwi-protocol-list />
+  </div>
+</section>
+
+<section class="iwi-container iwi-section" id="fachschaftsordnung">
+  <h2 class="iwi-heading-flush">Fachschafts<wbr />ordnung</h2>
+  <p>
+    Jede Fachschaft verfügt über eine Fachschaftsordnung, die für ihre Arbeit von grundlegender
+    Bedeutung ist.
+  </p>
+  <iwi-download-row
+    title="Fachschaftsordnung Informatik und Wirtschaftsinformatik"
+    subtext="Fassung vom 21. April 2021"
+    [href]="site.links.statutes"
+  />
+</section>

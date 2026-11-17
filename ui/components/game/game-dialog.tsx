@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { PlatformerGame, GAME_WIDTH, GAME_HEIGHT } from "./game";
+import {useEffect, useRef, useState} from "react";
+import {GAME_HEIGHT, GAME_WIDTH, PlatformerGame} from "./game";
 
 /**
  * Easter Egg: kleiner Endless Runner. Der Auslöser ist bewusst unauffällig –

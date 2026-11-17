@@ -1,0 +1,48 @@
+@use 'breakpoints' as bp;
+
+.news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 40rem;
+  margin-bottom: 1rem;
+  transition: opacity var(--iwi-transition);
+
+  &[aria-busy='true'] {
+    opacity: 0.6;
+  }
+}
+
+.news__item {
+  padding: 1.5rem;
+  border-radius: var(--iwi-radius-sm);
+  background: var(--iwi-surface);
+  box-shadow: var(--iwi-shadow-sm);
+}
+
+.news__title {
+  margin-bottom: 0.75rem;
+  color: var(--iwi-petrol);
+}
+
+.news__content {
+  color: #374151;
+
+  ::ng-deep a {
+    color: var(--iwi-blue);
+    text-decoration: underline;
+  }
+
+  ::ng-deep p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.news__pager {
+  display: block;
+  margin-bottom: 3rem;
+
+  @include bp.up(bp.$xl) {
+    margin-bottom: 6rem;
+  }
+}

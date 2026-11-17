@@ -1,7 +1,7 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 
 import Button from "../components/common/button";
-import { strings } from "@lib/strings";
+import {strings} from "@lib/strings";
 import Header from "../components/common/header";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 

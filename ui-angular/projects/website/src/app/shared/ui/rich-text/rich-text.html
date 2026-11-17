@@ -1,0 +1,7 @@
+@for (segment of segments(); track $index) {
+  @if (segment.bold) {
+    <b>{{ segment.text }}</b>
+  } @else {
+    {{ segment.text }}
+  }
+}

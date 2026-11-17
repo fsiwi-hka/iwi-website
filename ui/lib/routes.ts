@@ -10,6 +10,7 @@ export const routeNames: Record<string, string> = {
     "/first-year": "Erstsemester",
     "/about": "Fachschaft",
     "/news": "Aktuelles",
+    "/events": "Termine",
     "/studies": "Studium",
     "/contact": "Kontakt",
     "/pre-course": "Programmiervorkurs",

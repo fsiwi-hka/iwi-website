@@ -1,0 +1,6 @@
+# Wird vom openapi-generator ausgewertet: diese Dateien werden nicht (neu) erzeugt.
+# Der Client lebt als Library im Angular-Workspace und wird nicht einzeln
+# veroeffentlicht - README, git_push.sh und .gitignore des Generators braucht es nicht.
+README.md
+git_push.sh
+.gitignore

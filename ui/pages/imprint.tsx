@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 
 import Header from "../components/common/header";
 import MarkdownSection from "../components/common/markdown-section";

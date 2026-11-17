@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.package__title {
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: var(--iwi-radius) var(--iwi-radius) 0 0;
+  background: var(--iwi-petrol-pale);
+  color: var(--iwi-white);
+  text-align: center;
+}
+
+.package__title--blue {
+  background: var(--iwi-blue);
+}
+
+.package__body {
+  flex-grow: 1;
+  padding: 1.5rem;
+  border-radius: 0 0 var(--iwi-radius) var(--iwi-radius);
+  background: var(--iwi-surface);
+
+  p,
+  li,
+  h5 {
+    color: var(--iwi-petrol);
+  }
+}

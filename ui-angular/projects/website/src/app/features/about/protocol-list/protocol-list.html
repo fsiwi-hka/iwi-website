@@ -1,0 +1,20 @@
+@if (protocols.status() === 'error') {
+  <p>Die Protokolle konnten gerade nicht geladen werden.</p>
+} @else if (protocols.isLoading()) {
+  <p aria-busy="true">Protokolle werden geladen …</p>
+}
+
+<mat-accordion multi>
+  @for (semester of semesters(); track semester.key) {
+    <mat-expansion-panel class="semester">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="semester__title">{{ semester.label }}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-template matExpansionPanelContent>
+        @for (file of semester.files; track file) {
+          <iwi-download-row [title]="title(file)" [href]="url(file)" />
+        }
+      </ng-template>
+    </mat-expansion-panel>
+  }
+</mat-accordion>

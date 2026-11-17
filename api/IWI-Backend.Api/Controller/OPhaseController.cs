@@ -19,14 +19,16 @@ public class OPhaseController(
 {
 
     [HttpGet]
-    public async Task<ActionResult<OPhaseInfoDto>> OPhaseInfos(CancellationToken ct)
+    public async Task<ActionResult<OPhaseInfoDto>> GetOPhaseInfo(CancellationToken ct)
     {
         var infos = await syncService.ReadOptionsFileAsync(ct);
         return Ok(infos);
     }
 
     [HttpGet("timetable")]
-    public async Task<IActionResult> OPhaseTimetable([FromQuery] string course)
+    [ProducesResponseType(typeof(PhysicalFileResult), StatusCodes.Status200OK, "image/png")]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetOPhaseTimetable([FromQuery] string course)
     {
 
         var cacheDir = opt.Value.CacheDirectory;
@@ -37,9 +39,10 @@ public class OPhaseController(
         if (!full.StartsWith(root, StringComparison.Ordinal) || !System.IO.File.Exists(full))
             return NotFound();
 
-        const string contentType = "application/octet-stream";
-
-        Response.Headers.CacheControl = "public, max-age=31536000, immutable";
+        // Der Plan aendert sich unter derselben URL, darf also nie ungefragt aus dem
+        // Browser-Cache kommen. "no-cache" erzwingt eine Rueckfrage bei jedem Laden;
+        // PhysicalFile setzt ETag/Last-Modified, unveraendert kommt nur ein 304 zurueck.
+        Response.Headers.CacheControl = "no-cache";
         return PhysicalFile(full, "image/png", enableRangeProcessing: true);
     }
 

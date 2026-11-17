@@ -1,0 +1,27 @@
+// Poppins wird selbst gehostet (public/assets/fonts), kein Google-Fonts-CDN.
+// Es werden nur die Schnitte ausgeliefert, die die Seite wirklich nutzt.
+$_weights: (
+  300: 'Light',
+  400: 'Regular',
+  500: 'Medium',
+  600: 'SemiBold',
+  700: 'Bold',
+);
+
+@each $weight, $name in $_weights {
+  @font-face {
+    font-family: Poppins;
+    src: url('/assets/fonts/Poppins-#{$name}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/assets/fonts/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

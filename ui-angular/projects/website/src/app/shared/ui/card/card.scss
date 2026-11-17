@@ -1,0 +1,62 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--iwi-radius-xl);
+  color: var(--iwi-grey);
+  text-align: left;
+}
+
+:host(a),
+:host(button) {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  transition: box-shadow var(--iwi-transition);
+
+  &:hover {
+    box-shadow: var(--iwi-shadow-lg);
+  }
+}
+
+:host(.iwi-card--pad-sm) {
+  padding: 1rem;
+}
+
+:host(.iwi-card--pad-md) {
+  padding: 1.5rem;
+}
+
+:host(.iwi-card--pad-lg) {
+  padding: 2rem;
+}
+
+:host(.iwi-card--surface) {
+  background: var(--iwi-surface);
+}
+
+:host(.iwi-card--white) {
+  background: var(--iwi-white);
+  border: 1px solid var(--iwi-grey-light);
+}
+
+:host(.iwi-card--blue),
+:host(.iwi-card--petrol),
+:host(.iwi-card--petrol-pale) {
+  color: var(--iwi-white);
+
+  ::ng-deep :is(h1, h2, h3, h4, h5, p, li) {
+    color: var(--iwi-white);
+  }
+}
+
+:host(.iwi-card--blue) {
+  background: var(--iwi-blue);
+}
+
+:host(.iwi-card--petrol) {
+  background: var(--iwi-petrol);
+}
+
+:host(.iwi-card--petrol-pale) {
+  background: var(--iwi-petrol-pale);
+}

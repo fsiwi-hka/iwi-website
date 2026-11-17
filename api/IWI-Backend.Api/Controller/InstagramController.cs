@@ -26,7 +26,9 @@ public class InstagramController(
     }
     
     [HttpGet("insta-media/{name}")]
-    public ActionResult GetInstagramMedia(string name)
+    [ProducesResponseType(typeof(PhysicalFileResult), StatusCodes.Status200OK, "application/octet-stream")]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public IActionResult GetInstagramMedia(string name)
     {
         if (name.Contains('/') || name.Contains('\\') || name.Contains("..") || Path.IsPathRooted(name))
             return BadRequest();
@@ -45,7 +47,7 @@ public class InstagramController(
 
     [Authorize]
     [HttpGet("refresh")]
-    public async Task<IActionResult> Refresh(CancellationToken ct)
+    public async Task<IActionResult> RefreshInstagram(CancellationToken ct)
     {
         var token = options.Value.RefreshToken;
         if (!string.IsNullOrEmpty(token) &&

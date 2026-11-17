@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tile__avatar {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.tile__position {
+  margin: 0;
+  color: var(--iwi-petrol);
+  font-weight: 700;
+}
+
+.tile__name {
+  color: var(--iwi-grey-medium);
+}

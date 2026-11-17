@@ -1,12 +1,13 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 
 import BoxBig from "../components/common/box-big";
 import Button from "../components/common/button";
 import Carousel from "../components/common/carousel";
 import InstagramFeed from "../components/common/InstagramFeed";
 import Slider from "../components/common/slider";
-import { slides } from "../content/slides";
-import { sponsorLogos } from "../content/sponsors";
+import UpcomingEvents from "../components/common/UpcomingEvents";
+import {slides} from "../content/slides";
+import {sponsorLogos} from "../content/sponsors";
 
 function Index() {
   return (
@@ -61,6 +62,8 @@ function Index() {
           ></BoxBig>
         </div>
       </div>
+
+      <UpcomingEvents />
 
       <InstagramFeed></InstagramFeed>
 

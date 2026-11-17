@@ -1,0 +1,66 @@
+:host {
+  position: fixed;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+  background: var(--iwi-petrol);
+  cursor: pointer;
+  user-select: none;
+}
+
+.dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  display: flex;
+  gap: 0.5rem;
+  transform: translateX(-50%);
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--iwi-white);
+  opacity: 0.3;
+  transition: opacity 300ms ease;
+}
+
+.dot--active {
+  opacity: 1;
+}
+
+.progress {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0.25rem;
+  background: rgb(255 255 255 / 20%);
+}
+
+.progress__bar {
+  height: 100%;
+  background: var(--iwi-blue);
+  animation: progress-fill linear forwards;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--iwi-white);
+  font-size: 1.875rem;
+  opacity: 0.4;
+}
+
+@keyframes progress-fill {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  width: 3.5rem;
+  padding-block: 0.5rem;
+  border-radius: var(--iwi-radius);
+  line-height: 1.25;
+}
+
+:host(.date-badge--blue) {
+  background: var(--iwi-blue);
+  color: var(--iwi-white);
+}
+
+:host(.date-badge--white) {
+  width: 4rem;
+  background: var(--iwi-white);
+  color: var(--iwi-petrol);
+
+  .date-badge__day {
+    font-size: 1.5rem;
+  }
+}
+
+.date-badge__day {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.date-badge__month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}

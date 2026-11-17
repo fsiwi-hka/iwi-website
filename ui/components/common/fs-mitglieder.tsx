@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Mitglied } from "../../content/member";
-import MemberAvatar, { anzeigeName } from "./member-avatar";
+import React, {useState} from "react";
+import {Mitglied} from "../../content/member";
+import MemberAvatar, {anzeigeName} from "./member-avatar";
 
 interface FsMitgliederProps {
   mitglieder: (Mitglied | null)[]; // Das Array kann auch null-Werte enthalten

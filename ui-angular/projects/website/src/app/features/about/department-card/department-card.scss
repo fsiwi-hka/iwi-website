@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.department__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.department__avatar {
+  flex-shrink: 0;
+  width: 3.5rem;
+}
+
+.department__lead {
+  margin: 0;
+  color: var(--iwi-petrol);
+}

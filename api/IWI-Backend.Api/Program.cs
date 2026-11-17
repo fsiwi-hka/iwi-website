@@ -3,8 +3,12 @@ using IWI_Backend.Api.Controller;
 using IWI_Backend.Api.Database;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.Auth;
+using IWI_Backend.Api.Services.Calendar;
 using IWI_Backend.Api.Services.OPhase;
+using IWI_Backend.Api.Services.OpenApi;
 using IWI_Backend.Api.Services.Raumzeit;
+using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
@@ -28,6 +32,7 @@ builder.Services.Configure<WebDavOptions>(builder.Configuration.GetSection("WebD
 builder.Services.Configure<ProtocolOptions>(builder.Configuration.GetSection("Protocols"));
 builder.Services.Configure<MediaOptions>(builder.Configuration.GetSection("Media"));
 builder.Services.Configure<SyncOptions>(builder.Configuration.GetSection("Sync"));
+builder.Services.Configure<CalendarOptions>(builder.Configuration.GetSection("Calendar"));
 builder.Services.Configure<InstagramGraphOptions>(
     builder.Configuration.GetSection("Instagram"));
 
@@ -36,6 +41,14 @@ builder.Services.AddHttpClient<WebDavClient>(c => c.Timeout = TimeSpan.FromMinut
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
 {
+    // Sprechende, eindeutige operationIds ("GetCalendarEvents" statt "apiCalendarEventsGet").
+    // Daraus entstehen die Methodennamen im generierten Angular-Client (ui-angular/projects/api).
+    o.CustomOperationIds(api =>
+        api.ActionDescriptor.EndpointMetadata.OfType<IEndpointNameMetadata>().FirstOrDefault()?.EndpointName
+        ?? (api.ActionDescriptor is ControllerActionDescriptor action ? action.ActionName : null));
+    o.SupportNonNullableReferenceTypes();
+    o.SchemaFilter<RequiredPropertiesSchemaFilter>();
+
     o.AddSecurityDefinition(FixedTokenHandler.SchemeName, new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.Http,
@@ -75,6 +88,10 @@ builder.Services.AddHostedService(sp => sp.GetRequiredService<MediaSyncService>(
 builder.Services.AddHostedService(sp => sp.GetRequiredService<ProtocolSyncService>());
 builder.Services.AddHostedService(sp => sp.GetRequiredService<OPhaseSyncService>());
 
+builder.Services.AddSingleton<CalendarStore>();
+builder.Services.AddSingleton<CalendarSyncService>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<CalendarSyncService>());
+
 builder.Services.AddSingleton(_ =>
 {
     var p = new FileExtensionContentTypeProvider
@@ -90,22 +107,28 @@ builder.Services.AddSingleton(_ =>
 
 var corsOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? [];
 builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
-    p.WithOrigins(corsOrigins).AllowAnyHeader().AllowAnyMethod()));
+    p.WithOrigins(corsOrigins).AllowAnyHeader().AllowAnyMethod()
+        // Die News-Seite liest die Gesamtzahl der Posts fuers Blaettern aus diesem Header.
+        .WithExposedHeaders("X-Total-Count")));
 
 builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 app.UseCors();
 
-app.MapGet("/api/health", (MediaStore store, InstagramStore instagram) =>
+app.MapGet("/api/health", (MediaStore store, InstagramStore instagram, CalendarStore calendar) =>
     Results.Ok(new
     {
         status = "ok",
         lastSync = store.LastSync,
         slides = store.Slides.Count,
         instagramLastSync = instagram.LastSync,
-        instagramPosts = instagram.Feed.Data.Count
-    }));
+        instagramPosts = instagram.Feed.Data.Count,
+        calendarLastSync = calendar.LastSync,
+        calendarEvents = calendar.Events.Count
+    }))
+    .WithName("GetHealth")
+    .WithTags("Health");
 
 app.UseSwagger();
 app.UseSwaggerUI();

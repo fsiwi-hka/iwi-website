@@ -1,5 +1,5 @@
-import { CarouselImage } from "../../content/sponsors";
-import { useEffect, useRef } from "react";
+import {CarouselImage} from "../../content/sponsors";
+import {useEffect, useRef} from "react";
 
 interface CarouselProps {
   images: CarouselImage[];

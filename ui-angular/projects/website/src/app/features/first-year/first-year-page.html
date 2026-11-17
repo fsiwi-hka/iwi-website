@@ -1,0 +1,145 @@
+<iwi-page-header
+  title="Informationen für Erstsemester"
+  subtitle="Du bist neue(r) Student(in), also Ersti, der Fakultät IWI? Dann bist du hier goldrichtig. Wir haben dir alle wichtigen Infos zu deinen ersten Tagen an der Hochschule zusammengestellt."
+/>
+
+<div class="iwi-container iwi-section">
+  <h2>Allgemeine Informationen</h2>
+  <iwi-info-box>
+    Um euch den Einstieg ins Studium zu erleichtern, unterstützen wir euch Erstis bereits vor Beginn
+    der Vorlesungen. Darüber hinaus gibt es eine Orientierungsphase für euch, die am Montag in der
+    ersten Vorlesungswoche startet.
+  </iwi-info-box>
+
+  <div class="row g-4 section-gap">
+    <div class="col-12 col-md-6 d-flex gap-3">
+      <iwi-icon class="feature-icon" name="console-network" [size]="3.75" />
+      <p>
+        Zum einen bieten wir einen <b>Programmiervorkurs</b> an, in dem ihr euch mit den
+        Programmiersprachen <b>Java</b>, <b>C++</b> und <b>Python</b> vertraut machen könnt. Dieser
+        Kurs findet <b>zwei Wochen vor Vorlesungsbeginn</b> statt.
+      </p>
+    </div>
+    <div class="col-12 col-md-6 d-flex gap-3">
+      <iwi-icon class="feature-icon" name="book-education" [size]="3.75" />
+      <p>
+        Zusätzlich stellen wir ein Ersti-Heft zur Verfügung, das jedes Semester aktualisiert und
+        überarbeitet wird. <b>Das zugehörige Passwort erhältst du während der O-Phase.</b> Um das
+        Studium besser zu verstehen, gibt es während der Orientierungsphase ein
+        <b>Briefing zur Prüfungsordnung (PO)</b>.
+      </p>
+    </div>
+  </div>
+
+  <h2>Wichtige Links und Dokumente</h2>
+  <h4 class="mb-3">O-Phase</h4>
+  <iwi-document-tiles class="d-block mb-5" [links]="orientationLinks" />
+
+  <h4 class="m-0">Studien- und Prüfungsordnung (SPO)</h4>
+  <p class="mb-3">Letzter Stand der Aktualisierung: {{ spoUpdated }}</p>
+  <iwi-document-tiles class="d-block mb-5" [links]="spoLinks" />
+
+  <h4 class="mb-3">Studium</h4>
+  <iwi-document-tiles class="d-block section-gap" [links]="studyLinks" />
+
+  <h2 class="iwi-heading-flush mb-3">Orientierungs-Phase (= O-Phase)</h2>
+  <iwi-info-box>
+    Die O-Phase im {{ semester() }} läuft vom <b>{{ orientationRange() }}</b
+    >. Ab dem <b>{{ lecturesStart() }}</b> sind regulär Vorlesungen! Schaut bitte in euren
+    Stundenplan. Übungen und Labore beginnen ab der 2. Vorlesungswoche (mit Ausnahmen).
+  </iwi-info-box>
+
+  <div class="d-flex flex-column gap-5 my-5">
+    <div class="media-text">
+      <div class="media-text__image">
+        <img src="/images/news/demo_beer.jpg" alt="O-Phase Team" loading="lazy" />
+      </div>
+      <div>
+        <h4 class="mb-3">Wer organisiert die O-Phase?</h4>
+        <p>
+          Organisiert werden die Veranstaltungen vor und in der ersten Woche von der Hochschule bzw.
+          Fakultät und von der Fachschaft Informatik und Wirtschaftsinformatik (das sind wir).
+        </p>
+      </div>
+    </div>
+    <div class="media-text">
+      <div class="media-text__image">
+        <img src="/images/news/demo_party.png" alt="O-Phase Team" loading="lazy" />
+      </div>
+      <div>
+        <h4 class="mb-3">Wer darf teilnehmen?</h4>
+        <p>
+          Die O-Phase richtet sich an alle Studenten der Bachelor Studiengänge: <br />
+          <b
+            >Informatik, Medieninformatik, Wirtschaftsinformatik, Internationales IT Business und
+            Data Science</b
+          >
+          <br />
+          <br />
+          Ebenso für die Master Studiengänge: <br />
+          <b>Informatik und Wirtschaftsinformatik</b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="mb-2">O-Phasen-Programm</h4>
+  <div class="text-action section-gap">
+    <p class="text-action__text">
+      Da innerhalb der Fakultät Informatik und Wirtschaftsinformatik
+      <b>verschiedene Programme in der O-Phase</b> angeboten werden, sind
+      <b>zwei Programmübersichten</b> zu sehen. Gegebenenfalls kann es auch innerhalb eines
+      Zeitplans verschiedene Zeitstränge geben, achtet hier auf die betroffene Gruppe.
+      <br />
+      <br />
+      Beachte bitte, dass sich die genaueren Planungen kurzfristig ändern können. Es lohnt sich
+      regelmäßig vorbeizuschauen.
+      <b>Über Änderungen während der O-Phase versuchen wir euch rechtzeitig zu informieren.</b>
+    </p>
+    <div class="text-action__action">
+      <a iwiLinkTile tone="red" routerLink="/orientation">O-Phasen-Programm</a>
+      <p class="text-action__note"><b>Hinweis:</b> TBA bedeutet to be announced</p>
+    </div>
+  </div>
+
+  <h2>Studiboard</h2>
+  <div class="text-action">
+    <p class="text-action__text">
+      Wir betreiben eine Cloud, die <b>wichtige Informationen zum Studium</b> bereitstellt und
+      weitere <b>Dokumente</b> verwaltet. Hierzu werden <b>RZ Zugangsdaten benötigt</b>.
+      <br />
+      <br />
+      Im Ordner "Allgemeines" findet man auch
+      <b>diverse Signalgruppen aus den vorherigen Semestern</b>, falls jemand aufgrund eines
+      Hochschulwechsels im höheren Semester beginnt.
+    </p>
+    <div class="text-action__action">
+      <a
+        iwiLinkTile
+        tone="red"
+        [href]="site.links.studiBoardLogin"
+        target="_blank"
+        rel="noopener noreferrer"
+        >StudiBoard</a
+      >
+    </div>
+  </div>
+
+  <iwi-info-box>
+    Sollte die <b>Registrierung</b> fehlschlagen, bitten wir dich uns eine Email mit deinem
+    <b>RZ Kürzel</b> und deiner <b>Hochschulemail</b> an folgende Email zu senden:
+    <iwi-protected-contact [email]="site.mail.contact" />
+  </iwi-info-box>
+
+  <h2 class="section-top">RZ-Kennung / Fragen?</h2>
+  <iwi-info-box>
+    Habt ihr Probleme mit eurer RZ Kennung und könnt euch nicht anmelden? Dann meldet euch beim RZ:
+    <br />
+    Montag - Freitag: 08:00 - 14:00 Uhr | Gebäude LI, Raum 135, Moltkestr. 30, 76133 Karlsruhe
+  </iwi-info-box>
+  <p>
+    Wenn ihr Fragen oder Probleme habt, meldet euch einfach in der Signal-Gruppe oder schreibt eine
+    Mail:
+    <iwi-protected-contact [email]="site.mail.contact" />
+  </p>
+</div>

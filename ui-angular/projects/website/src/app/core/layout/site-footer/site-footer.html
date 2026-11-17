@@ -1,0 +1,80 @@
+<footer class="site-footer">
+  <div class="iwi-container site-footer__top">
+    <ul class="site-footer__socials" aria-label="Social Media">
+      @for (social of socials; track social.url) {
+        <li>
+          <a
+            [href]="social.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="social.label"
+          >
+            <iwi-icon [name]="social.icon" [size]="1.6" />
+          </a>
+        </li>
+      }
+    </ul>
+
+    <div class="site-footer__columns">
+      <div class="site-footer__column">
+        <h5>Kontakt</h5>
+        <p>
+          {{ site.name }}<br />
+          Gebäude E – Raum 013<br />
+          {{ site.address.street }}<br />
+          {{ site.address.city }}
+        </p>
+        <p class="mb-0">
+          <iwi-protected-contact [email]="site.mail.contact" /><br />
+          <iwi-protected-contact [tel]="site.phone.label" />
+        </p>
+      </div>
+
+      @for (column of columns; track column.title) {
+        <div class="site-footer__column">
+          <h5>{{ column.title }}</h5>
+          @for (link of column.links; track link.title) {
+            @if (link.external) {
+              <a iwiArrowLink [href]="link.href" target="_blank" rel="noopener noreferrer">{{
+                link.title
+              }}</a>
+            } @else {
+              <a iwiArrowLink [routerLink]="link.href" [fragment]="link.fragment">{{
+                link.title
+              }}</a>
+            }
+          }
+        </div>
+      }
+
+      <div class="site-footer__column">
+        <h5>Sitzung</h5>
+        <p class="mb-1">{{ site.meeting.label }}</p>
+        <a
+          iwiButton="white"
+          [href]="site.links.discord"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ site.meeting.onlineTitle }}</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="iwi-container site-footer__bottom">
+    <span class="site-footer__copyright">
+      {{ site.name }} &copy; {{ year }}
+      <iwi-kiwi-runner-trigger />
+    </span>
+    <a routerLink="/" class="site-footer__logo">
+      <img src="/assets/iwi-logo-white.png" alt="IWI-Logo, zur Startseite" width="80" height="48" />
+    </a>
+    <span class="site-footer__legal">
+      <a [href]="site.links.statutes" target="_blank" rel="noopener noreferrer"
+        >Fachschaftsordnung</a
+      >
+      |
+      <a routerLink="/imprint">Impressum</a>
+    </span>
+  </div>
+</footer>

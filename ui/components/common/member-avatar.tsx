@@ -1,5 +1,5 @@
 import React from "react";
-import { Person } from "../../content/member";
+import {Person} from "../../content/member";
 
 const PLACEHOLDER = "/images/fachschaft/placeholder.jpg";
 const PLACEHOLDER_GESUCHT = "/images/fachschaft/placeholder_gesucht.jpg";

@@ -1,0 +1,25 @@
+<div class="row g-3 g-md-4">
+  @for (link of links(); track link.url) {
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      @if (isInternal(link)) {
+        <a
+          iwiLinkTile
+          [tone]="link.tone ?? 'petrol'"
+          [subtext]="link.subtext"
+          [routerLink]="link.url"
+          >{{ link.text }}</a
+        >
+      } @else {
+        <a
+          iwiLinkTile
+          [tone]="link.tone ?? 'petrol'"
+          [subtext]="link.subtext"
+          [href]="link.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ link.text }}</a
+        >
+      }
+    </div>
+  }
+</div>

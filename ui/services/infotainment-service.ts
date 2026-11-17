@@ -11,7 +11,9 @@ class InfotainmentService extends BaseService {
     }
 
     public getSlideUrl(name: string): string {
-        return this.buildUrl(`/${encodeURIComponent(name)}`);
+        const url = this.buildUrl(`${name}`);
+        console.log("URL", url);
+        return url;
     }
 }
 

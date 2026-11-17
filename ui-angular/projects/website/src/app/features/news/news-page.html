@@ -1,0 +1,44 @@
+<iwi-page-header
+  title="Wichtige Ankündigungen"
+  subtitle="Hier findest du alle aktuellen Informationen und Updates rund um die Fachschaft. Bleib auf dem Laufenden über bevorstehende Veranstaltungen, wichtige Ankündigungen, neue Projekte und alles, was das Studium an unserer Fakultät noch spannender macht."
+/>
+
+<section class="iwi-container iwi-section">
+  @if (posts().length > 0 || news.isLoading()) {
+    <h2>Aktuelles</h2>
+
+    <!-- Feste Mindesthoehe: die Seite springt beim Blaettern nicht. -->
+    <div class="news__list" [attr.aria-busy]="news.isLoading()">
+      @for (post of posts(); track post.id) {
+        <article class="news__item">
+          <h4 class="news__title">{{ post.title }}</h4>
+          <!-- HTML aus dem Bulletin Board; Angular bereinigt es beim Binden. -->
+          <div class="news__content" [innerHTML]="post.content"></div>
+        </article>
+      }
+    </div>
+
+    @if (pageCount() > 1) {
+      <iwi-pager
+        class="news__pager"
+        label="Seiten der Ankündigungen"
+        [(page)]="page"
+        [pageCount]="pageCount()"
+      />
+    }
+  }
+
+  <iwi-info-box>
+    Aktuell finden die Sitzungen sowohl in Präsenz als auch remote statt. Wenn du Interesse hast,
+    Teil der aktiven Fachschaft zu werden, komm einfach zur Fachschaftssitzung. Immer mittwochs ab
+    11:30 Uhr im Raum E004 oder auf Discord.
+    <a
+      infoBoxAction
+      iwiButton
+      [href]="site.links.discord"
+      target="_blank"
+      rel="noopener noreferrer"
+      >{{ site.meeting.onlineTitle }}</a
+    >
+  </iwi-info-box>
+</section>

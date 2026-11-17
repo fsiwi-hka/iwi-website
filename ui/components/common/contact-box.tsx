@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Icon } from "@mdi/react";
+import {Icon} from "@mdi/react";
 
 interface ContactList {
   title: string;

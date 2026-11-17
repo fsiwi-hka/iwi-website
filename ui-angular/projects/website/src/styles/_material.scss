@@ -1,0 +1,68 @@
+// Anpassungen der Angular-Material-Komponenten an den Stil der Seite.
+// Farben kommen aus dem Theme (styles.scss); hier werden nur Form und
+// Schrift auf den Auftritt der Fachschaft gezogen.
+@use '@angular/material' as mat;
+
+:root {
+  @include mat.dialog-overrides(
+    (
+      container-shape: var(--iwi-radius-xl),
+      container-color: var(--iwi-white),
+      subhead-color: var(--iwi-petrol-pale),
+      supporting-text-color: var(--iwi-grey),
+    )
+  );
+
+  @include mat.expansion-overrides(
+    (
+      container-shape: var(--iwi-radius-sm),
+      container-background-color: var(--iwi-surface),
+      header-text-color: var(--iwi-petrol),
+      header-text-weight: 700,
+      header-text-size: 1.125rem,
+      header-hover-state-layer-color: #e0e0e0,
+      header-focus-state-layer-color: #e0e0e0,
+      container-text-color: var(--iwi-grey),
+    )
+  );
+
+  @include mat.snack-bar-overrides(
+    (
+      container-color: var(--iwi-petrol),
+      supporting-text-color: var(--iwi-white),
+      container-shape: var(--iwi-radius-lg),
+    )
+  );
+
+  @include mat.tooltip-overrides(
+    (
+      container-color: var(--iwi-petrol),
+      supporting-text-color: var(--iwi-white),
+    )
+  );
+}
+
+// Auf Mobilgeraeten kommen Dialoge wie bisher als Sheet von unten.
+.iwi-dialog-panel {
+  @media (max-width: 575.98px) {
+    position: fixed !important;
+    bottom: 0;
+    max-width: 100vw !important;
+    width: 100vw !important;
+
+    .mat-mdc-dialog-surface {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgb(0 0 0 / 50%);
+}
+
+// Der Spiele-Dialog bringt seine dunkle Flaeche selbst mit.
+.iwi-game-dialog .mat-mdc-dialog-surface {
+  background: transparent;
+  box-shadow: none;
+}

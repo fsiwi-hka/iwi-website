@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 
-import OphaseService, { OPhaseInfo, Zeitraum } from "@services/ophase-service";
+import OphaseService, {OPhaseInfo, Zeitraum} from "@services/ophase-service";
 
 /* Die Semestertermine kommen aus dem Backend (/api/ophase) und aendern sich
  * jedes Semester. Sie gehoeren deshalb an keine Stelle mehr fest in den Code -

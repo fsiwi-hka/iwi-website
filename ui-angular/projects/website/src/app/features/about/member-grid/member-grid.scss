@@ -1,0 +1,23 @@
+@use 'breakpoints' as bp;
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+
+  @include bp.up(bp.$sm) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include bp.up(bp.$md) {
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 3rem;
+  }
+
+  @include bp.up(bp.$lg) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

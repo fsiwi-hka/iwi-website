@@ -37,6 +37,9 @@ export abstract class BaseService {
 
     protected buildUrl(path: string, params?: Record<string, string>): string {
         const query = params ? "?" + new URLSearchParams(params).toString() : "";
+        if (path.includes(this.baseUrl)) {
+            return path;
+        }
         return `${this.baseUrl}${path}${query}`;
     }
 }

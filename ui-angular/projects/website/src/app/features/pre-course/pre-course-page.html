@@ -1,0 +1,142 @@
+<iwi-page-header
+  title="Programmiervorkurs"
+  subtitle="Der Programmiervorkurs ist für alle Erstis gedacht, die in einem Studiengang der Fakultät Informatik und Wirtschaftsinformatik (IWI) eingeschrieben sind."
+/>
+
+<div class="iwi-container iwi-section">
+  <h3 class="my-3">System.out.println("Programmiervorkurs");</h3>
+  <p>
+    Um Erstis, die zuvor noch nie etwas programmiert haben, den Einstieg zu vereinfachen, bieten wir
+    einen Programmierkurs an. Keine Angst, in den Vorlesungen wird nicht vorausgesetzt, dass du
+    schon programmieren kannst! Trotzdem ist es hilfreich, wenn du schon ein wenig mit den
+    Grundlagen vertraut bist. So lässt sich das Gehörte leichter einordnen und behalten.
+  </p>
+  <iwi-info-box>
+    Der Vorkurs wendet sich in erster Linie an absolute Programmier-Neulinge. Natürlich sind auch
+    alle anderen Erstis der Fakultät IWI eingeladen, die ihre Kenntnisse auffrischen wollen.
+  </iwi-info-box>
+</div>
+
+<section class="iwi-container iwi-section">
+  <h3 class="my-3">Überblick</h3>
+  <div class="row g-3">
+    @for (fact of overview(); track fact.title) {
+      <div [class]="fact.columns">
+        <iwi-card padding="sm" class="h-100 fact">
+          <p class="fact__title">{{ fact.title }}</p>
+          <p class="fact__text">{{ fact.text }}</p>
+        </iwi-card>
+      </div>
+    }
+    @for (fact of details; track fact.title) {
+      <div [class]="fact.columns">
+        <iwi-card padding="sm" class="h-100 fact">
+          <p class="fact__title">{{ fact.title }}</p>
+          <p class="fact__text">{{ fact.text }}</p>
+        </iwi-card>
+      </div>
+    }
+  </div>
+</section>
+
+<section class="iwi-container iwi-section">
+  <h3 class="mt-4 mb-3">Tagesablauf</h3>
+  <p>
+    Wir beginnen jeden Tag um <strong>10 Uhr</strong>. Am ersten Tag erklären wir euch in dieser
+    Zeit den Ablauf und das Vorgehen.
+  </p>
+  <p>Raumeinteilung wird folgende sein:</p>
+  <ul>
+    <li><strong>Java:</strong> LI137</li>
+    <li><strong>C#:</strong> LI146</li>
+    <li><strong>Python:</strong> LI145</li>
+  </ul>
+  <p>
+    Von <strong>10:00 bis 12:00 Uhr</strong> bekommt ihr die Theorie vermittelt. Keine Sorge! Wir
+    machen das anschaulich, praxisnah und ihr könnt jederzeit Fragen stellen.
+  </p>
+  <p>
+    Dann ist erst mal Mittagspause. Da könnt ihr euch den Tutoren anschließen mit in die Mensa oder
+    in die Stadt zu gehen.
+  </p>
+  <p>
+    Den Nachmittag (ab <strong>13:00 Uhr</strong>) habt ihr dann, um Aufgaben zum morgens Erlernten
+    zu bearbeiten. Dabei stehen euch Tutoren zur Verfügung, falls ihr nicht weiterkommen solltet.
+    Außerdem habt ihr während dieser Zeit die Möglichkeit, eure zukünftigen Mitstudierenden
+    kennenzulernen. Wir treffen uns dann wieder im gleichen Raum wie vormittags.
+  </p>
+  <p>
+    Der Tag endet für euch, wenn ihr mit den Übungen fertig seid. Je nach Tempo meistens zwischen
+    <strong>15:00</strong> und <strong>17:00 Uhr</strong>. Die Tutoren bleiben natürlich bis zum
+    Schluss.
+  </p>
+  <p>Bei Interesse können wir den Tag auch noch gemütlich in der Fachschaft ausklingen lassen.</p>
+</section>
+
+<section class="iwi-container iwi-section">
+  <h3 class="my-3">Kurzübersicht</h3>
+  <div class="table-scroll">
+    <table class="schedule">
+      <thead>
+        <tr>
+          <th scope="col">Zeitraum</th>
+          <th scope="col">Was?</th>
+          <th scope="col">Wo?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10:00 - 12:00 Uhr</td>
+          <td>Infos, Übungsbesprechung,<br />Vorlesung</td>
+          <td>
+            <div>Java: LI137</div>
+            <div>C#: LI146</div>
+            <div>Python: LI145</div>
+          </td>
+        </tr>
+        <tr>
+          <td>12:00 - 13:00 Uhr</td>
+          <td>Mittagspause</td>
+          <td>Zusammen in der Mensa<br />oder Stadt</td>
+        </tr>
+        <tr>
+          <td>ab 13:00 Uhr</td>
+          <td>Übungen, gemütliches<br />Zusammensitzen</td>
+          <td>Wie vormittags</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="iwi-container iwi-section">
+  <h3 class="my-3">Benötigte Software</h3>
+  <p>
+    Es empfiehlt sich die Programmieraufgaben auf einem eigenen Laptop durchzuführen. Die hierfür
+    benötigte Software wird gemeinsam am ersten Tag installiert und eingerichtet.
+  </p>
+  <div class="row g-4">
+    @for (tool of software; track tool.title) {
+      <div class="col-12 col-md-6 col-lg-4">
+        <iwi-link-card [card]="tool" />
+      </div>
+    }
+  </div>
+</section>
+
+<section class="iwi-container iwi-section">
+  <h3 class="my-3">Unterlagen</h3>
+  <p>Hier werden die Kursunterlagen im Verlaufe des Kurses zur Verfügung gestellt.</p>
+  @for (course of courses; track course.title) {
+    <div class="mb-5">
+      <h4 class="my-3">{{ course.title }}</h4>
+      <div class="row g-4">
+        @for (day of course.materials; track day.title) {
+          <div class="col-12 col-md-6 col-lg-3">
+            <iwi-link-card [card]="day" />
+          </div>
+        }
+      </div>
+    </div>
+  }
+</section>

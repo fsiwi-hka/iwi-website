@@ -1,5 +1,5 @@
 import Icon from "@mdi/react";
-import { mdiChevronLeft, mdiChevronRight } from "@mdi/js";
+import {mdiChevronLeft, mdiChevronRight} from "@mdi/js";
 
 interface ButtonProps {
   arrow?: "left" | "right";

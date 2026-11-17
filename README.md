@@ -15,6 +15,12 @@ area you feel comfortable in and start contributing!
 And even if you're new to all this, and haven't worked with git, Node.js and
 all that other stuff before: This is a great opportunity to get to know them :)
 
+## Angular Version
+
+A rebuild of the website in Angular lives in [`ui-angular/`](./ui-angular/README.md)
+next to the current Next.js version in `ui/`. It looks and behaves the same and
+uses a client generated from the backend's OpenAPI spec.
+
 ## Contributing
 
 If you've read this far, you probably want to do something. That's great!

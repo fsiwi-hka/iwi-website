@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 
 import Button from "../components/common/button";
 import Header from "../components/common/header";

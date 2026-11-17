@@ -1,0 +1,12 @@
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.reversed {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}

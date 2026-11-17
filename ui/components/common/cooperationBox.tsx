@@ -1,4 +1,4 @@
-import { mdiArrowTopRight } from "@mdi/js";
+import {mdiArrowTopRight} from "@mdi/js";
 import Icon from "@mdi/react";
 
 interface CooperationBoxProps {

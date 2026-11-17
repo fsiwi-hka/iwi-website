@@ -1,0 +1,63 @@
+@if (data(); as teaser) {
+  <section class="iwi-container iwi-section iwi-section--spaced">
+    <div class="d-flex flex-wrap align-items-end justify-content-between gap-2 mb-4">
+      <div>
+        <h2 class="iwi-heading-flush mb-2">Nächste Termine</h2>
+        <p class="m-0">Was demnächst bei der Fachschaft ansteht.</p>
+      </div>
+      <a class="all-link" routerLink="/events">Alle Termine →</a>
+    </div>
+
+    <div class="row g-4">
+      @if (teaser.meeting; as meeting) {
+        <div class="col-12 col-lg-4">
+          <button type="button" class="meeting-card" (click)="open(meeting)">
+            <span class="meeting-card__eyebrow">Nächste Fachschaftssitzung</span>
+            <span class="d-flex align-items-center gap-3">
+              <iwi-date-badge tone="white" [day]="firstDay(meeting)" />
+              <span class="d-flex flex-column min-w-0">
+                <span class="meeting-card__weekday">{{ weekday(meeting) }}</span>
+                <span class="meeting-card__small">{{ time(meeting) }}</span>
+                @if (meeting.location; as location) {
+                  <span class="meeting-card__small text-truncate">{{ location }}</span>
+                }
+              </span>
+            </span>
+            <span class="meeting-card__small mt-auto">
+              Die Sitzung ist öffentlich, komm einfach vorbei! Weitere Sitzungstermine findest du im
+              Kalender.
+            </span>
+          </button>
+        </div>
+      }
+
+      <div [class]="teaser.meeting ? 'col-12 col-lg-8 d-flex flex-column' : 'col-12'">
+        @if (teaser.meeting) {
+          <h3 class="others__title">Weitere Termine</h3>
+        }
+        @if (teaser.others.length > 0) {
+          <div [class]="teaser.meeting ? 'd-flex flex-column gap-3' : 'row g-3'">
+            @for (event of teaser.others; track event.id) {
+              <div [class.col-12]="!teaser.meeting" [class.col-md-4]="!teaser.meeting">
+                <button type="button" class="event-card" (click)="open(event)">
+                  <iwi-date-badge [day]="firstDay(event)" />
+                  <span class="d-flex flex-column min-w-0">
+                    <span class="event-card__title">{{ event.title }}</span>
+                    <span class="event-card__small">{{ range(event) }}</span>
+                    @if (event.location; as location) {
+                      <span class="event-card__small text-truncate">{{ location }}</span>
+                    }
+                  </span>
+                </button>
+              </div>
+            }
+          </div>
+        } @else {
+          <div class="others__empty">
+            Gerade sind keine weiteren Termine geplant. Schau bald wieder vorbei!
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+}

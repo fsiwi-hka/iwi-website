@@ -1,0 +1,35 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  padding-block: 5rem;
+}
+
+.carousel__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: carousel-scroll var(--carousel-duration) linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  li {
+    flex-shrink: 0;
+  }
+
+  img {
+    display: block;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@keyframes carousel-scroll {
+  to {
+    transform: translateX(var(--carousel-shift));
+  }
+}

@@ -29,8 +29,11 @@ class OPhaseService extends BaseService {
         return this.get<OPhaseInfo>("", signal);
     }
 
-    getTimetableUrl(course: "I" | "WI"): string {
-        return this.buildUrl("/timetable", { course });
+    /* version (z.B. changedAt) landet als ?v= in der URL. Browser, die das Bild
+     * noch mit dem alten "immutable"-Header gecacht haben, bekommen so eine neue
+     * URL und laden neu. */
+    getTimetableUrl(course: "I" | "WI", version?: string | null): string {
+        return this.buildUrl("/timetable", version ? { course, v: version } : { course });
     }
 }
 

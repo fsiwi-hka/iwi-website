@@ -1,0 +1,45 @@
+// Globale Styles der Website.
+//
+// Die Optik kommt aus drei Quellen, in dieser Reihenfolge:
+//   1. Bootstrap - nur Grid und Utilities (eingebunden in angular.json).
+//      Bootstrap-Buttons, -Formulare und -Farbklassen werden nicht genutzt.
+//   2. Angular Material - Theme unten, angepasst in styles/_material.scss.
+//   3. styles/ - Tokens, Schrift, Basis-Elemente, Layout-Helfer.
+//
+// Alles Weitere steht im SCSS der jeweiligen Komponente.
+@use '@angular/material' as mat;
+@use 'theme-colors';
+@use 'tokens';
+@use 'fonts';
+@use 'base';
+@use 'layout';
+@use 'material';
+
+html {
+  // Die Website hat keinen Dark Mode, Material soll deshalb nicht der
+  // Systemeinstellung folgen.
+  color-scheme: light;
+
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
+        primary: theme-colors.$primary-palette,
+        tertiary: theme-colors.$tertiary-palette,
+      ),
+      typography: (
+        plain-family: (
+          Poppins,
+          system-ui,
+          sans-serif,
+        ),
+        brand-family: (
+          Poppins,
+          system-ui,
+          sans-serif,
+        ),
+      ),
+      density: 0,
+    )
+  );
+}

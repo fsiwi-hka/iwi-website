@@ -1,0 +1,17 @@
+<div class="kiwi-runner">
+  <div class="kiwi-runner__bar">
+    <span>
+      Leertaste, Pfeil-Hoch oder Tippen zum Springen
+      @if (best() > 0) {
+        — Rekord: {{ best() }}m
+      }
+    </span>
+    <button
+      iwiIconButton="close"
+      label="Schließen"
+      class="kiwi-runner__close"
+      mat-dialog-close
+    ></button>
+  </div>
+  <canvas #canvas [width]="width" [height]="height" aria-label="Kiwi Runner Spielfeld"></canvas>
+</div>

@@ -1,9 +1,9 @@
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 import Header from "../components/common/header";
 import InfoBox from "../components/common/infobox";
 import ResponsiveWrapper from "../components/common/responsive-wrapper";
 import OphaseService from "@services/ophase-service";
-import { formatDate, formatRange, useOPhaseInfo } from "@lib/ophase";
+import {formatDate, formatRange, useOPhaseInfo} from "@lib/ophase";
 
 function Index() {
   const info = useOPhaseInfo();
@@ -51,7 +51,7 @@ function Index() {
               <i> TBA = to be announced </i>
             </p>
 
-            <img src={OphaseService.getTimetableUrl("I")} alt="Stundenplan" />
+            {info && <img src={OphaseService.getTimetableUrl("I", info.changedAt)} alt="Stundenplan" />}
           </div>
         </div>
       </ResponsiveWrapper>
@@ -67,7 +67,7 @@ function Index() {
               <i> TBA = to be announced </i>
             </p>
 
-            <img src={OphaseService.getTimetableUrl("WI")} alt="Stundenplan" />
+            {info && <img src={OphaseService.getTimetableUrl("WI", info.changedAt)} alt="Stundenplan" />}
           </div>
         </div>
       </ResponsiveWrapper>

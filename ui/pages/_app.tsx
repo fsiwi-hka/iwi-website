@@ -3,8 +3,9 @@ import Footer from "./../components/common/footer";
 import Menu from "./../components/common/menu";
 import "../styles/index.css";
 
-import { config } from "@fortawesome/fontawesome-svg-core";
+import {config} from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+
 config.autoAddCss = false;
 
 function IWIWebsite({ Component, pageProps }) {

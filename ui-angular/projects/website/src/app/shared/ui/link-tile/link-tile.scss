@@ -1,0 +1,45 @@
+:host {
+  position: relative;
+  display: block;
+  min-width: 230px;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: var(--iwi-radius-xl);
+  color: var(--iwi-white);
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover .iwi-link-tile__arrow {
+    transform: rotate(45deg);
+  }
+}
+
+:host(.iwi-link-tile--petrol) {
+  background: var(--iwi-petrol);
+}
+
+:host(.iwi-link-tile--red) {
+  background: var(--iwi-red);
+}
+
+.iwi-link-tile__text {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.iwi-link-tile__title {
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.iwi-link-tile__subtext {
+  font-size: 0.875rem;
+}
+
+.iwi-link-tile__arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  transition: transform 300ms ease;
+}

@@ -1,0 +1,37 @@
+// Design-Tokens der Fachschaft IWI (Farben aus dem bisherigen Auftritt, siehe
+// ui/styles/custom.css und ui/tailwind.config.js).
+//
+// Eigene Komponenten nutzen ausschliesslich diese Variablen. Angular Material
+// bekommt seine Farben ueber das Theme in styles.scss, das aus denselben
+// Grundfarben generiert ist (_theme-colors.scss).
+:root {
+  --iwi-blue: #3999bf;
+  --iwi-blue-light: #7ed1f2;
+  --iwi-blue-dark: #2a7595;
+  --iwi-petrol: #1b485a;
+  --iwi-petrol-pale: #354850;
+  --iwi-red: #d33f49;
+  --iwi-red-bright: #f2380f;
+  --iwi-grey: #6c6c6c;
+  --iwi-grey-dark: #282828;
+  --iwi-grey-light: #d7d7d9;
+  --iwi-grey-medium: #87878c;
+  --iwi-surface: #f4f6f7;
+  --iwi-divider: #dfe4e6;
+  --iwi-white: #ffffff;
+
+  --iwi-font: Poppins, system-ui, sans-serif;
+
+  --iwi-radius-sm: 0.375rem;
+  --iwi-radius: 0.5rem;
+  --iwi-radius-lg: 0.75rem;
+  --iwi-radius-xl: 1rem;
+  --iwi-radius-pill: 9999px;
+
+  --iwi-shadow-sm: 0 1px 2px rgb(0 0 0 / 5%);
+  --iwi-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%);
+  --iwi-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
+
+  --iwi-transition: 200ms ease;
+  --iwi-container-width: 1280px;
+}

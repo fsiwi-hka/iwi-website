@@ -1,4 +1,4 @@
-import { BaseService } from "./api-service-base";
+import {BaseService} from "./api-service-base";
 
 class ProtocolService extends BaseService {
     constructor() {

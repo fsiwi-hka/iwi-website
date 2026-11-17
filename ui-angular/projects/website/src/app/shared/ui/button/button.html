@@ -1,0 +1,7 @@
+@if (leadingIcon(); as leading) {
+  <iwi-icon [name]="leading" [size]="1.2" />
+}
+<span class="iwi-button__label"><ng-content /></span>
+@if (icon(); as trailing) {
+  <iwi-icon class="iwi-button__arrow" [name]="trailing" [size]="1.05" />
+}

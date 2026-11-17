@@ -1,9 +1,9 @@
-import { faTwitch, faDiscord, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faDiscord, faInstagram, faLinkedin, faTwitch} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import FooterLink from "./footer-link";
 import Button from "./button";
 import Obfuscate from "react-obfuscate";
-import { strings } from "@lib/strings";
+import {strings} from "@lib/strings";
 import GameDialog from "../game/game-dialog";
 
 function Footer() {

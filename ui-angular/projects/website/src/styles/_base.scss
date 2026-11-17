@@ -1,0 +1,175 @@
+// Basis-Elemente. Entspricht den Regeln aus ui/styles/index.css, die dort fuer
+// Markdown-Inhalte ohne Klassen gedacht waren und seitenweit gelten.
+@use 'breakpoints' as bp;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  hyphens: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--iwi-font);
+  color: var(--iwi-grey);
+  background: var(--iwi-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Abstand ueber Anker-Zielen (/about#mitmachen), damit die Ueberschrift nicht am Rand klebt.
+[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+dt,
+dd,
+td,
+th,
+a {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--iwi-petrol-pale);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+
+  @include bp.up(bp.$md) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  @include bp.up(bp.$md) {
+    font-size: 2.25rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  line-height: 1.5rem;
+  color: var(--iwi-grey);
+}
+
+li {
+  line-height: 1.5rem;
+  color: var(--iwi-grey);
+}
+
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+code {
+  background: var(--iwi-grey-light);
+  color: var(--iwi-red);
+  padding: 0.25rem;
+  font-size: 0.875rem;
+}
+
+table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+th {
+  color: var(--iwi-blue);
+  font-size: 1.125rem;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid var(--iwi-grey-light);
+  padding: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--iwi-blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

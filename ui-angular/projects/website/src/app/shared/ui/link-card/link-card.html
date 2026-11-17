@@ -1,0 +1,28 @@
+<article class="link-card">
+  <h4>{{ card().title }}</h4>
+  @if (card().subtitle; as subtitle) {
+    <p class="link-card__subtitle">{{ subtitle }}</p>
+  }
+  @if (card().items?.length) {
+    <ul>
+      @for (item of card().items; track item) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  }
+  @if (links().length) {
+    <div class="link-card__links">
+      @for (link of links(); track link.url) {
+        <a
+          [iwiButton]="link.variant"
+          [href]="link.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          [matTooltip]="link.hint"
+          [matTooltipDisabled]="!link.hint"
+          >{{ link.text }}</a
+        >
+      }
+    </div>
+  }
+</article>

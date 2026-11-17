@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "7.26.0",
+    "useDocker": false,
+    "generators": {
+      "iwi-api": {
+        "generatorName": "typescript-angular",
+        "inputSpec": "./openapi/iwi-api.json",
+        "output": "./projects/api/src/lib",
+        "additionalProperties": {
+          "fileNaming": "kebab-case",
+          "useSingleRequestParameter": "true",
+          "supportsES6": "true",
+          "stringEnums": "true",
+          "enumPropertyNaming": "original",
+          "nullSafeAdditionalProps": "true",
+          "providedInRoot": "true",
+          "withInterfaces": "true"
+        }
+      }
+    }
+  }
+}

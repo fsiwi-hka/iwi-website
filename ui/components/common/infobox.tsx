@@ -1,5 +1,5 @@
 import Icon from "@mdi/react";
-import { mdiExclamationThick, mdiHeart } from "@mdi/js";
+import {mdiExclamationThick, mdiHeart} from "@mdi/js";
 import Button from "./button";
 
 interface InfoBoxProps {

@@ -1,0 +1,83 @@
+<iwi-page-header
+  title="So erreichst du uns"
+  subtitle="Wir sind für dich da: Kontaktiere uns per Email, Social Media oder persönlich auf dem Campus!"
+/>
+
+<div class="iwi-container iwi-section d-flex flex-column gap-5 mb-5">
+  <div class="row g-4">
+    <div class="col-12 col-lg-8">
+      <iwi-card tone="petrol-pale" padding="lg" class="h-100 justify-content-between">
+        <div>
+          <h2 class="iwi-heading-flush mb-3">Komm vorbei</h2>
+          <p class="visit__lead">
+            Du findest uns im Fachschaftsraum auf dem Campus. Einfach reinschauen – meistens ist
+            jemand da.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-4 gap-sm-5">
+            <div class="d-flex gap-3">
+              <iwi-icon class="visit__icon" name="map-marker-radius" />
+              <address class="visit__address">
+                <span>{{ site.address.room }}</span>
+                <span>{{ site.address.street }}</span>
+                <span>{{ site.address.city }}</span>
+              </address>
+            </div>
+            <div class="d-flex gap-3">
+              <iwi-icon class="visit__icon" name="phone" />
+              <a class="visit__phone" [href]="site.phone.href">{{ site.phone.label }}</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <a
+            iwiButton="white"
+            size="lg"
+            [href]="site.address.mapUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Route planen</a
+          >
+        </div>
+      </iwi-card>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <iwi-card padding="lg" class="h-100">
+        <h2 class="iwi-heading-flush socials__title">Social Media</h2>
+        <ul class="socials">
+          @for (social of socials; track social.url) {
+            <li>
+              <a class="socials__row" [href]="social.url" target="_blank" rel="noopener noreferrer">
+                <iwi-icon class="socials__icon" [name]="social.icon" />
+                <span class="socials__text">
+                  <span class="socials__name">{{ social.title }}</span>
+                  <span class="socials__handle">{{ social.handle }}</span>
+                </span>
+                <iwi-icon class="socials__arrow" name="arrow-top-right" [size]="1.2" />
+              </a>
+            </li>
+          }
+        </ul>
+      </iwi-card>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="iwi-heading-flush mb-2">Schreib uns</h2>
+    <p class="mail__lead">
+      Such dir die passende Adresse aus – so landet deine Nachricht direkt bei den richtigen Leuten.
+    </p>
+    <div class="row g-4">
+      @for (contact of mailContacts; track contact.mail) {
+        <div class="col-12 col-sm-6">
+          <a iwiCard class="h-100 mail-card" [href]="'mailto:' + contact.mail">
+            <iwi-icon class="mail-card__icon" [name]="contact.icon" [size]="2.25" />
+            <h4 class="mb-2">{{ contact.title }}</h4>
+            <p class="mail-card__description">{{ contact.description }}</p>
+            <span class="mail-card__mail">{{ contact.mail }}</span>
+          </a>
+        </div>
+      }
+    </div>
+  </section>
+</div>

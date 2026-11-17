@@ -1,4 +1,4 @@
-import { BaseService } from "./api-service-base";
+import {BaseService} from "./api-service-base";
 
 export interface InstagramFeedDto {
     user?: InstagramUserDto;
@@ -43,11 +43,6 @@ class InstagramService extends BaseService {
     /** Holt die letzten Posts (Default 5). */
     getPosts(limit = 5, signal?: AbortSignal): Promise<InstagramFeedDto> {
         return this.get<InstagramFeedDto>(`/insta-posts?limit=${limit}`, signal);
-    }
-
-    /** URL zu einem Medium (Bild/Video) – für <img>/<video src>. */
-    getMediaUrl(name: string): string {
-        return this.buildUrl(`/insta-media/${encodeURIComponent(name)}`);
     }
 }
 

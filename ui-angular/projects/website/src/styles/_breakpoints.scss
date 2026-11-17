@@ -1,0 +1,19 @@
+// Breakpoints der Website. Die Werte entsprechen dem Bootstrap-Grid
+// (bootstrap-grid.min.css), damit SCSS-Media-Queries und Klassen wie
+// "col-lg-4" an denselben Stellen umbrechen.
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin down($breakpoint) {
+  @media (max-width: ($breakpoint - 0.02px)) {
+    @content;
+  }
+}
