@@ -13,8 +13,6 @@ public partial class CoreContext
     public DbSet<PositionMemberEntity> PositionMembers => Set<PositionMemberEntity>();
     public DbSet<DepartmentEntity> Departments => Set<DepartmentEntity>();
     public DbSet<SponsorEntity> Sponsors => Set<SponsorEntity>();
-    public DbSet<ProtocolEntity> Protocols => Set<ProtocolEntity>();
-    public DbSet<InfoscreenSlideEntity> InfoscreenSlides => Set<InfoscreenSlideEntity>();
     public DbSet<ContentPageEntity> ContentPages => Set<ContentPageEntity>();
     public DbSet<DocumentEntity> Documents => Set<DocumentEntity>();
     public DbSet<BackroomsSessionEntity> BackroomsSessions => Set<BackroomsSessionEntity>();
@@ -83,24 +81,6 @@ public partial class CoreContext
             e.Property(x => x.Website).HasMaxLength(500);
             e.HasIndex(x => x.Order);
             e.OwnsOne(x => x.Logo, i => i.ToJson());
-        });
-
-        builder.Entity<ProtocolEntity>(e =>
-        {
-            e.HasKey(x => x.Id);
-            e.Property(x => x.Title).HasMaxLength(120).IsRequired();
-            e.Property(x => x.Semester).HasMaxLength(20);
-            e.HasIndex(x => x.MeetingDate);
-            e.OwnsOne(x => x.File, i => i.ToJson());
-        });
-
-        builder.Entity<InfoscreenSlideEntity>(e =>
-        {
-            e.HasKey(x => x.Id);
-            e.Property(x => x.Name).HasMaxLength(120).IsRequired();
-            e.Property(x => x.Type).HasMaxLength(10).IsRequired();
-            e.HasIndex(x => x.Order);
-            e.OwnsOne(x => x.Media, i => i.ToJson());
         });
 
         builder.Entity<ContentPageEntity>(e =>

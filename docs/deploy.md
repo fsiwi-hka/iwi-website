@@ -112,7 +112,7 @@ Alle als Repository-Secrets hinterlegt:
 | `DEPLOY_PATH` | Produktionsverzeichnis; Develop haengt `-develop` an |
 | `NEXTCLOUD_URL` | Build-Secret der alten Next.js-Seite; seit der Umstellung auf `ui-angular` ungenutzt |
 | `INSTAGRAM_TOKEN` | Instagram-Feed im Backend |
-| `WEBDAV_USERNAME`, `WEBDAV_PASSWORD` | Nextcloud-Zugriff des Backends |
+| `WEBDAV_USERNAME`, `WEBDAV_PASSWORD` | Nextcloud-Zugriff des Backends; braucht Schreibrechte auf „Information System“ und `fs_sitzungsprotokolle`, weil die Backrooms dorthin hochladen |
 | `AUTH_TOKEN` | API-Token des Backends |
 
 [Zurueck zum Dokumentationsindex](./readme.md)

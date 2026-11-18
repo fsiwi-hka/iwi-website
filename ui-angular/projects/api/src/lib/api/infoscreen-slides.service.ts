@@ -17,11 +17,11 @@ import { Observable }                                        from 'rxjs';
 import { OpenApiHttpParams, QueryParamStyle } from '../query.params';
 
 // @ts-ignore
+import { FileOrderDto } from '../model/file-order-dto';
+// @ts-ignore
 import { InfoscreenSlideDto } from '../model/infoscreen-slide-dto';
 // @ts-ignore
 import { InfoscreenSlideUpsertDto } from '../model/infoscreen-slide-upsert-dto';
-// @ts-ignore
-import { ReorderDto } from '../model/reorder-dto';
 
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
@@ -161,7 +161,7 @@ export class InfoscreenSlidesService extends BaseService implements InfoscreenSl
             }
         }
 
-        let localVarPath = `/api/backrooms/content/infoscreen-slides/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: "uuid"})}`;
+        let localVarPath = `/api/backrooms/content/infoscreen-slides/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}`;
         const { basePath, withCredentials } = this.configuration;
         return this.httpClient.request<any>('delete', `${basePath}${localVarPath}`,
             {
@@ -222,7 +222,7 @@ export class InfoscreenSlidesService extends BaseService implements InfoscreenSl
             }
         }
 
-        let localVarPath = `/api/backrooms/content/infoscreen-slides/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: "uuid"})}`;
+        let localVarPath = `/api/backrooms/content/infoscreen-slides/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}`;
         const { basePath, withCredentials } = this.configuration;
         return this.httpClient.request<InfoscreenSlideDto>('get', `${basePath}${localVarPath}`,
             {
@@ -318,7 +318,7 @@ export class InfoscreenSlidesService extends BaseService implements InfoscreenSl
     public infoscreenSlidesReorder(requestParameters?: InfoscreenSlidesReorderRequestParams, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: undefined, context?: HttpContext, transferCache?: boolean}): Observable<HttpResponse<any>>;
     public infoscreenSlidesReorder(requestParameters?: InfoscreenSlidesReorderRequestParams, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: undefined, context?: HttpContext, transferCache?: boolean}): Observable<HttpEvent<any>>;
     public infoscreenSlidesReorder(requestParameters?: InfoscreenSlidesReorderRequestParams, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: undefined, context?: HttpContext, transferCache?: boolean}): Observable<any> {
-        const reorderDto = requestParameters?.reorderDto;
+        const fileOrderDto = requestParameters?.fileOrderDto;
 
         let localVarHeaders = this.defaultHeaders;
 
@@ -363,7 +363,7 @@ export class InfoscreenSlidesService extends BaseService implements InfoscreenSl
         return this.httpClient.request<any>('put', `${basePath}${localVarPath}`,
             {
                 context: localVarHttpContext,
-                body: reorderDto,
+                body: fileOrderDto,
                 responseType: <any>responseType_,
                 ...(withCredentials ? { withCredentials } : {}),
                 headers: localVarHeaders,
@@ -432,7 +432,7 @@ export class InfoscreenSlidesService extends BaseService implements InfoscreenSl
             }
         }
 
-        let localVarPath = `/api/backrooms/content/infoscreen-slides/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: "uuid"})}`;
+        let localVarPath = `/api/backrooms/content/infoscreen-slides/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}`;
         const { basePath, withCredentials } = this.configuration;
         return this.httpClient.request<InfoscreenSlideDto>('put', `${basePath}${localVarPath}`,
             {

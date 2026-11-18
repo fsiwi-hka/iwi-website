@@ -102,6 +102,55 @@ public sealed class WebDavClient
         File.Move(tmp, destPath, overwrite: true);
     }
 
+    public async Task<byte[]> ReadAllBytesAsync(Uri href, CancellationToken ct = default)
+    {
+        using var resp = await _http.GetAsync(href, ct);
+        resp.EnsureSuccessStatusCode();
+        return await resp.Content.ReadAsByteArrayAsync(ct);
+    }
+
+    /// <summary>Legt eine Datei an oder ersetzt sie (PUT).</summary>
+    public async Task UploadAsync(Uri href, Stream content, string contentType, CancellationToken ct = default)
+    {
+        using var body = new StreamContent(content);
+        body.Headers.ContentType = new MediaTypeHeaderValue(contentType);
+        using var resp = await _http.PutAsync(href, body, ct);
+        resp.EnsureSuccessStatusCode();
+    }
+
+    /// <summary>Loescht Datei oder Ordner. In der Nextcloud landet beides im Papierkorb.</summary>
+    public async Task DeleteAsync(Uri href, CancellationToken ct = default)
+    {
+        using var resp = await _http.SendAsync(new HttpRequestMessage(HttpMethod.Delete, href), ct);
+        if (resp.StatusCode == System.Net.HttpStatusCode.NotFound) return;
+        resp.EnsureSuccessStatusCode();
+    }
+
+    /// <summary>Verschiebt bzw. benennt um; ein vorhandenes Ziel wird nicht ueberschrieben.</summary>
+    public async Task MoveAsync(Uri from, Uri to, CancellationToken ct = default)
+    {
+        using var req = new HttpRequestMessage(new HttpMethod("MOVE"), from);
+        req.Headers.Add("Destination", to.AbsoluteUri);
+        req.Headers.Add("Overwrite", "F");
+        using var resp = await _http.SendAsync(req, ct);
+        resp.EnsureSuccessStatusCode();
+    }
+
+    /// <summary>Legt einen Ordner an (MKCOL); existiert er schon, passiert nichts.</summary>
+    public async Task CreateFolderAsync(Uri href, CancellationToken ct = default)
+    {
+        using var resp = await _http.SendAsync(new HttpRequestMessage(new HttpMethod("MKCOL"), href), ct);
+        if (resp.StatusCode == System.Net.HttpStatusCode.MethodNotAllowed) return; // existiert bereits
+        resp.EnsureSuccessStatusCode();
+    }
+
+    /// <summary>URL eines Eintrags in einem Ordner (Name wird kodiert, Ordner bekommen einen Slash).</summary>
+    public static Uri Child(Uri folder, string name, bool isFolder = false)
+    {
+        var baseUri = folder.AbsoluteUri.EndsWith('/') ? folder : new Uri(folder.AbsoluteUri + "/");
+        return new Uri(baseUri, Uri.EscapeDataString(name) + (isFolder ? "/" : ""));
+    }
+
     private static string? Prop(XElement response, string name)
         => response.Descendants(D + name).FirstOrDefault()?.Value;
 

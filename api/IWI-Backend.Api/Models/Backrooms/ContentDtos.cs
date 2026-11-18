@@ -73,12 +73,17 @@ public class SponsorUpsertDto
     public int Order { get; set; }
 }
 
+/// <summary>
+/// Protokoll im WebDAV-Ordner (Spiegel). Id = "{Semesterordner}:{Dateiname}",
+/// Titel = Dateiname ohne ".pdf".
+/// </summary>
 public class ProtocolDto
 {
-    public Guid Id { get; set; }
+    public string Id { get; set; } = "";
     public string Title { get; set; } = "";
+    /// <summary>Anzeigeform, z. B. "WS 2025/26" (Ordner "25WS").</summary>
     public string Semester { get; set; } = "";
-    /// <summary>YYYY-MM-DD oder null.</summary>
+    /// <summary>Aus dem Dateinamen gelesen, sonst Aenderungsdatum der Datei.</summary>
     public DateOnly? MeetingDate { get; set; }
     public MediaRef? File { get; set; }
     public DateTimeOffset UpdatedAt { get; set; }
@@ -86,16 +91,22 @@ public class ProtocolDto
 
 public class ProtocolUpsertDto
 {
+    /// <summary>Wird zum Dateinamen ("{Title}.pdf").</summary>
     [Required, MaxLength(120)] public string Title { get; set; } = "";
-    [MaxLength(20)] public string Semester { get; set; } = "";
+    /// <summary>"WS 2025/26", "SS 2026" oder ein vorhandener Ordnername.</summary>
+    [Required, MaxLength(20)] public string Semester { get; set; } = "";
+    /// <summary>Wird ignoriert (kommt aus dem Dateinamen); nur fuer die Form des Frontends.</summary>
     public DateOnly? MeetingDate { get; set; }
+    /// <summary>Frischer Upload aus /api/backrooms/media (mit Id) oder die bestehende Datei.</summary>
     public MediaRef? File { get; set; }
 }
 
+/// <summary>Datei im Infoscreen-Ordner des WebDAV (Spiegel). Id = Dateiname.</summary>
 public class InfoscreenSlideDto
 {
-    public Guid Id { get; set; }
+    public string Id { get; set; } = "";
     public int Order { get; set; }
+    /// <summary>Dateiname ohne Endung.</summary>
     public string Name { get; set; } = "";
     /// <summary>image oder video.</summary>
     public string Type { get; set; } = "";
@@ -108,13 +119,16 @@ public class InfoscreenSlideDto
 
 public class InfoscreenSlideUpsertDto
 {
+    /// <summary>Wird zum Dateinamen (Endung kommt von der Datei).</summary>
     [Required, MaxLength(120)] public string Name { get; set; } = "";
-    [Required, MaxLength(10)] public string Type { get; set; } = InfoscreenSlideTypes.Image;
+    [Required, MaxLength(10)] public string Type { get; set; } = "image";
+    /// <summary>Frischer Upload aus /api/backrooms/media (mit Id) oder die bestehende Datei.</summary>
     public MediaRef? Media { get; set; }
     [Range(1, 3600)] public int DurationSeconds { get; set; } = 30;
     public bool Active { get; set; } = true;
-    /// <summary>Leer/null: Zeitpunkt des Speicherns.</summary>
+    /// <summary>Wird ignoriert (Upload-Datum setzt das Backend).</summary>
     public DateTimeOffset? UploadedAt { get; set; }
+    /// <summary>Wird ignoriert; Reihenfolge nur ueber PUT .../order.</summary>
     public int Order { get; set; }
 }
 

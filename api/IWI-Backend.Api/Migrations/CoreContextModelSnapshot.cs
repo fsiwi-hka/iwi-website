@@ -222,53 +222,6 @@ namespace IWI_Backend.Api.Migrations
                     b.ToTable("HeroSlides", "backrooms");
                 });
 
-            modelBuilder.Entity("IWI_Backend.Api.Entities.InfoscreenSlideEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTimeOffset>("Created")
-                        .HasColumnType("TEXT");
-
-                    b.Property<Guid>("CreatorId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("DurationSeconds")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTimeOffset?>("Modified")
-                        .HasColumnType("TEXT");
-
-                    b.Property<Guid?>("ModifierId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(120)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Order")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTimeOffset>("UploadedAt")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Order");
-
-                    b.ToTable("InfoscreenSlides", "backrooms");
-                });
-
             modelBuilder.Entity("IWI_Backend.Api.Entities.MemberEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -361,47 +314,6 @@ namespace IWI_Backend.Api.Migrations
                     b.ToTable("PositionMembers", "backrooms");
                 });
 
-            modelBuilder.Entity("IWI_Backend.Api.Entities.ProtocolEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTimeOffset>("Created")
-                        .HasColumnType("TEXT");
-
-                    b.Property<Guid>("CreatorId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateOnly?>("MeetingDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTimeOffset?>("Modified")
-                        .HasColumnType("TEXT");
-
-                    b.Property<Guid?>("ModifierId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Semester")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(120)
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MeetingDate");
-
-                    b.ToTable("Protocols", "backrooms");
-                });
-
             modelBuilder.Entity("IWI_Backend.Api.Entities.SponsorEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -490,40 +402,6 @@ namespace IWI_Backend.Api.Migrations
                     b.Navigation("Image");
                 });
 
-            modelBuilder.Entity("IWI_Backend.Api.Entities.InfoscreenSlideEntity", b =>
-                {
-                    b.OwnsOne("IWI_Backend.Api.Entities.MediaRef", "Media", b1 =>
-                        {
-                            b1.Property<Guid>("InfoscreenSlideEntityId");
-
-                            b1.Property<string>("ContentType")
-                                .IsRequired();
-
-                            b1.Property<string>("Id");
-
-                            b1.Property<string>("Name")
-                                .IsRequired();
-
-                            b1.Property<long>("Size");
-
-                            b1.Property<string>("Url")
-                                .IsRequired();
-
-                            b1.HasKey("InfoscreenSlideEntityId");
-
-                            b1.ToTable("InfoscreenSlides", "backrooms");
-
-                            b1
-                                .ToJson("Media")
-                                .HasColumnType("TEXT");
-
-                            b1.WithOwner()
-                                .HasForeignKey("InfoscreenSlideEntityId");
-                        });
-
-                    b.Navigation("Media");
-                });
-
             modelBuilder.Entity("IWI_Backend.Api.Entities.MemberEntity", b =>
                 {
                     b.OwnsOne("IWI_Backend.Api.Entities.MediaRef", "Image", b1 =>
@@ -575,40 +453,6 @@ namespace IWI_Backend.Api.Migrations
                     b.Navigation("Member");
 
                     b.Navigation("Position");
-                });
-
-            modelBuilder.Entity("IWI_Backend.Api.Entities.ProtocolEntity", b =>
-                {
-                    b.OwnsOne("IWI_Backend.Api.Entities.MediaRef", "File", b1 =>
-                        {
-                            b1.Property<Guid>("ProtocolEntityId");
-
-                            b1.Property<string>("ContentType")
-                                .IsRequired();
-
-                            b1.Property<string>("Id");
-
-                            b1.Property<string>("Name")
-                                .IsRequired();
-
-                            b1.Property<long>("Size");
-
-                            b1.Property<string>("Url")
-                                .IsRequired();
-
-                            b1.HasKey("ProtocolEntityId");
-
-                            b1.ToTable("Protocols", "backrooms");
-
-                            b1
-                                .ToJson("File")
-                                .HasColumnType("TEXT");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProtocolEntityId");
-                        });
-
-                    b.Navigation("File");
                 });
 
             modelBuilder.Entity("IWI_Backend.Api.Entities.SponsorEntity", b =>

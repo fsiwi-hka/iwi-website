@@ -11,9 +11,9 @@ import { HttpHeaders }                                       from '@angular/comm
 
 import { Observable }                                        from 'rxjs';
 
+import { FileOrderDto } from '../model/models';
 import { InfoscreenSlideDto } from '../model/models';
 import { InfoscreenSlideUpsertDto } from '../model/models';
-import { ReorderDto } from '../model/models';
 
 
 import { Configuration }                                     from '../configuration';
@@ -36,7 +36,7 @@ export interface InfoscreenSlidesListRequestParams {
 }
 
 export interface InfoscreenSlidesReorderRequestParams {
-    reorderDto?: ReorderDto;
+    fileOrderDto?: FileOrderDto;
 }
 
 export interface InfoscreenSlidesUpdateRequestParams {

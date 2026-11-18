@@ -85,20 +85,7 @@ public sealed class MediaSyncService : BackgroundService
         try
         {
             _logger.LogInformation("Starte WebDAV-Sync ...");
-            var listing = await _root.ListAsync(ct);
-
-            // --- Remote-Config laden (falls vorhanden) ---
-            var configFile = listing.Files.FirstOrDefault(f =>
-                string.Equals(f.Name, _mediaOpts.ConfigFileName, StringComparison.OrdinalIgnoreCase));
-
-            MediaConfig remoteConfig = new();
-            if (configFile is not null)
-            {
-                var path = Path.Combine(_store.CacheDirectory, "config.remote.json");
-                await configFile.DownloadToAsync(path, ct);
-                remoteConfig = JsonSerializer.Deserialize<MediaConfig>(
-                    await File.ReadAllTextAsync(path, ct), Json) ?? new MediaConfig();
-            }
+            var (listing, remoteConfig) = await ReadRemoteAsync(ct);
 
             // --- Mediendateien herunterladen (unveränderte überspringen) ---
             var mediaFiles = listing.Files.Where(f => IsMedia(f.Name)).ToList();
@@ -149,6 +136,53 @@ public sealed class MediaSyncService : BackgroundService
         {
             _gate.Release();
         }
+    }
+
+    /// <summary>Ordner im WebDAV (Mediendateien + Config).</summary>
+    public Uri FolderUri => _root.Href;
+
+    /// <summary>Die Config-Datei im WebDAV.</summary>
+    public Uri ConfigUri => WebDavClient.Child(_root.Href, _mediaOpts.ConfigFileName);
+
+    public static bool IsMedia(string name)
+    {
+        var ext = Path.GetExtension(name);
+        return ImageExt.Contains(ext) || VideoExt.Contains(ext);
+    }
+
+    public static bool IsVideo(string name) => VideoExt.Contains(Path.GetExtension(name));
+
+    /// <summary>
+    /// Aktueller Stand direkt aus dem WebDAV: Ordnerinhalt und die dort
+    /// gespeicherte Config (fehlt sie, ist sie leer).
+    /// </summary>
+    public async Task<(WebDavListing Listing, MediaConfig Config)> ReadRemoteAsync(CancellationToken ct)
+    {
+        var listing = await _root.ListAsync(ct);
+        var configFile = listing.Files.FirstOrDefault(f =>
+            string.Equals(f.Name, _mediaOpts.ConfigFileName, StringComparison.OrdinalIgnoreCase));
+
+        MediaConfig config = new();
+        if (configFile is not null)
+        {
+            var bytes = await _webdav.ReadAllBytesAsync(configFile.Href, ct);
+            config = JsonSerializer.Deserialize<MediaConfig>(bytes, Json) ?? new MediaConfig();
+        }
+        return (listing, config);
+    }
+
+    /// <summary>Remote-Config mit dem Ordnerinhalt abgeglichen (siehe <see cref="BuildEffectiveConfig"/>).</summary>
+    public async Task<MediaConfig> ReadEffectiveRemoteConfigAsync(CancellationToken ct)
+    {
+        var (listing, config) = await ReadRemoteAsync(ct);
+        return BuildEffectiveConfig(config, listing.Files.Where(f => IsMedia(f.Name)).ToList());
+    }
+
+    /// <summary>Schreibt die Config ins WebDAV (Format wie bisher: { "files": [...] }).</summary>
+    public async Task WriteRemoteConfigAsync(MediaConfig config, CancellationToken ct)
+    {
+        using var body = new MemoryStream(JsonSerializer.SerializeToUtf8Bytes(config, Json));
+        await _webdav.UploadAsync(ConfigUri, body, "application/json", ct);
     }
 
     /// <summary>
@@ -238,12 +272,6 @@ public sealed class MediaSyncService : BackgroundService
     private void SaveManifest(Dictionary<string, string?> manifest)
         => File.WriteAllText(Path.Combine(_store.CacheDirectory, "manifest.json"),
                              JsonSerializer.Serialize(manifest, Json));
-
-    private static bool IsMedia(string name)
-    {
-        var ext = Path.GetExtension(name);
-        return ImageExt.Contains(ext) || VideoExt.Contains(ext);
-    }
 
     /// <summary>Stabiler Änderungs-Stempel für den Manifest-Vergleich (ISO-8601, UTC-normalisiert).</summary>
     private static string? Stamp(WebDavFile f)

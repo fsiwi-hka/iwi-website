@@ -17,6 +17,7 @@ export interface CalendarEventDto {
     end: string;
     allDay: boolean;
     recurring: boolean;
+    recurrence: string | null;
     location: string | null;
     description: string | null;
     url: string | null;

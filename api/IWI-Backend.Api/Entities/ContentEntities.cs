@@ -44,51 +44,6 @@ public class SponsorEntity : IBaseEntity, IOrderedEntity
     public bool IsActive { get; set; } = true;
 }
 
-/// <summary>Sitzungsprotokoll (PDF).</summary>
-public class ProtocolEntity : IBaseEntity
-{
-    public string Title { get; set; } = "";
-
-    /// <summary>Semester-Gruppe, z. B. "SS 2026" oder "WS 2025/26".</summary>
-    public string Semester { get; set; } = "";
-
-    public DateOnly? MeetingDate { get; set; }
-    public MediaRef? File { get; set; }
-
-    public Guid Id { get; set; }
-    public Guid CreatorId { get; set; }
-    public DateTimeOffset Created { get; set; }
-    public Guid? ModifierId { get; set; }
-    public DateTimeOffset? Modified { get; set; }
-    public bool IsActive { get; set; } = true;
-}
-
-public static class InfoscreenSlideTypes
-{
-    public const string Image = "image";
-    public const string Video = "video";
-
-    public static readonly IReadOnlySet<string> All = new HashSet<string>(StringComparer.Ordinal) { Image, Video };
-}
-
-/// <summary>Slide fuer den Infoscreen im Fachschaftsraum.</summary>
-public class InfoscreenSlideEntity : IBaseEntity, IOrderedEntity
-{
-    public int Order { get; set; }
-    public string Name { get; set; } = "";
-    public string Type { get; set; } = InfoscreenSlideTypes.Image;
-    public MediaRef? Media { get; set; }
-    public int DurationSeconds { get; set; } = 30;
-    public DateTimeOffset UploadedAt { get; set; }
-
-    public Guid Id { get; set; }
-    public Guid CreatorId { get; set; }
-    public DateTimeOffset Created { get; set; }
-    public Guid? ModifierId { get; set; }
-    public DateTimeOffset? Modified { get; set; }
-    public bool IsActive { get; set; } = true;
-}
-
 /// <summary>Freitext-Seite in Markdown; der Slug ist der stabile Schluessel der Website.</summary>
 public class ContentPageEntity : IBaseEntity
 {

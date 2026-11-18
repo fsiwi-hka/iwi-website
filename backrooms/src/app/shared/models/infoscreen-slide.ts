@@ -5,9 +5,12 @@ export type InfoscreenSlideType = 'image' | 'video';
 
 /**
  * Slide fuer den Infoscreen im Fachschaftsraum (/display auf der Website).
- * Bisher: Dateien + config.json im Nextcloud-Ordner "Information System".
+ * Die Dateien und ihre Config (Reihenfolge, Dauer, aktiv) liegen im
+ * Nextcloud-Ordner "Information System"; die Backrooms spiegeln ihn und
+ * schreiben Aenderungen direkt dorthin. Id = Dateiname.
  */
 export interface InfoscreenSlide extends Entity, Ordered {
+  /** Dateiname ohne Endung. */
   name: string;
   type: InfoscreenSlideType;
   media: MediaRef | null;

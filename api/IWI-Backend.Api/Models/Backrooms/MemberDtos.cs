@@ -74,3 +74,9 @@ public class ReorderDto
 {
     public List<Guid> Ids { get; set; } = [];
 }
+
+/// <summary>Neue Reihenfolge bei WebDAV-Spiegeln: Ids sind dort Dateinamen.</summary>
+public class FileOrderDto
+{
+    public List<string> Ids { get; set; } = [];
+}

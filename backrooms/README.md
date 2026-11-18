@@ -122,8 +122,8 @@ Komponente ──► FeatureStore (CrudStore<T>) ──► ContentApi.collection
 | Sponsoren            | `Sponsor`         | `ui/content/sponsors.ts`                                   |
 | Semestertermine      | `SemesterDates`   | `info.json` + Stundenplan-PNGs in Nextcloud (FB_O-Phase)   |
 | Seiten (Markdown)    | `ContentPage`     | `ui/public/impressum.md`, Mitmachen-Text                   |
-| Infoscreen           | `InfoscreenSlide` | Dateien + `config.json` in Nextcloud (Information System)  |
-| Sitzungsprotokolle   | `Protocol`        | PDFs in Nextcloud (FB_Archiv/fs_sitzungsprotokolle)        |
+| Infoscreen           | `InfoscreenSlide` | bleibt in Nextcloud (Information System), Backrooms spiegeln |
+| Sitzungsprotokolle   | `Protocol`        | bleibt in Nextcloud (FB_Archiv/fs_sitzungsprotokolle), Backrooms spiegeln |
 | Einstellungen        | `SiteSettings`    | `ui/locales/de.json`                                       |
 | Synchronisation      | –                 | bestehende `/api/*/refresh`-Endpunkte und `/api/health`    |
 
@@ -216,6 +216,14 @@ mehrere Mitglieder haben. Die Zuordnung steht an der Rolle (`positions[].memberI
 Anzeige auf der Website); `members` kennt seine Rollen nicht. Fachbereiche zeigen über
 `leadPositionId` auf ihre Leitungsrolle. Im .NET-Backend sind `members` und `positions` bereits
 umgesetzt (`MembersController`, `PositionsController`, Tabelle `PositionMembers`).
+Infoscreen und Sitzungsprotokolle liegen nicht in der Datenbank, sondern bleiben in der Nextcloud.
+Die Backrooms zeigen den gespiegelten Stand; Anlegen, Bearbeiten, Sortieren und Löschen schreibt
+das Backend direkt per WebDAV dorthin (Löschen = Nextcloud-Papierkorb) und synchronisiert danach.
+Ein neuer Upload geht erst in die Mediathek (`/backrooms/media/{folder}`) und wird beim Speichern
+in die Nextcloud verschoben. Ids sind dort Dateinamen: Infoscreen `"Kaffee.png"`, Protokolle
+`"25WS:2025-11-26 Sitzung.pdf"` (Semesterordner + Datei). Name bzw. Titel = Dateiname ohne Endung;
+`meetingDate` der Protokolle liest das Backend aus dem Dateinamen (sonst Änderungsdatum).
+Der WebDAV-Benutzer (`WEBDAV_USERNAME`) braucht dafür Schreibrechte auf beide Ordner.
 Datumsfelder (`meetingDate`, `beginn`, `ende`) sind Strings im Format `YYYY-MM-DD`; ein nicht
 gesetztes Datum ist `null`.
 
@@ -233,8 +241,8 @@ gesetztes Datum ist `null`.
 
 `GET /health` sowie `GET /insta/refresh`, `/bulletin/refresh`, `/protocols/refresh`, `/info/refresh`,
 `/ophase/refresh` (Bearer). Sobald die Inhalte aus den Backrooms kommen, werden die
-Nextcloud-Syncs für Infoscreen, Protokolle und O-Phase überflüssig; Instagram und Bulletin Board
-bleiben.
+O-Phase-Sync überflüssig. Infoscreen und Protokolle bleiben Nextcloud-Spiegel (siehe oben),
+Instagram und Bulletin Board bleiben ebenfalls.
 
 ### Website-Seite
 

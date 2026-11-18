@@ -30,7 +30,6 @@ import {
     BackroomsProtocolsCreateRequestParams,
     BackroomsProtocolsDeleteRequestParams,
     BackroomsProtocolsGetRequestParams,
-    BackroomsProtocolsListRequestParams,
     BackroomsProtocolsUpdateRequestParams
 } from './backrooms-protocols.serviceInterface';
 
@@ -158,7 +157,7 @@ export class BackroomsProtocolsService extends BaseService implements BackroomsP
             }
         }
 
-        let localVarPath = `/api/backrooms/content/protocols/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: "uuid"})}`;
+        let localVarPath = `/api/backrooms/content/protocols/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}`;
         const { basePath, withCredentials } = this.configuration;
         return this.httpClient.request<any>('delete', `${basePath}${localVarPath}`,
             {
@@ -219,7 +218,7 @@ export class BackroomsProtocolsService extends BaseService implements BackroomsP
             }
         }
 
-        let localVarPath = `/api/backrooms/content/protocols/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: "uuid"})}`;
+        let localVarPath = `/api/backrooms/content/protocols/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}`;
         const { basePath, withCredentials } = this.configuration;
         return this.httpClient.request<ProtocolDto>('get', `${basePath}${localVarPath}`,
             {
@@ -236,27 +235,14 @@ export class BackroomsProtocolsService extends BaseService implements BackroomsP
 
     /**
      * @endpoint get /api/backrooms/content/protocols
-     * @param requestParameters
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      * @param options additional options
      */
-    public backroomsProtocolsList(requestParameters?: BackroomsProtocolsListRequestParams, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<Array<ProtocolDto>>;
-    public backroomsProtocolsList(requestParameters?: BackroomsProtocolsListRequestParams, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpResponse<Array<ProtocolDto>>>;
-    public backroomsProtocolsList(requestParameters?: BackroomsProtocolsListRequestParams, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpEvent<Array<ProtocolDto>>>;
-    public backroomsProtocolsList(requestParameters?: BackroomsProtocolsListRequestParams, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<any> {
-        const active = requestParameters?.active;
-
-        let localVarQueryParameters = new OpenApiHttpParams(this.encoder);
-
-        localVarQueryParameters = this.addToHttpParams(
-            localVarQueryParameters,
-            'active',
-            <any>active,
-            QueryParamStyle.Form,
-            true,
-        );
-
+    public backroomsProtocolsList(observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<Array<ProtocolDto>>;
+    public backroomsProtocolsList(observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpResponse<Array<ProtocolDto>>>;
+    public backroomsProtocolsList(observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpEvent<Array<ProtocolDto>>>;
+    public backroomsProtocolsList(observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'text/plain' | 'application/json' | 'text/json', context?: HttpContext, transferCache?: boolean}): Observable<any> {
 
         let localVarHeaders = this.defaultHeaders;
 
@@ -293,7 +279,6 @@ export class BackroomsProtocolsService extends BaseService implements BackroomsP
         return this.httpClient.request<Array<ProtocolDto>>('get', `${basePath}${localVarPath}`,
             {
                 context: localVarHttpContext,
-                params: localVarQueryParameters.toHttpParams(),
                 responseType: <any>responseType_,
                 ...(withCredentials ? { withCredentials } : {}),
                 headers: localVarHeaders,
@@ -362,7 +347,7 @@ export class BackroomsProtocolsService extends BaseService implements BackroomsP
             }
         }
 
-        let localVarPath = `/api/backrooms/content/protocols/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: "uuid"})}`;
+        let localVarPath = `/api/backrooms/content/protocols/${this.configuration.encodeParam({name: "id", value: id, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}`;
         const { basePath, withCredentials } = this.configuration;
         return this.httpClient.request<ProtocolDto>('put', `${basePath}${localVarPath}`,
             {

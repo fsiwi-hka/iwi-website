@@ -50,6 +50,7 @@ model/credentials-dto.ts
 model/date-range-dto.ts
 model/department-dto.ts
 model/department-upsert-dto.ts
+model/file-order-dto.ts
 model/hero-slide-dto.ts
 model/hero-slide-upsert-dto.ts
 model/infoscreen-slide-dto.ts

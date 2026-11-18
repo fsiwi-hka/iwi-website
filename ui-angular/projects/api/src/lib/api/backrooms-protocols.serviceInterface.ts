@@ -30,10 +30,6 @@ export interface BackroomsProtocolsGetRequestParams {
     id: string;
 }
 
-export interface BackroomsProtocolsListRequestParams {
-    active?: boolean;
-}
-
 export interface BackroomsProtocolsUpdateRequestParams {
     id: string;
     protocolUpsertDto?: ProtocolUpsertDto;
@@ -72,9 +68,8 @@ export interface BackroomsProtocolsServiceInterface {
      * 
      * 
      * @endpoint get /api/backrooms/content/protocols
-* @param requestParameters
-     */
-    backroomsProtocolsList(requestParameters: BackroomsProtocolsListRequestParams, extraHttpRequestParams?: any): Observable<Array<ProtocolDto>>;
+*/
+    backroomsProtocolsList(extraHttpRequestParams?: any): Observable<Array<ProtocolDto>>;
 
     /**
      * 

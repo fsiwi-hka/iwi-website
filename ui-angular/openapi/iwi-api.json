@@ -247,15 +247,6 @@
           "BackroomsProtocols"
         ],
         "operationId": "BackroomsProtocolsList",
-        "parameters": [
-          {
-            "name": "active",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -364,8 +355,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -411,8 +401,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -477,8 +466,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -1682,8 +1670,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -1729,8 +1716,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -1795,8 +1781,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -1825,17 +1810,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ReorderDto"
+                "$ref": "#/components/schemas/FileOrderDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ReorderDto"
+                "$ref": "#/components/schemas/FileOrderDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ReorderDto"
+                "$ref": "#/components/schemas/FileOrderDto"
               }
             }
           }
@@ -3542,6 +3527,7 @@
           "end",
           "id",
           "location",
+          "recurrence",
           "recurring",
           "start",
           "title",
@@ -3570,6 +3556,10 @@
           },
           "recurring": {
             "type": "boolean"
+          },
+          "recurrence": {
+            "type": "string",
+            "nullable": true
           },
           "location": {
             "type": "string",
@@ -3768,6 +3758,21 @@
         },
         "additionalProperties": false
       },
+      "FileOrderDto": {
+        "required": [
+          "ids"
+        ],
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
       "HeroSlideDto": {
         "required": [
           "active",
@@ -3890,8 +3895,7 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           "order": {
             "type": "integer",
@@ -4389,8 +4393,7 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           "title": {
             "type": "string"
@@ -4434,6 +4437,7 @@
           },
           "semester": {
             "maxLength": 20,
+            "minLength": 1,
             "type": "string"
           },
           "meetingDate": {

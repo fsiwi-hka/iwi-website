@@ -102,7 +102,7 @@ public class ProtocolSyncService(
         var semesters = rootListing.Folders
             .Where(f => !f.Name.StartsWith("_"))
             .Where(f => !f.Name.StartsWith("."))
-            .OrderByDescending(f => SemesterSortKey(f.Name))
+            .OrderByDescending(f => IWI_Backend.Api.Services.Protocols.SemesterKey.SortKey(f.Name))
             .ToList();
         
         var result = new Dictionary<string, object>();
@@ -117,6 +117,7 @@ public class ProtocolSyncService(
                     FileName = f.Name,
                     Href = f.Href.ToString(),
                     LastModified = f.LastModified,
+                    Size = f.Size ?? 0,
                 })
                 .OrderBy(f => f.FileName, StringComparer.OrdinalIgnoreCase)
                 .ToList();
@@ -140,14 +141,9 @@ public class ProtocolSyncService(
         
     }
     
-    private static int SemesterSortKey(string name)
-    {
-        var term = name.Length >= 2 ? name[..2].ToUpperInvariant() : "";
-        var yearOk = int.TryParse(name.AsSpan(2), out var year);
-        if (!yearOk) return int.MinValue;
-        var termRank = term == "WS" ? 1 : 0;
-        return year * 2 + termRank;
-    }
+    /// <summary>Ordner im WebDAV, darunter je Semester ein Unterordner ("25WS", "26SS").</summary>
+    public Uri FolderUri => new(protocolOpts.Value.BaseUrl);
+
 }
 
 public class ProtocolCacheEntry
@@ -155,4 +151,5 @@ public class ProtocolCacheEntry
     public string FileName { get; set; } = "";
     public string Href { get; set; } = "";
     public DateTimeOffset? LastModified { get; set; }
+    public long Size { get; set; }
 }

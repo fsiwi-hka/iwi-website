@@ -8,6 +8,7 @@ export * from './credentials-dto';
 export * from './date-range-dto';
 export * from './department-dto';
 export * from './department-upsert-dto';
+export * from './file-order-dto';
 export * from './hero-slide-dto';
 export * from './hero-slide-upsert-dto';
 export * from './infoscreen-slide-dto';
