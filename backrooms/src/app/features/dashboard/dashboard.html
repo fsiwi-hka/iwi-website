@@ -47,7 +47,7 @@
         </figure>
 
         @if (playlist().length > 1) {
-          <ol class="playlist" aria-label="Abspielreihenfolge">
+          <ol class="playlist p-1" aria-label="Abspielreihenfolge">
             @for (item of playlist(); track item.id; let index = $index) {
               <li>
                 <button

@@ -50,10 +50,12 @@ Develop-Umgebung einen eigenen Host-Eintrag bekommen, der auf
 `iwi-website-develop:80` bzw. `127.0.0.1:8081` zeigt.
 
 Die Backrooms laufen unter dem Pfad `/backrooms/` der jeweiligen Website-Domain.
-Dafuer im Host-Eintrag der Website eine Custom Location `/backrooms` anlegen, die
-auf `iwi-backrooms:80` (Produktion) bzw. `iwi-backrooms-develop:80` (Develop)
-zeigt, ohne den Pfad umzuschreiben. Die Website selbst muss dafuer nicht
-angepasst werden.
+Der Caddy im Website-Container reicht `/backrooms` an `iwi-backrooms` bzw.
+`iwi-backrooms-develop` weiter (`BACKROOMS_HOST`). Im Nginx Proxy Manager ist
+dafuer nichts einzutragen; eine alte Custom Location `/backrooms` bitte
+entfernen. Grund: nginx loest Containernamen nur beim Start auf. Nach einem
+Deploy haben die Container neue IPs, und die Custom Location zeigte dann auf
+den Website-Container (404-Seite der Website unter `/backrooms`).
 
 Weil beide Stacks im selben Netzwerk liegen, tragen sie dort denselben
 Compose-Alias `backend`. Caddy wuerde `/api/*` deshalb unter Umstaenden ans

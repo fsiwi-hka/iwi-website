@@ -15,6 +15,17 @@
         reverse_proxy {$BACKEND_HOST:backend}:8080
     }
 
+    # Backrooms (CMS) unter /backrooms. Geht bewusst ueber diesen Caddy statt
+    # ueber eine Custom Location im Nginx Proxy Manager: nginx loest den
+    # Containernamen nur beim Start auf. Nach einem Deploy bekommen die
+    # Container neue IPs, und die alte IP der Backrooms gehoerte ploetzlich der
+    # Website (Folge: 404-Seite der Website unter /backrooms). Caddy loest den
+    # Namen pro Verbindung neu auf.
+    @backrooms path /backrooms /backrooms/*
+    handle @backrooms {
+        reverse_proxy {$BACKROOMS_HOST:backrooms}:80
+    }
+
     handle {
         root * /usr/share/caddy
         # Jede Route liegt vorgerendert als <route>/index.html vor.

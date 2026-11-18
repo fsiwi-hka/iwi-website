@@ -23,18 +23,21 @@ services:
       # Containernamen, sonst landen /api-Anfragen der Produktion unter
       # Umstaenden beim Develop-Backend.
       - BACKEND_HOST=iwi-backend${STACK_SUFFIX:-}
+      # /backrooms reicht der Caddy der Website an den Backrooms-Container weiter.
+      - BACKROOMS_HOST=iwi-backrooms${STACK_SUFFIX:-}
     ports:
       - "127.0.0.1:${WEB_PORT:-8080}:80"
     networks:
       - npm
     depends_on:
       - backend
+      - backrooms
 
-  # Backrooms: das CMS (Angular, statisch per Caddy ausgeliefert). Caddy im
-  # Container proxied /api/* auf "backend", daher kein CORS. Im Nginx Proxy
-  # Manager beim Host der Website als Custom Location "/backrooms" ->
-  # iwi-backrooms:80 (bzw. iwi-backrooms-develop:80) eintragen; die App laeuft
-  # unter dem Pfad /backrooms/. Lokal: http://127.0.0.1:8082/backrooms/.
+  # Backrooms: das CMS (Angular, statisch per Caddy ausgeliefert). Erreichbar
+  # unter /backrooms/ der Website: der Caddy im web-Container reicht den Pfad
+  # hierher weiter (keine Custom Location im Nginx Proxy Manager noetig).
+  # Caddy hier proxied /api/* auf das Backend, daher kein CORS.
+  # Lokal direkt: http://127.0.0.1:8082/backrooms/.
   # Port 8081 ist vom Develop-Web belegt, darum 8082 (Produktion) bzw. 8083 (Develop).
   backrooms:
     build:
