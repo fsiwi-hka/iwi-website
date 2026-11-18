@@ -176,3 +176,16 @@ td.cell-actions {
     cursor: grabbing;
   }
 }
+
+// Loeschen-Knoepfe in Tabellen und Listen: roter Muelleimer, damit die
+// destruktive Aktion neben Bearbeiten sofort erkennbar ist.
+.btn-delete.mat-mdc-icon-button {
+  --mat-icon-button-icon-color: var(--ui-negative);
+  --mat-icon-button-state-layer-color: var(--ui-negative);
+}
+
+// Aktionsspalte bleibt rechts stehen (stickyEnd), wenn eine Tabelle
+// horizontal scrollt. Eine Haarlinie trennt sie vom scrollenden Inhalt.
+.mat-mdc-table-sticky-border-elem-right {
+  box-shadow: inset 1px 0 0 var(--ui-hairline);
+}
