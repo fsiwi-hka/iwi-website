@@ -1,10 +1,17 @@
 import {useCallback, useEffect, useRef, useState} from "react";
 import Head from "next/head";
 import InfotainmentService, {SlideDto} from "@services/infotainment-service";
+import {CalendarTeaser} from "@services/calendar-service";
+import KioskEventsSlide, {useUpcomingEvents} from "../components/kiosk/KioskEventsSlide";
+import {useNow} from "../components/kiosk/KioskClock";
 
 const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
+const EVENTS_SLIDE_DURATION_S = 20;
 
-function DisplaySlideshow({ slides }: { slides: SlideDto[] }) {
+/** Die Termin-Slide kommt nicht aus der API, sondern wird hier aus dem Kalender erzeugt. */
+type DisplaySlide = SlideDto | { type: "events"; duration: number };
+
+function DisplaySlideshow({ slides, events, now }: { slides: DisplaySlide[]; events: CalendarTeaser | null; now: Date }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progressKey, setProgressKey] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -44,7 +51,9 @@ function DisplaySlideshow({ slides }: { slides: SlideDto[] }) {
           className="fixed inset-0 bg-black flex items-center justify-center overflow-hidden cursor-pointer select-none"
           onClick={handleClick}
       >
-        {currentSlide.type === "video" ? (
+        {currentSlide.type === "events" ? (
+            events && <KioskEventsSlide events={events} now={now} />
+        ) : currentSlide.type === "video" ? (
             <video
                 ref={videoRef}
                 key={currentSlide.src}
@@ -97,6 +106,14 @@ function DisplaySlideshow({ slides }: { slides: SlideDto[] }) {
 
 export default function DisplayPage() {
   const [slides, setSlides] = useState<SlideDto[] | null>(null);
+  const now = useNow();
+  const events = useUpcomingEvents(now);
+
+  // Termine laufen vorne mit, aber nur, wenn auch welche anstehen.
+  const allSlides: DisplaySlide[] = [
+    ...(events ? [{ type: "events" as const, duration: EVENTS_SLIDE_DURATION_S }] : []),
+    ...(slides ?? []),
+  ];
 
   useEffect(() => {
     let cancelled = false;
@@ -126,8 +143,8 @@ export default function DisplayPage() {
           <title>IWI Display</title>
           <meta name="robots" content="noindex" />
         </Head>
-        {slides && slides.length > 0 ? (
-            <DisplaySlideshow slides={slides} />
+        {allSlides.length > 0 ? (
+            <DisplaySlideshow slides={allSlides} events={events} now={now} />
         ) : (
             <div className="fixed inset-0 bg-black flex items-center justify-center text-white/40">
               Lade Inhalte …

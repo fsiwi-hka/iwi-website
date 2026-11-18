@@ -54,6 +54,12 @@ public static class CalendarProcessor
         // Fenster beginnen und hineinragen, nicht verloren gehen.
         var queryStart = new CalDateTime(windowStartUtc.AddDays(-7), CalDateTime.UtcTzId);
 
+        // Overrides (RECURRENCE-ID) tragen keine RRULE, den Rhythmus gibt es nur am Serien-Master.
+        var recurrenceByUid = calendar.Events
+            .Where(e => e.Uid != null && e.RecurrenceRules.Count > 0)
+            .GroupBy(e => e.Uid!)
+            .ToDictionary(g => g.Key, g => DescribeRecurrence(g.First().RecurrenceRules[0]));
+
         var result = new List<CalendarEventDto>();
         foreach (var occ in calendar.GetOccurrences<CalendarEvent>(queryStart))
         {
@@ -65,6 +71,7 @@ public static class CalendarProcessor
 
             var dto = ToDto(ev, start, occ.Period.EffectiveEndTime, tz);
             if (dto.EndUtc <= windowStartUtc) continue;
+            if (dto.Recurring) dto.Recurrence = recurrenceByUid.GetValueOrDefault(dto.Uid);
 
             result.Add(dto);
         }
@@ -73,6 +80,19 @@ public static class CalendarProcessor
             .OrderBy(e => e.StartUtc)
             .ThenBy(e => e.Title, StringComparer.CurrentCulture)
             .ToList();
+    }
+
+    private static string? DescribeRecurrence(RecurrencePattern rule)
+    {
+        var n = Math.Max(1, rule.Interval);
+        return rule.Frequency switch
+        {
+            FrequencyType.Daily => n == 1 ? "täglich" : $"alle {n} Tage",
+            FrequencyType.Weekly => n == 1 ? "wöchentlich" : $"alle {n} Wochen",
+            FrequencyType.Monthly => n == 1 ? "monatlich" : $"alle {n} Monate",
+            FrequencyType.Yearly => n == 1 ? "jährlich" : $"alle {n} Jahre",
+            _ => null
+        };
     }
 
     private static CalendarEventDto ToDto(CalendarEvent ev, CalDateTime start, CalDateTime? end, TimeZoneInfo tz)

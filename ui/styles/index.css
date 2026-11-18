@@ -1,7 +1,7 @@
+@import "custom.css";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "custom.css";
 
 /* We use Tailwind CSS in this project: https://tailwindcss.com/
  *

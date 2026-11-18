@@ -81,6 +81,13 @@ export function formatDayKey(key: DayKey, options: Intl.DateTimeFormatOptions): 
     return new Intl.DateTimeFormat("de-DE", {...options, timeZone: "UTC"}).format(parseKey(key));
 }
 
+/* Kurzlabel fuer die Kiosk-Anzeigen: "Heute", "Morgen", sonst der Wochentag ("Mi"). */
+export function relativeDayLabel(key: DayKey, today: DayKey = todayKey()): string {
+    if (key === today) return "Heute";
+    if (key === addDays(today, 1)) return "Morgen";
+    return formatDayKey(key, {weekday: "short"}).replace(".", "");
+}
+
 export function formatTime(iso: string): string {
     return new Intl.DateTimeFormat("de-DE", {timeZone: TIME_ZONE, hour: "2-digit", minute: "2-digit"}).format(new Date(iso));
 }
