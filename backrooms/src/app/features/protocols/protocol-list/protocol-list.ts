@@ -73,7 +73,7 @@ export class ProtocolList {
       await this.runner.run(
         protocol.id,
         () => this.store.remove(protocol.id),
-        'Protokoll gelöscht.',
+        'Protokoll gelöscht',
       );
     }
   }

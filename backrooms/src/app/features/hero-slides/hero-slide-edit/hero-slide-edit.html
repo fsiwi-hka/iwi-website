@@ -13,7 +13,7 @@
         <mat-form-field class="w-100">
           <mat-label>Untertitel</mat-label>
           <textarea matInput rows="3" [formField]="form.subtitle"></textarea>
-          <mat-hint>Ein bis zwei Sätze, die unter dem Titel stehen.</mat-hint>
+          <mat-hint>Ein bis zwei Sätze, die unter dem Titel stehen</mat-hint>
           <mat-error>{{ errorText(form.subtitle) }}</mat-error>
         </mat-form-field>
 
@@ -34,7 +34,7 @@
                 placeholder="/orientation/"
                 [formField]="form.buttonLink"
               />
-              <mat-hint>Interner Pfad der Website oder absolute URL.</mat-hint>
+              <mat-hint>Interner Pfad der Website oder absolute URL</mat-hint>
               <mat-error>{{ errorText(form.buttonLink) }}</mat-error>
             </mat-form-field>
           </div>
@@ -46,7 +46,7 @@
             folder="hero"
             label="Hintergrundbild"
             accept="image/*"
-            hint="Empfohlen: 1920 px Breite, JPG oder WebP, komprimiert."
+            hint="Empfohlen: 1920 px Breite, JPG oder WebP, komprimiert"
             [value]="form.image().value()"
             (valueChange)="form.image().value.set($event)"
           />

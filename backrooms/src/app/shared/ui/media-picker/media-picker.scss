@@ -1,17 +1,17 @@
 .media-picker {
   padding: 0.75rem;
-  border: 1px solid var(--mat-sys-outline-variant);
-  border-radius: var(--mat-sys-corner-medium);
-  background: var(--mat-sys-surface);
+  border: 1px solid var(--ui-hairline-strong);
+  border-radius: var(--ui-radius-card);
+  background: var(--ui-surface);
 
   &__preview {
     flex-shrink: 0;
     display: grid;
     place-items: center;
     overflow: hidden;
-    border-radius: var(--mat-sys-corner-extra-small);
-    background: var(--mat-sys-surface-container);
-    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 4px;
+    background: var(--ui-raised);
+    color: var(--ui-text-3);
 
     &--cover,
     &--contain {
@@ -44,7 +44,7 @@
     gap: 0.25rem;
     max-width: 100%;
     padding: 0.5rem;
-    font: var(--mat-sys-body-small);
+    font-size: 0.75rem;
     text-align: center;
   }
 
@@ -54,14 +54,14 @@
   }
 
   &__name {
-    font: var(--mat-sys-body-medium);
     font-weight: 500;
+    overflow-wrap: anywhere;
   }
 
   // Entfernen ist destruktiv, deshalb in Fehlerfarbe.
   &__remove {
-    --mat-button-text-label-text-color: var(--mat-sys-error);
-    --mat-button-text-state-layer-color: var(--mat-sys-error);
-    --mat-button-text-icon-color: var(--mat-sys-error);
+    --mat-button-text-label-text-color: var(--ui-negative);
+    --mat-button-text-state-layer-color: var(--ui-negative);
+    --mat-button-text-icon-color: var(--ui-negative);
   }
 }

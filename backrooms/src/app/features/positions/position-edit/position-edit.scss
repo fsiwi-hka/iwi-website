@@ -2,16 +2,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  border: 1px solid var(--iwi-grey-light);
-  border-radius: var(--iwi-radius-lg);
+  border: 1px solid var(--ui-hairline);
+  border-radius: var(--ui-radius);
   overflow: hidden;
 }
 
 .assigned__item {
   padding: 0.375rem 0.5rem 0.375rem 0.75rem;
-  background: var(--iwi-white);
+  background: var(--ui-surface);
 
   & + & {
-    border-top: 1px solid var(--iwi-divider);
+    border-top: 1px solid var(--ui-hairline);
   }
 }

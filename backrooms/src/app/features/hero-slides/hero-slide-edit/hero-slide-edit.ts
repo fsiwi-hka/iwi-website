@@ -29,17 +29,17 @@ import { ToastService } from '../../../shared/ui/toast/toast.service';
 import { HeroSlideStore } from '../hero-slide.store';
 
 const heroSlideSchema = schema<HeroSlideDraft>((slide) => {
-  required(slide.title, { message: 'Bitte einen Titel angeben.' });
+  required(slide.title, { message: 'Bitte einen Titel angeben' });
   maxLength(slide.title, 80);
   maxLength(slide.subtitle, 240);
-  required(slide.buttonText, { message: 'Bitte einen Button-Text angeben.' });
+  required(slide.buttonText, { message: 'Bitte einen Button-Text angeben' });
   maxLength(slide.buttonText, 40);
-  required(slide.buttonLink, { message: 'Bitte ein Link-Ziel angeben.' });
+  required(slide.buttonLink, { message: 'Bitte ein Link-Ziel angeben' });
   pattern(slide.buttonLink, /^(\/|https?:\/\/)/, {
-    message: 'Interner Pfad (/seite/) oder absolute URL (https://…).',
+    message: 'Interner Pfad (/seite/) oder absolute URL (https://…)',
   });
   validate(slide.image, ({ value }) =>
-    value() ? undefined : requiredError({ message: 'Bitte ein Bild hochladen.' }),
+    value() ? undefined : requiredError({ message: 'Bitte ein Bild hochladen' }),
   );
 });
 
@@ -87,7 +87,7 @@ export class HeroSlideEdit {
       this.saving.set(true);
       try {
         await this.store.save(this.id(), this.draft.model());
-        this.toast.success('Slide gespeichert.');
+        this.toast.success('Slide gespeichert');
         await this.router.navigate(['/hero-slides']);
       } catch (error) {
         this.toast.error(errorMessage(error));

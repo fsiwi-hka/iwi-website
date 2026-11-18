@@ -1,7 +1,9 @@
-// Jeder Zeitraum als abgesetzter Block, damit Beginn und Ende zusammen gelesen werden.
+// Ein Zeitraum = Label plus Beginn und Ende. Kein eigener Kasten: die Gruppe
+// entsteht ueber den Abstand (eng innen, weiter zum naechsten Zeitraum).
 .range {
-  padding: 1rem !important;
-  margin-bottom: 1rem !important;
-  border-radius: var(--mat-sys-corner-medium);
-  background: var(--mat-sys-surface-container-low);
+  margin-bottom: 0.5rem !important;
+
+  .mat-mdc-form-field {
+    flex: 1 1 160px;
+  }
 }

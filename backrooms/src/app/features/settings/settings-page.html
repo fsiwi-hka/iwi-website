@@ -1,6 +1,6 @@
 <app-page-header
   title="Einstellungen"
-  subtitle="Globale Texte und Links der Website (bisher locales/de.json). Nur für Admins."
+  subtitle="Kontaktadressen und Links, die auf der ganzen Website stehen"
 />
 
 <app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
@@ -72,7 +72,7 @@
             placeholder="Mittwochs, 13:00 Uhr, Raum E013"
             [formField]="form.meetingInfo"
           />
-          <mat-hint>Wird auf der Fachschaftsseite unter „Mitmachen“ angezeigt.</mat-hint>
+          <mat-hint>Wird auf der Fachschaftsseite unter „Mitmachen“ angezeigt</mat-hint>
         </mat-form-field>
 
         <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">

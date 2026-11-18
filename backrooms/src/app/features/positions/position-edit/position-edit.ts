@@ -27,7 +27,7 @@ import { MemberStore } from '../../members/member.store';
 import { PositionStore } from '../position.store';
 
 const positionSchema = schema<PositionDraft>((position) => {
-  required(position.title, { message: 'Bitte einen Namen für die Rolle angeben.' });
+  required(position.title, { message: 'Bitte einen Namen für die Rolle angeben' });
   maxLength(position.title, 60);
 });
 
@@ -119,7 +119,7 @@ export class PositionEdit {
       this.saving.set(true);
       try {
         await this.store.save(this.id(), this.draft.model());
-        this.toast.success('Rolle gespeichert.');
+        this.toast.success('Rolle gespeichert');
         await this.router.navigate(['/positions']);
       } catch (error) {
         this.toast.error(errorMessage(error));

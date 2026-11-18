@@ -1,0 +1,59 @@
+// Oberflaechen-Tokens der Backrooms. Die Farben kommen aus der IWI-Palette
+// (_tokens.scss, Kopie der Website), die Rollen sind eigene: die Backrooms
+// sind ein Arbeitswerkzeug und muessen nicht aussehen wie die Website, nur
+// farblich zu ihr passen.
+//
+// Regeln: Flaechen, Linien und Text kommen aus der neutralen Rampe (leicht
+// Richtung Petrol getoent). Der Akzent (IWI-Blau dunkel) markiert nur die
+// Hauptaktion, die Auswahl und Links. Farbe im Inhalt (Vorschauen, Bilder)
+// darf reich sein, die Oberflaeche drumherum bleibt ruhig.
+:root {
+  // Neutrale Rampe
+  --ui-bg: #f4f6f7;
+  --ui-surface: #ffffff;
+  --ui-raised: #eef2f4;
+  --ui-hairline: rgb(22 34 42 / 9%);
+  --ui-hairline-strong: rgb(22 34 42 / 16%);
+  // Deckende Variante fuer Formularrahmen: Material setzt den Rahmen aus
+  // ueberlappenden Stuecken zusammen, Transparenz zeigt dort Naehte.
+  --ui-field-outline: #d2d8db;
+
+  // Drei Textrollen
+  --ui-text: #16222a;
+  --ui-text-2: #46555e;
+  --ui-text-3: #5f6e77;
+
+  // Akzent (IWI-Blau). Weiss darauf erreicht ~5:1.
+  --ui-accent: var(--iwi-blue-dark);
+  --ui-accent-ink: #20617d;
+  --ui-accent-soft: #e4eff5;
+
+  // Bedeutung, gedaempft
+  --ui-positive: #1d6b40;
+  --ui-positive-soft: #e2f0e7;
+  --ui-warning: #7a4a00;
+  --ui-warning-soft: #f8ecd8;
+  --ui-negative: #b3261e;
+  --ui-negative-soft: #fae6e4;
+
+  // Navigation: Petrol der Hochschule als tiefste Flaeche
+  --ui-nav-bg: var(--iwi-petrol);
+  --ui-nav-text: rgb(255 255 255 / 80%);
+  --ui-nav-muted: rgb(255 255 255 / 55%);
+  --ui-nav-active: rgb(255 255 255 / 10%);
+
+  // Radien: Tags 6, Bedienelemente 8, Karten 12, Panels 16
+  --ui-radius-sm: 6px;
+  --ui-radius: 8px;
+  --ui-radius-card: 12px;
+  --ui-radius-panel: 16px;
+
+  --ui-shadow-float: 0 8px 24px rgb(0 0 0 / 8%);
+
+  --ui-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+
+  // Eine Kurve, wenige Dauern
+  --ui-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ui-fast: 150ms;
+  --ui-medium: 200ms;
+}

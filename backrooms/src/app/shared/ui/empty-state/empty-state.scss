@@ -1,33 +1,31 @@
 .empty-state {
-  padding: 3rem 1rem;
-  border: 1px dashed var(--iwi-grey-light);
-  border-radius: var(--iwi-radius-xl);
-  background: var(--iwi-white);
+  padding: 3rem 1.5rem;
+  border: 1px solid var(--ui-hairline);
+  border-radius: var(--ui-radius-card);
+  background: var(--ui-surface);
 
   &__icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: #e3f1f7;
-    color: var(--iwi-blue-dark);
-
-    mat-icon {
-      width: 28px;
-      height: 28px;
-      font-size: 28px;
-    }
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.75rem;
+    color: var(--ui-text-3);
   }
 
   &__title {
-    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.9375rem;
   }
 
   &__description {
     max-width: 44ch;
-    font: var(--mat-sys-body-medium);
+    color: var(--ui-text-2);
   }
 
-  &__actions:empty {
-    display: none;
+  &__actions {
+    margin-top: 1.25rem;
+
+    &:empty {
+      display: none;
+    }
   }
 }

@@ -45,7 +45,7 @@ export class SponsorList {
     void this.runner.run(
       sponsor.id,
       () => this.store.patch(sponsor.id, { active: !sponsor.active }),
-      sponsor.active ? 'Sponsor ausgeblendet.' : 'Sponsor eingeblendet.',
+      sponsor.active ? 'Sponsor ausgeblendet' : 'Sponsor eingeblendet',
     );
   }
 
@@ -61,7 +61,7 @@ export class SponsorList {
 
   protected async remove(sponsor: Sponsor): Promise<void> {
     if (await this.confirm.confirmDelete(sponsor.name)) {
-      await this.runner.run(sponsor.id, () => this.store.remove(sponsor.id), 'Sponsor gelöscht.');
+      await this.runner.run(sponsor.id, () => this.store.remove(sponsor.id), 'Sponsor gelöscht');
     }
   }
 }

@@ -3,15 +3,16 @@
 }
 
 .data-state__loading {
-  padding: 2rem;
+  padding: 2rem 0;
+  color: var(--ui-text-3);
 }
 
 .data-state__error {
   padding: 1rem;
-  border: 1px solid var(--mat-sys-error);
-  border-radius: var(--mat-sys-corner-medium);
-  background: var(--mat-sys-error-container);
-  color: var(--mat-sys-on-error-container);
+  border: 1px solid rgb(179 38 30 / 20%);
+  border-radius: var(--ui-radius-card);
+  background: var(--ui-negative-soft);
+  color: var(--ui-negative);
 }
 
 .data-state__error-text {

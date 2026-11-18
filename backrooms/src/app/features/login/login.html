@@ -1,81 +1,74 @@
 <div class="login d-flex align-items-center justify-content-center">
-  <mat-card class="login__card" appearance="outlined">
-    <mat-card-content>
-      <img
-        class="login__logo mb-3"
-        ngSrc="images/iwi-logo.svg"
-        width="56"
-        height="56"
-        alt=""
-        priority
-      />
-      <h1 class="login__title mb-1">Backrooms</h1>
-      <p class="muted mb-4">Anmeldung zum CMS der Fachschaft IWI</p>
+  <div class="login__card">
+    <div class="login__brand d-flex align-items-center gap-2">
+      <img class="login__logo" ngSrc="images/iwi-logo.svg" width="32" height="32" alt="" priority />
+      <span class="login__brand-name">Fachschaft IWI</span>
+    </div>
+    <h1 class="login__title">Backrooms</h1>
+    <p class="login__lead">Melde dich mit deinem Nextcloud-Konto der Fachschaft an</p>
 
-      <form (submit)="onSubmit($event)" novalidate>
-        <mat-form-field class="w-100">
-          <mat-label>Benutzername</mat-label>
-          <input
-            matInput
-            type="text"
-            autocomplete="username"
-            autocapitalize="none"
-            [formField]="form.username"
-          />
-          <mat-error>{{ errorText(form.username) }}</mat-error>
-        </mat-form-field>
+    <form (submit)="onSubmit($event)" novalidate>
+      <mat-form-field class="w-100">
+        <mat-label>Benutzername</mat-label>
+        <input
+          matInput
+          type="text"
+          autocomplete="username"
+          autocapitalize="none"
+          [formField]="form.username"
+        />
+        <mat-error>{{ errorText(form.username) }}</mat-error>
+      </mat-form-field>
 
-        <mat-form-field class="w-100">
-          <mat-label>Passwort</mat-label>
-          <input
-            matInput
-            [type]="hidePassword() ? 'password' : 'text'"
-            autocomplete="current-password"
-            [formField]="form.password"
-          />
-          <button
-            matIconButton
-            matSuffix
-            type="button"
-            [attr.aria-label]="hidePassword() ? 'Passwort anzeigen' : 'Passwort verbergen'"
-            [attr.aria-pressed]="!hidePassword()"
-            (click)="hidePassword.set(!hidePassword())"
-          >
-            <mat-icon [svgIcon]="hidePassword() ? 'eye' : 'eye-off'" />
-          </button>
-          <mat-error>{{ errorText(form.password) }}</mat-error>
-        </mat-form-field>
-
-        @if (error(); as message) {
-          <div class="login__error d-flex align-items-center gap-2 mb-3" role="alert">
-            <mat-icon svgIcon="alert" />
-            <span>{{ message }}</span>
-          </div>
-        }
-
+      <mat-form-field class="w-100">
+        <mat-label>Passwort</mat-label>
+        <input
+          matInput
+          [type]="hidePassword() ? 'password' : 'text'"
+          autocomplete="current-password"
+          [formField]="form.password"
+        />
         <button
-          matButton="filled"
-          type="submit"
-          class="w-100 mt-2"
-          [disabled]="submitting()"
-          [attr.aria-busy]="submitting()"
+          matIconButton
+          matSuffix
+          type="button"
+          [attr.aria-label]="hidePassword() ? 'Passwort anzeigen' : 'Passwort verbergen'"
+          [attr.aria-pressed]="!hidePassword()"
+          (click)="hidePassword.set(!hidePassword())"
         >
-          @if (submitting()) {
-            <mat-spinner [diameter]="18" />
-            Anmelden…
-          } @else {
-            Anmelden
-          }
+          <mat-icon [svgIcon]="hidePassword() ? 'eye' : 'eye-off'" />
         </button>
-      </form>
+        <mat-error>{{ errorText(form.password) }}</mat-error>
+      </mat-form-field>
 
-      @if (config.useMocks) {
-        <div class="login__hint mt-4">
-          <strong>Mock-Modus.</strong>
-          Anmelden mit <code>admin</code> oder <code>redaktion</code> und dem Passwort
-          <code>backrooms</code>. Später übernimmt die Nextcloud die Nutzerverwaltung.
+      @if (error(); as message) {
+        <div class="login__error d-flex align-items-center gap-2 mb-3" role="alert">
+          <mat-icon svgIcon="alert" />
+          <span>{{ message }}</span>
         </div>
       }
-    </mat-card-content>
-  </mat-card>
+
+      <button
+        matButton="filled"
+        type="submit"
+        class="login__submit w-100"
+        [disabled]="submitting()"
+        [attr.aria-busy]="submitting()"
+      >
+        @if (submitting()) {
+          <mat-spinner [diameter]="18" />
+          Anmelden…
+        } @else {
+          Anmelden
+        }
+      </button>
+    </form>
+
+    @if (config.useMocks) {
+      <p class="login__hint">
+        Mock-Modus: <code>admin</code> oder <code>redaktion</code>, Passwort
+        <code>backrooms</code>
+      </p>
+    }
+  </div>
 </div>

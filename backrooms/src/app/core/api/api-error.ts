@@ -12,15 +12,15 @@ export type ApiErrorKind =
   | 'unknown';
 
 const DEFAULT_MESSAGES: Record<ApiErrorKind, string> = {
-  network: 'Keine Verbindung zum Server.',
-  unauthorized: 'Bitte melde dich erneut an.',
-  forbidden: 'Dafür fehlt dir die Berechtigung.',
-  'not-found': 'Der Eintrag wurde nicht gefunden.',
-  validation: 'Die Eingaben sind ungültig.',
+  network: 'Keine Verbindung zum Server',
+  unauthorized: 'Bitte melde dich erneut an',
+  forbidden: 'Dafür fehlt dir die Berechtigung',
+  'not-found': 'Der Eintrag wurde nicht gefunden',
+  validation: 'Die Eingaben sind ungültig',
   conflict: 'Der Eintrag wurde zwischenzeitlich geändert. Bitte neu laden.',
-  server: 'Auf dem Server ist ein Fehler aufgetreten.',
-  aborted: 'Die Anfrage wurde abgebrochen.',
-  unknown: 'Ein unbekannter Fehler ist aufgetreten.',
+  server: 'Auf dem Server ist ein Fehler aufgetreten',
+  aborted: 'Die Anfrage wurde abgebrochen',
+  unknown: 'Ein unbekannter Fehler ist aufgetreten',
 };
 
 /**

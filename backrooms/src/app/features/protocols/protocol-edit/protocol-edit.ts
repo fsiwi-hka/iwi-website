@@ -12,7 +12,6 @@ import {
 } from '@angular/forms/signals';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -28,16 +27,19 @@ import { ToastService } from '../../../shared/ui/toast/toast.service';
 import { fileNameToTitle } from '../../../shared/utils/file';
 import { ProtocolStore } from '../protocol.store';
 
+/** Wird zum Dateinamen in der Nextcloud. */
+const FILE_NAME = /^[^/\\:*?"<>|]+$/;
+
 const protocolSchema = schema<ProtocolDraft>((protocol) => {
-  required(protocol.title, { message: 'Bitte einen Titel angeben.' });
+  required(protocol.title, { message: 'Bitte einen Titel angeben' });
   maxLength(protocol.title, 80);
-  required(protocol.semester, { message: 'Bitte das Semester angeben.' });
+  pattern(protocol.title, FILE_NAME, { message: 'Keines dieser Zeichen: / \\ : * ? " < > |' });
+  required(protocol.semester, { message: 'Bitte das Semester angeben' });
   pattern(protocol.semester, /^(WS \d{4}\/\d{2}|SS \d{4})$/, {
-    message: 'Format: „WS 2025/26“ oder „SS 2026“.',
+    message: 'Format: „WS 2025/26“ oder „SS 2026“',
   });
-  required(protocol.meetingDate, { message: 'Bitte das Sitzungsdatum angeben.' });
   validate(protocol.file, ({ value }) =>
-    value() ? undefined : requiredError({ message: 'Bitte die PDF-Datei hochladen.' }),
+    value() ? undefined : requiredError({ message: 'Bitte die PDF-Datei hochladen' }),
   );
 });
 
@@ -49,7 +51,6 @@ const protocolSchema = schema<ProtocolDraft>((protocol) => {
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatDatepickerModule,
     MatButtonModule,
     MatProgressSpinnerModule,
     PageHeader,
@@ -97,7 +98,7 @@ export class ProtocolEdit {
       this.saving.set(true);
       try {
         await this.store.save(this.id(), this.draft.model());
-        this.toast.success('Protokoll gespeichert.');
+        this.toast.success('Protokoll gespeichert');
         await this.router.navigate(['/protocols']);
       } catch (error) {
         this.toast.error(errorMessage(error));

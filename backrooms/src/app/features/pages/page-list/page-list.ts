@@ -41,7 +41,7 @@ export class PageList {
 
   protected async remove(page: ContentPage): Promise<void> {
     if (await this.confirm.confirmDelete(page.title)) {
-      await this.runner.run(page.id, () => this.store.remove(page.id), 'Seite gelöscht.');
+      await this.runner.run(page.id, () => this.store.remove(page.id), 'Seite gelöscht');
     }
   }
 }

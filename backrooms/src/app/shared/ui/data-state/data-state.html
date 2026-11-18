@@ -5,7 +5,7 @@
       role="status"
       aria-live="polite"
     >
-      <mat-spinner [diameter]="28" />
+      <mat-spinner [diameter]="20" />
       <span class="muted">{{ loadingLabel() }}</span>
     </div>
   }
@@ -13,7 +13,7 @@
     <div class="data-state__error d-flex flex-wrap align-items-center gap-3" role="alert">
       <mat-icon svgIcon="alert" />
       <div class="data-state__error-text">
-        <strong>Laden fehlgeschlagen.</strong>
+        <strong>Laden fehlgeschlagen</strong>
         <span>{{ message() }}</span>
       </div>
       <button matButton="outlined" class="ms-auto" (click)="retry.emit()">

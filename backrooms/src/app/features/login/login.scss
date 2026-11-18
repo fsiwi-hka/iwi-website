@@ -1,45 +1,74 @@
-// Anmeldung auf IWI-Blau mit weisser Karte, wie Footer und Menue der Website.
+// Anmeldung: ruhige Flaeche, eine Karte, ein Akzent (der Anmelde-Button).
 .login {
   min-height: 100dvh;
   padding: 1rem;
-  background: var(--iwi-blue);
+  background: var(--ui-bg);
 
   &__card {
     width: 100%;
-    max-width: 420px;
-    padding: 1rem 0.5rem;
-    border: 0;
-    box-shadow: var(--iwi-shadow-lg);
+    max-width: 380px;
+    padding: 2rem;
+    border: 1px solid var(--ui-hairline);
+    border-radius: var(--ui-radius-panel);
+    background: var(--ui-surface);
+  }
+
+  &__brand {
+    margin-bottom: 1.5rem;
   }
 
   &__logo {
-    border-radius: var(--iwi-radius);
+    padding: 3px;
+    border-radius: var(--ui-radius);
+    outline: 1px solid var(--ui-hairline);
+  }
+
+  &__brand-name {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--ui-text-2);
   }
 
   &__title {
-    font-size: 1.875rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__lead {
+    margin-bottom: 1.5rem;
+    color: var(--ui-text-2);
+  }
+
+  &__submit {
+    --mat-button-filled-container-height: 40px;
+    margin-top: 0.25rem;
   }
 
   &__error {
-    padding: 0.75rem 1rem;
-    border-radius: var(--iwi-radius-lg);
-    background: var(--mat-sys-error-container);
-    color: var(--mat-sys-on-error-container);
+    padding: 0.625rem 0.75rem;
+    border-radius: var(--ui-radius);
+    background: var(--ui-negative-soft);
+    color: var(--ui-negative);
     font-size: 0.8125rem;
+
+    mat-icon {
+      flex: none;
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &__hint {
-    padding: 0.75rem 1rem;
-    border-radius: var(--iwi-radius-lg);
-    background: var(--iwi-surface);
-    color: var(--iwi-grey);
-    font-size: 0.8125rem;
+    margin: 1.25rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--ui-hairline);
+    font-size: 0.75rem;
+    color: var(--ui-text-3);
 
     code {
       padding: 1px 4px;
       border-radius: 4px;
-      background: var(--iwi-grey-light);
-      color: var(--iwi-red);
+      background: var(--ui-raised);
+      color: var(--ui-text);
     }
   }
 }

@@ -54,18 +54,18 @@ export class PageEdit {
 
   /** Das Schema liegt in der Komponente, weil die Slug-Pruefung die Liste braucht. */
   protected readonly form = form(this.draft.model, (page) => {
-    required(page.title, { message: 'Bitte einen Titel angeben.' });
+    required(page.title, { message: 'Bitte einen Titel angeben' });
     maxLength(page.title, 80);
-    required(page.slug, { message: 'Bitte einen Slug angeben.' });
+    required(page.slug, { message: 'Bitte einen Slug angeben' });
     pattern(page.slug, SLUG_PATTERN, {
       message: 'Nur Kleinbuchstaben, Ziffern und Bindestriche, z. B. „impressum“.',
     });
     validate(page.slug, ({ value }) =>
       this.isSlugTaken(value())
-        ? { kind: 'slug-taken', message: 'Dieser Slug wird bereits verwendet.' }
+        ? { kind: 'slug-taken', message: 'Dieser Slug wird bereits verwendet' }
         : undefined,
     );
-    required(page.body, { message: 'Der Inhalt darf nicht leer sein.' });
+    required(page.body, { message: 'Der Inhalt darf nicht leer sein' });
   });
   protected readonly saving = signal(false);
   protected readonly title = computed(() =>
@@ -78,7 +78,7 @@ export class PageEdit {
       this.saving.set(true);
       try {
         await this.store.save(this.id(), this.draft.model());
-        this.toast.success('Seite gespeichert.');
+        this.toast.success('Seite gespeichert');
         await this.router.navigate(['/pages']);
       } catch (error) {
         this.toast.error(errorMessage(error));

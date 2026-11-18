@@ -1,5 +1,5 @@
-// Basis-Elemente im Stil der Website (ui-angular, styles/_base.scss):
-// Poppins, graue Fliesstexte, Ueberschriften in Versalien und Petrol.
+// Basis-Elemente. Schrift ist Poppins wie auf der Website; Hierarchie kommt
+// aus Groesse und Farbe, nicht aus Versalien oder fetten Gewichten.
 
 *,
 *::before,
@@ -15,10 +15,10 @@ html {
 body {
   margin: 0;
   font-family: var(--iwi-font);
-  font-size: 0.9375rem;
-  line-height: 1.5;
-  color: var(--iwi-grey-dark);
-  background: var(--iwi-surface);
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--ui-text);
+  background: var(--ui-bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -27,41 +27,47 @@ h2,
 h3 {
   margin: 0 0 0.5rem;
   font-family: var(--iwi-font);
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--iwi-petrol-pale);
+  font-weight: 500;
+  color: var(--ui-text);
 }
 
 h1 {
-  font-size: 1.875rem;
-  line-height: 1.15;
+  font-size: 1.5rem;
+  line-height: 1.25;
 
   @media (min-width: 768px) {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
   }
 }
 
 h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 p {
   margin: 0 0 0.75rem;
 }
 
+strong,
+b {
+  font-weight: 600;
+}
+
 a {
-  color: var(--iwi-blue-dark);
+  color: var(--ui-accent-ink);
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration-color: rgb(32 97 125 / 35%);
+  text-underline-offset: 3px;
+  transition: text-decoration-color var(--ui-fast) var(--ui-ease);
 
   &:hover {
-    text-decoration-thickness: 2px;
+    text-decoration-color: currentColor;
   }
 }
 
@@ -74,13 +80,13 @@ video {
 
 code,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--ui-mono);
   font-size: 0.9em;
 }
 
-// Sichtbarer Fokus fuer Tastaturnutzung (WCAG 2.4.7), wie auf der Website.
+// Sichtbarer Fokus fuer Tastaturnutzung (WCAG 2.4.7).
 :focus-visible {
-  outline: 2px solid var(--iwi-blue);
+  outline: 2px solid var(--ui-accent);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -103,9 +109,9 @@ pre {
   left: 0.75rem;
   z-index: 1000;
   padding: 0.5rem 1rem;
-  background: var(--iwi-petrol);
-  color: var(--iwi-white);
-  border-radius: var(--iwi-radius);
+  background: var(--ui-text);
+  color: var(--ui-surface);
+  border-radius: var(--ui-radius);
 
   &:focus {
     top: 0.75rem;

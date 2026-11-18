@@ -30,14 +30,14 @@ function dateRangeRules(range: SchemaPath<DateRange>): void {
   validate(range, ({ value }) => {
     const { beginn, ende } = value();
     return beginn && ende && ende < beginn
-      ? { kind: 'range', message: 'Das Ende liegt vor dem Beginn.' }
+      ? { kind: 'range', message: 'Das Ende liegt vor dem Beginn' }
       : undefined;
   });
 }
 
 const semesterDatesSchema = schema<SemesterDates>((dates) => {
-  required(dates.semester, { message: 'Bitte das Semester angeben.' });
-  pattern(dates.semester, /^(WS|SS)\d{2}$/i, { message: 'Format: WS26 oder SS27.' });
+  required(dates.semester, { message: 'Bitte das Semester angeben' });
+  pattern(dates.semester, /^(WS|SS)\d{2}$/i, { message: 'Format: WS26 oder SS27' });
   dateRangeRules(dates.vorkurse.mathe);
   dateRangeRules(dates.vorkurse.programmieren);
   dateRangeRules(dates.orientierungsphase);
@@ -80,7 +80,7 @@ export class SemesterDatesPage {
     await submit(this.form, async () => {
       try {
         await this.store.save({ ...this.model(), changedAt: nowIso() });
-        this.toast.success('Semestertermine gespeichert.');
+        this.toast.success('Semestertermine gespeichert');
       } catch (error) {
         this.toast.error(errorMessage(error));
       }

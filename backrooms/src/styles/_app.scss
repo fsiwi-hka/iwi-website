@@ -1,37 +1,46 @@
 // Wenige App-Helfer, die weder Bootstrap noch Material abdecken.
 // Layout (Grid, Flex, Abstaende) kommt aus den Bootstrap-Utilities,
-// alles Sichtbare aus Material.
+// alles Sichtbare aus Material und den Rollen in _ui.scss.
 
-// Bootstrap-Utilities an die IWI-Tokens koppeln.
+// Bootstrap-Utilities an die Tokens koppeln.
 :root {
   --bs-body-font-family: var(--iwi-font);
-  --bs-secondary-color: var(--iwi-grey);
-  --bs-border-color: var(--iwi-divider);
+  --bs-secondary-color: var(--ui-text-3);
+  --bs-border-color: var(--ui-hairline);
 }
 
 .muted {
-  color: var(--iwi-grey);
+  color: var(--ui-text-3);
+}
+
+.text-sm {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+.mono {
+  font-family: var(--ui-mono);
+}
+
+// Zahlen in Tabellen und Kennzahlen untereinander buendig.
+.num {
+  font-variant-numeric: tabular-nums;
 }
 
 // Ueberschrift einer Feldgruppe (fieldset/legend ausserhalb von mat-form-field).
 .form-legend {
   padding: 0;
   margin-bottom: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--iwi-petrol);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ui-text-2);
 }
 
 // Fehlertext fuer Eingaben, die kein mat-form-field haben (z. B. Datei-Upload).
 .field-error {
-  font: var(--mat-sys-body-small);
-  color: var(--mat-sys-error);
-}
-
-.mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--ui-negative);
 }
 
 // mat-icon mitten im Fliesstext, z. B. hinter einem Link.
@@ -39,16 +48,13 @@
   width: 16px;
   height: 16px;
   font-size: 16px;
-}
-
-.text-sm {
-  font: var(--mat-sys-body-small);
+  vertical-align: -3px;
 }
 
 // Inhaltsbreite der Seiten innerhalb der Shell.
 .page {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
 }
 
 // Abstand zwischen den Karten einer Seite.
@@ -62,9 +68,9 @@
 .table-scroll {
   width: 100%;
   overflow-x: auto;
-  border: 1px solid var(--iwi-grey-light);
-  border-radius: var(--iwi-radius-xl);
-  background: var(--iwi-white);
+  border: 1px solid var(--ui-hairline);
+  border-radius: var(--ui-radius-card);
+  background: var(--ui-surface);
 }
 
 // Aktionsspalte einer Tabelle: so schmal wie ihr Inhalt, Buttons in einer Zeile.
@@ -80,13 +86,15 @@ td.cell-actions {
   }
 }
 
-// Vorschaubilder in Tabellen.
+// Vorschaubilder in Tabellen (16:10, wie die Medien-Vorschau).
 .thumb {
   width: 64px;
   height: 40px;
   object-fit: cover;
-  border-radius: var(--mat-sys-corner-extra-small);
-  background: var(--mat-sys-surface-container);
+  border-radius: 4px;
+  background: var(--ui-raised);
+  outline: 1px solid var(--ui-hairline);
+  outline-offset: -1px;
 }
 
 .thumb--contain {
@@ -95,23 +103,22 @@ td.cell-actions {
 
 .avatar {
   flex: none;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   object-fit: cover;
   border-radius: 50%;
-  background: var(--iwi-surface);
+  background: var(--ui-raised);
 }
 
-// Platzhalter ohne Foto, wie die grauen Kreise auf der Fachschaftsseite.
+// Platzhalter ohne Foto.
 .avatar--empty {
   display: grid;
   place-items: center;
-  background: var(--iwi-grey-light);
-  color: var(--iwi-white);
+  color: var(--ui-text-3);
 
   .mat-icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -121,67 +128,36 @@ td.cell-actions {
   text-decoration: none;
 
   &:hover span {
-    color: var(--iwi-blue-dark);
+    color: var(--ui-accent-ink);
     text-decoration: underline;
   }
 }
 
-// Rollen-Chips: Petrol auf hellem Blau, wie die Akzente der Website.
+// Rollen-Chips: ruhige Tags statt Pillen.
 .mat-mdc-chip.mat-mdc-standard-chip.chip--role {
-  --mat-chip-elevated-container-color: #e3f1f7;
-  --mat-chip-label-text-color: var(--iwi-petrol);
-}
-
-// Statusfarben fuer mat-chip. Material kennt keine semantischen Chip-Varianten,
-// deshalb hier ueber Tokens der jeweiligen Palette. Drei Klassen, damit die
-// Regel die Material-Styles fuer hervorgehobene Chips schlaegt (die werden
-// zur Laufzeit nach den globalen Styles eingefuegt).
-// "Erfolg" bewusst ueber ein eigenes Gruen: die Tertiaerfarbe der Marke ist rot
-// und wuerde als Fehler gelesen.
-.mat-mdc-chip.mat-mdc-standard-chip.chip--success {
-  --mat-chip-elevated-container-color: #d7ecdd;
-  --mat-chip-label-text-color: #0f3d24;
-}
-
-.mat-mdc-chip.mat-mdc-standard-chip.chip--info {
-  --mat-chip-elevated-container-color: #e3f1f7;
-  --mat-chip-label-text-color: var(--iwi-petrol);
-}
-
-.mat-mdc-chip.mat-mdc-standard-chip.chip--warning {
-  --mat-chip-elevated-container-color: #fbe9d2;
-  --mat-chip-label-text-color: #6b3d00;
-}
-
-.mat-mdc-chip.mat-mdc-standard-chip.chip--muted {
-  --mat-chip-elevated-container-color: var(--iwi-surface);
-  --mat-chip-label-text-color: var(--iwi-grey-dark);
-}
-
-.mat-mdc-chip.mat-mdc-standard-chip.chip--danger {
-  --mat-chip-elevated-container-color: var(--mat-sys-error-container);
-  --mat-chip-label-text-color: var(--mat-sys-on-error-container);
+  --mat-chip-elevated-container-color: var(--ui-raised);
+  --mat-chip-label-text-color: var(--ui-text-2);
 }
 
 // Snackbar-Varianten (Material faerbt Snackbars nicht nach Bedeutung).
 .snackbar--success {
-  --mat-snack-bar-container-color: #0f3d24;
-  --mat-snack-bar-supporting-text-color: #e4f4ea;
-  --mat-snack-bar-button-color: #e4f4ea;
+  --mat-snack-bar-container-color: var(--ui-text);
+  --mat-snack-bar-supporting-text-color: #e8eef1;
+  --mat-snack-bar-button-color: #9fd6b4;
 }
 
 .snackbar--error {
-  --mat-snack-bar-container-color: var(--mat-sys-error-container);
-  --mat-snack-bar-supporting-text-color: var(--mat-sys-on-error-container);
-  --mat-snack-bar-button-color: var(--mat-sys-on-error-container);
+  --mat-snack-bar-container-color: var(--ui-negative);
+  --mat-snack-bar-supporting-text-color: #ffffff;
+  --mat-snack-bar-button-color: #ffffff;
 }
 
 // Drag & Drop beim Sortieren von Listen (CDK).
 .cdk-drag-preview {
-  box-shadow: var(--mat-sys-level3);
-  background: var(--mat-sys-surface);
-  border-radius: var(--mat-sys-corner-extra-small);
-  opacity: 0.95;
+  box-shadow: var(--ui-shadow-float);
+  background: var(--ui-surface);
+  border-radius: var(--ui-radius);
+  opacity: 0.96;
 }
 
 .cdk-drag-placeholder {
@@ -189,12 +165,12 @@ td.cell-actions {
 }
 
 .cdk-drop-list-dragging .cdk-drag:not(.cdk-drag-placeholder) {
-  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+  transition: transform var(--ui-medium) var(--ui-ease);
 }
 
 .drag-handle {
   cursor: grab;
-  color: var(--mat-sys-on-surface-variant);
+  color: var(--ui-text-3);
 
   &:active {
     cursor: grabbing;

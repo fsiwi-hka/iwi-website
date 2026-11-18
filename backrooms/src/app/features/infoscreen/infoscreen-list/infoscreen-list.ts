@@ -56,7 +56,7 @@ export class InfoscreenList {
     void this.runner.run(
       slide.id,
       () => this.store.patch(slide.id, { active: !slide.active }),
-      slide.active ? 'Slide vom Infoscreen genommen.' : 'Slide wird angezeigt.',
+      slide.active ? 'Slide vom Infoscreen genommen' : 'Slide wird angezeigt',
     );
   }
 
@@ -72,7 +72,7 @@ export class InfoscreenList {
 
   protected async remove(slide: InfoscreenSlide): Promise<void> {
     if (await this.confirm.confirmDelete(slide.name)) {
-      await this.runner.run(slide.id, () => this.store.remove(slide.id), 'Slide gelöscht.');
+      await this.runner.run(slide.id, () => this.store.remove(slide.id), 'Slide gelöscht');
     }
   }
 }

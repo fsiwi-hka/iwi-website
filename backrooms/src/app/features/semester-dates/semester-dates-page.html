@@ -1,6 +1,6 @@
 <app-page-header
   title="Semestertermine"
-  subtitle="Termine für O-Phase, Vorkurse und Vorlesungszeit sowie die Stundenpläne der O-Phase. Die Website zeigt diese Daten auf mehreren Seiten an."
+  subtitle="Termine für O-Phase, Vorkurse und Vorlesungszeit, dazu die Stundenpläne der O-Phase"
 />
 
 <app-data-state [status]="store.status()" [error]="store.error()" (retry)="store.reload()">
@@ -166,7 +166,7 @@
                   [label]="'Stundenplan ' + course.label"
                   accept="image/*"
                   previewMode="contain"
-                  hint="PNG, wird auf der O-Phase-Seite als Bild angezeigt."
+                  hint="PNG, wird auf der O-Phase-Seite als Bild angezeigt"
                   [value]="form.timetables[course.value]().value()"
                   (valueChange)="form.timetables[course.value]().value.set($event)"
                 />

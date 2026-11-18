@@ -82,7 +82,7 @@ export class PositionList {
           }
         }
       },
-      'Rolle gelöscht.',
+      'Rolle gelöscht',
     );
   }
 }

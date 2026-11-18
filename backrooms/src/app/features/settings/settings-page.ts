@@ -16,12 +16,12 @@ import { SiteSettingsStore } from './site-settings.store';
 const URL_PATTERN = /^$|^https?:\/\/\S+$/;
 
 const settingsSchema = schema<SiteSettings>((settings) => {
-  required(settings.contactMail, { message: 'Bitte die Kontakt-Adresse angeben.' });
+  required(settings.contactMail, { message: 'Bitte die Kontakt-Adresse angeben' });
   email(settings.contactMail);
   email(settings.sponsoringMail);
   email(settings.associationMail);
-  pattern(settings.discordUrl, URL_PATTERN, { message: 'Bitte eine vollständige URL angeben.' });
-  pattern(settings.instagramUrl, URL_PATTERN, { message: 'Bitte eine vollständige URL angeben.' });
+  pattern(settings.discordUrl, URL_PATTERN, { message: 'Bitte eine vollständige URL angeben' });
+  pattern(settings.instagramUrl, URL_PATTERN, { message: 'Bitte eine vollständige URL angeben' });
 });
 
 @Component({
@@ -52,7 +52,7 @@ export class SettingsPage {
     await submit(this.form, async () => {
       try {
         await this.store.save(this.model());
-        this.toast.success('Einstellungen gespeichert.');
+        this.toast.success('Einstellungen gespeichert');
       } catch (error) {
         this.toast.error(errorMessage(error));
       }

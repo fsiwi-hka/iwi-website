@@ -11,7 +11,7 @@
             label="Medium"
             [accept]="accept()"
             previewMode="contain"
-            hint="Bild (16:9, 1920 × 1080 px) oder Video (MP4/WebM)."
+            hint="Bild (16:9, 1920 × 1080 px) oder Video (MP4/WebM)"
             [value]="form.media().value()"
             (valueChange)="onMediaChange($event)"
           />
@@ -25,6 +25,7 @@
             <mat-form-field class="w-100">
               <mat-label>Name</mat-label>
               <input matInput type="text" [formField]="form.name" />
+              <mat-hint>Dateiname in der Nextcloud (ohne Endung)</mat-hint>
               <mat-error>{{ errorText(form.name) }}</mat-error>
             </mat-form-field>
           </div>

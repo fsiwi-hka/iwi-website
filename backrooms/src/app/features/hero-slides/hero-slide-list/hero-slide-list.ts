@@ -45,7 +45,7 @@ export class HeroSlideList {
     void this.runner.run(
       slide.id,
       () => this.store.patch(slide.id, { active: !slide.active }),
-      slide.active ? 'Slide deaktiviert.' : 'Slide aktiviert.',
+      slide.active ? 'Slide deaktiviert' : 'Slide aktiviert',
     );
   }
 
@@ -61,7 +61,7 @@ export class HeroSlideList {
 
   protected async remove(slide: HeroSlide): Promise<void> {
     if (await this.confirm.confirmDelete(slide.title)) {
-      await this.runner.run(slide.id, () => this.store.remove(slide.id), 'Slide gelöscht.');
+      await this.runner.run(slide.id, () => this.store.remove(slide.id), 'Slide gelöscht');
     }
   }
 }

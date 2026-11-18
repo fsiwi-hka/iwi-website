@@ -30,13 +30,13 @@ import { PositionStore } from '../../positions/position.store';
 import { DepartmentStore } from '../department.store';
 
 const departmentSchema = schema<DepartmentDraft>((department) => {
-  required(department.name, { message: 'Bitte einen Fachbereich angeben.' });
+  required(department.name, { message: 'Bitte einen Fachbereich angeben' });
   maxLength(department.name, 60);
   validate(department.tasks, ({ value }) =>
-    value().length > 0 ? undefined : requiredError({ message: 'Mindestens eine Aufgabe angeben.' }),
+    value().length > 0 ? undefined : requiredError({ message: 'Mindestens eine Aufgabe angeben' }),
   );
   applyEach(department.tasks, (task) => {
-    required(task, { message: 'Aufgabe darf nicht leer sein.' });
+    required(task, { message: 'Aufgabe darf nicht leer sein' });
     maxLength(task, 160);
   });
 });
@@ -115,7 +115,7 @@ export class DepartmentEdit {
       this.saving.set(true);
       try {
         await this.store.save(this.id(), this.draft.model());
-        this.toast.success('Fachbereich gespeichert.');
+        this.toast.success('Fachbereich gespeichert');
         await this.router.navigate(['/departments']);
       } catch (error) {
         this.toast.error(errorMessage(error));

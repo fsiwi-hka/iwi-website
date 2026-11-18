@@ -1,15 +1,16 @@
 // Globale Styles der Backrooms.
 //
-// Die Backrooms uebernehmen den Auftritt der Website (ui-angular): gleiche
-// Farb-Tokens, Poppins, Ueberschriften in Versalien, Pill-Buttons, weiche
-// Karten. Die Optik kommt aus vier Quellen, in dieser Reihenfolge:
+// Die Backrooms passen farblich zur Website (IWI-Palette, Poppins), sind aber ein
+// eigenes, ruhiges Arbeitswerkzeug: neutrale Flaechen, ein Akzent, keine
+// Versalien und Pillen. Die Optik kommt aus vier Quellen, in dieser Reihenfolge:
 //   1. Bootstrap (nur Grid + Utilities, eingebunden in angular.json)
 //   2. Angular Material (Theme unten, aus denselben Grundfarben generiert)
 //   3. styles/_material.scss: Material-Komponenten auf den IWI-Stil gezogen
-//   4. styles/: Tokens, Schrift, Basis-Elemente, wenige App-Helfer
+//   4. styles/: Tokens (_tokens = IWI-Palette, _ui = Rollen), Schrift, Basis, App-Helfer
 @use '@angular/material' as mat;
 @use 'theme-colors';
 @use 'tokens';
+@use 'ui';
 @use 'fonts';
 @use 'base';
 @use 'material';

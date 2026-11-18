@@ -1,9 +1,9 @@
 <div class="sidebar">
-  <div class="sidebar__brand d-flex align-items-center gap-3">
-    <img class="sidebar__logo" ngSrc="images/iwi-logo.svg" width="40" height="40" alt="" priority />
+  <div class="sidebar__brand d-flex align-items-center gap-2">
+    <img class="sidebar__logo" ngSrc="images/iwi-logo.svg" width="32" height="32" alt="" priority />
     <div class="sidebar__brand-text d-flex flex-column">
-      <strong>Backrooms</strong>
-      <span class="sidebar__brand-sub">Fachschaft IWI</span>
+      <span class="sidebar__name">Backrooms</span>
+      <span class="sidebar__sub">Fachschaft IWI</span>
     </div>
     @if (showClose()) {
       <button
@@ -18,7 +18,7 @@
     }
   </div>
 
-  <nav aria-label="Hauptnavigation">
+  <nav class="sidebar__nav" aria-label="Hauptnavigation">
     @for (section of sections(); track section.label) {
       <mat-nav-list>
         <h3 matSubheader>{{ section.label }}</h3>
@@ -39,4 +39,27 @@
       </mat-nav-list>
     }
   </nav>
+
+  @if (user(); as current) {
+    <button
+      type="button"
+      class="sidebar__account"
+      [matMenuTriggerFor]="accountMenu"
+      [attr.aria-label]="'Konto: ' + current.displayName"
+    >
+      <span class="sidebar__avatar" aria-hidden="true">{{ initials() }}</span>
+      <span class="sidebar__account-text">
+        <span class="sidebar__account-name">{{ current.displayName }}</span>
+        <span class="sidebar__account-role">{{ roleLabel() }}</span>
+      </span>
+      <mat-icon class="sidebar__account-icon" svgIcon="log-out" />
+    </button>
+
+    <mat-menu #accountMenu="matMenu" yPosition="above">
+      <button mat-menu-item type="button" (click)="logout.emit()">
+        <mat-icon svgIcon="log-out" />
+        <span>Abmelden</span>
+      </button>
+    </mat-menu>
+  }
 </div>

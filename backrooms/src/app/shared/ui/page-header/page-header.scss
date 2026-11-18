@@ -1,28 +1,38 @@
-// Seitenkopf wie die Ueberschriften der Website: Versalien in Petrol mit
-// kurzem Akzentstrich (vgl. aktiver Navigationspunkt der Website).
 .page-header {
+  margin-bottom: 1.5rem;
+
+  &__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--ui-text-3);
+    text-decoration: none;
+    transition: color var(--ui-fast) var(--ui-ease);
+
+    mat-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      color: var(--ui-text);
+    }
+  }
+
   &__text {
     min-width: 0;
   }
 
-  &__back {
-    // Buendig zum Titel, Material-Buttons bringen eigenes Innenpolster mit.
-    margin-left: -0.75rem;
-  }
-
-  &__title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    margin-top: 0.5rem;
-    border-bottom: 3px solid var(--iwi-blue);
-    border-radius: 2px;
+  &__title {
+    margin: 0;
   }
 
   &__subtitle {
-    max-width: 80ch;
-    margin-top: 0.75rem !important;
-    color: var(--iwi-grey);
+    max-width: 72ch;
+    margin: 0.25rem 0 0;
+    color: var(--ui-text-2);
   }
 
   &__actions:empty {

@@ -1,17 +1,19 @@
-<header class="page-header d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
-  <div class="page-header__text">
-    @if (backLink(); as link) {
-      <a matButton class="page-header__back mb-1" [routerLink]="link">
-        <mat-icon svgIcon="arrow-left" />
-        {{ backLabel() }}
-      </a>
-    }
-    <h1 class="page-header__title mb-0">{{ title() }}</h1>
-    @if (subtitle(); as text) {
-      <p class="page-header__subtitle muted mb-0 mt-1">{{ text }}</p>
-    }
-  </div>
-  <div class="page-header__actions d-flex flex-wrap gap-2">
-    <ng-content select="[actions]" />
+<header class="page-header">
+  @if (backLink(); as link) {
+    <a class="page-header__back" [routerLink]="link">
+      <mat-icon svgIcon="arrow-left" />
+      {{ backLabel() }}
+    </a>
+  }
+  <div class="page-header__row d-flex flex-wrap align-items-end justify-content-between gap-3">
+    <div class="page-header__text">
+      <h1 class="page-header__title">{{ title() }}</h1>
+      @if (subtitle(); as text) {
+        <p class="page-header__subtitle">{{ text }}</p>
+      }
+    </div>
+    <div class="page-header__actions d-flex flex-wrap gap-2">
+      <ng-content select="[actions]" />
+    </div>
   </div>
 </header>

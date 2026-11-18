@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 
-// Navigation in Petrol mit weisser Schrift, wie Footer und Menue der Website.
+// Navigation auf Petrol, der tiefsten Flaeche. Ruhig: gedaempfte Labels,
+// ein heller Flaechenschritt fuer den aktiven Eintrag, keine Pillen.
 :host {
   display: block;
   height: 100%;
@@ -10,81 +11,152 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  padding-bottom: 1.5rem;
-  background: var(--iwi-petrol);
-  color: var(--iwi-white);
+  background: var(--ui-nav-bg);
+  color: #ffffff;
 
   @include mat.list-overrides(
     (
-      list-item-label-text-color: var(--iwi-white),
-      list-item-hover-label-text-color: var(--iwi-white),
-      list-item-focus-label-text-color: var(--iwi-white),
-      list-item-leading-icon-color: var(--iwi-blue-light),
-      list-item-hover-leading-icon-color: var(--iwi-white),
-      list-item-label-text-weight: 500,
-      list-item-hover-state-layer-color: var(--iwi-white),
-      list-item-hover-state-layer-opacity: 0.08,
-      list-item-focus-state-layer-color: var(--iwi-white),
-      list-item-focus-state-layer-opacity: 0.12,
-      active-indicator-color: rgb(255 255 255 / 14%),
-      active-indicator-shape: var(--iwi-radius-pill),
-      list-item-container-shape: var(--iwi-radius-pill),
+      list-item-one-line-container-height: 36px,
+      list-item-container-shape: var(--ui-radius),
+      list-item-label-text-size: 0.875rem,
+      list-item-label-text-weight: 400,
+      list-item-label-text-color: var(--ui-nav-text),
+      list-item-hover-label-text-color: #ffffff,
+      list-item-focus-label-text-color: #ffffff,
+      list-item-leading-icon-color: var(--ui-nav-muted),
+      list-item-hover-leading-icon-color: #ffffff,
+      list-item-leading-icon-size: 18px,
+      list-item-hover-state-layer-color: #ffffff,
+      list-item-hover-state-layer-opacity: 0.06,
+      list-item-focus-state-layer-color: #ffffff,
+      list-item-focus-state-layer-opacity: 0.1,
+      active-indicator-color: var(--ui-nav-active),
+      active-indicator-shape: var(--ui-radius),
     )
   );
 
   @include mat.icon-button-overrides(
     (
-      icon-color: var(--iwi-white),
+      icon-color: #ffffff,
     )
   );
 
   &__brand {
-    padding: 1rem;
+    padding: 1rem 1rem 0.5rem;
   }
 
   &__logo {
-    padding: 4px;
-    border-radius: var(--iwi-radius);
-    background: var(--iwi-white);
+    padding: 3px;
+    border-radius: var(--ui-radius);
+    background: #ffffff;
   }
 
   &__brand-text {
-    line-height: 1.2;
     min-width: 0;
-
-    strong {
-      font-size: 1.125rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-    }
+    line-height: 1.25;
   }
 
-  &__brand-sub {
+  &__name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+
+  &__sub {
     font-size: 0.75rem;
-    color: var(--iwi-blue-light);
+    color: var(--ui-nav-muted);
+  }
+
+  &__nav {
+    flex: 1;
   }
 
   mat-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     padding: 0 0.5rem;
   }
 
-  // Aktiver Eintrag: hellere Pille plus Akzentstrich in Hellblau.
+  // Abschnittslabel: naeher an seinen Eintraegen als am Abschnitt darueber.
+  h3[matSubheader] {
+    margin: 0;
+    padding: 1.25rem 0.75rem 0.375rem;
+    min-height: 0;
+    height: auto;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--ui-nav-muted);
+  }
+
   .mdc-list-item--activated {
-    box-shadow: inset 3px 0 0 var(--iwi-blue-light);
+    --mat-list-list-item-label-text-color: #ffffff;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 6%);
 
     .mat-icon {
-      color: var(--iwi-white);
+      color: #ffffff;
     }
   }
 
-  h3[matSubheader] {
-    margin: 0;
-    padding: 1rem 1rem 0.25rem;
+  // Konto unten in der Leiste: ersetzt die obere Leiste auf dem Desktop.
+  &__account {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin: 0.75rem 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    border-top: 1px solid rgb(255 255 255 / 8%);
+    border-radius: var(--ui-radius);
+    background: none;
+    color: #ffffff;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color var(--ui-fast) var(--ui-ease);
+
+    &:hover {
+      background: rgb(255 255 255 / 6%);
+    }
+  }
+
+  &__avatar {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 14%);
     font-size: 0.6875rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--iwi-blue-light);
+  }
+
+  &__account-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+    line-height: 1.25;
+  }
+
+  &__account-name {
+    overflow: hidden;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__account-role {
+    font-size: 0.75rem;
+    color: var(--ui-nav-muted);
+  }
+
+  &__account-icon {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    color: var(--ui-nav-muted);
   }
 }

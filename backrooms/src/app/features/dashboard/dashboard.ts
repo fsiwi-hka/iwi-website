@@ -1,15 +1,8 @@
-import { Component, computed, inject, Signal } from '@angular/core';
+import { Component, computed, inject, linkedSignal, Signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterLink } from '@angular/router';
-import { AuthStore } from '../../core/auth/auth.store';
 import { Entity } from '../../shared/models';
-import { IconName } from '../../shared/ui/icon/icons';
 import { PageHeader } from '../../shared/ui/page-header/page-header';
-import { StatusBadge } from '../../shared/ui/status-badge/status-badge';
 import { formatDateTime, formatRelative } from '../../shared/utils/date';
 import { DepartmentStore } from '../departments/department.store';
 import { HeroSlideStore } from '../hero-slides/hero-slide.store';
@@ -27,7 +20,8 @@ interface Stat {
   value: number | null;
   meta: string;
   path: string;
-  icon: IconName;
+  /** Meta als Hinweis hervorheben (z. B. unbesetzte Rollen). */
+  warn?: boolean;
 }
 
 interface RecentChange {
@@ -43,14 +37,21 @@ interface Countable {
   count: Signal<number>;
 }
 
-function stat(label: string, store: Countable, meta: string, path: string, icon: IconName): Stat {
+function stat(label: string, store: Countable, meta: string, path: string, warn = false): Stat {
   return {
     label,
     value: store.isLoading() && store.count() === 0 ? null : store.count(),
     meta,
     path,
-    icon,
+    warn,
   };
+}
+
+/** 75 -> "1:15 min", 40 -> "40 s". */
+function formatLoop(seconds: number): string {
+  if (seconds < 60) return `${seconds} s`;
+  const minutes = Math.floor(seconds / 60);
+  return `${minutes}:${String(seconds % 60).padStart(2, '0')} min`;
 }
 
 function change(type: string, title: string, path: string, entity: Entity): RecentChange {
@@ -59,21 +60,11 @@ function change(type: string, title: string, path: string, entity: Entity): Rece
 
 @Component({
   selector: 'app-dashboard',
-  imports: [
-    RouterLink,
-    MatCardModule,
-    MatListModule,
-    MatButtonModule,
-    MatIconModule,
-    MatProgressSpinnerModule,
-    PageHeader,
-    StatusBadge,
-  ],
+  imports: [RouterLink, MatButtonModule, PageHeader],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.scss',
 })
 export class Dashboard {
-  private readonly auth = inject(AuthStore);
   private readonly heroSlides = inject(HeroSlideStore);
   private readonly members = inject(MemberStore);
   private readonly positions = inject(PositionStore);
@@ -87,51 +78,54 @@ export class Dashboard {
   protected readonly dateTime = formatDateTime;
   protected readonly relative = formatRelative;
 
-  protected readonly greeting = computed(() => {
-    const name = this.auth.user()?.displayName;
-    return `${name ? `Hallo ${name}! ` : ''}Hier pflegst du die Inhalte der Website und des Infoscreens.`;
+  /** Aktive Slides in Abspielreihenfolge, so wie der Infoscreen sie zeigt. */
+  protected readonly playlist = computed(() =>
+    this.infoscreen.items().filter((slide) => slide.active),
+  );
+
+  /** Ausgewaehlter Slide der Vorschau; springt auf 0, wenn sich die Liste aendert. */
+  protected readonly currentIndex = linkedSignal({
+    source: this.playlist,
+    computation: () => 0,
   });
 
-  protected readonly stats = computed<Stat[]>(() => [
-    stat(
-      'Startseiten-Slider',
-      this.heroSlides,
-      `${this.heroSlides.items().filter((slide) => slide.active).length} aktiv`,
-      '/hero-slides',
-      'image',
-    ),
-    stat(
-      'Mitglieder',
-      this.members,
-      `${this.members.items().filter((member) => member.active).length} aktiv`,
-      '/members',
-      'users',
-    ),
-    stat(
-      'Rollen',
-      this.positions,
-      `${this.positions.items().filter((position) => position.memberIds.length === 0).length} unbesetzt`,
-      '/positions',
-      'badge',
-    ),
-    stat('Fachbereiche', this.departments, 'mit Aufgabenbeschreibung', '/departments', 'layers'),
-    stat(
-      'Sponsoren',
-      this.sponsors,
-      `${this.sponsors.items().filter((sponsor) => sponsor.active).length} aktiv`,
-      '/sponsors',
-      'briefcase',
-    ),
-    stat(
-      'Infoscreen',
-      this.infoscreen,
-      `${this.infoscreen.items().filter((slide) => slide.active).length} aktiv`,
-      '/infoscreen',
-      'monitor',
-    ),
-    stat('Sitzungsprotokolle', this.protocols, 'PDF-Dateien', '/protocols', 'archive'),
-    stat('Seiten', this.pages, 'Markdown-Inhalte', '/pages', 'file-text'),
-  ]);
+  protected readonly current = computed(() => this.playlist()[this.currentIndex()]);
+
+  protected readonly loopLabel = computed(() =>
+    formatLoop(this.playlist().reduce((sum, slide) => sum + slide.durationSeconds, 0)),
+  );
+
+  protected readonly stats = computed<Stat[]>(() => {
+    const active = <T extends { active: boolean }>(items: T[]) =>
+      items.filter((item) => item.active).length;
+    const vacant = this.positions.items().filter((p) => p.memberIds.length === 0).length;
+    return [
+      stat(
+        'Startseiten-Slider',
+        this.heroSlides,
+        `${active(this.heroSlides.items())} aktiv`,
+        '/hero-slides',
+      ),
+      stat('Mitglieder', this.members, `${active(this.members.items())} aktiv`, '/members'),
+      stat(
+        'Rollen',
+        this.positions,
+        vacant ? `${vacant} unbesetzt` : 'alle besetzt',
+        '/positions',
+        vacant > 0,
+      ),
+      stat('Fachbereiche', this.departments, 'auf der Fachschaftsseite', '/departments'),
+      stat('Sponsoren', this.sponsors, `${active(this.sponsors.items())} aktiv`, '/sponsors'),
+      stat(
+        'Infoscreen',
+        this.infoscreen,
+        `${active(this.infoscreen.items())} aktiv`,
+        '/infoscreen',
+      ),
+      stat('Sitzungsprotokolle', this.protocols, 'PDF in der Nextcloud', '/protocols'),
+      stat('Seiten', this.pages, 'Markdown', '/pages'),
+    ];
+  });
 
   protected readonly recent = computed<RecentChange[]>(() =>
     [
@@ -148,6 +142,6 @@ export class Dashboard {
     ]
       .filter((item) => item.updatedAt)
       .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
-      .slice(0, 8),
+      .slice(0, 6),
   );
 }

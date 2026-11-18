@@ -1,48 +1,14 @@
+// Nur auf schmalen Bildschirmen: oeffnet die Navigation (Konto steht dort unten).
 .topbar {
   position: sticky;
   top: 0;
   z-index: 5;
-  gap: 0.5rem;
+  gap: 0.25rem;
   padding-inline: 0.5rem;
-  border-bottom: 1px solid var(--iwi-divider);
+  border-bottom: 1px solid var(--ui-hairline);
 
-  &__spacer {
-    flex: 1;
-  }
-
-  &__avatar {
-    display: grid;
-    place-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: var(--iwi-blue-dark);
-    color: var(--iwi-white);
-    font-size: 0.75rem;
+  &__title {
+    font-size: 0.9375rem;
     font-weight: 600;
-  }
-
-  &__name {
-    @media (max-width: 575.98px) {
-      display: none;
-    }
-  }
-
-  &__menu-head {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5rem 1rem;
-    line-height: 1.3;
-    border-bottom: 1px solid var(--iwi-divider);
-  }
-
-  &__menu-name {
-    font: var(--mat-sys-body-medium);
-  }
-
-  &__menu-role {
-    font: var(--mat-sys-label-small);
-    color: var(--mat-sys-on-surface-variant);
   }
 }

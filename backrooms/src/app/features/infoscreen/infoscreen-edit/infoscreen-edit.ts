@@ -5,6 +5,7 @@ import {
   max,
   maxLength,
   min,
+  pattern,
   required,
   requiredError,
   schema,
@@ -36,13 +37,17 @@ import { nowIso } from '../../../shared/utils/date';
 import { fileNameToTitle } from '../../../shared/utils/file';
 import { InfoscreenStore } from '../infoscreen.store';
 
+/** Wird zum Dateinamen in der Nextcloud. */
+const FILE_NAME = /^[^/\\:*?"<>|]+$/;
+
 const infoscreenSchema = schema<InfoscreenSlideDraft>((slide) => {
-  required(slide.name, { message: 'Bitte einen Namen angeben.' });
+  required(slide.name, { message: 'Bitte einen Namen angeben' });
   maxLength(slide.name, 80);
-  min(slide.durationSeconds, 3, { message: 'Mindestens 3 Sekunden.' });
-  max(slide.durationSeconds, 300, { message: 'Höchstens 300 Sekunden.' });
+  pattern(slide.name, FILE_NAME, { message: 'Keines dieser Zeichen: / \\ : * ? " < > |' });
+  min(slide.durationSeconds, 3, { message: 'Mindestens 3 Sekunden' });
+  max(slide.durationSeconds, 300, { message: 'Höchstens 300 Sekunden' });
   validate(slide.media, ({ value }) =>
-    value() ? undefined : requiredError({ message: 'Bitte ein Bild oder Video hochladen.' }),
+    value() ? undefined : requiredError({ message: 'Bitte ein Bild oder Video hochladen' }),
   );
 });
 
@@ -106,7 +111,7 @@ export class InfoscreenEdit {
           ...draft,
           uploadedAt: draft.uploadedAt || nowIso(),
         });
-        this.toast.success('Slide gespeichert.');
+        this.toast.success('Slide gespeichert');
         await this.router.navigate(['/infoscreen']);
       } catch (error) {
         this.toast.error(errorMessage(error));

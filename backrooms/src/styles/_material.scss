@@ -1,147 +1,210 @@
-// Angular-Material-Komponenten im Stil der Website. Nur Form, Schrift und die
-// Markenfarben werden ueberschrieben; Verhalten und Zustaende bleiben Material.
+// Angular-Material-Komponenten auf die Rollen aus _ui.scss gezogen. Nur Form,
+// Schrift und Farben werden ueberschrieben; Verhalten und Zustaende bleiben
+// Material.
 //
-// Kontrast (WCAG AA): Gefuellte Buttons nutzen --iwi-blue-dark statt
-// --iwi-blue, weil Weiss auf dem hellen Blau nur ~3:1 erreicht.
+// Radien: Bedienelemente 8, Karten 12, Dialoge 16, Tags 6. Keine Pillen.
+// Gefuellte Buttons nutzen den Akzent (IWI-Blau dunkel, Weiss darauf ~5:1).
 @use '@angular/material' as mat;
 
 :root {
   @include mat.button-overrides(
     (
-      filled-container-shape: var(--iwi-radius-pill),
-      filled-container-color: var(--iwi-blue-dark),
-      filled-label-text-color: var(--iwi-white),
-      filled-label-text-weight: 600,
-      outlined-container-shape: var(--iwi-radius-pill),
-      outlined-outline-color: var(--iwi-grey-light),
-      outlined-label-text-color: var(--iwi-petrol-pale),
-      outlined-label-text-weight: 600,
-      text-container-shape: var(--iwi-radius-pill),
-      text-label-text-color: var(--iwi-petrol),
-      text-label-text-weight: 600,
+      filled-container-shape: var(--ui-radius),
+      filled-container-color: var(--ui-accent),
+      filled-label-text-color: #ffffff,
+      filled-label-text-weight: 500,
+      filled-container-height: 36px,
+      filled-horizontal-padding: 16px,
+      outlined-container-shape: var(--ui-radius),
+      outlined-outline-color: var(--ui-hairline-strong),
+      outlined-label-text-color: var(--ui-text),
+      outlined-label-text-weight: 500,
+      outlined-container-height: 36px,
+      outlined-horizontal-padding: 16px,
+      text-container-shape: var(--ui-radius),
+      text-label-text-color: var(--ui-accent-ink),
+      text-label-text-weight: 500,
+      text-container-height: 36px,
     )
   );
 
   @include mat.icon-button-overrides(
     (
-      icon-color: var(--iwi-petrol-pale),
+      icon-color: var(--ui-text-2),
     )
   );
 
   @include mat.card-overrides(
     (
-      outlined-container-shape: var(--iwi-radius-xl),
-      outlined-container-color: var(--iwi-white),
-      outlined-outline-color: var(--iwi-grey-light),
+      outlined-container-shape: var(--ui-radius-card),
+      outlined-container-color: var(--ui-surface),
+      outlined-outline-color: var(--ui-hairline),
+      title-text-size: 1rem,
+      title-text-weight: 500,
+      title-text-line-height: 1.5rem,
     )
   );
 
   @include mat.form-field-overrides(
     (
-      outlined-container-shape: var(--iwi-radius-lg),
-      outlined-outline-color: var(--iwi-grey-light),
-      outlined-hover-outline-color: var(--iwi-grey-medium),
-      outlined-focus-outline-color: var(--iwi-blue-dark),
-      outlined-focus-label-text-color: var(--iwi-blue-dark),
+      outlined-container-shape: var(--ui-radius),
+      outlined-outline-color: var(--ui-field-outline),
+      outlined-hover-outline-color: var(--ui-text-3),
+      outlined-focus-outline-color: var(--ui-accent),
+      outlined-focus-label-text-color: var(--ui-accent-ink),
+      outlined-label-text-color: var(--ui-text-3),
+      outlined-input-text-color: var(--ui-text),
+      container-text-size: 0.875rem,
+      outlined-label-text-size: 0.875rem,
+      subscript-text-size: 0.75rem,
     )
   );
 
   @include mat.select-overrides(
     (
-      focused-arrow-color: var(--iwi-blue-dark),
-      panel-background-color: var(--iwi-white),
+      focused-arrow-color: var(--ui-accent),
+      panel-background-color: var(--ui-surface),
+      trigger-text-size: 0.875rem,
     )
   );
 
   @include mat.option-overrides(
     (
-      selected-state-layer-color: #e3f1f7,
-      selected-state-label-text-color: var(--iwi-petrol),
+      selected-state-layer-color: var(--ui-accent-soft),
+      selected-state-label-text-color: var(--ui-accent-ink),
+      label-text-size: 0.875rem,
     )
   );
 
   @include mat.menu-overrides(
     (
-      container-color: var(--iwi-white),
-      container-shape: var(--iwi-radius-lg),
+      container-color: var(--ui-surface),
+      container-shape: var(--ui-radius),
+      item-label-text-size: 0.875rem,
+      item-icon-color: var(--ui-text-3),
     )
   );
 
   @include mat.table-overrides(
     (
-      background-color: var(--iwi-white),
-      header-headline-color: var(--iwi-petrol),
-      header-headline-weight: 600,
-      row-item-outline-color: var(--iwi-divider),
+      background-color: var(--ui-surface),
+      header-headline-color: var(--ui-text-3),
+      header-headline-weight: 500,
+      header-headline-size: 0.75rem,
+      header-container-height: 40px,
+      row-item-label-text-size: 0.875rem,
+      row-item-label-text-color: var(--ui-text),
+      row-item-outline-color: var(--ui-hairline),
+    )
+  );
+
+  @include mat.list-overrides(
+    (
+      list-item-label-text-size: 0.875rem,
+      list-item-supporting-text-size: 0.8125rem,
+      list-item-supporting-text-color: var(--ui-text-3),
+      list-item-trailing-supporting-text-color: var(--ui-text-3),
     )
   );
 
   @include mat.toolbar-overrides(
     (
-      container-background-color: var(--iwi-white),
-      container-text-color: var(--iwi-petrol),
+      container-background-color: var(--ui-surface),
+      container-text-color: var(--ui-text),
+      standard-height: 56px,
+      mobile-height: 56px,
     )
   );
 
   @include mat.sidenav-overrides(
     (
-      container-background-color: var(--iwi-petrol),
-      container-text-color: var(--iwi-white),
+      container-background-color: var(--ui-nav-bg),
+      container-text-color: #ffffff,
       container-shape: 0,
-      content-background-color: var(--iwi-surface),
+      content-background-color: var(--ui-bg),
     )
   );
 
   @include mat.dialog-overrides(
     (
-      container-shape: var(--iwi-radius-xl),
-      container-color: var(--iwi-white),
-      subhead-color: var(--iwi-petrol-pale),
-      supporting-text-color: var(--iwi-grey),
+      container-shape: var(--ui-radius-panel),
+      container-color: var(--ui-surface),
+      subhead-color: var(--ui-text),
+      subhead-weight: 500,
+      subhead-size: 1.125rem,
+      supporting-text-color: var(--ui-text-2),
+      supporting-text-size: 0.875rem,
     )
   );
 
   @include mat.chips-overrides(
     (
-      container-shape-radius: var(--iwi-radius-pill),
-      outline-color: var(--iwi-grey-light),
+      container-shape-radius: var(--ui-radius-sm),
+      outline-color: var(--ui-hairline-strong),
+      label-text-size: 0.8125rem,
+      label-text-weight: 400,
+      container-height: 28px,
     )
   );
 
   @include mat.snack-bar-overrides(
     (
-      container-color: var(--iwi-petrol),
-      supporting-text-color: var(--iwi-white),
-      container-shape: var(--iwi-radius-lg),
+      container-color: var(--ui-text),
+      supporting-text-color: #ffffff,
+      container-shape: var(--ui-radius),
     )
   );
 
   @include mat.tooltip-overrides(
     (
-      container-color: var(--iwi-petrol),
-      supporting-text-color: var(--iwi-white),
+      container-color: var(--ui-text),
+      supporting-text-color: #ffffff,
+      container-shape: var(--ui-radius-sm),
     )
   );
 
   @include mat.slide-toggle-overrides(
     (
-      selected-track-color: var(--iwi-blue-dark),
-      selected-hover-track-color: var(--iwi-blue-dark),
-      selected-focus-track-color: var(--iwi-blue-dark),
-      selected-pressed-track-color: var(--iwi-blue-dark),
+      selected-track-color: var(--ui-accent),
+      selected-hover-track-color: var(--ui-accent),
+      selected-focus-track-color: var(--ui-accent),
+      selected-pressed-track-color: var(--ui-accent),
+      label-text-size: 0.875rem,
+    )
+  );
+
+  @include mat.checkbox-overrides(
+    (
+      selected-icon-color: var(--ui-accent),
+      selected-hover-icon-color: var(--ui-accent),
+      selected-focus-icon-color: var(--ui-accent),
+      label-text-size: 0.875rem,
     )
   );
 
   @include mat.progress-spinner-overrides(
     (
-      active-indicator-color: var(--iwi-blue),
+      active-indicator-color: var(--ui-accent),
+    )
+  );
+
+  @include mat.progress-bar-overrides(
+    (
+      active-indicator-color: var(--ui-accent),
+      track-color: var(--ui-accent-soft),
     )
   );
 }
 
-// Tabellenkopf wie auf der Website: Versalien, etwas Laufweite.
-.mat-mdc-header-cell {
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 0.75rem;
+// Formularfelder reservieren keinen festen Platz fuer Hinweise (subscriptSizing
+// "dynamic", app.config.ts). Damit Felder nicht aneinanderkleben, bekommt jedes
+// Feld in einem Formular einen festen Abstand nach unten; Hinweis- und
+// Fehlertexte stehen innerhalb dieses Abstands.
+form .mat-mdc-form-field {
+  margin-bottom: 1rem;
+}
+
+// Hinweistexte unter Feldern in der gedaempften Textrolle.
+.mat-mdc-form-field-hint {
+  color: var(--ui-text-3);
 }

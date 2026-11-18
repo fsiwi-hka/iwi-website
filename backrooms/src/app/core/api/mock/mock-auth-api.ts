@@ -26,7 +26,7 @@ export class MockAuthApi extends AuthApi {
         entry.password === credentials.password,
     );
     if (!account) {
-      throw new ApiError('unauthorized', 'Benutzername oder Passwort ist falsch.', 401);
+      throw new ApiError('unauthorized', 'Benutzername oder Passwort ist falsch', 401);
     }
     return {
       token: `${TOKEN_PREFIX}.${account.user.id}.${createId()}`,

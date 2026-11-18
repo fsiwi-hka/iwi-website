@@ -20,7 +20,7 @@ export function roleGuard(role: Role): CanActivateFn {
     if (auth.hasRole(role)) {
       return true;
     }
-    inject(ToastService).error('Dafür fehlt dir die Berechtigung.');
+    inject(ToastService).error('Dafür fehlt dir die Berechtigung');
     return inject(Router).createUrlTree(['/dashboard']);
   };
 }

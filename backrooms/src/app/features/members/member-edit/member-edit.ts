@@ -21,7 +21,7 @@ import { PositionStore } from '../../positions/position.store';
 import { MemberStore } from '../member.store';
 
 const memberSchema = schema<MemberDraft>((member) => {
-  required(member.name, { message: 'Bitte einen Namen angeben.' });
+  required(member.name, { message: 'Bitte einen Namen angeben' });
   maxLength(member.name, 80);
 });
 
@@ -94,7 +94,7 @@ export class MemberEdit {
       try {
         const saved = await this.store.save(this.id(), this.draft.model());
         await this.positions.assignMember(saved.id, this.selectedPositionIds());
-        this.toast.success('Mitglied gespeichert.');
+        this.toast.success('Mitglied gespeichert');
         await this.router.navigate(['/members']);
       } catch (error) {
         this.toast.error(errorMessage(error));

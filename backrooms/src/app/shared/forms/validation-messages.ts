@@ -21,7 +21,7 @@ export function validationMessage(error: ValidationError): string {
   const limits = error as LimitError;
   switch (error.kind) {
     case 'required':
-      return 'Pflichtfeld.';
+      return 'Pflichtfeld';
     case 'minLength':
       return `Mindestens ${limits.minLength} Zeichen.`;
     case 'maxLength':
@@ -31,11 +31,11 @@ export function validationMessage(error: ValidationError): string {
     case 'max':
       return `Höchstens ${String(limits.max)}.`;
     case 'pattern':
-      return 'Ungültiges Format.';
+      return 'Ungültiges Format';
     case 'email':
-      return 'Ungültige E-Mail-Adresse.';
+      return 'Ungültige E-Mail-Adresse';
     default:
-      return 'Ungültige Eingabe.';
+      return 'Ungültige Eingabe';
   }
 }
 

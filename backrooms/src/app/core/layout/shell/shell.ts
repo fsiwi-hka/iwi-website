@@ -59,7 +59,7 @@ export class Shell {
 
   protected async logout(): Promise<void> {
     await this.auth.logout();
-    this.toast.info('Du bist abgemeldet.');
+    this.toast.info('Du bist abgemeldet');
     await this.router.navigate(['/login']);
   }
 }

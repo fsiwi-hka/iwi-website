@@ -65,7 +65,7 @@ export class MemberList {
         await this.positions.unassignMember(member.id);
         await this.store.remove(member.id);
       },
-      'Mitglied gelöscht.',
+      'Mitglied gelöscht',
     );
   }
 }

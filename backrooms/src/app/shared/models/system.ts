@@ -14,7 +14,7 @@ export const SYNC_KINDS: readonly SyncKindInfo[] = [
   {
     kind: 'instagram',
     label: 'Instagram-Feed',
-    description: 'Laedt die neuesten Posts ueber die Graph API und spiegelt die Bilder.',
+    description: 'Laedt die neuesten Posts ueber die Graph API und spiegelt die Bilder',
   },
   {
     kind: 'bulletin',
@@ -24,17 +24,17 @@ export const SYNC_KINDS: readonly SyncKindInfo[] = [
   {
     kind: 'protocols',
     label: 'Sitzungsprotokolle',
-    description: 'Synchronisiert die Protokolle aus der Nextcloud.',
+    description: 'Synchronisiert die Protokolle aus der Nextcloud',
   },
   {
     kind: 'infoscreen',
     label: 'Infoscreen',
-    description: 'Synchronisiert Medien und Konfiguration des Infoscreens.',
+    description: 'Synchronisiert Medien und Konfiguration des Infoscreens',
   },
   {
     kind: 'ophase',
     label: 'O-Phase',
-    description: 'Laedt Semestertermine und Stundenplaene neu.',
+    description: 'Laedt Semestertermine und Stundenplaene neu',
   },
 ];
 

@@ -2,7 +2,6 @@ import { NgOptimizedImage } from '@angular/common';
 import { Component, inject, input, signal } from '@angular/core';
 import { form, FormField, required, submit } from '@angular/forms/signals';
 import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -19,7 +18,6 @@ import { Credentials } from '../../shared/models';
   imports: [
     FormField,
     NgOptimizedImage,
-    MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
@@ -40,8 +38,8 @@ export class Login {
   protected readonly errorText = fieldErrorText;
   protected readonly model = signal<Credentials>({ username: '', password: '' });
   protected readonly form = form(this.model, (credentials) => {
-    required(credentials.username, { message: 'Bitte den Benutzernamen eingeben.' });
-    required(credentials.password, { message: 'Bitte das Passwort eingeben.' });
+    required(credentials.username, { message: 'Bitte den Benutzernamen eingeben' });
+    required(credentials.password, { message: 'Bitte das Passwort eingeben' });
   });
   protected readonly submitting = signal(false);
   protected readonly error = signal<string | null>(null);

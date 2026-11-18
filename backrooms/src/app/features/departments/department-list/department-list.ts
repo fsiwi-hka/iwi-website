@@ -80,7 +80,7 @@ export class DepartmentList {
       await this.runner.run(
         department.id,
         () => this.store.remove(department.id),
-        'Fachbereich gelöscht.',
+        'Fachbereich gelöscht',
       );
     }
   }

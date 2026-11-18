@@ -8,23 +8,22 @@
   >
     <app-sidebar
       [showClose]="!isDesktop()"
+      [user]="user()"
+      (logout)="logout()"
       (navigated)="closeOnMobile()"
       (closeRequested)="closeSidenav()"
     />
   </mat-sidenav>
 
   <mat-sidenav-content class="shell__content">
-    <app-topbar
-      [user]="user()"
-      [showMenuButton]="!isDesktop()"
-      (toggleNav)="toggleSidenav()"
-      (logout)="logout()"
-    />
+    @if (!isDesktop()) {
+      <app-topbar (toggleNav)="toggleSidenav()" />
+    }
 
     @if (config.useMocks) {
       <div class="shell__banner d-flex align-items-center gap-2" role="status">
         <mat-icon svgIcon="info" />
-        <span>Mock-Modus: Daten kommen aus dem Browser (localStorage), nicht vom Backend.</span>
+        <span>Mock-Modus: Daten liegen im Browser (localStorage), nicht im Backend</span>
       </div>
     }
 

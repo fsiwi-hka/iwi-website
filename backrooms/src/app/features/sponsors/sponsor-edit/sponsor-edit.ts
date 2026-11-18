@@ -30,15 +30,15 @@ import { ToastService } from '../../../shared/ui/toast/toast.service';
 import { SponsorStore } from '../sponsor.store';
 
 const sponsorSchema = schema<SponsorDraft>((sponsor) => {
-  required(sponsor.name, { message: 'Bitte einen Namen angeben.' });
+  required(sponsor.name, { message: 'Bitte einen Namen angeben' });
   maxLength(sponsor.name, 60);
   pattern(sponsor.website, /^$|^https?:\/\/\S+$/, {
-    message: 'Bitte eine vollständige URL mit https:// angeben.',
+    message: 'Bitte eine vollständige URL mit https:// angeben',
   });
-  min(sponsor.width, 30, { message: 'Mindestens 30 px.' });
-  max(sponsor.width, 400, { message: 'Höchstens 400 px.' });
+  min(sponsor.width, 30, { message: 'Mindestens 30 px' });
+  max(sponsor.width, 400, { message: 'Höchstens 400 px' });
   validate(sponsor.logo, ({ value }) =>
-    value() ? undefined : requiredError({ message: 'Bitte ein Logo hochladen.' }),
+    value() ? undefined : requiredError({ message: 'Bitte ein Logo hochladen' }),
   );
 });
 
@@ -84,7 +84,7 @@ export class SponsorEdit {
       this.saving.set(true);
       try {
         await this.store.save(this.id(), this.draft.model());
-        this.toast.success('Sponsor gespeichert.');
+        this.toast.success('Sponsor gespeichert');
         await this.router.navigate(['/sponsors']);
       } catch (error) {
         this.toast.error(errorMessage(error));
