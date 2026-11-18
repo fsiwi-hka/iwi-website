@@ -123,5 +123,5 @@ Eine neue Seite bekommt einen Ordner unter `features/`, einen Eintrag in
 `Caddyfile` entspricht dem der Next.js-Version: `/api/*` geht an das Backend
 (`BACKEND_HOST`), unbekannte Pfade bekommen die vorgerenderte 404-Seite.
 
-Die Umstellung in `deploy/docker-compose.yml` (Service `web` auf `../ui-angular`
-zeigen lassen) ist bewusst noch nicht gemacht.
+`deploy/docker-compose.yml` baut den Service `web` aus `../ui-angular`; die
+Next.js-Version unter `ui/` wird nicht mehr deployt.

@@ -8,12 +8,12 @@
 # und Volumes und wird vom Deploy-Workflow gesetzt.
 
 services:
+  # Website: die Angular-Version (ui-angular), statisch vorgerendert und per
+  # Caddy ausgeliefert. Die Next.js-Version unter ui/ wird nicht mehr deployt.
   web:
     build:
-      context: ../ui
+      context: ../ui-angular
       dockerfile: Dockerfile
-      secrets:
-        - nextcloud_url
     image: iwi-website:${IMAGE_TAG:-latest}
     container_name: iwi-website${STACK_SUFFIX:-}
     restart: always
@@ -90,10 +90,6 @@ volumes:
   instagram_state:
   instagram_cache:
   backrooms_data:
-
-secrets:
-  nextcloud_url:
-    environment: NEXTCLOUD_URL
 
 networks:
   npm:

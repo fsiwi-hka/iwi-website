@@ -58,8 +58,9 @@ angepasst werden.
 Weil beide Stacks im selben Netzwerk liegen, tragen sie dort denselben
 Compose-Alias `backend`. Caddy wuerde `/api/*` deshalb unter Umstaenden ans
 falsche Backend weiterreichen. Der Alias wird darum nicht verwendet: die
-Compose-Datei setzt `BACKEND_HOST` auf den eindeutigen Containernamen, und der
-[Caddyfile](./../ui/Caddyfile) liest ihn aus.
+Compose-Datei setzt `BACKEND_HOST` auf den eindeutigen Containernamen, und die
+Caddyfiles von Website ([ui-angular/Caddyfile](./../ui-angular/Caddyfile)) und
+Backrooms ([backrooms/Caddyfile](./../backrooms/Caddyfile)) lesen ihn aus.
 
 ## Trigger
 
@@ -81,9 +82,11 @@ Der Workflow verbindet sich per SSH auf den Server und fuehrt dort aus:
 3. `docker compose up -d --build`
 4. `docker image prune -f`
 
-Gebaut wird also auf dem Server, nicht im Runner. Der Next.js-Build passiert im
-[ui/Dockerfile](./../ui/Dockerfile); das fertige `out`-Verzeichnis landet in
-einem `caddy:alpine`-Image.
+Gebaut wird also auf dem Server, nicht im Runner. Die Website (Angular) baut
+[ui-angular/Dockerfile](./../ui-angular/Dockerfile), die Backrooms
+[backrooms/Dockerfile](./../backrooms/Dockerfile); beide landen als statische
+Dateien in einem `caddy:alpine`-Image. Die Next.js-Version unter `ui/` wird
+nicht mehr deployt.
 
 ## Einmalige Einrichtung der Develop-Umgebung
 
@@ -107,7 +110,7 @@ Alle als Repository-Secrets hinterlegt:
 |---|---|
 | `SSH_HOST`, `SSH_USER`, `SSH_PRIVATE_KEY` | Zugang zum Server |
 | `DEPLOY_PATH` | Produktionsverzeichnis; Develop haengt `-develop` an |
-| `NEXTCLOUD_URL` | Build-Secret fuer den Next.js-Build |
+| `NEXTCLOUD_URL` | Build-Secret der alten Next.js-Seite; seit der Umstellung auf `ui-angular` ungenutzt |
 | `INSTAGRAM_TOKEN` | Instagram-Feed im Backend |
 | `WEBDAV_USERNAME`, `WEBDAV_PASSWORD` | Nextcloud-Zugriff des Backends |
 | `AUTH_TOKEN` | API-Token des Backends |
