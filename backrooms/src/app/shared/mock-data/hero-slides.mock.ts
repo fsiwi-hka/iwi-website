@@ -9,7 +9,7 @@ export function heroSlidesMock(): HeroSlide[] {
       title: 'Neu an der Fakultät IWI?',
       subtitle:
         'Die O-Phase bringt dich in deiner ersten Woche ins Studium: Programm, Termine und alles, was du zum Start wissen musst.',
-      image: staticMedia('/mock/backgrounds/erstiinfos.jpg', 'image/jpeg', 914_663),
+      image: staticMedia('mock/backgrounds/erstiinfos.jpg', 'image/jpeg', 914_663),
       imageOverlay: true,
       buttonText: 'Zur O-Phase',
       buttonLink: '/orientation/',
@@ -22,7 +22,7 @@ export function heroSlidesMock(): HeroSlide[] {
       title: 'Programmiervorkurs',
       subtitle:
         'Vor Vorlesungsbeginn von Null auf Java, C# oder Python - kostenlos, ohne Vorkenntnisse und mit Tutoren an deiner Seite.',
-      image: staticMedia('/mock/backgrounds/vorkurs.svg', 'image/svg+xml'),
+      image: staticMedia('mock/backgrounds/vorkurs.svg', 'image/svg+xml'),
       imageOverlay: true,
       buttonText: 'Zum Vorkurs',
       buttonLink: '/pre-course/',
@@ -35,7 +35,7 @@ export function heroSlidesMock(): HeroSlide[] {
       title: 'Mach bei der Fachschaft mit',
       subtitle:
         'Wir vertreten euch gegenüber Fakultät und Hochschule, organisieren Events und brauchen dafür Leute wie dich. Komm mittwochs zur Sitzung.',
-      image: staticMedia('/mock/backgrounds/fachschaft.svg', 'image/svg+xml'),
+      image: staticMedia('mock/backgrounds/fachschaft.svg', 'image/svg+xml'),
       imageOverlay: true,
       buttonText: 'Jetzt mitmachen',
       buttonLink: '/about/#mitmachen',

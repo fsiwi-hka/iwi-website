@@ -3,7 +3,7 @@ import { Component, computed, inject, linkedSignal, signal } from '@angular/core
 import { BulletinData, BulletinPage } from '../../core/data/bulletin-data';
 import { browserResource } from '../../core/platform/browser-resource';
 import { STUDENT_COUNCIL_BOARD } from '../../shared/content/bulletin-boards';
-import { SITE } from '../../shared/content/site';
+import { SiteSettings } from '../../core/data/site-content';
 import { Button } from '../../shared/ui/button/button';
 import { InfoBox } from '../../shared/ui/info-box/info-box';
 import { PageHeader } from '../../shared/ui/page-header/page-header';
@@ -21,7 +21,7 @@ const PAGE_SIZE = 5;
 export default class NewsPage {
   private readonly bulletin = inject(BulletinData);
 
-  protected readonly site = SITE;
+  protected readonly site = inject(SiteSettings).site;
   protected readonly page = signal(0);
 
   protected readonly news = browserResource({

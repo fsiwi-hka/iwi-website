@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { SITE } from '../../shared/content/site';
-import { SPONSOR_LOGOS } from '../../shared/content/sponsors';
+import { SiteSettings, Sponsors } from '../../core/data/site-content';
 import { Card } from '../../shared/ui/card/card';
 import { CopyButton } from '../../shared/ui/copy-button/copy-button';
 import { Icon } from '../../shared/ui/icon/icon';
@@ -26,8 +25,8 @@ import {
   styleUrl: './sponsoring-page.scss',
 })
 export default class SponsoringPage {
-  protected readonly site = SITE;
-  protected readonly logos = SPONSOR_LOGOS;
+  protected readonly site = inject(SiteSettings).site;
+  protected readonly logos = inject(Sponsors).value;
   protected readonly association = ASSOCIATION;
   protected readonly contact = SPONSORING_CONTACT;
   protected readonly blocks = BUILDING_BLOCKS;

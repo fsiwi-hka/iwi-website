@@ -16,21 +16,22 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Router, RouterLink } from '@angular/router';
 import { errorMessage } from '../../../core/api/api-error';
 import { entityDraft } from '../../../shared/forms/entity-draft';
 import { fieldErrorText } from '../../../shared/forms/validation-messages';
-import { createDepartmentDraft, DepartmentDraft } from '../../../shared/models';
+import { createDepartmentDraft, DepartmentDraft, POSITION_GROUPS } from '../../../shared/models';
 import { DataState } from '../../../shared/ui/data-state/data-state';
 import { PageHeader } from '../../../shared/ui/page-header/page-header';
 import { ToastService } from '../../../shared/ui/toast/toast.service';
-import { MemberStore } from '../../members/member.store';
+import { PositionStore } from '../../positions/position.store';
 import { DepartmentStore } from '../department.store';
 
 const departmentSchema = schema<DepartmentDraft>((department) => {
-  required(department.position, { message: 'Bitte einen Fachbereich angeben.' });
-  maxLength(department.position, 60);
+  required(department.name, { message: 'Bitte einen Fachbereich angeben.' });
+  maxLength(department.name, 60);
   validate(department.tasks, ({ value }) =>
     value().length > 0 ? undefined : requiredError({ message: 'Mindestens eine Aufgabe angeben.' }),
   );
@@ -48,6 +49,7 @@ const departmentSchema = schema<DepartmentDraft>((department) => {
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
@@ -59,7 +61,7 @@ const departmentSchema = schema<DepartmentDraft>((department) => {
 })
 export class DepartmentEdit {
   private readonly store = inject(DepartmentStore);
-  private readonly members = inject(MemberStore);
+  private readonly positions = inject(PositionStore);
   private readonly router = inject(Router);
   private readonly toast = inject(ToastService);
 
@@ -77,13 +79,21 @@ export class DepartmentEdit {
     this.draft.isNew() ? 'Neuer Fachbereich' : 'Fachbereich bearbeiten',
   );
 
-  /** Vorschlaege fuer die Position: alle Fachbereichsleitungen aus den Mitgliedern. */
-  protected readonly positionSuggestions = computed(() =>
-    this.members
-      .items()
-      .filter((member) => member.group === 'department')
-      .map((member) => member.position),
-  );
+  /** Rollen fuer die Leitung; Fachbereichsleitungen zuerst. */
+  protected readonly leadOptions = computed(() => {
+    const order = ['department', 'board', 'role'];
+    return [...POSITION_GROUPS]
+      .sort((a, b) => order.indexOf(a.value) - order.indexOf(b.value))
+      .map((group) => ({
+        label: group.label,
+        positions: this.positions.items().filter((position) => position.group === group.value),
+      }))
+      .filter((group) => group.positions.length > 0);
+  });
+
+  constructor() {
+    this.positions.refreshIfStale();
+  }
 
   protected addTask(): void {
     this.draft.model.update((department) => ({

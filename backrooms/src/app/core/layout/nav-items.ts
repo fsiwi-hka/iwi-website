@@ -25,6 +25,7 @@ export const NAV_SECTIONS: readonly NavSection[] = [
     items: [
       { label: 'Startseiten-Slider', path: '/hero-slides', icon: 'image' },
       { label: 'Mitglieder', path: '/members', icon: 'users' },
+      { label: 'Rollen', path: '/positions', icon: 'badge' },
       { label: 'Fachbereiche', path: '/departments', icon: 'layers' },
       { label: 'Sponsoren', path: '/sponsors', icon: 'briefcase' },
       { label: 'Semestertermine', path: '/semester-dates', icon: 'calendar' },

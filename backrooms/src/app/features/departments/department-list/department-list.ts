@@ -13,6 +13,7 @@ import { EmptyState } from '../../../shared/ui/empty-state/empty-state';
 import { PageHeader } from '../../../shared/ui/page-header/page-header';
 import { StatusBadge } from '../../../shared/ui/status-badge/status-badge';
 import { MemberStore } from '../../members/member.store';
+import { PositionStore } from '../../positions/position.store';
 import { DepartmentStore } from '../department.store';
 
 @Component({
@@ -34,28 +35,34 @@ import { DepartmentStore } from '../department.store';
 export class DepartmentList {
   private readonly confirm = inject(ConfirmService);
   private readonly members = inject(MemberStore);
+  private readonly positions = inject(PositionStore);
 
   protected readonly store = inject(DepartmentStore);
   protected readonly runner = actionRunner();
-  protected readonly columns = ['order', 'position', 'lead', 'tasks', 'actions'];
+  protected readonly columns = ['order', 'name', 'lead', 'tasks', 'actions'];
 
-  /** Leitung je Fachbereich, aufgeloest ueber die gleichnamige Position in den Mitgliedern. */
-  protected readonly leads = computed(
-    () =>
-      new Map(
-        this.members
-          .items()
-          .map((member) => [member.position, member.persons.map((p) => p.name).join(', ')]),
-      ),
-  );
+  /** Rollen-Id -> Titel und Namen der Mitglieder. */
+  protected readonly leads = computed(() => {
+    const names = new Map(this.members.items().map((member) => [member.id, member.name]));
+    return new Map(
+      this.positions.items().map((position) => [
+        position.id,
+        {
+          title: position.title,
+          names: position.memberIds.flatMap((id) => names.get(id) ?? []).join(', '),
+        },
+      ]),
+    );
+  });
 
   constructor() {
     this.store.refreshIfStale();
     this.members.refreshIfStale();
+    this.positions.refreshIfStale();
   }
 
-  protected lead(department: Department): string {
-    return this.leads().get(department.position) ?? '';
+  protected lead(department: Department): { title: string; names: string } | undefined {
+    return department.leadPositionId ? this.leads().get(department.leadPositionId) : undefined;
   }
 
   protected move(department: Department, direction: -1 | 1): void {
@@ -69,7 +76,7 @@ export class DepartmentList {
   }
 
   protected async remove(department: Department): Promise<void> {
-    if (await this.confirm.confirmDelete(department.position)) {
+    if (await this.confirm.confirmDelete(department.name)) {
       await this.runner.run(
         department.id,
         () => this.store.remove(department.id),

@@ -1,15 +1,15 @@
 .empty-state {
   padding: 3rem 1rem;
-  border: 1px dashed var(--mat-sys-outline);
-  border-radius: var(--mat-sys-corner-medium);
-  background: var(--mat-sys-surface);
+  border: 1px dashed var(--iwi-grey-light);
+  border-radius: var(--iwi-radius-xl);
+  background: var(--iwi-white);
 
   &__icon {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: var(--mat-sys-secondary-container);
-    color: var(--mat-sys-on-secondary-container);
+    background: #e3f1f7;
+    color: var(--iwi-blue-dark);
 
     mat-icon {
       width: 28px;
@@ -19,7 +19,7 @@
   }
 
   &__title {
-    font: var(--mat-sys-title-medium);
+    font-size: 1rem;
   }
 
   &__description {

@@ -1,4 +1,4 @@
-<iwi-hero-slider [slides]="slides" />
+<iwi-hero-slider [slides]="slides()" />
 
 <section class="iwi-container iwi-section iwi-section--spaced">
   <div class="row g-4">
@@ -28,7 +28,7 @@
 
 <section class="iwi-container iwi-section iwi-section--spaced">
   <div class="row g-4">
-    @for (teaser of teasers; track teaser.title) {
+    @for (teaser of teasers(); track teaser.title) {
       <div class="col-12 col-lg-4">
         <iwi-card [tone]="teaser.tone" class="h-100 justify-content-between gap-3">
           <div>
@@ -54,4 +54,4 @@
 
 <iwi-instagram-feed />
 
-<iwi-logo-carousel [logos]="logos" [speed]="50" />
+<iwi-logo-carousel [logos]="logos()" [speed]="50" />

@@ -11,8 +11,8 @@ export function semesterDatesMock(): SemesterDates {
     orientierungsphase: { beginn: '2026-09-28', ende: '2026-10-02' },
     vorlesungszeit: { beginn: '2026-10-05', ende: '2027-01-29' },
     timetables: {
-      I: staticMedia('/mock/timetables/timetable-i.svg', 'image/svg+xml'),
-      WI: staticMedia('/mock/timetables/timetable-wi.svg', 'image/svg+xml'),
+      I: staticMedia('mock/timetables/timetable-i.svg', 'image/svg+xml'),
+      WI: staticMedia('mock/timetables/timetable-wi.svg', 'image/svg+xml'),
     },
     changedAt: '2026-08-20T09:30:00.000Z',
   };

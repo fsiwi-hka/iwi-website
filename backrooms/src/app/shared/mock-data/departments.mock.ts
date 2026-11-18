@@ -7,7 +7,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-finanzen',
       order: 1,
-      position: 'FB Finanzen',
+      name: 'FB Finanzen',
+      leadPositionId: 'position-fb-finanzen',
       tasks: [
         'Verwaltung des Gelds der Fachschaft',
         'Geldmittel über Haushaltsmittelanträge abrufen',
@@ -19,7 +20,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-events',
       order: 2,
-      position: 'FB Events',
+      name: 'FB Events',
+      leadPositionId: 'position-fb-events',
       tasks: [
         'Planung: Semesterplan aufstellen und Events konzipieren',
         'Organisation: Raumreservierungen, Einkauf und Helferlisten',
@@ -30,7 +32,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-sponsoring',
       order: 3,
-      position: 'FB Sponsoring',
+      name: 'FB Sponsoring',
+      leadPositionId: 'position-fb-sponsoring',
       tasks: [
         'Goodies für eure O-Phase organisieren',
         'Firmenkontakte aufbauen und pflegen',
@@ -43,7 +46,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-infrastruktur',
       order: 4,
-      position: 'FB Infrastruktur',
+      name: 'FB Infrastruktur',
+      leadPositionId: 'position-fb-infrastruktur',
       tasks: [
         'Website und Server der Fachschaft betreiben',
         'Cloud und StudiBoard verwalten',
@@ -55,7 +59,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-marketing',
       order: 5,
-      position: 'FB Marketing',
+      name: 'FB Marketing',
+      leadPositionId: 'position-fb-marketing',
       tasks: [
         'Social Media',
         'Designen/Erstellen von Plakaten',
@@ -66,7 +71,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-ophase',
       order: 6,
-      position: 'FB O-Phase',
+      name: 'FB O-Phase',
+      leadPositionId: 'position-fb-ophase',
       tasks: [
         'O-Phase für die Erstsemester planen',
         'Erstiheft und Zeitplan erstellen',
@@ -77,7 +83,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-raum',
       order: 7,
-      position: 'FB Fachschaftsraum',
+      name: 'FB Fachschaftsraum',
+      leadPositionId: 'position-fb-raum',
       tasks: [
         'Verbrauchsmaterialien organisieren und nachbestellen',
         'Pflanzen pflegen und erhalten',
@@ -89,7 +96,8 @@ export function departmentsMock(): Department[] {
     {
       id: 'dept-archiv',
       order: 8,
-      position: 'FB Archiv',
+      name: 'FB Archiv',
+      leadPositionId: 'position-fb-archiv',
       tasks: [
         'Dokumentation der Fachschaftsarbeit',
         'Bestandspflege der Nextcloud',

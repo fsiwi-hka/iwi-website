@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { DEPARTMENTS } from '../../shared/content/departments';
-import { BOARD, OFFICES } from '../../shared/content/members';
-import { SITE } from '../../shared/content/site';
+import { SiteSettings, TeamContent } from '../../core/data/site-content';
 import { Button } from '../../shared/ui/button/button';
 import { DownloadRow } from '../../shared/ui/download-row/download-row';
 import { InfoBox } from '../../shared/ui/info-box/info-box';
@@ -28,8 +26,10 @@ import { ProtocolList } from './protocol-list/protocol-list';
   styleUrl: './about-page.scss',
 })
 export default class AboutPage {
-  protected readonly site = SITE;
-  protected readonly board = BOARD;
-  protected readonly offices = OFFICES;
-  protected readonly departments = DEPARTMENTS;
+  private readonly team = inject(TeamContent).value;
+
+  protected readonly site = inject(SiteSettings).site;
+  protected readonly board = computed(() => this.team().board);
+  protected readonly offices = computed(() => this.team().offices);
+  protected readonly departments = computed(() => this.team().departments);
 }

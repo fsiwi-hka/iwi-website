@@ -116,7 +116,8 @@ Komponente ──► FeatureStore (CrudStore<T>) ──► ContentApi.collection
 | Bereich              | Modell            | Ersetzt bisher                                             |
 | -------------------- | ----------------- | ---------------------------------------------------------- |
 | Startseiten-Slider   | `HeroSlide`       | `ui/content/slides.ts`                                     |
-| Mitglieder           | `Member`          | `ui/content/member.ts`                                     |
+| Mitglieder           | `Member`          | Personen aus `ui/content/member.ts`                        |
+| Rollen               | `Position`        | Positionen aus `ui/content/member.ts`                      |
 | Fachbereiche         | `Department`      | `ui/content/departments.ts`                                |
 | Sponsoren            | `Sponsor`         | `ui/content/sponsors.ts`                                   |
 | Semestertermine      | `SemesterDates`   | `info.json` + Stundenplan-PNGs in Nextcloud (FB_O-Phase)   |
@@ -146,17 +147,25 @@ Die HTTP-Seite braucht dafür keinen neuen Code, `HttpContentApi` ist generisch.
 ## Deployment
 
 - `Dockerfile`: Node-Build → Caddy-Image mit `dist/backrooms/browser`.
-- `Caddyfile`: SPA-Fallback, Cache-Header, `handle /api/*` → `backend:8080` (gleiche Origin, kein
-  CORS, Token bleibt first-party).
-- `deploy/docker-compose.yml`: Service `backrooms` (Container `iwi-backrooms`, lokal
-  `127.0.0.1:8081`). Im Nginx Proxy Manager einen eigenen Host anlegen, z. B.
-  `backrooms.iwi-hka.de` → `iwi-backrooms:80`.
+- Die App läuft unter dem Pfad **`/backrooms/`** (`baseHref` in `angular.json`, gilt auch für
+  `npm start`: lokal also `http://localhost:4201/backrooms/`). Asset-Pfade im Code deshalb immer
+  relativ (`images/…`, `mock/…`), API-Aufrufe absolut (`/api/…`).
+- `Caddyfile`: liefert die App unter `/backrooms/` aus (`/` und `/backrooms` leiten dorthin um),
+  SPA-Fallback, Cache-Header, `handle /api/*` → `$BACKEND_HOST:8080`, Default `backend`
+  (gleiche Origin, kein CORS, Token bleibt first-party).
+- `deploy/docker-compose.yml`: Service `backrooms` (Container `iwi-backrooms` bzw. `iwi-backrooms-develop`,
+  `127.0.0.1:8082` bzw. `127.0.0.1:8083`). Im Nginx Proxy Manager beim Host der Website eine
+  **Custom Location** `/backrooms` → `iwi-backrooms:80` (Develop: `iwi-backrooms-develop:80`) anlegen.
+  Die API-Aufrufe der Backrooms gehen dann an `/api` derselben Domain und damit über die Website
+  ans Backend.
 - CI: `.github/workflows/backrooms.yml` (Format, Tests, Build) bei Änderungen unter `backrooms/**`.
 
-## Was das Backend liefern muss
+## Backend-Routen
 
-Die HTTP-Implementierungen in `core/api/http/` erwarten folgende Routen (relativ zu `/api`,
+Die HTTP-Implementierungen in `core/api/http/` nutzen folgende Routen (relativ zu `/api`,
 JSON, Bearer-Token im `Authorization`-Header). Alle Listen-Datensätze haben `id` und `updatedAt`.
+Im .NET-Backend sind alle Routen umgesetzt (`api/IWI-Backend.Api/Controller/Backrooms/`); lokal
+gegen das Backend arbeiten: Backend starten, dann `npm run start:api`.
 
 ### Auth (Nextcloud-Anbindung)
 
@@ -166,9 +175,24 @@ JSON, Bearer-Token im `Authorization`-Header). Alle Listen-Datensätze haben `id
 | POST    | `/backrooms/auth/logout` | Token invalidieren                                                       |
 | GET     | `/backrooms/auth/me`     | `{ id, username, displayName, email?, roles: ('admin'\|'editor')[] }`   |
 
-Rollen aus Nextcloud-Gruppen ableiten (z. B. Gruppe `backrooms-admin` → `admin`). Das Frontend
-hält nie Nextcloud-Zugangsdaten; alternativ wäre ein OIDC/Login-Flow möglich (dann `AuthApi`
-anpassen).
+Das Backend prüft Benutzername/Passwort per `GET /ocs/v2.php/cloud/user` gegen die Nextcloud
+und stellt danach ein eigenes Session-Token aus (12 h, in der DB nur als SHA-256). Das Passwort
+wird nicht gespeichert. Login ist auf 10 Versuche pro 5 Minuten und IP begrenzt. Der feste
+Service-Token (`Auth:Token`) gilt weiter für Automationen und hat alle Rollen.
+
+Einrichtung (Konfiguration unter `Backrooms:Auth` in `appsettings.json`):
+
+1. In der Nextcloud die Gruppen `backrooms` (Redaktion) und `backrooms-admin` anlegen und die
+   Leute eintragen. Wer in keiner der beiden Gruppen ist, wird mit 403 abgewiesen.
+2. `NextcloudUrl` zeigt standardmäßig auf `https://cloud.iwi-hka.de`; andere Gruppennamen über
+   `AdminGroups` / `EditorGroups` (bzw. `Backrooms__Auth__AdminGroups__0=…` als Umgebungsvariable).
+3. Wer in der Nextcloud Zwei-Faktor-Login nutzt, braucht für die Backrooms ein App-Passwort
+   (Nextcloud → Einstellungen → Sicherheit → „Neues App-Passwort erstellen“).
+
+Rechte: Lesen ist öffentlich (die Website zeigt die Inhalte), Schreiben braucht `editor`,
+`PUT /backrooms/documents/site-settings` braucht `admin`. Listen mit `active`-Feld lassen sich
+per `?active=true` auf das Sichtbare filtern; Seiten gibt es zusätzlich unter
+`GET /backrooms/content/pages/by-slug/{slug}`.
 
 ### Inhalte (generisch, Schlüssel siehe `CollectionMap`)
 
@@ -179,12 +203,19 @@ anpassen).
 | GET     | `/backrooms/content/{key}/{id}`         | Einzelner Eintrag                              |
 | PUT     | `/backrooms/content/{key}/{id}`         | Vollständig ersetzen                           |
 | DELETE  | `/backrooms/content/{key}/{id}`         | Löschen                                        |
-| PUT     | `/backrooms/content/{key}/order`        | `{ ids: string[] }` → neue Reihenfolge         |
+| PUT     | `/backrooms/content/{key}/order`        | `{ ids: string[] }` → neue Reihenfolge (nur sortierbare Listen) |
 | GET     | `/backrooms/documents/{key}`            | Einzel-Dokument (`semester-dates`, `site-settings`) |
 | PUT     | `/backrooms/documents/{key}`            | Einzel-Dokument speichern                      |
 
-Schlüssel: `hero-slides`, `members`, `departments`, `sponsors`, `protocols`, `infoscreen-slides`,
-`pages`; Dokumente: `semester-dates`, `site-settings`. Die Feldnamen stehen in `shared/models/`.
+Schlüssel: `hero-slides`, `members`, `positions`, `departments`, `sponsors`, `protocols`,
+`infoscreen-slides`, `pages`; Dokumente: `semester-dates`, `site-settings`. Die Feldnamen stehen in
+`shared/models/`.
+
+Mitglieder und Rollen sind n:m verknüpft: ein Mitglied kann mehrere Rollen ausfüllen, eine Rolle
+mehrere Mitglieder haben. Die Zuordnung steht an der Rolle (`positions[].memberIds`, Reihenfolge =
+Anzeige auf der Website); `members` kennt seine Rollen nicht. Fachbereiche zeigen über
+`leadPositionId` auf ihre Leitungsrolle. Im .NET-Backend sind `members` und `positions` bereits
+umgesetzt (`MembersController`, `PositionsController`, Tabelle `PositionMembers`).
 Datumsfelder (`meetingDate`, `beginn`, `ende`) sind Strings im Format `YYYY-MM-DD`; ein nicht
 gesetztes Datum ist `null`.
 

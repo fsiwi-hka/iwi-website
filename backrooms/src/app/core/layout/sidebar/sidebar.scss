@@ -1,3 +1,6 @@
+@use '@angular/material' as mat;
+
+// Navigation in Petrol mit weisser Schrift, wie Footer und Menue der Website.
 :host {
   display: block;
   height: 100%;
@@ -8,15 +11,41 @@
   flex-direction: column;
   min-height: 100%;
   padding-bottom: 1.5rem;
+  background: var(--iwi-petrol);
+  color: var(--iwi-white);
+
+  @include mat.list-overrides(
+    (
+      list-item-label-text-color: var(--iwi-white),
+      list-item-hover-label-text-color: var(--iwi-white),
+      list-item-focus-label-text-color: var(--iwi-white),
+      list-item-leading-icon-color: var(--iwi-blue-light),
+      list-item-hover-leading-icon-color: var(--iwi-white),
+      list-item-label-text-weight: 500,
+      list-item-hover-state-layer-color: var(--iwi-white),
+      list-item-hover-state-layer-opacity: 0.08,
+      list-item-focus-state-layer-color: var(--iwi-white),
+      list-item-focus-state-layer-opacity: 0.12,
+      active-indicator-color: rgb(255 255 255 / 14%),
+      active-indicator-shape: var(--iwi-radius-pill),
+      list-item-container-shape: var(--iwi-radius-pill),
+    )
+  );
+
+  @include mat.icon-button-overrides(
+    (
+      icon-color: var(--iwi-white),
+    )
+  );
 
   &__brand {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid var(--mat-sys-outline-variant);
+    padding: 1rem;
   }
 
   &__logo {
-    border-radius: var(--mat-sys-corner-extra-small);
-    background: #fff;
+    padding: 4px;
+    border-radius: var(--iwi-radius);
+    background: var(--iwi-white);
   }
 
   &__brand-text {
@@ -24,24 +53,38 @@
     min-width: 0;
 
     strong {
-      font: var(--mat-sys-title-medium);
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
     }
   }
 
   &__brand-sub {
-    font: var(--mat-sys-label-small);
-    color: var(--mat-sys-on-surface-variant);
+    font-size: 0.75rem;
+    color: var(--iwi-blue-light);
   }
 
-  // Die Abschnitte sollen als eine Liste wirken, nicht als mehrere Bloecke.
   mat-nav-list {
-    padding-top: 0;
+    padding: 0 0.5rem;
+  }
+
+  // Aktiver Eintrag: hellere Pille plus Akzentstrich in Hellblau.
+  .mdc-list-item--activated {
+    box-shadow: inset 3px 0 0 var(--iwi-blue-light);
+
+    .mat-icon {
+      color: var(--iwi-white);
+    }
   }
 
   h3[matSubheader] {
-    font: var(--mat-sys-label-small);
+    margin: 0;
+    padding: 1rem 1rem 0.25rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--mat-sys-on-surface-variant);
+    color: var(--iwi-blue-light);
   }
 }

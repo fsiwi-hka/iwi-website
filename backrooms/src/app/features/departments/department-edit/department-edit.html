@@ -4,25 +4,33 @@
   <mat-card appearance="outlined">
     <mat-card-content>
       <form (submit)="save($event)" novalidate>
-        <mat-form-field class="w-100">
-          <mat-label>Fachbereich</mat-label>
-          <input
-            matInput
-            type="text"
-            list="position-suggestions"
-            placeholder="z. B. FB Events"
-            [formField]="form.position"
-          />
-          <mat-hint>
-            Muss exakt der Position der Fachbereichsleitung bei den Mitgliedern entsprechen.
-          </mat-hint>
-          <mat-error>{{ errorText(form.position) }}</mat-error>
-        </mat-form-field>
-        <datalist id="position-suggestions">
-          @for (position of positionSuggestions(); track position) {
-            <option [value]="position"></option>
-          }
-        </datalist>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <mat-form-field class="w-100">
+              <mat-label>Fachbereich</mat-label>
+              <input matInput type="text" placeholder="z. B. FB Events" [formField]="form.name" />
+              <mat-error>{{ errorText(form.name) }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field class="w-100">
+              <mat-label>Leitung (Rolle)</mat-label>
+              <mat-select [formField]="form.leadPositionId">
+                <mat-option [value]="null">Keine</mat-option>
+                @for (group of leadOptions(); track group.label) {
+                  <mat-optgroup [label]="group.label">
+                    @for (position of group.positions; track position.id) {
+                      <mat-option [value]="position.id">{{ position.title }}</mat-option>
+                    }
+                  </mat-optgroup>
+                }
+              </mat-select>
+              <mat-hint
+                >Die Mitglieder dieser Rolle stehen als Ansprechpersonen auf der Website.</mat-hint
+              >
+            </mat-form-field>
+          </div>
+        </div>
 
         <fieldset class="border-0 p-0 m-0 mt-3">
           <legend class="form-legend">Aufgaben</legend>

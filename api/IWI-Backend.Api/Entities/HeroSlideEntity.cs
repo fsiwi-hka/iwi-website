@@ -1,11 +1,14 @@
 namespace IWI_Backend.Api.Entities;
 
-public class HeroSlideEntity : IBaseEntity
+/// <summary>Slide des Startseiten-Sliders. IsActive = auf der Website sichtbar.</summary>
+public class HeroSlideEntity : IBaseEntity, IOrderedEntity
 {
     public int Order { get; set; }
     public string Title { get; set; } = "";
     public string Subtitle { get; set; } = "";
     public MediaRef? Image { get; set; }
+    /// <summary>Dunkles Overlay ueber dem Bild, damit der Text lesbar bleibt.</summary>
+    public bool ImageOverlay { get; set; } = true;
     public string ButtonText { get; set; } = "";
     public string ButtonLink { get; set; } = "";
 

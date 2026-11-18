@@ -5,13 +5,13 @@
   <p>
     Fachschaft Informatik und Wirtschaftsinformatik<br />
     Gebäude E - Raum 013<br />
-    {{ site.address.street }}<br />
-    {{ site.address.city }}
+    {{ site().address.street }}<br />
+    {{ site().address.city }}
   </p>
   <p>Vertreten durch: Ludwig Tschirner</p>
   <p>
-    <iwi-protected-contact [email]="site.mail.contact" /><br />
-    <iwi-protected-contact [tel]="site.phone.label" />
+    <iwi-protected-contact [email]="site().mail.contact" /><br />
+    <iwi-protected-contact [tel]="site().phone.label" />
   </p>
 
   <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>

@@ -1,0 +1,17 @@
+.assigned {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--iwi-grey-light);
+  border-radius: var(--iwi-radius-lg);
+  overflow: hidden;
+}
+
+.assigned__item {
+  padding: 0.375rem 0.5rem 0.375rem 0.75rem;
+  background: var(--iwi-white);
+
+  & + & {
+    border-top: 1px solid var(--iwi-divider);
+  }
+}

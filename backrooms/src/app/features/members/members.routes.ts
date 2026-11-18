@@ -8,12 +8,12 @@ export const MEMBERS_ROUTES: Routes = [
   },
   {
     path: 'new',
-    title: 'Neue Position',
+    title: 'Neues Mitglied',
     loadComponent: () => import('./member-edit/member-edit').then((m) => m.MemberEdit),
   },
   {
     path: ':id',
-    title: 'Position bearbeiten',
+    title: 'Mitglied bearbeiten',
     loadComponent: () => import('./member-edit/member-edit').then((m) => m.MemberEdit),
   },
 ];

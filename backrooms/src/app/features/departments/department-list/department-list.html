@@ -1,6 +1,6 @@
 <app-page-header
   title="Fachbereiche"
-  subtitle="Aufgabenbereiche der Fachschaft. Die Leitung kommt aus der gleichnamigen Position bei den Mitgliedern."
+  subtitle="Aufgabenbereiche der Fachschaft. Die Leitung ist eine Rolle, deren Mitglieder als Ansprechpersonen erscheinen."
 >
   <a actions matButton="filled" routerLink="new">
     <mat-icon svgIcon="plus" />
@@ -60,18 +60,22 @@
           </td>
         </ng-container>
 
-        <ng-container matColumnDef="position">
+        <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef>Fachbereich</th>
-          <td mat-cell *matCellDef="let department" class="fw-medium">{{ department.position }}</td>
+          <td mat-cell *matCellDef="let department" class="fw-medium">{{ department.name }}</td>
         </ng-container>
 
         <ng-container matColumnDef="lead">
           <th mat-header-cell *matHeaderCellDef>Leitung</th>
           <td mat-cell *matCellDef="let department">
-            @if (lead(department); as name) {
-              {{ name }}
+            @if (lead(department); as lead) {
+              @if (lead.names) {
+                {{ lead.names }}
+              } @else {
+                <app-status-badge variant="warning">{{ lead.title }} unbesetzt</app-status-badge>
+              }
             } @else {
-              <app-status-badge variant="warning">Keine Position gefunden</app-status-badge>
+              <app-status-badge variant="warning">Keine Leitung</app-status-badge>
             }
           </td>
         </ng-container>

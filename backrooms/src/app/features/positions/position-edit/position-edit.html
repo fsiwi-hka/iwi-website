@@ -1,0 +1,105 @@
+<app-page-header [title]="title()" backLink="/positions" backLabel="Zurück zur Liste" />
+
+<app-data-state [status]="draft.status()" [error]="draft.error()" (retry)="draft.reload()">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <form (submit)="save($event)" novalidate>
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <mat-form-field class="w-100">
+              <mat-label>Rolle</mat-label>
+              <input matInput type="text" placeholder="z. B. FB Events" [formField]="form.title" />
+              <mat-error>{{ errorText(form.title) }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-5">
+            <mat-form-field class="w-100">
+              <mat-label>Gruppe</mat-label>
+              <mat-select [formField]="form.group">
+                @for (group of groups; track group.value) {
+                  <mat-option [value]="group.value">{{ group.label }}</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <fieldset class="border-0 p-0 m-0 mt-2">
+          <legend class="form-legend">Mitglieder</legend>
+
+          <mat-form-field class="w-100">
+            <mat-label>Mitglieder zuordnen</mat-label>
+            <mat-select
+              multiple
+              [value]="draft.model().memberIds"
+              (selectionChange)="selectMembers($event)"
+            >
+              @for (member of options(); track member.id) {
+                <mat-option [value]="member.id">
+                  {{ member.name }}
+                  @if (!member.active) {
+                    (ehemalig)
+                  }
+                </mat-option>
+              }
+            </mat-select>
+            <mat-hint>Ohne Mitglied wird die Rolle als „gesucht“ angezeigt.</mat-hint>
+          </mat-form-field>
+
+          @if (assigned().length > 1) {
+            <p class="muted text-sm mt-3 mb-2">
+              Reihenfolge auf der Website – zum Sortieren ziehen:
+            </p>
+          }
+
+          @if (assigned().length > 0) {
+            <ol
+              class="assigned mt-2"
+              cdkDropList
+              (cdkDropListDropped)="reorder($event)"
+              aria-label="Zugeordnete Mitglieder"
+            >
+              @for (member of assigned(); track member.id) {
+                <li class="assigned__item d-flex align-items-center gap-2" cdkDrag>
+                  <mat-icon cdkDragHandle class="drag-handle" svgIcon="drag" />
+                  @if (member.image; as image) {
+                    <img class="avatar" [src]="image.url" alt="" />
+                  } @else {
+                    <span class="avatar avatar--empty" aria-hidden="true">
+                      <mat-icon svgIcon="user" />
+                    </span>
+                  }
+                  <span class="flex-grow-1 text-truncate">{{ member.name }}</span>
+                  <button
+                    matIconButton
+                    type="button"
+                    (click)="removeMember(member.id)"
+                    matTooltip="Aus der Rolle entfernen"
+                    [attr.aria-label]="member.name + ' aus der Rolle entfernen'"
+                  >
+                    <mat-icon svgIcon="x" />
+                  </button>
+                </li>
+              }
+            </ol>
+          }
+        </fieldset>
+
+        <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+          <a matButton routerLink="/positions">Abbrechen</a>
+          <button
+            matButton="filled"
+            type="submit"
+            [disabled]="saving()"
+            [attr.aria-busy]="saving()"
+          >
+            @if (saving()) {
+              <mat-spinner [diameter]="18" />
+            }
+            Speichern
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</app-data-state>

@@ -6,6 +6,7 @@ import {
   HeroSlide,
   InfoscreenSlide,
   Member,
+  Position,
   Protocol,
   SemesterDates,
   SiteSettings,
@@ -37,6 +38,7 @@ export interface DocumentApi<T> {
 export interface CollectionMap {
   'hero-slides': HeroSlide;
   members: Member;
+  positions: Position;
   departments: Department;
   sponsors: Sponsor;
   protocols: Protocol;

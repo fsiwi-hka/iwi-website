@@ -1,6 +1,6 @@
 import { Component, computed, input, model } from '@angular/core';
 
-import { Person } from '../../../shared/content/members';
+import { Person } from '../../../core/data/site-content';
 
 const PLACEHOLDER = '/images/fachschaft/placeholder.jpg';
 const PLACEHOLDER_WANTED = '/images/fachschaft/placeholder_gesucht.jpg';

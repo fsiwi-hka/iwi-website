@@ -59,9 +59,9 @@
     für ein Jahr laut Satzung zu Beginn jedes Wintersemesters gewählt.
   </p>
   <div class="mb-5">
-    <iwi-member-grid [members]="board" />
+    <iwi-member-grid [members]="board()" />
     <!-- Ämter - die Fachbereiche folgen weiter unten im Abschnitt "Fachbereiche" -->
-    <iwi-member-grid [members]="offices" />
+    <iwi-member-grid [members]="offices()" />
   </div>
 </section>
 
@@ -73,7 +73,7 @@
     noch gesucht werden, freuen wir uns über deine Unterstützung.
   </p>
   <div class="row gx-5 mb-5">
-    @for (department of departments; track department.position) {
+    @for (department of departments(); track department.name) {
       <div class="col-12 col-md-6 col-lg-4">
         <iwi-department-card [department]="department" />
       </div>
@@ -101,7 +101,7 @@
     <b>mittwochs ab 11:30 Uhr im Raum E004</b> oder auf
     <a
       class="about__inline-link"
-      [href]="site.links.discord"
+      [href]="site().links.discord"
       target="_blank"
       rel="noopener noreferrer"
       ><b>Discord</b></a
@@ -109,10 +109,10 @@
     <a
       infoBoxAction
       iwiButton
-      [href]="site.links.discord"
+      [href]="site().links.discord"
       target="_blank"
       rel="noopener noreferrer"
-      >{{ site.meeting.onlineTitle }}</a
+      >{{ site().meeting.onlineTitle }}</a
     >
   </iwi-info-box>
 
@@ -142,6 +142,6 @@
   <iwi-download-row
     title="Fachschaftsordnung Informatik und Wirtschaftsinformatik"
     subtext="Fassung vom 21. April 2021"
-    [href]="site.links.statutes"
+    [href]="site().links.statutes"
   />
 </section>

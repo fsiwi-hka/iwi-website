@@ -6,6 +6,7 @@ export * from './hero-slide';
 export * from './infoscreen-slide';
 export * from './media';
 export * from './member';
+export * from './position';
 export * from './protocol';
 export * from './semester-dates';
 export * from './site-settings';

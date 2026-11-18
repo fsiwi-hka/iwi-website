@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 
-import { Member } from '../../../shared/content/members';
+import { Member } from '../../../core/data/site-content';
 import { MemberTile } from './member-tile';
 
 /** Raster der Vorstands- und Aemter-Positionen. */

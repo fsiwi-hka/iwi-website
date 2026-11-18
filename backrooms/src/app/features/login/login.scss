@@ -1,45 +1,45 @@
+// Anmeldung auf IWI-Blau mit weisser Karte, wie Footer und Menue der Website.
 .login {
   min-height: 100dvh;
   padding: 1rem;
-  background:
-    radial-gradient(circle at 20% 10%, var(--mat-sys-secondary-container), transparent 45%),
-    radial-gradient(circle at 80% 90%, var(--mat-sys-tertiary-container), transparent 40%),
-    var(--mat-sys-surface-container-low);
+  background: var(--iwi-blue);
 
   &__card {
     width: 100%;
-    max-width: 400px;
-    background: var(--mat-sys-surface);
+    max-width: 420px;
+    padding: 1rem 0.5rem;
+    border: 0;
+    box-shadow: var(--iwi-shadow-lg);
   }
 
   &__logo {
-    border-radius: var(--mat-sys-corner-small);
+    border-radius: var(--iwi-radius);
   }
 
   &__title {
-    font: var(--mat-sys-headline-small);
+    font-size: 1.875rem;
   }
 
   &__error {
     padding: 0.75rem 1rem;
-    border-radius: var(--mat-sys-corner-medium);
+    border-radius: var(--iwi-radius-lg);
     background: var(--mat-sys-error-container);
     color: var(--mat-sys-on-error-container);
-    font: var(--mat-sys-body-small);
+    font-size: 0.8125rem;
   }
 
   &__hint {
     padding: 0.75rem 1rem;
-    border-radius: var(--mat-sys-corner-medium);
-    background: var(--mat-sys-surface-container);
-    color: var(--mat-sys-on-surface-variant);
-    font: var(--mat-sys-body-small);
+    border-radius: var(--iwi-radius-lg);
+    background: var(--iwi-surface);
+    color: var(--iwi-grey);
+    font-size: 0.8125rem;
 
     code {
       padding: 1px 4px;
       border-radius: 4px;
-      background: var(--mat-sys-surface-container-highest);
-      color: var(--mat-sys-on-surface);
+      background: var(--iwi-grey-light);
+      color: var(--iwi-red);
     }
   }
 }

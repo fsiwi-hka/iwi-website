@@ -4,8 +4,7 @@
   z-index: 5;
   gap: 0.5rem;
   padding-inline: 0.5rem;
-  background: var(--mat-sys-surface);
-  border-bottom: 1px solid var(--mat-sys-outline-variant);
+  border-bottom: 1px solid var(--iwi-divider);
 
   &__spacer {
     flex: 1;
@@ -17,9 +16,9 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: var(--mat-sys-secondary-container);
-    color: var(--mat-sys-on-secondary-container);
-    font: var(--mat-sys-label-small);
+    background: var(--iwi-blue-dark);
+    color: var(--iwi-white);
+    font-size: 0.75rem;
     font-weight: 600;
   }
 
@@ -35,7 +34,7 @@
     align-items: flex-start;
     padding: 0.5rem 1rem;
     line-height: 1.3;
-    border-bottom: 1px solid var(--mat-sys-outline-variant);
+    border-bottom: 1px solid var(--iwi-divider);
   }
 
   &__menu-name {

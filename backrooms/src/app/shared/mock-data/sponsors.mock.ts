@@ -19,7 +19,7 @@ export function sponsorsMock(): Sponsor[] {
     id: `sponsor-${file.replace(/\.[^.]+$/, '').toLowerCase()}`,
     order: index + 1,
     name,
-    logo: staticMedia(`/mock/sponsors/${file}`, contentType),
+    logo: staticMedia(`mock/sponsors/${file}`, contentType),
     width,
     website,
     active: true,

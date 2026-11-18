@@ -1,3 +1,5 @@
+// Seitenkopf wie die Ueberschriften der Website: Versalien in Petrol mit
+// kurzem Akzentstrich (vgl. aktiver Navigationspunkt der Website).
 .page-header {
   &__text {
     min-width: 0;
@@ -8,9 +10,19 @@
     margin-left: -0.75rem;
   }
 
+  &__title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    margin-top: 0.5rem;
+    border-bottom: 3px solid var(--iwi-blue);
+    border-radius: 2px;
+  }
+
   &__subtitle {
     max-width: 80ch;
-    font: var(--mat-sys-body-medium);
+    margin-top: 0.75rem !important;
+    color: var(--iwi-grey);
   }
 
   &__actions:empty {

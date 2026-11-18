@@ -117,7 +117,7 @@
       <a
         iwiLinkTile
         tone="red"
-        [href]="site.links.studiBoardLogin"
+        [href]="site().links.studiBoardLogin"
         target="_blank"
         rel="noopener noreferrer"
         >StudiBoard</a
@@ -128,7 +128,7 @@
   <iwi-info-box>
     Sollte die <b>Registrierung</b> fehlschlagen, bitten wir dich uns eine Email mit deinem
     <b>RZ Kürzel</b> und deiner <b>Hochschulemail</b> an folgende Email zu senden:
-    <iwi-protected-contact [email]="site.mail.contact" />
+    <iwi-protected-contact [email]="site().mail.contact" />
   </iwi-info-box>
 
   <h2 class="section-top">RZ-Kennung / Fragen?</h2>
@@ -140,6 +140,6 @@
   <p>
     Wenn ihr Fragen oder Probleme habt, meldet euch einfach in der Signal-Gruppe oder schreibt eine
     Mail:
-    <iwi-protected-contact [email]="site.mail.contact" />
+    <iwi-protected-contact [email]="site().mail.contact" />
   </p>
 </div>

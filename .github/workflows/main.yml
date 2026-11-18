@@ -35,11 +35,13 @@ jobs:
               SUFFIX=""
               WEB_PORT=8080
               BACKEND_PORT=5200
+              BACKROOMS_PORT=8082
               IMAGE_TAG=latest
             else
               SUFFIX="-develop"
               WEB_PORT=8081
               BACKEND_PORT=5201
+              BACKROOMS_PORT=8083
               IMAGE_TAG=develop
             fi
 
@@ -52,7 +54,7 @@ jobs:
               exit 1
             fi
 
-            echo "Deploy von '$BRANCH' nach $DEPLOY_DIR (Web $WEB_PORT, API $BACKEND_PORT)"
+            echo "Deploy von '$BRANCH' nach $DEPLOY_DIR (Web $WEB_PORT, API $BACKEND_PORT, Backrooms $BACKROOMS_PORT)"
 
             cd "$DEPLOY_DIR"
             git fetch origin
@@ -63,7 +65,7 @@ jobs:
 
             export COMPOSE_PROJECT_NAME="deploy${SUFFIX}"
             export STACK_SUFFIX="$SUFFIX"
-            export WEB_PORT BACKEND_PORT IMAGE_TAG
+            export WEB_PORT BACKEND_PORT BACKROOMS_PORT IMAGE_TAG
             export INSTAGRAM_TOKEN NEXTCLOUD_URL WEBDAV_USERNAME WEBDAV_PASSWORD AUTH_TOKEN
 
             docker compose down

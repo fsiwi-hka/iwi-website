@@ -25,8 +25,29 @@
     {
       "name": "backrooms-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["start", "--prefix", "backrooms"],
-      "port": 4200
+      "runtimeArgs": [
+        "start",
+        "--prefix",
+        "backrooms",
+        "--",
+        "--port",
+        "4201"
+      ],
+      "port": 4201
+    },
+    {
+      "name": "backrooms-api-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start:api",
+        "--prefix",
+        "backrooms",
+        "--",
+        "--port",
+        "4202"
+      ],
+      "port": 4202
     }
   ]
 }

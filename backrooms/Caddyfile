@@ -1,3 +1,9 @@
+# Die Backrooms laufen unter dem Pfad /backrooms/ (baseHref in angular.json).
+# Davor kann ein Proxy stehen, der /backrooms/* unveraendert hierher
+# weiterreicht (z. B. Custom Location im Nginx Proxy Manager auf der Domain der
+# Website). Dann gehen /api/*-Aufrufe des Browsers ohnehin an die Website und
+# von dort ans Backend; der /api-Block hier gilt fuer den direkten Zugriff
+# (http://127.0.0.1:8082/backrooms/).
 :80 {
     encode gzip zstd
 
@@ -10,12 +16,19 @@
     }
 
     # Backend-API ueber dieselbe Origin -> kein CORS, Token bleibt first-party.
-    # Der Backend-Container heisst in deploy/docker-compose.yml "backend".
+    # BACKEND_HOST setzt deploy/docker-compose.yml auf den eindeutigen
+    # Containernamen (iwi-backend bzw. iwi-backend-develop), weil beide Stacks
+    # im selben Netz den Alias "backend" tragen. Ohne Variable: "backend".
     handle /api/* {
-        reverse_proxy backend:8080
+        reverse_proxy {$BACKEND_HOST:backend}:8080
     }
 
-    handle {
+    # "/" und "/backrooms" ohne Schraegstrich auf den Basis-Pfad.
+    @root path / /backrooms
+    redir @root /backrooms/ 308
+
+    # handle_path schneidet /backrooms ab: die Dateien liegen flach in /usr/share/caddy.
+    handle_path /backrooms/* {
         root * /usr/share/caddy
 
         # Gehashte Bundles (main-XXXXXXXX.js, chunk-XXXXXXXX.js, styles-XXXXXXXX.css, media/*-HASH.ttf)
@@ -24,16 +37,27 @@
         @hashed path_regexp -[A-Za-z0-9_-]{8,}\.(js|css|ttf|woff2|png|jpg|jpeg|svg|webp)$
         header @hashed Cache-Control "public, max-age=31536000, immutable"
 
-        # Ungehashte Assets aus /public (Fonts, Logo) moderat cachen.
-        @assets path /fonts/* /images/* /favicon.ico /favicon.png
+        # Ungehashte Assets aus public/ (Logo, Favicon) moderat cachen.
+        @assets path /images/* /favicon.ico /favicon.png
         header @assets Cache-Control "public, max-age=604800"
 
         # index.html nie cachen, sonst laden Clients nach einem Deploy alte Bundle-Namen.
-        @index path / /index.html
+        # Das gilt auch fuer Router-Pfade ohne Dateiendung (/members/123), die per
+        # SPA-Fallback ebenfalls index.html bekommen.
+        @index {
+            not path_regexp \.[A-Za-z0-9]+$
+        }
         header @index Cache-Control "no-store"
+        @indexFile path /index.html
+        header @indexFile Cache-Control "no-store"
 
         # SPA-Fallback: unbekannte Pfade gehen an den Angular-Router.
         try_files {path} /index.html
         file_server
+    }
+
+    # Alles andere gibt es hier nicht.
+    handle {
+        respond "Not found" 404
     }
 }

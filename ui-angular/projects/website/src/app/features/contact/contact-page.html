@@ -17,14 +17,14 @@
             <div class="d-flex gap-3">
               <iwi-icon class="visit__icon" name="map-marker-radius" />
               <address class="visit__address">
-                <span>{{ site.address.room }}</span>
-                <span>{{ site.address.street }}</span>
-                <span>{{ site.address.city }}</span>
+                <span>{{ site().address.room }}</span>
+                <span>{{ site().address.street }}</span>
+                <span>{{ site().address.city }}</span>
               </address>
             </div>
             <div class="d-flex gap-3">
               <iwi-icon class="visit__icon" name="phone" />
-              <a class="visit__phone" [href]="site.phone.href">{{ site.phone.label }}</a>
+              <a class="visit__phone" [href]="site().phone.href">{{ site().phone.label }}</a>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@
           <a
             iwiButton="white"
             size="lg"
-            [href]="site.address.mapUrl"
+            [href]="site().address.mapUrl"
             target="_blank"
             rel="noopener noreferrer"
             >Route planen</a
@@ -45,7 +45,7 @@
       <iwi-card padding="lg" class="h-100">
         <h2 class="iwi-heading-flush socials__title">Social Media</h2>
         <ul class="socials">
-          @for (social of socials; track social.url) {
+          @for (social of socials(); track social.url) {
             <li>
               <a class="socials__row" [href]="social.url" target="_blank" rel="noopener noreferrer">
                 <iwi-icon class="socials__icon" [name]="social.icon" />
@@ -68,7 +68,7 @@
       Such dir die passende Adresse aus – so landet deine Nachricht direkt bei den richtigen Leuten.
     </p>
     <div class="row g-4">
-      @for (contact of mailContacts; track contact.mail) {
+      @for (contact of mailContacts(); track contact.mail) {
         <div class="col-12 col-sm-6">
           <a iwiCard class="h-100 mail-card" [href]="'mailto:' + contact.mail">
             <iwi-icon class="mail-card__icon" [name]="contact.icon" [size]="2.25" />

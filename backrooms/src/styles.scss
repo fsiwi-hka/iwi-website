@@ -1,26 +1,28 @@
 // Globale Styles der Backrooms.
 //
-// Die Optik kommt aus drei Quellen, in dieser Reihenfolge:
+// Die Backrooms uebernehmen den Auftritt der Website (ui-angular): gleiche
+// Farb-Tokens, Poppins, Ueberschriften in Versalien, Pill-Buttons, weiche
+// Karten. Die Optik kommt aus vier Quellen, in dieser Reihenfolge:
 //   1. Bootstrap (nur Grid + Utilities, eingebunden in angular.json)
-//   2. Angular Material (Theme unten, Komponenten bringen ihre Styles selbst mit)
-//   3. Dieses Verzeichnis (Schrift, Basis-Elemente, wenige App-Helfer)
-//
-// Eigene Button-, Formular- oder Tabellen-Styles gibt es bewusst nicht mehr,
-// dafuer sind die Material-Komponenten da.
+//   2. Angular Material (Theme unten, aus denselben Grundfarben generiert)
+//   3. styles/_material.scss: Material-Komponenten auf den IWI-Stil gezogen
+//   4. styles/: Tokens, Schrift, Basis-Elemente, wenige App-Helfer
 @use '@angular/material' as mat;
 @use 'theme-colors';
+@use 'tokens';
 @use 'fonts';
 @use 'base';
+@use 'material';
 @use 'app';
 
 html {
-  // Material erzeugt mit dem Standard-Theme-Typ `color-scheme` alle Farben als
-  // light-dark(). Damit folgt das CMS ohne weiteren Code der Systemeinstellung.
-  color-scheme: light dark;
+  // Wie die Website nur hell: Material soll nicht der Systemeinstellung folgen.
+  color-scheme: light;
 
   @include mat.theme(
     (
       color: (
+        theme-type: light,
         primary: theme-colors.$primary-palette,
         tertiary: theme-colors.$tertiary-palette,
       ),

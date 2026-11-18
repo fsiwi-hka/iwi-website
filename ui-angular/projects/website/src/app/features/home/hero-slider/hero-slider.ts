@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { HeroSlide } from '../../../shared/content/slides';
+import { HeroSlide } from '../../../core/data/site-content';
 import { Button } from '../../../shared/ui/button/button';
 import { IconButton } from '../../../shared/ui/icon-button/icon-button';
 

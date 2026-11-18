@@ -1,5 +1,6 @@
 using IWI_Backend.Api.Configuration;
 using IWI_Backend.Api.Controller;
+using IWI_Backend.Api.Controller.Backrooms;
 using IWI_Backend.Api.Database;
 using IWI_Backend.Api.Services;
 using IWI_Backend.Api.Services.Auth;
@@ -7,7 +8,9 @@ using IWI_Backend.Api.Services.Calendar;
 using IWI_Backend.Api.Services.OPhase;
 using IWI_Backend.Api.Services.OpenApi;
 using IWI_Backend.Api.Services.Raumzeit;
+using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +31,7 @@ builder.Services.AddDbContext<CoreContext>(o =>
 
 builder.Services.Configure<OPhaseOptions>(builder.Configuration.GetSection("OPhase"));
 builder.Services.Configure<BackroomOptions>(builder.Configuration.GetSection("Backrooms"));
+builder.Services.Configure<BackroomsAuthOptions>(builder.Configuration.GetSection("Backrooms:Auth"));
 builder.Services.Configure<WebDavOptions>(builder.Configuration.GetSection("WebDav"));
 builder.Services.Configure<ProtocolOptions>(builder.Configuration.GetSection("Protocols"));
 builder.Services.Configure<MediaOptions>(builder.Configuration.GetSection("Media"));
@@ -43,9 +47,16 @@ builder.Services.AddSwaggerGen(o =>
 {
     // Sprechende, eindeutige operationIds ("GetCalendarEvents" statt "apiCalendarEventsGet").
     // Daraus entstehen die Methodennamen im generierten Angular-Client (ui-angular/projects/api).
+    // Die Backrooms-Controller erben ihre Aktionen (List, Get, Create, ...) von
+    // ContentCrudController; dort kommt der Controllername davor ("MembersList"),
+    // sonst waeren die operationIds doppelt.
     o.CustomOperationIds(api =>
         api.ActionDescriptor.EndpointMetadata.OfType<IEndpointNameMetadata>().FirstOrDefault()?.EndpointName
-        ?? (api.ActionDescriptor is ControllerActionDescriptor action ? action.ActionName : null));
+        ?? (api.ActionDescriptor is ControllerActionDescriptor action
+            ? action.ControllerTypeInfo.Namespace?.EndsWith(".Backrooms", StringComparison.Ordinal) == true
+                ? action.ControllerName + action.ActionName
+                : action.ActionName
+            : null));
     o.SupportNonNullableReferenceTypes();
     o.SchemaFilter<RequiredPropertiesSchemaFilter>();
 
@@ -53,11 +64,11 @@ builder.Services.AddSwaggerGen(o =>
     {
         Type = SecuritySchemeType.Http,
         Scheme = "bearer",
-        Description = "Fester Token aus der Konfiguration (Auth:Token)."
+        Description = "Session-Token aus POST /api/backrooms/auth/login oder fester Service-Token (Auth:Token)."
     });
     o.DocumentFilter<AuthorizeSecurityFilter>();
 });
-builder.Services.AddControllers();
+builder.Services.AddControllers(o => o.Conventions.Add(new UnorderedListConvention()));
 
 builder.Services
     .AddAuthentication(FixedTokenHandler.SchemeName)
@@ -88,6 +99,9 @@ builder.Services.AddHostedService(sp => sp.GetRequiredService<MediaSyncService>(
 builder.Services.AddHostedService(sp => sp.GetRequiredService<ProtocolSyncService>());
 builder.Services.AddHostedService(sp => sp.GetRequiredService<OPhaseSyncService>());
 
+// Ablage der Backrooms-Uploads (Backrooms:DataDirectory/media).
+builder.Services.AddSingleton<IWI_Backend.Api.Models.Backrooms.MediaLibrary>();
+
 builder.Services.AddSingleton<CalendarStore>();
 builder.Services.AddSingleton<CalendarSyncService>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<CalendarSyncService>());
@@ -113,6 +127,17 @@ builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
 
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddHttpClient<NextcloudAuthenticator>(c => c.Timeout = TimeSpan.FromSeconds(15));
+
+// Login prueft gegen die Nextcloud: pro IP begrenzen, damit niemand ueber uns Passwoerter durchprobiert.
+builder.Services.AddRateLimiter(o =>
+{
+    o.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+    o.AddPolicy(RateLimits.Login, http => RateLimitPartition.GetFixedWindowLimiter(
+        http.Connection.RemoteIpAddress?.ToString() ?? "unknown",
+        _ => new FixedWindowRateLimiterOptions { PermitLimit = 10, Window = TimeSpan.FromMinutes(5) }));
+});
+
 var app = builder.Build();
 app.UseCors();
 
@@ -134,6 +159,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseRateLimiter();
 app.MapControllers();
 
 using (var scope = app.Services.CreateScope())

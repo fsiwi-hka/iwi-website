@@ -3,7 +3,7 @@ import { InstagramPostDto } from '@iwi/api';
 
 import { InstagramData } from '../../../core/data/instagram-data';
 import { browserResource } from '../../../core/platform/browser-resource';
-import { SITE } from '../../../shared/content/site';
+import { SiteSettings } from '../../../core/data/site-content';
 import { Icon } from '../../../shared/ui/icon/icon';
 
 const COUNT = 4;
@@ -30,7 +30,8 @@ const dateFormat = new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'lo
 export class InstagramFeed {
   private readonly data = inject(InstagramData);
 
-  protected readonly profileUrl = SITE.links.instagram;
+  protected readonly profileUrl = computed(() => this.site().links.instagram);
+  private readonly site = inject(SiteSettings).site;
   protected readonly feed = browserResource({
     params: () => COUNT,
     stream: (count) => this.data.feed(count),

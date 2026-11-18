@@ -1,40 +1,25 @@
-import { Entity, EntityDraft, Ordered } from './entity';
+import { Entity, EntityDraft } from './entity';
 import { MediaRef } from './media';
 
-/** Gruppe, in der eine Position auf der Fachschaftsseite angezeigt wird. */
-export type MemberGroup = 'board' | 'role' | 'department';
-
-export const MEMBER_GROUPS: readonly { value: MemberGroup; label: string }[] = [
-  { value: 'board', label: 'Vorstand' },
-  { value: 'role', label: 'Weitere Rollen' },
-  { value: 'department', label: 'Fachbereichsleitung' },
-];
-
-export function memberGroupLabel(group: MemberGroup): string {
-  return MEMBER_GROUPS.find((g) => g.value === group)?.label ?? group;
-}
-
-export interface Person {
+/**
+ * Ein Mitglied der Fachschaft, also eine Person. Welche Rollen es ausfuellt,
+ * steht an den Rollen (`Position.memberIds`), damit eine Person beliebig
+ * viele Rollen haben kann, ohne doppelt gepflegt zu werden.
+ */
+export interface Member extends Entity {
   name: string;
   image: MediaRef | null;
-}
-
-/**
- * Eine Position der Fachschaft (bisher ui/content/member.ts). Eine Position
- * kann unbesetzt sein oder von mehreren Personen ausgefuellt werden.
- */
-export interface Member extends Entity, Ordered {
-  position: string;
-  group: MemberGroup;
-  persons: Person[];
+  /** Ehemalige Mitglieder bleiben erhalten, erscheinen aber nicht mehr auf der Website. */
+  active: boolean;
 }
 
 export type MemberDraft = EntityDraft<Member>;
 
-export function createPerson(): Person {
-  return { name: '', image: null };
+export function createMemberDraft(): MemberDraft {
+  return { name: '', image: null, active: true };
 }
 
-export function createMemberDraft(): MemberDraft {
-  return { position: '', group: 'role', persons: [createPerson()], order: 0 };
+/** Alphabetisch nach Name, deutsche Sortierung. */
+export function sortMembersByName<T extends Pick<Member, 'name'>>(members: readonly T[]): T[] {
+  return [...members].sort((a, b) => a.name.localeCompare(b.name, 'de'));
 }

@@ -1,6 +1,6 @@
 import { Component, computed, input } from '@angular/core';
 
-import { SponsorLogo } from '../../../shared/content/sponsors';
+import { SponsorLogo } from '../../../core/data/site-content';
 
 /** Abstand zwischen zwei Logos in px. */
 const GAP = 80;
@@ -12,7 +12,7 @@ const COPIES = 4;
  *
  * Die Reihe steht viermal hintereinander und wird per CSS-Animation um genau
  * eine Reihe verschoben - danach sieht es wieder exakt gleich aus, die Schleife
- * ist nahtlos. Weil die Breiten in sponsors.ts stehen, muss dafuer nichts
+ * ist nahtlos. Weil die Breiten in den Backrooms gepflegt werden, muss dafuer nichts
  * gemessen werden.
  */
 @Component({

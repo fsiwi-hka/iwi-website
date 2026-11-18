@@ -88,3 +88,27 @@ public sealed class CalendarOptions
         : ExportUrl.Contains("/public-calendars/", StringComparison.Ordinal) ? ExportUrl
         : null;
 }
+
+/// <summary>
+/// Anmeldung an den Backrooms. Benutzername/Passwort werden gegen die
+/// Nextcloud geprueft (OCS-API), die Rollen kommen aus Nextcloud-Gruppen.
+/// </summary>
+public sealed class BackroomsAuthOptions
+{
+    /// <summary>Basis-URL der Nextcloud, z. B. https://cloud.iwi-hka.de</summary>
+    public string NextcloudUrl { get; set; } = "https://cloud.iwi-hka.de";
+
+    // Listen bewusst ohne Vorbelegung: der Config-Binder haengt Arrays an
+    // bestehende Listen an, statt sie zu ersetzen. Werte stehen in appsettings.json.
+
+    /// <summary>Mitglieder dieser Gruppen werden Admins (duerfen zusaetzlich Einstellungen aendern).</summary>
+    public List<string> AdminGroups { get; set; } = [];
+
+    /// <summary>
+    /// Mitglieder dieser Gruppen duerfen Inhalte pflegen. Wer in keiner Admin-
+    /// oder Editor-Gruppe ist, kommt nicht rein - auch wenn beide Listen leer sind.
+    /// </summary>
+    public List<string> EditorGroups { get; set; } = [];
+
+    public int SessionHours { get; set; } = 12;
+}

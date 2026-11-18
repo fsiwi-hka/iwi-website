@@ -23,8 +23,8 @@
         <h4>Sie erreichen uns per Email</h4>
         <div class="contact-line">
           <iwi-icon class="contact-line__icon" name="email-fast" />
-          <a class="contact-line__link" [href]="'mailto:' + site.mail.sponsoring">{{
-            site.mail.sponsoring
+          <a class="contact-line__link" [href]="'mailto:' + site().mail.sponsoring">{{
+            site().mail.sponsoring
           }}</a>
         </div>
       </iwi-card>
@@ -56,7 +56,7 @@
 </section>
 
 <section class="iwi-container">
-  <iwi-logo-carousel [logos]="logos" [speed]="50" />
+  <iwi-logo-carousel [logos]="logos()" [speed]="50" />
 </section>
 
 <div class="iwi-container iwi-section d-flex flex-column gap-5 mb-5">
@@ -185,8 +185,8 @@
           </p>
           <p class="donation__text mb-0">
             Bei Fragen zu Ihrer Spende wenden Sie sich gerne an
-            <a class="donation__mail" [href]="'mailto:' + site.mail.association">{{
-              site.mail.association
+            <a class="donation__mail" [href]="'mailto:' + site().mail.association">{{
+              site().mail.association
             }}</a
             >.
           </p>

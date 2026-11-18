@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 
-import { SITE } from '../../shared/content/site';
+import { SiteSettings } from '../../core/data/site-content';
 import { Button } from '../../shared/ui/button/button';
 import { PageHeader } from '../../shared/ui/page-header/page-header';
 
@@ -10,5 +10,9 @@ import { PageHeader } from '../../shared/ui/page-header/page-header';
   templateUrl: './server-error-page.html',
 })
 export default class ServerErrorPage {
-  protected readonly reportUrl = `mailto:${SITE.mail.contact}?subject=${encodeURIComponent('Error 500 auf der Website')}`;
+  private readonly site = inject(SiteSettings).site;
+  protected readonly reportUrl = computed(
+    () =>
+      `mailto:${this.site().mail.contact}?subject=${encodeURIComponent('Error 500 auf der Website')}`,
+  );
 }

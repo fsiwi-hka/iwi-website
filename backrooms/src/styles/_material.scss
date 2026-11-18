@@ -1,0 +1,147 @@
+// Angular-Material-Komponenten im Stil der Website. Nur Form, Schrift und die
+// Markenfarben werden ueberschrieben; Verhalten und Zustaende bleiben Material.
+//
+// Kontrast (WCAG AA): Gefuellte Buttons nutzen --iwi-blue-dark statt
+// --iwi-blue, weil Weiss auf dem hellen Blau nur ~3:1 erreicht.
+@use '@angular/material' as mat;
+
+:root {
+  @include mat.button-overrides(
+    (
+      filled-container-shape: var(--iwi-radius-pill),
+      filled-container-color: var(--iwi-blue-dark),
+      filled-label-text-color: var(--iwi-white),
+      filled-label-text-weight: 600,
+      outlined-container-shape: var(--iwi-radius-pill),
+      outlined-outline-color: var(--iwi-grey-light),
+      outlined-label-text-color: var(--iwi-petrol-pale),
+      outlined-label-text-weight: 600,
+      text-container-shape: var(--iwi-radius-pill),
+      text-label-text-color: var(--iwi-petrol),
+      text-label-text-weight: 600,
+    )
+  );
+
+  @include mat.icon-button-overrides(
+    (
+      icon-color: var(--iwi-petrol-pale),
+    )
+  );
+
+  @include mat.card-overrides(
+    (
+      outlined-container-shape: var(--iwi-radius-xl),
+      outlined-container-color: var(--iwi-white),
+      outlined-outline-color: var(--iwi-grey-light),
+    )
+  );
+
+  @include mat.form-field-overrides(
+    (
+      outlined-container-shape: var(--iwi-radius-lg),
+      outlined-outline-color: var(--iwi-grey-light),
+      outlined-hover-outline-color: var(--iwi-grey-medium),
+      outlined-focus-outline-color: var(--iwi-blue-dark),
+      outlined-focus-label-text-color: var(--iwi-blue-dark),
+    )
+  );
+
+  @include mat.select-overrides(
+    (
+      focused-arrow-color: var(--iwi-blue-dark),
+      panel-background-color: var(--iwi-white),
+    )
+  );
+
+  @include mat.option-overrides(
+    (
+      selected-state-layer-color: #e3f1f7,
+      selected-state-label-text-color: var(--iwi-petrol),
+    )
+  );
+
+  @include mat.menu-overrides(
+    (
+      container-color: var(--iwi-white),
+      container-shape: var(--iwi-radius-lg),
+    )
+  );
+
+  @include mat.table-overrides(
+    (
+      background-color: var(--iwi-white),
+      header-headline-color: var(--iwi-petrol),
+      header-headline-weight: 600,
+      row-item-outline-color: var(--iwi-divider),
+    )
+  );
+
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: var(--iwi-white),
+      container-text-color: var(--iwi-petrol),
+    )
+  );
+
+  @include mat.sidenav-overrides(
+    (
+      container-background-color: var(--iwi-petrol),
+      container-text-color: var(--iwi-white),
+      container-shape: 0,
+      content-background-color: var(--iwi-surface),
+    )
+  );
+
+  @include mat.dialog-overrides(
+    (
+      container-shape: var(--iwi-radius-xl),
+      container-color: var(--iwi-white),
+      subhead-color: var(--iwi-petrol-pale),
+      supporting-text-color: var(--iwi-grey),
+    )
+  );
+
+  @include mat.chips-overrides(
+    (
+      container-shape-radius: var(--iwi-radius-pill),
+      outline-color: var(--iwi-grey-light),
+    )
+  );
+
+  @include mat.snack-bar-overrides(
+    (
+      container-color: var(--iwi-petrol),
+      supporting-text-color: var(--iwi-white),
+      container-shape: var(--iwi-radius-lg),
+    )
+  );
+
+  @include mat.tooltip-overrides(
+    (
+      container-color: var(--iwi-petrol),
+      supporting-text-color: var(--iwi-white),
+    )
+  );
+
+  @include mat.slide-toggle-overrides(
+    (
+      selected-track-color: var(--iwi-blue-dark),
+      selected-hover-track-color: var(--iwi-blue-dark),
+      selected-focus-track-color: var(--iwi-blue-dark),
+      selected-pressed-track-color: var(--iwi-blue-dark),
+    )
+  );
+
+  @include mat.progress-spinner-overrides(
+    (
+      active-indicator-color: var(--iwi-blue),
+    )
+  );
+}
+
+// Tabellenkopf wie auf der Website: Versalien, etwas Laufweite.
+.mat-mdc-header-cell {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+}

@@ -2,7 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { OPhaseInfo } from '../../core/data/ophase-info';
-import { SITE } from '../../shared/content/site';
+import { SiteSettings } from '../../core/data/site-content';
 import { formatDate, formatRange, semesterLabel } from '../../shared/utils/ophase';
 import { Icon } from '../../shared/ui/icon/icon';
 import { InfoBox } from '../../shared/ui/info-box/info-box';
@@ -21,7 +21,7 @@ import { ORIENTATION_LINKS, SPO_LINKS, SPO_UPDATED, STUDY_LINKS } from './first-
 export default class FirstYearPage {
   private readonly ophase = inject(OPhaseInfo);
 
-  protected readonly site = SITE;
+  protected readonly site = inject(SiteSettings).site;
   protected readonly orientationLinks = ORIENTATION_LINKS;
   protected readonly spoLinks = SPO_LINKS;
   protected readonly spoUpdated = SPO_UPDATED;

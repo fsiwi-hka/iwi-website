@@ -40,13 +40,20 @@ Auf dem Server laufen zwei voneinander unabhaengige Stacks nebeneinander:
 | Compose-Projekt | `deploy` | `deploy-develop` |
 | Web (Caddy) | `127.0.0.1:8080` | `127.0.0.1:8081` |
 | Backend (API) | `127.0.0.1:5200` | `127.0.0.1:5201` |
-| Container | `iwi-website`, `iwi-backend` | `iwi-website-develop`, `iwi-backend-develop` |
+| Backrooms (CMS) | `127.0.0.1:8082` | `127.0.0.1:8083` |
+| Container | `iwi-website`, `iwi-backend`, `iwi-backrooms` | `iwi-website-develop`, `iwi-backend-develop`, `iwi-backrooms-develop` |
 | Image-Tag | `latest` | `develop` |
 
 Beide Stacks haengen am gemeinsamen externen Docker-Netzwerk
 `nginx-proxy-manager_default`. Der nginx-proxy-manager muss fuer die
 Develop-Umgebung einen eigenen Host-Eintrag bekommen, der auf
 `iwi-website-develop:80` bzw. `127.0.0.1:8081` zeigt.
+
+Die Backrooms laufen unter dem Pfad `/backrooms/` der jeweiligen Website-Domain.
+Dafuer im Host-Eintrag der Website eine Custom Location `/backrooms` anlegen, die
+auf `iwi-backrooms:80` (Produktion) bzw. `iwi-backrooms-develop:80` (Develop)
+zeigt, ohne den Pfad umzuschreiben. Die Website selbst muss dafuer nicht
+angepasst werden.
 
 Weil beide Stacks im selben Netzwerk liegen, tragen sie dort denselben
 Compose-Alias `backend`. Caddy wuerde `/api/*` deshalb unter Umstaenden ans
@@ -106,3 +113,35 @@ Alle als Repository-Secrets hinterlegt:
 | `AUTH_TOKEN` | API-Token des Backends |
 
 [Zurueck zum Dokumentationsindex](./readme.md)
+
+## Inhalte der alten Website übernehmen
+
+Nach dem ersten Deploy mit Backrooms ist die Datenbank leer. Das Skript
+`scripts/import-legacy-content.mjs` übernimmt einmalig den Stand der
+Next.js-Seite (`ui/`) ins Backend:
+
+| Quelle | Ziel |
+|---|---|
+| `ui/content/member.ts` | Mitglieder und Rollen (eine Person mit mehreren Positionen wird ein Mitglied mit mehreren Rollen) |
+| `ui/content/departments.ts` | Fachbereiche, Leitung = gleichnamige Rolle |
+| `ui/content/slides.ts`, `ui/content/sponsors.ts` | Startseiten-Slider, Sponsoren |
+| `ui/public/impressum.md` | Seite `impressum` |
+| `ui/locales/de.json` + Links aus dem Footer | Website-Einstellungen |
+| `GET /api/ophase` (Nextcloud-Spiegel) | Semestertermine inkl. Stundenpläne |
+| Bilder aus `ui/public` | Upload über `/api/backrooms/media` |
+
+Aufruf von einem Rechner mit Repo-Checkout (braucht Node 22+ und `npm ci` in
+`ui/` oder `ui-angular/`, weil die Inhalte mit dem TypeScript-Compiler gelesen
+werden). `AUTH_TOKEN` ist der Service-Token aus den Secrets:
+
+```bash
+AUTH_TOKEN=... node scripts/import-legacy-content.mjs --api https://www.new.iwi-hka.de --dry-run
+AUTH_TOKEN=... node scripts/import-legacy-content.mjs --api https://www.new.iwi-hka.de
+```
+
+Ohne `--api` geht es an `http://localhost:5200`. Das Skript überschreibt nichts:
+Listen mit Einträgen und befüllte Dokumente werden übersprungen, Mitglieder
+werden über den Namen abgeglichen. Ein zweiter Lauf ist damit gefahrlos.
+`--replace` löscht vorher alle Einträge der importierten Listen (die alten
+Bild-Uploads bleiben dabei liegen). Alle Bilder werden vor dem ersten
+Schreibzugriff hochgeladen; schlägt ein Upload fehl, wird nichts angelegt.

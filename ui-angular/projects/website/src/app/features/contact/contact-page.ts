@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 
-import { SITE } from '../../shared/content/site';
+import { SiteSettings } from '../../core/data/site-content';
 import { Button } from '../../shared/ui/button/button';
 import { Card } from '../../shared/ui/card/card';
 import { Icon } from '../../shared/ui/icon/icon';
@@ -28,26 +28,36 @@ interface Social {
   styleUrl: './contact-page.scss',
 })
 export default class ContactPage {
-  protected readonly site = SITE;
+  protected readonly site = inject(SiteSettings).site;
 
-  protected readonly mailContacts: readonly MailContact[] = [
+  protected readonly mailContacts = computed<readonly MailContact[]>(() => [
     {
       icon: 'help',
       title: 'Allgemeine Fragen',
       description: 'Alles rund ums Studium, die Fachschaft und was dich sonst beschäftigt.',
-      mail: SITE.mail.contact,
+      mail: this.site().mail.contact,
     },
     {
       icon: 'handshake',
       title: 'Sponsoring',
       description: 'Für Unternehmen, die mit uns zusammenarbeiten möchten.',
-      mail: SITE.mail.sponsoring,
+      mail: this.site().mail.sponsoring,
     },
-  ];
+  ]);
 
-  protected readonly socials: readonly Social[] = [
-    { icon: 'discord', title: 'Discord', handle: 'Fachschaft IWI', url: SITE.links.discord },
-    { icon: 'instagram', title: 'Instagram', handle: '@iwi_fachschaft', url: SITE.links.instagram },
-    { icon: 'linkedin', title: 'LinkedIn', handle: 'Fachschaft IWI', url: SITE.links.linkedin },
-  ];
+  protected readonly socials = computed<readonly Social[]>(() => [
+    { icon: 'discord', title: 'Discord', handle: 'Fachschaft IWI', url: this.site().links.discord },
+    {
+      icon: 'instagram',
+      title: 'Instagram',
+      handle: '@iwi_fachschaft',
+      url: this.site().links.instagram,
+    },
+    {
+      icon: 'linkedin',
+      title: 'LinkedIn',
+      handle: 'Fachschaft IWI',
+      url: this.site().links.linkedin,
+    },
+  ]);
 }

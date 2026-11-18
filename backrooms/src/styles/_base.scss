@@ -1,5 +1,5 @@
-// Basis-Elemente. Farben und Typografie kommen aus den Material-System-Tokens
-// (--mat-sys-*), damit Light und Dark Mode automatisch stimmen.
+// Basis-Elemente im Stil der Website (ui-angular, styles/_base.scss):
+// Poppins, graue Fliesstexte, Ueberschriften in Versalien und Petrol.
 
 *,
 *::before,
@@ -14,25 +14,41 @@ html {
 
 body {
   margin: 0;
-  font: var(--mat-sys-body-medium);
-  color: var(--mat-sys-on-surface);
-  background: var(--mat-sys-surface-container-low);
+  font-family: var(--iwi-font);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--iwi-grey-dark);
+  background: var(--iwi-surface);
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 0 0 0.5rem;
-  font: var(--mat-sys-headline-small);
+  font-family: var(--iwi-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--iwi-petrol-pale);
+}
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.15;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
 }
 
 h2 {
-  margin: 0 0 0.5rem;
-  font: var(--mat-sys-title-large);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 h3 {
-  margin: 0 0 0.5rem;
-  font: var(--mat-sys-title-medium);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 p {
@@ -40,7 +56,7 @@ p {
 }
 
 a {
-  color: var(--mat-sys-primary);
+  color: var(--iwi-blue-dark);
   text-decoration: underline;
   text-underline-offset: 2px;
 
@@ -62,10 +78,9 @@ pre {
   font-size: 0.9em;
 }
 
-// Sichtbarer Fokus fuer Tastaturnutzung (WCAG 2.4.7). Material-Komponenten
-// bringen eigene Fokus-Indikatoren mit, das hier greift fuer alles andere.
+// Sichtbarer Fokus fuer Tastaturnutzung (WCAG 2.4.7), wie auf der Website.
 :focus-visible {
-  outline: 2px solid var(--mat-sys-primary);
+  outline: 2px solid var(--iwi-blue);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -87,11 +102,10 @@ pre {
   top: -100px;
   left: 0.75rem;
   z-index: 1000;
-  padding: 0.5rem 0.75rem;
-  background: var(--mat-sys-surface);
-  color: var(--mat-sys-primary);
-  border-radius: var(--mat-sys-corner-small);
-  box-shadow: var(--mat-sys-level3);
+  padding: 0.5rem 1rem;
+  background: var(--iwi-petrol);
+  color: var(--iwi-white);
+  border-radius: var(--iwi-radius);
 
   &:focus {
     top: 0.75rem;

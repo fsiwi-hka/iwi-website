@@ -32,17 +32,22 @@ services:
 
   # Backrooms: das CMS (Angular, statisch per Caddy ausgeliefert). Caddy im
   # Container proxied /api/* auf "backend", daher kein CORS. Im Nginx Proxy
-  # Manager als eigener Host (z. B. backrooms.iwi-hka.de -> iwi-backrooms:80)
-  # anlegen; lokal erreichbar unter http://127.0.0.1:8081.
+  # Manager beim Host der Website als Custom Location "/backrooms" ->
+  # iwi-backrooms:80 (bzw. iwi-backrooms-develop:80) eintragen; die App laeuft
+  # unter dem Pfad /backrooms/. Lokal: http://127.0.0.1:8082/backrooms/.
+  # Port 8081 ist vom Develop-Web belegt, darum 8082 (Produktion) bzw. 8083 (Develop).
   backrooms:
     build:
       context: ../backrooms
       dockerfile: Dockerfile
-    image: iwi-backrooms:latest
-    container_name: iwi-backrooms
+    image: iwi-backrooms:${IMAGE_TAG:-latest}
+    container_name: iwi-backrooms${STACK_SUFFIX:-}
     restart: always
+    environment:
+      # Siehe "web": eindeutiger Containername statt des geteilten Alias "backend".
+      - BACKEND_HOST=iwi-backend${STACK_SUFFIX:-}
     ports:
-      - "127.0.0.1:8081:80"
+      - "127.0.0.1:${BACKROOMS_PORT:-8082}:80"
     networks:
       - npm
     depends_on:

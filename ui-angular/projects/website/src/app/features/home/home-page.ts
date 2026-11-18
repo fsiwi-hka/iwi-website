@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { SITE } from '../../shared/content/site';
-import { HERO_SLIDES } from '../../shared/content/slides';
-import { SPONSOR_LOGOS } from '../../shared/content/sponsors';
+import { HeroSlides, SiteSettings, Sponsors } from '../../core/data/site-content';
 import { Button } from '../../shared/ui/button/button';
 import { Card, CardTone } from '../../shared/ui/card/card';
 import { HeroSlider } from './hero-slider/hero-slider';
@@ -28,10 +26,12 @@ interface Teaser {
   styleUrl: './home-page.scss',
 })
 export default class HomePage {
-  protected readonly slides = HERO_SLIDES;
-  protected readonly logos = SPONSOR_LOGOS;
+  protected readonly slides = inject(HeroSlides).value;
+  protected readonly logos = inject(Sponsors).value;
 
-  protected readonly teasers: readonly Teaser[] = [
+  private readonly site = inject(SiteSettings).site;
+
+  protected readonly teasers = computed<readonly Teaser[]>(() => [
     {
       title: 'Fachbereiche',
       subtitle: 'Verschiedene Teams mit unterschiedlichen Aufgaben',
@@ -53,7 +53,7 @@ export default class HomePage {
       subtitle: 'Für den Austausch relevanter Informationen rund ums Studium',
       tone: 'blue',
       buttonText: 'Beitreten',
-      url: SITE.links.discord,
+      url: this.site().links.discord,
     },
-  ];
+  ]);
 }

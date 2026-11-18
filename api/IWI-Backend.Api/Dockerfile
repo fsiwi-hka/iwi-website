@@ -20,8 +20,13 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Noch als root: Cache-Verzeichnis anlegen und dem App-User geben
-RUN mkdir -p /home/app/cache /home/app/state /home/app/instagram-cache && chown -R $APP_UID:$APP_UID /home/app/
+# Noch als root: Verzeichnisse anlegen und dem App-User geben. Alles, was in
+# deploy/docker-compose.yml als Volume gemountet wird, muss hier existieren:
+# Docker uebernimmt Besitzer und Rechte nur fuer Verzeichnisse aus dem Image,
+# ein fehlendes wuerde root gehoeren und der App-User koennte nicht schreiben
+# (/home/app/backrooms = Uploads der Backrooms).
+RUN mkdir -p /home/app/cache /home/app/state /home/app/instagram-cache /home/app/backrooms \
+    && chown -R $APP_UID:$APP_UID /home/app/
 
 # Erst jetzt auf den non-root User wechseln
 USER $APP_UID

@@ -15,6 +15,7 @@ import { DepartmentStore } from '../departments/department.store';
 import { HeroSlideStore } from '../hero-slides/hero-slide.store';
 import { InfoscreenStore } from '../infoscreen/infoscreen.store';
 import { MemberStore } from '../members/member.store';
+import { PositionStore } from '../positions/position.store';
 import { ContentPageStore } from '../pages/content-page.store';
 import { ProtocolStore } from '../protocols/protocol.store';
 import { SponsorStore } from '../sponsors/sponsor.store';
@@ -75,6 +76,7 @@ export class Dashboard {
   private readonly auth = inject(AuthStore);
   private readonly heroSlides = inject(HeroSlideStore);
   private readonly members = inject(MemberStore);
+  private readonly positions = inject(PositionStore);
   private readonly departments = inject(DepartmentStore);
   private readonly sponsors = inject(SponsorStore);
   private readonly protocols = inject(ProtocolStore);
@@ -101,9 +103,16 @@ export class Dashboard {
     stat(
       'Mitglieder',
       this.members,
-      `${this.members.items().filter((member) => member.persons.length === 0).length} unbesetzt`,
+      `${this.members.items().filter((member) => member.active).length} aktiv`,
       '/members',
       'users',
+    ),
+    stat(
+      'Rollen',
+      this.positions,
+      `${this.positions.items().filter((position) => position.memberIds.length === 0).length} unbesetzt`,
+      '/positions',
+      'badge',
     ),
     stat('Fachbereiche', this.departments, 'mit Aufgabenbeschreibung', '/departments', 'layers'),
     stat(
@@ -127,10 +136,11 @@ export class Dashboard {
   protected readonly recent = computed<RecentChange[]>(() =>
     [
       ...this.heroSlides.items().map((s) => change('Slide', s.title, `/hero-slides/${s.id}`, s)),
-      ...this.members.items().map((m) => change('Mitglied', m.position, `/members/${m.id}`, m)),
+      ...this.members.items().map((m) => change('Mitglied', m.name, `/members/${m.id}`, m)),
+      ...this.positions.items().map((p) => change('Rolle', p.title, `/positions/${p.id}`, p)),
       ...this.departments
         .items()
-        .map((d) => change('Fachbereich', d.position, `/departments/${d.id}`, d)),
+        .map((d) => change('Fachbereich', d.name, `/departments/${d.id}`, d)),
       ...this.sponsors.items().map((s) => change('Sponsor', s.name, `/sponsors/${s.id}`, s)),
       ...this.protocols.items().map((p) => change('Protokoll', p.title, `/protocols/${p.id}`, p)),
       ...this.infoscreen.items().map((i) => change('Infoscreen', i.name, `/infoscreen/${i.id}`, i)),

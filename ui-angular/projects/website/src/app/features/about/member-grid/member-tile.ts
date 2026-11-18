@@ -1,6 +1,6 @@
 import { Component, computed, input, signal } from '@angular/core';
 
-import { Member } from '../../../shared/content/members';
+import { Member } from '../../../core/data/site-content';
 import { displayName, MemberAvatar } from '../member-avatar/member-avatar';
 
 /** Eine Position mit Bild, Positionsname und Person(en). Jede Kachel merkt sich ihre eigene Auswahl. */

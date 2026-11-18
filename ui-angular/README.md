@@ -41,7 +41,7 @@ projects/website/src/
       platform/      Browser-only-Ressourcen, Kiosk-Helfer
       routing/       Seitentitel und Meta-Tags
     shared/
-      content/       Feste Inhalte (Mitglieder, Fachbereiche, Slides, Sponsoren, …)
+      content/       Feste Angaben (Adresse, Navigation, Bulletin-Boards, …)
       ui/            Wiederverwendbare Komponenten (Button, Card, Info-Box, …)
       utils/         Kalender- und Formatierungs-Helfer
     features/        Eine Seite pro Ordner, Unterkomponenten daneben
@@ -53,8 +53,9 @@ public/              Bilder, Downloads, Schriften (1:1 aus ui/public übernommen
 
 Alle Seiten werden beim Build vorgerendert (`outputMode: "static"`), es läuft kein
 Node-Server. Inhalte aus dem Backend (Termine, News, Instagram, Protokolle,
-Semestertermine) werden – wie bisher – erst im Browser geladen. Dafür gibt es
-`browserResource()` in `core/platform`: beim Vorrendern bleibt die Ressource leer.
+Semestertermine und alles, was in den Backrooms gepflegt wird) werden erst im
+Browser geladen. Dafür gibt es `browserResource()` in `core/platform`: beim
+Vorrendern bleibt die Ressource leer.
 
 ### API-Client
 
@@ -102,7 +103,16 @@ ersten Lauf als JAR heruntergeladen).
 
 ## Inhalte pflegen
 
-Feste Inhalte stehen typisiert unter `src/app/shared/content/` bzw. neben der Seite
+Startseiten-Slider, Sponsoren, Mitglieder mit ihren Rollen, Fachbereiche sowie
+Mails, Discord-/Instagram-Link und Sitzungstermin werden in den **Backrooms**
+gepflegt und kommen über `@iwi/api` aus dem Backend (`core/data/site-content.ts`:
+`HeroSlides`, `Sponsors`, `TeamContent`, `SiteSettings`). Für die Einstellungen
+gelten bis zum Laden die festen Werte aus `shared/content/site.ts`.
+
+Den Stand der alten Next.js-Seite übernimmt einmalig
+`scripts/import-legacy-content.mjs` ins Backend (siehe `docs/deploy.md`).
+
+Übrige feste Inhalte stehen typisiert unter `src/app/shared/content/` bzw. neben der Seite
 (`*-content.ts`, z. B. Vorkurs-Unterlagen, Studium-Links, Sponsoring-Pakete).
 Eine neue Seite bekommt einen Ordner unter `features/`, einen Eintrag in
 `app.routes.ts` und – für die Brotkrumen – in `ROUTE_NAMES` (`shared/content/navigation.ts`).

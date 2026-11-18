@@ -1,6 +1,6 @@
 import { Protocol, staticMedia } from '../models';
 
-const PLACEHOLDER_PDF = '/mock/protocols/protokoll-beispiel.pdf';
+const PLACEHOLDER_PDF = 'mock/protocols/protokoll-beispiel.pdf';
 
 /** Beispiel-Protokolle; die PDF ist ein Platzhalter. */
 export function protocolsMock(): Protocol[] {
