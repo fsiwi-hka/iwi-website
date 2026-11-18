@@ -471,6 +471,8 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error(`Abbruch: ${error.message}`);
+  // "fetch failed" allein sagt nichts; der Grund (DNS, TLS, ...) steht in cause.
+  const cause = error.cause?.message ?? error.cause?.code;
+  console.error(`Abbruch: ${error.message}${cause ? ` (${cause})` : ''}`);
   process.exit(1);
 });
